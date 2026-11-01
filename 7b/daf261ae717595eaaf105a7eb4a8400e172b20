@@ -1,0 +1,313 @@
+end_to_end/check_demo.py
+  s_d9b3c014c5ea55::t_559ae0b0093ffc 1-65
+source/demo_app.py
+  s_d9b3c014c5ea55::t_e797240dfc92bd 1-126
+evidence/I046_CODE_FREEZE.json
+  s_d9b3c014c5ea55::t_80fba60002c28b 1-202
+evidence/I046_CURRENT_ACCEPTANCE.json
+  s_d9b3c014c5ea55::t_96b46d04c5fb8a 1-30
+evidence/I046_PHASE_C_GATE.json
+  s_d9b3c014c5ea55::t_91445b6b11cc69 1-289
+evidence/I046_SOURCE_MANIFEST.json
+  s_d9b3c014c5ea55::t_e183cef74ac527 1-152
+evidence/I046_TESTED_SOURCE_IDENTITY.json
+  s_d9b3c014c5ea55::t_7598e73cd9eabc 1-202
+evidence/I046_UNIT_TESTS.json
+  s_d9b3c014c5ea55::t_0515f1adcdd8e2 1-7
+evidence/MASTER_DIRECTIVE.txt
+  s_d9b3c014c5ea55::t_5d711fae04f8d9 1-417
+source/candidate/ACCEPTANCE_36.json
+  s_d9b3c014c5ea55::t_4c4da1d93c6c88 1-419
+source/candidate/ACCEPTANCE_36.sha256
+  s_d9b3c014c5ea55::t_d0d600fa705a9d 1
+source/candidate/COVERAGE_UPGRADES.json
+  s_d9b3c014c5ea55::t_1cc33d07217d41 1-8
+source/candidate/EMPLOYEE_QUESTIONS.json
+  s_d9b3c014c5ea55::t_a820621554ef37 1-282
+source/candidate/FROZEN_BASELINE_REFERENCE.json
+  s_d9b3c014c5ea55::t_dce57f2cecc62b 1-107
+source/candidate/annotation_candidates.py
+  s_d9b3c014c5ea55::t_28dd2ad3c93402 1-263
+source/candidate/candidate.py
+  s_d9b3c014c5ea55::t_1b390e1b00feef 1-198
+source/candidate/catalog.json
+  s_d9b3c014c5ea55::t_1b0532092a266e 1-239
+source/candidate/dialogue_scope.py
+  s_d9b3c014c5ea55::t_b541526b116b02 1-37
+source/candidate/entity_scope.py
+  s_d9b3c014c5ea55::t_6e8327cc345c99 1-36
+source/candidate/evidence_contracts.py
+  s_d9b3c014c5ea55::t_a316b459a93a65 1-671
+source/candidate/fixture_data/definition.json
+  s_d9b3c014c5ea55::t_381649667dcd45 1-2527
+source/candidate/fixture_data/source_files/KnowledgeBase/Articles/7wala_bank_abozabii_ART.md
+  s_d9b3c014c5ea55::t_212fb1a5dd83f1 1-408
+source/candidate/fixture_data/source_files/KnowledgeBase/Articles/AZIMUT_ART.md
+  s_d9b3c014c5ea55::t_6f418658c07177 1-493
+source/candidate/fixture_data/source_files/KnowledgeBase/Articles/Wallets_ART.md
+  s_d9b3c014c5ea55::t_be68e6d6035945 1-494
+source/candidate/frozen_phase2/FINAL_REPORT.md
+  s_d9b3c014c5ea55::t_71e6f2e2902c88 1-157
+source/candidate/frozen_phase2/PACKAGE_PINS.json
+  s_d9b3c014c5ea55::t_23332a059799de 1-93
+source/candidate/frozen_phase2/PHASE1_BASELINE_PINS.json
+  s_d9b3c014c5ea55::t_921885ac0f329d 1-78
+source/candidate/frozen_phase2/README.md
+  s_d9b3c014c5ea55::t_e7af806fc6a8d4 1-35
+source/candidate/frozen_phase2/WORKFLOW_COMPATIBILITY_CHECKS.json
+  s_d9b3c014c5ea55::t_cd6ed870a55610 1-7
+source/candidate/frozen_phase2/engine.py
+  s_d9b3c014c5ea55::t_aa32ac1990a90e 1-162
+source/candidate/frozen_phase2/fixture_data/definition.json
+  s_d9b3c014c5ea55::t_e5bec3732ff788 1-1271
+source/candidate/frozen_phase2/fixture_data/source_files/KnowledgeBase/Articles/AZIMUT_ART.md
+  s_d9b3c014c5ea55::t_935be95f2b9601 1-493
+source/candidate/frozen_phase2/fixture_data/source_files/KnowledgeBase/Articles/Wallets_ART.md
+  s_d9b3c014c5ea55::t_37cea2890e5101 1-494
+source/candidate/frozen_phase2/native_results/20261027_234148_976bc9dc/CLAIM_AND_SLOT_REVIEW.json
+  s_d9b3c014c5ea55::t_15c522aacbcb67 1-2088
+source/candidate/frozen_phase2/native_results/20261027_234148_976bc9dc/INITIALIZATION.json
+  s_d9b3c014c5ea55::t_2cc089f2558e2f 1-26
+source/candidate/frozen_phase2/native_results/20261027_234148_976bc9dc/ORIGINAL_RECORDS_PRESERVATION.json
+  s_d9b3c014c5ea55::t_3e6fb687f078ec 1-4
+source/candidate/frozen_phase2/native_results/20261027_234148_976bc9dc/PERFORMANCE.json
+  s_d9b3c014c5ea55::t_ee62a2f44131b4 1-106
+source/candidate/frozen_phase2/native_results/20261027_234148_976bc9dc/PROGRESS.json
+  s_d9b3c014c5ea55::t_605ae38bbde5be 1-21
+source/candidate/frozen_phase2/native_results/20261027_234148_976bc9dc/RESULTS.json
+  s_d9b3c014c5ea55::t_28ce750b364f45 1-9215
+source/candidate/frozen_phase2/native_results/20261027_234148_976bc9dc/SUMMARY.json
+  s_d9b3c014c5ea55::t_fc107441bd2dd9 1-21
+source/candidate/frozen_phase2/phase1/FINAL_REPORT.md
+  s_d9b3c014c5ea55::t_9c643bcf68dd37 1-114
+source/candidate/frozen_phase2/phase1/LOCAL_CORE_RESULTS.md
+  s_d9b3c014c5ea55::t_54524a05791eac 1-65
+source/candidate/frozen_phase2/phase1/README.md
+  s_d9b3c014c5ea55::t_66043dc074707a 1-25
+source/candidate/frozen_phase2/phase1/candidate/chatbot/__init__.py
+  s_d9b3c014c5ea55::t_094a955529e355 1
+source/candidate/frozen_phase2/phase1/candidate/chatbot/admission.py
+  s_d9b3c014c5ea55::t_03f684d319e7d3 1-33
+source/candidate/frozen_phase2/phase1/candidate/chatbot/analytics.py
+  s_d9b3c014c5ea55::t_4ea437f8b7aaba 1-550
+source/candidate/frozen_phase2/phase1/candidate/chatbot/answer_relevance.py
+  s_d9b3c014c5ea55::t_3da9afc1e9930a 1-75
+source/candidate/frozen_phase2/phase1/candidate/chatbot/business_glossary.py
+  s_d9b3c014c5ea55::t_01fba4b6268e79 1-18
+source/candidate/frozen_phase2/phase1/candidate/chatbot/candidate_similarity.py
+  s_d9b3c014c5ea55::t_5837226bb11641 1-11
+source/candidate/frozen_phase2/phase1/candidate/chatbot/canonical_context.py
+  s_d9b3c014c5ea55::t_baf2d7fded466c 1-169
+source/candidate/frozen_phase2/phase1/candidate/chatbot/canonical_retrieval.py
+  s_d9b3c014c5ea55::t_cc619a60b86071 1-148
+source/candidate/frozen_phase2/phase1/candidate/chatbot/canonical_runtime.py
+  s_d9b3c014c5ea55::t_68eacbf26cac10 1-224
+source/candidate/frozen_phase2/phase1/candidate/chatbot/canonical_store.py
+  s_d9b3c014c5ea55::t_e3500b34bc6a74 1-93
+source/candidate/frozen_phase2/phase1/candidate/chatbot/citation_policy.py
+  s_d9b3c014c5ea55::t_2d374285003673 1-98
+source/candidate/frozen_phase2/phase1/candidate/chatbot/config.py
+  s_d9b3c014c5ea55::t_c50ac71cc93e69 1-162
+source/candidate/frozen_phase2/phase1/candidate/chatbot/content_catalog.py
+  s_d9b3c014c5ea55::t_454fd09ded33a6 1-71
+source/candidate/frozen_phase2/phase1/candidate/chatbot/content_index.py
+  s_d9b3c014c5ea55::t_3ebf64d25f69f4 1-121
+source/candidate/frozen_phase2/phase1/candidate/chatbot/content_preparation.py
+  s_d9b3c014c5ea55::t_9d2e4058511ae2 1-458
+source/candidate/frozen_phase2/phase1/candidate/chatbot/content_runtime.py
+  s_d9b3c014c5ea55::t_796a6e0f14ec71 1-48
+source/candidate/frozen_phase2/phase1/candidate/chatbot/content_state.py
+  s_d9b3c014c5ea55::t_d32e7e484290ed 1-98
+source/candidate/frozen_phase2/phase1/candidate/chatbot/content_sync.py
+  s_d9b3c014c5ea55::t_3e55c6159e6cac 1-138
+source/candidate/frozen_phase2/phase1/candidate/chatbot/content_transfer.py
+  s_d9b3c014c5ea55::t_05fe55ca33144e 1-137
+source/candidate/frozen_phase2/phase1/candidate/chatbot/conversation_memory.py
+  s_d9b3c014c5ea55::t_aca55565524bf9 1-961
+source/candidate/frozen_phase2/phase1/candidate/chatbot/document_structure.py
+  s_d9b3c014c5ea55::t_ed5a9b2b2d67ab 1-30
+source/candidate/frozen_phase2/phase1/candidate/chatbot/documents_scope.py
+  s_d9b3c014c5ea55::t_c344ae1cb41046 1-17
+source/candidate/frozen_phase2/phase1/candidate/chatbot/embedded_images.py
+  s_d9b3c014c5ea55::t_8ee4927ff72b63 1-30
+source/candidate/frozen_phase2/phase1/candidate/chatbot/evidence_eligibility.py
+  s_d9b3c014c5ea55::t_7882f49755f813 1-69
+source/candidate/frozen_phase2/phase1/candidate/chatbot/evidence_selection.py
+  s_d9b3c014c5ea55::t_c0e003524ed0ca 1-72
+source/candidate/frozen_phase2/phase1/candidate/chatbot/evidence_token_budget.py
+  s_d9b3c014c5ea55::t_117a5639b0dc1d 1-53
+source/candidate/frozen_phase2/phase1/candidate/chatbot/extraction_repairs.py
+  s_d9b3c014c5ea55::t_adc4e78965a45d 1-103
+source/candidate/frozen_phase2/phase1/candidate/chatbot/follow_up_resolution.py
+  s_d9b3c014c5ea55::t_495d607640cb00 1-395
+source/candidate/frozen_phase2/phase1/candidate/chatbot/generation.py
+  s_d9b3c014c5ea55::t_0f5d4398cfb176 1-937
+source/candidate/frozen_phase2/phase1/candidate/chatbot/index_metadata.py
+  s_d9b3c014c5ea55::t_b1a7cb0921d0fe 1-7
+source/candidate/frozen_phase2/phase1/candidate/chatbot/ingestion.py
+  s_d9b3c014c5ea55::t_4cddee02668404 1-1032
+source/candidate/frozen_phase2/phase1/candidate/chatbot/logging_utils.py
+  s_d9b3c014c5ea55::t_bbccee5ef44abc 1-30
+source/candidate/frozen_phase2/phase1/candidate/chatbot/noop_telemetry.py
+  s_d9b3c014c5ea55::t_82ef5509ffa777 1-10
+source/candidate/frozen_phase2/phase1/candidate/chatbot/normalization.py
+  s_d9b3c014c5ea55::t_1673e22e204242 1-408
+source/candidate/frozen_phase2/phase1/candidate/chatbot/ocr.py
+  s_d9b3c014c5ea55::t_9e37dad9019785 1-114
+source/candidate/frozen_phase2/phase1/candidate/chatbot/ocr_layout.py
+  s_d9b3c014c5ea55::t_8229f3613d8882 1-46
+source/candidate/frozen_phase2/phase1/candidate/chatbot/passage_quality.py
+  s_d9b3c014c5ea55::t_14cf2eb29f60c4 1-100
+source/candidate/frozen_phase2/phase1/candidate/chatbot/pdf_layout.py
+  s_d9b3c014c5ea55::t_3bba0bb9df860f 1-68
+source/candidate/frozen_phase2/phase1/candidate/chatbot/pdf_page_selection.py
+  s_d9b3c014c5ea55::t_c1c427b3556047 1-38
+source/candidate/frozen_phase2/phase1/candidate/chatbot/presentation_names.py
+  s_d9b3c014c5ea55::t_1b80f390589469 1-26
+source/candidate/frozen_phase2/phase1/candidate/chatbot/profiling.py
+  s_d9b3c014c5ea55::t_155baee83f69fc 1-179
+source/candidate/frozen_phase2/phase1/candidate/chatbot/query_language.py
+  s_d9b3c014c5ea55::t_e6e120be95f04e 1-170
+source/candidate/frozen_phase2/phase1/candidate/chatbot/query_understanding.py
+  s_d9b3c014c5ea55::t_aaa81ae0bd7373 1-176
+source/candidate/frozen_phase2/phase1/candidate/chatbot/question_lookup.py
+  s_d9b3c014c5ea55::t_4c1c20b3aba79c 1-46
+source/candidate/frozen_phase2/phase1/candidate/chatbot/reference_runtime.py
+  s_d9b3c014c5ea55::t_3642c05e93c839 1-344
+source/candidate/frozen_phase2/phase1/candidate/chatbot/reference_validation.py
+  s_d9b3c014c5ea55::t_4d79473e1cd9cd 1-78
+source/candidate/frozen_phase2/phase1/candidate/chatbot/repair_overlay.py
+  s_d9b3c014c5ea55::t_9218c77dd27049 1-93
+source/candidate/frozen_phase2/phase1/candidate/chatbot/reply_language.py
+  s_d9b3c014c5ea55::t_3f399bf33d89b6 1-189
+source/candidate/frozen_phase2/phase1/candidate/chatbot/retrieval.py
+  s_d9b3c014c5ea55::t_2b56ef6e2c07fc 1-1151
+source/candidate/frozen_phase2/phase1/candidate/chatbot/reviewed_images.py
+  s_d9b3c014c5ea55::t_6729b91d767220 1-35
+source/candidate/frozen_phase2/phase1/candidate/chatbot/reviewed_regions.py
+  s_d9b3c014c5ea55::t_675b7b250ebfd9 1-80
+source/candidate/frozen_phase2/phase1/candidate/chatbot/semantic_claims.py
+  s_d9b3c014c5ea55::t_45ba7f2d7ab272 1-57
+source/candidate/frozen_phase2/phase1/candidate/chatbot/sensitive_data.py
+  s_d9b3c014c5ea55::t_6476b105502494 1-60
+source/candidate/frozen_phase2/phase1/candidate/chatbot/service.py
+  s_d9b3c014c5ea55::t_b52367374e6e0b 1-1965
+source/candidate/frozen_phase2/phase1/candidate/chatbot/sidecar.py
+  s_d9b3c014c5ea55::t_2f802f012fa341 1-1799
+source/candidate/frozen_phase2/phase1/candidate/chatbot/slot_generation.py
+  s_d9b3c014c5ea55::t_77765cde514a31 1-32
+source/candidate/frozen_phase2/phase1/candidate/chatbot/smalltalk.py
+  s_d9b3c014c5ea55::t_3ffa3438fc1bb6 1-129
+source/candidate/frozen_phase2/phase1/candidate/chatbot/source_answers.py
+  s_d9b3c014c5ea55::t_100003947d4eec 1-43
+source/candidate/frozen_phase2/phase1/candidate/chatbot/source_renderings.py
+  s_d9b3c014c5ea55::t_09ac8223402d40 1-16
+source/candidate/frozen_phase2/phase1/candidate/chatbot/validation_language.py
+  s_d9b3c014c5ea55::t_b0c5eac68ecb38 1-19
+source/candidate/frozen_phase2/phase1/candidate/chatbot/vector_store.py
+  s_d9b3c014c5ea55::t_688c8bb2d02eb2 1-147
+source/candidate/frozen_phase2/phase1/candidate/chatbot/workflow_contract.py
+  s_d9b3c014c5ea55::t_2923819b5ab03c 1-43
+source/candidate/frozen_phase2/phase1/finalize_report.py
+  s_d9b3c014c5ea55::t_b5ae10d5f23472 1-86
+source/candidate/frozen_phase2/phase1/fixture_data/fixture_definition.json
+  s_d9b3c014c5ea55::t_50d168f6473011 1-925
+source/candidate/frozen_phase2/phase1/native_backend.py
+  s_d9b3c014c5ea55::t_cb0194dcddba44 1-76
+source/candidate/frozen_phase2/phase1/native_support.py
+  s_d9b3c014c5ea55::t_7d1ca0ad025d14 1-95
+source/candidate/frozen_phase2/phase1/pilot_engine.py
+  s_d9b3c014c5ea55::t_20b207727709b8 1-152
+source/candidate/frozen_phase2/phase1/prepare_fixture.py
+  s_d9b3c014c5ea55::t_8349878bee7c1e 1-31
+source/candidate/frozen_phase2/phase1/run_axis_source_view.ps1
+  s_d9b3c014c5ea55::t_25019d1488888a 1-14
+source/candidate/frozen_phase2/phase1/run_pilot.py
+  s_d9b3c014c5ea55::t_70a274c45e0712 1-162
+source/candidate/frozen_phase2/phase1/test_cases.json
+  s_d9b3c014c5ea55::t_84d4da7ca4b01b 1-29
+source/candidate/frozen_phase2/prepare_phase2.py
+  s_d9b3c014c5ea55::t_b14d5d8d9ba396 1-54
+source/candidate/frozen_phase2/retrieval.py
+  s_d9b3c014c5ea55::t_fef7239a819e1b 1-69
+source/candidate/frozen_phase2/run_multi_source_pilot.ps1
+  s_d9b3c014c5ea55::t_f2a09abc0a72ab 1-28
+source/candidate/frozen_phase2/run_phase2.py
+  s_d9b3c014c5ea55::t_018b3a3189e6cc 1-115
+source/candidate/frozen_phase2/stage_package.py
+  s_d9b3c014c5ea55::t_2ac0bdfa482b95 1-31
+source/candidate/frozen_phase2/test_cases.json
+  s_d9b3c014c5ea55::t_648809a98cb550 1-30
+source/candidate/frozen_phase2/workflow_view.py
+  s_d9b3c014c5ea55::t_e6ed987a3ff2ad 1-16
+source/candidate/lifecycle_checks.py
+  s_d9b3c014c5ea55::t_f8e235ef22a7d9 1-32
+source/candidate/linguistic_spans.py
+  s_d9b3c014c5ea55::t_736c9fd7a726e3 1-790
+source/candidate/observed_guard.py
+  s_d9b3c014c5ea55::t_bec411c45b19f5 1-37
+source/candidate/planner.py
+  s_d9b3c014c5ea55::t_59490862c50eb6 1-90
+source/candidate/procedure_projection.py
+  s_d9b3c014c5ea55::t_f615c1434c34a6 1-212
+source/candidate/question_coverage.py
+  s_d9b3c014c5ea55::t_c4310b298f3c2c 1-2956
+source/candidate/registry.py
+  s_d9b3c014c5ea55::t_48417163afc404 1-29
+source/candidate/request_planner.py
+  s_d9b3c014c5ea55::t_0a6cebf08b4e48 1-97
+source/candidate/resources/adapter.json
+  s_d9b3c014c5ea55::t_a65c76ab1a8313 1-2515
+source/candidate/resources/answer_scopes.json
+  s_d9b3c014c5ea55::t_bbc4896a54c2e0 1-11
+source/candidate/resources/channels.json
+  s_d9b3c014c5ea55::t_64625341351c96 1-219
+source/candidate/resources/entity_disambiguation.json
+  s_d9b3c014c5ea55::t_cd1785ec5d6d87 1-98
+source/candidate/resources/entity_roles.json
+  s_d9b3c014c5ea55::t_37c23f227cfa28 1-31
+source/candidate/resources/features.json
+  s_d9b3c014c5ea55::t_8c7eced50564ae 1-706
+source/candidate/resources/intents.json
+  s_d9b3c014c5ea55::t_105591ea195db7 1-5656
+source/candidate/resources/operators.json
+  s_d9b3c014c5ea55::t_c79fc4abb3f262 1-1269
+source/candidate/resources/recovery_features.json
+  s_d9b3c014c5ea55::t_ab209d4f55c915 1-348
+source/candidate/resources/role_qualified_candidates.jsonl
+  s_d9b3c014c5ea55::t_7255bf62474200 1-3636
+source/candidate/response_binding.py
+  s_d9b3c014c5ea55::t_3560e5f6e435be 1-28
+source/candidate/retrieval.py
+  s_d9b3c014c5ea55::t_cf81a1ef77c786 1-70
+source/candidate/reuse_backend.py
+  s_d9b3c014c5ea55::t_2f2c54b17c6bf4 1-47
+source/candidate/run_catalog.py
+  s_d9b3c014c5ea55::t_5a757dbf673442 1-156
+source/candidate/runtime_engine.py
+  s_d9b3c014c5ea55::t_6361668b2a192b 1-108
+source/candidate/scope_graph.py
+  s_d9b3c014c5ea55::t_dee335bce190f9 1-1887
+source/candidate/semantic_frames.py
+  s_d9b3c014c5ea55::t_ae33a63bdfbef1 1-752
+source/candidate/session_context.py
+  s_d9b3c014c5ea55::t_e40c874c563585 1-43
+source/candidate/source_snapshot.py
+  s_d9b3c014c5ea55::t_68db4ac564bf02 1-36
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "7bdaf261ae717595eaaf105a7eb4a8400e172b20",
+  "prompts": {},
+  "sessions": {
+    "s_d9b3c014c5ea55": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a162f5-c192-7ef2-8f5c-3b5d4e32f549",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "akramahmed38-gif <akram.ahmed38@gmail.com>"
+    }
+  }
+}
