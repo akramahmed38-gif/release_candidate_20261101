@@ -1,0 +1,2527 @@
+{
+  "schema": "FOURTEEN_UNAPPROVED_CATALOG_FIXTURES",
+  "authorization_reference": "User Phase 2 bounded technical expansion only; approvals pending",
+  "service_profiles": {
+    "axis_pay": {
+      "service_id": "axis_pay",
+      "name": "AXIS Pay / AXIS Wallet",
+      "family": "wallets",
+      "aliases": [
+        "اكسس باي",
+        "اكسيس باي",
+        "محفظة اكسيس",
+        "axis",
+        "axis pay",
+        "اكسيس",
+        "AXIS Pay",
+        "axis wallet"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 24,
+      "related_source_count": 11,
+      "covered_topic_ids": [
+        "activation",
+        "deposit",
+        "documents",
+        "eligibility",
+        "exceptions",
+        "fees",
+        "kyc_identity",
+        "limits",
+        "promotions",
+        "quality_review",
+        "registration",
+        "risk_compliance",
+        "shipping",
+        "timeline",
+        "transfer",
+        "troubleshooting",
+        "withdrawal",
+        "workflow"
+      ],
+      "guide_path": "services/axis_pay.md",
+      "needs_original_source_verification": true
+    },
+    "qnb_wallet": {
+      "service_id": "qnb_wallet",
+      "name": "QNB Wallet",
+      "family": "wallets",
+      "aliases": [
+        "qnb wallet",
+        "محفظة qnb",
+        "qnb محفظة",
+        "محفظة كيو ان بي",
+        "qnb",
+        "كيو ان بي",
+        "كيو إن بي"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 82,
+      "related_source_count": 9,
+      "covered_topic_ids": [
+        "activation",
+        "deposit",
+        "documents",
+        "eligibility",
+        "exceptions",
+        "fees",
+        "general",
+        "kyc_identity",
+        "limits",
+        "overview",
+        "promotions",
+        "quality_review",
+        "registration",
+        "risk_compliance",
+        "shipping",
+        "timeline",
+        "transaction_codes",
+        "transfer",
+        "troubleshooting",
+        "withdrawal",
+        "workflow"
+      ],
+      "guide_path": "services/qnb_wallet.md",
+      "needs_original_source_verification": true
+    },
+    "adib_wallet": {
+      "service_id": "adib_wallet",
+      "name": "ADIB Wallet",
+      "family": "wallets",
+      "aliases": [
+        "adib wallet",
+        "محفظة adib",
+        "محفظة ابو ظبي",
+        "محفظة ابوظبي"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 8,
+      "related_source_count": 4,
+      "covered_topic_ids": [
+        "activation",
+        "deposit",
+        "documents",
+        "eligibility",
+        "exceptions",
+        "fees",
+        "kyc_identity",
+        "limits",
+        "quality_review",
+        "timeline",
+        "transfer",
+        "withdrawal",
+        "workflow"
+      ],
+      "guide_path": "services/adib_wallet.md",
+      "needs_original_source_verification": true
+    },
+    "wallets_general": {
+      "service_id": "wallets_general",
+      "name": "Electronic Wallets / المحافظ",
+      "family": "wallets",
+      "aliases": [
+        "wallets",
+        "المحافظ الالكترونية",
+        "المحافظ الإلكترونية",
+        "محافظ فوري بلس"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 11,
+      "related_source_count": 6,
+      "covered_topic_ids": [
+        "activation",
+        "deposit",
+        "fees",
+        "general",
+        "limits",
+        "payment",
+        "promotions",
+        "registration",
+        "shipping",
+        "timeline",
+        "transfer",
+        "withdrawal"
+      ],
+      "guide_path": "services/wallets_general.md",
+      "needs_original_source_verification": true
+    },
+    "adib_remittance": {
+      "service_id": "adib_remittance",
+      "name": "ADIB Remittance / حوالات أبوظبي",
+      "family": "remittance",
+      "aliases": [
+        "adib remittance",
+        "حوالة ابوظبي",
+        "حوالات مصرف ابو ظبي",
+        "صرف حوالة adib",
+        "حوالات مصرف أبوظبي"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 27,
+      "related_source_count": 8,
+      "covered_topic_ids": [
+        "documents",
+        "exceptions",
+        "kyc_identity",
+        "quality_review",
+        "registration",
+        "shipping",
+        "timeline",
+        "transaction_codes",
+        "transfer",
+        "withdrawal",
+        "workflow"
+      ],
+      "guide_path": "services/adib_remittance.md",
+      "needs_original_source_verification": true
+    },
+    "bdc_remittance": {
+      "service_id": "bdc_remittance",
+      "name": "Banque du Caire Remittance / حوالات بنك القاهرة",
+      "family": "remittance",
+      "aliases": [
+        "حوالات بنك القاهرة",
+        "حوالة بنك القاهرة",
+        "bdc remittance",
+        "banque du caire remittance"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 34,
+      "related_source_count": 9,
+      "covered_topic_ids": [
+        "documents",
+        "eligibility",
+        "exceptions",
+        "fees",
+        "general",
+        "kyc_identity",
+        "limits",
+        "registration",
+        "shipping",
+        "timeline",
+        "transaction_codes",
+        "transfer",
+        "withdrawal",
+        "workflow"
+      ],
+      "guide_path": "services/bdc_remittance.md",
+      "needs_original_source_verification": true
+    },
+    "united_bank_remittance": {
+      "service_id": "united_bank_remittance",
+      "name": "United Bank Remittance / حوالات المصرف المتحد",
+      "family": "remittance",
+      "aliases": [
+        "حوالات المصرف المتحد",
+        "حوالة المصرف المتحد",
+        "حوالات البنك المتحد"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 27,
+      "related_source_count": 8,
+      "covered_topic_ids": [
+        "documents",
+        "eligibility",
+        "exceptions",
+        "kyc_identity",
+        "payment",
+        "quality_review",
+        "shipping",
+        "timeline",
+        "transaction_codes",
+        "transfer",
+        "withdrawal",
+        "workflow"
+      ],
+      "guide_path": "services/united_bank_remittance.md",
+      "needs_original_source_verification": true
+    },
+    "yellow_card": {
+      "service_id": "yellow_card",
+      "name": "Yellow Card / الكارت الأصفر",
+      "family": "cards",
+      "aliases": [
+        "yellow card",
+        "الكارت الأصفر",
+        "الكارت الاصفر"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 46,
+      "related_source_count": 11,
+      "covered_topic_ids": [
+        "activation",
+        "deposit",
+        "documents",
+        "eligibility",
+        "exceptions",
+        "fees",
+        "kyc_identity",
+        "limits",
+        "overview",
+        "payment",
+        "promotions",
+        "quality_review",
+        "registration",
+        "reports",
+        "shipping",
+        "timeline",
+        "transaction_codes",
+        "troubleshooting",
+        "withdrawal",
+        "workflow"
+      ],
+      "guide_path": "services/yellow_card.md",
+      "needs_original_source_verification": true
+    },
+    "azimut": {
+      "service_id": "azimut",
+      "name": "Azimut / أزيموت",
+      "family": "investments",
+      "aliases": [
+        "azimut",
+        "ازيموت",
+        "أزيموت"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 67,
+      "related_source_count": 13,
+      "covered_topic_ids": [
+        "deposit",
+        "documents",
+        "eligibility",
+        "exceptions",
+        "fees",
+        "general",
+        "kyc_identity",
+        "limits",
+        "payment",
+        "promotions",
+        "quality_review",
+        "registration",
+        "risk_compliance",
+        "timeline",
+        "transfer",
+        "troubleshooting",
+        "withdrawal",
+        "workflow"
+      ],
+      "guide_path": "services/azimut.md",
+      "needs_original_source_verification": true
+    },
+    "blnk": {
+      "service_id": "blnk",
+      "name": "BLNK",
+      "family": "consumer_finance",
+      "aliases": [
+        "blnk",
+        "بلنك"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 39,
+      "related_source_count": 11,
+      "covered_topic_ids": [
+        "activation",
+        "documents",
+        "exceptions",
+        "fees",
+        "general",
+        "kyc_identity",
+        "limits",
+        "overview",
+        "payment",
+        "promotions",
+        "quality_review",
+        "risk_compliance",
+        "shipping",
+        "timeline",
+        "transaction_codes",
+        "troubleshooting",
+        "withdrawal",
+        "workflow"
+      ],
+      "guide_path": "services/blnk.md",
+      "needs_original_source_verification": true
+    },
+    "mogo": {
+      "service_id": "mogo",
+      "name": "MOGO",
+      "family": "consumer_finance",
+      "aliases": [
+        "mogo",
+        "موجو"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 62,
+      "related_source_count": 13,
+      "covered_topic_ids": [
+        "activation",
+        "documents",
+        "eligibility",
+        "exceptions",
+        "fees",
+        "general",
+        "kyc_identity",
+        "limits",
+        "payment",
+        "quality_review",
+        "registration",
+        "shipping",
+        "timeline",
+        "transaction_codes",
+        "troubleshooting",
+        "withdrawal",
+        "workflow"
+      ],
+      "guide_path": "services/mogo.md",
+      "needs_original_source_verification": true
+    },
+    "contact_now": {
+      "service_id": "contact_now",
+      "name": "Contact Now",
+      "family": "consumer_finance",
+      "aliases": [
+        "contact now",
+        "كونتاكت ناو",
+        "contact"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 0,
+      "related_source_count": 7,
+      "covered_topic_ids": [],
+      "guide_path": "services/contact_now.md",
+      "needs_original_source_verification": true
+    },
+    "money_fellows": {
+      "service_id": "money_fellows",
+      "name": "Money Fellows",
+      "family": "consumer_finance",
+      "aliases": [
+        "money fellows",
+        "ماني فيلوز",
+        "مونى فيلوز"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 30,
+      "related_source_count": 13,
+      "covered_topic_ids": [
+        "activation",
+        "documents",
+        "eligibility",
+        "exceptions",
+        "general",
+        "kyc_identity",
+        "overview",
+        "shipping",
+        "timeline",
+        "troubleshooting",
+        "workflow"
+      ],
+      "guide_path": "services/money_fellows.md",
+      "needs_original_source_verification": true
+    },
+    "fawry_taqseet": {
+      "service_id": "fawry_taqseet",
+      "name": "My Fawry Taqseet / ماي فوري تقسيط",
+      "family": "consumer_finance",
+      "aliases": [
+        "fawry taqseet",
+        "my fawry taqseet",
+        "ماي فوري تقسيط",
+        "ماي فورى تقسيط",
+        "فوري تقسيط"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 45,
+      "related_source_count": 33,
+      "covered_topic_ids": [
+        "activation",
+        "documents",
+        "eligibility",
+        "exceptions",
+        "fees",
+        "kyc_identity",
+        "limits",
+        "overview",
+        "payment",
+        "quality_review",
+        "shipping",
+        "timeline",
+        "transfer",
+        "troubleshooting",
+        "withdrawal",
+        "workflow"
+      ],
+      "guide_path": "services/fawry_taqseet.md",
+      "needs_original_source_verification": true
+    },
+    "fawry_yawmy": {
+      "service_id": "fawry_yawmy",
+      "name": "Fawry Yawmy / فوري يومي",
+      "family": "consumer_finance",
+      "aliases": [
+        "fawry yawmy",
+        "فوري يومي",
+        "فورى يومى"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 76,
+      "related_source_count": 35,
+      "covered_topic_ids": [
+        "activation",
+        "documents",
+        "eligibility",
+        "exceptions",
+        "fees",
+        "general",
+        "kyc_identity",
+        "limits",
+        "overview",
+        "payment",
+        "promotions",
+        "quality_review",
+        "registration",
+        "reports",
+        "risk_compliance",
+        "shipping",
+        "timeline",
+        "troubleshooting",
+        "withdrawal",
+        "workflow"
+      ],
+      "guide_path": "services/fawry_yawmy.md",
+      "needs_original_source_verification": true
+    },
+    "mashreq_neo": {
+      "service_id": "mashreq_neo",
+      "name": "Mashreq NEO / المشرق",
+      "family": "fulfillment",
+      "aliases": [
+        "mashreq neo",
+        "mashreq",
+        "المشرق",
+        "بنك المشرق"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 1,
+      "related_source_count": 22,
+      "covered_topic_ids": [
+        "documents",
+        "kyc_identity",
+        "timeline",
+        "workflow"
+      ],
+      "guide_path": "services/mashreq_neo.md",
+      "needs_original_source_verification": true
+    },
+    "egypt_trust": {
+      "service_id": "egypt_trust",
+      "name": "Egypt Trust / إيجيبت تراست",
+      "family": "fulfillment",
+      "aliases": [
+        "egypt trust",
+        "ايجيبت تراست",
+        "إيجيبت تراست"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 36,
+      "related_source_count": 23,
+      "covered_topic_ids": [
+        "documents",
+        "exceptions",
+        "fees",
+        "general",
+        "kyc_identity",
+        "limits",
+        "overview",
+        "quality_review",
+        "shipping",
+        "timeline",
+        "troubleshooting",
+        "workflow"
+      ],
+      "guide_path": "services/egypt_trust.md",
+      "needs_original_source_verification": true
+    },
+    "microfinance": {
+      "service_id": "microfinance",
+      "name": "Fawry Microfinance / التمويل",
+      "family": "microfinance",
+      "aliases": [
+        "microfinance",
+        "التمويل متناهي الصغر",
+        "تمويل متناهي الصغر",
+        "fawry microfinance",
+        "تمويل فوري"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 96,
+      "related_source_count": 8,
+      "covered_topic_ids": [
+        "deposit",
+        "documents",
+        "eligibility",
+        "exceptions",
+        "fees",
+        "general",
+        "kyc_identity",
+        "limits",
+        "payment",
+        "quality_review",
+        "risk_compliance",
+        "shipping",
+        "timeline",
+        "troubleshooting",
+        "withdrawal",
+        "workflow"
+      ],
+      "guide_path": "services/microfinance.md",
+      "needs_original_source_verification": true
+    },
+    "maashy": {
+      "service_id": "maashy",
+      "name": "Maashy / معاشي",
+      "family": "insurance",
+      "aliases": [
+        "maashy",
+        "معاشى",
+        "معاشي",
+        "masr life"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 56,
+      "related_source_count": 14,
+      "covered_topic_ids": [
+        "activation",
+        "documents",
+        "eligibility",
+        "exceptions",
+        "general",
+        "kyc_identity",
+        "limits",
+        "overview",
+        "payment",
+        "promotions",
+        "quality_review",
+        "shipping",
+        "timeline",
+        "troubleshooting",
+        "withdrawal",
+        "workflow"
+      ],
+      "guide_path": "services/maashy.md",
+      "needs_original_source_verification": true
+    },
+    "fawry_insurance": {
+      "service_id": "fawry_insurance",
+      "name": "Fawry Insurance / التأمين",
+      "family": "insurance",
+      "aliases": [
+        "fawry insurance",
+        "فوري للتأمين",
+        "التأمين",
+        "fawry car insurance"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 46,
+      "related_source_count": 31,
+      "covered_topic_ids": [
+        "activation",
+        "documents",
+        "eligibility",
+        "exceptions",
+        "fees",
+        "general",
+        "limits",
+        "overview",
+        "payment",
+        "promotions",
+        "quality_review",
+        "registration",
+        "reports",
+        "shipping",
+        "timeline",
+        "troubleshooting",
+        "withdrawal"
+      ],
+      "guide_path": "services/fawry_insurance.md",
+      "needs_original_source_verification": true
+    },
+    "pudo": {
+      "service_id": "pudo",
+      "name": "PUDO / Pargo Shipping",
+      "family": "shipping",
+      "aliases": [
+        "pudo",
+        "pargo",
+        "بارجو",
+        "شركات الشحن",
+        "شحن الطرود"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 0,
+      "related_source_count": 18,
+      "covered_topic_ids": [],
+      "guide_path": "services/pudo.md",
+      "needs_original_source_verification": true
+    },
+    "super_fawry": {
+      "service_id": "super_fawry",
+      "name": "Super Fawry System",
+      "family": "platform",
+      "aliases": [
+        "super fawry",
+        "سوبر فوري",
+        "سوبر فورى",
+        "superfawry"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 27,
+      "related_source_count": 32,
+      "covered_topic_ids": [
+        "activation",
+        "documents",
+        "exceptions",
+        "kyc_identity",
+        "overview",
+        "payment",
+        "promotions",
+        "quality_review",
+        "registration",
+        "shipping",
+        "timeline",
+        "transaction_codes",
+        "troubleshooting",
+        "withdrawal",
+        "workflow"
+      ],
+      "guide_path": "services/super_fawry.md",
+      "needs_original_source_verification": true
+    },
+    "pos": {
+      "service_id": "pos",
+      "name": "POS / فوري POS",
+      "family": "operations",
+      "aliases": [
+        "pos",
+        "ماكينة فوري",
+        "ماكينات فوري",
+        "ماكينة فورى",
+        "pax",
+        "pos pax",
+        "جهاز باكس"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 0,
+      "related_source_count": 7,
+      "covered_topic_ids": [],
+      "guide_path": "services/pos.md",
+      "needs_original_source_verification": true
+    },
+    "pos_maintenance": {
+      "service_id": "pos_maintenance",
+      "name": "POS Maintenance / صيانة POS",
+      "family": "operations",
+      "aliases": [
+        "pos maintenance",
+        "صيانة pos",
+        "صيانة الماكينات",
+        "صيانة ماكينة"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 37,
+      "related_source_count": 4,
+      "covered_topic_ids": [
+        "activation",
+        "exceptions",
+        "fees",
+        "general",
+        "payment",
+        "shipping",
+        "transaction_codes",
+        "troubleshooting",
+        "workflow"
+      ],
+      "guide_path": "services/pos_maintenance.md",
+      "needs_original_source_verification": true
+    },
+    "quality_kyc": {
+      "service_id": "quality_kyc",
+      "name": "Quality Assurance and KYC",
+      "family": "operations",
+      "aliases": [
+        "quality assurance",
+        "الجودة",
+        "مراجعة المستندات",
+        "checker",
+        "kyc"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 19,
+      "related_source_count": 23,
+      "covered_topic_ids": [
+        "documents",
+        "exceptions",
+        "kyc_identity",
+        "quality_review",
+        "registration",
+        "shipping",
+        "timeline",
+        "transfer",
+        "withdrawal",
+        "workflow"
+      ],
+      "guide_path": "services/quality_kyc.md",
+      "needs_original_source_verification": true
+    },
+    "aml_compliance": {
+      "service_id": "aml_compliance",
+      "name": "AML and Compliance",
+      "family": "compliance",
+      "aliases": [
+        "aml",
+        "مكافحة غسيل الأموال",
+        "مكافحة غسل الاموال",
+        "fcc"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 0,
+      "related_source_count": 6,
+      "covered_topic_ids": [],
+      "guide_path": "services/aml_compliance.md",
+      "needs_original_source_verification": true
+    },
+    "cash_operations": {
+      "service_id": "cash_operations",
+      "name": "Cash Operations",
+      "family": "operations",
+      "aliases": [
+        "cash operations",
+        "عمليات النقدية",
+        "الخزينة",
+        "cash & fcc"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 14,
+      "related_source_count": 12,
+      "covered_topic_ids": [
+        "activation",
+        "documents",
+        "exceptions",
+        "kyc_identity",
+        "overview",
+        "payment",
+        "promotions",
+        "quality_review",
+        "shipping",
+        "timeline",
+        "transaction_codes",
+        "troubleshooting",
+        "withdrawal",
+        "workflow"
+      ],
+      "guide_path": "services/cash_operations.md",
+      "needs_original_source_verification": true
+    },
+    "myfawry_app": {
+      "service_id": "myfawry_app",
+      "name": "My Fawry App",
+      "family": "digital",
+      "aliases": [
+        "my fawry app",
+        "myfawry app",
+        "تطبيق ماي فوري",
+        "my fawry application"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 0,
+      "related_source_count": 2,
+      "covered_topic_ids": [],
+      "guide_path": "services/myfawry_app.md",
+      "needs_original_source_verification": true
+    },
+    "soft_skills": {
+      "service_id": "soft_skills",
+      "name": "Soft Skills and Sales",
+      "family": "training",
+      "aliases": [
+        "soft skills",
+        "sales skills",
+        "مهارات البيع"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 0,
+      "related_source_count": 2,
+      "covered_topic_ids": [],
+      "guide_path": "services/soft_skills.md",
+      "needs_original_source_verification": true
+    }
+  },
+  "source_content_generation": "9551abd14708840e63481c7d",
+  "expected_embedding_model": "bge-m3:latest",
+  "expected_embedding_digest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab",
+  "source_evidence_unit_id": "source-verified-axis-guide-activation-198dffbc8ab1",
+  "source_unit_text_sha256": "779db86d8e0f6b628bf7a5a5da67273da01490af86a8137ec6cabcb0a525774b",
+  "facts": [
+    {
+      "fact_id": "F0010",
+      "service_id": "axis_pay",
+      "aspect": "opening_fee",
+      "arabic": "فتح المحفظة مجاني تمامًا بـ 0 جنيه رسوم اشتراك.",
+      "english": "Opening the wallet has no subscription fee: 0 EGP.",
+      "arabic_sha256": "0f5c77a6f32ef0c0870da0032b5c273e11fe1acd0a6e8e25397bfcf88f70d269",
+      "english_sha256": "d0e24ff638db2dbe14cb1cc28b0189242251e3211318ba29bce83af7425093be",
+      "source_unit_id": "source-verified-axis-guide-activation-198dffbc8ab1",
+      "unit_text_sha256": "779db86d8e0f6b628bf7a5a5da67273da01490af86a8137ec6cabcb0a525774b",
+      "scope": {
+        "fee_egp": 0
+      },
+      "normal_runtime_eligible": false,
+      "business_approved": false,
+      "human_fidelity_approved": false,
+      "test_fixture_only": true,
+      "source_document": "daily_brief/axis_wallet_sales_guide.pdf",
+      "source_sha256": "198dffbc8ab1ce2887356e91fab9d241ea3f08c35216d2b32a1062e64439abce",
+      "locator": {
+        "type": "page",
+        "page": "1",
+        "line_start": null,
+        "line_end": null,
+        "source_segments": null
+      },
+      "dependencies": [],
+      "sequence_order": null,
+      "selection_tags": [
+        "opening_fee"
+      ],
+      "required_channel": null,
+      "atomic_group": null,
+      "service_label": "AXIS Pay / AXIS Wallet",
+      "view_source_sha256": "198dffbc8ab1ce2887356e91fab9d241ea3f08c35216d2b32a1062e64439abce",
+      "revision": 1,
+      "authorized_fixture_revision": 1,
+      "validation_topic": "activation"
+    },
+    {
+      "fact_id": "F0011",
+      "service_id": "axis_pay",
+      "aspect": "initial_deposit",
+      "arabic": "التفعيل لحظي عند إيداع 20 جنيه كحد أدنى لحساب العميل.",
+      "english": "Activation is immediate upon depositing a minimum of 20 EGP into the customer account.",
+      "arabic_sha256": "ed88272e9cddca6f3c493f9891620ec39ed3df072afc5d18f799b805a018554b",
+      "english_sha256": "b72dda206c441f59728cf266435b295b0f835f9a97ef4e507221c7af86ab070b",
+      "source_unit_id": "source-verified-axis-guide-activation-198dffbc8ab1",
+      "unit_text_sha256": "779db86d8e0f6b628bf7a5a5da67273da01490af86a8137ec6cabcb0a525774b",
+      "scope": {
+        "minimum_initial_deposit_egp": 20,
+        "timing": "immediate upon deposit"
+      },
+      "normal_runtime_eligible": false,
+      "business_approved": false,
+      "human_fidelity_approved": false,
+      "test_fixture_only": true,
+      "source_document": "daily_brief/axis_wallet_sales_guide.pdf",
+      "source_sha256": "198dffbc8ab1ce2887356e91fab9d241ea3f08c35216d2b32a1062e64439abce",
+      "locator": {
+        "type": "page",
+        "page": "1",
+        "line_start": null,
+        "line_end": null,
+        "source_segments": null
+      },
+      "dependencies": [],
+      "sequence_order": null,
+      "selection_tags": [
+        "initial_deposit",
+        "balance_treatment"
+      ],
+      "required_channel": null,
+      "atomic_group": null,
+      "service_label": "AXIS Pay / AXIS Wallet",
+      "view_source_sha256": "198dffbc8ab1ce2887356e91fab9d241ea3f08c35216d2b32a1062e64439abce",
+      "revision": 1,
+      "authorized_fixture_revision": 1,
+      "validation_topic": "activation"
+    },
+    {
+      "fact_id": "F0012",
+      "service_id": "axis_pay",
+      "aspect": "balance_treatment",
+      "arabic": "إيداع مبلغ 20 جنيه مصري كحد أدنى (يستقر في رصيد العميل).",
+      "english": "The initial AXIS Pay deposit of at least EGP 20 remains in the customer’s balance.",
+      "arabic_sha256": "903dd1cf745e1bee19ed4f2b3927bc246c3107d2e0346e7d39cfd23676e4e902",
+      "english_sha256": "42734b52ea9e8a44d3d47e3390875f7d63dcd85d0a79ed8d571b2aa0cf06125c",
+      "source_unit_id": "source-verified-axis-guide-activation-198dffbc8ab1",
+      "unit_text_sha256": "779db86d8e0f6b628bf7a5a5da67273da01490af86a8137ec6cabcb0a525774b",
+      "scope": {
+        "minimum_initial_deposit_egp": 20,
+        "balance_treatment": "credited to customer balance"
+      },
+      "normal_runtime_eligible": false,
+      "business_approved": false,
+      "human_fidelity_approved": false,
+      "test_fixture_only": true,
+      "source_document": "daily_brief/axis_wallet_sales_guide.pdf",
+      "source_sha256": "198dffbc8ab1ce2887356e91fab9d241ea3f08c35216d2b32a1062e64439abce",
+      "locator": {
+        "type": "page",
+        "page": "1",
+        "line_start": null,
+        "line_end": null,
+        "source_segments": null
+      },
+      "dependencies": [
+        "F0011"
+      ],
+      "sequence_order": null,
+      "selection_tags": [
+        "initial_deposit",
+        "balance_treatment"
+      ],
+      "required_channel": null,
+      "atomic_group": null,
+      "service_label": "AXIS Pay / AXIS Wallet",
+      "view_source_sha256": "198dffbc8ab1ce2887356e91fab9d241ea3f08c35216d2b32a1062e64439abce",
+      "revision": 1,
+      "authorized_fixture_revision": 1,
+      "validation_topic": "activation"
+    },
+    {
+      "fact_id": "F0073",
+      "service_id": "qnb_wallet",
+      "aspect": "initial_deposit",
+      "arabic": "تفعيل QNB Wallet يكون لحظيًا بشرط إيداع حد أدنى:\n\n**20 جنيه**",
+      "english": "QNB Wallet activation is immediate provided the customer deposits at least 20 EGP.",
+      "arabic_sha256": "45f32b3f695e8fee7a444146d5fe6ffd149f1d96db6ab9f005012fc63f5f874f",
+      "english_sha256": "168ac515a5f2f1f9c255c76d09e56e9692ef7b1eb3542a093efce8c807680f8d",
+      "source_document": "KnowledgeBase/Articles/Wallets_ART.md",
+      "source_sha256": "5e5ffd50f6edd59331690c626731fcb4496a916513174538c871cc606c5d62bb",
+      "source_unit_id": "KU-3df6287f9511c6cd",
+      "unit_text_sha256": "fdfffea5c86d049d953f6ff42146e53839c89e4f27b3107e4a575dee1c3ac060",
+      "locator": {
+        "type": "lines",
+        "page": null,
+        "line_start": 161,
+        "line_end": 165,
+        "source_segments": null
+      },
+      "scope": {
+        "minimum_initial_deposit_egp": 20,
+        "timing": "immediate upon deposit"
+      },
+      "dependencies": [],
+      "sequence_order": null,
+      "normal_runtime_eligible": false,
+      "business_approved": false,
+      "human_fidelity_approved": false,
+      "test_fixture_only": true,
+      "selection_tags": [
+        "initial_deposit"
+      ],
+      "required_channel": null,
+      "atomic_group": null,
+      "service_label": "QNB Wallet",
+      "view_source_sha256": "5e5ffd50f6edd59331690c626731fcb4496a916513174538c871cc606c5d62bb",
+      "revision": 1,
+      "authorized_fixture_revision": 1,
+      "validation_topic": "activation"
+    },
+    {
+      "fact_id": "F0037",
+      "service_id": "azimut",
+      "aspect": "workflow",
+      "arabic": "يتم فتح تطبيق MyFawry",
+      "english": "Open the MyFawry app.",
+      "arabic_sha256": "aee1df731c0fbd8653a409eacfad0f669978c302189a0306b541aba13c7c431e",
+      "english_sha256": "aa7d912428948470885ca374a2d38f017a6be537238d50efe3f27002b28a5d33",
+      "source_document": "KnowledgeBase/Articles/AZIMUT_ART.md",
+      "source_sha256": "5185152563e646a26818199393a0c780e177121191048fbe3a7845bc3cf187cf",
+      "source_unit_id": "KU-6493927fb4e6b40f",
+      "unit_text_sha256": "3554a71ff7f810daa30cd8ba578a89898b8123d4970cad3a2cf75cd975f0c8b9",
+      "locator": {
+        "type": "lines",
+        "page": null,
+        "line_start": 434,
+        "line_end": 434,
+        "source_segments": null,
+        "exact_assertion_lines": [
+          434
+        ]
+      },
+      "scope": {
+        "procedure": "start investing via MyFawry",
+        "trigger": null
+      },
+      "dependencies": [],
+      "sequence_order": 1,
+      "normal_runtime_eligible": false,
+      "business_approved": false,
+      "human_fidelity_approved": false,
+      "test_fixture_only": true,
+      "selection_tags": [
+        "workflow"
+      ],
+      "required_channel": null,
+      "atomic_group": "KU-6493927fb4e6b40f",
+      "service_label": "Azimut / أزيموت",
+      "view_source_sha256": "5185152563e646a26818199393a0c780e177121191048fbe3a7845bc3cf187cf",
+      "revision": 1,
+      "authorized_fixture_revision": 1,
+      "procedure_contract": "myfawry_navigation",
+      "validation_topic": "workflow"
+    },
+    {
+      "fact_id": "F0038",
+      "service_id": "azimut",
+      "aspect": "workflow",
+      "arabic": "ثم الدخول إلى المحفظة",
+      "english": "Enter the wallet.",
+      "arabic_sha256": "07f7e6c0d805bd98fce321a56991f97c33e3f00d86d44e112df43b6561109944",
+      "english_sha256": "b93e4a3d1798595c50378d89c29439542de891a5ed27aaea2542129253da707e",
+      "source_document": "KnowledgeBase/Articles/AZIMUT_ART.md",
+      "source_sha256": "5185152563e646a26818199393a0c780e177121191048fbe3a7845bc3cf187cf",
+      "source_unit_id": "KU-6493927fb4e6b40f",
+      "unit_text_sha256": "3554a71ff7f810daa30cd8ba578a89898b8123d4970cad3a2cf75cd975f0c8b9",
+      "locator": {
+        "type": "lines",
+        "page": null,
+        "line_start": 434,
+        "line_end": 434,
+        "source_segments": null,
+        "exact_assertion_lines": [
+          434
+        ]
+      },
+      "scope": {
+        "procedure": "start investing via MyFawry",
+        "trigger": null
+      },
+      "dependencies": [
+        "F0037"
+      ],
+      "sequence_order": 2,
+      "normal_runtime_eligible": false,
+      "business_approved": false,
+      "human_fidelity_approved": false,
+      "test_fixture_only": true,
+      "selection_tags": [
+        "workflow"
+      ],
+      "required_channel": null,
+      "atomic_group": "KU-6493927fb4e6b40f",
+      "service_label": "Azimut / أزيموت",
+      "view_source_sha256": "5185152563e646a26818199393a0c780e177121191048fbe3a7845bc3cf187cf",
+      "revision": 1,
+      "authorized_fixture_revision": 1,
+      "procedure_contract": "myfawry_navigation",
+      "validation_topic": "workflow"
+    },
+    {
+      "fact_id": "F0039",
+      "service_id": "azimut",
+      "aspect": "workflow",
+      "arabic": "ثم مدخراتي",
+      "english": "Select My Savings.",
+      "arabic_sha256": "7db62a691d1eeac73e6f7d82c9e43fb1cd3217eb82c784b9d7f1950e733332fa",
+      "english_sha256": "5622fc65874feea95b961f827e1764e9d9fdc350f9d87e3a7c3fe6d2cbb7428c",
+      "source_document": "KnowledgeBase/Articles/AZIMUT_ART.md",
+      "source_sha256": "5185152563e646a26818199393a0c780e177121191048fbe3a7845bc3cf187cf",
+      "source_unit_id": "KU-6493927fb4e6b40f",
+      "unit_text_sha256": "3554a71ff7f810daa30cd8ba578a89898b8123d4970cad3a2cf75cd975f0c8b9",
+      "locator": {
+        "type": "lines",
+        "page": null,
+        "line_start": 434,
+        "line_end": 434,
+        "source_segments": null,
+        "exact_assertion_lines": [
+          434
+        ]
+      },
+      "scope": {
+        "procedure": "start investing via MyFawry",
+        "trigger": null
+      },
+      "dependencies": [
+        "F0038"
+      ],
+      "sequence_order": 3,
+      "normal_runtime_eligible": false,
+      "business_approved": false,
+      "human_fidelity_approved": false,
+      "test_fixture_only": true,
+      "selection_tags": [
+        "workflow"
+      ],
+      "required_channel": null,
+      "atomic_group": "KU-6493927fb4e6b40f",
+      "service_label": "Azimut / أزيموت",
+      "view_source_sha256": "5185152563e646a26818199393a0c780e177121191048fbe3a7845bc3cf187cf",
+      "revision": 1,
+      "authorized_fixture_revision": 1,
+      "procedure_contract": "myfawry_navigation",
+      "validation_topic": "workflow"
+    },
+    {
+      "fact_id": "F0040",
+      "service_id": "azimut",
+      "aspect": "workflow",
+      "arabic": "ثم إضافة صندوق",
+      "english": "Select Add Fund.",
+      "arabic_sha256": "4c1ac07e0264a8a5d6c00b2c3259cf299e2c0ad9174e19da64c8458ea8ad28fa",
+      "english_sha256": "8d8a3d0ffd6eef734a485ed679b47b5ebbfa7f441b67fa18ca88e75c09d170e5",
+      "source_document": "KnowledgeBase/Articles/AZIMUT_ART.md",
+      "source_sha256": "5185152563e646a26818199393a0c780e177121191048fbe3a7845bc3cf187cf",
+      "source_unit_id": "KU-6493927fb4e6b40f",
+      "unit_text_sha256": "3554a71ff7f810daa30cd8ba578a89898b8123d4970cad3a2cf75cd975f0c8b9",
+      "locator": {
+        "type": "lines",
+        "page": null,
+        "line_start": 434,
+        "line_end": 434,
+        "source_segments": null,
+        "exact_assertion_lines": [
+          434
+        ]
+      },
+      "scope": {
+        "procedure": "start investing via MyFawry",
+        "trigger": null
+      },
+      "dependencies": [
+        "F0039"
+      ],
+      "sequence_order": 4,
+      "normal_runtime_eligible": false,
+      "business_approved": false,
+      "human_fidelity_approved": false,
+      "test_fixture_only": true,
+      "selection_tags": [
+        "workflow"
+      ],
+      "required_channel": null,
+      "atomic_group": "KU-6493927fb4e6b40f",
+      "service_label": "Azimut / أزيموت",
+      "view_source_sha256": "5185152563e646a26818199393a0c780e177121191048fbe3a7845bc3cf187cf",
+      "revision": 1,
+      "authorized_fixture_revision": 1,
+      "procedure_contract": "myfawry_navigation",
+      "validation_topic": "workflow"
+    },
+    {
+      "fact_id": "F0041",
+      "service_id": "azimut",
+      "aspect": "workflow",
+      "arabic": "ثم اتباع خطوات التسجيل",
+      "english": "Follow the registration steps.",
+      "arabic_sha256": "5df2bc56dcca68826a1fa12c179a9c42d42e3258763f9af9c178d7f53af4f5cf",
+      "english_sha256": "0f79bb66ab7a3f1d46b35e1146b085b3cfd5c3d7446070099ee7fa50b432e23b",
+      "source_document": "KnowledgeBase/Articles/AZIMUT_ART.md",
+      "source_sha256": "5185152563e646a26818199393a0c780e177121191048fbe3a7845bc3cf187cf",
+      "source_unit_id": "KU-6493927fb4e6b40f",
+      "unit_text_sha256": "3554a71ff7f810daa30cd8ba578a89898b8123d4970cad3a2cf75cd975f0c8b9",
+      "locator": {
+        "type": "lines",
+        "page": null,
+        "line_start": 434,
+        "line_end": 434,
+        "source_segments": null,
+        "exact_assertion_lines": [
+          434
+        ]
+      },
+      "scope": {
+        "procedure": "start investing via MyFawry",
+        "trigger": null
+      },
+      "dependencies": [
+        "F0040"
+      ],
+      "sequence_order": 5,
+      "normal_runtime_eligible": false,
+      "business_approved": false,
+      "human_fidelity_approved": false,
+      "test_fixture_only": true,
+      "selection_tags": [
+        "workflow"
+      ],
+      "required_channel": null,
+      "atomic_group": "KU-6493927fb4e6b40f",
+      "service_label": "Azimut / أزيموت",
+      "view_source_sha256": "5185152563e646a26818199393a0c780e177121191048fbe3a7845bc3cf187cf",
+      "revision": 1,
+      "authorized_fixture_revision": 1,
+      "procedure_contract": "myfawry_navigation",
+      "validation_topic": "workflow"
+    },
+    {
+      "fact_id": "F0042",
+      "service_id": "azimut",
+      "aspect": "workflow",
+      "arabic": "وزيارة أقرب فرع فوري بلس عند توجيه التطبيق للعميل.",
+      "english": "Visit the nearest Fawry Plus branch when the application directs the customer to do so.",
+      "arabic_sha256": "41fc22be4ad575f70f014b9330d8f2ebff9fcb137e47723079454a23922c0b32",
+      "english_sha256": "c6f0f700650f1a3966fcbe4f94b00565fea5181c3b6a0b72c6954147af9c6e6f",
+      "source_document": "KnowledgeBase/Articles/AZIMUT_ART.md",
+      "source_sha256": "5185152563e646a26818199393a0c780e177121191048fbe3a7845bc3cf187cf",
+      "source_unit_id": "KU-6493927fb4e6b40f",
+      "unit_text_sha256": "3554a71ff7f810daa30cd8ba578a89898b8123d4970cad3a2cf75cd975f0c8b9",
+      "locator": {
+        "type": "lines",
+        "page": null,
+        "line_start": 434,
+        "line_end": 434,
+        "source_segments": null,
+        "exact_assertion_lines": [
+          434
+        ]
+      },
+      "scope": {
+        "procedure": "start investing via MyFawry",
+        "trigger": "application directs branch visit"
+      },
+      "dependencies": [
+        "F0041"
+      ],
+      "sequence_order": 6,
+      "normal_runtime_eligible": false,
+      "business_approved": false,
+      "human_fidelity_approved": false,
+      "test_fixture_only": true,
+      "selection_tags": [
+        "workflow",
+        "branch_condition"
+      ],
+      "required_channel": null,
+      "atomic_group": "KU-6493927fb4e6b40f",
+      "service_label": "Azimut / أزيموت",
+      "view_source_sha256": "5185152563e646a26818199393a0c780e177121191048fbe3a7845bc3cf187cf",
+      "revision": 1,
+      "authorized_fixture_revision": 1,
+      "procedure_contract": "myfawry_navigation",
+      "validation_topic": "workflow"
+    },
+    {
+      "fact_id": "F0070",
+      "service_id": "qnb_wallet",
+      "aspect": "activation",
+      "arabic": "بطاقة رقم قومي سارية",
+      "english": "A valid national ID is required.",
+      "arabic_sha256": "7a0b6d73aea02f3e4a89421a1d21339ef0d3ac43c70b6b6590a6cf308ad010a3",
+      "english_sha256": "b849bcf811c8ac8257976e4b009820bae890d6d15b3ac47c9680430ef9e15992",
+      "source_document": "KnowledgeBase/Articles/Wallets_ART.md",
+      "source_sha256": "5e5ffd50f6edd59331690c626731fcb4496a916513174538c871cc606c5d62bb",
+      "source_unit_id": "KU-2e535bb485e1b346",
+      "unit_text_sha256": "0fd8bfdb953a474557f52c1a2971874c92f96caaf0e9a4c14b9c859676d85195",
+      "locator": {
+        "type": "lines",
+        "page": null,
+        "line_start": 424,
+        "line_end": 424,
+        "source_segments": null,
+        "exact_assertion_lines": [
+          424
+        ]
+      },
+      "scope": {
+        "transaction": "wallet opening/activation"
+      },
+      "dependencies": [],
+      "sequence_order": null,
+      "normal_runtime_eligible": false,
+      "business_approved": false,
+      "human_fidelity_approved": false,
+      "test_fixture_only": true,
+      "selection_tags": [
+        "identity"
+      ],
+      "required_channel": null,
+      "atomic_group": null,
+      "service_label": "QNB Wallet",
+      "view_source_sha256": "5e5ffd50f6edd59331690c626731fcb4496a916513174538c871cc606c5d62bb",
+      "revision": 1,
+      "authorized_fixture_revision": 1,
+      "validation_topic": "activation"
+    },
+    {
+      "fact_id": "F0071",
+      "service_id": "qnb_wallet",
+      "aspect": "activation",
+      "arabic": "ورقم موبايل مسجل باسم العميل",
+      "english": "The mobile number must be registered in the customer name.",
+      "arabic_sha256": "2906b75836c7b45ae055647395fe28039884ac59165b1d32dec0098a4413bb53",
+      "english_sha256": "c3aacb5cf9d7e7dd0f7dca535ef79a377ec62ff92b98679c13bbc6b1d9288904",
+      "source_document": "KnowledgeBase/Articles/Wallets_ART.md",
+      "source_sha256": "5e5ffd50f6edd59331690c626731fcb4496a916513174538c871cc606c5d62bb",
+      "source_unit_id": "KU-2e535bb485e1b346",
+      "unit_text_sha256": "0fd8bfdb953a474557f52c1a2971874c92f96caaf0e9a4c14b9c859676d85195",
+      "locator": {
+        "type": "lines",
+        "page": null,
+        "line_start": 424,
+        "line_end": 424,
+        "source_segments": null,
+        "exact_assertion_lines": [
+          424
+        ]
+      },
+      "scope": {
+        "transaction": "wallet opening/activation"
+      },
+      "dependencies": [],
+      "sequence_order": null,
+      "normal_runtime_eligible": false,
+      "business_approved": false,
+      "human_fidelity_approved": false,
+      "test_fixture_only": true,
+      "selection_tags": [
+        "phone_ownership"
+      ],
+      "required_channel": null,
+      "atomic_group": null,
+      "service_label": "QNB Wallet",
+      "view_source_sha256": "5e5ffd50f6edd59331690c626731fcb4496a916513174538c871cc606c5d62bb",
+      "revision": 1,
+      "authorized_fixture_revision": 1,
+      "validation_topic": "activation"
+    },
+    {
+      "fact_id": "F0072",
+      "service_id": "qnb_wallet",
+      "aspect": "activation",
+      "arabic": "وألا يكون على الرقم أي محفظة أخرى.",
+      "english": "No other wallet may already be linked to that mobile number.",
+      "arabic_sha256": "0945144146f2754859559c950610421c93b5858e8b001c372928c20d7bb5a8f4",
+      "english_sha256": "3f0dbcaaac81f4d712bb19dd11c56cd0c05d96cfb1e6ff26f344dbd8e466bb7d",
+      "source_document": "KnowledgeBase/Articles/Wallets_ART.md",
+      "source_sha256": "5e5ffd50f6edd59331690c626731fcb4496a916513174538c871cc606c5d62bb",
+      "source_unit_id": "KU-2e535bb485e1b346",
+      "unit_text_sha256": "0fd8bfdb953a474557f52c1a2971874c92f96caaf0e9a4c14b9c859676d85195",
+      "locator": {
+        "type": "lines",
+        "page": null,
+        "line_start": 424,
+        "line_end": 424,
+        "source_segments": null,
+        "exact_assertion_lines": [
+          424
+        ]
+      },
+      "scope": {
+        "transaction": "wallet opening/activation"
+      },
+      "dependencies": [],
+      "sequence_order": null,
+      "normal_runtime_eligible": false,
+      "business_approved": false,
+      "human_fidelity_approved": false,
+      "test_fixture_only": true,
+      "selection_tags": [
+        "existing_wallet"
+      ],
+      "required_channel": null,
+      "atomic_group": null,
+      "service_label": "QNB Wallet",
+      "view_source_sha256": "5e5ffd50f6edd59331690c626731fcb4496a916513174538c871cc606c5d62bb",
+      "revision": 1,
+      "authorized_fixture_revision": 1,
+      "validation_topic": "activation"
+    },
+    {
+      "fact_id": "F0076",
+      "service_id": "qnb_wallet",
+      "aspect": "withdrawal",
+      "arabic": "محفظة QNB Wallet — السحب النقدي من ATM: 1% من المبلغ بحد أدنى 4 جنيه.",
+      "english": "QNB Wallet ATM withdrawals cost 1% of the amount, with a minimum of 4 EGP.",
+      "arabic_sha256": "d1bf791cf6a9e91c3a8d4b0cade169e6544289977a09b6299b3618f83bebb4ae",
+      "english_sha256": "e04ad851e302d474436f29460771e6976d989166e0f337dde78a540b682dba42",
+      "source_document": "material/Training_Material/resource/Wallets محافظ/QNB Wallet/Material/1-Qnb Material.pdf",
+      "source_sha256": "767685d7f1a59e0b1d730613dfef5a53b0ce8e8eb6bb6ad064cb94833e7ef61e",
+      "source_unit_id": "source-reviewed-qnb-atm-fee-767685d7f1a5",
+      "unit_text_sha256": "d1bf791cf6a9e91c3a8d4b0cade169e6544289977a09b6299b3618f83bebb4ae",
+      "locator": {
+        "type": "page",
+        "page": "4",
+        "line_start": null,
+        "line_end": null,
+        "source_segments": null
+      },
+      "scope": {
+        "channel": "ATM",
+        "rate_percent": 1,
+        "minimum_fee_egp": 4
+      },
+      "dependencies": [],
+      "sequence_order": null,
+      "normal_runtime_eligible": false,
+      "business_approved": false,
+      "human_fidelity_approved": false,
+      "test_fixture_only": true,
+      "selection_tags": [
+        "withdrawal"
+      ],
+      "required_channel": "atm",
+      "atomic_group": null,
+      "service_label": "QNB Wallet",
+      "view_source_sha256": "767685d7f1a59e0b1d730613dfef5a53b0ce8e8eb6bb6ad064cb94833e7ef61e",
+      "revision": 1,
+      "authorized_fixture_revision": 1,
+      "validation_topic": "activation"
+    },
+    {
+      "fact_id": "F0001",
+      "service_id": "axis_pay",
+      "aspect": "deposit",
+      "arabic": "من فوري بلس: **1% من المبلغ**.",
+      "english": "Deposits through Fawry Plus cost 1% of the deposited amount.",
+      "arabic_sha256": "132eb881eb3ba72ea1cea166576654d4545829a55b362fb5dee46ebe64145ed9",
+      "english_sha256": "1fa985afb95f691c17792c8b11694803f70709e599ed2818c2a1e0adcd35c213",
+      "source_document": "KnowledgeBase/Articles/Wallets_ART.md",
+      "source_sha256": "5e5ffd50f6edd59331690c626731fcb4496a916513174538c871cc606c5d62bb",
+      "source_unit_id": "KU-ecf4b4d879f5c563",
+      "unit_text_sha256": "5ba206d5bdbab2a16e36ffc9e8caf5dc7b6858c028ef4fb8f4795818c5f43a61",
+      "locator": {
+        "type": "lines",
+        "page": null,
+        "line_start": 214,
+        "line_end": 221,
+        "source_segments": null,
+        "exact_assertion_lines": [
+          216
+        ]
+      },
+      "scope": {
+        "transaction": "cash_in",
+        "channel": "Fawry Plus",
+        "rate_percent": 1
+      },
+      "dependencies": [],
+      "sequence_order": null,
+      "atomic_group": null,
+      "normal_runtime_eligible": false,
+      "business_approved": false,
+      "human_fidelity_approved": false,
+      "test_fixture_only": true,
+      "selection_tags": [
+        "deposit_tariff"
+      ],
+      "required_channel": "fawry_plus",
+      "service_label": "AXIS Pay / AXIS Wallet",
+      "view_source_sha256": "5e5ffd50f6edd59331690c626731fcb4496a916513174538c871cc606c5d62bb",
+      "revision": 1,
+      "authorized_fixture_revision": 1,
+      "validation_topic": "deposit"
+    },
+    {
+      "fact_id": "F0002",
+      "service_id": "axis_pay",
+      "aspect": "deposit",
+      "arabic": "من ATM: **مجانًا**.",
+      "english": "Deposits through ATMs are free.",
+      "arabic_sha256": "7a1424d10c1469c0ceae76b52ac13f5c36dea1640d881f0107cfe448fd3bc375",
+      "english_sha256": "3f5f4b0f5f99bd413635b20abf190bb618ffa2ef17f9951db66318bfa203f305",
+      "source_document": "KnowledgeBase/Articles/Wallets_ART.md",
+      "source_sha256": "5e5ffd50f6edd59331690c626731fcb4496a916513174538c871cc606c5d62bb",
+      "source_unit_id": "KU-ecf4b4d879f5c563",
+      "unit_text_sha256": "5ba206d5bdbab2a16e36ffc9e8caf5dc7b6858c028ef4fb8f4795818c5f43a61",
+      "locator": {
+        "type": "lines",
+        "page": null,
+        "line_start": 214,
+        "line_end": 221,
+        "source_segments": null,
+        "exact_assertion_lines": [
+          217
+        ]
+      },
+      "scope": {
+        "transaction": "cash_in",
+        "channel": "ATM",
+        "rate_percent": 0
+      },
+      "dependencies": [],
+      "sequence_order": null,
+      "atomic_group": null,
+      "normal_runtime_eligible": false,
+      "business_approved": false,
+      "human_fidelity_approved": false,
+      "test_fixture_only": true,
+      "selection_tags": [
+        "deposit_tariff"
+      ],
+      "required_channel": "atm",
+      "service_label": "AXIS Pay / AXIS Wallet",
+      "view_source_sha256": "5e5ffd50f6edd59331690c626731fcb4496a916513174538c871cc606c5d62bb",
+      "revision": 1,
+      "authorized_fixture_revision": 1,
+      "validation_topic": "deposit"
+    },
+    {
+      "fact_id": "F0013",
+      "service_id": "axis_pay",
+      "aspect": "activation",
+      "arabic": "بطاقة الرقم القومي سارية وأصلية",
+      "english": "Check that the national ID is valid and original.",
+      "arabic_sha256": "658fb4160b1040040d93e6b7a7289be6b49e5c3ca1fc9978ce12dc45a59c8ffa",
+      "english_sha256": "20cfea6420ce4c670b5fea318c986df0ca504693f6c26e74ce31fe1e77580db0",
+      "source_document": "daily_brief/axis_wallet_sales_guide.pdf",
+      "source_sha256": "198dffbc8ab1ce2887356e91fab9d241ea3f08c35216d2b32a1062e64439abce",
+      "source_unit_id": "REVIEW-AXIS-GUIDE-P3",
+      "unit_text_sha256": "0f3a09dec2361e70a3469f3c09c3c82f0072c1165382c2ac596eb35ff4592ba3",
+      "locator": {
+        "type": "page",
+        "page": 3,
+        "section": "KPIs and Compliance; line/data integrity and personal presence"
+      },
+      "scope": {
+        "required_document": "valid original national ID"
+      },
+      "dependencies": [],
+      "sequence_order": null,
+      "atomic_group": null,
+      "normal_runtime_eligible": false,
+      "business_approved": false,
+      "human_fidelity_approved": false,
+      "test_fixture_only": true,
+      "selection_tags": [
+        "identity"
+      ],
+      "required_channel": null,
+      "service_label": "AXIS Pay / AXIS Wallet",
+      "view_source_sha256": "198dffbc8ab1ce2887356e91fab9d241ea3f08c35216d2b32a1062e64439abce",
+      "revision": 1,
+      "authorized_fixture_revision": 1,
+      "validation_topic": "activation"
+    },
+    {
+      "fact_id": "F0014",
+      "service_id": "axis_pay",
+      "aspect": "activation",
+      "arabic": "خط الموبايل مسجل باسم العميل",
+      "english": "The mobile line must be registered in the customer name.",
+      "arabic_sha256": "4b8344abc75ebf9d98c0ce27db2cb375fe22dd35e02c5d96104e31bc4eff2599",
+      "english_sha256": "6022f03dc599a4b95da1c0e9450354aa658f1c651d19e3726ddee70c4efd497e",
+      "source_document": "daily_brief/axis_wallet_sales_guide.pdf",
+      "source_sha256": "198dffbc8ab1ce2887356e91fab9d241ea3f08c35216d2b32a1062e64439abce",
+      "source_unit_id": "REVIEW-AXIS-GUIDE-P3",
+      "unit_text_sha256": "0f3a09dec2361e70a3469f3c09c3c82f0072c1165382c2ac596eb35ff4592ba3",
+      "locator": {
+        "type": "page",
+        "page": 3,
+        "section": "KPIs and Compliance; line/data integrity and personal presence"
+      },
+      "scope": {
+        "requirement": "customer-owned mobile line"
+      },
+      "dependencies": [],
+      "sequence_order": null,
+      "atomic_group": null,
+      "normal_runtime_eligible": false,
+      "business_approved": false,
+      "human_fidelity_approved": false,
+      "test_fixture_only": true,
+      "selection_tags": [
+        "phone_ownership"
+      ],
+      "required_channel": null,
+      "service_label": "AXIS Pay / AXIS Wallet",
+      "view_source_sha256": "198dffbc8ab1ce2887356e91fab9d241ea3f08c35216d2b32a1062e64439abce",
+      "revision": 1,
+      "authorized_fixture_revision": 1,
+      "validation_topic": "activation"
+    },
+    {
+      "fact_id": "F0015",
+      "service_id": "axis_pay",
+      "aspect": "activation",
+      "arabic": "ولا يحمل أي محفظة إلكترونية أخرى",
+      "english": "The mobile line must not carry another electronic wallet.",
+      "arabic_sha256": "5532dec10948cdc2cf34a294b21dbd1f94fbbac6e3f452caf84f0ecea0356ca1",
+      "english_sha256": "b30a7c3ef7d337b26eb972b4d59bf49bfd98c79e186256af42bebb5b76056d6d",
+      "source_document": "daily_brief/axis_wallet_sales_guide.pdf",
+      "source_sha256": "198dffbc8ab1ce2887356e91fab9d241ea3f08c35216d2b32a1062e64439abce",
+      "source_unit_id": "REVIEW-AXIS-GUIDE-P3",
+      "unit_text_sha256": "0f3a09dec2361e70a3469f3c09c3c82f0072c1165382c2ac596eb35ff4592ba3",
+      "locator": {
+        "type": "page",
+        "page": 3,
+        "section": "KPIs and Compliance; line/data integrity and personal presence"
+      },
+      "scope": {
+        "prohibition": "another wallet on the mobile line"
+      },
+      "dependencies": [],
+      "sequence_order": null,
+      "atomic_group": null,
+      "normal_runtime_eligible": false,
+      "business_approved": false,
+      "human_fidelity_approved": false,
+      "test_fixture_only": true,
+      "selection_tags": [
+        "existing_wallet"
+      ],
+      "required_channel": null,
+      "service_label": "AXIS Pay / AXIS Wallet",
+      "view_source_sha256": "198dffbc8ab1ce2887356e91fab9d241ea3f08c35216d2b32a1062e64439abce",
+      "revision": 1,
+      "authorized_fixture_revision": 1,
+      "validation_topic": "activation"
+    },
+    {
+      "fact_id": "F0018",
+      "service_id": "axis_pay",
+      "aspect": "activation",
+      "arabic": "عدم استخدام صور شاشات أو صور خارجية",
+      "english": "Do not use screenshots or externally supplied photographs for this process.",
+      "arabic_sha256": "3686918727c6bda4810bae70ad6287ae0f53db24f2baeb4a2581f2e21082342a",
+      "english_sha256": "627f1bc173e7e48a130680685c63b5eb42781d1335362ea5cc7464e764360756",
+      "source_document": "daily_brief/axis_wallet_sales_guide.pdf",
+      "source_sha256": "198dffbc8ab1ce2887356e91fab9d241ea3f08c35216d2b32a1062e64439abce",
+      "source_unit_id": "REVIEW-AXIS-GUIDE-P3",
+      "unit_text_sha256": "0f3a09dec2361e70a3469f3c09c3c82f0072c1165382c2ac596eb35ff4592ba3",
+      "locator": {
+        "type": "page",
+        "page": 3,
+        "section": "KPIs and Compliance; line/data integrity and personal presence"
+      },
+      "scope": {
+        "prohibition": "screenshots/external photographs"
+      },
+      "dependencies": [],
+      "sequence_order": null,
+      "atomic_group": null,
+      "normal_runtime_eligible": false,
+      "business_approved": false,
+      "human_fidelity_approved": false,
+      "test_fixture_only": true,
+      "selection_tags": [
+        "image_prohibition"
+      ],
+      "required_channel": null,
+      "service_label": "AXIS Pay / AXIS Wallet",
+      "view_source_sha256": "198dffbc8ab1ce2887356e91fab9d241ea3f08c35216d2b32a1062e64439abce",
+      "revision": 1,
+      "authorized_fixture_revision": 1,
+      "validation_topic": "activation"
+    },
+    {
+      "fact_id": "F0036",
+      "service_id": "adib_remittance",
+      "aspect": "transaction_codes",
+      "arabic": "كود خدمة صرف حوالة مصرف أبوظبي الإسلامي هو 73157.",
+      "english": "The ADIB remittance cash-out service code is 73157.",
+      "arabic_sha256": "db29f582f9479a7924887a476f0705343a111251292e50e9593f6ab78b6692f1",
+      "english_sha256": "716215427065b55fb1917556514a6a84d1c70b8caf296cdfd2c35c414bb3b85b",
+      "source_document": "KnowledgeBase/Articles/7wala_bank_abozabii_ART.md",
+      "source_sha256": "3c3ed10d91b5820d3b5d55aaf37f4f29425449c479b989b72c30163d4ccae090",
+      "source_unit_id": "KU-8d04194080502ab2",
+      "unit_text_sha256": "db29f582f9479a7924887a476f0705343a111251292e50e9593f6ab78b6692f1",
+      "locator": {
+        "type": "lines",
+        "page": null,
+        "line_start": 341,
+        "line_end": 341,
+        "source_segments": null,
+        "exact_assertion_lines": [
+          341
+        ]
+      },
+      "scope": {
+        "transaction": "ADIB remittance cash_out",
+        "service_code": "73157"
+      },
+      "dependencies": [],
+      "sequence_order": null,
+      "atomic_group": null,
+      "normal_runtime_eligible": false,
+      "business_approved": false,
+      "human_fidelity_approved": false,
+      "test_fixture_only": true,
+      "selection_tags": [
+        "transaction_codes"
+      ],
+      "required_channel": null,
+      "service_label": "ADIB Remittance / حوالات أبوظبي",
+      "view_source_sha256": "3c3ed10d91b5820d3b5d55aaf37f4f29425449c479b989b72c30163d4ccae090",
+      "revision": 1,
+      "authorized_fixture_revision": 1,
+      "validation_topic": "transaction_codes"
+    }
+  ],
+  "sources": {
+    "daily_brief/axis_wallet_sales_guide.pdf": "198dffbc8ab1ce2887356e91fab9d241ea3f08c35216d2b32a1062e64439abce",
+    "KnowledgeBase/Articles/Wallets_ART.md": "5e5ffd50f6edd59331690c626731fcb4496a916513174538c871cc606c5d62bb",
+    "KnowledgeBase/Articles/AZIMUT_ART.md": "5185152563e646a26818199393a0c780e177121191048fbe3a7845bc3cf187cf",
+    "material/Training_Material/resource/Wallets محافظ/QNB Wallet/Material/1-Qnb Material.pdf": "767685d7f1a59e0b1d730613dfef5a53b0ce8e8eb6bb6ad064cb94833e7ef61e",
+    "KnowledgeBase/Articles/7wala_bank_abozabii_ART.md": "3c3ed10d91b5820d3b5d55aaf37f4f29425449c479b989b72c30163d4ccae090"
+  },
+  "anchors": {
+    "source-verified-axis-guide-activation-198dffbc8ab1": {
+      "chunk_id": "learning-0174474637be11ae3b9072d96dfa4efb0a464ee1ade431cabc206d6ecaf2ed53",
+      "metadata": {
+        "content_library": "script_book",
+        "content_type": "ocr_text",
+        "extraction_method": "easyocr_full_page",
+        "location_label": "Page 1",
+        "location_type": "page",
+        "location_value": "1",
+        "source_name": "axis_wallet_sales_guide.pdf",
+        "source_path": "daily_brief/axis_wallet_sales_guide.pdf",
+        "source_sha256": "198dffbc8ab1ce2887356e91fab9d241ea3f08c35216d2b32a1062e64439abce",
+        "source_type": "pdf"
+      },
+      "prompt_text_sha256": "718abd3fa3f638948850647114d6bb3cd7beaa363d7773ca64fcb10625bede59",
+      "anchor_text_length": 896,
+      "verified_overlapping_anchor_ids": [
+        "learning-0174474637be11ae3b9072d96dfa4efb0a464ee1ade431cabc206d6ecaf2ed53"
+      ]
+    },
+    "KU-3df6287f9511c6cd": {
+      "chunk_id": "learning-ae76c70ecac1bfd6a659bc08bd8707f3044ffae816b770c6ee776f1b03cdd3b2",
+      "metadata": {
+        "chunk_index": 1,
+        "content_library": "curated_knowledge",
+        "content_type": "knowledge_base_text",
+        "extraction_method": "md_text",
+        "location_label": "Section 10",
+        "location_type": "section",
+        "location_value": "10",
+        "source_name": "Wallets_ART.md",
+        "source_path": "KnowledgeBase/Articles/Wallets_ART.md",
+        "source_sha256": "5e5ffd50f6edd59331690c626731fcb4496a916513174538c871cc606c5d62bb",
+        "source_type": "knowledge_base"
+      },
+      "prompt_text_sha256": "f8bc2ad2c62073f06058ab3507b487ad4f43343227b58ec0d0d4388e9ebe5d92",
+      "anchor_text_length": 106,
+      "verified_overlapping_anchor_ids": [
+        "learning-ae76c70ecac1bfd6a659bc08bd8707f3044ffae816b770c6ee776f1b03cdd3b2"
+      ]
+    },
+    "KU-6493927fb4e6b40f": {
+      "chunk_id": "learning-89e055914e0faa9f880cc92c1b9f089e93cf33f65fac036154c408eaf3a8f8be",
+      "metadata": {
+        "chunk_index": 1,
+        "content_library": "curated_knowledge",
+        "content_type": "knowledge_base_text",
+        "extraction_method": "md_text",
+        "location_label": "Section 6",
+        "location_type": "section",
+        "location_value": "6",
+        "source_name": "AZIMUT_ART.md",
+        "source_path": "KnowledgeBase/Articles/AZIMUT_ART.md",
+        "source_sha256": "5185152563e646a26818199393a0c780e177121191048fbe3a7845bc3cf187cf",
+        "source_type": "knowledge_base"
+      },
+      "prompt_text_sha256": "758034f59a513a16ff4f70018d865beeb6e337c6e51ca860f36e1b75e9822c82",
+      "anchor_text_length": 565,
+      "verified_overlapping_anchor_ids": [
+        "learning-89e055914e0faa9f880cc92c1b9f089e93cf33f65fac036154c408eaf3a8f8be",
+        "learning-0e219ede511b6dcabaa73d9bd49096fe1487220952ecc2e09db5ac0cc5920e38"
+      ]
+    },
+    "source-reviewed-qnb-atm-fee-767685d7f1a5": {
+      "chunk_id": "learning-75891c7fa2601797791ec40db2c3e55303f9e5938b8f418bd8080d494f3a636b",
+      "metadata": {
+        "content_library": "materials",
+        "content_type": "ocr_text",
+        "extraction_method": "easyocr_full_page",
+        "location_label": "Page 4",
+        "location_type": "page",
+        "location_value": "4",
+        "source_name": "1-Qnb Material.pdf",
+        "source_path": "material/Training_Material/resource/Wallets محافظ/QNB Wallet/Material/1-Qnb Material.pdf",
+        "source_sha256": "767685d7f1a59e0b1d730613dfef5a53b0ce8e8eb6bb6ad064cb94833e7ef61e",
+        "source_type": "pdf"
+      },
+      "prompt_text_sha256": "e744c6a5574aaa129f8bb7a5f38898a8a99993d11908c0f0876574597dae63d2",
+      "anchor_text_length": 674
+    },
+    "KU-2e535bb485e1b346": {
+      "chunk_id": "learning-95d36e1da54f7dfed8493a7c2add2ad1ec9f2677cf79765d3a54c3dcab46b70f",
+      "metadata": {
+        "chunk_index": 1,
+        "content_library": "curated_knowledge",
+        "content_type": "knowledge_base_text",
+        "extraction_method": "md_text",
+        "location_label": "Section 36",
+        "location_type": "section",
+        "location_value": "36",
+        "source_name": "Wallets_ART.md",
+        "source_path": "KnowledgeBase/Articles/Wallets_ART.md",
+        "source_sha256": "5e5ffd50f6edd59331690c626731fcb4496a916513174538c871cc606c5d62bb",
+        "source_type": "knowledge_base"
+      },
+      "prompt_text_sha256": "918ab619900e35639b416f98740db458a8b6bcafc4db20c413ab50c3d06e8251",
+      "anchor_text_length": 899
+    },
+    "KU-8d04194080502ab2": {
+      "chunk_id": "learning-bbc448b97d42192b1e31205187dfc6157133fa6634f87d821d51efa59fb7f532",
+      "metadata": {
+        "chunk_index": 1,
+        "content_library": "curated_knowledge",
+        "content_type": "knowledge_base_text",
+        "extraction_method": "md_text",
+        "location_label": "Section 21",
+        "location_type": "section",
+        "location_value": "21",
+        "source_name": "7wala_bank_abozabii_ART.md",
+        "source_path": "KnowledgeBase/Articles/7wala_bank_abozabii_ART.md",
+        "source_sha256": "3c3ed10d91b5820d3b5d55aaf37f4f29425449c479b989b72c30163d4ccae090",
+        "source_type": "knowledge_base"
+      },
+      "prompt_text_sha256": "fa9409fde84bde8ab1da15608f5bad726c09fb347954dba6838ddca2c8ddea89",
+      "anchor_text_length": 897
+    },
+    "KU-ecf4b4d879f5c563": {
+      "chunk_id": "learning-4797f13873042b19b7f0f484470ef7835a7bce9c25da6d30bd045d6c88200b37",
+      "metadata": {
+        "chunk_index": 1,
+        "content_library": "curated_knowledge",
+        "content_type": "knowledge_base_text",
+        "extraction_method": "md_text",
+        "location_label": "Section 16",
+        "location_type": "section",
+        "location_value": "16",
+        "source_name": "Wallets_ART.md",
+        "source_path": "KnowledgeBase/Articles/Wallets_ART.md",
+        "source_sha256": "5e5ffd50f6edd59331690c626731fcb4496a916513174538c871cc606c5d62bb",
+        "source_type": "knowledge_base"
+      },
+      "prompt_text_sha256": "f7225e003a82e68935cd62acbff7651e58dea5b491b3e45f291b1484068a299d",
+      "anchor_text_length": 181
+    },
+    "REVIEW-AXIS-GUIDE-P3": {
+      "chunk_id": "learning-7d079d4bc02e662aab2601589d801bde831e74fbeec658640a47448a5333409a",
+      "metadata": {
+        "content_library": "script_book",
+        "content_type": "ocr_text",
+        "extraction_method": "easyocr_full_page",
+        "location_label": "Page 3",
+        "location_type": "page",
+        "location_value": "3",
+        "source_name": "axis_wallet_sales_guide.pdf",
+        "source_path": "daily_brief/axis_wallet_sales_guide.pdf",
+        "source_sha256": "198dffbc8ab1ce2887356e91fab9d241ea3f08c35216d2b32a1062e64439abce",
+        "source_type": "pdf"
+      },
+      "prompt_text_sha256": "e5d449ec838325926b5df91786f7a587f1e1b9345e7631c521322898bc492651",
+      "anchor_text_length": 895
+    }
+  },
+  "held": [
+    "QNB provider tariff label conflict",
+    "QNB complete KYC/eligibility checklist",
+    "Azimut KYC document inventory",
+    "All other original facts outside selected ten"
+  ],
+  "fixture_default_service": "axis_pay",
+  "approval_boundary": "Technical fixture only; no fidelity/currentness approval inferred",
+  "authorized_test_ids": [
+    "F0010",
+    "F0011",
+    "F0012",
+    "F0073",
+    "F0037",
+    "F0038",
+    "F0039",
+    "F0040",
+    "F0041",
+    "F0042",
+    "F0070",
+    "F0071",
+    "F0072",
+    "F0076",
+    "F0001",
+    "F0002",
+    "F0013",
+    "F0014",
+    "F0015",
+    "F0018",
+    "F0036"
+  ],
+  "review_bindings": {
+    "F0010": {
+      "service_id": "axis_pay",
+      "source_document": "daily_brief/axis_wallet_sales_guide.pdf",
+      "source_sha256": "198dffbc8ab1ce2887356e91fab9d241ea3f08c35216d2b32a1062e64439abce",
+      "source_unit_id": "source-verified-axis-guide-activation-198dffbc8ab1",
+      "unit_text_sha256": "779db86d8e0f6b628bf7a5a5da67273da01490af86a8137ec6cabcb0a525774b",
+      "arabic_sha256": "0f5c77a6f32ef0c0870da0032b5c273e11fe1acd0a6e8e25397bfcf88f70d269",
+      "english_sha256": "d0e24ff638db2dbe14cb1cc28b0189242251e3211318ba29bce83af7425093be",
+      "locator": {
+        "type": "page",
+        "page": "1",
+        "line_start": null,
+        "line_end": null,
+        "source_segments": null
+      },
+      "scope": {
+        "fee_egp": 0
+      },
+      "validation_topic": "activation",
+      "selection_tags": [
+        "opening_fee"
+      ],
+      "required_channel": null,
+      "dependencies": []
+    },
+    "F0011": {
+      "service_id": "axis_pay",
+      "source_document": "daily_brief/axis_wallet_sales_guide.pdf",
+      "source_sha256": "198dffbc8ab1ce2887356e91fab9d241ea3f08c35216d2b32a1062e64439abce",
+      "source_unit_id": "source-verified-axis-guide-activation-198dffbc8ab1",
+      "unit_text_sha256": "779db86d8e0f6b628bf7a5a5da67273da01490af86a8137ec6cabcb0a525774b",
+      "arabic_sha256": "ed88272e9cddca6f3c493f9891620ec39ed3df072afc5d18f799b805a018554b",
+      "english_sha256": "b72dda206c441f59728cf266435b295b0f835f9a97ef4e507221c7af86ab070b",
+      "locator": {
+        "type": "page",
+        "page": "1",
+        "line_start": null,
+        "line_end": null,
+        "source_segments": null
+      },
+      "scope": {
+        "minimum_initial_deposit_egp": 20,
+        "timing": "immediate upon deposit"
+      },
+      "validation_topic": "activation",
+      "selection_tags": [
+        "initial_deposit",
+        "balance_treatment"
+      ],
+      "required_channel": null,
+      "dependencies": []
+    },
+    "F0012": {
+      "service_id": "axis_pay",
+      "source_document": "daily_brief/axis_wallet_sales_guide.pdf",
+      "source_sha256": "198dffbc8ab1ce2887356e91fab9d241ea3f08c35216d2b32a1062e64439abce",
+      "source_unit_id": "source-verified-axis-guide-activation-198dffbc8ab1",
+      "unit_text_sha256": "779db86d8e0f6b628bf7a5a5da67273da01490af86a8137ec6cabcb0a525774b",
+      "arabic_sha256": "903dd1cf745e1bee19ed4f2b3927bc246c3107d2e0346e7d39cfd23676e4e902",
+      "english_sha256": "42734b52ea9e8a44d3d47e3390875f7d63dcd85d0a79ed8d571b2aa0cf06125c",
+      "locator": {
+        "type": "page",
+        "page": "1",
+        "line_start": null,
+        "line_end": null,
+        "source_segments": null
+      },
+      "scope": {
+        "minimum_initial_deposit_egp": 20,
+        "balance_treatment": "credited to customer balance"
+      },
+      "validation_topic": "activation",
+      "selection_tags": [
+        "initial_deposit",
+        "balance_treatment"
+      ],
+      "required_channel": null,
+      "dependencies": [
+        "F0011"
+      ]
+    },
+    "F0073": {
+      "service_id": "qnb_wallet",
+      "source_document": "KnowledgeBase/Articles/Wallets_ART.md",
+      "source_sha256": "5e5ffd50f6edd59331690c626731fcb4496a916513174538c871cc606c5d62bb",
+      "source_unit_id": "KU-3df6287f9511c6cd",
+      "unit_text_sha256": "fdfffea5c86d049d953f6ff42146e53839c89e4f27b3107e4a575dee1c3ac060",
+      "arabic_sha256": "45f32b3f695e8fee7a444146d5fe6ffd149f1d96db6ab9f005012fc63f5f874f",
+      "english_sha256": "168ac515a5f2f1f9c255c76d09e56e9692ef7b1eb3542a093efce8c807680f8d",
+      "locator": {
+        "type": "lines",
+        "page": null,
+        "line_start": 161,
+        "line_end": 165,
+        "source_segments": null
+      },
+      "scope": {
+        "minimum_initial_deposit_egp": 20,
+        "timing": "immediate upon deposit"
+      },
+      "validation_topic": "activation",
+      "selection_tags": [
+        "initial_deposit"
+      ],
+      "required_channel": null,
+      "dependencies": []
+    },
+    "F0037": {
+      "service_id": "azimut",
+      "source_document": "KnowledgeBase/Articles/AZIMUT_ART.md",
+      "source_sha256": "5185152563e646a26818199393a0c780e177121191048fbe3a7845bc3cf187cf",
+      "source_unit_id": "KU-6493927fb4e6b40f",
+      "unit_text_sha256": "3554a71ff7f810daa30cd8ba578a89898b8123d4970cad3a2cf75cd975f0c8b9",
+      "arabic_sha256": "aee1df731c0fbd8653a409eacfad0f669978c302189a0306b541aba13c7c431e",
+      "english_sha256": "aa7d912428948470885ca374a2d38f017a6be537238d50efe3f27002b28a5d33",
+      "locator": {
+        "type": "lines",
+        "page": null,
+        "line_start": 434,
+        "line_end": 434,
+        "source_segments": null,
+        "exact_assertion_lines": [
+          434
+        ]
+      },
+      "scope": {
+        "procedure": "start investing via MyFawry",
+        "trigger": null
+      },
+      "validation_topic": "workflow",
+      "selection_tags": [
+        "workflow"
+      ],
+      "required_channel": null,
+      "dependencies": []
+    },
+    "F0038": {
+      "service_id": "azimut",
+      "source_document": "KnowledgeBase/Articles/AZIMUT_ART.md",
+      "source_sha256": "5185152563e646a26818199393a0c780e177121191048fbe3a7845bc3cf187cf",
+      "source_unit_id": "KU-6493927fb4e6b40f",
+      "unit_text_sha256": "3554a71ff7f810daa30cd8ba578a89898b8123d4970cad3a2cf75cd975f0c8b9",
+      "arabic_sha256": "07f7e6c0d805bd98fce321a56991f97c33e3f00d86d44e112df43b6561109944",
+      "english_sha256": "b93e4a3d1798595c50378d89c29439542de891a5ed27aaea2542129253da707e",
+      "locator": {
+        "type": "lines",
+        "page": null,
+        "line_start": 434,
+        "line_end": 434,
+        "source_segments": null,
+        "exact_assertion_lines": [
+          434
+        ]
+      },
+      "scope": {
+        "procedure": "start investing via MyFawry",
+        "trigger": null
+      },
+      "validation_topic": "workflow",
+      "selection_tags": [
+        "workflow"
+      ],
+      "required_channel": null,
+      "dependencies": [
+        "F0037"
+      ]
+    },
+    "F0039": {
+      "service_id": "azimut",
+      "source_document": "KnowledgeBase/Articles/AZIMUT_ART.md",
+      "source_sha256": "5185152563e646a26818199393a0c780e177121191048fbe3a7845bc3cf187cf",
+      "source_unit_id": "KU-6493927fb4e6b40f",
+      "unit_text_sha256": "3554a71ff7f810daa30cd8ba578a89898b8123d4970cad3a2cf75cd975f0c8b9",
+      "arabic_sha256": "7db62a691d1eeac73e6f7d82c9e43fb1cd3217eb82c784b9d7f1950e733332fa",
+      "english_sha256": "5622fc65874feea95b961f827e1764e9d9fdc350f9d87e3a7c3fe6d2cbb7428c",
+      "locator": {
+        "type": "lines",
+        "page": null,
+        "line_start": 434,
+        "line_end": 434,
+        "source_segments": null,
+        "exact_assertion_lines": [
+          434
+        ]
+      },
+      "scope": {
+        "procedure": "start investing via MyFawry",
+        "trigger": null
+      },
+      "validation_topic": "workflow",
+      "selection_tags": [
+        "workflow"
+      ],
+      "required_channel": null,
+      "dependencies": [
+        "F0038"
+      ]
+    },
+    "F0040": {
+      "service_id": "azimut",
+      "source_document": "KnowledgeBase/Articles/AZIMUT_ART.md",
+      "source_sha256": "5185152563e646a26818199393a0c780e177121191048fbe3a7845bc3cf187cf",
+      "source_unit_id": "KU-6493927fb4e6b40f",
+      "unit_text_sha256": "3554a71ff7f810daa30cd8ba578a89898b8123d4970cad3a2cf75cd975f0c8b9",
+      "arabic_sha256": "4c1ac07e0264a8a5d6c00b2c3259cf299e2c0ad9174e19da64c8458ea8ad28fa",
+      "english_sha256": "8d8a3d0ffd6eef734a485ed679b47b5ebbfa7f441b67fa18ca88e75c09d170e5",
+      "locator": {
+        "type": "lines",
+        "page": null,
+        "line_start": 434,
+        "line_end": 434,
+        "source_segments": null,
+        "exact_assertion_lines": [
+          434
+        ]
+      },
+      "scope": {
+        "procedure": "start investing via MyFawry",
+        "trigger": null
+      },
+      "validation_topic": "workflow",
+      "selection_tags": [
+        "workflow"
+      ],
+      "required_channel": null,
+      "dependencies": [
+        "F0039"
+      ]
+    },
+    "F0041": {
+      "service_id": "azimut",
+      "source_document": "KnowledgeBase/Articles/AZIMUT_ART.md",
+      "source_sha256": "5185152563e646a26818199393a0c780e177121191048fbe3a7845bc3cf187cf",
+      "source_unit_id": "KU-6493927fb4e6b40f",
+      "unit_text_sha256": "3554a71ff7f810daa30cd8ba578a89898b8123d4970cad3a2cf75cd975f0c8b9",
+      "arabic_sha256": "5df2bc56dcca68826a1fa12c179a9c42d42e3258763f9af9c178d7f53af4f5cf",
+      "english_sha256": "0f79bb66ab7a3f1d46b35e1146b085b3cfd5c3d7446070099ee7fa50b432e23b",
+      "locator": {
+        "type": "lines",
+        "page": null,
+        "line_start": 434,
+        "line_end": 434,
+        "source_segments": null,
+        "exact_assertion_lines": [
+          434
+        ]
+      },
+      "scope": {
+        "procedure": "start investing via MyFawry",
+        "trigger": null
+      },
+      "validation_topic": "workflow",
+      "selection_tags": [
+        "workflow"
+      ],
+      "required_channel": null,
+      "dependencies": [
+        "F0040"
+      ]
+    },
+    "F0042": {
+      "service_id": "azimut",
+      "source_document": "KnowledgeBase/Articles/AZIMUT_ART.md",
+      "source_sha256": "5185152563e646a26818199393a0c780e177121191048fbe3a7845bc3cf187cf",
+      "source_unit_id": "KU-6493927fb4e6b40f",
+      "unit_text_sha256": "3554a71ff7f810daa30cd8ba578a89898b8123d4970cad3a2cf75cd975f0c8b9",
+      "arabic_sha256": "41fc22be4ad575f70f014b9330d8f2ebff9fcb137e47723079454a23922c0b32",
+      "english_sha256": "c6f0f700650f1a3966fcbe4f94b00565fea5181c3b6a0b72c6954147af9c6e6f",
+      "locator": {
+        "type": "lines",
+        "page": null,
+        "line_start": 434,
+        "line_end": 434,
+        "source_segments": null,
+        "exact_assertion_lines": [
+          434
+        ]
+      },
+      "scope": {
+        "procedure": "start investing via MyFawry",
+        "trigger": "application directs branch visit"
+      },
+      "validation_topic": "workflow",
+      "selection_tags": [
+        "workflow",
+        "branch_condition"
+      ],
+      "required_channel": null,
+      "dependencies": [
+        "F0041"
+      ]
+    },
+    "F0070": {
+      "service_id": "qnb_wallet",
+      "source_document": "KnowledgeBase/Articles/Wallets_ART.md",
+      "source_sha256": "5e5ffd50f6edd59331690c626731fcb4496a916513174538c871cc606c5d62bb",
+      "source_unit_id": "KU-2e535bb485e1b346",
+      "unit_text_sha256": "0fd8bfdb953a474557f52c1a2971874c92f96caaf0e9a4c14b9c859676d85195",
+      "arabic_sha256": "7a0b6d73aea02f3e4a89421a1d21339ef0d3ac43c70b6b6590a6cf308ad010a3",
+      "english_sha256": "b849bcf811c8ac8257976e4b009820bae890d6d15b3ac47c9680430ef9e15992",
+      "locator": {
+        "type": "lines",
+        "page": null,
+        "line_start": 424,
+        "line_end": 424,
+        "source_segments": null,
+        "exact_assertion_lines": [
+          424
+        ]
+      },
+      "scope": {
+        "transaction": "wallet opening/activation"
+      },
+      "validation_topic": "activation",
+      "selection_tags": [
+        "identity"
+      ],
+      "required_channel": null,
+      "dependencies": []
+    },
+    "F0071": {
+      "service_id": "qnb_wallet",
+      "source_document": "KnowledgeBase/Articles/Wallets_ART.md",
+      "source_sha256": "5e5ffd50f6edd59331690c626731fcb4496a916513174538c871cc606c5d62bb",
+      "source_unit_id": "KU-2e535bb485e1b346",
+      "unit_text_sha256": "0fd8bfdb953a474557f52c1a2971874c92f96caaf0e9a4c14b9c859676d85195",
+      "arabic_sha256": "2906b75836c7b45ae055647395fe28039884ac59165b1d32dec0098a4413bb53",
+      "english_sha256": "c3aacb5cf9d7e7dd0f7dca535ef79a377ec62ff92b98679c13bbc6b1d9288904",
+      "locator": {
+        "type": "lines",
+        "page": null,
+        "line_start": 424,
+        "line_end": 424,
+        "source_segments": null,
+        "exact_assertion_lines": [
+          424
+        ]
+      },
+      "scope": {
+        "transaction": "wallet opening/activation"
+      },
+      "validation_topic": "activation",
+      "selection_tags": [
+        "phone_ownership"
+      ],
+      "required_channel": null,
+      "dependencies": []
+    },
+    "F0072": {
+      "service_id": "qnb_wallet",
+      "source_document": "KnowledgeBase/Articles/Wallets_ART.md",
+      "source_sha256": "5e5ffd50f6edd59331690c626731fcb4496a916513174538c871cc606c5d62bb",
+      "source_unit_id": "KU-2e535bb485e1b346",
+      "unit_text_sha256": "0fd8bfdb953a474557f52c1a2971874c92f96caaf0e9a4c14b9c859676d85195",
+      "arabic_sha256": "0945144146f2754859559c950610421c93b5858e8b001c372928c20d7bb5a8f4",
+      "english_sha256": "3f0dbcaaac81f4d712bb19dd11c56cd0c05d96cfb1e6ff26f344dbd8e466bb7d",
+      "locator": {
+        "type": "lines",
+        "page": null,
+        "line_start": 424,
+        "line_end": 424,
+        "source_segments": null,
+        "exact_assertion_lines": [
+          424
+        ]
+      },
+      "scope": {
+        "transaction": "wallet opening/activation"
+      },
+      "validation_topic": "activation",
+      "selection_tags": [
+        "existing_wallet"
+      ],
+      "required_channel": null,
+      "dependencies": []
+    },
+    "F0076": {
+      "service_id": "qnb_wallet",
+      "source_document": "material/Training_Material/resource/Wallets محافظ/QNB Wallet/Material/1-Qnb Material.pdf",
+      "source_sha256": "767685d7f1a59e0b1d730613dfef5a53b0ce8e8eb6bb6ad064cb94833e7ef61e",
+      "source_unit_id": "source-reviewed-qnb-atm-fee-767685d7f1a5",
+      "unit_text_sha256": "d1bf791cf6a9e91c3a8d4b0cade169e6544289977a09b6299b3618f83bebb4ae",
+      "arabic_sha256": "d1bf791cf6a9e91c3a8d4b0cade169e6544289977a09b6299b3618f83bebb4ae",
+      "english_sha256": "e04ad851e302d474436f29460771e6976d989166e0f337dde78a540b682dba42",
+      "locator": {
+        "type": "page",
+        "page": "4",
+        "line_start": null,
+        "line_end": null,
+        "source_segments": null
+      },
+      "scope": {
+        "channel": "ATM",
+        "rate_percent": 1,
+        "minimum_fee_egp": 4
+      },
+      "validation_topic": "activation",
+      "selection_tags": [
+        "withdrawal"
+      ],
+      "required_channel": "atm",
+      "dependencies": []
+    },
+    "F0001": {
+      "service_id": "axis_pay",
+      "source_document": "KnowledgeBase/Articles/Wallets_ART.md",
+      "source_sha256": "5e5ffd50f6edd59331690c626731fcb4496a916513174538c871cc606c5d62bb",
+      "source_unit_id": "KU-ecf4b4d879f5c563",
+      "unit_text_sha256": "5ba206d5bdbab2a16e36ffc9e8caf5dc7b6858c028ef4fb8f4795818c5f43a61",
+      "arabic_sha256": "132eb881eb3ba72ea1cea166576654d4545829a55b362fb5dee46ebe64145ed9",
+      "english_sha256": "1fa985afb95f691c17792c8b11694803f70709e599ed2818c2a1e0adcd35c213",
+      "locator": {
+        "type": "lines",
+        "page": null,
+        "line_start": 214,
+        "line_end": 221,
+        "source_segments": null,
+        "exact_assertion_lines": [
+          216
+        ]
+      },
+      "scope": {
+        "transaction": "cash_in",
+        "channel": "Fawry Plus",
+        "rate_percent": 1
+      },
+      "validation_topic": "deposit",
+      "selection_tags": [
+        "deposit_tariff"
+      ],
+      "required_channel": "fawry_plus",
+      "dependencies": []
+    },
+    "F0002": {
+      "service_id": "axis_pay",
+      "source_document": "KnowledgeBase/Articles/Wallets_ART.md",
+      "source_sha256": "5e5ffd50f6edd59331690c626731fcb4496a916513174538c871cc606c5d62bb",
+      "source_unit_id": "KU-ecf4b4d879f5c563",
+      "unit_text_sha256": "5ba206d5bdbab2a16e36ffc9e8caf5dc7b6858c028ef4fb8f4795818c5f43a61",
+      "arabic_sha256": "7a1424d10c1469c0ceae76b52ac13f5c36dea1640d881f0107cfe448fd3bc375",
+      "english_sha256": "3f5f4b0f5f99bd413635b20abf190bb618ffa2ef17f9951db66318bfa203f305",
+      "locator": {
+        "type": "lines",
+        "page": null,
+        "line_start": 214,
+        "line_end": 221,
+        "source_segments": null,
+        "exact_assertion_lines": [
+          217
+        ]
+      },
+      "scope": {
+        "transaction": "cash_in",
+        "channel": "ATM",
+        "rate_percent": 0
+      },
+      "validation_topic": "deposit",
+      "selection_tags": [
+        "deposit_tariff"
+      ],
+      "required_channel": "atm",
+      "dependencies": []
+    },
+    "F0013": {
+      "service_id": "axis_pay",
+      "source_document": "daily_brief/axis_wallet_sales_guide.pdf",
+      "source_sha256": "198dffbc8ab1ce2887356e91fab9d241ea3f08c35216d2b32a1062e64439abce",
+      "source_unit_id": "REVIEW-AXIS-GUIDE-P3",
+      "unit_text_sha256": "0f3a09dec2361e70a3469f3c09c3c82f0072c1165382c2ac596eb35ff4592ba3",
+      "arabic_sha256": "658fb4160b1040040d93e6b7a7289be6b49e5c3ca1fc9978ce12dc45a59c8ffa",
+      "english_sha256": "20cfea6420ce4c670b5fea318c986df0ca504693f6c26e74ce31fe1e77580db0",
+      "locator": {
+        "type": "page",
+        "page": 3,
+        "section": "KPIs and Compliance; line/data integrity and personal presence"
+      },
+      "scope": {
+        "required_document": "valid original national ID"
+      },
+      "validation_topic": "activation",
+      "selection_tags": [
+        "identity"
+      ],
+      "required_channel": null,
+      "dependencies": []
+    },
+    "F0014": {
+      "service_id": "axis_pay",
+      "source_document": "daily_brief/axis_wallet_sales_guide.pdf",
+      "source_sha256": "198dffbc8ab1ce2887356e91fab9d241ea3f08c35216d2b32a1062e64439abce",
+      "source_unit_id": "REVIEW-AXIS-GUIDE-P3",
+      "unit_text_sha256": "0f3a09dec2361e70a3469f3c09c3c82f0072c1165382c2ac596eb35ff4592ba3",
+      "arabic_sha256": "4b8344abc75ebf9d98c0ce27db2cb375fe22dd35e02c5d96104e31bc4eff2599",
+      "english_sha256": "6022f03dc599a4b95da1c0e9450354aa658f1c651d19e3726ddee70c4efd497e",
+      "locator": {
+        "type": "page",
+        "page": 3,
+        "section": "KPIs and Compliance; line/data integrity and personal presence"
+      },
+      "scope": {
+        "requirement": "customer-owned mobile line"
+      },
+      "validation_topic": "activation",
+      "selection_tags": [
+        "phone_ownership"
+      ],
+      "required_channel": null,
+      "dependencies": []
+    },
+    "F0015": {
+      "service_id": "axis_pay",
+      "source_document": "daily_brief/axis_wallet_sales_guide.pdf",
+      "source_sha256": "198dffbc8ab1ce2887356e91fab9d241ea3f08c35216d2b32a1062e64439abce",
+      "source_unit_id": "REVIEW-AXIS-GUIDE-P3",
+      "unit_text_sha256": "0f3a09dec2361e70a3469f3c09c3c82f0072c1165382c2ac596eb35ff4592ba3",
+      "arabic_sha256": "5532dec10948cdc2cf34a294b21dbd1f94fbbac6e3f452caf84f0ecea0356ca1",
+      "english_sha256": "b30a7c3ef7d337b26eb972b4d59bf49bfd98c79e186256af42bebb5b76056d6d",
+      "locator": {
+        "type": "page",
+        "page": 3,
+        "section": "KPIs and Compliance; line/data integrity and personal presence"
+      },
+      "scope": {
+        "prohibition": "another wallet on the mobile line"
+      },
+      "validation_topic": "activation",
+      "selection_tags": [
+        "existing_wallet"
+      ],
+      "required_channel": null,
+      "dependencies": []
+    },
+    "F0018": {
+      "service_id": "axis_pay",
+      "source_document": "daily_brief/axis_wallet_sales_guide.pdf",
+      "source_sha256": "198dffbc8ab1ce2887356e91fab9d241ea3f08c35216d2b32a1062e64439abce",
+      "source_unit_id": "REVIEW-AXIS-GUIDE-P3",
+      "unit_text_sha256": "0f3a09dec2361e70a3469f3c09c3c82f0072c1165382c2ac596eb35ff4592ba3",
+      "arabic_sha256": "3686918727c6bda4810bae70ad6287ae0f53db24f2baeb4a2581f2e21082342a",
+      "english_sha256": "627f1bc173e7e48a130680685c63b5eb42781d1335362ea5cc7464e764360756",
+      "locator": {
+        "type": "page",
+        "page": 3,
+        "section": "KPIs and Compliance; line/data integrity and personal presence"
+      },
+      "scope": {
+        "prohibition": "screenshots/external photographs"
+      },
+      "validation_topic": "activation",
+      "selection_tags": [
+        "image_prohibition"
+      ],
+      "required_channel": null,
+      "dependencies": []
+    },
+    "F0036": {
+      "service_id": "adib_remittance",
+      "source_document": "KnowledgeBase/Articles/7wala_bank_abozabii_ART.md",
+      "source_sha256": "3c3ed10d91b5820d3b5d55aaf37f4f29425449c479b989b72c30163d4ccae090",
+      "source_unit_id": "KU-8d04194080502ab2",
+      "unit_text_sha256": "db29f582f9479a7924887a476f0705343a111251292e50e9593f6ab78b6692f1",
+      "arabic_sha256": "db29f582f9479a7924887a476f0705343a111251292e50e9593f6ab78b6692f1",
+      "english_sha256": "716215427065b55fb1917556514a6a84d1c70b8caf296cdfd2c35c414bb3b85b",
+      "locator": {
+        "type": "lines",
+        "page": null,
+        "line_start": 341,
+        "line_end": 341,
+        "source_segments": null,
+        "exact_assertion_lines": [
+          341
+        ]
+      },
+      "scope": {
+        "transaction": "ADIB remittance cash_out",
+        "service_code": "73157"
+      },
+      "validation_topic": "transaction_codes",
+      "selection_tags": [
+        "transaction_codes"
+      ],
+      "required_channel": null,
+      "dependencies": []
+    }
+  }
+}

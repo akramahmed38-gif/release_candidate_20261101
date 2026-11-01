@@ -1,0 +1,30 @@
+{
+  "latest_measured_iteration": "I046",
+  "full_original_business_passed": 171,
+  "full_original_business_denominator": 176,
+  "supported_complete_correct": 112,
+  "supported_original_denominator": 117,
+  "protected_retained": 60,
+  "protected_original_denominator": 65,
+  "technical_subset_passed": 171,
+  "technical_subset_denominator": 171,
+  "five_gold_blockers_remain_failures": [
+    "P1_A02",
+    "P1_E02",
+    "P1_E03",
+    "P1_P03",
+    "P1_P04"
+  ],
+  "business_gate": "BLOCKED_BY_FIVE_GOLD_CONTRADICTIONS",
+  "semantic_graph_gate": "IN_PROGRESS",
+  "independent_challenge": "FAIL",
+  "native_gate": "BLOCKED_NOT_RUN_USER_CONFIRMED_NO_SERVER_CHANNEL",
+  "production_authorized": false,
+  "goal_complete": false,
+  "tested_code_commit": "8e2faa3",
+  "working_tree_matches_latest_freeze": true,
+  "working_tree_acceptance_proven": false,
+  "supplemental_semantic_passed": 22,
+  "supplemental_semantic_denominator": 66,
+  "scoring_expectations_unchanged": true
+}

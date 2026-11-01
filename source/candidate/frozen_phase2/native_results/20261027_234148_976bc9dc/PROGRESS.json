@@ -1,0 +1,21 @@
+{
+  "run_id": "20261027_234148_976bc9dc",
+  "status": "completed",
+  "technical_checks_passed": true,
+  "backend": "BGE_M3_CHROMA_BM25_THREE_INDEPENDENT_SOURCE_UNITS",
+  "main_cases": 50,
+  "integrity_checks": 6,
+  "failed_ids": [],
+  "numeric_validator_sha256": "9eb736461247aaa7f89347bb8284113c9bd51b5d3e6f954b31b4e4d665ac2848",
+  "numeric_rejection_probes_passed": true,
+  "preservation_checks_passed": true,
+  "approvals_pending": true,
+  "generation_calls": 0,
+  "translation_calls": 0,
+  "document_embedding_calls": 0,
+  "memory": {
+    "working_set_bytes": 205987840,
+    "peak_working_set_bytes": 207417344
+  },
+  "decision": "TECHNICAL_GO_FOR_REVIEW_ONLY"
+}

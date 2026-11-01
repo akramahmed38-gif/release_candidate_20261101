@@ -1,0 +1,11 @@
+{
+  "schema": "NOMINAL_ANSWER_SCOPE_2",
+  "authority": "Linguistic rendering scope only; no business facts, approvals or service IDs.",
+  "scalar_heads": ["amount", "minimum", "sum", "least amount", "cash required", "money required", "الحد الأدنى", "أقل مبلغ", "المبلغ", "القيمة", "mablagh", "a2al"],
+  "focus_words": ["only", "just", "فقط", "بس", "فحسب", "bas"],
+  "modifiers": ["the", "a", "initial", "activation", "activate", "funding", "deposit", "required", "for", "to", "each", "one", "wallet", "of", "per", "need", "want", "give", "state", "show", "write", "populate", "fill", "please", "me", "I", "المطلوب", "للتفعيل", "التفعيل", "تفعيل", "الأولي", "لكل", "واحدة", "واحد", "منهم", "من", "عايز", "أريد", "قول", "اكتب", "el", "lel", "taf3eel"],
+  "condition_starters": ["if", "when", "unless", "after", "before", "once", "until", "لو", "إذا", "لما", "بشرط", "بعد", "قبل", "عند", "ba3d", "abl"],
+  "nonrestrictive_prefixes": ["not", "never", "do not", "don't", "more than", "ليس", "ليست", "مش", "لا", "mesh", "msh", "mish"],
+  "exclusive_focus_words": ["only", "فقط", "بس", "bas"],
+  "temporal_heads": {"after": "after", "before": "before", "بعد": "after", "قبل": "before", "ba3d": "after", "abl": "before"}
+}

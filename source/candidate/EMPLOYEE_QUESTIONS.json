@@ -1,0 +1,282 @@
+{
+  "evaluation": "developer-authored; independent employee questions unavailable; implementing agent saw wording",
+  "cases": [
+    {
+      "id": "C01",
+      "question": "عايز أودع في محفظة اكسس من فوري بلس، الرسوم كام؟",
+      "facts": [
+        "F0001"
+      ],
+      "complete": true,
+      "language": "ar",
+      "style": "Egyptian indirect",
+      "intent_topic": "deposit_tariff"
+    },
+    {
+      "id": "C02",
+      "question": "ما رسوم الإيداع في محفظة اكسس من خلال فوري بلس؟",
+      "facts": [
+        "F0001"
+      ],
+      "complete": true,
+      "language": "ar",
+      "style": "formal Arabic",
+      "intent_topic": "deposit_tariff"
+    },
+    {
+      "id": "C03",
+      "question": "What is the charge when I deposit into AXIS through Fawry Plus?",
+      "facts": [
+        "F0001"
+      ],
+      "complete": true,
+      "language": "en",
+      "style": "English varied",
+      "intent_topic": "deposit_tariff"
+    },
+    {
+      "id": "C04",
+      "question": "هل الإيداع من ATM لمحفظة اكسس عليه رسوم؟",
+      "facts": [
+        "F0002"
+      ],
+      "complete": true,
+      "language": "ar",
+      "style": "Arabic mixed brand",
+      "intent_topic": "deposit_tariff"
+    },
+    {
+      "id": "C05",
+      "question": "Compare AXIS deposit fees at ATMs and Fawry Plus.",
+      "facts": [
+        "F0001",
+        "F0002"
+      ],
+      "complete": true,
+      "language": "en",
+      "style": "English plural/channel comparison",
+      "intent_topic": "deposit_tariff"
+    },
+    {
+      "id": "C06",
+      "question": "Compare AXIS deposit fees through ATM and Fawry Plus.",
+      "facts": [
+        "F0001",
+        "F0002"
+      ],
+      "complete": true,
+      "language": "en",
+      "style": "two channel scopes",
+      "intent_topic": "deposit_tariff"
+    },
+    {
+      "id": "C07",
+      "question": "Compare AXIS and QNB national ID, mobile ownership and other wallet restrictions.",
+      "facts": [
+        "F0013",
+        "F0014",
+        "F0015",
+        "F0070",
+        "F0071",
+        "F0072"
+      ],
+      "complete": true,
+      "language": "en",
+      "style": "service comparison"
+    },
+    {
+      "id": "C08",
+      "question": "Can I open AXIS using a screenshot from the customer mobile?",
+      "facts": [
+        "F0018"
+      ],
+      "complete": true,
+      "language": "en",
+      "style": "indirect procedure purpose",
+      "intent_topic": "image_prohibition"
+    },
+    {
+      "id": "C09",
+      "question": "Are screenshots or external photographs permitted in AXIS registration?",
+      "facts": [
+        "F0018"
+      ],
+      "complete": true,
+      "language": "en",
+      "style": "procedure context",
+      "intent_topic": "image_prohibition"
+    },
+    {
+      "id": "C10",
+      "question": "Does AXIS allow screenshots?",
+      "facts": [
+        "F0018"
+      ],
+      "complete": true,
+      "language": "en",
+      "style": "direct prohibition",
+      "intent_topic": "image_prohibition"
+    },
+    {
+      "id": "C11",
+      "question": "هل يجوز استخدام صور الشاشات لإجراءات محفظة اكسس؟",
+      "facts": [
+        "F0018"
+      ],
+      "complete": true,
+      "language": "ar",
+      "style": "formal Arabic prohibition",
+      "intent_topic": "image_prohibition"
+    },
+    {
+      "id": "C12",
+      "question": "محفظة اكسس: صور خارجية مسموحة ولا لأ؟",
+      "facts": [
+        "F0018"
+      ],
+      "complete": true,
+      "language": "ar",
+      "style": "Egyptian prohibition",
+      "intent_topic": "image_prohibition"
+    },
+    {
+      "id": "C13",
+      "question": "Which service code do I use to cash out an ADIB remittance?",
+      "facts": [
+        "F0036"
+      ],
+      "complete": true,
+      "language": "en",
+      "style": "transaction context",
+      "intent_topic": "transaction_codes"
+    },
+    {
+      "id": "C14",
+      "question": "كود خدمة صرف حوالة مصرف أبوظبي الإسلامي كام؟",
+      "facts": [
+        "F0036"
+      ],
+      "complete": true,
+      "language": "ar",
+      "style": "Arabic service code",
+      "intent_topic": "transaction_codes"
+    },
+    {
+      "id": "C15",
+      "question": "3ayez a3raf code ADIB remittance",
+      "facts": [
+        "F0036"
+      ],
+      "complete": true,
+      "language": "ar",
+      "style": "Franco",
+      "intent_topic": "transaction_codes"
+    },
+    {
+      "id": "C16",
+      "question": "ADIB remittance كود الخدمة كام؟",
+      "facts": [
+        "F0036"
+      ],
+      "complete": true,
+      "language": "ar",
+      "style": "mixed language",
+      "intent_topic": "transaction_codes"
+    },
+    {
+      "id": "C17",
+      "question": "ADIB remittance service code and the complete workflow?",
+      "facts": [
+        "F0036"
+      ],
+      "complete": false,
+      "language": "en",
+      "style": "supported code/held procedure"
+    },
+    {
+      "id": "C18",
+      "question": "AXIS deposit fees at Fawry Plus; QNB ATM withdrawal fee; Azimut navigation; ADIB remittance service code.",
+      "facts": [
+        "F0001",
+        "F0076",
+        "F0037",
+        "F0038",
+        "F0039",
+        "F0040",
+        "F0041",
+        "F0042",
+        "F0036"
+      ],
+      "complete": true,
+      "language": "en",
+      "style": "four services and topics"
+    },
+    {
+      "id": "C19",
+      "question": "AXIS initial deposit and AXIS deposit fees at Fawry Plus?",
+      "facts": [
+        "F0011",
+        "F0012",
+        "F0001"
+      ],
+      "complete": true,
+      "language": "en",
+      "style": "same service different transactions",
+      "intent_topic": "deposit_tariff"
+    },
+    {
+      "id": "C20",
+      "question": "AXIS deposit fees at Fawry Plus?",
+      "facts": [
+        "F0001"
+      ],
+      "complete": true,
+      "language": "en",
+      "style": "follow-up setup",
+      "intent_topic": "deposit_tariff",
+      "conversation": "channels"
+    },
+    {
+      "id": "C21",
+      "question": "What about ATM?",
+      "facts": [
+        "F0002"
+      ],
+      "complete": true,
+      "language": "en",
+      "style": "follow-up channel change",
+      "intent_topic": "deposit_tariff",
+      "conversation": "channels"
+    },
+    {
+      "id": "C22",
+      "question": "ADIB remittance service code?",
+      "facts": [
+        "F0036"
+      ],
+      "complete": true,
+      "language": "en",
+      "style": "service switch setup",
+      "intent_topic": "transaction_codes",
+      "conversation": "bank_switch"
+    },
+    {
+      "id": "C23",
+      "question": "What is the QNB service code?",
+      "facts": [],
+      "complete": false,
+      "language": "en",
+      "style": "unsupported service/topic switch",
+      "intent_topic": "transaction_codes",
+      "conversation": "bank_switch"
+    },
+    {
+      "id": "C24",
+      "question": "What about that bank?",
+      "facts": [],
+      "complete": false,
+      "language": "en",
+      "style": "cross-session ambiguous"
+    }
+  ]
+}

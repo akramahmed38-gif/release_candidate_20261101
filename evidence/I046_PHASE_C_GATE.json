@@ -1,0 +1,289 @@
+{
+  "decision": "FAIL",
+  "revision": 1,
+  "main_cases": 176,
+  "fully_supported_denominator": 117,
+  "fully_supported_complete_correct": 112,
+  "complete_correct_all": 112,
+  "protected_prior_denominator": 65,
+  "protected_prior_retained": 60,
+  "protected_prior_lost_ids": [
+    "P1_A02",
+    "P1_E02",
+    "P1_E03",
+    "P1_P03",
+    "P1_P04"
+  ],
+  "false_complete_ids": [],
+  "unexpected_fact_ids_cases": [],
+  "business_failed_ids": [
+    "P1_E02",
+    "P1_E03",
+    "P1_A02",
+    "P1_P03",
+    "P1_P04"
+  ],
+  "semantic_scored": 66,
+  "semantic_passed": 22,
+  "integrity_passed": 8,
+  "integrity_total": 8,
+  "service_interpretation_passed": 58,
+  "service_interpretation_total": 58,
+  "per_service": {
+    "axis_pay": {
+      "cases_with_expected_facts": 83,
+      "complete_correct_whole_case": 72,
+      "recognition_interpretation_checks": 2,
+      "recognition_interpretation_passed": 2,
+      "genuine_approvals": 0,
+      "human_independently_verified_answers": 0
+    },
+    "qnb_wallet": {
+      "cases_with_expected_facts": 46,
+      "complete_correct_whole_case": 40,
+      "recognition_interpretation_checks": 2,
+      "recognition_interpretation_passed": 2,
+      "genuine_approvals": 0,
+      "human_independently_verified_answers": 0
+    },
+    "adib_wallet": {
+      "cases_with_expected_facts": 0,
+      "complete_correct_whole_case": 0,
+      "recognition_interpretation_checks": 2,
+      "recognition_interpretation_passed": 2,
+      "genuine_approvals": 0,
+      "human_independently_verified_answers": 0
+    },
+    "wallets_general": {
+      "cases_with_expected_facts": 0,
+      "complete_correct_whole_case": 0,
+      "recognition_interpretation_checks": 2,
+      "recognition_interpretation_passed": 2,
+      "genuine_approvals": 0,
+      "human_independently_verified_answers": 0
+    },
+    "adib_remittance": {
+      "cases_with_expected_facts": 17,
+      "complete_correct_whole_case": 12,
+      "recognition_interpretation_checks": 2,
+      "recognition_interpretation_passed": 2,
+      "genuine_approvals": 0,
+      "human_independently_verified_answers": 0
+    },
+    "bdc_remittance": {
+      "cases_with_expected_facts": 0,
+      "complete_correct_whole_case": 0,
+      "recognition_interpretation_checks": 2,
+      "recognition_interpretation_passed": 2,
+      "genuine_approvals": 0,
+      "human_independently_verified_answers": 0
+    },
+    "united_bank_remittance": {
+      "cases_with_expected_facts": 0,
+      "complete_correct_whole_case": 0,
+      "recognition_interpretation_checks": 2,
+      "recognition_interpretation_passed": 2,
+      "genuine_approvals": 0,
+      "human_independently_verified_answers": 0
+    },
+    "yellow_card": {
+      "cases_with_expected_facts": 0,
+      "complete_correct_whole_case": 0,
+      "recognition_interpretation_checks": 2,
+      "recognition_interpretation_passed": 2,
+      "genuine_approvals": 0,
+      "human_independently_verified_answers": 0
+    },
+    "azimut": {
+      "cases_with_expected_facts": 30,
+      "complete_correct_whole_case": 25,
+      "recognition_interpretation_checks": 2,
+      "recognition_interpretation_passed": 2,
+      "genuine_approvals": 0,
+      "human_independently_verified_answers": 0
+    },
+    "blnk": {
+      "cases_with_expected_facts": 0,
+      "complete_correct_whole_case": 0,
+      "recognition_interpretation_checks": 2,
+      "recognition_interpretation_passed": 2,
+      "genuine_approvals": 0,
+      "human_independently_verified_answers": 0
+    },
+    "mogo": {
+      "cases_with_expected_facts": 0,
+      "complete_correct_whole_case": 0,
+      "recognition_interpretation_checks": 2,
+      "recognition_interpretation_passed": 2,
+      "genuine_approvals": 0,
+      "human_independently_verified_answers": 0
+    },
+    "contact_now": {
+      "cases_with_expected_facts": 0,
+      "complete_correct_whole_case": 0,
+      "recognition_interpretation_checks": 2,
+      "recognition_interpretation_passed": 2,
+      "genuine_approvals": 0,
+      "human_independently_verified_answers": 0
+    },
+    "money_fellows": {
+      "cases_with_expected_facts": 0,
+      "complete_correct_whole_case": 0,
+      "recognition_interpretation_checks": 2,
+      "recognition_interpretation_passed": 2,
+      "genuine_approvals": 0,
+      "human_independently_verified_answers": 0
+    },
+    "fawry_taqseet": {
+      "cases_with_expected_facts": 0,
+      "complete_correct_whole_case": 0,
+      "recognition_interpretation_checks": 2,
+      "recognition_interpretation_passed": 2,
+      "genuine_approvals": 0,
+      "human_independently_verified_answers": 0
+    },
+    "fawry_yawmy": {
+      "cases_with_expected_facts": 0,
+      "complete_correct_whole_case": 0,
+      "recognition_interpretation_checks": 2,
+      "recognition_interpretation_passed": 2,
+      "genuine_approvals": 0,
+      "human_independently_verified_answers": 0
+    },
+    "mashreq_neo": {
+      "cases_with_expected_facts": 0,
+      "complete_correct_whole_case": 0,
+      "recognition_interpretation_checks": 2,
+      "recognition_interpretation_passed": 2,
+      "genuine_approvals": 0,
+      "human_independently_verified_answers": 0
+    },
+    "egypt_trust": {
+      "cases_with_expected_facts": 0,
+      "complete_correct_whole_case": 0,
+      "recognition_interpretation_checks": 2,
+      "recognition_interpretation_passed": 2,
+      "genuine_approvals": 0,
+      "human_independently_verified_answers": 0
+    },
+    "microfinance": {
+      "cases_with_expected_facts": 0,
+      "complete_correct_whole_case": 0,
+      "recognition_interpretation_checks": 2,
+      "recognition_interpretation_passed": 2,
+      "genuine_approvals": 0,
+      "human_independently_verified_answers": 0
+    },
+    "maashy": {
+      "cases_with_expected_facts": 0,
+      "complete_correct_whole_case": 0,
+      "recognition_interpretation_checks": 2,
+      "recognition_interpretation_passed": 2,
+      "genuine_approvals": 0,
+      "human_independently_verified_answers": 0
+    },
+    "fawry_insurance": {
+      "cases_with_expected_facts": 0,
+      "complete_correct_whole_case": 0,
+      "recognition_interpretation_checks": 2,
+      "recognition_interpretation_passed": 2,
+      "genuine_approvals": 0,
+      "human_independently_verified_answers": 0
+    },
+    "pudo": {
+      "cases_with_expected_facts": 0,
+      "complete_correct_whole_case": 0,
+      "recognition_interpretation_checks": 2,
+      "recognition_interpretation_passed": 2,
+      "genuine_approvals": 0,
+      "human_independently_verified_answers": 0
+    },
+    "super_fawry": {
+      "cases_with_expected_facts": 0,
+      "complete_correct_whole_case": 0,
+      "recognition_interpretation_checks": 2,
+      "recognition_interpretation_passed": 2,
+      "genuine_approvals": 0,
+      "human_independently_verified_answers": 0
+    },
+    "pos": {
+      "cases_with_expected_facts": 0,
+      "complete_correct_whole_case": 0,
+      "recognition_interpretation_checks": 2,
+      "recognition_interpretation_passed": 2,
+      "genuine_approvals": 0,
+      "human_independently_verified_answers": 0
+    },
+    "pos_maintenance": {
+      "cases_with_expected_facts": 0,
+      "complete_correct_whole_case": 0,
+      "recognition_interpretation_checks": 2,
+      "recognition_interpretation_passed": 2,
+      "genuine_approvals": 0,
+      "human_independently_verified_answers": 0
+    },
+    "quality_kyc": {
+      "cases_with_expected_facts": 0,
+      "complete_correct_whole_case": 0,
+      "recognition_interpretation_checks": 2,
+      "recognition_interpretation_passed": 2,
+      "genuine_approvals": 0,
+      "human_independently_verified_answers": 0
+    },
+    "aml_compliance": {
+      "cases_with_expected_facts": 0,
+      "complete_correct_whole_case": 0,
+      "recognition_interpretation_checks": 2,
+      "recognition_interpretation_passed": 2,
+      "genuine_approvals": 0,
+      "human_independently_verified_answers": 0
+    },
+    "cash_operations": {
+      "cases_with_expected_facts": 0,
+      "complete_correct_whole_case": 0,
+      "recognition_interpretation_checks": 2,
+      "recognition_interpretation_passed": 2,
+      "genuine_approvals": 0,
+      "human_independently_verified_answers": 0
+    },
+    "myfawry_app": {
+      "cases_with_expected_facts": 0,
+      "complete_correct_whole_case": 0,
+      "recognition_interpretation_checks": 2,
+      "recognition_interpretation_passed": 2,
+      "genuine_approvals": 0,
+      "human_independently_verified_answers": 0
+    },
+    "soft_skills": {
+      "cases_with_expected_facts": 0,
+      "complete_correct_whole_case": 0,
+      "recognition_interpretation_checks": 2,
+      "recognition_interpretation_passed": 2,
+      "genuine_approvals": 0,
+      "human_independently_verified_answers": 0
+    }
+  },
+  "gold_changed": false,
+  "disputed_gold_automatically_waived": false,
+  "human_independent_questions": 0,
+  "native": "NOT RUN",
+  "native_reason": "Local failure blocks Phase D",
+  "model_calls": 0,
+  "new_facts": 0,
+  "new_approvals": 0,
+  "stop": "Continue authorized isolated engineering on ordinary failures; native and production gates remain enforced.",
+  "external_gold_review_blocker_ids": [
+    "P1_A02",
+    "P1_E02",
+    "P1_E03",
+    "P1_P03",
+    "P1_P04"
+  ],
+  "blockers_counted_as_pass": false,
+  "technically_resolvable_denominator": 171,
+  "technically_resolvable_passed": 171,
+  "technically_resolvable_failed_ids": [],
+  "iteration": "I046",
+  "base_commit": "8e2faa312a6c0177cd5296c158a6bc10b5e963ca",
+  "candidate_pin_manifest_sha256": "d950dc03b7e3c7288ca6a6da7ae3393058a6a3cefc157be6066423a76dc5eaf0"
+}

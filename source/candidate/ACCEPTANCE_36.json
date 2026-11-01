@@ -1,0 +1,419 @@
+{
+  "evaluation_status": "developer-authored; implementing agent saw all wording; not independent or blind",
+  "source_basis": "fourteen exact source-bound fact records, not candidate output",
+  "cases": [
+    {
+      "id": "AR_01",
+      "question": "قارن اقل ايداع لتفعيل AXIS و QNB؛ وعميل ازيموت يزور الفرع امتى؟",
+      "facts": [
+        "F0011",
+        "F0012",
+        "F0073",
+        "F0042"
+      ],
+      "complete": true,
+      "language": "ar",
+      "input_group": "AR"
+    },
+    {
+      "id": "AR_02",
+      "question": "رسوم فتح AXIS؛ ورسوم سحب QNB من ATM؛ وخطوات تسجيل ازيموت من التطبيق؟",
+      "facts": [
+        "F0010",
+        "F0076",
+        "F0037",
+        "F0038",
+        "F0039",
+        "F0040",
+        "F0041",
+        "F0042"
+      ],
+      "complete": true,
+      "language": "ar",
+      "input_group": "AR"
+    },
+    {
+      "id": "AR_03",
+      "question": "QNB محتاج بطاقة رقم قومي سارية ورقم موبايل باسم العميل ومن غير محفظة تانية؟",
+      "facts": [
+        "F0070",
+        "F0071",
+        "F0072"
+      ],
+      "complete": true,
+      "language": "ar",
+      "input_group": "AR"
+    },
+    {
+      "id": "AR_04",
+      "question": "اقل ايداع لتفعيل AXIS كام؟",
+      "facts": [
+        "F0011",
+        "F0012"
+      ],
+      "complete": true,
+      "language": "ar",
+      "input_group": "AR",
+      "conversation": "dialog_ar"
+    },
+    {
+      "id": "AR_05",
+      "question": "وماذا عن QNB؟",
+      "facts": [
+        "F0073"
+      ],
+      "complete": true,
+      "language": "ar",
+      "input_group": "AR",
+      "conversation": "dialog_ar"
+    },
+    {
+      "id": "AR_06",
+      "question": "مين فيهم محتاج ايداع مبدئي؟",
+      "facts": [
+        "F0011",
+        "F0012",
+        "F0073"
+      ],
+      "complete": true,
+      "language": "ar",
+      "input_group": "AR",
+      "conversation": "dialog_ar"
+    },
+    {
+      "id": "EN_01",
+      "question": "AXIS initial funding; QNB initial funding; Azimut branch visit condition.",
+      "facts": [
+        "F0011",
+        "F0012",
+        "F0073",
+        "F0042"
+      ],
+      "complete": true,
+      "language": "en",
+      "input_group": "EN"
+    },
+    {
+      "id": "EN_02",
+      "question": "AXIS subscription fee; QNB mobile ownership; Azimut app navigation.",
+      "facts": [
+        "F0010",
+        "F0071",
+        "F0037",
+        "F0038",
+        "F0039",
+        "F0040",
+        "F0041",
+        "F0042"
+      ],
+      "complete": true,
+      "language": "en",
+      "input_group": "EN"
+    },
+    {
+      "id": "EN_03",
+      "question": "What percentage and minimum apply to QNB ATM withdrawals?",
+      "facts": [
+        "F0076"
+      ],
+      "complete": true,
+      "language": "en",
+      "input_group": "EN"
+    },
+    {
+      "id": "EN_04",
+      "question": "List the Azimut registration navigation steps.",
+      "facts": [
+        "F0037",
+        "F0038",
+        "F0039",
+        "F0040",
+        "F0041",
+        "F0042"
+      ],
+      "complete": true,
+      "language": "en",
+      "input_group": "EN",
+      "conversation": "dialog_en"
+    },
+    {
+      "id": "EN_05",
+      "question": "When should I visit the branch?",
+      "facts": [
+        "F0042"
+      ],
+      "complete": true,
+      "language": "en",
+      "input_group": "EN",
+      "conversation": "dialog_en"
+    },
+    {
+      "id": "EN_06",
+      "question": "What initial funding activates QNB?",
+      "facts": [
+        "F0073"
+      ],
+      "complete": true,
+      "language": "en",
+      "input_group": "EN",
+      "conversation": "dialog_en"
+    },
+    {
+      "id": "MIX_01",
+      "question": "AXIS subscription رسوم فتح؛ QNB initial deposit اقل ايداع؛ Azimut branch زيارة الفرع امتى؟",
+      "facts": [
+        "F0010",
+        "F0073",
+        "F0042"
+      ],
+      "complete": true,
+      "language": "ar",
+      "input_group": "MIX"
+    },
+    {
+      "id": "MIX_02",
+      "question": "AXIS initial deposit اقل ايداع؛ QNB national ID بطاقة رقم قومي؛ Azimut registration خطوات تسجيل؟",
+      "facts": [
+        "F0011",
+        "F0012",
+        "F0070",
+        "F0037",
+        "F0038",
+        "F0039",
+        "F0040",
+        "F0041",
+        "F0042"
+      ],
+      "complete": true,
+      "language": "ar",
+      "input_group": "MIX"
+    },
+    {
+      "id": "MIX_03",
+      "question": "QNB mobile رقم الموبايل باسم العميل ولا ينفع another wallet محفظة تانية على الرقم؟",
+      "facts": [
+        "F0071",
+        "F0072"
+      ],
+      "complete": true,
+      "language": "ar",
+      "input_group": "MIX"
+    },
+    {
+      "id": "MIX_04",
+      "question": "AXIS activation اقل ايداع لتفعيل المحفظة كام؟",
+      "facts": [
+        "F0011",
+        "F0012"
+      ],
+      "complete": true,
+      "language": "ar",
+      "input_group": "MIX",
+      "conversation": "dialog_mix"
+    },
+    {
+      "id": "MIX_05",
+      "question": "وبالنسبة لمحفظة QNB activation نفس التفعيل؟",
+      "facts": [
+        "F0073"
+      ],
+      "complete": true,
+      "language": "ar",
+      "input_group": "MIX",
+      "conversation": "dialog_mix"
+    },
+    {
+      "id": "MIX_06",
+      "question": "Which one مين فيهم محتاج initial deposit ايداع مبدئي؟",
+      "facts": [
+        "F0011",
+        "F0012",
+        "F0073"
+      ],
+      "complete": true,
+      "language": "ar",
+      "input_group": "MIX",
+      "conversation": "dialog_mix"
+    },
+    {
+      "id": "AR_07",
+      "question": "اقل ايداع لتفعيل AXIS؛ ورسوم فتح QNB؟",
+      "facts": [
+        "F0011",
+        "F0012"
+      ],
+      "complete": false,
+      "language": "ar",
+      "input_group": "AR"
+    },
+    {
+      "id": "AR_08",
+      "question": "خطوات تسجيل ازيموت وكل المستندات المطلوبة؟",
+      "facts": [
+        "F0037",
+        "F0038",
+        "F0039",
+        "F0040",
+        "F0041",
+        "F0042"
+      ],
+      "complete": false,
+      "language": "ar",
+      "input_group": "AR"
+    },
+    {
+      "id": "AR_09",
+      "question": "رقم موبايل QNB باسم مين ورسوم السحب من فرع فوري كام؟",
+      "facts": [
+        "F0071"
+      ],
+      "complete": false,
+      "language": "ar",
+      "input_group": "AR"
+    },
+    {
+      "id": "AR_10",
+      "question": "ADIB تفعيل كام؟",
+      "facts": [],
+      "complete": false,
+      "language": "ar",
+      "input_group": "AR"
+    },
+    {
+      "id": "AR_11",
+      "question": "QNB رسوم الايداع من خلال فوري كام؟",
+      "facts": [],
+      "complete": false,
+      "language": "ar",
+      "input_group": "AR"
+    },
+    {
+      "id": "AR_12",
+      "question": "مين فيهم؟",
+      "facts": [],
+      "complete": false,
+      "language": "ar",
+      "input_group": "AR"
+    },
+    {
+      "id": "EN_07",
+      "question": "AXIS initial deposit; QNB opening fees?",
+      "facts": [
+        "F0011",
+        "F0012"
+      ],
+      "complete": false,
+      "language": "en",
+      "input_group": "EN"
+    },
+    {
+      "id": "EN_08",
+      "question": "Azimut navigation and the complete KYC documents?",
+      "facts": [
+        "F0037",
+        "F0038",
+        "F0039",
+        "F0040",
+        "F0041",
+        "F0042"
+      ],
+      "complete": false,
+      "language": "en",
+      "input_group": "EN"
+    },
+    {
+      "id": "EN_09",
+      "question": "QNB mobile ownership and Fawry branch withdrawal charges?",
+      "facts": [
+        "F0071"
+      ],
+      "complete": false,
+      "language": "en",
+      "input_group": "EN"
+    },
+    {
+      "id": "EN_10",
+      "question": "What does ADIB activation require?",
+      "facts": [],
+      "complete": false,
+      "language": "en",
+      "input_group": "EN"
+    },
+    {
+      "id": "EN_11",
+      "question": "QNB cash-in tariff through the Fawry provider?",
+      "facts": [],
+      "complete": false,
+      "language": "en",
+      "input_group": "EN"
+    },
+    {
+      "id": "EN_12",
+      "question": "What about that?",
+      "facts": [],
+      "complete": false,
+      "language": "en",
+      "input_group": "EN"
+    },
+    {
+      "id": "MIX_07",
+      "question": "AXIS initial deposit اقل ايداع؛ QNB opening fees رسوم الفتح؟",
+      "facts": [
+        "F0011",
+        "F0012"
+      ],
+      "complete": false,
+      "language": "ar",
+      "input_group": "MIX"
+    },
+    {
+      "id": "MIX_08",
+      "question": "Azimut navigation خطوات التطبيق وكل KYC المستندات؟",
+      "facts": [
+        "F0037",
+        "F0038",
+        "F0039",
+        "F0040",
+        "F0041",
+        "F0042"
+      ],
+      "complete": false,
+      "language": "ar",
+      "input_group": "MIX"
+    },
+    {
+      "id": "MIX_09",
+      "question": "QNB mobile رقم الموبايل باسم مين وbranch withdrawal رسوم السحب من الفرع؟",
+      "facts": [
+        "F0071"
+      ],
+      "complete": false,
+      "language": "ar",
+      "input_group": "MIX"
+    },
+    {
+      "id": "MIX_10",
+      "question": "ADIB activation تفعيل كام؟",
+      "facts": [],
+      "complete": false,
+      "language": "ar",
+      "input_group": "MIX"
+    },
+    {
+      "id": "MIX_11",
+      "question": "QNB provider cash-in fees رسوم الايداع من خلال فوري؟",
+      "facts": [],
+      "complete": false,
+      "language": "ar",
+      "input_group": "MIX"
+    },
+    {
+      "id": "MIX_12",
+      "question": "Which one مين فيهم؟",
+      "facts": [],
+      "complete": false,
+      "language": "ar",
+      "input_group": "MIX"
+    }
+  ]
+}

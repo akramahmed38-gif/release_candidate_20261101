@@ -1,0 +1,2515 @@
+{
+  "opening_fee": {
+    "mapping_id": "ME_opening_fee",
+    "topic": "opening_fee",
+    "evidence_predicates": [
+      "opening_fee"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "opening_or_subscription_scope",
+      "amount",
+      "currency",
+      "conditions"
+    ],
+    "route": "source_evidence",
+    "status": "explicit_existing_predicate"
+  },
+  "initial_funding": {
+    "mapping_id": "ME_initial_funding",
+    "topic": "initial_deposit",
+    "evidence_predicates": [
+      "initial_funding"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "funding_amount",
+      "currency",
+      "minimum_or_exact",
+      "activation_condition",
+      "associated_balance_treatment_unless_explicit_amount_only"
+    ],
+    "route": "source_evidence",
+    "status": "explicit_existing_predicate",
+    "answer_scope_authority": "Acceptance coverage interpretation only; no business-policy approval. Default source-registered funding bundle retains associated balance treatment; explicit amount/minimum-only scope selects the supported amount assertion."
+  },
+  "balance_treatment": {
+    "mapping_id": "ME_balance_treatment",
+    "topic": "balance_treatment",
+    "evidence_predicates": [
+      "balance_treatment"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "operation",
+      "channel",
+      "value",
+      "unit",
+      "conditions",
+      "effective_version"
+    ],
+    "route": "source_evidence",
+    "status": "explicit_existing_predicate"
+  },
+  "deposit_tariff": {
+    "mapping_id": "ME_deposit_tariff",
+    "topic": "deposit_tariff",
+    "evidence_predicates": [
+      "deposit_tariff"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "operation",
+      "channel",
+      "value",
+      "unit",
+      "conditions",
+      "effective_version"
+    ],
+    "route": "source_evidence",
+    "status": "explicit_existing_predicate"
+  },
+  "withdrawal_tariff": {
+    "channel_reference_group": "cash_out",
+    "mapping_id": "ME_withdrawal_tariff",
+    "topic": "withdrawal",
+    "evidence_predicates": [
+      "withdrawal_tariff"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "operation",
+      "channel",
+      "value",
+      "unit",
+      "conditions",
+      "effective_version"
+    ],
+    "route": "source_evidence",
+    "status": "explicit_existing_predicate"
+  },
+  "withdrawal_minimum": {
+    "channel_reference_group": "cash_out",
+    "mapping_id": "ME_withdrawal_minimum",
+    "topic": null,
+    "evidence_predicates": [
+      "withdrawal_minimum"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "operation",
+      "channel",
+      "value",
+      "unit",
+      "conditions",
+      "effective_version"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "identity": {
+    "mapping_id": "ME_identity",
+    "topic": "identity",
+    "evidence_predicates": [
+      "identity"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "predicate",
+      "scope",
+      "conditions",
+      "source",
+      "language_view"
+    ],
+    "route": "source_evidence",
+    "status": "explicit_existing_predicate"
+  },
+  "phone_ownership": {
+    "mapping_id": "ME_phone_ownership",
+    "topic": "phone_ownership",
+    "evidence_predicates": [
+      "phone_ownership"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "predicate",
+      "scope",
+      "conditions",
+      "source",
+      "language_view"
+    ],
+    "route": "source_evidence",
+    "status": "explicit_existing_predicate"
+  },
+  "existing_wallet": {
+    "mapping_id": "ME_existing_wallet",
+    "topic": "existing_wallet",
+    "evidence_predicates": [
+      "existing_wallet"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "predicate",
+      "scope",
+      "conditions",
+      "source",
+      "language_view"
+    ],
+    "route": "source_evidence",
+    "status": "explicit_existing_predicate"
+  },
+  "image_permission": {
+    "mapping_id": "ME_image_permission",
+    "topic": "image_prohibition",
+    "evidence_predicates": [
+      "image_permission"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "process",
+      "image_type",
+      "permission_or_prohibition",
+      "exceptions",
+      "source"
+    ],
+    "route": "source_evidence",
+    "status": "explicit_existing_predicate"
+  },
+  "transaction_code": {
+    "mapping_id": "ME_transaction_code",
+    "topic": "transaction_codes",
+    "evidence_predicates": [
+      "transaction_code"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "operation",
+      "code",
+      "source"
+    ],
+    "route": "source_evidence",
+    "status": "explicit_existing_predicate"
+  },
+  "workflow": {
+    "mapping_id": "ME_workflow",
+    "topic": "workflow",
+    "evidence_predicates": [
+      "workflow"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "procedure_id",
+      "ordered_steps",
+      "dependencies",
+      "conditions",
+      "completeness_assertion"
+    ],
+    "route": "source_evidence",
+    "status": "explicit_existing_predicate",
+    "procedure_scope_bindings": {
+      "MyFawry app navigation": [
+        "myfawry_navigation"
+      ],
+      "app_navigation": [
+        "myfawry_navigation"
+      ]
+    },
+    "procedure_channel_bindings": {
+      "myfawry_app": ["myfawry_navigation"]
+    },
+    "completeness_obligations": {
+      "app_directed_branch_visit": {"required_tag": "branch_condition", "scope": {"trigger": "application directs branch visit"}}
+    }
+  },
+  "branch_condition": {
+    "mapping_id": "ME_branch_condition",
+    "topic": "branch_condition",
+    "evidence_predicates": [
+      "branch_condition"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "predicate",
+      "scope",
+      "conditions",
+      "source",
+      "language_view"
+    ],
+    "route": "source_evidence",
+    "status": "explicit_existing_predicate"
+  },
+  "documents": {
+    "mapping_id": "ME_documents",
+    "topic": "documents",
+    "evidence_predicates": [
+      "documents"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "customer_case",
+      "applicable_items",
+      "conditional_items",
+      "inventory_completeness_assertion",
+      "source"
+    ],
+    "route": "source_evidence",
+    "status": "explicit_existing_predicate"
+  },
+  "form_fields": {
+    "mapping_id": "ME_form_fields",
+    "topic": null,
+    "evidence_predicates": [
+      "form_fields"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "predicate",
+      "scope",
+      "conditions",
+      "source",
+      "language_view"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "signature": {
+    "mapping_id": "ME_signature",
+    "topic": null,
+    "evidence_predicates": [
+      "signature"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "predicate",
+      "scope",
+      "conditions",
+      "source",
+      "language_view"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "stamps": {
+    "mapping_id": "ME_stamps",
+    "topic": null,
+    "evidence_predicates": [
+      "stamps"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "predicate",
+      "scope",
+      "conditions",
+      "source",
+      "language_view"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "eligibility": {
+    "mapping_id": "ME_eligibility",
+    "topic": "eligibility",
+    "bundle_topics": [
+      "identity",
+      "phone_ownership",
+      "existing_wallet"
+    ],
+    "evidence_predicates": [
+      "eligibility"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "customer_case",
+      "applicable_items",
+      "conditional_items",
+      "inventory_completeness_assertion",
+      "source"
+    ],
+    "route": "source_evidence",
+    "status": "mapped_source_bundle"
+  },
+  "risk_rules": {
+    "mapping_id": "ME_risk_rules",
+    "topic": null,
+    "evidence_predicates": [
+      "risk_rules"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "customer_case",
+      "applicable_items",
+      "conditional_items",
+      "inventory_completeness_assertion",
+      "source"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "daily_limit": {
+    "mapping_id": "ME_daily_limit",
+    "topic": null,
+    "evidence_predicates": [
+      "daily_limit"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "operation",
+      "channel",
+      "value",
+      "unit",
+      "conditions",
+      "effective_version"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "monthly_limit": {
+    "mapping_id": "ME_monthly_limit",
+    "topic": null,
+    "evidence_predicates": [
+      "monthly_limit"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "operation",
+      "channel",
+      "value",
+      "unit",
+      "conditions",
+      "effective_version"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "balance_limit": {
+    "mapping_id": "ME_balance_limit",
+    "topic": null,
+    "evidence_predicates": [
+      "balance_limit"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "operation",
+      "channel",
+      "value",
+      "unit",
+      "conditions",
+      "effective_version"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "discount": {
+    "mapping_id": "ME_discount",
+    "topic": "discounts",
+    "evidence_predicates": [
+      "discount"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "operation",
+      "channel",
+      "value",
+      "unit",
+      "conditions",
+      "effective_version"
+    ],
+    "route": "source_evidence",
+    "status": "explicit_existing_predicate"
+  },
+  "activation_timing": {
+    "mapping_id": "ME_activation_timing",
+    "topic": null,
+    "evidence_predicates": [
+      "activation_timing"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "predicate",
+      "scope",
+      "conditions",
+      "source",
+      "language_view"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "transaction_reference": {
+    "mapping_id": "ME_transaction_reference",
+    "topic": null,
+    "evidence_predicates": [
+      "transaction_reference"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "record_type",
+      "record_id",
+      "timestamp",
+      "authorized_reader"
+    ],
+    "route": "live_record_required",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "otp": {
+    "mapping_id": "ME_otp",
+    "topic": null,
+    "evidence_predicates": [
+      "otp"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "predicate",
+      "scope",
+      "conditions",
+      "source",
+      "language_view"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "transaction_status": {
+    "mapping_id": "ME_transaction_status",
+    "topic": null,
+    "evidence_predicates": [
+      "transaction_status"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "record_type",
+      "record_id",
+      "timestamp",
+      "authorized_reader"
+    ],
+    "route": "live_record_required",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "refund": {
+    "mapping_id": "ME_refund",
+    "mode_routes": {"procedure_query": "source_evidence"},
+    "topic": null,
+    "evidence_predicates": [
+      "refund"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "predicate",
+      "scope",
+      "conditions",
+      "source",
+      "language_view"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "closure": {
+    "mapping_id": "ME_closure",
+    "topic": null,
+    "evidence_predicates": [
+      "closure"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "procedure_id",
+      "ordered_steps",
+      "dependencies",
+      "conditions",
+      "completeness_assertion"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "branch_location": {
+    "mapping_id": "ME_branch_location",
+    "topic": null,
+    "evidence_predicates": [
+      "branch_location"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "predicate",
+      "scope",
+      "conditions",
+      "source",
+      "language_view"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "report_export": {
+    "mapping_id": "ME_report_export",
+    "mode_routes": {"procedure_query": "source_evidence"},
+    "topic": null,
+    "evidence_predicates": [
+      "report_export"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "predicate",
+      "scope",
+      "conditions",
+      "source",
+      "language_view"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "reprint": {
+    "mapping_id": "ME_reprint",
+    "mode_routes": {"procedure_query": "source_evidence"},
+    "topic": null,
+    "evidence_predicates": [
+      "reprint"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "procedure_id",
+      "ordered_steps",
+      "dependencies",
+      "conditions",
+      "completeness_assertion"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "device_network": {
+    "mapping_id": "ME_device_network",
+    "topic": null,
+    "evidence_predicates": [
+      "device_network"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "procedure_id",
+      "ordered_steps",
+      "dependencies",
+      "conditions",
+      "completeness_assertion"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "device_cache": {
+    "mapping_id": "ME_device_cache",
+    "topic": null,
+    "evidence_predicates": [
+      "device_cache"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "procedure_id",
+      "ordered_steps",
+      "dependencies",
+      "conditions",
+      "completeness_assertion"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "payment": {
+    "mapping_id": "ME_payment",
+    "topic": null,
+    "evidence_predicates": [
+      "payment"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "procedure_id",
+      "ordered_steps",
+      "dependencies",
+      "conditions",
+      "completeness_assertion"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "transfer": {
+    "mapping_id": "ME_transfer",
+    "topic": null,
+    "evidence_predicates": [
+      "transfer"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "procedure_id",
+      "ordered_steps",
+      "dependencies",
+      "conditions",
+      "completeness_assertion"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "rejection_reason": {
+    "mapping_id": "ME_rejection_reason",
+    "topic": null,
+    "evidence_predicates": [
+      "rejection_reason"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "predicate",
+      "scope",
+      "conditions",
+      "source",
+      "language_view"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "required_presence": {
+    "mapping_id": "ME_required_presence",
+    "topic": null,
+    "evidence_predicates": [
+      "required_presence"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "predicate",
+      "scope",
+      "conditions",
+      "source",
+      "language_view"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "effective_date": {
+    "mapping_id": "ME_effective_date",
+    "topic": null,
+    "evidence_predicates": [
+      "effective_date"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "predicate",
+      "scope",
+      "conditions",
+      "source",
+      "language_view"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "explanation": {
+    "mapping_id": "ME_explanation",
+    "topic": null,
+    "evidence_predicates": [
+      "explanation"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "predicate",
+      "scope",
+      "conditions",
+      "source",
+      "language_view"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "permission": {
+    "mapping_id": "ME_permission",
+    "topic": null,
+    "evidence_predicates": [
+      "permission"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "predicate",
+      "scope",
+      "conditions",
+      "source",
+      "language_view"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "other_or_unknown": {
+    "mapping_id": "ME_other_or_unknown",
+    "topic": null,
+    "evidence_predicates": [
+      "other_or_unknown"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "predicate",
+      "scope",
+      "conditions",
+      "source",
+      "language_view"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "complaint_create": {
+    "mapping_id": "ME_complaint_create",
+    "topic": null,
+    "evidence_predicates": [
+      "complaint_create"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "predicate",
+      "scope",
+      "conditions",
+      "source",
+      "language_view"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "complaint_status": {
+    "mapping_id": "ME_complaint_status",
+    "topic": null,
+    "evidence_predicates": [
+      "complaint_status"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "record_type",
+      "record_id",
+      "timestamp",
+      "authorized_reader"
+    ],
+    "route": "live_record_required",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "complaint_reopen": {
+    "mapping_id": "ME_complaint_reopen",
+    "topic": null,
+    "evidence_predicates": [
+      "complaint_reopen"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "predicate",
+      "scope",
+      "conditions",
+      "source",
+      "language_view"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "complaint_withdraw": {
+    "mapping_id": "ME_complaint_withdraw",
+    "topic": null,
+    "evidence_predicates": [
+      "complaint_withdraw"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "predicate",
+      "scope",
+      "conditions",
+      "source",
+      "language_view"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "escalation": {
+    "mapping_id": "ME_escalation",
+    "topic": null,
+    "evidence_predicates": [
+      "escalation"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "predicate",
+      "scope",
+      "conditions",
+      "source",
+      "language_view"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "sla_time": {
+    "mapping_id": "ME_sla_time",
+    "topic": null,
+    "evidence_predicates": [
+      "sla_time"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "predicate",
+      "scope",
+      "conditions",
+      "source",
+      "language_view"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "refund_status": {
+    "mapping_id": "ME_refund_status",
+    "topic": null,
+    "evidence_predicates": [
+      "refund_status"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "record_type",
+      "record_id",
+      "timestamp",
+      "authorized_reader"
+    ],
+    "route": "live_record_required",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "transaction_cancel": {
+    "mapping_id": "ME_transaction_cancel",
+    "topic": null,
+    "evidence_predicates": [
+      "transaction_cancel"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "procedure_id",
+      "ordered_steps",
+      "dependencies",
+      "conditions",
+      "completeness_assertion"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "transaction_reversal": {
+    "mapping_id": "ME_transaction_reversal",
+    "topic": null,
+    "evidence_predicates": [
+      "transaction_reversal"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "procedure_id",
+      "ordered_steps",
+      "dependencies",
+      "conditions",
+      "completeness_assertion"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "duplicate_payment": {
+    "mapping_id": "ME_duplicate_payment",
+    "topic": null,
+    "evidence_predicates": [
+      "duplicate_payment"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "predicate",
+      "scope",
+      "conditions",
+      "source",
+      "language_view"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "failed_debit": {
+    "mapping_id": "ME_failed_debit",
+    "topic": null,
+    "evidence_predicates": [
+      "failed_debit"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "predicate",
+      "scope",
+      "conditions",
+      "source",
+      "language_view"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "repeat_payment": {
+    "mapping_id": "ME_repeat_payment",
+    "topic": null,
+    "evidence_predicates": [
+      "repeat_payment"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "procedure_id",
+      "ordered_steps",
+      "dependencies",
+      "conditions",
+      "completeness_assertion"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "receipt_missing": {
+    "mapping_id": "ME_receipt_missing",
+    "topic": null,
+    "evidence_predicates": [
+      "receipt_missing"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "procedure_id",
+      "ordered_steps",
+      "dependencies",
+      "conditions",
+      "completeness_assertion"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "cash_drawer_shortage": {
+    "mapping_id": "ME_cash_drawer_shortage",
+    "topic": null,
+    "evidence_predicates": [
+      "cash_drawer_shortage"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "predicate",
+      "scope",
+      "conditions",
+      "source",
+      "language_view"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "cash_drawer_overage": {
+    "mapping_id": "ME_cash_drawer_overage",
+    "topic": null,
+    "evidence_predicates": [
+      "cash_drawer_overage"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "predicate",
+      "scope",
+      "conditions",
+      "source",
+      "language_view"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "cash_reconciliation": {
+    "mapping_id": "ME_cash_reconciliation",
+    "topic": null,
+    "evidence_predicates": [
+      "cash_reconciliation"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "predicate",
+      "scope",
+      "conditions",
+      "source",
+      "language_view"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "cash_float": {
+    "mapping_id": "ME_cash_float",
+    "topic": null,
+    "evidence_predicates": [
+      "cash_float"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "operation",
+      "channel",
+      "value",
+      "unit",
+      "conditions",
+      "effective_version"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "shift_handover": {
+    "mapping_id": "ME_shift_handover",
+    "topic": null,
+    "evidence_predicates": [
+      "shift_handover"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "procedure_id",
+      "ordered_steps",
+      "dependencies",
+      "conditions",
+      "completeness_assertion"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "cash_collection": {
+    "mapping_id": "ME_cash_collection",
+    "topic": null,
+    "evidence_predicates": [
+      "cash_collection"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "procedure_id",
+      "ordered_steps",
+      "dependencies",
+      "conditions",
+      "completeness_assertion"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "account_settlement": {
+    "mapping_id": "ME_account_settlement",
+    "topic": null,
+    "evidence_predicates": [
+      "account_settlement"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "procedure_id",
+      "ordered_steps",
+      "dependencies",
+      "conditions",
+      "completeness_assertion"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "pos_error": {
+    "mapping_id": "ME_pos_error",
+    "topic": null,
+    "evidence_predicates": [
+      "pos_error"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "procedure_id",
+      "ordered_steps",
+      "dependencies",
+      "conditions",
+      "completeness_assertion"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "printer_issue": {
+    "mapping_id": "ME_printer_issue",
+    "topic": null,
+    "evidence_predicates": [
+      "printer_issue"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "procedure_id",
+      "ordered_steps",
+      "dependencies",
+      "conditions",
+      "completeness_assertion"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "stock_availability": {
+    "mapping_id": "ME_stock_availability",
+    "topic": null,
+    "evidence_predicates": [
+      "stock_availability"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "record_type",
+      "record_id",
+      "timestamp",
+      "authorized_reader"
+    ],
+    "route": "live_record_required",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "inventory_count": {
+    "mapping_id": "ME_inventory_count",
+    "topic": null,
+    "evidence_predicates": [
+      "inventory_count"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "predicate",
+      "scope",
+      "conditions",
+      "source",
+      "language_view"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "stock_transfer": {
+    "mapping_id": "ME_stock_transfer",
+    "topic": null,
+    "evidence_predicates": [
+      "stock_transfer"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "procedure_id",
+      "ordered_steps",
+      "dependencies",
+      "conditions",
+      "completeness_assertion"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "product_return": {
+    "mapping_id": "ME_product_return",
+    "topic": null,
+    "evidence_predicates": [
+      "product_return"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "procedure_id",
+      "ordered_steps",
+      "dependencies",
+      "conditions",
+      "completeness_assertion"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "exchange": {
+    "mapping_id": "ME_exchange",
+    "topic": null,
+    "evidence_predicates": [
+      "exchange"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "procedure_id",
+      "ordered_steps",
+      "dependencies",
+      "conditions",
+      "completeness_assertion"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "refund_eligibility": {
+    "mapping_id": "ME_refund_eligibility",
+    "topic": null,
+    "evidence_predicates": [
+      "refund_eligibility"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "predicate",
+      "scope",
+      "conditions",
+      "source",
+      "language_view"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "warranty": {
+    "mapping_id": "ME_warranty",
+    "topic": null,
+    "evidence_predicates": [
+      "warranty"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "predicate",
+      "scope",
+      "conditions",
+      "source",
+      "language_view"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "price_mismatch": {
+    "mapping_id": "ME_price_mismatch",
+    "topic": null,
+    "evidence_predicates": [
+      "price_mismatch"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "operation",
+      "channel",
+      "value",
+      "unit",
+      "conditions",
+      "effective_version"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "order_status": {
+    "mapping_id": "ME_order_status",
+    "topic": null,
+    "evidence_predicates": [
+      "order_status"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "record_type",
+      "record_id",
+      "timestamp",
+      "authorized_reader"
+    ],
+    "route": "live_record_required",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "parcel_tracking": {
+    "mapping_id": "ME_parcel_tracking",
+    "mode_routes": {"procedure_query": "source_evidence"},
+    "topic": null,
+    "evidence_predicates": [
+      "parcel_tracking"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "record_type",
+      "record_id",
+      "timestamp",
+      "authorized_reader"
+    ],
+    "route": "live_record_required",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "pickup_collection": {
+    "mapping_id": "ME_pickup_collection",
+    "topic": null,
+    "evidence_predicates": [
+      "pickup_collection"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "predicate",
+      "scope",
+      "conditions",
+      "source",
+      "language_view"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "queue_wait": {
+    "mapping_id": "ME_queue_wait",
+    "topic": null,
+    "evidence_predicates": [
+      "queue_wait"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "predicate",
+      "scope",
+      "conditions",
+      "source",
+      "language_view"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "branch_hours": {
+    "mapping_id": "ME_branch_hours",
+    "topic": null,
+    "evidence_predicates": [
+      "branch_hours"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "predicate",
+      "scope",
+      "conditions",
+      "source",
+      "language_view"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "branch_service_availability": {
+    "mapping_id": "ME_branch_service_availability",
+    "topic": null,
+    "evidence_predicates": [
+      "branch_service_availability"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "predicate",
+      "scope",
+      "conditions",
+      "source",
+      "language_view"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "callback": {
+    "mapping_id": "ME_callback",
+    "topic": null,
+    "evidence_predicates": [
+      "callback"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "predicate",
+      "scope",
+      "conditions",
+      "source",
+      "language_view"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "handoff": {
+    "mapping_id": "ME_handoff",
+    "topic": null,
+    "evidence_predicates": [
+      "handoff"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "predicate",
+      "scope",
+      "conditions",
+      "source",
+      "language_view"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "response_draft": {
+    "mapping_id": "ME_response_draft",
+    "topic": null,
+    "evidence_predicates": [
+      "response_draft"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "predicate",
+      "scope",
+      "conditions",
+      "source",
+      "language_view"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "deescalation": {
+    "mapping_id": "ME_deescalation",
+    "topic": null,
+    "evidence_predicates": [
+      "deescalation"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "predicate",
+      "scope",
+      "conditions",
+      "source",
+      "language_view"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "feedback": {
+    "mapping_id": "ME_feedback",
+    "topic": null,
+    "evidence_predicates": [
+      "feedback"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "predicate",
+      "scope",
+      "conditions",
+      "source",
+      "language_view"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "personal_data_change": {
+    "mapping_id": "ME_personal_data_change",
+    "topic": null,
+    "evidence_predicates": [
+      "personal_data_change"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "predicate",
+      "scope",
+      "conditions",
+      "source",
+      "language_view"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "verification_issue": {
+    "mapping_id": "ME_verification_issue",
+    "topic": null,
+    "evidence_predicates": [
+      "verification_issue"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "predicate",
+      "scope",
+      "conditions",
+      "source",
+      "language_view"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "accessibility": {
+    "mapping_id": "ME_accessibility",
+    "topic": null,
+    "evidence_predicates": [
+      "accessibility"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "predicate",
+      "scope",
+      "conditions",
+      "source",
+      "language_view"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "language_preference": {
+    "mapping_id": "ME_language_preference",
+    "topic": null,
+    "evidence_predicates": [
+      "language_preference"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "predicate",
+      "scope",
+      "conditions",
+      "source",
+      "language_view"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "policy_basis": {
+    "mapping_id": "ME_policy_basis",
+    "topic": null,
+    "evidence_predicates": [
+      "policy_basis"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "predicate",
+      "scope",
+      "conditions",
+      "source",
+      "language_view"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "bypass_request": {
+    "mapping_id": "ME_bypass_request",
+    "topic": null,
+    "evidence_predicates": [
+      "bypass_request"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "predicate",
+      "scope",
+      "conditions",
+      "source",
+      "language_view"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "audit_history": {
+    "mapping_id": "ME_audit_history",
+    "topic": null,
+    "evidence_predicates": [
+      "audit_history"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "record_type",
+      "record_id",
+      "timestamp",
+      "authorized_reader"
+    ],
+    "route": "live_record_required",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "approval_status": {
+    "mapping_id": "ME_approval_status",
+    "topic": null,
+    "evidence_predicates": [
+      "approval_status"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "record_type",
+      "record_id",
+      "timestamp",
+      "authorized_reader"
+    ],
+    "route": "live_record_required",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "customer_expectation": {
+    "mapping_id": "ME_customer_expectation",
+    "topic": null,
+    "evidence_predicates": [
+      "customer_expectation"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "predicate",
+      "scope",
+      "conditions",
+      "source",
+      "language_view"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "complaint_category": {
+    "mapping_id": "ME_complaint_category",
+    "topic": null,
+    "evidence_predicates": [
+      "complaint_category"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "predicate",
+      "scope",
+      "conditions",
+      "source",
+      "language_view"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "fraud_concern": {
+    "mapping_id": "ME_fraud_concern",
+    "topic": null,
+    "evidence_predicates": [
+      "fraud_concern"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "predicate",
+      "scope",
+      "conditions",
+      "source",
+      "language_view"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "complaint_resolution_confirmation": {
+    "mapping_id": "ME_complaint_resolution_confirmation",
+    "topic": null,
+    "evidence_predicates": [
+      "complaint_resolution_confirmation"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "predicate",
+      "scope",
+      "conditions",
+      "source",
+      "language_view"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "dispute_fee": {
+    "mapping_id": "ME_dispute_fee",
+    "topic": null,
+    "evidence_predicates": [
+      "dispute_fee"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "operation",
+      "channel",
+      "value",
+      "unit",
+      "conditions",
+      "effective_version"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "service_overview": {
+    "mapping_id": "ME_service_overview",
+    "topic": null,
+    "evidence_predicates": [
+      "service_overview"
+    ],
+    "required_evidence_fields": [
+      "purpose",
+      "scope",
+      "provider",
+      "limitations"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "general_service_fee": {
+    "mapping_id": "ME_general_service_fee",
+    "topic": null,
+    "evidence_predicates": [
+      "general_service_fee"
+    ],
+    "required_evidence_fields": [
+      "operation",
+      "channel",
+      "amount",
+      "unit",
+      "conditions"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "interest_profit": {
+    "mapping_id": "ME_interest_profit",
+    "topic": null,
+    "evidence_predicates": [
+      "interest_profit"
+    ],
+    "required_evidence_fields": [
+      "product",
+      "currency",
+      "rate_basis",
+      "period",
+      "effective_date",
+      "conditions"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "maturity": {
+    "mapping_id": "ME_maturity",
+    "topic": null,
+    "evidence_predicates": [
+      "maturity"
+    ],
+    "required_evidence_fields": [
+      "product",
+      "start_event",
+      "term",
+      "maturity_treatment"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "early_redemption": {
+    "mapping_id": "ME_early_redemption",
+    "topic": null,
+    "evidence_predicates": [
+      "early_redemption"
+    ],
+    "required_evidence_fields": [
+      "product",
+      "eligibility",
+      "charges",
+      "conditions",
+      "effective_date"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "installment_schedule": {
+    "mapping_id": "ME_installment_schedule",
+    "topic": null,
+    "evidence_predicates": [
+      "installment_schedule"
+    ],
+    "required_evidence_fields": [
+      "agreement",
+      "amounts",
+      "dates",
+      "frequency",
+      "currency"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "repayment": {
+    "mapping_id": "ME_repayment",
+    "topic": null,
+    "evidence_predicates": [
+      "repayment"
+    ],
+    "required_evidence_fields": [
+      "provider",
+      "account_reference",
+      "channels",
+      "steps",
+      "conditions"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "late_payment_fee": {
+    "mapping_id": "ME_late_payment_fee",
+    "topic": null,
+    "evidence_predicates": [
+      "late_payment_fee"
+    ],
+    "required_evidence_fields": [
+      "product",
+      "trigger",
+      "grace_period",
+      "fee_basis",
+      "exceptions"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "fx_quote": {
+    "mapping_id": "ME_fx_quote",
+    "topic": null,
+    "evidence_predicates": [
+      "fx_quote"
+    ],
+    "required_evidence_fields": [
+      "currency_pair",
+      "direction",
+      "timestamp",
+      "rate",
+      "fees",
+      "source"
+    ],
+    "route": "live_record_required",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "card_block": {
+    "mapping_id": "ME_card_block",
+    "topic": null,
+    "evidence_predicates": [
+      "card_block"
+    ],
+    "required_evidence_fields": [
+      "card_type",
+      "action",
+      "authentication",
+      "process",
+      "authority"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "card_pin": {
+    "mapping_id": "ME_card_pin",
+    "topic": null,
+    "evidence_predicates": [
+      "card_pin"
+    ],
+    "required_evidence_fields": [
+      "card_type",
+      "verification",
+      "safe_channel",
+      "steps"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "card_limit": {
+    "mapping_id": "ME_card_limit",
+    "topic": null,
+    "evidence_predicates": [
+      "card_limit"
+    ],
+    "required_evidence_fields": [
+      "card",
+      "operation",
+      "channel",
+      "period",
+      "amount",
+      "currency"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "chargeback": {
+    "mapping_id": "ME_chargeback",
+    "topic": null,
+    "evidence_predicates": [
+      "chargeback"
+    ],
+    "required_evidence_fields": [
+      "scheme",
+      "transaction_type",
+      "grounds",
+      "timeline",
+      "evidence",
+      "process"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "mandate": {
+    "mapping_id": "ME_mandate",
+    "topic": null,
+    "evidence_predicates": [
+      "mandate"
+    ],
+    "required_evidence_fields": [
+      "mandate",
+      "purpose",
+      "scope",
+      "validity",
+      "revocation",
+      "authority"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "statement": {
+    "mapping_id": "ME_statement",
+    "topic": null,
+    "evidence_predicates": [
+      "statement"
+    ],
+    "required_evidence_fields": [
+      "account",
+      "period",
+      "channel",
+      "authorization",
+      "format"
+    ],
+    "route": "policy_or_live_disambiguation",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "cheque_status": {
+    "mapping_id": "ME_cheque_status",
+    "topic": null,
+    "evidence_predicates": [
+      "cheque_status"
+    ],
+    "required_evidence_fields": [
+      "cheque_reference",
+      "bank",
+      "state",
+      "timestamp",
+      "reason"
+    ],
+    "route": "live_record_required",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "beneficiary": {
+    "mapping_id": "ME_beneficiary",
+    "topic": null,
+    "evidence_predicates": [
+      "beneficiary"
+    ],
+    "required_evidence_fields": [
+      "payment_type",
+      "beneficiary_fields",
+      "verification",
+      "steps"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "airtime_topup": {
+    "mapping_id": "ME_airtime_topup",
+    "topic": null,
+    "evidence_predicates": [
+      "airtime_topup"
+    ],
+    "required_evidence_fields": [
+      "operator",
+      "number_type",
+      "amount",
+      "channel",
+      "state"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "bundle_allowance": {
+    "mapping_id": "ME_bundle_allowance",
+    "topic": null,
+    "evidence_predicates": [
+      "bundle_allowance"
+    ],
+    "required_evidence_fields": [
+      "operator",
+      "plan",
+      "allowance_unit",
+      "period",
+      "usage_timestamp"
+    ],
+    "route": "policy_or_live_disambiguation",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "bundle_renewal": {
+    "mapping_id": "ME_bundle_renewal",
+    "topic": null,
+    "evidence_predicates": [
+      "bundle_renewal"
+    ],
+    "required_evidence_fields": [
+      "operator",
+      "plan",
+      "renewal_trigger",
+      "price",
+      "consent",
+      "conditions"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "number_porting": {
+    "mapping_id": "ME_number_porting",
+    "topic": null,
+    "evidence_predicates": [
+      "number_porting"
+    ],
+    "required_evidence_fields": [
+      "jurisdiction",
+      "operators",
+      "eligibility",
+      "steps",
+      "timing",
+      "dependencies"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "line_ownership_change": {
+    "mapping_id": "ME_line_ownership_change",
+    "topic": null,
+    "evidence_predicates": [
+      "line_ownership_change"
+    ],
+    "required_evidence_fields": [
+      "operator",
+      "old_owner",
+      "new_owner",
+      "documents",
+      "presence",
+      "process"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "sim_replace": {
+    "mapping_id": "ME_sim_replace",
+    "topic": null,
+    "evidence_predicates": [
+      "sim_replace"
+    ],
+    "required_evidence_fields": [
+      "operator",
+      "replacement_reason",
+      "identity",
+      "device",
+      "steps"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "roaming": {
+    "mapping_id": "ME_roaming",
+    "topic": null,
+    "evidence_predicates": [
+      "roaming"
+    ],
+    "required_evidence_fields": [
+      "operator",
+      "destination",
+      "plan",
+      "usage_type",
+      "price",
+      "conditions"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "network_coverage": {
+    "mapping_id": "ME_network_coverage",
+    "topic": null,
+    "evidence_predicates": [
+      "network_coverage"
+    ],
+    "required_evidence_fields": [
+      "operator",
+      "location",
+      "technology",
+      "timestamp",
+      "availability"
+    ],
+    "route": "policy_or_live_disambiguation",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "bill_breakdown": {
+    "mapping_id": "ME_bill_breakdown",
+    "topic": null,
+    "evidence_predicates": [
+      "bill_breakdown"
+    ],
+    "required_evidence_fields": [
+      "account",
+      "period",
+      "line_items",
+      "tax",
+      "fees",
+      "source_record"
+    ],
+    "route": "policy_or_live_disambiguation",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "tax_registration": {
+    "mapping_id": "ME_tax_registration",
+    "topic": null,
+    "evidence_predicates": [
+      "tax_registration"
+    ],
+    "required_evidence_fields": [
+      "jurisdiction",
+      "taxpayer_type",
+      "tax_type",
+      "documents",
+      "process",
+      "effective_date"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "tax_filing": {
+    "mapping_id": "ME_tax_filing",
+    "topic": null,
+    "evidence_predicates": [
+      "tax_filing"
+    ],
+    "required_evidence_fields": [
+      "jurisdiction",
+      "tax_type",
+      "period",
+      "taxpayer",
+      "forms",
+      "procedure"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "tax_deadline": {
+    "mapping_id": "ME_tax_deadline",
+    "topic": null,
+    "evidence_predicates": [
+      "tax_deadline"
+    ],
+    "required_evidence_fields": [
+      "jurisdiction",
+      "tax_type",
+      "tax_period",
+      "event",
+      "deadline",
+      "authority_version"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "tax_rate": {
+    "mapping_id": "ME_tax_rate",
+    "topic": null,
+    "evidence_predicates": [
+      "tax_rate"
+    ],
+    "required_evidence_fields": [
+      "jurisdiction",
+      "tax_type",
+      "taxable_object",
+      "date",
+      "rate",
+      "exceptions"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "tax_exemption": {
+    "mapping_id": "ME_tax_exemption",
+    "topic": null,
+    "evidence_predicates": [
+      "tax_exemption"
+    ],
+    "required_evidence_fields": [
+      "jurisdiction",
+      "tax_type",
+      "category",
+      "conditions",
+      "authority"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "einvoice_issue": {
+    "mapping_id": "ME_einvoice_issue",
+    "topic": null,
+    "evidence_predicates": [
+      "einvoice_issue"
+    ],
+    "required_evidence_fields": [
+      "jurisdiction",
+      "document_type",
+      "taxpayer",
+      "fields",
+      "signing",
+      "steps"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "einvoice_status": {
+    "mapping_id": "ME_einvoice_status",
+    "topic": null,
+    "evidence_predicates": [
+      "einvoice_status"
+    ],
+    "required_evidence_fields": [
+      "document_id",
+      "document_type",
+      "authority",
+      "status",
+      "errors",
+      "timestamp"
+    ],
+    "route": "live_record_required",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "einvoice_adjustment": {
+    "mapping_id": "ME_einvoice_adjustment",
+    "topic": null,
+    "evidence_predicates": [
+      "einvoice_adjustment"
+    ],
+    "required_evidence_fields": [
+      "jurisdiction",
+      "document_type",
+      "operation",
+      "original_reference",
+      "conditions",
+      "steps"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "tax_objection": {
+    "mapping_id": "ME_tax_objection",
+    "topic": null,
+    "evidence_predicates": [
+      "tax_objection"
+    ],
+    "required_evidence_fields": [
+      "jurisdiction",
+      "decision_type",
+      "notice_date",
+      "grounds",
+      "process",
+      "authority"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "regulator_identity": {
+    "mapping_id": "ME_regulator_identity",
+    "topic": null,
+    "evidence_predicates": [
+      "regulator_identity"
+    ],
+    "required_evidence_fields": [
+      "jurisdiction",
+      "activity",
+      "entity_type",
+      "authority",
+      "mandate_source"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "regulatory_license": {
+    "mapping_id": "ME_regulatory_license",
+    "topic": null,
+    "evidence_predicates": [
+      "regulatory_license"
+    ],
+    "required_evidence_fields": [
+      "jurisdiction",
+      "entity",
+      "activity",
+      "license_scope",
+      "register_or_rule"
+    ],
+    "route": "policy_or_live_disambiguation",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "regulatory_reporting": {
+    "mapping_id": "ME_regulatory_reporting",
+    "topic": null,
+    "evidence_predicates": [
+      "regulatory_reporting"
+    ],
+    "required_evidence_fields": [
+      "jurisdiction",
+      "entity_type",
+      "trigger",
+      "report_type",
+      "deadline",
+      "authorized_role"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "consent": {
+    "mapping_id": "ME_consent",
+    "topic": null,
+    "evidence_predicates": [
+      "consent"
+    ],
+    "required_evidence_fields": [
+      "purpose",
+      "data",
+      "recipient",
+      "scope",
+      "validity",
+      "revocation_method"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "data_retention": {
+    "mapping_id": "ME_data_retention",
+    "topic": null,
+    "evidence_predicates": [
+      "data_retention"
+    ],
+    "required_evidence_fields": [
+      "jurisdiction",
+      "data_category",
+      "purpose",
+      "retention_basis",
+      "rights",
+      "exceptions"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "beneficial_ownership": {
+    "mapping_id": "ME_beneficial_ownership",
+    "topic": null,
+    "evidence_predicates": [
+      "beneficial_ownership"
+    ],
+    "required_evidence_fields": [
+      "jurisdiction",
+      "entity_type",
+      "ownership_control",
+      "documents",
+      "source"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "screening": {
+    "mapping_id": "ME_screening",
+    "topic": null,
+    "evidence_predicates": [
+      "screening"
+    ],
+    "required_evidence_fields": [
+      "role",
+      "entity",
+      "screening_type",
+      "review_procedure",
+      "access"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "insurance_coverage": {
+    "mapping_id": "ME_insurance_coverage",
+    "topic": null,
+    "evidence_predicates": [
+      "insurance_coverage"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "customer_case",
+      "applicable_items",
+      "conditional_items",
+      "inventory_completeness_assertion",
+      "source"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "insurance_claim": {
+    "mapping_id": "ME_insurance_claim",
+    "topic": null,
+    "evidence_predicates": [
+      "insurance_claim"
+    ],
+    "required_evidence_fields": [
+      "policy",
+      "event",
+      "documents",
+      "steps",
+      "timeline",
+      "authority"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "fund_subscription": {
+    "mapping_id": "ME_fund_subscription",
+    "topic": null,
+    "evidence_predicates": [
+      "fund_subscription"
+    ],
+    "required_evidence_fields": [
+      "fund",
+      "currency",
+      "minimum",
+      "valuation_cutoff",
+      "steps",
+      "conditions"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "fund_redemption": {
+    "mapping_id": "ME_fund_redemption",
+    "topic": null,
+    "evidence_predicates": [
+      "fund_redemption"
+    ],
+    "required_evidence_fields": [
+      "fund",
+      "units",
+      "valuation",
+      "cutoff",
+      "settlement",
+      "fees"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "settlement_timing": {
+    "mapping_id": "ME_settlement_timing",
+    "topic": null,
+    "evidence_predicates": [
+      "settlement_timing"
+    ],
+    "required_evidence_fields": [
+      "service",
+      "operation",
+      "trigger",
+      "business_calendar",
+      "period",
+      "exceptions"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "procurement": {
+    "mapping_id": "ME_procurement",
+    "topic": null,
+    "evidence_predicates": [
+      "procurement"
+    ],
+    "required_evidence_fields": [
+      "role",
+      "supplier",
+      "items",
+      "approval",
+      "steps"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "stock_receipt": {
+    "mapping_id": "ME_stock_receipt",
+    "topic": null,
+    "evidence_predicates": [
+      "stock_receipt"
+    ],
+    "required_evidence_fields": [
+      "order",
+      "items",
+      "quantities",
+      "condition",
+      "documents",
+      "steps"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "loyalty_points": {
+    "mapping_id": "ME_loyalty_points",
+    "topic": null,
+    "evidence_predicates": [
+      "loyalty_points"
+    ],
+    "required_evidence_fields": [
+      "program",
+      "operation",
+      "balance_or_rule",
+      "period",
+      "conditions"
+    ],
+    "route": "policy_or_live_disambiguation",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "promotion_terms": {
+    "mapping_id": "ME_promotion_terms",
+    "topic": null,
+    "evidence_predicates": [
+      "promotion_terms"
+    ],
+    "required_evidence_fields": [
+      "offer",
+      "effective_dates",
+      "items",
+      "channels",
+      "qualification",
+      "exceptions"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  },
+  "business_day": {
+    "mapping_id": "ME_business_day",
+    "topic": null,
+    "evidence_predicates": [
+      "business_day"
+    ],
+    "required_evidence_fields": [
+      "jurisdiction",
+      "calendar",
+      "timezone",
+      "cutoff",
+      "start_event"
+    ],
+    "route": "source_evidence",
+    "status": "unmapped_pending_scope_reconciliation"
+  }
+}

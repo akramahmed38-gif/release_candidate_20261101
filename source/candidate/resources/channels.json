@@ -1,0 +1,219 @@
+[
+  {
+    "channel_id": "fawry_unspecified",
+    "aliases": {
+      "ar_eg": ["فرع فوري"],
+      "ar_msa": ["فرع فوري"],
+      "en": ["Fawry branch"],
+      "franco_eg": ["far3 fawry"]
+    },
+    "disambiguation": "Language-only unspecified Fawry branch channel. Not equivalent to Fawry Plus, agent, POS or ATM; no tariff or policy is inferred."
+  },
+  {
+    "channel_id": "atm",
+    "aliases": {
+      "ar_eg": [
+        "ماكينة ATM",
+        "ماكينة الصراف",
+        "الصراف الالي"
+      ],
+      "ar_msa": [
+        "جهاز الصراف الالي",
+        "أجهزة ATM"
+      ],
+      "en": [
+        "ATM",
+        "ATMs",
+        "automated teller machine",
+        "cash machine"
+      ],
+      "franco_eg": [
+        "ATM",
+        "ATMs",
+        "makaneet el saraf"
+      ]
+    },
+    "disambiguation": "Generic machine alone is ambiguous; ATM explicit is strong but not approval of any service tariff."
+  },
+  {
+    "channel_id": "fawry_plus",
+    "aliases": {
+      "ar_eg": [
+        "فوري بلس",
+        "فرع فوري بلس"
+      ],
+      "ar_msa": [
+        "فرع فوري بلس",
+        "افرع فوري بلس"
+      ],
+      "en": [
+        "Fawry Plus",
+        "Fawry Plus branch",
+        "FP branch"
+      ],
+      "franco_eg": [
+        "Fawry Plus",
+        "fawry plus",
+        "far3 fawry plus"
+      ]
+    },
+    "disambiguation": "Generic branch needs a scoped antecedent; Fawry shop/agent is not automatically Fawry Plus."
+  },
+  {
+    "channel_id": "pos",
+    "aliases": {
+      "ar_eg": [
+        "ماكينة POS",
+        "ماكينة PAX",
+        "جهاز الفرع"
+      ],
+      "ar_msa": [
+        "جهاز نقطة البيع",
+        "جهاز PAX"
+      ],
+      "en": [
+        "POS",
+        "PAX terminal",
+        "point of sale",
+        "branch terminal"
+      ],
+      "franco_eg": [
+        "POS",
+        "PAX",
+        "makana POS"
+      ]
+    },
+    "disambiguation": "POS is not ATM; it may be platform context rather than a tariff channel."
+  },
+  {
+    "channel_id": "instapay",
+    "aliases": {
+      "ar_eg": [
+        "انستاباي",
+        "انستا باي"
+      ],
+      "ar_msa": [
+        "InstaPay"
+      ],
+      "en": [
+        "InstaPay",
+        "Insta Pay"
+      ],
+      "franco_eg": [
+        "InstaPay",
+        "insta pay"
+      ]
+    },
+    "disambiguation": "Do not assert service availability just from a recognized channel name."
+  },
+  {
+    "channel_id": "axis_branch",
+    "aliases": {
+      "ar_eg": [
+        "فرع AXIS",
+        "افرع اكسيس"
+      ],
+      "ar_msa": [
+        "افرع AXIS"
+      ],
+      "en": [
+        "AXIS branch",
+        "AXIS branches"
+      ],
+      "franco_eg": [
+        "far3 AXIS",
+        "foroo3 AXIS"
+      ]
+    },
+    "disambiguation": "Keep provider branch distinct from Fawry Plus."
+  },
+  {
+    "channel_id": "bank_branch",
+    "aliases": {
+      "ar_eg": [
+        "فرع البنك"
+      ],
+      "ar_msa": [
+        "افرع البنك"
+      ],
+      "en": [
+        "bank branch",
+        "at the bank"
+      ],
+      "franco_eg": [
+        "far3 el bank"
+      ]
+    },
+    "disambiguation": "Resolve which bank; do not bind to the nearest provider blindly."
+  },
+  {
+    "channel_id": "myfawry_app",
+    "aliases": {
+      "ar_eg": [
+        "تطبيق ماي فوري",
+        "تطبيق MyFawry"
+      ],
+      "ar_msa": [
+        "تطبيق MyFawry"
+      ],
+      "en": [
+        "MyFawry app",
+        "My Fawry application"
+      ],
+      "franco_eg": [
+        "app MyFawry",
+        "My Fawry"
+      ]
+    },
+    "disambiguation": "Application is workflow context in Azimut; not an additional financial provider."
+  },
+  {
+    "channel_id": "super_fawry",
+    "aliases": {
+      "ar_eg": [
+        "سوبر فوري",
+        "سيستم سوبر فوري"
+      ],
+      "ar_msa": [
+        "نظام سوبر فوري"
+      ],
+      "en": [
+        "Super Fawry",
+        "SuperFawry",
+        "SPF"
+      ],
+      "franco_eg": [
+        "Super Fawry",
+        "SuperFawry",
+        "SPF"
+      ]
+    },
+    "disambiguation": "Platform does not make every listed service an independently requested product."
+  },
+  {
+    "channel_id": "other_unspecified",
+    "aliases": {
+      "ar_eg": [
+        "الفرع",
+        "الماكينة",
+        "التطبيق"
+      ],
+      "ar_msa": [
+        "الفرع",
+        "الجهاز",
+        "التطبيق"
+      ],
+      "en": [
+        "branch",
+        "machine",
+        "app"
+      ],
+      "franco_eg": [
+        "far3",
+        "makana",
+        "app"
+      ]
+    },
+    "disambiguation": "Unresolved placeholders must remain unresolved until conversation or explicit wording supplies identity."
+  }
+]

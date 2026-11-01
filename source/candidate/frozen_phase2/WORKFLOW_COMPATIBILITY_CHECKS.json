@@ -1,0 +1,7 @@
+{
+  "exact_reviewed_view": true,
+  "added_login_rejected": true,
+  "missing_wallet_rejected": true,
+  "unconditional_branch_rejected": true,
+  "order_swap_rejected": true
+}

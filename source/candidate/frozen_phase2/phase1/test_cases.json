@@ -1,0 +1,29 @@
+{
+ "scope":"Three user-authorized test facts only; source-based technical gold, not business approval",
+ "cases":[
+  {"id":"E01","question":"Is opening AXIS Pay free?","language":"en","type":"answer","complete":true,"facts":["F0010"]},
+  {"id":"E02","question":"How much do I need to activate the wallet?","language":"en","type":"answer","complete":true,"facts":["F0011","F0012"]},
+  {"id":"E03","question":"Does the initial EGP 20 disappear as a fee?","language":"en","type":"answer","complete":true,"facts":["F0010","F0011","F0012"]},
+  {"id":"A01","question":"اقل مبلغ لتفعيل محفظة اكسيس كام؟","language":"ar","type":"answer","complete":true,"facts":["F0011","F0012"]},
+  {"id":"A02","question":"العشرين جنيه بتتخصم ولا بتفضل في الرصيد؟","language":"ar","type":"answer","complete":true,"facts":["F0010","F0011","F0012"]},
+  {"id":"M01","question":"AXIS activation بكام وهل الفلوس بتفضل في balance؟","language":"ar","type":"answer","complete":true,"facts":["F0010","F0011","F0012"]},
+  {"id":"E04","question":"Explain AXIS's opening fee, minimum initial deposit and whether that deposit stays in my balance.","language":"en","type":"answer","complete":true,"facts":["F0010","F0011","F0012"]},
+  {"id":"A03","question":"فتح محفظة اكسيس عليه رسوم؟ وأقل إيداع أولي كام وهل بيفضل في الرصيد؟","language":"ar","type":"answer","complete":true,"facts":["F0010","F0011","F0012"]},
+  {"id":"P01","question":"Is there a subscription charge to get AXIS started?","language":"en","type":"answer","complete":true,"facts":["F0010"],"purpose":"Additional paraphrase; no exact question lookup"},
+  {"id":"P02","question":"What is the least I must put in to activate AXIS?","language":"en","type":"answer","complete":true,"facts":["F0011","F0012"],"purpose":"Additional paraphrase; source-derived expected minimum"},
+  {"id":"P03","question":"Does my starting deposit stay available in the wallet?","language":"en","type":"answer","complete":true,"facts":["F0011","F0012"],"purpose":"Additional paraphrase"},
+  {"id":"P04","question":"Does the deposit go into my balance, or is it an opening charge?","language":"en","type":"answer","complete":true,"facts":["F0010","F0011","F0012"],"purpose":"Fact combination outside example wording"},
+  {"id":"N01","question":"What are AXIS withdrawal fees?","language":"en","type":"unavailable","complete":false,"facts":[]},
+  {"id":"N02","question":"What KYC documents does AXIS require?","language":"en","type":"unavailable","complete":false,"facts":[]},
+  {"id":"N03","question":"Is opening QNB free?","language":"en","type":"unavailable","complete":false,"facts":[]},
+  {"id":"N04","question":"How much is ADIB wallet activation?","language":"en","type":"unavailable","complete":false,"facts":[]},
+  {"id":"N05","question":"What is the AXIS opening fee and what are withdrawal fees?","language":"en","type":"answer","complete":false,"facts":["F0010"]},
+  {"id":"N06","question":"What is AXIS's minimum activation deposit and which KYC documents are required?","language":"en","type":"answer","complete":false,"facts":["F0011","F0012"]},
+  {"id":"N07","question":"What minimum ongoing balance must AXIS maintain?","language":"en","type":"unavailable","complete":false,"facts":[]},
+  {"id":"N08","question":"Is opening a Vodafone Cash wallet free?","language":"en","type":"unavailable","complete":false,"facts":[]},
+  {"id":"N09","question":"What are AXIS ATM deposit fees?","language":"en","type":"unavailable","complete":false,"facts":[]},
+  {"id":"C01","setup":"How much do I need to activate AXIS?","question":"And that amount?","language":"en","type":"answer","complete":true,"facts":["F0011","F0012"],"context_used":true},
+  {"id":"C02","question":"And that amount?","language":"en","type":"unavailable","complete":false,"facts":[],"context_used":false},
+  {"id":"C03","setup":"Is opening AXIS free?","question":"What about QNB?","language":"en","type":"unavailable","complete":false,"facts":[]}
+ ]
+}

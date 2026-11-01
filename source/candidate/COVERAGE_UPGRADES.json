@@ -1,0 +1,8 @@
+{
+ "P1_N09":{
+  "facts":["F0002"],
+  "complete":true,
+  "reason":"Previously held AXIS ATM cash-in fee is now supported by selected source-bound F0002. Original frozen expectation stays untouched.",
+  "source_unit_id":"KU-ecf4b4d879f5c563"
+ }
+}

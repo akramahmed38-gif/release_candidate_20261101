@@ -1,0 +1,98 @@
+[
+  {
+    "rule": "E01",
+    "example": "ADIB",
+    "candidates": [
+      "adib_wallet",
+      "adib_remittance"
+    ],
+    "decision": "Use explicit wallet/remittance context; otherwise clarify.",
+    "qualifiers": {
+      "adib_wallet": [
+        "wallet",
+        "محفظة",
+        "محفظه",
+        "ma7faza",
+        "account",
+        "حساب"
+      ],
+      "adib_remittance": [
+        "remittance",
+        "remittances",
+        "حوالة",
+        "حوالات",
+        "7awala",
+        "7awalet",
+        "7awalat",
+        "7wala"
+      ]
+    },
+    "contextual_qualifiers": {
+      "adib_remittance": ["payout"]
+    },
+    "qualifier_provenance": "Candidate linguistic entity-family disambiguators only; no business facts or authority. Contextual payout wording reuses the existing remittance family vocabulary, below explicit wallet/remittance naming and only in positive local scope.",
+    "brand_aliases": [
+      "مصرف أبوظبي الإسلامي",
+      "Abu Dhabi Islamic Bank",
+      "ADIB",
+      "أبوظبي",
+      "أبو ظبي",
+      "ابوظبي",
+      "ابو ظبي"
+    ],
+    "brand_alias_source_references": {
+      "purpose": "Entity naming only; neither policy evidence nor a family default",
+      "source_path": "KnowledgeBase/Articles/7wala_bank_abozabii_ART.md",
+      "source_sha256": "3c3ed10d91b5820d3b5d55aaf37f4f29425449c479b989b72c30163d4ccae090",
+      "arabic_keyword_line": 9,
+      "english_keyword_line": 14,
+      "business_approval_granted": false
+    }
+  },
+  {
+    "rule": "E02",
+    "example": "KYC",
+    "contextual_aliases": ["KYC"],
+    "independent_qualifiers": ["quality assurance", "quality service", "خدمة الجودة", "ضمان الجودة"],
+    "candidates": [
+      "quality_kyc",
+      "topic_or_process"
+    ],
+    "decision": "Beside a named product, normally treat KYC as the product topic, not a second requested service; explicit quality-service questions remain possible."
+  },
+  {
+    "rule": "E03",
+    "example": "MyFawry / Super Fawry",
+    "context_entity_roles": ["platform_or_system"],
+    "context_prepositions": ["via", "through", "using", "in", "inside", "within", "from", "on", "عبر", "من خلال", "داخل", "في", "على"],
+    "candidates": [
+      "platform_context",
+      "requested_platform"
+    ],
+    "decision": "Distinguish a workflow platform from the service being registered."
+  },
+  {
+    "rule": "E04",
+    "example": "AXIS / QNB",
+    "candidates": [
+      "service_list",
+      "independent_clauses"
+    ],
+    "decision": "Expand only a linguistically shared requested predicate, not every nearby topic."
+  },
+  {
+    "rule": "E05",
+    "example": "Fawry Plus",
+    "candidates": [
+      "channel",
+      "organization"
+    ],
+    "decision": "Branch tariff channel is distinct from the wallet provider."
+  },
+  {
+    "rule": "E06",
+    "example": "unknown named service",
+    "candidates": [],
+    "decision": "Preserve the unresolved name; do not substitute a supported service to produce an answer."
+  }
+]

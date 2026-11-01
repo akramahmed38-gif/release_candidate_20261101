@@ -1,0 +1,2088 @@
+{
+  "claims": [
+    {
+      "case_id": "P1_E01",
+      "fact_id": "F0010",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "P1_E02",
+      "fact_id": "F0011",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "P1_E02",
+      "fact_id": "F0012",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "P1_E03",
+      "fact_id": "F0011",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "P1_E03",
+      "fact_id": "F0012",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "P1_E03",
+      "fact_id": "F0010",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "P1_A01",
+      "fact_id": "F0011",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "P1_A01",
+      "fact_id": "F0012",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "P1_A02",
+      "fact_id": "F0011",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "P1_A02",
+      "fact_id": "F0012",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "P1_A02",
+      "fact_id": "F0010",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "P1_M01",
+      "fact_id": "F0011",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "P1_M01",
+      "fact_id": "F0012",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "P1_M01",
+      "fact_id": "F0010",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "P1_E04",
+      "fact_id": "F0011",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "P1_E04",
+      "fact_id": "F0012",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "P1_E04",
+      "fact_id": "F0010",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "P1_A03",
+      "fact_id": "F0011",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "P1_A03",
+      "fact_id": "F0012",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "P1_A03",
+      "fact_id": "F0010",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "P1_P01",
+      "fact_id": "F0010",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "P1_P02",
+      "fact_id": "F0011",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "P1_P02",
+      "fact_id": "F0012",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "P1_P03",
+      "fact_id": "F0011",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "P1_P03",
+      "fact_id": "F0012",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "P1_P04",
+      "fact_id": "F0011",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "P1_P04",
+      "fact_id": "F0012",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "P1_P04",
+      "fact_id": "F0010",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "P1_N05",
+      "fact_id": "F0010",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "P1_N06",
+      "fact_id": "F0011",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "P1_N06",
+      "fact_id": "F0012",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "P1_C01",
+      "fact_id": "F0011",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "P1_C01",
+      "fact_id": "F0012",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "S01",
+      "fact_id": "F0073",
+      "service_id": "qnb_wallet",
+      "source_bound_view_exact": true,
+      "source_unit": "KU-3df6287f9511c6cd"
+    },
+    {
+      "case_id": "S02",
+      "fact_id": "F0073",
+      "service_id": "qnb_wallet",
+      "source_bound_view_exact": true,
+      "source_unit": "KU-3df6287f9511c6cd"
+    },
+    {
+      "case_id": "S03",
+      "fact_id": "F0037",
+      "service_id": "azimut",
+      "source_bound_view_exact": true,
+      "source_unit": "KU-6493927fb4e6b40f"
+    },
+    {
+      "case_id": "S03",
+      "fact_id": "F0038",
+      "service_id": "azimut",
+      "source_bound_view_exact": true,
+      "source_unit": "KU-6493927fb4e6b40f"
+    },
+    {
+      "case_id": "S03",
+      "fact_id": "F0039",
+      "service_id": "azimut",
+      "source_bound_view_exact": true,
+      "source_unit": "KU-6493927fb4e6b40f"
+    },
+    {
+      "case_id": "S03",
+      "fact_id": "F0040",
+      "service_id": "azimut",
+      "source_bound_view_exact": true,
+      "source_unit": "KU-6493927fb4e6b40f"
+    },
+    {
+      "case_id": "S03",
+      "fact_id": "F0041",
+      "service_id": "azimut",
+      "source_bound_view_exact": true,
+      "source_unit": "KU-6493927fb4e6b40f"
+    },
+    {
+      "case_id": "S03",
+      "fact_id": "F0042",
+      "service_id": "azimut",
+      "source_bound_view_exact": true,
+      "source_unit": "KU-6493927fb4e6b40f"
+    },
+    {
+      "case_id": "S04",
+      "fact_id": "F0037",
+      "service_id": "azimut",
+      "source_bound_view_exact": true,
+      "source_unit": "KU-6493927fb4e6b40f"
+    },
+    {
+      "case_id": "S04",
+      "fact_id": "F0038",
+      "service_id": "azimut",
+      "source_bound_view_exact": true,
+      "source_unit": "KU-6493927fb4e6b40f"
+    },
+    {
+      "case_id": "S04",
+      "fact_id": "F0039",
+      "service_id": "azimut",
+      "source_bound_view_exact": true,
+      "source_unit": "KU-6493927fb4e6b40f"
+    },
+    {
+      "case_id": "S04",
+      "fact_id": "F0040",
+      "service_id": "azimut",
+      "source_bound_view_exact": true,
+      "source_unit": "KU-6493927fb4e6b40f"
+    },
+    {
+      "case_id": "S04",
+      "fact_id": "F0041",
+      "service_id": "azimut",
+      "source_bound_view_exact": true,
+      "source_unit": "KU-6493927fb4e6b40f"
+    },
+    {
+      "case_id": "S04",
+      "fact_id": "F0042",
+      "service_id": "azimut",
+      "source_bound_view_exact": true,
+      "source_unit": "KU-6493927fb4e6b40f"
+    },
+    {
+      "case_id": "S05",
+      "fact_id": "F0042",
+      "service_id": "azimut",
+      "source_bound_view_exact": true,
+      "source_unit": "KU-6493927fb4e6b40f"
+    },
+    {
+      "case_id": "S06",
+      "fact_id": "F0042",
+      "service_id": "azimut",
+      "source_bound_view_exact": true,
+      "source_unit": "KU-6493927fb4e6b40f"
+    },
+    {
+      "case_id": "S07",
+      "fact_id": "F0011",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "S07",
+      "fact_id": "F0012",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "S07",
+      "fact_id": "F0073",
+      "service_id": "qnb_wallet",
+      "source_bound_view_exact": true,
+      "source_unit": "KU-3df6287f9511c6cd"
+    },
+    {
+      "case_id": "S08",
+      "fact_id": "F0011",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "S08",
+      "fact_id": "F0012",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "S08",
+      "fact_id": "F0073",
+      "service_id": "qnb_wallet",
+      "source_bound_view_exact": true,
+      "source_unit": "KU-3df6287f9511c6cd"
+    },
+    {
+      "case_id": "S09",
+      "fact_id": "F0010",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "S09",
+      "fact_id": "F0073",
+      "service_id": "qnb_wallet",
+      "source_bound_view_exact": true,
+      "source_unit": "KU-3df6287f9511c6cd"
+    },
+    {
+      "case_id": "S10",
+      "fact_id": "F0011",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "S10",
+      "fact_id": "F0012",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "S10",
+      "fact_id": "F0073",
+      "service_id": "qnb_wallet",
+      "source_bound_view_exact": true,
+      "source_unit": "KU-3df6287f9511c6cd"
+    },
+    {
+      "case_id": "S10",
+      "fact_id": "F0037",
+      "service_id": "azimut",
+      "source_bound_view_exact": true,
+      "source_unit": "KU-6493927fb4e6b40f"
+    },
+    {
+      "case_id": "S10",
+      "fact_id": "F0038",
+      "service_id": "azimut",
+      "source_bound_view_exact": true,
+      "source_unit": "KU-6493927fb4e6b40f"
+    },
+    {
+      "case_id": "S10",
+      "fact_id": "F0039",
+      "service_id": "azimut",
+      "source_bound_view_exact": true,
+      "source_unit": "KU-6493927fb4e6b40f"
+    },
+    {
+      "case_id": "S10",
+      "fact_id": "F0040",
+      "service_id": "azimut",
+      "source_bound_view_exact": true,
+      "source_unit": "KU-6493927fb4e6b40f"
+    },
+    {
+      "case_id": "S10",
+      "fact_id": "F0041",
+      "service_id": "azimut",
+      "source_bound_view_exact": true,
+      "source_unit": "KU-6493927fb4e6b40f"
+    },
+    {
+      "case_id": "S10",
+      "fact_id": "F0042",
+      "service_id": "azimut",
+      "source_bound_view_exact": true,
+      "source_unit": "KU-6493927fb4e6b40f"
+    },
+    {
+      "case_id": "S11",
+      "fact_id": "F0010",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "S11",
+      "fact_id": "F0011",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "S11",
+      "fact_id": "F0012",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "S11",
+      "fact_id": "F0073",
+      "service_id": "qnb_wallet",
+      "source_bound_view_exact": true,
+      "source_unit": "KU-3df6287f9511c6cd"
+    },
+    {
+      "case_id": "S13",
+      "fact_id": "F0073",
+      "service_id": "qnb_wallet",
+      "source_bound_view_exact": true,
+      "source_unit": "KU-3df6287f9511c6cd"
+    },
+    {
+      "case_id": "S14",
+      "fact_id": "F0037",
+      "service_id": "azimut",
+      "source_bound_view_exact": true,
+      "source_unit": "KU-6493927fb4e6b40f"
+    },
+    {
+      "case_id": "S14",
+      "fact_id": "F0038",
+      "service_id": "azimut",
+      "source_bound_view_exact": true,
+      "source_unit": "KU-6493927fb4e6b40f"
+    },
+    {
+      "case_id": "S14",
+      "fact_id": "F0039",
+      "service_id": "azimut",
+      "source_bound_view_exact": true,
+      "source_unit": "KU-6493927fb4e6b40f"
+    },
+    {
+      "case_id": "S14",
+      "fact_id": "F0040",
+      "service_id": "azimut",
+      "source_bound_view_exact": true,
+      "source_unit": "KU-6493927fb4e6b40f"
+    },
+    {
+      "case_id": "S14",
+      "fact_id": "F0041",
+      "service_id": "azimut",
+      "source_bound_view_exact": true,
+      "source_unit": "KU-6493927fb4e6b40f"
+    },
+    {
+      "case_id": "S14",
+      "fact_id": "F0042",
+      "service_id": "azimut",
+      "source_bound_view_exact": true,
+      "source_unit": "KU-6493927fb4e6b40f"
+    },
+    {
+      "case_id": "S15",
+      "fact_id": "F0042",
+      "service_id": "azimut",
+      "source_bound_view_exact": true,
+      "source_unit": "KU-6493927fb4e6b40f"
+    },
+    {
+      "case_id": "S16",
+      "fact_id": "F0073",
+      "service_id": "qnb_wallet",
+      "source_bound_view_exact": true,
+      "source_unit": "KU-3df6287f9511c6cd"
+    },
+    {
+      "case_id": "S18",
+      "fact_id": "F0073",
+      "service_id": "qnb_wallet",
+      "source_bound_view_exact": true,
+      "source_unit": "KU-3df6287f9511c6cd"
+    },
+    {
+      "case_id": "S19",
+      "fact_id": "F0011",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "S19",
+      "fact_id": "F0012",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "S19",
+      "fact_id": "F0010",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "T01",
+      "fact_id": "F0011",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "T01",
+      "fact_id": "F0012",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "T02",
+      "fact_id": "F0073",
+      "service_id": "qnb_wallet",
+      "source_bound_view_exact": true,
+      "source_unit": "KU-3df6287f9511c6cd"
+    },
+    {
+      "case_id": "T03",
+      "fact_id": "F0011",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "T03",
+      "fact_id": "F0012",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "T03",
+      "fact_id": "F0073",
+      "service_id": "qnb_wallet",
+      "source_bound_view_exact": true,
+      "source_unit": "KU-3df6287f9511c6cd"
+    },
+    {
+      "case_id": "U01",
+      "fact_id": "F0037",
+      "service_id": "azimut",
+      "source_bound_view_exact": true,
+      "source_unit": "KU-6493927fb4e6b40f"
+    },
+    {
+      "case_id": "U01",
+      "fact_id": "F0038",
+      "service_id": "azimut",
+      "source_bound_view_exact": true,
+      "source_unit": "KU-6493927fb4e6b40f"
+    },
+    {
+      "case_id": "U01",
+      "fact_id": "F0039",
+      "service_id": "azimut",
+      "source_bound_view_exact": true,
+      "source_unit": "KU-6493927fb4e6b40f"
+    },
+    {
+      "case_id": "U01",
+      "fact_id": "F0040",
+      "service_id": "azimut",
+      "source_bound_view_exact": true,
+      "source_unit": "KU-6493927fb4e6b40f"
+    },
+    {
+      "case_id": "U01",
+      "fact_id": "F0041",
+      "service_id": "azimut",
+      "source_bound_view_exact": true,
+      "source_unit": "KU-6493927fb4e6b40f"
+    },
+    {
+      "case_id": "U01",
+      "fact_id": "F0042",
+      "service_id": "azimut",
+      "source_bound_view_exact": true,
+      "source_unit": "KU-6493927fb4e6b40f"
+    },
+    {
+      "case_id": "U02",
+      "fact_id": "F0042",
+      "service_id": "azimut",
+      "source_bound_view_exact": true,
+      "source_unit": "KU-6493927fb4e6b40f"
+    },
+    {
+      "case_id": "U03",
+      "fact_id": "F0073",
+      "service_id": "qnb_wallet",
+      "source_bound_view_exact": true,
+      "source_unit": "KU-3df6287f9511c6cd"
+    },
+    {
+      "case_id": "SOURCE_QNB_CHANGED",
+      "fact_id": "F0011",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "SOURCE_QNB_CHANGED",
+      "fact_id": "F0012",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "SOURCE_AZIMUT_DELETED",
+      "fact_id": "F0010",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "MIDDLE_STEP_REVOKED",
+      "fact_id": "F0010",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "LANGUAGE_VIEW_REVOKED",
+      "fact_id": "F0011",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    },
+    {
+      "case_id": "LANGUAGE_VIEW_REVOKED",
+      "fact_id": "F0012",
+      "service_id": "axis_pay",
+      "source_bound_view_exact": true,
+      "source_unit": "source-verified-axis-guide-activation-198dffbc8ab1"
+    }
+  ],
+  "slots": [
+    {
+      "case_id": "P1_E01",
+      "service_id": "axis_pay",
+      "topic": "opening_fee",
+      "complete": true,
+      "required_fact_ids": [
+        "F0010"
+      ],
+      "supported_fact_ids": [
+        "F0010"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "P1_E02",
+      "service_id": "axis_pay",
+      "topic": "balance_treatment",
+      "complete": true,
+      "required_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "supported_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "P1_E02",
+      "service_id": "axis_pay",
+      "topic": "initial_deposit",
+      "complete": true,
+      "required_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "supported_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "P1_E03",
+      "service_id": "axis_pay",
+      "topic": "balance_treatment",
+      "complete": true,
+      "required_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "supported_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "P1_E03",
+      "service_id": "axis_pay",
+      "topic": "opening_fee",
+      "complete": true,
+      "required_fact_ids": [
+        "F0010"
+      ],
+      "supported_fact_ids": [
+        "F0010"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "P1_E03",
+      "service_id": "axis_pay",
+      "topic": "initial_deposit",
+      "complete": true,
+      "required_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "supported_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "P1_A01",
+      "service_id": "axis_pay",
+      "topic": "balance_treatment",
+      "complete": true,
+      "required_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "supported_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "P1_A01",
+      "service_id": "axis_pay",
+      "topic": "initial_deposit",
+      "complete": true,
+      "required_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "supported_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "P1_A02",
+      "service_id": "axis_pay",
+      "topic": "balance_treatment",
+      "complete": true,
+      "required_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "supported_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "P1_A02",
+      "service_id": "axis_pay",
+      "topic": "opening_fee",
+      "complete": true,
+      "required_fact_ids": [
+        "F0010"
+      ],
+      "supported_fact_ids": [
+        "F0010"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "P1_A02",
+      "service_id": "axis_pay",
+      "topic": "initial_deposit",
+      "complete": true,
+      "required_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "supported_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "P1_M01",
+      "service_id": "axis_pay",
+      "topic": "balance_treatment",
+      "complete": true,
+      "required_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "supported_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "P1_M01",
+      "service_id": "axis_pay",
+      "topic": "opening_fee",
+      "complete": true,
+      "required_fact_ids": [
+        "F0010"
+      ],
+      "supported_fact_ids": [
+        "F0010"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "P1_M01",
+      "service_id": "axis_pay",
+      "topic": "initial_deposit",
+      "complete": true,
+      "required_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "supported_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "P1_E04",
+      "service_id": "axis_pay",
+      "topic": "balance_treatment",
+      "complete": true,
+      "required_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "supported_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "P1_E04",
+      "service_id": "axis_pay",
+      "topic": "opening_fee",
+      "complete": true,
+      "required_fact_ids": [
+        "F0010"
+      ],
+      "supported_fact_ids": [
+        "F0010"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "P1_E04",
+      "service_id": "axis_pay",
+      "topic": "initial_deposit",
+      "complete": true,
+      "required_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "supported_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "P1_A03",
+      "service_id": "axis_pay",
+      "topic": "balance_treatment",
+      "complete": true,
+      "required_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "supported_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "P1_A03",
+      "service_id": "axis_pay",
+      "topic": "opening_fee",
+      "complete": true,
+      "required_fact_ids": [
+        "F0010"
+      ],
+      "supported_fact_ids": [
+        "F0010"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "P1_A03",
+      "service_id": "axis_pay",
+      "topic": "initial_deposit",
+      "complete": true,
+      "required_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "supported_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "P1_P01",
+      "service_id": "axis_pay",
+      "topic": "opening_fee",
+      "complete": true,
+      "required_fact_ids": [
+        "F0010"
+      ],
+      "supported_fact_ids": [
+        "F0010"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "P1_P02",
+      "service_id": "axis_pay",
+      "topic": "balance_treatment",
+      "complete": true,
+      "required_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "supported_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "P1_P02",
+      "service_id": "axis_pay",
+      "topic": "initial_deposit",
+      "complete": true,
+      "required_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "supported_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "P1_P03",
+      "service_id": "axis_pay",
+      "topic": "balance_treatment",
+      "complete": true,
+      "required_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "supported_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "P1_P03",
+      "service_id": "axis_pay",
+      "topic": "initial_deposit",
+      "complete": true,
+      "required_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "supported_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "P1_P04",
+      "service_id": "axis_pay",
+      "topic": "balance_treatment",
+      "complete": true,
+      "required_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "supported_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "P1_P04",
+      "service_id": "axis_pay",
+      "topic": "initial_deposit",
+      "complete": true,
+      "required_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "supported_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "P1_P04",
+      "service_id": "axis_pay",
+      "topic": "opening_fee",
+      "complete": true,
+      "required_fact_ids": [
+        "F0010"
+      ],
+      "supported_fact_ids": [
+        "F0010"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "P1_N01",
+      "service_id": "axis_pay",
+      "topic": "withdrawal",
+      "complete": false,
+      "required_fact_ids": [],
+      "supported_fact_ids": [],
+      "gap_reasons": [
+        "held_conflicting_or_outside_selected_evidence"
+      ]
+    },
+    {
+      "case_id": "P1_N02",
+      "service_id": "axis_pay",
+      "topic": "documents",
+      "complete": false,
+      "required_fact_ids": [],
+      "supported_fact_ids": [],
+      "gap_reasons": [
+        "held_conflicting_or_outside_selected_evidence"
+      ]
+    },
+    {
+      "case_id": "P1_N02",
+      "service_id": "quality_kyc",
+      "topic": "unsupported_service",
+      "complete": false,
+      "required_fact_ids": [],
+      "supported_fact_ids": [],
+      "gap_reasons": [
+        "unsupported_service"
+      ]
+    },
+    {
+      "case_id": "P1_N03",
+      "service_id": "qnb_wallet",
+      "topic": "opening_fee",
+      "complete": false,
+      "required_fact_ids": [],
+      "supported_fact_ids": [],
+      "gap_reasons": [
+        "held_conflicting_or_outside_selected_evidence"
+      ]
+    },
+    {
+      "case_id": "P1_N04",
+      "service_id": "adib_wallet",
+      "topic": "unsupported_service",
+      "complete": false,
+      "required_fact_ids": [],
+      "supported_fact_ids": [],
+      "gap_reasons": [
+        "unsupported_service"
+      ]
+    },
+    {
+      "case_id": "P1_N05",
+      "service_id": "axis_pay",
+      "topic": "opening_fee",
+      "complete": true,
+      "required_fact_ids": [
+        "F0010"
+      ],
+      "supported_fact_ids": [
+        "F0010"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "P1_N05",
+      "service_id": "axis_pay",
+      "topic": "withdrawal",
+      "complete": false,
+      "required_fact_ids": [],
+      "supported_fact_ids": [],
+      "gap_reasons": [
+        "held_conflicting_or_outside_selected_evidence"
+      ]
+    },
+    {
+      "case_id": "P1_N06",
+      "service_id": "axis_pay",
+      "topic": "initial_deposit",
+      "complete": true,
+      "required_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "supported_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "P1_N06",
+      "service_id": "axis_pay",
+      "topic": "documents",
+      "complete": false,
+      "required_fact_ids": [],
+      "supported_fact_ids": [],
+      "gap_reasons": [
+        "held_conflicting_or_outside_selected_evidence"
+      ]
+    },
+    {
+      "case_id": "P1_N06",
+      "service_id": "quality_kyc",
+      "topic": "unsupported_service",
+      "complete": false,
+      "required_fact_ids": [],
+      "supported_fact_ids": [],
+      "gap_reasons": [
+        "unsupported_service"
+      ]
+    },
+    {
+      "case_id": "P1_N07",
+      "service_id": "axis_pay",
+      "topic": "ongoing_balance_limit",
+      "complete": false,
+      "required_fact_ids": [],
+      "supported_fact_ids": [],
+      "gap_reasons": [
+        "held_conflicting_or_outside_selected_evidence"
+      ]
+    },
+    {
+      "case_id": "P1_N08",
+      "service_id": "unsupported_named_service",
+      "topic": "unsupported_service",
+      "complete": false,
+      "required_fact_ids": [],
+      "supported_fact_ids": [],
+      "gap_reasons": [
+        "unsupported_service"
+      ]
+    },
+    {
+      "case_id": "P1_N09",
+      "service_id": "axis_pay",
+      "topic": "cash_in_transaction_tariff",
+      "complete": false,
+      "required_fact_ids": [],
+      "supported_fact_ids": [],
+      "gap_reasons": [
+        "held_conflicting_or_outside_selected_evidence"
+      ]
+    },
+    {
+      "case_id": "P1_C01",
+      "service_id": "axis_pay",
+      "topic": "balance_treatment",
+      "complete": true,
+      "required_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "supported_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "P1_C01",
+      "service_id": "axis_pay",
+      "topic": "initial_deposit",
+      "complete": true,
+      "required_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "supported_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "P1_C02",
+      "service_id": "unresolved",
+      "topic": "unspecified",
+      "complete": false,
+      "required_fact_ids": null,
+      "supported_fact_ids": [],
+      "gap_reasons": [
+        "ambiguous_followup"
+      ]
+    },
+    {
+      "case_id": "P1_C03",
+      "service_id": "qnb_wallet",
+      "topic": "opening_fee",
+      "complete": false,
+      "required_fact_ids": [],
+      "supported_fact_ids": [],
+      "gap_reasons": [
+        "held_conflicting_or_outside_selected_evidence"
+      ]
+    },
+    {
+      "case_id": "S01",
+      "service_id": "qnb_wallet",
+      "topic": "initial_deposit",
+      "complete": true,
+      "required_fact_ids": [
+        "F0073"
+      ],
+      "supported_fact_ids": [
+        "F0073"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "S02",
+      "service_id": "qnb_wallet",
+      "topic": "initial_deposit",
+      "complete": true,
+      "required_fact_ids": [
+        "F0073"
+      ],
+      "supported_fact_ids": [
+        "F0073"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "S03",
+      "service_id": "azimut",
+      "topic": "workflow",
+      "complete": true,
+      "required_fact_ids": [
+        "F0037",
+        "F0038",
+        "F0039",
+        "F0040",
+        "F0041",
+        "F0042"
+      ],
+      "supported_fact_ids": [
+        "F0037",
+        "F0038",
+        "F0039",
+        "F0040",
+        "F0041",
+        "F0042"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "S04",
+      "service_id": "azimut",
+      "topic": "workflow",
+      "complete": true,
+      "required_fact_ids": [
+        "F0037",
+        "F0038",
+        "F0039",
+        "F0040",
+        "F0041",
+        "F0042"
+      ],
+      "supported_fact_ids": [
+        "F0037",
+        "F0038",
+        "F0039",
+        "F0040",
+        "F0041",
+        "F0042"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "S05",
+      "service_id": "azimut",
+      "topic": "branch_condition",
+      "complete": true,
+      "required_fact_ids": [
+        "F0042"
+      ],
+      "supported_fact_ids": [
+        "F0042"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "S06",
+      "service_id": "azimut",
+      "topic": "branch_condition",
+      "complete": true,
+      "required_fact_ids": [
+        "F0042"
+      ],
+      "supported_fact_ids": [
+        "F0042"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "S07",
+      "service_id": "axis_pay",
+      "topic": "initial_deposit",
+      "complete": true,
+      "required_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "supported_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "S07",
+      "service_id": "qnb_wallet",
+      "topic": "initial_deposit",
+      "complete": true,
+      "required_fact_ids": [
+        "F0073"
+      ],
+      "supported_fact_ids": [
+        "F0073"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "S08",
+      "service_id": "axis_pay",
+      "topic": "initial_deposit",
+      "complete": true,
+      "required_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "supported_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "S08",
+      "service_id": "qnb_wallet",
+      "topic": "initial_deposit",
+      "complete": true,
+      "required_fact_ids": [
+        "F0073"
+      ],
+      "supported_fact_ids": [
+        "F0073"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "S09",
+      "service_id": "axis_pay",
+      "topic": "opening_fee",
+      "complete": true,
+      "required_fact_ids": [
+        "F0010"
+      ],
+      "supported_fact_ids": [
+        "F0010"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "S09",
+      "service_id": "qnb_wallet",
+      "topic": "initial_deposit",
+      "complete": true,
+      "required_fact_ids": [
+        "F0073"
+      ],
+      "supported_fact_ids": [
+        "F0073"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "S10",
+      "service_id": "axis_pay",
+      "topic": "initial_deposit",
+      "complete": true,
+      "required_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "supported_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "S10",
+      "service_id": "qnb_wallet",
+      "topic": "initial_deposit",
+      "complete": true,
+      "required_fact_ids": [
+        "F0073"
+      ],
+      "supported_fact_ids": [
+        "F0073"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "S10",
+      "service_id": "azimut",
+      "topic": "workflow",
+      "complete": true,
+      "required_fact_ids": [
+        "F0037",
+        "F0038",
+        "F0039",
+        "F0040",
+        "F0041",
+        "F0042"
+      ],
+      "supported_fact_ids": [
+        "F0037",
+        "F0038",
+        "F0039",
+        "F0040",
+        "F0041",
+        "F0042"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "S11",
+      "service_id": "axis_pay",
+      "topic": "opening_fee",
+      "complete": true,
+      "required_fact_ids": [
+        "F0010"
+      ],
+      "supported_fact_ids": [
+        "F0010"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "S11",
+      "service_id": "axis_pay",
+      "topic": "initial_deposit",
+      "complete": true,
+      "required_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "supported_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "S11",
+      "service_id": "qnb_wallet",
+      "topic": "opening_fee",
+      "complete": false,
+      "required_fact_ids": [],
+      "supported_fact_ids": [],
+      "gap_reasons": [
+        "held_conflicting_or_outside_selected_evidence"
+      ]
+    },
+    {
+      "case_id": "S11",
+      "service_id": "qnb_wallet",
+      "topic": "initial_deposit",
+      "complete": true,
+      "required_fact_ids": [
+        "F0073"
+      ],
+      "supported_fact_ids": [
+        "F0073"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "S12",
+      "service_id": "qnb_wallet",
+      "topic": "deposit_tariff",
+      "complete": false,
+      "required_fact_ids": [],
+      "supported_fact_ids": [],
+      "gap_reasons": [
+        "held_conflicting_or_outside_selected_evidence"
+      ]
+    },
+    {
+      "case_id": "S13",
+      "service_id": "qnb_wallet",
+      "topic": "initial_deposit",
+      "complete": true,
+      "required_fact_ids": [
+        "F0073"
+      ],
+      "supported_fact_ids": [
+        "F0073"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "S13",
+      "service_id": "qnb_wallet",
+      "topic": "withdrawal",
+      "complete": false,
+      "required_fact_ids": [],
+      "supported_fact_ids": [],
+      "gap_reasons": [
+        "held_conflicting_or_outside_selected_evidence"
+      ]
+    },
+    {
+      "case_id": "S14",
+      "service_id": "azimut",
+      "topic": "workflow",
+      "complete": true,
+      "required_fact_ids": [
+        "F0037",
+        "F0038",
+        "F0039",
+        "F0040",
+        "F0041",
+        "F0042"
+      ],
+      "supported_fact_ids": [
+        "F0037",
+        "F0038",
+        "F0039",
+        "F0040",
+        "F0041",
+        "F0042"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "S14",
+      "service_id": "azimut",
+      "topic": "documents",
+      "complete": false,
+      "required_fact_ids": [],
+      "supported_fact_ids": [],
+      "gap_reasons": [
+        "held_conflicting_or_outside_selected_evidence"
+      ]
+    },
+    {
+      "case_id": "S14",
+      "service_id": "quality_kyc",
+      "topic": "unsupported_service",
+      "complete": false,
+      "required_fact_ids": [],
+      "supported_fact_ids": [],
+      "gap_reasons": [
+        "unsupported_service"
+      ]
+    },
+    {
+      "case_id": "S15",
+      "service_id": "azimut",
+      "topic": "branch_condition",
+      "complete": true,
+      "required_fact_ids": [
+        "F0042"
+      ],
+      "supported_fact_ids": [
+        "F0042"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "S16",
+      "service_id": "qnb_wallet",
+      "topic": "initial_deposit",
+      "complete": true,
+      "required_fact_ids": [
+        "F0073"
+      ],
+      "supported_fact_ids": [
+        "F0073"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "S16",
+      "service_id": "qnb_wallet",
+      "topic": "balance_treatment",
+      "complete": false,
+      "required_fact_ids": [],
+      "supported_fact_ids": [],
+      "gap_reasons": [
+        "held_conflicting_or_outside_selected_evidence"
+      ]
+    },
+    {
+      "case_id": "S17",
+      "service_id": "axis_pay",
+      "topic": "withdrawal",
+      "complete": false,
+      "required_fact_ids": [],
+      "supported_fact_ids": [],
+      "gap_reasons": [
+        "held_conflicting_or_outside_selected_evidence"
+      ]
+    },
+    {
+      "case_id": "S17",
+      "service_id": "azimut",
+      "topic": "documents",
+      "complete": false,
+      "required_fact_ids": [],
+      "supported_fact_ids": [],
+      "gap_reasons": [
+        "held_conflicting_or_outside_selected_evidence"
+      ]
+    },
+    {
+      "case_id": "S18",
+      "service_id": "qnb_wallet",
+      "topic": "initial_deposit",
+      "complete": true,
+      "required_fact_ids": [
+        "F0073"
+      ],
+      "supported_fact_ids": [
+        "F0073"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "S19",
+      "service_id": "axis_pay",
+      "topic": "balance_treatment",
+      "complete": true,
+      "required_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "supported_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "S19",
+      "service_id": "axis_pay",
+      "topic": "opening_fee",
+      "complete": true,
+      "required_fact_ids": [
+        "F0010"
+      ],
+      "supported_fact_ids": [
+        "F0010"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "S19",
+      "service_id": "axis_pay",
+      "topic": "initial_deposit",
+      "complete": true,
+      "required_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "supported_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "T01",
+      "service_id": "axis_pay",
+      "topic": "balance_treatment",
+      "complete": true,
+      "required_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "supported_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "T01",
+      "service_id": "axis_pay",
+      "topic": "initial_deposit",
+      "complete": true,
+      "required_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "supported_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "T02",
+      "service_id": "qnb_wallet",
+      "topic": "initial_deposit",
+      "complete": true,
+      "required_fact_ids": [
+        "F0073"
+      ],
+      "supported_fact_ids": [
+        "F0073"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "T03",
+      "service_id": "axis_pay",
+      "topic": "initial_deposit",
+      "complete": true,
+      "required_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "supported_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "T03",
+      "service_id": "qnb_wallet",
+      "topic": "initial_deposit",
+      "complete": true,
+      "required_fact_ids": [
+        "F0073"
+      ],
+      "supported_fact_ids": [
+        "F0073"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "U01",
+      "service_id": "azimut",
+      "topic": "workflow",
+      "complete": true,
+      "required_fact_ids": [
+        "F0037",
+        "F0038",
+        "F0039",
+        "F0040",
+        "F0041",
+        "F0042"
+      ],
+      "supported_fact_ids": [
+        "F0037",
+        "F0038",
+        "F0039",
+        "F0040",
+        "F0041",
+        "F0042"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "U02",
+      "service_id": "azimut",
+      "topic": "branch_condition",
+      "complete": true,
+      "required_fact_ids": [
+        "F0042"
+      ],
+      "supported_fact_ids": [
+        "F0042"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "U03",
+      "service_id": "qnb_wallet",
+      "topic": "initial_deposit",
+      "complete": true,
+      "required_fact_ids": [
+        "F0073"
+      ],
+      "supported_fact_ids": [
+        "F0073"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "ISO01",
+      "service_id": "unresolved",
+      "topic": "unspecified",
+      "complete": false,
+      "required_fact_ids": null,
+      "supported_fact_ids": [],
+      "gap_reasons": [
+        "ambiguous_followup"
+      ]
+    },
+    {
+      "case_id": "SOURCE_QNB_CHANGED",
+      "service_id": "axis_pay",
+      "topic": "initial_deposit",
+      "complete": true,
+      "required_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "supported_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "SOURCE_QNB_CHANGED",
+      "service_id": "qnb_wallet",
+      "topic": "initial_deposit",
+      "complete": false,
+      "required_fact_ids": [
+        "F0073"
+      ],
+      "supported_fact_ids": [],
+      "gap_reasons": [
+        "source_version_invalid"
+      ]
+    },
+    {
+      "case_id": "SOURCE_AZIMUT_DELETED",
+      "service_id": "axis_pay",
+      "topic": "opening_fee",
+      "complete": true,
+      "required_fact_ids": [
+        "F0010"
+      ],
+      "supported_fact_ids": [
+        "F0010"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "SOURCE_AZIMUT_DELETED",
+      "service_id": "azimut",
+      "topic": "workflow",
+      "complete": false,
+      "required_fact_ids": [
+        "F0037",
+        "F0038",
+        "F0039",
+        "F0040",
+        "F0041",
+        "F0042"
+      ],
+      "supported_fact_ids": [],
+      "gap_reasons": [
+        "source_version_invalid"
+      ]
+    },
+    {
+      "case_id": "MIDDLE_STEP_REVOKED",
+      "service_id": "axis_pay",
+      "topic": "opening_fee",
+      "complete": true,
+      "required_fact_ids": [
+        "F0010"
+      ],
+      "supported_fact_ids": [
+        "F0010"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "MIDDLE_STEP_REVOKED",
+      "service_id": "azimut",
+      "topic": "workflow",
+      "complete": false,
+      "required_fact_ids": [
+        "F0037",
+        "F0038",
+        "F0039",
+        "F0040",
+        "F0041",
+        "F0042"
+      ],
+      "supported_fact_ids": [],
+      "gap_reasons": [
+        "test_eligibility_or_rendering_revoked"
+      ]
+    },
+    {
+      "case_id": "LANGUAGE_VIEW_REVOKED",
+      "service_id": "axis_pay",
+      "topic": "initial_deposit",
+      "complete": true,
+      "required_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "supported_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "gap_reasons": []
+    },
+    {
+      "case_id": "LANGUAGE_VIEW_REVOKED",
+      "service_id": "qnb_wallet",
+      "topic": "initial_deposit",
+      "complete": false,
+      "required_fact_ids": [
+        "F0073"
+      ],
+      "supported_fact_ids": [],
+      "gap_reasons": [
+        "test_eligibility_or_rendering_revoked"
+      ]
+    },
+    {
+      "case_id": "PRODUCTION_FLAG_REJECTED",
+      "service_id": "axis_pay",
+      "topic": "initial_deposit",
+      "complete": false,
+      "required_fact_ids": [
+        "F0011",
+        "F0012"
+      ],
+      "supported_fact_ids": [],
+      "gap_reasons": [
+        "test_authorization_invalid"
+      ]
+    },
+    {
+      "case_id": "PRODUCTION_FLAG_REJECTED",
+      "service_id": "qnb_wallet",
+      "topic": "initial_deposit",
+      "complete": false,
+      "required_fact_ids": [
+        "F0073"
+      ],
+      "supported_fact_ids": [],
+      "gap_reasons": [
+        "test_authorization_invalid"
+      ]
+    }
+  ],
+  "all_emitted_views_source_bound": true,
+  "not_human_business_approval": true
+}

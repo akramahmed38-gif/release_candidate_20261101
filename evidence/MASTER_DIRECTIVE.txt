@@ -1,0 +1,417 @@
+# FAWRY HR TRAINING CHATBOT
+# MASTER DIRECTIVE — TRANSITION FROM SEMANTIC RECOVERY TO PRODUCTION-LIKE VALIDATION
+
+## 1. Mission
+
+We are changing the engineering strategy.
+
+The objective is no longer to perform unlimited semantic-recovery iterations without delivering an operational application.
+
+The objective is to transform the existing Fawry HR Training Chatbot into a validated, offline, production-like release candidate suitable for an authorized, isolated employee pilot.
+
+This is NOT authorization to deploy to production.
+
+Continue from the existing repository and preserve all completed engineering work.
+
+Do not restart the project, replace the architecture, rebuild the knowledge base unnecessarily, or discard previous tests.
+
+I expect a working release candidate, reproducible deployment instructions, meaningful end-to-end validation, and a precise list of remaining blockers.
+
+## 2. Current baseline
+
+Latest completed iteration: I046.
+
+Candidate commit: `8e2faa3`
+
+Verified local results:
+
+- 609/609 unit tests passed.
+- 171/176 frozen outcomes passed.
+- All 171 technically resolvable historical cases passed.
+- Five frozen gold-context conflicts remain unresolved.
+- 58/58 service-recognition checks passed.
+- 8/8 integrity controls passed.
+- Zero false-complete and unexpected-fact cases in the frozen suite.
+- Exposed diagnostic: 32/42 business/status matches.
+- Exposed exact scope: 17/42.
+- Supplemental semantic graph: 22/66.
+- Native validation: BLOCKED — NOT RUN.
+- All 21 business facts remain unapproved technical fixtures.
+
+Preserve these results and their exact historical meaning.
+
+Do not count exposed diagnostics as independent acceptance.
+
+## 3. Architecture and deployment constraints
+
+Maintain the existing architecture:
+
+- BGE-M3 embeddings.
+- Chroma vector storage.
+- BM25 lexical retrieval.
+- Qwen local inference.
+- Existing conversation runtime.
+- Existing canonical knowledge and evidence contracts.
+- Existing numerical and procedural validators.
+
+Target environment:
+
+- Windows Server.
+- Offline operation.
+- CPU-only.
+- Maximum 16 GB RAM.
+- No GPU dependency.
+- No cloud inference dependency.
+
+The system must remain operable without internet access.
+
+Measure actual resource consumption and performance. Do not claim the system meets memory or latency requirements without native measurements.
+
+## 4. Change the work structure
+
+Create a new release-candidate workstream.
+
+Do not overwrite or rename the historical recovery iterations.
+
+Establish separate directories for:
+
+- Release-candidate source and configuration.
+- Environment validation.
+- Native test packages.
+- End-to-end test datasets.
+- Independent evaluation results.
+- Performance measurements.
+- Knowledge-coverage reports.
+- Pilot readiness.
+- Deployment and rollback documentation.
+
+Record the tested commit and SHA-256 fingerprints of all relevant candidate artifacts.
+
+Every test result must identify exactly which candidate was evaluated.
+
+## 5. Phase A — Release-candidate readiness
+
+First inspect the existing application.
+
+Determine whether the current implementation can actually be started and used as a chatbot.
+
+Verify:
+
+- Application startup.
+- Web interface and API availability, where implemented.
+- Authentication and access controls.
+- Conversation creation and isolation.
+- Retrieval integration.
+- Model invocation.
+- Answer generation.
+- Evidence citations.
+- Missing-evidence behavior.
+- Error handling.
+- Logging.
+- Administrative configuration.
+- Service availability.
+- Windows deployment dependencies.
+
+Produce a release-candidate readiness report.
+
+Fix actual deployment blockers in an isolated candidate.
+
+Do not invent completed features or claim functionality that has not been executed.
+
+## 6. Phase B — Real native inference
+
+Stop relying exclusively on simulated or deterministic Core results.
+
+Prepare and execute end-to-end validation using the actual local inference architecture.
+
+The test path must include:
+
+User question
+→ language interpretation
+→ service/topic selection
+→ BM25 and BGE-M3 retrieval
+→ Chroma evidence selection
+→ source/version/approval validation
+→ Qwen generation where applicable
+→ answer validation
+→ final employee-facing response.
+
+Measure separately:
+
+- Language interpretation time.
+- Embedding time.
+- Retrieval time.
+- Qwen inference time.
+- Validation time.
+- Total response time.
+- Peak RAM consumption.
+- CPU utilization.
+- Timeouts and failures.
+
+Test cold and warm execution.
+
+If authorized Windows Server execution is unavailable, prepare a self-contained validation package and continue all other tasks.
+
+Never treat file access through UNC as server execution.
+
+Do not request passwords or install remote-access software.
+
+## 7. Phase C — Production-like employee questions
+
+Create a realistic, independent evaluation dataset.
+
+Use genuine employee-style questions based on approved source content and authorized, anonymized examples where available.
+
+Include:
+
+- Egyptian Arabic.
+- Formal Arabic.
+- English.
+- Franco-Arabic.
+- Mixed Arabic and English.
+- Short and incomplete questions.
+- Multi-turn conversations.
+- Service switching.
+- Multiple services in one question.
+- Comparisons.
+- Fees, limits and eligibility.
+- Procedures and operational steps.
+- Conditions and exceptions.
+- Channel restrictions.
+- Quoted customer claims.
+- Unsupported policies.
+- Ambiguous service references.
+- Questions requiring clarification.
+- Questions where only part of the answer is supported.
+
+Use a balanced evaluation design across the available catalog.
+
+Do not fabricate approved business answers for services without verified evidence.
+
+Separate evaluation into:
+
+A. Interpretation-only cases that do not require business facts.
+
+B. Evidence-grounded business-answer cases.
+
+C. Unsupported-information and clarification cases.
+
+D. Full native conversation cases.
+
+E. Safety, integrity and adversarial-input cases.
+
+Do not mix these categories into a single misleading accuracy percentage.
+
+## 8. Independent acceptance
+
+Create a fresh evaluation that has not been exposed to the implementation agent.
+
+Use separate challenge-author and reviewer roles where available.
+
+Freeze the candidate before challenge execution.
+
+The reviewer must independently verify expected interpretations, expected facts, required citations, legitimate holds and ambiguity treatment.
+
+Do not allow the candidate-development process to inspect the sealed questions or gold answers before evaluation.
+
+Report:
+
+- Exact intent accuracy.
+- Exact service attribution.
+- Exact topic and channel scope.
+- Multi-turn context accuracy.
+- Complete and correct answers.
+- Correct partial answers.
+- Correct clarification.
+- Correct unsupported-information handling.
+- False-complete answers.
+- Unsupported factual claims.
+- Missing requested information.
+- Citation correctness.
+
+Preserve failed evaluations.
+
+Use exposed failures only for diagnosis.
+
+Do not reuse an exposed challenge as a fresh independent acceptance gate.
+
+## 9. Phase D — Knowledge-base production readiness
+
+The canonical catalog contains 29 service/operational profiles.
+
+Recognition of these profiles does not establish that their business knowledge is approved or answerable.
+
+Build a comprehensive inventory from the actual repository and source documents.
+
+For each profile, identify:
+
+- Original documents.
+- Document versions and source hashes.
+- Available service topics.
+- Verified evidence.
+- Missing evidence.
+- Language coverage.
+- Currentness.
+- Approval status.
+- Answerable questions.
+- Unsupported questions.
+- Missing business-owner decisions.
+
+Separate:
+
+1. Technical extraction and source matching.
+2. Human source-fidelity review.
+3. Business-owner currentness approval.
+4. Production eligibility.
+
+Automate technical preparation wherever possible.
+
+Do not automatically grant human or business approval.
+
+Never activate the existing 21 test-only facts as production policies.
+
+Prepare review-ready evidence packages to minimize the manual work required from business owners.
+
+## 10. Phase E — Performance and reliability
+
+Evaluate the actual native system under the stated hardware constraints.
+
+Measure:
+
+- p50, p95 and p99 end-to-end latency.
+- Peak RAM.
+- Sustained CPU usage.
+- Retrieval latency.
+- Model generation latency.
+- Timeout rate.
+- Concurrent-session behavior.
+- Conversation isolation.
+- Long-session stability.
+- Recovery after service restart.
+- Behavior with unavailable or invalid evidence.
+- Offline operation.
+
+Establish measurable thresholds before declaring performance acceptance.
+
+If the hardware cannot meet the required employee experience, provide evidence and compare realistic optimizations.
+
+Do not replace Qwen, BGE-M3, Chroma or BM25 without a documented, authorized architectural decision.
+
+## 11. Phase F — Controlled pilot
+
+Prepare a staging pilot for authorized employees.
+
+The pilot must:
+
+- Be isolated from production.
+- Use only eligible approved business knowledge for employee-facing factual answers.
+- Clearly identify unavailable services or topics.
+- Capture employee questions and response feedback securely.
+- Protect sensitive information.
+- Support correction and escalation.
+- Preserve citations and answer provenance.
+- Prevent test fixtures from appearing as official policy.
+- Provide a way to disable the pilot safely.
+
+If approved business knowledge is not yet available, provide a technical demonstration environment using clearly marked synthetic fixtures instead of pretending the application is production-ready.
+
+Do not enable employee access without explicit authorization.
+
+## 12. Definition of done
+
+Distinguish three separate completion states.
+
+### Engineering-ready
+
+- Application runs end-to-end in an authorized isolated environment.
+- Regression tests pass.
+- Source and approval controls remain intact.
+- Native measurements are recorded.
+- Known critical defects are addressed.
+- Deployment and rollback instructions are verified.
+
+### Pilot-ready
+
+- Engineering-ready conditions pass.
+- Independent unseen-question evaluation meets predefined acceptance thresholds.
+- Pilot knowledge has required approvals.
+- Employee-facing behavior is safe and auditable.
+- Pilot access and scope are explicitly authorized.
+
+### Production-ready
+
+- Pilot-ready conditions pass.
+- Required service coverage and approvals are complete.
+- Native performance and reliability requirements pass.
+- Security and operational reviews are complete.
+- Production deployment is explicitly approved.
+
+Do not claim one completion state implies another.
+
+## 13. Engineering execution policy
+
+Work autonomously on authorized engineering tasks.
+
+When tests fail:
+
+1. Identify the root cause.
+2. Preserve the failing evidence.
+3. Correct the shared defect.
+4. Add regression protection.
+5. Rerun relevant tests.
+6. Continue toward the release candidate.
+
+Avoid endless cycles of narrowly targeted semantic patches.
+
+After two unsuccessful corrections to the same architectural failure family, stop patch accumulation and produce an architecture-level comparison of alternatives.
+
+Do not change frozen gold expectations or weaken validators to improve scores.
+
+Do not alter production, original source documents, approval records or protected backups.
+
+Do not request user intervention for ordinary development failures.
+
+Request intervention only when a genuine external dependency blocks progress.
+
+## 14. Required management report
+
+Produce one concise release-readiness dashboard containing:
+
+- Current release-candidate version.
+- Working application status.
+- Native inference status.
+- Historical regression status.
+- Independent unseen-question accuracy.
+- Exact scope accuracy.
+- False-complete and unsupported-fact counts.
+- Business knowledge coverage.
+- Approved service coverage.
+- RAM and latency.
+- Security and integrity.
+- Pilot readiness.
+- Production readiness.
+- External blockers.
+
+For each area, use PASS, FAIL, BLOCKED or NOT RUN.
+
+Show evidence links and tested commit fingerprints.
+
+Do not substitute a long activity log for measurable delivery.
+
+## 15. Start now
+
+Begin by assessing the existing I046 candidate as an end-to-end application.
+
+Create the isolated release-candidate workstream.
+
+Identify what can be executed immediately on the workstation and what requires authorized Windows Server execution.
+
+Continue engineering and package preparation in parallel with external approval and server-access dependencies.
+
+Prioritize delivering a demonstrable, measurable chatbot over increasing the number of synthetic unit tests.
+
+The final objective remains a reliable, offline, source-grounded Fawry HR Training Chatbot.
+
+The immediate objective is a verified release candidate and an honest, executable path to pilot readiness.
+
+Do not declare production readiness prematurely.

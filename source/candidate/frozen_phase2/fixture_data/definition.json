@@ -1,0 +1,1271 @@
+{
+  "schema": "ISOLATED_PHASE2_TEN_FACT_FIXTURE",
+  "authorization_reference": "User Phase 2 bounded technical expansion only; approvals pending",
+  "service_profiles": {
+    "axis_pay": {
+      "service_id": "axis_pay",
+      "name": "AXIS Pay / AXIS Wallet",
+      "family": "wallets",
+      "aliases": [
+        "اكسس باي",
+        "اكسيس باي",
+        "محفظة اكسيس",
+        "axis",
+        "axis pay",
+        "اكسيس",
+        "AXIS Pay",
+        "axis wallet"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 24,
+      "related_source_count": 11,
+      "covered_topic_ids": [
+        "activation",
+        "deposit",
+        "documents",
+        "eligibility",
+        "exceptions",
+        "fees",
+        "kyc_identity",
+        "limits",
+        "promotions",
+        "quality_review",
+        "registration",
+        "risk_compliance",
+        "shipping",
+        "timeline",
+        "transfer",
+        "troubleshooting",
+        "withdrawal",
+        "workflow"
+      ],
+      "guide_path": "services/axis_pay.md",
+      "needs_original_source_verification": true
+    },
+    "qnb_wallet": {
+      "service_id": "qnb_wallet",
+      "name": "QNB Wallet",
+      "family": "wallets",
+      "aliases": [
+        "qnb wallet",
+        "محفظة qnb",
+        "qnb محفظة",
+        "محفظة كيو ان بي",
+        "qnb",
+        "كيو ان بي",
+        "كيو إن بي"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 82,
+      "related_source_count": 9,
+      "covered_topic_ids": [
+        "activation",
+        "deposit",
+        "documents",
+        "eligibility",
+        "exceptions",
+        "fees",
+        "general",
+        "kyc_identity",
+        "limits",
+        "overview",
+        "promotions",
+        "quality_review",
+        "registration",
+        "risk_compliance",
+        "shipping",
+        "timeline",
+        "transaction_codes",
+        "transfer",
+        "troubleshooting",
+        "withdrawal",
+        "workflow"
+      ],
+      "guide_path": "services/qnb_wallet.md",
+      "needs_original_source_verification": true
+    },
+    "adib_wallet": {
+      "service_id": "adib_wallet",
+      "name": "ADIB Wallet",
+      "family": "wallets",
+      "aliases": [
+        "adib wallet",
+        "محفظة adib",
+        "محفظة ابو ظبي",
+        "محفظة ابوظبي"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 8,
+      "related_source_count": 4,
+      "covered_topic_ids": [
+        "activation",
+        "deposit",
+        "documents",
+        "eligibility",
+        "exceptions",
+        "fees",
+        "kyc_identity",
+        "limits",
+        "quality_review",
+        "timeline",
+        "transfer",
+        "withdrawal",
+        "workflow"
+      ],
+      "guide_path": "services/adib_wallet.md",
+      "needs_original_source_verification": true
+    },
+    "wallets_general": {
+      "service_id": "wallets_general",
+      "name": "Electronic Wallets / المحافظ",
+      "family": "wallets",
+      "aliases": [
+        "wallets",
+        "المحافظ الالكترونية",
+        "المحافظ الإلكترونية",
+        "محافظ فوري بلس"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 11,
+      "related_source_count": 6,
+      "covered_topic_ids": [
+        "activation",
+        "deposit",
+        "fees",
+        "general",
+        "limits",
+        "payment",
+        "promotions",
+        "registration",
+        "shipping",
+        "timeline",
+        "transfer",
+        "withdrawal"
+      ],
+      "guide_path": "services/wallets_general.md",
+      "needs_original_source_verification": true
+    },
+    "adib_remittance": {
+      "service_id": "adib_remittance",
+      "name": "ADIB Remittance / حوالات أبوظبي",
+      "family": "remittance",
+      "aliases": [
+        "adib remittance",
+        "حوالة ابوظبي",
+        "حوالات مصرف ابو ظبي",
+        "صرف حوالة adib",
+        "حوالات مصرف أبوظبي"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 27,
+      "related_source_count": 8,
+      "covered_topic_ids": [
+        "documents",
+        "exceptions",
+        "kyc_identity",
+        "quality_review",
+        "registration",
+        "shipping",
+        "timeline",
+        "transaction_codes",
+        "transfer",
+        "withdrawal",
+        "workflow"
+      ],
+      "guide_path": "services/adib_remittance.md",
+      "needs_original_source_verification": true
+    },
+    "bdc_remittance": {
+      "service_id": "bdc_remittance",
+      "name": "Banque du Caire Remittance / حوالات بنك القاهرة",
+      "family": "remittance",
+      "aliases": [
+        "حوالات بنك القاهرة",
+        "حوالة بنك القاهرة",
+        "bdc remittance",
+        "banque du caire remittance"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 34,
+      "related_source_count": 9,
+      "covered_topic_ids": [
+        "documents",
+        "eligibility",
+        "exceptions",
+        "fees",
+        "general",
+        "kyc_identity",
+        "limits",
+        "registration",
+        "shipping",
+        "timeline",
+        "transaction_codes",
+        "transfer",
+        "withdrawal",
+        "workflow"
+      ],
+      "guide_path": "services/bdc_remittance.md",
+      "needs_original_source_verification": true
+    },
+    "united_bank_remittance": {
+      "service_id": "united_bank_remittance",
+      "name": "United Bank Remittance / حوالات المصرف المتحد",
+      "family": "remittance",
+      "aliases": [
+        "حوالات المصرف المتحد",
+        "حوالة المصرف المتحد",
+        "حوالات البنك المتحد"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 27,
+      "related_source_count": 8,
+      "covered_topic_ids": [
+        "documents",
+        "eligibility",
+        "exceptions",
+        "kyc_identity",
+        "payment",
+        "quality_review",
+        "shipping",
+        "timeline",
+        "transaction_codes",
+        "transfer",
+        "withdrawal",
+        "workflow"
+      ],
+      "guide_path": "services/united_bank_remittance.md",
+      "needs_original_source_verification": true
+    },
+    "yellow_card": {
+      "service_id": "yellow_card",
+      "name": "Yellow Card / الكارت الأصفر",
+      "family": "cards",
+      "aliases": [
+        "yellow card",
+        "الكارت الأصفر",
+        "الكارت الاصفر"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 46,
+      "related_source_count": 11,
+      "covered_topic_ids": [
+        "activation",
+        "deposit",
+        "documents",
+        "eligibility",
+        "exceptions",
+        "fees",
+        "kyc_identity",
+        "limits",
+        "overview",
+        "payment",
+        "promotions",
+        "quality_review",
+        "registration",
+        "reports",
+        "shipping",
+        "timeline",
+        "transaction_codes",
+        "troubleshooting",
+        "withdrawal",
+        "workflow"
+      ],
+      "guide_path": "services/yellow_card.md",
+      "needs_original_source_verification": true
+    },
+    "azimut": {
+      "service_id": "azimut",
+      "name": "Azimut / أزيموت",
+      "family": "investments",
+      "aliases": [
+        "azimut",
+        "ازيموت",
+        "أزيموت"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 67,
+      "related_source_count": 13,
+      "covered_topic_ids": [
+        "deposit",
+        "documents",
+        "eligibility",
+        "exceptions",
+        "fees",
+        "general",
+        "kyc_identity",
+        "limits",
+        "payment",
+        "promotions",
+        "quality_review",
+        "registration",
+        "risk_compliance",
+        "timeline",
+        "transfer",
+        "troubleshooting",
+        "withdrawal",
+        "workflow"
+      ],
+      "guide_path": "services/azimut.md",
+      "needs_original_source_verification": true
+    },
+    "blnk": {
+      "service_id": "blnk",
+      "name": "BLNK",
+      "family": "consumer_finance",
+      "aliases": [
+        "blnk",
+        "بلنك"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 39,
+      "related_source_count": 11,
+      "covered_topic_ids": [
+        "activation",
+        "documents",
+        "exceptions",
+        "fees",
+        "general",
+        "kyc_identity",
+        "limits",
+        "overview",
+        "payment",
+        "promotions",
+        "quality_review",
+        "risk_compliance",
+        "shipping",
+        "timeline",
+        "transaction_codes",
+        "troubleshooting",
+        "withdrawal",
+        "workflow"
+      ],
+      "guide_path": "services/blnk.md",
+      "needs_original_source_verification": true
+    },
+    "mogo": {
+      "service_id": "mogo",
+      "name": "MOGO",
+      "family": "consumer_finance",
+      "aliases": [
+        "mogo",
+        "موجو"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 62,
+      "related_source_count": 13,
+      "covered_topic_ids": [
+        "activation",
+        "documents",
+        "eligibility",
+        "exceptions",
+        "fees",
+        "general",
+        "kyc_identity",
+        "limits",
+        "payment",
+        "quality_review",
+        "registration",
+        "shipping",
+        "timeline",
+        "transaction_codes",
+        "troubleshooting",
+        "withdrawal",
+        "workflow"
+      ],
+      "guide_path": "services/mogo.md",
+      "needs_original_source_verification": true
+    },
+    "contact_now": {
+      "service_id": "contact_now",
+      "name": "Contact Now",
+      "family": "consumer_finance",
+      "aliases": [
+        "contact now",
+        "كونتاكت ناو",
+        "contact"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 0,
+      "related_source_count": 7,
+      "covered_topic_ids": [],
+      "guide_path": "services/contact_now.md",
+      "needs_original_source_verification": true
+    },
+    "money_fellows": {
+      "service_id": "money_fellows",
+      "name": "Money Fellows",
+      "family": "consumer_finance",
+      "aliases": [
+        "money fellows",
+        "ماني فيلوز",
+        "مونى فيلوز"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 30,
+      "related_source_count": 13,
+      "covered_topic_ids": [
+        "activation",
+        "documents",
+        "eligibility",
+        "exceptions",
+        "general",
+        "kyc_identity",
+        "overview",
+        "shipping",
+        "timeline",
+        "troubleshooting",
+        "workflow"
+      ],
+      "guide_path": "services/money_fellows.md",
+      "needs_original_source_verification": true
+    },
+    "fawry_taqseet": {
+      "service_id": "fawry_taqseet",
+      "name": "My Fawry Taqseet / ماي فوري تقسيط",
+      "family": "consumer_finance",
+      "aliases": [
+        "fawry taqseet",
+        "my fawry taqseet",
+        "ماي فوري تقسيط",
+        "ماي فورى تقسيط",
+        "فوري تقسيط"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 45,
+      "related_source_count": 33,
+      "covered_topic_ids": [
+        "activation",
+        "documents",
+        "eligibility",
+        "exceptions",
+        "fees",
+        "kyc_identity",
+        "limits",
+        "overview",
+        "payment",
+        "quality_review",
+        "shipping",
+        "timeline",
+        "transfer",
+        "troubleshooting",
+        "withdrawal",
+        "workflow"
+      ],
+      "guide_path": "services/fawry_taqseet.md",
+      "needs_original_source_verification": true
+    },
+    "fawry_yawmy": {
+      "service_id": "fawry_yawmy",
+      "name": "Fawry Yawmy / فوري يومي",
+      "family": "consumer_finance",
+      "aliases": [
+        "fawry yawmy",
+        "فوري يومي",
+        "فورى يومى"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 76,
+      "related_source_count": 35,
+      "covered_topic_ids": [
+        "activation",
+        "documents",
+        "eligibility",
+        "exceptions",
+        "fees",
+        "general",
+        "kyc_identity",
+        "limits",
+        "overview",
+        "payment",
+        "promotions",
+        "quality_review",
+        "registration",
+        "reports",
+        "risk_compliance",
+        "shipping",
+        "timeline",
+        "troubleshooting",
+        "withdrawal",
+        "workflow"
+      ],
+      "guide_path": "services/fawry_yawmy.md",
+      "needs_original_source_verification": true
+    },
+    "mashreq_neo": {
+      "service_id": "mashreq_neo",
+      "name": "Mashreq NEO / المشرق",
+      "family": "fulfillment",
+      "aliases": [
+        "mashreq neo",
+        "mashreq",
+        "المشرق",
+        "بنك المشرق"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 1,
+      "related_source_count": 22,
+      "covered_topic_ids": [
+        "documents",
+        "kyc_identity",
+        "timeline",
+        "workflow"
+      ],
+      "guide_path": "services/mashreq_neo.md",
+      "needs_original_source_verification": true
+    },
+    "egypt_trust": {
+      "service_id": "egypt_trust",
+      "name": "Egypt Trust / إيجيبت تراست",
+      "family": "fulfillment",
+      "aliases": [
+        "egypt trust",
+        "ايجيبت تراست",
+        "إيجيبت تراست"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 36,
+      "related_source_count": 23,
+      "covered_topic_ids": [
+        "documents",
+        "exceptions",
+        "fees",
+        "general",
+        "kyc_identity",
+        "limits",
+        "overview",
+        "quality_review",
+        "shipping",
+        "timeline",
+        "troubleshooting",
+        "workflow"
+      ],
+      "guide_path": "services/egypt_trust.md",
+      "needs_original_source_verification": true
+    },
+    "microfinance": {
+      "service_id": "microfinance",
+      "name": "Fawry Microfinance / التمويل",
+      "family": "microfinance",
+      "aliases": [
+        "microfinance",
+        "التمويل متناهي الصغر",
+        "تمويل متناهي الصغر",
+        "fawry microfinance",
+        "تمويل فوري"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 96,
+      "related_source_count": 8,
+      "covered_topic_ids": [
+        "deposit",
+        "documents",
+        "eligibility",
+        "exceptions",
+        "fees",
+        "general",
+        "kyc_identity",
+        "limits",
+        "payment",
+        "quality_review",
+        "risk_compliance",
+        "shipping",
+        "timeline",
+        "troubleshooting",
+        "withdrawal",
+        "workflow"
+      ],
+      "guide_path": "services/microfinance.md",
+      "needs_original_source_verification": true
+    },
+    "maashy": {
+      "service_id": "maashy",
+      "name": "Maashy / معاشي",
+      "family": "insurance",
+      "aliases": [
+        "maashy",
+        "معاشى",
+        "معاشي",
+        "masr life"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 56,
+      "related_source_count": 14,
+      "covered_topic_ids": [
+        "activation",
+        "documents",
+        "eligibility",
+        "exceptions",
+        "general",
+        "kyc_identity",
+        "limits",
+        "overview",
+        "payment",
+        "promotions",
+        "quality_review",
+        "shipping",
+        "timeline",
+        "troubleshooting",
+        "withdrawal",
+        "workflow"
+      ],
+      "guide_path": "services/maashy.md",
+      "needs_original_source_verification": true
+    },
+    "fawry_insurance": {
+      "service_id": "fawry_insurance",
+      "name": "Fawry Insurance / التأمين",
+      "family": "insurance",
+      "aliases": [
+        "fawry insurance",
+        "فوري للتأمين",
+        "التأمين",
+        "fawry car insurance"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 46,
+      "related_source_count": 31,
+      "covered_topic_ids": [
+        "activation",
+        "documents",
+        "eligibility",
+        "exceptions",
+        "fees",
+        "general",
+        "limits",
+        "overview",
+        "payment",
+        "promotions",
+        "quality_review",
+        "registration",
+        "reports",
+        "shipping",
+        "timeline",
+        "troubleshooting",
+        "withdrawal"
+      ],
+      "guide_path": "services/fawry_insurance.md",
+      "needs_original_source_verification": true
+    },
+    "pudo": {
+      "service_id": "pudo",
+      "name": "PUDO / Pargo Shipping",
+      "family": "shipping",
+      "aliases": [
+        "pudo",
+        "pargo",
+        "بارجو",
+        "شركات الشحن",
+        "شحن الطرود"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 0,
+      "related_source_count": 18,
+      "covered_topic_ids": [],
+      "guide_path": "services/pudo.md",
+      "needs_original_source_verification": true
+    },
+    "super_fawry": {
+      "service_id": "super_fawry",
+      "name": "Super Fawry System",
+      "family": "platform",
+      "aliases": [
+        "super fawry",
+        "سوبر فوري",
+        "سوبر فورى",
+        "superfawry"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 27,
+      "related_source_count": 32,
+      "covered_topic_ids": [
+        "activation",
+        "documents",
+        "exceptions",
+        "kyc_identity",
+        "overview",
+        "payment",
+        "promotions",
+        "quality_review",
+        "registration",
+        "shipping",
+        "timeline",
+        "transaction_codes",
+        "troubleshooting",
+        "withdrawal",
+        "workflow"
+      ],
+      "guide_path": "services/super_fawry.md",
+      "needs_original_source_verification": true
+    },
+    "pos": {
+      "service_id": "pos",
+      "name": "POS / فوري POS",
+      "family": "operations",
+      "aliases": [
+        "pos",
+        "ماكينة فوري",
+        "ماكينات فوري",
+        "ماكينة فورى",
+        "pax",
+        "pos pax",
+        "جهاز باكس"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 0,
+      "related_source_count": 7,
+      "covered_topic_ids": [],
+      "guide_path": "services/pos.md",
+      "needs_original_source_verification": true
+    },
+    "pos_maintenance": {
+      "service_id": "pos_maintenance",
+      "name": "POS Maintenance / صيانة POS",
+      "family": "operations",
+      "aliases": [
+        "pos maintenance",
+        "صيانة pos",
+        "صيانة الماكينات",
+        "صيانة ماكينة"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 37,
+      "related_source_count": 4,
+      "covered_topic_ids": [
+        "activation",
+        "exceptions",
+        "fees",
+        "general",
+        "payment",
+        "shipping",
+        "transaction_codes",
+        "troubleshooting",
+        "workflow"
+      ],
+      "guide_path": "services/pos_maintenance.md",
+      "needs_original_source_verification": true
+    },
+    "quality_kyc": {
+      "service_id": "quality_kyc",
+      "name": "Quality Assurance and KYC",
+      "family": "operations",
+      "aliases": [
+        "quality assurance",
+        "الجودة",
+        "مراجعة المستندات",
+        "checker",
+        "kyc"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 19,
+      "related_source_count": 23,
+      "covered_topic_ids": [
+        "documents",
+        "exceptions",
+        "kyc_identity",
+        "quality_review",
+        "registration",
+        "shipping",
+        "timeline",
+        "transfer",
+        "withdrawal",
+        "workflow"
+      ],
+      "guide_path": "services/quality_kyc.md",
+      "needs_original_source_verification": true
+    },
+    "aml_compliance": {
+      "service_id": "aml_compliance",
+      "name": "AML and Compliance",
+      "family": "compliance",
+      "aliases": [
+        "aml",
+        "مكافحة غسيل الأموال",
+        "مكافحة غسل الاموال",
+        "fcc"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 0,
+      "related_source_count": 6,
+      "covered_topic_ids": [],
+      "guide_path": "services/aml_compliance.md",
+      "needs_original_source_verification": true
+    },
+    "cash_operations": {
+      "service_id": "cash_operations",
+      "name": "Cash Operations",
+      "family": "operations",
+      "aliases": [
+        "cash operations",
+        "عمليات النقدية",
+        "الخزينة",
+        "cash & fcc"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 14,
+      "related_source_count": 12,
+      "covered_topic_ids": [
+        "activation",
+        "documents",
+        "exceptions",
+        "kyc_identity",
+        "overview",
+        "payment",
+        "promotions",
+        "quality_review",
+        "shipping",
+        "timeline",
+        "transaction_codes",
+        "troubleshooting",
+        "withdrawal",
+        "workflow"
+      ],
+      "guide_path": "services/cash_operations.md",
+      "needs_original_source_verification": true
+    },
+    "myfawry_app": {
+      "service_id": "myfawry_app",
+      "name": "My Fawry App",
+      "family": "digital",
+      "aliases": [
+        "my fawry app",
+        "myfawry app",
+        "تطبيق ماي فوري",
+        "my fawry application"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 0,
+      "related_source_count": 2,
+      "covered_topic_ids": [],
+      "guide_path": "services/myfawry_app.md",
+      "needs_original_source_verification": true
+    },
+    "soft_skills": {
+      "service_id": "soft_skills",
+      "name": "Soft Skills and Sales",
+      "family": "training",
+      "aliases": [
+        "soft skills",
+        "sales skills",
+        "مهارات البيع"
+      ],
+      "status": "source_discovery_scope_not_policy_approval",
+      "article_section_count": 0,
+      "related_source_count": 2,
+      "covered_topic_ids": [],
+      "guide_path": "services/soft_skills.md",
+      "needs_original_source_verification": true
+    }
+  },
+  "source_content_generation": "9551abd14708840e63481c7d",
+  "expected_embedding_model": "bge-m3:latest",
+  "expected_embedding_digest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab",
+  "source_evidence_unit_id": "source-verified-axis-guide-activation-198dffbc8ab1",
+  "source_unit_text_sha256": "779db86d8e0f6b628bf7a5a5da67273da01490af86a8137ec6cabcb0a525774b",
+  "facts": [
+    {
+      "fact_id": "F0010",
+      "service_id": "axis_pay",
+      "aspect": "opening_fee",
+      "arabic": "فتح المحفظة مجاني تمامًا بـ 0 جنيه رسوم اشتراك.",
+      "english": "Opening the wallet has no subscription fee: 0 EGP.",
+      "arabic_sha256": "0f5c77a6f32ef0c0870da0032b5c273e11fe1acd0a6e8e25397bfcf88f70d269",
+      "english_sha256": "d0e24ff638db2dbe14cb1cc28b0189242251e3211318ba29bce83af7425093be",
+      "source_unit_id": "source-verified-axis-guide-activation-198dffbc8ab1",
+      "unit_text_sha256": "779db86d8e0f6b628bf7a5a5da67273da01490af86a8137ec6cabcb0a525774b",
+      "scope": {
+        "fee_egp": 0
+      },
+      "normal_runtime_eligible": false,
+      "business_approved": false,
+      "human_fidelity_approved": false,
+      "test_fixture_only": true,
+      "source_document": "daily_brief/axis_wallet_sales_guide.pdf",
+      "source_sha256": "198dffbc8ab1ce2887356e91fab9d241ea3f08c35216d2b32a1062e64439abce",
+      "locator": {
+        "type": "page",
+        "page": "1",
+        "line_start": null,
+        "line_end": null,
+        "source_segments": null
+      },
+      "dependencies": [],
+      "sequence_order": null
+    },
+    {
+      "fact_id": "F0011",
+      "service_id": "axis_pay",
+      "aspect": "initial_deposit",
+      "arabic": "التفعيل لحظي عند إيداع 20 جنيه كحد أدنى لحساب العميل.",
+      "english": "Activation is immediate upon depositing a minimum of 20 EGP into the customer account.",
+      "arabic_sha256": "ed88272e9cddca6f3c493f9891620ec39ed3df072afc5d18f799b805a018554b",
+      "english_sha256": "b72dda206c441f59728cf266435b295b0f835f9a97ef4e507221c7af86ab070b",
+      "source_unit_id": "source-verified-axis-guide-activation-198dffbc8ab1",
+      "unit_text_sha256": "779db86d8e0f6b628bf7a5a5da67273da01490af86a8137ec6cabcb0a525774b",
+      "scope": {
+        "minimum_initial_deposit_egp": 20,
+        "timing": "immediate upon deposit"
+      },
+      "normal_runtime_eligible": false,
+      "business_approved": false,
+      "human_fidelity_approved": false,
+      "test_fixture_only": true,
+      "source_document": "daily_brief/axis_wallet_sales_guide.pdf",
+      "source_sha256": "198dffbc8ab1ce2887356e91fab9d241ea3f08c35216d2b32a1062e64439abce",
+      "locator": {
+        "type": "page",
+        "page": "1",
+        "line_start": null,
+        "line_end": null,
+        "source_segments": null
+      },
+      "dependencies": [],
+      "sequence_order": null
+    },
+    {
+      "fact_id": "F0012",
+      "service_id": "axis_pay",
+      "aspect": "balance_treatment",
+      "arabic": "إيداع مبلغ 20 جنيه مصري كحد أدنى (يستقر في رصيد العميل).",
+      "english": "The initial AXIS Pay deposit of at least EGP 20 remains in the customer’s balance.",
+      "arabic_sha256": "903dd1cf745e1bee19ed4f2b3927bc246c3107d2e0346e7d39cfd23676e4e902",
+      "english_sha256": "42734b52ea9e8a44d3d47e3390875f7d63dcd85d0a79ed8d571b2aa0cf06125c",
+      "source_unit_id": "source-verified-axis-guide-activation-198dffbc8ab1",
+      "unit_text_sha256": "779db86d8e0f6b628bf7a5a5da67273da01490af86a8137ec6cabcb0a525774b",
+      "scope": {
+        "minimum_initial_deposit_egp": 20,
+        "balance_treatment": "credited to customer balance"
+      },
+      "normal_runtime_eligible": false,
+      "business_approved": false,
+      "human_fidelity_approved": false,
+      "test_fixture_only": true,
+      "source_document": "daily_brief/axis_wallet_sales_guide.pdf",
+      "source_sha256": "198dffbc8ab1ce2887356e91fab9d241ea3f08c35216d2b32a1062e64439abce",
+      "locator": {
+        "type": "page",
+        "page": "1",
+        "line_start": null,
+        "line_end": null,
+        "source_segments": null
+      },
+      "dependencies": [
+        "F0011"
+      ],
+      "sequence_order": null
+    },
+    {
+      "fact_id": "F0073",
+      "service_id": "qnb_wallet",
+      "aspect": "initial_deposit",
+      "arabic": "تفعيل QNB Wallet يكون لحظيًا بشرط إيداع حد أدنى:\n\n**20 جنيه**",
+      "english": "QNB Wallet activation is immediate provided the customer deposits at least 20 EGP.",
+      "arabic_sha256": "45f32b3f695e8fee7a444146d5fe6ffd149f1d96db6ab9f005012fc63f5f874f",
+      "english_sha256": "168ac515a5f2f1f9c255c76d09e56e9692ef7b1eb3542a093efce8c807680f8d",
+      "source_document": "KnowledgeBase/Articles/Wallets_ART.md",
+      "source_sha256": "5e5ffd50f6edd59331690c626731fcb4496a916513174538c871cc606c5d62bb",
+      "source_unit_id": "KU-3df6287f9511c6cd",
+      "unit_text_sha256": "fdfffea5c86d049d953f6ff42146e53839c89e4f27b3107e4a575dee1c3ac060",
+      "locator": {
+        "type": "lines",
+        "page": null,
+        "line_start": 161,
+        "line_end": 165,
+        "source_segments": null
+      },
+      "scope": {
+        "minimum_initial_deposit_egp": 20,
+        "timing": "immediate upon deposit"
+      },
+      "dependencies": [],
+      "sequence_order": null,
+      "normal_runtime_eligible": false,
+      "business_approved": false,
+      "human_fidelity_approved": false,
+      "test_fixture_only": true
+    },
+    {
+      "fact_id": "F0037",
+      "service_id": "azimut",
+      "aspect": "workflow",
+      "arabic": "يتم فتح تطبيق MyFawry",
+      "english": "Open the MyFawry app.",
+      "arabic_sha256": "aee1df731c0fbd8653a409eacfad0f669978c302189a0306b541aba13c7c431e",
+      "english_sha256": "aa7d912428948470885ca374a2d38f017a6be537238d50efe3f27002b28a5d33",
+      "source_document": "KnowledgeBase/Articles/AZIMUT_ART.md",
+      "source_sha256": "5185152563e646a26818199393a0c780e177121191048fbe3a7845bc3cf187cf",
+      "source_unit_id": "KU-6493927fb4e6b40f",
+      "unit_text_sha256": "3554a71ff7f810daa30cd8ba578a89898b8123d4970cad3a2cf75cd975f0c8b9",
+      "locator": {
+        "type": "lines",
+        "page": null,
+        "line_start": 434,
+        "line_end": 434,
+        "source_segments": null,
+        "exact_assertion_lines": [
+          434
+        ]
+      },
+      "scope": {
+        "procedure": "start investing via MyFawry",
+        "trigger": null
+      },
+      "dependencies": [],
+      "sequence_order": 1,
+      "normal_runtime_eligible": false,
+      "business_approved": false,
+      "human_fidelity_approved": false,
+      "test_fixture_only": true
+    },
+    {
+      "fact_id": "F0038",
+      "service_id": "azimut",
+      "aspect": "workflow",
+      "arabic": "ثم الدخول إلى المحفظة",
+      "english": "Enter the wallet.",
+      "arabic_sha256": "07f7e6c0d805bd98fce321a56991f97c33e3f00d86d44e112df43b6561109944",
+      "english_sha256": "b93e4a3d1798595c50378d89c29439542de891a5ed27aaea2542129253da707e",
+      "source_document": "KnowledgeBase/Articles/AZIMUT_ART.md",
+      "source_sha256": "5185152563e646a26818199393a0c780e177121191048fbe3a7845bc3cf187cf",
+      "source_unit_id": "KU-6493927fb4e6b40f",
+      "unit_text_sha256": "3554a71ff7f810daa30cd8ba578a89898b8123d4970cad3a2cf75cd975f0c8b9",
+      "locator": {
+        "type": "lines",
+        "page": null,
+        "line_start": 434,
+        "line_end": 434,
+        "source_segments": null,
+        "exact_assertion_lines": [
+          434
+        ]
+      },
+      "scope": {
+        "procedure": "start investing via MyFawry",
+        "trigger": null
+      },
+      "dependencies": [
+        "F0037"
+      ],
+      "sequence_order": 2,
+      "normal_runtime_eligible": false,
+      "business_approved": false,
+      "human_fidelity_approved": false,
+      "test_fixture_only": true
+    },
+    {
+      "fact_id": "F0039",
+      "service_id": "azimut",
+      "aspect": "workflow",
+      "arabic": "ثم مدخراتي",
+      "english": "Select My Savings.",
+      "arabic_sha256": "7db62a691d1eeac73e6f7d82c9e43fb1cd3217eb82c784b9d7f1950e733332fa",
+      "english_sha256": "5622fc65874feea95b961f827e1764e9d9fdc350f9d87e3a7c3fe6d2cbb7428c",
+      "source_document": "KnowledgeBase/Articles/AZIMUT_ART.md",
+      "source_sha256": "5185152563e646a26818199393a0c780e177121191048fbe3a7845bc3cf187cf",
+      "source_unit_id": "KU-6493927fb4e6b40f",
+      "unit_text_sha256": "3554a71ff7f810daa30cd8ba578a89898b8123d4970cad3a2cf75cd975f0c8b9",
+      "locator": {
+        "type": "lines",
+        "page": null,
+        "line_start": 434,
+        "line_end": 434,
+        "source_segments": null,
+        "exact_assertion_lines": [
+          434
+        ]
+      },
+      "scope": {
+        "procedure": "start investing via MyFawry",
+        "trigger": null
+      },
+      "dependencies": [
+        "F0038"
+      ],
+      "sequence_order": 3,
+      "normal_runtime_eligible": false,
+      "business_approved": false,
+      "human_fidelity_approved": false,
+      "test_fixture_only": true
+    },
+    {
+      "fact_id": "F0040",
+      "service_id": "azimut",
+      "aspect": "workflow",
+      "arabic": "ثم إضافة صندوق",
+      "english": "Select Add Fund.",
+      "arabic_sha256": "4c1ac07e0264a8a5d6c00b2c3259cf299e2c0ad9174e19da64c8458ea8ad28fa",
+      "english_sha256": "8d8a3d0ffd6eef734a485ed679b47b5ebbfa7f441b67fa18ca88e75c09d170e5",
+      "source_document": "KnowledgeBase/Articles/AZIMUT_ART.md",
+      "source_sha256": "5185152563e646a26818199393a0c780e177121191048fbe3a7845bc3cf187cf",
+      "source_unit_id": "KU-6493927fb4e6b40f",
+      "unit_text_sha256": "3554a71ff7f810daa30cd8ba578a89898b8123d4970cad3a2cf75cd975f0c8b9",
+      "locator": {
+        "type": "lines",
+        "page": null,
+        "line_start": 434,
+        "line_end": 434,
+        "source_segments": null,
+        "exact_assertion_lines": [
+          434
+        ]
+      },
+      "scope": {
+        "procedure": "start investing via MyFawry",
+        "trigger": null
+      },
+      "dependencies": [
+        "F0039"
+      ],
+      "sequence_order": 4,
+      "normal_runtime_eligible": false,
+      "business_approved": false,
+      "human_fidelity_approved": false,
+      "test_fixture_only": true
+    },
+    {
+      "fact_id": "F0041",
+      "service_id": "azimut",
+      "aspect": "workflow",
+      "arabic": "ثم اتباع خطوات التسجيل",
+      "english": "Follow the registration steps.",
+      "arabic_sha256": "5df2bc56dcca68826a1fa12c179a9c42d42e3258763f9af9c178d7f53af4f5cf",
+      "english_sha256": "0f79bb66ab7a3f1d46b35e1146b085b3cfd5c3d7446070099ee7fa50b432e23b",
+      "source_document": "KnowledgeBase/Articles/AZIMUT_ART.md",
+      "source_sha256": "5185152563e646a26818199393a0c780e177121191048fbe3a7845bc3cf187cf",
+      "source_unit_id": "KU-6493927fb4e6b40f",
+      "unit_text_sha256": "3554a71ff7f810daa30cd8ba578a89898b8123d4970cad3a2cf75cd975f0c8b9",
+      "locator": {
+        "type": "lines",
+        "page": null,
+        "line_start": 434,
+        "line_end": 434,
+        "source_segments": null,
+        "exact_assertion_lines": [
+          434
+        ]
+      },
+      "scope": {
+        "procedure": "start investing via MyFawry",
+        "trigger": null
+      },
+      "dependencies": [
+        "F0040"
+      ],
+      "sequence_order": 5,
+      "normal_runtime_eligible": false,
+      "business_approved": false,
+      "human_fidelity_approved": false,
+      "test_fixture_only": true
+    },
+    {
+      "fact_id": "F0042",
+      "service_id": "azimut",
+      "aspect": "workflow",
+      "arabic": "وزيارة أقرب فرع فوري بلس عند توجيه التطبيق للعميل.",
+      "english": "Visit the nearest Fawry Plus branch when the application directs the customer to do so.",
+      "arabic_sha256": "41fc22be4ad575f70f014b9330d8f2ebff9fcb137e47723079454a23922c0b32",
+      "english_sha256": "c6f0f700650f1a3966fcbe4f94b00565fea5181c3b6a0b72c6954147af9c6e6f",
+      "source_document": "KnowledgeBase/Articles/AZIMUT_ART.md",
+      "source_sha256": "5185152563e646a26818199393a0c780e177121191048fbe3a7845bc3cf187cf",
+      "source_unit_id": "KU-6493927fb4e6b40f",
+      "unit_text_sha256": "3554a71ff7f810daa30cd8ba578a89898b8123d4970cad3a2cf75cd975f0c8b9",
+      "locator": {
+        "type": "lines",
+        "page": null,
+        "line_start": 434,
+        "line_end": 434,
+        "source_segments": null,
+        "exact_assertion_lines": [
+          434
+        ]
+      },
+      "scope": {
+        "procedure": "start investing via MyFawry",
+        "trigger": "application directs branch visit"
+      },
+      "dependencies": [
+        "F0041"
+      ],
+      "sequence_order": 6,
+      "normal_runtime_eligible": false,
+      "business_approved": false,
+      "human_fidelity_approved": false,
+      "test_fixture_only": true
+    }
+  ],
+  "sources": {
+    "daily_brief/axis_wallet_sales_guide.pdf": "198dffbc8ab1ce2887356e91fab9d241ea3f08c35216d2b32a1062e64439abce",
+    "KnowledgeBase/Articles/Wallets_ART.md": "5e5ffd50f6edd59331690c626731fcb4496a916513174538c871cc606c5d62bb",
+    "KnowledgeBase/Articles/AZIMUT_ART.md": "5185152563e646a26818199393a0c780e177121191048fbe3a7845bc3cf187cf"
+  },
+  "anchors": {
+    "source-verified-axis-guide-activation-198dffbc8ab1": {
+      "chunk_id": "learning-0174474637be11ae3b9072d96dfa4efb0a464ee1ade431cabc206d6ecaf2ed53",
+      "metadata": {
+        "content_library": "script_book",
+        "content_type": "ocr_text",
+        "extraction_method": "easyocr_full_page",
+        "location_label": "Page 1",
+        "location_type": "page",
+        "location_value": "1",
+        "source_name": "axis_wallet_sales_guide.pdf",
+        "source_path": "daily_brief/axis_wallet_sales_guide.pdf",
+        "source_sha256": "198dffbc8ab1ce2887356e91fab9d241ea3f08c35216d2b32a1062e64439abce",
+        "source_type": "pdf"
+      },
+      "prompt_text_sha256": "718abd3fa3f638948850647114d6bb3cd7beaa363d7773ca64fcb10625bede59",
+      "anchor_text_length": 896,
+      "verified_overlapping_anchor_ids": [
+        "learning-0174474637be11ae3b9072d96dfa4efb0a464ee1ade431cabc206d6ecaf2ed53"
+      ]
+    },
+    "KU-3df6287f9511c6cd": {
+      "chunk_id": "learning-ae76c70ecac1bfd6a659bc08bd8707f3044ffae816b770c6ee776f1b03cdd3b2",
+      "metadata": {
+        "chunk_index": 1,
+        "content_library": "curated_knowledge",
+        "content_type": "knowledge_base_text",
+        "extraction_method": "md_text",
+        "location_label": "Section 10",
+        "location_type": "section",
+        "location_value": "10",
+        "source_name": "Wallets_ART.md",
+        "source_path": "KnowledgeBase/Articles/Wallets_ART.md",
+        "source_sha256": "5e5ffd50f6edd59331690c626731fcb4496a916513174538c871cc606c5d62bb",
+        "source_type": "knowledge_base"
+      },
+      "prompt_text_sha256": "f8bc2ad2c62073f06058ab3507b487ad4f43343227b58ec0d0d4388e9ebe5d92",
+      "anchor_text_length": 106,
+      "verified_overlapping_anchor_ids": [
+        "learning-ae76c70ecac1bfd6a659bc08bd8707f3044ffae816b770c6ee776f1b03cdd3b2"
+      ]
+    },
+    "KU-6493927fb4e6b40f": {
+      "chunk_id": "learning-89e055914e0faa9f880cc92c1b9f089e93cf33f65fac036154c408eaf3a8f8be",
+      "metadata": {
+        "chunk_index": 1,
+        "content_library": "curated_knowledge",
+        "content_type": "knowledge_base_text",
+        "extraction_method": "md_text",
+        "location_label": "Section 6",
+        "location_type": "section",
+        "location_value": "6",
+        "source_name": "AZIMUT_ART.md",
+        "source_path": "KnowledgeBase/Articles/AZIMUT_ART.md",
+        "source_sha256": "5185152563e646a26818199393a0c780e177121191048fbe3a7845bc3cf187cf",
+        "source_type": "knowledge_base"
+      },
+      "prompt_text_sha256": "758034f59a513a16ff4f70018d865beeb6e337c6e51ca860f36e1b75e9822c82",
+      "anchor_text_length": 565,
+      "verified_overlapping_anchor_ids": [
+        "learning-89e055914e0faa9f880cc92c1b9f089e93cf33f65fac036154c408eaf3a8f8be",
+        "learning-0e219ede511b6dcabaa73d9bd49096fe1487220952ecc2e09db5ac0cc5920e38"
+      ]
+    }
+  },
+  "held": [
+    "QNB provider tariff label conflict",
+    "QNB complete KYC/eligibility checklist",
+    "Azimut KYC document inventory",
+    "All other original facts outside selected ten"
+  ]
+}

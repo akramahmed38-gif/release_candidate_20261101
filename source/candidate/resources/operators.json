@@ -1,0 +1,1269 @@
+[
+  {
+    "operator_id": "O01",
+    "name": "Exclude requested scope",
+    "forms": {
+      "ar_eg": [
+        "مش عاوز",
+        "متقوليش",
+        "سيبك من"
+      ],
+      "ar_msa": [
+        "لا أريد",
+        "دون شرح",
+        "استبعد"
+      ],
+      "en": [
+        "not asking for",
+        "do not explain",
+        "leave out"
+      ],
+      "franco_eg": [
+        "msh 3ayez",
+        "mat2olish",
+        "seebak men"
+      ]
+    },
+    "interpretation_rule": "Attach exclusion to the governed request/service/topic/channel, not to all following text.",
+    "dangerous_shortcut": "Deleting negation then retrieving the excluded topic.",
+    "status": "authored_linguistic_guidance_not_executable_parser"
+  },
+  {
+    "operator_id": "O02",
+    "name": "Negative proposition question",
+    "forms": {
+      "ar_eg": [
+        "مش مفروض",
+        "مش مجاني",
+        "مش لازم"
+      ],
+      "ar_msa": [
+        "أليس",
+        "هل لا",
+        "ألا يجب"
+      ],
+      "en": [
+        "isn't",
+        "is it not",
+        "doesn't"
+      ],
+      "franco_eg": [
+        "mesh mafrood",
+        "mesh free",
+        "mesh lazm"
+      ]
+    },
+    "interpretation_rule": "Retain the questioned predicate; truth remains unresolved until business evidence.",
+    "dangerous_shortcut": "Interpreting a negative question as a request exclusion or a true policy assertion.",
+    "status": "authored_linguistic_guidance_not_executable_parser"
+  },
+  {
+    "operator_id": "O03",
+    "name": "Egyptian discontinuous negation",
+    "forms": {
+      "ar_eg": [
+        "ما...ش",
+        "مينفعش",
+        "ماقلليش",
+        "ميستخدمش"
+      ],
+      "ar_msa": [
+        "لم",
+        "لن",
+        "لا"
+      ],
+      "en": [
+        "did not",
+        "does not",
+        "cannot"
+      ],
+      "franco_eg": [
+        "ma...sh",
+        "mayenfa3sh",
+        "ma2allish",
+        "mayesta5demsh"
+      ]
+    },
+    "interpretation_rule": "Bind ma/sh or its spelling variants to the verb and its arguments, preserving question/scenario role.",
+    "dangerous_shortcut": "Dropping suffix sh or treating every word starting ma as negated.",
+    "status": "authored_linguistic_guidance_not_executable_parser"
+  },
+  {
+    "operator_id": "O04",
+    "name": "Not only but also",
+    "forms": {
+      "ar_eg": [
+        "مش...بس",
+        "مش بس",
+        "كمان"
+      ],
+      "ar_msa": [
+        "ليس...فقط بل",
+        "بل أيضا"
+      ],
+      "en": [
+        "not only",
+        "not just",
+        "also"
+      ],
+      "franco_eg": [
+        "msh...bas",
+        "mesh bas",
+        "kaman"
+      ]
+    },
+    "interpretation_rule": "Add the first and subsequent scopes; NOT ONLY does not exclude the first.",
+    "dangerous_shortcut": "Treating the first topic as negative/excluded.",
+    "status": "authored_linguistic_guidance_not_executable_parser"
+  },
+  {
+    "operator_id": "O05",
+    "name": "Only focus",
+    "forms": {
+      "ar_eg": [
+        "بس",
+        "فقط",
+        "لوحده"
+      ],
+      "ar_msa": [
+        "فقط",
+        "حسرا"
+      ],
+      "en": [
+        "only",
+        "just",
+        "exclusively"
+      ],
+      "franco_eg": [
+        "bas",
+        "fa2at",
+        "only"
+      ]
+    },
+    "interpretation_rule": "Restrict the focus to the named scope, unless bas introduces contrast or NOT ONLY.",
+    "dangerous_shortcut": "Mapping every bas/just to a business exception.",
+    "status": "authored_linguistic_guidance_not_executable_parser"
+  },
+  {
+    "operator_id": "O06",
+    "name": "Correction",
+    "forms": {
+      "ar_eg": [
+        "لا قصدي",
+        "بلعكس",
+        "أصل أنا قصدي"
+      ],
+      "ar_msa": [
+        "تصحيح",
+        "بل أقصد"
+      ],
+      "en": [
+        "correction",
+        "I mean instead",
+        "rather"
+      ],
+      "franco_eg": [
+        "la asdy",
+        "tas7ee7",
+        "asdy keda"
+      ]
+    },
+    "interpretation_rule": "Replace abandoned scope; preserve resolved antecedents only when compatible.",
+    "dangerous_shortcut": "Appending the corrected request to the wrong original scope.",
+    "status": "authored_linguistic_guidance_not_executable_parser"
+  },
+  {
+    "operator_id": "O07",
+    "name": "Neither nor",
+    "forms": {
+      "ar_eg": [
+        "لا...ولا",
+        "مش...ولا"
+      ],
+      "ar_msa": [
+        "لا...ولا"
+      ],
+      "en": [
+        "neither...nor",
+        "not...or"
+      ],
+      "franco_eg": [
+        "la...wala",
+        "mesh...wala"
+      ]
+    },
+    "interpretation_rule": "Exclude both scopes only in request-exclusion context; propositional negatives still request a rule if questioned.",
+    "dangerous_shortcut": "Ignoring one negated conjunct.",
+    "status": "authored_linguistic_guidance_not_executable_parser"
+  },
+  {
+    "operator_id": "O08",
+    "name": "Additive conjunction",
+    "forms": {
+      "ar_eg": [
+        "و",
+        "وكمان",
+        "جنبها"
+      ],
+      "ar_msa": [
+        "و",
+        "كذلك",
+        "إلى جانب"
+      ],
+      "en": [
+        "and",
+        "also",
+        "alongside",
+        "as well as"
+      ],
+      "franco_eg": [
+        "w",
+        "we",
+        "kaman",
+        "gambaha"
+      ]
+    },
+    "interpretation_rule": "Combine obligations with local scope; copy only clearly shared predicates/modifiers.",
+    "dangerous_shortcut": "Cartesian-product all providers and all topics.",
+    "status": "authored_linguistic_guidance_not_executable_parser"
+  },
+  {
+    "operator_id": "O09",
+    "name": "Shared predicate",
+    "forms": {
+      "ar_eg": [
+        "الاتنين",
+        "كل واحد فيهم"
+      ],
+      "ar_msa": [
+        "كل من",
+        "كلاهما"
+      ],
+      "en": [
+        "both",
+        "each",
+        "for all named services"
+      ],
+      "franco_eg": [
+        "el etnein",
+        "kol wa7ed feehom"
+      ]
+    },
+    "interpretation_rule": "Distribute a genuinely shared predicate across the explicit list.",
+    "dangerous_shortcut": "Never sharing a predicate or sharing unrelated clause predicates.",
+    "status": "authored_linguistic_guidance_not_executable_parser"
+  },
+  {
+    "operator_id": "O10",
+    "name": "Respectively",
+    "forms": {
+      "ar_eg": [
+        "للأول وللتاني",
+        "بالترتيب"
+      ],
+      "ar_msa": [
+        "على الترتيب"
+      ],
+      "en": [
+        "respectively",
+        "for the first and the second"
+      ],
+      "franco_eg": [
+        "lel awel wel tany",
+        "bel tarteeb"
+      ]
+    },
+    "interpretation_rule": "Bind ordered service/topic/channel lists positionally only when the linguistic relation is explicit.",
+    "dangerous_shortcut": "Binding by answer paragraph position or guessing list correspondence.",
+    "status": "authored_linguistic_guidance_not_executable_parser"
+  },
+  {
+    "operator_id": "O11",
+    "name": "Comparison alternatives",
+    "forms": {
+      "ar_eg": [
+        "ولا",
+        "أرخص من",
+        "الفرق بين"
+      ],
+      "ar_msa": [
+        "أم",
+        "مقارنة",
+        "الفرق بين"
+      ],
+      "en": [
+        "or",
+        "versus",
+        "compare",
+        "cheaper than"
+      ],
+      "franco_eg": [
+        "wala",
+        "vs",
+        "arkhas men",
+        "el far2 ben"
+      ]
+    },
+    "interpretation_rule": "OR in a comparison requests evidence for alternatives; do not arbitrarily drop an alternative.",
+    "dangerous_shortcut": "Treating every OR as exclusion or a conjunction of mandatory requirements.",
+    "status": "authored_linguistic_guidance_not_executable_parser"
+  },
+  {
+    "operator_id": "O12",
+    "name": "Instead of",
+    "forms": {
+      "ar_eg": [
+        "بدل",
+        "مش...لكن"
+      ],
+      "ar_msa": [
+        "بدلا من",
+        "عدا"
+      ],
+      "en": [
+        "instead of",
+        "rather than"
+      ],
+      "franco_eg": [
+        "badal",
+        "rather than"
+      ]
+    },
+    "interpretation_rule": "Use the predicate: comparison of costs for each retains both channels; replacement request retains the new one.",
+    "dangerous_shortcut": "Always deleting the old alternative when instead appears.",
+    "status": "authored_linguistic_guidance_not_executable_parser"
+  },
+  {
+    "operator_id": "O13",
+    "name": "Context frame",
+    "forms": {
+      "ar_eg": [
+        "أثناء",
+        "وأنا بافعل",
+        "لما كنت"
+      ],
+      "ar_msa": [
+        "أثناء",
+        "في سياق",
+        "عند"
+      ],
+      "en": [
+        "during",
+        "while",
+        "for registration"
+      ],
+      "franco_eg": [
+        "wana bafa3el",
+        "fe tasgeel",
+        "during"
+      ]
+    },
+    "interpretation_rule": "Treat background as context unless an interrogative/request predicate explicitly targets it.",
+    "dangerous_shortcut": "Promoting every service/topic noun in context to an obligation.",
+    "status": "authored_linguistic_guidance_not_executable_parser"
+  },
+  {
+    "operator_id": "O14",
+    "name": "Reported assertion",
+    "forms": {
+      "ar_eg": [
+        "العميل بيقول",
+        "سمعت إن",
+        "واحد قال"
+      ],
+      "ar_msa": [
+        "يذكر العميل",
+        "ادعاء",
+        "نقلا عن"
+      ],
+      "en": [
+        "customer says",
+        "I heard",
+        "someone claims"
+      ],
+      "franco_eg": [
+        "el 3ameel bey2ool",
+        "sme3t en",
+        "wa7ed 2al"
+      ]
+    },
+    "interpretation_rule": "Store as user claim, not policy evidence; verify if requested.",
+    "dangerous_shortcut": "Using a user-supplied fee as a canonical answer.",
+    "status": "authored_linguistic_guidance_not_executable_parser"
+  },
+  {
+    "operator_id": "O15",
+    "name": "Conditional antecedent",
+    "forms": {
+      "ar_eg": [
+        "لو",
+        "في حالة",
+        "فرضان"
+      ],
+      "ar_msa": [
+        "إذا",
+        "إن",
+        "في حالة"
+      ],
+      "en": [
+        "if",
+        "in case",
+        "assuming"
+      ],
+      "franco_eg": [
+        "law",
+        "fe 7alet",
+        "if"
+      ]
+    },
+    "interpretation_rule": "Retain antecedent as user scenario, with subject/predicate/value and scope.",
+    "dangerous_shortcut": "Treating the scenario as a factual source rule.",
+    "status": "authored_linguistic_guidance_not_executable_parser"
+  },
+  {
+    "operator_id": "O16",
+    "name": "Necessary condition",
+    "forms": {
+      "ar_eg": [
+        "بس لو",
+        "ميحصلش إلا لو"
+      ],
+      "ar_msa": [
+        "فقط إذا",
+        "لا...إلا إذا"
+      ],
+      "en": [
+        "only if",
+        "not unless"
+      ],
+      "franco_eg": [
+        "bas law",
+        "only if",
+        "mesh ella law"
+      ]
+    },
+    "interpretation_rule": "Keep only-if direction: action implies condition; it does not alone establish that condition guarantees action.",
+    "dangerous_shortcut": "Reversing necessary and sufficient conditions.",
+    "status": "authored_linguistic_guidance_not_executable_parser"
+  },
+  {
+    "operator_id": "O17",
+    "name": "Unless / exception condition",
+    "forms": {
+      "ar_eg": [
+        "إلا لو",
+        "ماعدا لو"
+      ],
+      "ar_msa": [
+        "ما لم",
+        "إلا إذا"
+      ],
+      "en": [
+        "unless",
+        "except when"
+      ],
+      "franco_eg": [
+        "ella law",
+        "ma3ada law",
+        "unless"
+      ]
+    },
+    "interpretation_rule": "Preserve exception and trigger under its governed rule; do not remove a negative globally.",
+    "dangerous_shortcut": "Converting unless to unconditional permission.",
+    "status": "authored_linguistic_guidance_not_executable_parser"
+  },
+  {
+    "operator_id": "O18",
+    "name": "Without",
+    "forms": {
+      "ar_eg": [
+        "من غير",
+        "بدون"
+      ],
+      "ar_msa": [
+        "دون",
+        "بدون"
+      ],
+      "en": [
+        "without",
+        "in the absence of"
+      ],
+      "franco_eg": [
+        "men gheir",
+        "bedoon",
+        "without"
+      ]
+    },
+    "interpretation_rule": "Distinguish missing prerequisite scenario from presentation request without explanation.",
+    "dangerous_shortcut": "A request without documents becoming exclusion of the documents requirement.",
+    "status": "authored_linguistic_guidance_not_executable_parser"
+  },
+  {
+    "operator_id": "O19",
+    "name": "Sequence",
+    "forms": {
+      "ar_eg": [
+        "بعدين",
+        "الأول",
+        "بعد كده"
+      ],
+      "ar_msa": [
+        "ثم",
+        "قبل",
+        "بعد",
+        "أخيرا"
+      ],
+      "en": [
+        "then",
+        "before",
+        "after",
+        "next",
+        "finally"
+      ],
+      "franco_eg": [
+        "ba3dein",
+        "el awel",
+        "abl",
+        "ba3d keda"
+      ]
+    },
+    "interpretation_rule": "Order steps only where a procedural or temporal relation is requested/source-supported.",
+    "dangerous_shortcut": "Treating a simple list of questions as mandatory business step order.",
+    "status": "authored_linguistic_guidance_not_executable_parser"
+  },
+  {
+    "operator_id": "O20",
+    "name": "Full procedural scope",
+    "forms": {
+      "ar_eg": [
+        "خطوة خطوة",
+        "من الأول للاخر",
+        "مشيني"
+      ],
+      "ar_msa": [
+        "التسلسل الكامل",
+        "جميع الخطوات"
+      ],
+      "en": [
+        "walk me through",
+        "all steps",
+        "end to end"
+      ],
+      "franco_eg": [
+        "khatwa khatwa",
+        "men el awel lel a5er",
+        "masheny"
+      ]
+    },
+    "interpretation_rule": "Create a whole-procedure obligation in the named process scope, not a final-step lookup.",
+    "dangerous_shortcut": "Returning only a branch visit while claiming a full workflow.",
+    "status": "authored_linguistic_guidance_not_executable_parser"
+  },
+  {
+    "operator_id": "O21",
+    "name": "Partial procedure scope",
+    "forms": {
+      "ar_eg": [
+        "بعد الخطوة دي",
+        "الخطوة الأخيرة"
+      ],
+      "ar_msa": [
+        "الخطوة التالية",
+        "بعد إكمال"
+      ],
+      "en": [
+        "next step",
+        "remaining steps",
+        "last step only"
+      ],
+      "franco_eg": [
+        "el khatwa el gaya",
+        "ba3d keda",
+        "a5er step bas"
+      ]
+    },
+    "interpretation_rule": "A requested suffix/step need not repeat completed steps; scope and preconditions stay explicit.",
+    "dangerous_shortcut": "Always forcing a full procedure or returning an unsupported next step.",
+    "status": "authored_linguistic_guidance_not_executable_parser"
+  },
+  {
+    "operator_id": "O22",
+    "name": "Ellipsis",
+    "forms": {
+      "ar_eg": [
+        "وQNB",
+        "ومن ATM",
+        "والرسوم"
+      ],
+      "ar_msa": [
+        "وماذا عن",
+        "وكذلك"
+      ],
+      "en": [
+        "what about",
+        "and through",
+        "the same for"
+      ],
+      "franco_eg": [
+        "w QNB",
+        "w men ATM",
+        "tab wel rosoom"
+      ]
+    },
+    "interpretation_rule": "Inherit only compatible meaning from explicit local dialogue state; unresolved antecedents need clarification.",
+    "dangerous_shortcut": "Cross-session inheritance or copying another provider facts.",
+    "status": "authored_linguistic_guidance_not_executable_parser"
+  },
+  {
+    "operator_id": "O23",
+    "name": "Anaphora / reference",
+    "forms": {
+      "ar_eg": [
+        "دي",
+        "ده",
+        "نفس الرقم",
+        "التانية"
+      ],
+      "ar_msa": [
+        "هذه",
+        "هذا",
+        "نفس الرقم",
+        "الأخرى"
+      ],
+      "en": [
+        "this",
+        "that",
+        "the same number",
+        "the other one"
+      ],
+      "franco_eg": [
+        "de",
+        "da",
+        "nafs el ra2am",
+        "el tanya"
+      ]
+    },
+    "interpretation_rule": "Resolve typed referents (image, funding, service, phone) from active context, not just closest token.",
+    "dangerous_shortcut": "Interpreting a screenshot pronoun as the phone mentioned in the same sentence.",
+    "status": "authored_linguistic_guidance_not_executable_parser"
+  },
+  {
+    "operator_id": "O24",
+    "name": "Uncertainty request",
+    "forms": {
+      "ar_eg": [
+        "مش متأكد",
+        "مكتوب ولا لا"
+      ],
+      "ar_msa": [
+        "هل يذكر المصدر",
+        "هل تثبت"
+      ],
+      "en": [
+        "is it documented",
+        "can you verify",
+        "not sure"
+      ],
+      "franco_eg": [
+        "mesh mota2aked",
+        "maktoob wala la",
+        "verify"
+      ]
+    },
+    "interpretation_rule": "Acknowledge uncertainty without treating it as absence of evidence; retrieve exact requested proposition.",
+    "dangerous_shortcut": "Generic refusal despite a clear answerable intent.",
+    "status": "authored_linguistic_guidance_not_executable_parser"
+  },
+  {
+    "operator_id": "O25",
+    "name": "Reformulation",
+    "forms": {
+      "ar_eg": [
+        "يعني",
+        "قصدي",
+        "بمعنى"
+      ],
+      "ar_msa": [
+        "أي",
+        "بعبارة أخرى"
+      ],
+      "en": [
+        "that is",
+        "meaning",
+        "in other words"
+      ],
+      "franco_eg": [
+        "ya3ny",
+        "asdy",
+        "i.e."
+      ]
+    },
+    "interpretation_rule": "Merge semantic duplicates only when they truly restate the same scoped request.",
+    "dangerous_shortcut": "Dropping a second distinct request merely because it shares deposit words.",
+    "status": "authored_linguistic_guidance_not_executable_parser"
+  },
+  {
+    "operator_id": "O26",
+    "name": "Quantifier / exhaustive list",
+    "forms": {
+      "ar_eg": [
+        "كل",
+        "كاملة",
+        "من غير ما تسيب حاجة"
+      ],
+      "ar_msa": [
+        "جميع",
+        "كامل",
+        "قائمة حصرية"
+      ],
+      "en": [
+        "all",
+        "every",
+        "complete checklist",
+        "exhaustive"
+      ],
+      "franco_eg": [
+        "kol",
+        "kamla",
+        "ma tseebsh 7aga"
+      ]
+    },
+    "interpretation_rule": "Complete means complete for the explicit requested scope and evidence inventory; missing inventory blocks completeness.",
+    "dangerous_shortcut": "Treating all available facts as all facts that exist.",
+    "status": "authored_linguistic_guidance_not_executable_parser"
+  },
+  {
+    "operator_id": "O27",
+    "name": "Topic-specific minimum",
+    "forms": {
+      "ar_eg": [
+        "أقل رسوم",
+        "أقل إيداع",
+        "أقل رصيد"
+      ],
+      "ar_msa": [
+        "حد أدنى للرسوم",
+        "حد أدنى للإيداع"
+      ],
+      "en": [
+        "minimum fee",
+        "minimum deposit",
+        "minimum balance"
+      ],
+      "franco_eg": [
+        "a2al rosoom",
+        "minimum eda3",
+        "minimum balance"
+      ]
+    },
+    "interpretation_rule": "Attach minimum to its head quantity, retaining fee/amount/balance units.",
+    "dangerous_shortcut": "Minimum always becoming initial funding.",
+    "status": "authored_linguistic_guidance_not_executable_parser"
+  },
+  {
+    "operator_id": "O28",
+    "name": "Channel versus provider",
+    "forms": {
+      "ar_eg": [
+        "من الفرع",
+        "من الماكينة",
+        "عبر"
+      ],
+      "ar_msa": [
+        "عبر",
+        "من خلال"
+      ],
+      "en": [
+        "through",
+        "at",
+        "via"
+      ],
+      "franco_eg": [
+        "men el far3",
+        "via",
+        "3an taree2"
+      ]
+    },
+    "interpretation_rule": "Resolve provider and channel as different fields; generic branch/machine may require clarification.",
+    "dangerous_shortcut": "The word bank or branch creating a new unrelated provider.",
+    "status": "authored_linguistic_guidance_not_executable_parser"
+  },
+  {
+    "operator_id": "O29",
+    "name": "Compound label",
+    "forms": {
+      "ar_eg": [
+        "كود صرف",
+        "رسوم إيداع",
+        "شروط الخط"
+      ],
+      "ar_msa": [
+        "كود الخدمة",
+        "رسوم السحب"
+      ],
+      "en": [
+        "cash-out code",
+        "deposit fee",
+        "phone ownership"
+      ],
+      "franco_eg": [
+        "code sarf",
+        "cash-in fee",
+        "melkiet el khat"
+      ]
+    },
+    "interpretation_rule": "Head determines requested property; modifiers narrow it without adding separate requests.",
+    "dangerous_shortcut": "Cash-out code becoming code plus withdrawal fees plus workflow.",
+    "status": "authored_linguistic_guidance_not_executable_parser"
+  },
+  {
+    "operator_id": "O30",
+    "name": "Presentation preference",
+    "forms": {
+      "ar_eg": [
+        "باختصار",
+        "بالإنجليزي",
+        "بالمصري"
+      ],
+      "ar_msa": [
+        "بإيجاز",
+        "باللغة العنجليزية"
+      ],
+      "en": [
+        "briefly",
+        "in English",
+        "in Egyptian Arabic"
+      ],
+      "franco_eg": [
+        "bel mokhtasar",
+        "bel English",
+        "bel masry"
+      ]
+    },
+    "interpretation_rule": "Record language/style separately from business intent; never alter source facts for style.",
+    "dangerous_shortcut": "English label translating/altering service names or numbers.",
+    "status": "authored_linguistic_guidance_not_executable_parser"
+  },
+  {
+    "operator_id": "O31",
+    "name": "Request contradiction",
+    "forms": {
+      "ar_eg": [
+        "قولي...وماتقوليش",
+        "اديني...بس مش"
+      ],
+      "ar_msa": [
+        "اذكر...ولا تذكر"
+      ],
+      "en": [
+        "include and exclude",
+        "tell me but do not tell"
+      ],
+      "franco_eg": [
+        "2olly...w mat2olish",
+        "include bas exclude"
+      ]
+    },
+    "interpretation_rule": "Ask clarification when exact same scope is included and excluded with no clear correction.",
+    "dangerous_shortcut": "Choosing the interpretation with easiest available evidence.",
+    "status": "authored_linguistic_guidance_not_executable_parser"
+  },
+  {
+    "operator_id": "O32",
+    "name": "Alternative versus simultaneous obligation",
+    "forms": {
+      "ar_eg": [
+        "و",
+        "ولا",
+        "الاتنين"
+      ],
+      "ar_msa": [
+        "و",
+        "أم",
+        "أو"
+      ],
+      "en": [
+        "and",
+        "or",
+        "both"
+      ],
+      "franco_eg": [
+        "w",
+        "wala",
+        "el etnein"
+      ]
+    },
+    "interpretation_rule": "Preserve conjunction/disjunction; required A OR B does not mean A AND B.",
+    "dangerous_shortcut": "Collapsing conjunctions into a flat bag of entities.",
+    "status": "authored_linguistic_guidance_not_executable_parser"
+  },
+  {
+    "operator_id": "O33",
+    "name": "Timeframe binding",
+    "forms": {
+      "ar_eg": [
+        "كل يوم",
+        "كل شهر",
+        "أول مرة"
+      ],
+      "ar_msa": [
+        "يوميا",
+        "شهريا",
+        "الفترة الأولى"
+      ],
+      "en": [
+        "daily",
+        "monthly",
+        "first time"
+      ],
+      "franco_eg": [
+        "kol youm",
+        "kol shahr",
+        "awel marra"
+      ]
+    },
+    "interpretation_rule": "Bind period to each amount/count/condition independently.",
+    "dangerous_shortcut": "Attaching every period in a compound question to every fact.",
+    "status": "authored_linguistic_guidance_not_executable_parser"
+  },
+  {
+    "operator_id": "O34",
+    "name": "Contrastive correction of assumption",
+    "forms": {
+      "ar_eg": [
+        "مش رسوم دي فلوس?"
+      ],
+      "ar_msa": [
+        "هل هذا مبلغ إيداع أم رسوم"
+      ],
+      "en": [
+        "a deposit rather than a fee",
+        "fee or credited balance"
+      ],
+      "franco_eg": [
+        "deposit mesh fee?",
+        "rozoom wala raseed"
+      ]
+    },
+    "interpretation_rule": "Interpret disputed category as a verification/difference request, not as authority to relabel money.",
+    "dangerous_shortcut": "Assuming a question asserts the correct financial category.",
+    "status": "authored_linguistic_guidance_not_executable_parser"
+  },
+  {
+    "operator_id": "O35",
+    "name": "Reported customer demand vs employee request",
+    "forms": {
+      "ar_eg": [
+        "العميل بيقول",
+        "أقول له إيه"
+      ],
+      "ar_msa": [
+        "يطلب العميل",
+        "صغ ردا"
+      ],
+      "en": [
+        "customer says",
+        "what should I tell them"
+      ],
+      "franco_eg": [
+        "el 3ameel bey2ool",
+        "a2oollo eh"
+      ]
+    },
+    "interpretation_rule": "Identify the outer request and retain quoted demand as context; a quoted refund demand is not authorization.",
+    "dangerous_shortcut": "Executing a quoted request instead of drafting the employee response.",
+    "status": "authored_linguistic_guidance_not_executable_parser"
+  },
+  {
+    "operator_id": "O36",
+    "name": "Emotion is not a financial entitlement",
+    "forms": {
+      "ar_eg": [
+        "متضايق",
+        "متعصب",
+        "زعهق"
+      ],
+      "ar_msa": [
+        "غاضب",
+        "مستا",
+        "محبط"
+      ],
+      "en": [
+        "angry",
+        "upset",
+        "fed up"
+      ],
+      "franco_eg": [
+        "metdaye2",
+        "met3aseb",
+        "zehe2t"
+      ]
+    },
+    "interpretation_rule": "Attach emotion to communication tone, not to refund eligibility, priority or verified fault.",
+    "dangerous_shortcut": "Promising payment or admitting liability to de-escalate.",
+    "status": "authored_linguistic_guidance_not_executable_parser"
+  },
+  {
+    "operator_id": "O37",
+    "name": "Action request vs status question",
+    "forms": {
+      "ar_eg": [
+        "ألغي",
+        "اتلغت ولا لا"
+      ],
+      "ar_msa": [
+        "إلغاء",
+        "هل الغيت"
+      ],
+      "en": [
+        "cancel it",
+        "was it cancelled"
+      ],
+      "franco_eg": [
+        "elghy",
+        "etlaghet wala la"
+      ]
+    },
+    "interpretation_rule": "Tense, modality and agent roles distinguish a requested action from reading a past/current state.",
+    "dangerous_shortcut": "Cancelling an operation because the user asked whether it was cancelled.",
+    "status": "authored_linguistic_guidance_not_executable_parser"
+  },
+  {
+    "operator_id": "O38",
+    "name": "Closed versus resolved",
+    "forms": {
+      "ar_eg": [
+        "اتقفلت",
+        "اتحلت"
+      ],
+      "ar_msa": [
+        "أغلقت",
+        "حلت"
+      ],
+      "en": [
+        "closed",
+        "resolved"
+      ],
+      "franco_eg": [
+        "et2afalet",
+        "et7alet"
+      ]
+    },
+    "interpretation_rule": "Administrative closure and successful customer resolution are distinct attributes.",
+    "dangerous_shortcut": "Using status closed as proof the issue was fixed.",
+    "status": "authored_linguistic_guidance_not_executable_parser"
+  },
+  {
+    "operator_id": "O39",
+    "name": "Acknowledgment versus confirmation",
+    "forms": {
+      "ar_eg": [
+        "تمام",
+        "شكرا",
+        "وصل الرد"
+      ],
+      "ar_msa": [
+        "تم الاستلام",
+        "شكرا"
+      ],
+      "en": [
+        "okay",
+        "thanks",
+        "received"
+      ],
+      "franco_eg": [
+        "tamam",
+        "shokran",
+        "wesel el rad"
+      ]
+    },
+    "interpretation_rule": "Acknowledgment alone does not authorize closure, withdrawal or execution.",
+    "dangerous_shortcut": "Treating thanks as consent to terminate a complaint.",
+    "status": "authored_linguistic_guidance_not_executable_parser"
+  },
+  {
+    "operator_id": "O40",
+    "name": "Customer deadline versus documented SLA",
+    "forms": {
+      "ar_eg": [
+        "عاوزه بكرة",
+        "لازم النهاردة"
+      ],
+      "ar_msa": [
+        "يرغب غدا",
+        "الموعد المطلوب"
+      ],
+      "en": [
+        "I need it tomorrow",
+        "by today"
+      ],
+      "franco_eg": [
+        "3ayzo bokra",
+        "lazm elnaharda"
+      ]
+    },
+    "interpretation_rule": "Record requested timing separately from promised/authorized timing; source governs service obligations.",
+    "dangerous_shortcut": "Converting urgency or wishes into a guaranteed deadline.",
+    "status": "authored_linguistic_guidance_not_executable_parser"
+  },
+  {
+    "operator_id": "O41",
+    "name": "Identifier object binding",
+    "forms": {
+      "ar_eg": [
+        "رقم شكوى",
+        "رقم مرجعي",
+        "كود خدمة"
+      ],
+      "ar_msa": [
+        "مرجع الشكوى",
+        "مرجع المعاملة"
+      ],
+      "en": [
+        "complaint ID",
+        "transaction reference",
+        "service code"
+      ],
+      "franco_eg": [
+        "ra2am shakwa",
+        "reference el 3amaleya",
+        "code khedma"
+      ]
+    },
+    "interpretation_rule": "Preserve identifier object and character sequence; do not infer sensitive values or swap reference with operation code.",
+    "dangerous_shortcut": "Changing codes, stripping leading zeros or using a complaint ID as a bank transaction ID.",
+    "status": "authored_linguistic_guidance_not_executable_parser"
+  },
+  {
+    "operator_id": "O42",
+    "name": "Retail object type controls meaning",
+    "forms": {
+      "ar_eg": [
+        "رصيد الصنف",
+        "رصيد المحفظة",
+        "مرتجع بضاعة"
+      ],
+      "ar_msa": [
+        "مخزون السلعة",
+        "رصيد نقدي"
+      ],
+      "en": [
+        "stock balance",
+        "wallet balance",
+        "product return"
+      ],
+      "franco_eg": [
+        "raseed el senf",
+        "raseed wallet",
+        "mortaga3"
+      ]
+    },
+    "interpretation_rule": "Disambiguate amount/count/entity using the governing noun and process.",
+    "dangerous_shortcut": "Using the financial balance answer for warehouse stock.",
+    "status": "authored_linguistic_guidance_not_executable_parser"
+  },
+  {
+    "operator_id": "O43",
+    "name": "Cash versus cache",
+    "forms": {
+      "ar_eg": [
+        "كاش",
+        "كاش الجهاز"
+      ],
+      "ar_msa": [
+        "نقود",
+        "بيانات محلية"
+      ],
+      "en": [
+        "cash",
+        "cache"
+      ],
+      "franco_eg": [
+        "cash",
+        "cache",
+        "kash"
+      ]
+    },
+    "interpretation_rule": "Use action/object evidence: withdraw cash vs clear cache; literal sound similarity is insufficient.",
+    "dangerous_shortcut": "Sending cash-handling rules for a device-cache request.",
+    "status": "authored_linguistic_guidance_not_executable_parser"
+  },
+  {
+    "operator_id": "O44",
+    "name": "Cannot do is not do not want",
+    "forms": {
+      "ar_eg": [
+        "مش عارف",
+        "مش قادر",
+        "مش عاوز"
+      ],
+      "ar_msa": [
+        "يعتذر",
+        "لا استطيع",
+        "لا أريد"
+      ],
+      "en": [
+        "cannot",
+        "unable to",
+        "do not want"
+      ],
+      "franco_eg": [
+        "mesh 3aref",
+        "mesh 2ader",
+        "mesh 3ayez"
+      ]
+    },
+    "interpretation_rule": "Distinguish inability, prohibition and preference; all can contain negative wording.",
+    "dangerous_shortcut": "Cancelling the complaint when the customer cannot access its status.",
+    "status": "authored_linguistic_guidance_not_executable_parser"
+  },
+  {
+    "operator_id": "O45",
+    "name": "No promise while drafting",
+    "forms": {
+      "ar_eg": [
+        "من غير وعد",
+        "ماتأكدش معاد"
+      ],
+      "ar_msa": [
+        "دون التزام غير موثق"
+      ],
+      "en": [
+        "without promising",
+        "do not guarantee"
+      ],
+      "franco_eg": [
+        "men gheir wa3d",
+        "mat2akedsh me3ad"
+      ]
+    },
+    "interpretation_rule": "Constrain the reply style while retaining the requested business topic.",
+    "dangerous_shortcut": "Deleting the refund-status topic merely because a promise is excluded.",
+    "status": "authored_linguistic_guidance_not_executable_parser"
+  },
+  {
+    "operator_id": "O46",
+    "name": "Ordered verification before reply",
+    "forms": {
+      "ar_eg": [
+        "اتأكد الأول",
+        "بعدين رد"
+      ],
+      "ar_msa": [
+        "تحقق أولا",
+        "ثم أجب"
+      ],
+      "en": [
+        "verify first",
+        "then explain"
+      ],
+      "franco_eg": [
+        "et2aked el awel",
+        "ba3dein rod"
+      ]
+    },
+    "interpretation_rule": "A dependency can require unavailable live evidence; no fabricated intermediate result.",
+    "dangerous_shortcut": "Claiming the complaint is resolved in a draft before verifying actual status.",
+    "status": "authored_linguistic_guidance_not_executable_parser"
+  }
+]

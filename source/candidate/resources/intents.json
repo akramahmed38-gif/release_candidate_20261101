@@ -1,0 +1,5656 @@
+{
+  "version": "2.0",
+  "scope": "Interpretation only; no implicit business rules or approvals",
+  "intents": [
+    {
+      "intent_id": "opening_fee",
+      "label_en": "Wallet opening / subscription cost",
+      "definition": "Cost charged for opening or subscribing, not funds credited to a balance.",
+      "ar_eg_cues": [
+        "فتح المحفظة بكام",
+        "رسوم الاشتراك",
+        "اشتراك المحفظة",
+        "بدفع كام عشان أفتح",
+        "فتح الحساب بفلوس"
+      ],
+      "ar_msa_cues": [
+        "رسوم فتح المحفظة",
+        "تكلفة الاشتراك",
+        "مصروفات فتح الحساب"
+      ],
+      "en_cues": [
+        "opening fee",
+        "subscription cost",
+        "sign-up charge",
+        "cost to open",
+        "joining charge"
+      ],
+      "franco_eg_cues": [
+        "fate7 el ma7faza bekam",
+        "rozoom el eshterak",
+        "eshterak el wallet",
+        "badfa3 kam 3ashan afta7"
+      ],
+      "do_not_confuse_with": [
+        "initial_funding",
+        "deposit_tariff",
+        "ongoing_balance"
+      ],
+      "answer_requirements": "Preserve subscription/opening scope; never answer a transaction tariff instead.",
+      "legacy_topic_candidates": [
+        "opening_fee"
+      ],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "financial_training",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "initial_funding",
+      "label_en": "Initial activation funding",
+      "definition": "Amount deposited as a condition of activation, not automatically a fee.",
+      "ar_eg_cues": [
+        "أقل مبلغ للتفعيل",
+        "أول إيداع",
+        "أحط كام أول مرة",
+        "التفعيل محتاج كام",
+        "فلوس بداية المحفظة"
+      ],
+      "ar_msa_cues": [
+        "الحد الأدنى للإيداع الأولي",
+        "مبلغ التمويل الاولي",
+        "شرط الإيداع عند التفعيل"
+      ],
+      "en_cues": [
+        "minimum initial deposit",
+        "initial funding requirement",
+        "how much to activate",
+        "first deposit needed",
+        "starting funding"
+      ],
+      "franco_eg_cues": [
+        "a2al mablagh lel taf3eel",
+        "awel eda3",
+        "a7ot kam awel marra",
+        "starting deposit"
+      ],
+      "do_not_confuse_with": [
+        "opening_fee",
+        "deposit_tariff",
+        "withdrawal_minimum"
+      ],
+      "answer_requirements": "State funding amount/condition only from evidence; do not invent channel fees or all eligibility.",
+      "legacy_topic_candidates": [
+        "initial_deposit"
+      ],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "financial_training",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "balance_treatment",
+      "label_en": "Treatment of activation funding",
+      "definition": "Whether deposited funds remain in balance or are taken as a charge.",
+      "ar_eg_cues": [
+        "الفلوس بتفضل في الرصيد",
+        "العشرين بتتخصم",
+        "المبلغ بيرجع لي",
+        "دي رسوم ولا رصيد",
+        "الإيداع بيروح فين"
+      ],
+      "ar_msa_cues": [
+        "مصير مبلغ الإيداع",
+        "هل يظل الإيداع في الرصيد",
+        "هل يخصم المبلغ كرسوم"
+      ],
+      "en_cues": [
+        "does the deposit remain in my balance",
+        "is the initial money a fee",
+        "what happens to that deposit",
+        "credited funds or charge"
+      ],
+      "franco_eg_cues": [
+        "el floos btefdal fel raseed",
+        "el mablagh byetkhesem",
+        "de rosoom wala balance",
+        "el eda3 byroo7 fein"
+      ],
+      "do_not_confuse_with": [
+        "opening_fee",
+        "refund",
+        "ongoing_balance"
+      ],
+      "answer_requirements": "Keep deposit disposition separate from refund and future minimum-balance rules.",
+      "legacy_topic_candidates": [
+        "balance_treatment"
+      ],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "financial_training",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "deposit_tariff",
+      "label_en": "Cash-in transaction charges",
+      "definition": "Cost of adding money to a wallet/account through a specified channel.",
+      "ar_eg_cues": [
+        "رسوم الإيداع",
+        "لو هحط فلوس هيتخصم كام",
+        "تكلفة شحن المحفظة",
+        "نسبة إضافة رصيد",
+        "بأودع بكام"
+      ],
+      "ar_msa_cues": [
+        "تعرفة إيداع النقود",
+        "عمولة إضافة المال",
+        "رسوم تمويل المحفظة"
+      ],
+      "en_cues": [
+        "cash-in fee",
+        "deposit charge",
+        "fee for adding money",
+        "wallet top-up charge",
+        "cost to fund through a channel"
+      ],
+      "franco_eg_cues": [
+        "rozoom el eda3",
+        "cash in bekam",
+        "a7ot floos yetkhesem kam",
+        "sh7n el ma7faza bekam"
+      ],
+      "do_not_confuse_with": [
+        "initial_funding",
+        "opening_fee",
+        "mobile_airtime_topup"
+      ],
+      "answer_requirements": "Bind service, operation and channel; compare all requested channels.",
+      "legacy_topic_candidates": [
+        "deposit_tariff"
+      ],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "financial_training",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "withdrawal_tariff",
+      "label_en": "Cash-out transaction charges",
+      "definition": "Charge/rate for withdrawing money, with channel, minimum and conditions.",
+      "ar_eg_cues": [
+        "رسوم السحب",
+        "هاسحب فلوس بكام",
+        "عمولة سحب",
+        "نسبة الصراف",
+        "تكلفة الصرف"
+      ],
+      "ar_msa_cues": [
+        "رسوم السحب النقدي",
+        "عمولة الصرف",
+        "نسبة رسوم السحب"
+      ],
+      "en_cues": [
+        "cash-out fee",
+        "withdrawal charge",
+        "withdrawal rate",
+        "fee to take money out",
+        "cash withdrawal cost"
+      ],
+      "franco_eg_cues": [
+        "rozoom el sa7b",
+        "cash out fee",
+        "has7ab bekam",
+        "3omoolet el sarf"
+      ],
+      "do_not_confuse_with": [
+        "transaction_code",
+        "workflow",
+        "withdrawal_minimum"
+      ],
+      "answer_requirements": "Bind transaction direction and channel; do not turn mention of cash-out in a code query into a fee request.",
+      "legacy_topic_candidates": [
+        "withdrawal"
+      ],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "financial_training",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "withdrawal_minimum",
+      "label_en": "Minimum charge versus minimum cash-out amount",
+      "definition": "Requested minimum must retain its unit: fee floor or withdrawal amount.",
+      "ar_eg_cues": [
+        "أقل رسوم سحب",
+        "الحد الأدنى للعمولة",
+        "أقل مبلغ أسحبه",
+        "مينيموم السحب"
+      ],
+      "ar_msa_cues": [
+        "الحد الأدنى لرسوم السحب",
+        "الحد الأدنى لمبلغ السحب"
+      ],
+      "en_cues": [
+        "minimum withdrawal fee",
+        "fee floor",
+        "minimum cash-out amount",
+        "smallest withdrawal"
+      ],
+      "franco_eg_cues": [
+        "a2al rosoom sa7b",
+        "minimum fee",
+        "a2al mablagh as7abo",
+        "min lel 3omoola"
+      ],
+      "do_not_confuse_with": [
+        "initial_funding",
+        "daily_limit"
+      ],
+      "answer_requirements": "Require a qualifier for fee_floor versus transaction_amount; clarify ambiguous minimum.",
+      "legacy_topic_candidates": [
+        "withdrawal"
+      ],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "financial_training",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "identity",
+      "label_en": "Identity document requirements",
+      "definition": "Validity/originality/type requirements for identity documents; not account identifiers.",
+      "ar_eg_cues": [
+        "البطاقة سارية",
+        "الأصل ولا صورة",
+        "الرقم القومي",
+        "الهوية",
+        "بطاقة العميل"
+      ],
+      "ar_msa_cues": [
+        "متطلبات إثبات الهوية",
+        "صلاحية بطاقة الرقم القومي",
+        "أصل وثيقة الهوية"
+      ],
+      "en_cues": [
+        "ID requirements",
+        "valid national ID",
+        "original identification",
+        "identity document",
+        "identity check"
+      ],
+      "franco_eg_cues": [
+        "el beta2a sarya",
+        "asl el ID",
+        "ra2am qawmy",
+        "haweya",
+        "el original beta2a"
+      ],
+      "do_not_confuse_with": [
+        "transaction_id",
+        "phone_ownership",
+        "image_permission"
+      ],
+      "answer_requirements": "Resolve ID by local predicate/context; distinguish national ID from transaction ID.",
+      "legacy_topic_candidates": [
+        "identity"
+      ],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "financial_training",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "phone_ownership",
+      "label_en": "Registered mobile ownership",
+      "definition": "Who must own the mobile line used for a service.",
+      "ar_eg_cues": [
+        "الخط باسم مين",
+        "الرقم باسم العميل",
+        "خط مراتي ينفع",
+        "ملكية الخط",
+        "شريحة باسم واحد تاني"
+      ],
+      "ar_msa_cues": [
+        "تسجيل الخط باسم العميل",
+        "ملكية رقم الهاتف",
+        "اسم مالك الشريحة"
+      ],
+      "en_cues": [
+        "phone ownership",
+        "mobile registered in whose name",
+        "SIM owner",
+        "customer-owned mobile number"
+      ],
+      "franco_eg_cues": [
+        "el khat be esm meen",
+        "el ra2am be esmy",
+        "SIM ownership",
+        "khat be esm wa7ed tany"
+      ],
+      "do_not_confuse_with": [
+        "image_permission",
+        "existing_wallet",
+        "otp"
+      ],
+      "answer_requirements": "Phone mention as medium for a photo does not request phone ownership.",
+      "legacy_topic_candidates": [
+        "phone_ownership"
+      ],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "financial_training",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "existing_wallet",
+      "label_en": "Existing wallet on the same number",
+      "definition": "Whether a mobile number already linked to a wallet can be used.",
+      "ar_eg_cues": [
+        "الرقم عليه محفظة تانية",
+        "نفس الخط عليه كاش",
+        "محفظة قديمة على الرقم",
+        "ينفع محفظتين على نفس الخط"
+      ],
+      "ar_msa_cues": [
+        "ارتباط الرقم بمحفظة أخرى",
+        "وجود محفظة سابقة",
+        "تعدد المحافظ على نفس الرقم"
+      ],
+      "en_cues": [
+        "existing-wallet restriction",
+        "another wallet on this number",
+        "already linked wallet",
+        "two wallets on one number"
+      ],
+      "franco_eg_cues": [
+        "el ra2am 3aleh ma7faza tanya",
+        "same khat 3aleh cash",
+        "wallet adeema",
+        "ma7fazteen 3ala nafs el ra2am"
+      ],
+      "do_not_confuse_with": [
+        "phone_ownership",
+        "closure"
+      ],
+      "answer_requirements": "A negative question about another wallet requests the rule; it does not exclude the topic.",
+      "legacy_topic_candidates": [
+        "existing_wallet"
+      ],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "financial_training",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "image_permission",
+      "label_en": "Acceptability of screenshots or supplied photos",
+      "definition": "Whether a captured/displayed/supplied document image may be used in a specified process.",
+      "ar_eg_cues": [
+        "صورة شاشة",
+        "صور الشاشات",
+        "سكرين شوت",
+        "العميل بعت صورة",
+        "ينفع أستخدم الصورة",
+        "مصورها من بره"
+      ],
+      "ar_msa_cues": [
+        "جواز استخدام لقطة شاشة",
+        "صورة مقدمة خارجيا",
+        "صور مرسلة من العميل"
+      ],
+      "en_cues": [
+        "may I use a screenshot",
+        "externally supplied photograph",
+        "customer-sent image",
+        "screen capture allowed",
+        "photo instead of original"
+      ],
+      "franco_eg_cues": [
+        "yenfa3 screenshot",
+        "sooret shasha",
+        "el 3ameel ba3at sora",
+        "photo men barra",
+        "screen shot masmoo7"
+      ],
+      "do_not_confuse_with": [
+        "workflow",
+        "phone_ownership",
+        "identity"
+      ],
+      "answer_requirements": "Treat registration/mobile as context when only image acceptability is asked; resolve image referent.",
+      "legacy_topic_candidates": [
+        "image_prohibition"
+      ],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "financial_training",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "transaction_code",
+      "label_en": "Service transaction code",
+      "definition": "Identifier selecting a transaction/service, not the transaction procedure or customer OTP.",
+      "ar_eg_cues": [
+        "كود الخدمة",
+        "كود صرف الحوالة",
+        "رقم الخدمة على الماكينة",
+        "كود العملية بس"
+      ],
+      "ar_msa_cues": [
+        "رمز الخدمة",
+        "كود الصرف",
+        "معرف الخدمة"
+      ],
+      "en_cues": [
+        "service code",
+        "transaction code",
+        "cash-out code",
+        "code only",
+        "remittance service number"
+      ],
+      "franco_eg_cues": [
+        "code el khedma",
+        "kod el sarf",
+        "ra2am el khedma",
+        "code bs"
+      ],
+      "do_not_confuse_with": [
+        "workflow",
+        "withdrawal_tariff",
+        "otp",
+        "transaction_reference"
+      ],
+      "answer_requirements": "Operation mention scopes the code; it does not automatically request the operation steps.",
+      "legacy_topic_candidates": [
+        "transaction_codes"
+      ],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "financial_training",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "workflow",
+      "label_en": "Ordered end-to-end procedure",
+      "definition": "All steps of the explicitly scoped procedure, with prerequisites, order and conditional branches.",
+      "ar_eg_cues": [
+        "مشيني خطوة خطوة",
+        "أبدأ منين",
+        "أعمل إيه بالترتيب",
+        "خطوات التسجيل",
+        "وريني الطريقة"
+      ],
+      "ar_msa_cues": [
+        "اشرح الإجراءات بالترتيب",
+        "ما هي خطوات الإجراء",
+        "التسلسل الإجرائي"
+      ],
+      "en_cues": [
+        "walk me through",
+        "step by step",
+        "full procedure",
+        "how do I do this",
+        "sequence of steps"
+      ],
+      "franco_eg_cues": [
+        "masheny khatwa khatwa",
+        "abda2 menein",
+        "a3mel eh bel tarteeb",
+        "steps kamla"
+      ],
+      "do_not_confuse_with": [
+        "branch_condition",
+        "transaction_code",
+        "documents"
+      ],
+      "answer_requirements": "Workflow scope must be stated: app navigation is not all KYC; branch condition alone is not all steps.",
+      "legacy_topic_candidates": [
+        "workflow"
+      ],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "financial_training",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "branch_condition",
+      "label_en": "Condition for visiting a branch",
+      "definition": "When or whether a branch visit is needed, distinct from full app procedure or fees.",
+      "ar_eg_cues": [
+        "أروح الفرع امتى",
+        "لازم أروح فرع",
+        "زيارة الفرع في أي حالة",
+        "الأب بيبعتني الفرع"
+      ],
+      "ar_msa_cues": [
+        "شرط زيارة الفرع",
+        "متى تلزم زيارة الفرع",
+        "هل زيارة الفرع إلزامية"
+      ],
+      "en_cues": [
+        "when is a branch visit needed",
+        "must I visit a branch",
+        "only when the app directs me",
+        "branch visit condition"
+      ],
+      "franco_eg_cues": [
+        "aroo7 el far3 emta",
+        "lazem aroo7 far3",
+        "branch visit condition",
+        "el app yeba3atny"
+      ],
+      "do_not_confuse_with": [
+        "workflow",
+        "opening_fee",
+        "branch_location"
+      ],
+      "answer_requirements": "Never make a conditional branch instruction unconditional.",
+      "legacy_topic_candidates": [
+        "branch_condition"
+      ],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "financial_training",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "documents",
+      "label_en": "Complete document inventory",
+      "definition": "Which documents are needed for a named procedure; not individual form fields.",
+      "ar_eg_cues": [
+        "الورق المطلوب",
+        "لازم أجيب إيه من أوراق",
+        "المستندات كاملة",
+        "محتاج أصل ولا صور"
+      ],
+      "ar_msa_cues": [
+        "قائمة المستندات المطلوبة",
+        "الوثائق اللازمة",
+        "جميع أوراق التقديم"
+      ],
+      "en_cues": [
+        "required documents",
+        "full document checklist",
+        "paperwork to bring",
+        "all documents needed"
+      ],
+      "franco_eg_cues": [
+        "el wara2 el matloob",
+        "mostanadat kamla",
+        "ageeb eh men awra2",
+        "document checklist"
+      ],
+      "do_not_confuse_with": [
+        "identity",
+        "form_fields",
+        "workflow"
+      ],
+      "answer_requirements": "An identity rule or signature requirement alone does not prove an exhaustive inventory.",
+      "legacy_topic_candidates": [
+        "documents"
+      ],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "financial_training",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "form_fields",
+      "label_en": "Fields to enter on a form",
+      "definition": "What information goes into a named form field; not a document to bring.",
+      "ar_eg_cues": [
+        "أكتب إيه في الخانة",
+        "بيانات الاستمارة",
+        "أملا الفورم أزاي",
+        "اسم العميل على السيستم"
+      ],
+      "ar_msa_cues": [
+        "بيانات النموذج",
+        "تعبئة الحقول",
+        "محتويات خانة العنوان"
+      ],
+      "en_cues": [
+        "form fields",
+        "what goes in this field",
+        "data entry requirements",
+        "complete the application fields"
+      ],
+      "franco_eg_cues": [
+        "akteb eh fel khana",
+        "bayanat el form",
+        "amla el form ezay",
+        "field entry"
+      ],
+      "do_not_confuse_with": [
+        "documents",
+        "identity",
+        "workflow"
+      ],
+      "answer_requirements": "Keep field labels and customer-specific values distinct from preset answers.",
+      "legacy_topic_candidates": [
+        "registration"
+      ],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "financial_training",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "signature",
+      "label_en": "Signature form and locations",
+      "definition": "Required signature wording/name parts/locations; repeated signatures are a different dimension.",
+      "ar_eg_cues": [
+        "يمضي أزاي",
+        "توقيع ثلاثي",
+        "يمضي في كام مكان",
+        "توقيع العميل"
+      ],
+      "ar_msa_cues": [
+        "متطلبات التوقيع",
+        "توقيع من ثلاثة أسماء",
+        "مواضع التوقيع"
+      ],
+      "en_cues": [
+        "signature requirements",
+        "three-part name signature",
+        "where to sign",
+        "how many signing locations"
+      ],
+      "franco_eg_cues": [
+        "yemdy ezay",
+        "taw2ee3 tholathy",
+        "sign fein",
+        "kam makan yemdy feeh"
+      ],
+      "do_not_confuse_with": [
+        "workflow",
+        "documents"
+      ],
+      "answer_requirements": "Three name parts is not three repetitions; ambiguous source language remains a terminology hold.",
+      "legacy_topic_candidates": [
+        "documents"
+      ],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "financial_training",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "stamps",
+      "label_en": "Document stamping instructions",
+      "definition": "Stamp type, document location and staff signature associations.",
+      "ar_eg_cues": [
+        "ختم الفرع",
+        "ختم الموظف",
+        "ختم اطلعت على الأصل",
+        "أختم فين"
+      ],
+      "ar_msa_cues": [
+        "الأختام المطلوبة",
+        "مواضع الختم",
+        "التوقيع داخل الختم"
+      ],
+      "en_cues": [
+        "required stamps",
+        "branch stamp",
+        "seen-original stamp",
+        "stamp placement"
+      ],
+      "franco_eg_cues": [
+        "khatm el far3",
+        "khatm el mowazaf",
+        "akhtem fein",
+        "etala3t 3ala el asl"
+      ],
+      "do_not_confuse_with": [
+        "signature",
+        "documents"
+      ],
+      "answer_requirements": "Do not transfer one service stamp policy to another.",
+      "legacy_topic_candidates": [
+        "documents"
+      ],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "financial_training",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "eligibility",
+      "label_en": "Eligibility and customer conditions",
+      "definition": "Whether a customer situation qualifies under source rules.",
+      "ar_eg_cues": [
+        "مين ينفع يقدم",
+        "شروط الفتح",
+        "ينفع للطلبة",
+        "السن المطلوب"
+      ],
+      "ar_msa_cues": [
+        "شروط الأهلية",
+        "الفئات المؤهلة",
+        "السن المطلوب"
+      ],
+      "en_cues": [
+        "eligibility criteria",
+        "who qualifies",
+        "can this customer apply",
+        "age requirement"
+      ],
+      "franco_eg_cues": [
+        "meen yenfa3 ye2adem",
+        "shoroot el fate7",
+        "eligibility",
+        "el sen el matloob"
+      ],
+      "do_not_confuse_with": [
+        "documents",
+        "initial_funding"
+      ],
+      "answer_requirements": "Do not infer complete eligibility from a funding amount or document fragment.",
+      "legacy_topic_candidates": [
+        "eligibility"
+      ],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "financial_training",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "risk_rules",
+      "label_en": "Risk classification and treatment",
+      "definition": "Risk-dependent procedure or classification, not automatic refusal or approval.",
+      "ar_eg_cues": [
+        "عميل عالي المخاطر",
+        "هاي ريسك",
+        "شروط المخاطر",
+        "التعامل مع الحالات الخاصة"
+      ],
+      "ar_msa_cues": [
+        "العملاء عالي المخاطر",
+        "تصنيف المخاطر",
+        "الإجراءات للفئات خاصة"
+      ],
+      "en_cues": [
+        "high-risk customer rules",
+        "risk category",
+        "risk-dependent procedure",
+        "enhanced review"
+      ],
+      "franco_eg_cues": [
+        "3ameel high risk",
+        "3aly el makhater",
+        "risk classification",
+        "e7teng eh lel high risk"
+      ],
+      "do_not_confuse_with": [
+        "eligibility",
+        "documents"
+      ],
+      "answer_requirements": "Risk flag is scoped by service; do not copy another provider policy.",
+      "legacy_topic_candidates": [
+        "risk_compliance"
+      ],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "financial_training",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "daily_limit",
+      "label_en": "Daily transaction limit",
+      "definition": "Per-day transaction amount/count, with operation and service scope.",
+      "ar_eg_cues": [
+        "الحد اليومي",
+        "أقصى مبلغ في اليوم",
+        "مسموح كام في اليوم",
+        "كام عملية يوميا"
+      ],
+      "ar_msa_cues": [
+        "الحد الأقصى اليومي",
+        "حدود المعاملات اليومية",
+        "عدد المعاملات في اليوم"
+      ],
+      "en_cues": [
+        "daily limit",
+        "per-day cap",
+        "daily transaction count",
+        "maximum each day"
+      ],
+      "franco_eg_cues": [
+        "el 7ad el yawmy",
+        "kam fel youm",
+        "daily limit",
+        "a2sa mablagh youmy"
+      ],
+      "do_not_confuse_with": [
+        "monthly_limit",
+        "balance_limit",
+        "withdrawal_minimum"
+      ],
+      "answer_requirements": "Retain period, unit, direction and any tier/effective-date conditions.",
+      "legacy_topic_candidates": [
+        "limits"
+      ],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "financial_training",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "monthly_limit",
+      "label_en": "Monthly transaction limit",
+      "definition": "Per-month transaction amount/count, not daily or account balance.",
+      "ar_eg_cues": [
+        "الحد الشهري",
+        "مسموح كام في الشهر",
+        "كام عملية كل شهر"
+      ],
+      "ar_msa_cues": [
+        "الحد الأقصى الشهري",
+        "حدود المعاملات الشهرية",
+        "المبلغ الشهري"
+      ],
+      "en_cues": [
+        "monthly limit",
+        "per-month cap",
+        "monthly transaction allowance",
+        "each calendar month"
+      ],
+      "franco_eg_cues": [
+        "el 7ad el shahry",
+        "kam fel shahr",
+        "monthly cap",
+        "kol shahr"
+      ],
+      "do_not_confuse_with": [
+        "daily_limit",
+        "balance_limit"
+      ],
+      "answer_requirements": "Preserve calendar/rolling month distinction only if evidence provides it.",
+      "legacy_topic_candidates": [
+        "limits"
+      ],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "financial_training",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "balance_limit",
+      "label_en": "Maximum or required ongoing balance",
+      "definition": "Balance held at a time or required after activation; not deposit fee/initial funding.",
+      "ar_eg_cues": [
+        "أكبر رصيد",
+        "لازم أسيب كام في المحفظة",
+        "الرصيد ميعديش كام",
+        "رصيد دائم"
+      ],
+      "ar_msa_cues": [
+        "الحد الأقصى للرصيد",
+        "الحد الأدنى للرصيد المستمر",
+        "رصيد الحساب"
+      ],
+      "en_cues": [
+        "maximum wallet balance",
+        "ongoing minimum balance",
+        "must I always keep money",
+        "balance ceiling"
+      ],
+      "franco_eg_cues": [
+        "akbar raseed",
+        "lazem aseeb kam fel wallet",
+        "minimum balance dayman",
+        "max balance"
+      ],
+      "do_not_confuse_with": [
+        "initial_funding",
+        "balance_treatment"
+      ],
+      "answer_requirements": "Do not infer ongoing balance obligations from activation funding.",
+      "legacy_topic_candidates": [
+        "limits"
+      ],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "financial_training",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "discount",
+      "label_en": "Discount scope and qualification",
+      "definition": "Discount eligibility, base charge, period and eligible transactions/counters.",
+      "ar_eg_cues": [
+        "خصم على الرسوم",
+        "أول عمليتين",
+        "العرض بينطبق أزاي",
+        "خصم الفرع ولا الماكينة"
+      ],
+      "ar_msa_cues": [
+        "شروط الخصم",
+        "نطاق العرض",
+        "عدد المعاملات المؤهلة"
+      ],
+      "en_cues": [
+        "discount conditions",
+        "qualifying transactions",
+        "promotion scope",
+        "discount counter"
+      ],
+      "franco_eg_cues": [
+        "khasm 3ala el rosoom",
+        "awel 3amaletein",
+        "discount shoroot",
+        "el 3ard"
+      ],
+      "do_not_confuse_with": [
+        "withdrawal_tariff",
+        "daily_limit"
+      ],
+      "answer_requirements": "Base tariff, discount percentage and counter are distinct; do not invent shared counters.",
+      "legacy_topic_candidates": [
+        "promotions",
+        "withdrawal"
+      ],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "financial_training",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "activation_timing",
+      "label_en": "Activation time",
+      "definition": "How soon activation occurs, including any trigger rather than a guaranteed unconditional duration.",
+      "ar_eg_cues": [
+        "التفعيل بياخد وقت أد إيه",
+        "هتتفعل امتى",
+        "فوري ولا هاستنى"
+      ],
+      "ar_msa_cues": [
+        "مدة التفعيل",
+        "موعد التفعيل",
+        "التفعيل الفوري"
+      ],
+      "en_cues": [
+        "activation time",
+        "how long until active",
+        "instant activation",
+        "when will it activate"
+      ],
+      "franco_eg_cues": [
+        "taf3eel ya5od wa2t ad eh",
+        "hatetfa3al emta",
+        "instant wala hastana"
+      ],
+      "do_not_confuse_with": [
+        "initial_funding",
+        "workflow"
+      ],
+      "answer_requirements": "A timing fact may carry a deposit/verification trigger; keep it.",
+      "legacy_topic_candidates": [
+        "activation",
+        "timeline"
+      ],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "financial_training",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "transaction_reference",
+      "label_en": "Transaction reference lookup",
+      "definition": "Reference number identifying a particular payment/remittance, not the service code.",
+      "ar_eg_cues": [
+        "الرقم المرجعي",
+        "رقم الحوالة",
+        "أستعلم برقم عملية",
+        "الريفرنس"
+      ],
+      "ar_msa_cues": [
+        "الرقم المرجعي للمعاملة",
+        "معرف الحوالة",
+        "الاستعلام عن عملية"
+      ],
+      "en_cues": [
+        "transaction reference",
+        "payment ID",
+        "remittance reference",
+        "trace a transaction"
+      ],
+      "franco_eg_cues": [
+        "ra2am marga3y",
+        "reference el 3amaleya",
+        "ra2am el 7awala",
+        "transaction ID"
+      ],
+      "do_not_confuse_with": [
+        "transaction_code",
+        "identity",
+        "otp"
+      ],
+      "answer_requirements": "ID is relational: transaction ID does not request national-ID eligibility.",
+      "legacy_topic_candidates": [
+        "troubleshooting"
+      ],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "financial_training",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "otp",
+      "label_en": "One-time verification code handling",
+      "definition": "Question about receiving or using a one-time code, not disclosure of actual credentials.",
+      "ar_eg_cues": [
+        "كود التفعيل",
+        "الكود ماجاليش",
+        "رسالة التأكيد",
+        "كود الOTP"
+      ],
+      "ar_msa_cues": [
+        "رمز التحقق",
+        "رسالة التفعيل",
+        "كلمة المرور لمرة واحدة"
+      ],
+      "en_cues": [
+        "activation code",
+        "verification SMS",
+        "OTP not received",
+        "one-time code"
+      ],
+      "franco_eg_cues": [
+        "code el taf3eel",
+        "el OTP magaleesh",
+        "resalet el ta2keed",
+        "verification code"
+      ],
+      "do_not_confuse_with": [
+        "transaction_code",
+        "transaction_reference"
+      ],
+      "answer_requirements": "Never request or echo actual secret OTP values; route to source-supported process.",
+      "legacy_topic_candidates": [
+        "troubleshooting"
+      ],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "financial_training",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "transaction_status",
+      "label_en": "Transaction state",
+      "definition": "Status/pending/success/failure of a transaction rather than its fees.",
+      "ar_eg_cues": [
+        "العملية معلقة",
+        "فلوس ماوصلتش",
+        "الحوالة تمت ولا لا",
+        "العملية نجحت"
+      ],
+      "ar_msa_cues": [
+        "حالة المعاملة",
+        "عملية قيد التنفيذ",
+        "نجاح أو فشل العملية"
+      ],
+      "en_cues": [
+        "transaction status",
+        "pending payment",
+        "did the transfer succeed",
+        "money has not arrived"
+      ],
+      "franco_eg_cues": [
+        "el 3amaleya mo3ala2a",
+        "floos mawesletsh",
+        "el 7awala tamam",
+        "pending"
+      ],
+      "do_not_confuse_with": [
+        "refund",
+        "withdrawal_tariff"
+      ],
+      "answer_requirements": "A failed transaction is not automatically refunded; consult applicable status procedure.",
+      "legacy_topic_candidates": [
+        "troubleshooting"
+      ],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "financial_training",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "refund",
+      "label_en": "Refund eligibility and process",
+      "definition": "Returning funds following cancellation/failure/remainder; scope must be explicit.",
+      "ar_eg_cues": [
+        "أرجع فلوسي",
+        "استرداد المبلغ",
+        "الفلوس هترجع امتى",
+        "رقم عملية الاسترداد"
+      ],
+      "ar_msa_cues": [
+        "استرداد الأموال",
+        "رد المبلغ",
+        "شروط الاسترداد"
+      ],
+      "en_cues": [
+        "refund procedure",
+        "return the funds",
+        "when will money be returned",
+        "refund eligibility"
+      ],
+      "franco_eg_cues": [
+        "arge3 floosy",
+        "esterdad",
+        "el floos haterga3 emta",
+        "refund process"
+      ],
+      "do_not_confuse_with": [
+        "balance_treatment",
+        "transaction_status"
+      ],
+      "answer_requirements": "Do not turn activation deposit balance treatment into a refund policy.",
+      "legacy_topic_candidates": [
+        "exceptions",
+        "troubleshooting"
+      ],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "financial_training",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "closure",
+      "label_en": "Service or wallet closure",
+      "definition": "Closing/cancelling the service/account, distinct from cancelling one transaction.",
+      "ar_eg_cues": [
+        "أقفل المحفظة",
+        "ألغي الحساب",
+        "أمسح محفظة قديمة"
+      ],
+      "ar_msa_cues": [
+        "إغلاق المحفظة",
+        "إلغاء الحساب",
+        "إنهاء الخدمة"
+      ],
+      "en_cues": [
+        "close the wallet",
+        "cancel the account",
+        "remove an old wallet",
+        "terminate service"
+      ],
+      "franco_eg_cues": [
+        "a2fel el ma7faza",
+        "alghy el account",
+        "amsa7 wallet adeema"
+      ],
+      "do_not_confuse_with": [
+        "existing_wallet",
+        "refund"
+      ],
+      "answer_requirements": "Existing-wallet status does not itself authorize closure or establish how to close.",
+      "legacy_topic_candidates": [
+        "exceptions"
+      ],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "financial_training",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "branch_location",
+      "label_en": "Service location and availability",
+      "definition": "Where a service can be performed or which branches offer it.",
+      "ar_eg_cues": [
+        "أقرب فرع",
+        "الخدمة موجودة فين",
+        "أروح أنهي فرع",
+        "على الماكينة ولا الفرع"
+      ],
+      "ar_msa_cues": [
+        "مكان تقديم الخدمة",
+        "افرع الخدمة",
+        "توافر الخدمة"
+      ],
+      "en_cues": [
+        "where is the service available",
+        "which branch offers it",
+        "nearest branch",
+        "channel availability"
+      ],
+      "franco_eg_cues": [
+        "a2rab far3",
+        "el khedma mawgooda fein",
+        "anhy far3",
+        "available channels"
+      ],
+      "do_not_confuse_with": [
+        "branch_condition",
+        "workflow"
+      ],
+      "answer_requirements": "No live locations or availability can be inferred from static language examples.",
+      "legacy_topic_candidates": [
+        "overview"
+      ],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "financial_training",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "report_export",
+      "label_en": "Report viewing/extraction",
+      "definition": "Viewing or extracting a report, not transferring data to a partner.",
+      "ar_eg_cues": [
+        "استخراج تقرير",
+        "أنزل Excel",
+        "أشوف السجل",
+        "تاريخ الرفض"
+      ],
+      "ar_msa_cues": [
+        "استخراج التقارير",
+        "عرض السجل",
+        "تاريخ التحديث"
+      ],
+      "en_cues": [
+        "extract a report",
+        "export to Excel",
+        "view history",
+        "rejection history"
+      ],
+      "franco_eg_cues": [
+        "estekhrag ta2reer",
+        "download excel",
+        "shoof el history",
+        "sabab el rafd"
+      ],
+      "do_not_confuse_with": [
+        "transaction_status",
+        "workflow"
+      ],
+      "answer_requirements": "Use user UI term extraction when localizing report export; evidence determines actual functionality.",
+      "legacy_topic_candidates": [
+        "reports"
+      ],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "financial_training",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "reprint",
+      "label_en": "Receipt reprinting",
+      "definition": "Reprint an existing receipt; not create a new payment.",
+      "ar_eg_cues": [
+        "أطبع الكوبون تاني",
+        "إعادة طباعة إيصال",
+        "الكوبون ضاع"
+      ],
+      "ar_msa_cues": [
+        "إعادة طباعة الإيصال",
+        "طباعة نسخة أخرى"
+      ],
+      "en_cues": [
+        "reprint receipt",
+        "duplicate transaction slip",
+        "print the receipt again"
+      ],
+      "franco_eg_cues": [
+        "atba3 el coupon tany",
+        "reprint el receipt",
+        "el wesl da3"
+      ],
+      "do_not_confuse_with": [
+        "transaction_reference",
+        "payment"
+      ],
+      "answer_requirements": "Reprinting does not mean executing a duplicate payment.",
+      "legacy_topic_candidates": [
+        "workflow",
+        "reports"
+      ],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "financial_training",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "device_network",
+      "label_en": "POS connectivity",
+      "definition": "Connectivity or network selection for the POS device.",
+      "ar_eg_cues": [
+        "الماكينة مش متصلة",
+        "اشغل الواي فاي",
+        "شريحة ولا Wi-Fi",
+        "الشبكة واقعة"
+      ],
+      "ar_msa_cues": [
+        "اتصال جهاز نقطة البيع",
+        "إعدادات الشبكة",
+        "تبديل الاتصال"
+      ],
+      "en_cues": [
+        "POS connection",
+        "switch Wi-Fi and SIM",
+        "terminal offline",
+        "network settings"
+      ],
+      "franco_eg_cues": [
+        "el makana offline",
+        "wifi wala SIM",
+        "el shabaka wa23a",
+        "e3dadat el connection"
+      ],
+      "do_not_confuse_with": [
+        "phone_ownership",
+        "otp"
+      ],
+      "answer_requirements": "A POS SIM/network question is not wallet subscriber ownership.",
+      "legacy_topic_candidates": [
+        "troubleshooting"
+      ],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "financial_training",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "device_cache",
+      "label_en": "POS service-data refresh",
+      "definition": "Refreshing device/application service data, not deleting knowledge sources.",
+      "ar_eg_cues": [
+        "كلير كاش",
+        "تحديث البيانات",
+        "الخدمة مش ظاهرة"
+      ],
+      "ar_msa_cues": [
+        "تحديث قائمة الخدمات",
+        "مسح الذاكرة المؤقتة"
+      ],
+      "en_cues": [
+        "clear cache",
+        "refresh service list",
+        "update account data",
+        "missing service on POS"
+      ],
+      "franco_eg_cues": [
+        "clear cache",
+        "ta7deeth el bayanat",
+        "el service mesh zahra"
+      ],
+      "do_not_confuse_with": [
+        "closure",
+        "report_export"
+      ],
+      "answer_requirements": "Do not interpret cache-clearing as account deletion.",
+      "legacy_topic_candidates": [
+        "troubleshooting"
+      ],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "financial_training",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "payment",
+      "label_en": "Payment procedure",
+      "definition": "Paying a bill/installment, distinct from funding a wallet.",
+      "ar_eg_cues": [
+        "أدفع قسط",
+        "سداد القسط",
+        "أدفع الفاتورة"
+      ],
+      "ar_msa_cues": [
+        "سداد المدفوعات",
+        "دفع الأقساط",
+        "سداد الفاتورة"
+      ],
+      "en_cues": [
+        "pay an installment",
+        "bill payment",
+        "settle the payment",
+        "pay a due amount"
+      ],
+      "franco_eg_cues": [
+        "adfa3 est",
+        "saddad el est",
+        "bill payment",
+        "edfa3 el fatoora"
+      ],
+      "do_not_confuse_with": [
+        "deposit_tariff",
+        "initial_funding"
+      ],
+      "answer_requirements": "Payment recipient/purpose must be distinguished from cash-in to balance.",
+      "legacy_topic_candidates": [
+        "payment"
+      ],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "financial_training",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "transfer",
+      "label_en": "Transfer procedure/conditions",
+      "definition": "Sending funds between accounts or recipients.",
+      "ar_eg_cues": [
+        "أحول فلوس",
+        "التحويل لحد تاني",
+        "أبعت فلوس"
+      ],
+      "ar_msa_cues": [
+        "تحويل الأموال",
+        "إرسال نقود",
+        "تحويل بين الحسابات"
+      ],
+      "en_cues": [
+        "transfer money",
+        "send funds",
+        "transfer to another wallet",
+        "remit money"
+      ],
+      "franco_eg_cues": [
+        "a7awel floos",
+        "ab3at floos",
+        "transfer le wa7ed tany"
+      ],
+      "do_not_confuse_with": [
+        "deposit_tariff",
+        "withdrawal_tariff",
+        "payment"
+      ],
+      "answer_requirements": "Transfer is not interchangeable with deposit/withdrawal even when amounts match.",
+      "legacy_topic_candidates": [
+        "transfer"
+      ],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "financial_training",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "rejection_reason",
+      "label_en": "Reasons for rejection",
+      "definition": "Why an application/transaction was rejected and required remediation.",
+      "ar_eg_cues": [
+        "اترفضت ليه",
+        "سبب الرفض",
+        "الكيوسي رافض",
+        "أصلح الرفض أزاي"
+      ],
+      "ar_msa_cues": [
+        "أسباب الرفض",
+        "سبب عدم قبول الطلب",
+        "معالجة الطلب المرفوض"
+      ],
+      "en_cues": [
+        "why was it rejected",
+        "rejection reason",
+        "resolve a rejected application",
+        "declined status"
+      ],
+      "franco_eg_cues": [
+        "etrafadet leh",
+        "sabab el rafd",
+        "declined leh"
+      ],
+      "do_not_confuse_with": [
+        "transaction_status",
+        "workflow"
+      ],
+      "answer_requirements": "A status label is not a causal explanation; do not invent cause.",
+      "legacy_topic_candidates": [
+        "troubleshooting"
+      ],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "financial_training",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "required_presence",
+      "label_en": "In-person attendance",
+      "definition": "Whether the customer must attend, rather than the agent or a delegate.",
+      "ar_eg_cues": [
+        "العميل لازم يجي",
+        "ينفع حد بداله",
+        "الحضور شخصي"
+      ],
+      "ar_msa_cues": [
+        "حضور العميل شخصيا",
+        "جواز التوكيل",
+        "حضور نائب"
+      ],
+      "en_cues": [
+        "customer in-person requirement",
+        "can a representative attend",
+        "must the customer be present"
+      ],
+      "franco_eg_cues": [
+        "el 3ameel lazm yegy",
+        "yenfa3 7ad badalo",
+        "7odoor shakhsy"
+      ],
+      "do_not_confuse_with": [
+        "branch_condition",
+        "phone_ownership"
+      ],
+      "answer_requirements": "Customer attendance, branch-visit trigger and legal authorization are different.",
+      "legacy_topic_candidates": [
+        "eligibility"
+      ],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "financial_training",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "effective_date",
+      "label_en": "Policy effective date and validity",
+      "definition": "When a rule applies, whether an offer expired, and which version controls.",
+      "ar_eg_cues": [
+        "التعليمات دي من امتى",
+        "العرض لسه شغال",
+        "القديم ولا الجديد"
+      ],
+      "ar_msa_cues": [
+        "تاريخ سريان القاعدة",
+        "صلاحية العرض",
+        "النسخة السارية"
+      ],
+      "en_cues": [
+        "effective date",
+        "is this offer still valid",
+        "which policy version applies",
+        "expired offer"
+      ],
+      "franco_eg_cues": [
+        "el ta3leemat men emta",
+        "el 3ard lesa shaghal",
+        "old wala new policy"
+      ],
+      "do_not_confuse_with": [
+        "discount",
+        "activation_timing"
+      ],
+      "answer_requirements": "Date/currentness must come from authorized source metadata, not the current date or this library.",
+      "legacy_topic_candidates": [
+        "timeline",
+        "promotions"
+      ],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "financial_training",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "explanation",
+      "label_en": "Explanation of a documented rule",
+      "definition": "Why or what a source rule means; not authorization to infer undocumented business reasons.",
+      "ar_eg_cues": [
+        "يعني إيه",
+        "ليه الشرط ده",
+        "وضحلي الفرق"
+      ],
+      "ar_msa_cues": [
+        "تفسير القاعدة",
+        "ما معنى هذا الشرط",
+        "سبب هذا الإجراء"
+      ],
+      "en_cues": [
+        "what does this mean",
+        "why this condition",
+        "explain the difference",
+        "meaning of the rule"
+      ],
+      "franco_eg_cues": [
+        "ya3ny eh",
+        "leh el shart da",
+        "wada7ly el far2"
+      ],
+      "do_not_confuse_with": [
+        "workflow",
+        "eligibility"
+      ],
+      "answer_requirements": "Explain only supported implications; unknown rationale stays unknown.",
+      "legacy_topic_candidates": [
+        "overview",
+        "general"
+      ],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "financial_training",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "permission",
+      "label_en": "Whether an action is allowed",
+      "definition": "A yes/no permission query for a specific action and object; does not assert permission.",
+      "ar_eg_cues": [
+        "ينفع",
+        "مسموح",
+        "أقدر أعمل كده",
+        "مش ممنوع"
+      ],
+      "ar_msa_cues": [
+        "هل يجوز",
+        "هل يسمح",
+        "مدى جواز الإجراء"
+      ],
+      "en_cues": [
+        "may I",
+        "am I allowed to",
+        "can we use",
+        "is it prohibited"
+      ],
+      "franco_eg_cues": [
+        "yenfa3",
+        "masmoo7",
+        "a2dar a3mel keda",
+        "msh mamnoo3"
+      ],
+      "do_not_confuse_with": [
+        "request_exclusion",
+        "user_fact_assertion"
+      ],
+      "answer_requirements": "Keep the action/object attached. Candidate permission requires evidence; a negated question is not permission.",
+      "legacy_topic_candidates": [
+        "exceptions"
+      ],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "financial_training",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "other_or_unknown",
+      "label_en": "Unresolved meaning",
+      "definition": "Intent unresolved; may need targeted clarification without guessing a supported topic.",
+      "ar_eg_cues": [
+        "بكام",
+        "الشروط إيه",
+        "البطاقة",
+        "كده ينفع"
+      ],
+      "ar_msa_cues": [
+        "ما المتطلبات",
+        "ما المقصود",
+        "هل هذا متاح"
+      ],
+      "en_cues": [
+        "how much",
+        "the card",
+        "the requirements",
+        "can I do that"
+      ],
+      "franco_eg_cues": [
+        "bekam",
+        "el shoroot",
+        "el beta2a",
+        "yenfa3 keda"
+      ],
+      "do_not_confuse_with": [
+        "any_single_forced_intent"
+      ],
+      "answer_requirements": "Use explicit alternatives and scoped clarification; not all ambiguity is a knowledge gap.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "financial_training",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "complaint_create",
+      "label_en": "Register a complaint",
+      "definition": "Request to record dissatisfaction as a complaint, not a refund or cancellation by implication.",
+      "ar_eg_cues": [
+        "عاوز أقدم شكوى",
+        "فتح شكوى",
+        "سجلي شكوى"
+      ],
+      "ar_msa_cues": [
+        "تقديم شكوى",
+        "تسجيل شكوى جديدة"
+      ],
+      "en_cues": [
+        "raise a complaint",
+        "lodge a complaint",
+        "log a complaint"
+      ],
+      "franco_eg_cues": [
+        "3ayez a2adem shakwa",
+        "efta7 shakwa",
+        "log complaint"
+      ],
+      "do_not_confuse_with": [
+        "complaint_status",
+        "refund",
+        "feedback"
+      ],
+      "answer_requirements": "Identify complaint subject and customer request; no complaint is actually created by this library.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "complaint_status",
+      "label_en": "Follow up a complaint",
+      "definition": "Ask about the progress of an existing complaint; do not open a duplicate.",
+      "ar_eg_cues": [
+        "شكوتي وصلت لفين",
+        "متابعة شكوى",
+        "في جديد في الشكوى"
+      ],
+      "ar_msa_cues": [
+        "حالة الشكوى",
+        "متابعة شكوى قائمة"
+      ],
+      "en_cues": [
+        "complaint progress",
+        "follow up my complaint",
+        "where is my complaint"
+      ],
+      "franco_eg_cues": [
+        "shakwety weslet le fein",
+        "motab3et shakwa",
+        "any update 3al shakwa"
+      ],
+      "do_not_confuse_with": [
+        "complaint_create",
+        "transaction_status"
+      ],
+      "answer_requirements": "Retain complaint identifier as identifier, never as transaction service code; status requires a live record or source.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "complaint_reopen",
+      "label_en": "Reopen a closed complaint",
+      "definition": "Ask to reopen an existing closed complaint, not necessarily create another one.",
+      "ar_eg_cues": [
+        "الشكوى اتقفلت ولسه المشكلة",
+        "افتحها تاني",
+        "رجع الشكوى"
+      ],
+      "ar_msa_cues": [
+        "إعادة فتح الشكوى",
+        "اعتراض على إغلاق الشكوى"
+      ],
+      "en_cues": [
+        "reopen my complaint",
+        "closed but unresolved",
+        "restore the complaint"
+      ],
+      "franco_eg_cues": [
+        "el shakwa et2afalet w lesa el moshkela",
+        "efta7ha tany",
+        "reopen complaint"
+      ],
+      "do_not_confuse_with": [
+        "complaint_create",
+        "closure"
+      ],
+      "answer_requirements": "Closed is a recorded status, not evidence that the customer issue was resolved.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "complaint_withdraw",
+      "label_en": "Withdraw a complaint",
+      "definition": "Customer no longer wants the complaint pursued; distinct from reversing the transaction.",
+      "ar_eg_cues": [
+        "ألغي الشكوى",
+        "مش عاوز أكمل الشكوى",
+        "اسحب شكوتي"
+      ],
+      "ar_msa_cues": [
+        "سحب الشكوى",
+        "إلغاء متابعة الشكوى"
+      ],
+      "en_cues": [
+        "withdraw my complaint",
+        "cancel the complaint",
+        "stop pursuing the complaint"
+      ],
+      "franco_eg_cues": [
+        "elghy el shakwa",
+        "mesh 3ayez akamel shakwa",
+        "as7ab shakwety"
+      ],
+      "do_not_confuse_with": [
+        "transaction_cancel",
+        "refund",
+        "closure"
+      ],
+      "answer_requirements": "Interpret request only; identity, permissions and existing state must be checked before an actual write.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "escalation",
+      "label_en": "Escalate an unresolved issue",
+      "definition": "Ask for higher-level handling, a supervisor or escalation criteria.",
+      "ar_eg_cues": [
+        "عاوز مشرف",
+        "أصعض المشكلة",
+        "وصلوني بالمدير"
+      ],
+      "ar_msa_cues": [
+        "تصعيد الشكوى",
+        "التحدث مع المشرف",
+        "جهة التصعيد"
+      ],
+      "en_cues": [
+        "escalate this",
+        "speak to a supervisor",
+        "escalation route"
+      ],
+      "franco_eg_cues": [
+        "3ayez moshref",
+        "sa33ed el moshkela",
+        "speak to manager"
+      ],
+      "do_not_confuse_with": [
+        "complaint_create",
+        "handoff",
+        "urgent_priority"
+      ],
+      "answer_requirements": "Escalation does not prove an immediate refund, special entitlement or named escalation owner.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "sla_time",
+      "label_en": "Documented response or resolution time",
+      "definition": "Ask about a documented first response or resolution time; retain which clock is requested.",
+      "ar_eg_cues": [
+        "الرد بياخد وقت أد إيه",
+        "الحل امتى",
+        "مدة الشكوى"
+      ],
+      "ar_msa_cues": [
+        "مدة الرد",
+        "المدة المحددة للحل"
+      ],
+      "en_cues": [
+        "response time",
+        "resolution deadline",
+        "how long to resolve"
+      ],
+      "franco_eg_cues": [
+        "el rad byakhod wa2t ad eh",
+        "el 7al emta",
+        "SLA"
+      ],
+      "do_not_confuse_with": [
+        "activation_timing",
+        "refund_status",
+        "callback"
+      ],
+      "answer_requirements": "First-response time, resolution time and customer-desired date are different; never invent a promise.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "refund_status",
+      "label_en": "Refund progress",
+      "definition": "Ask where an already requested refund stands, not eligibility for a new refund.",
+      "ar_eg_cues": [
+        "فلوسي لسه مرجعتش",
+        "الاسترداد وصل لفين",
+        "متابعة رجوع المبلغ"
+      ],
+      "ar_msa_cues": [
+        "حالة استرداد المبلغ",
+        "متابعة عملية الاسترداد"
+      ],
+      "en_cues": [
+        "where is my refund",
+        "refund progress",
+        "refund not received"
+      ],
+      "franco_eg_cues": [
+        "floosy lesa marge3etsh",
+        "el refund wesel le fein",
+        "refund status"
+      ],
+      "do_not_confuse_with": [
+        "refund",
+        "complaint_status",
+        "transaction_reversal"
+      ],
+      "answer_requirements": "A pending refund and original payment status must remain separate objects.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "transaction_cancel",
+      "label_en": "Cancel a transaction",
+      "definition": "Request or question about cancelling a transaction; not account closure or complaint withdrawal.",
+      "ar_eg_cues": [
+        "ألغي العملية",
+        "وقف السداد",
+        "مش عاوز الدفعة دي"
+      ],
+      "ar_msa_cues": [
+        "إلغاء المعاملة",
+        "إيقاف عملية الدفع"
+      ],
+      "en_cues": [
+        "cancel the transaction",
+        "stop this payment",
+        "void the payment"
+      ],
+      "franco_eg_cues": [
+        "elghy el 3amaleya",
+        "wa2af el payment",
+        "cancel el daf3a"
+      ],
+      "do_not_confuse_with": [
+        "closure",
+        "complaint_withdraw",
+        "transaction_reversal"
+      ],
+      "answer_requirements": "Do not assume cancellability; ask transaction status when material and retrieve exact authorized workflow.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "transaction_reversal",
+      "label_en": "Reversal after posting",
+      "definition": "A posted financial entry being reversed; not deleting its receipt or erasing history.",
+      "ar_eg_cues": [
+        "عمل عكس للعملية",
+        "العملية اترجعت",
+        "عمل reversal"
+      ],
+      "ar_msa_cues": [
+        "عكس قيد المعاملة",
+        "عملية عكسية"
+      ],
+      "en_cues": [
+        "reverse a posted transaction",
+        "transaction reversed",
+        "reversal entry"
+      ],
+      "franco_eg_cues": [
+        "reversal lel 3amaleya",
+        "el 3amaleya etraga3et",
+        "3aks el transaction"
+      ],
+      "do_not_confuse_with": [
+        "transaction_cancel",
+        "reprint",
+        "refund_status"
+      ],
+      "answer_requirements": "Retain state and scope; never treat a receipt deletion as reversal or status proof.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "duplicate_payment",
+      "label_en": "Suspected duplicate debit/payment",
+      "definition": "Reported twice-charged or duplicated operation; duplicate records alone do not prove two settled debits.",
+      "ar_eg_cues": [
+        "المبلغ اتخصم مرتين",
+        "دفعت مرتين",
+        "العملية متكررة"
+      ],
+      "ar_msa_cues": [
+        "خصم مكرر",
+        "تكرار السداد",
+        "معاملة مكررة"
+      ],
+      "en_cues": [
+        "charged twice",
+        "duplicate debit",
+        "paid twice"
+      ],
+      "franco_eg_cues": [
+        "el mablagh etkhasem martein",
+        "dafa3t martein",
+        "duplicate payment"
+      ],
+      "do_not_confuse_with": [
+        "reprint",
+        "transaction_status",
+        "refund"
+      ],
+      "answer_requirements": "Keep customer assertion unverified; distinguish duplicates of printouts, records, authorizations and settled payments.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "failed_debit",
+      "label_en": "Debited but transaction failed",
+      "definition": "Customer reports a debit despite an unsuccessful transaction; investigate instead of immediately repeating payment.",
+      "ar_eg_cues": [
+        "الفلوس اتخصمت والعملية فشلت",
+        "خصم والدفع مرفوض",
+        "الرصيد نقص ولسه مادفعتش"
+      ],
+      "ar_msa_cues": [
+        "خصم المبلغ مع فشل المعاملة",
+        "دفع مرفوض مع خصم"
+      ],
+      "en_cues": [
+        "debited but failed",
+        "charged despite decline",
+        "money taken and payment failed"
+      ],
+      "franco_eg_cues": [
+        "el floos etkhasmet wel 3amaleya fashalet",
+        "charged bas declined",
+        "raseedy na2as"
+      ],
+      "do_not_confuse_with": [
+        "transaction_status",
+        "repeat_payment",
+        "refund"
+      ],
+      "answer_requirements": "Reported debit and failure are evidence to investigate, not confirmed final settlement or permission to retry.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "repeat_payment",
+      "label_en": "Repeat or retry a payment",
+      "definition": "Ask whether to repeat an operation, often after uncertain status.",
+      "ar_eg_cues": [
+        "أعيد الدفع",
+        "أجرب العملية تاني",
+        "أدوس تاني"
+      ],
+      "ar_msa_cues": [
+        "إعادة محاولة الدفع",
+        "تكرار المعاملة"
+      ],
+      "en_cues": [
+        "retry payment",
+        "run it again",
+        "repeat transaction"
+      ],
+      "franco_eg_cues": [
+        "a3eed el daf3",
+        "agarrab tany",
+        "adous tany"
+      ],
+      "do_not_confuse_with": [
+        "duplicate_payment",
+        "reprint"
+      ],
+      "answer_requirements": "Do not convert a retry question into execution or assume no duplicate-charge risk.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "receipt_missing",
+      "label_en": "Missing receipt",
+      "definition": "Receipt not printed or not available; does not establish transaction failure.",
+      "ar_eg_cues": [
+        "الكوبون ماطلعش",
+        "الإيصال ضاع",
+        "معيش إيصال"
+      ],
+      "ar_msa_cues": [
+        "عدم طباعة الإيصال",
+        "فقد الإيصال"
+      ],
+      "en_cues": [
+        "receipt did not print",
+        "lost receipt",
+        "no receipt"
+      ],
+      "franco_eg_cues": [
+        "el kobon matala3sh",
+        "el receipt da3",
+        "ma3eesh receipt"
+      ],
+      "do_not_confuse_with": [
+        "transaction_status",
+        "reprint",
+        "repeat_payment"
+      ],
+      "answer_requirements": "A missing receipt is a documentation problem; transaction status needs separate evidence.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "cash_drawer_shortage",
+      "label_en": "Cash drawer short",
+      "definition": "Actual counted cash is lower than the expected drawer balance.",
+      "ar_eg_cues": [
+        "الدرج ناقص",
+        "في عجز في الخزينة",
+        "الكاش أقل من السيستم"
+      ],
+      "ar_msa_cues": [
+        "عجز في صندوق النقدية",
+        "فرق نقص بالخزينة"
+      ],
+      "en_cues": [
+        "cash drawer short",
+        "till shortage",
+        "cash below expected"
+      ],
+      "franco_eg_cues": [
+        "el dorg na2es",
+        "3agz fel khazna",
+        "cash a2al men el system"
+      ],
+      "do_not_confuse_with": [
+        "cash_drawer_overage",
+        "wallet_balance",
+        "cash_float"
+      ],
+      "answer_requirements": "Retain cash-drawer scope; do not infer theft, blame or an authorized balancing transaction.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "cash_drawer_overage",
+      "label_en": "Cash drawer over",
+      "definition": "Actual counted cash is higher than the expected drawer balance.",
+      "ar_eg_cues": [
+        "الدرج زايد",
+        "في زيادة في الخزينة",
+        "الكاش أكتر من السيستم"
+      ],
+      "ar_msa_cues": [
+        "فائض نقدي",
+        "زيادة بالخزينة"
+      ],
+      "en_cues": [
+        "cash overage",
+        "till over",
+        "extra cash in drawer"
+      ],
+      "franco_eg_cues": [
+        "el dorg zayed",
+        "zeyada fel khazna",
+        "cash aktar men el system"
+      ],
+      "do_not_confuse_with": [
+        "cash_drawer_shortage",
+        "cash_float"
+      ],
+      "answer_requirements": "Do not net off a different shift or employee shortage without documented authority.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "cash_reconciliation",
+      "label_en": "Cash reconciliation",
+      "definition": "Compare physical cash, recorded collections and system totals.",
+      "ar_eg_cues": [
+        "أطابق الخزينة",
+        "أقفل اليومية",
+        "الكاش مش مطابق"
+      ],
+      "ar_msa_cues": [
+        "مطابقة النقدية",
+        "تسوية اليومية",
+        "مراجعة الرصيد النقدي"
+      ],
+      "en_cues": [
+        "reconcile the till",
+        "balance the cash drawer",
+        "end-of-day cash check"
+      ],
+      "franco_eg_cues": [
+        "ataba2 el khazna",
+        "a2fel el yawmeya",
+        "cash reconciliation"
+      ],
+      "do_not_confuse_with": [
+        "account_settlement",
+        "inventory_count"
+      ],
+      "answer_requirements": "Keep physical cash reconciliation distinct from bank settlement and inventory stocktaking.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "cash_float",
+      "label_en": "Branch change float",
+      "definition": "Cash reserved for making change or opening a cashier shift, not wallet funding.",
+      "ar_eg_cues": [
+        "العهدة الافتتاحية",
+        "فكة للكاشير",
+        "رصيد الدرج أول الوردية"
+      ],
+      "ar_msa_cues": [
+        "عهدة النقدية",
+        "رصيد افتتاح الوردية"
+      ],
+      "en_cues": [
+        "opening cash float",
+        "change float",
+        "till starting cash"
+      ],
+      "franco_eg_cues": [
+        "el 3ohda el efteta7eya",
+        "fakka lel cashier",
+        "opening float"
+      ],
+      "do_not_confuse_with": [
+        "initial_funding",
+        "opening_fee"
+      ],
+      "answer_requirements": "Fawry counter float is an operational object, never AXIS customer activation funding.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "shift_handover",
+      "label_en": "Shift handover",
+      "definition": "Transfer custody/status of cash, devices or unresolved work between shifts.",
+      "ar_eg_cues": [
+        "تسليم الوردية",
+        "استلام العهدة",
+        "استلم من الزميل"
+      ],
+      "ar_msa_cues": [
+        "تسليم واستلام الوردية",
+        "نقل العهدة"
+      ],
+      "en_cues": [
+        "shift handover",
+        "cashier handover",
+        "take over the till"
+      ],
+      "franco_eg_cues": [
+        "tasleem el wardeya",
+        "estelam el 3ohda",
+        "handover shift"
+      ],
+      "do_not_confuse_with": [
+        "account_settlement",
+        "cash_reconciliation"
+      ],
+      "answer_requirements": "Do not fabricate signatories, handover authority or liability; retrieve the relevant procedure.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "cash_collection",
+      "label_en": "Cash pickup / cash-in-transit",
+      "definition": "Cash collected from a branch by an authorized carrier, not customer withdrawal.",
+      "ar_eg_cues": [
+        "شركة النقل تجي امتى",
+        "تسليم نقدية",
+        "تحصيل الفرع"
+      ],
+      "ar_msa_cues": [
+        "نقل الأموال",
+        "استلام نقدية الفرع"
+      ],
+      "en_cues": [
+        "cash collection",
+        "CIT pickup",
+        "cash carrier arrival"
+      ],
+      "franco_eg_cues": [
+        "tasleem na2deya",
+        "CIT gay emta",
+        "cash pickup"
+      ],
+      "do_not_confuse_with": [
+        "withdrawal_tariff",
+        "customer_collection"
+      ],
+      "answer_requirements": "Carrier schedules and handling steps require authorized operational evidence.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "account_settlement",
+      "label_en": "Bank/merchant settlement",
+      "definition": "Movement or reconciliation of settled transaction proceeds to a merchant/bank account.",
+      "ar_eg_cues": [
+        "التسوية نزلتش",
+        "تحويل مستحقات التاجر",
+        "مقاصة"
+      ],
+      "ar_msa_cues": [
+        "تسوية مستحقات التاجر",
+        "التسوية البنكية"
+      ],
+      "en_cues": [
+        "merchant settlement",
+        "settlement not received",
+        "payout reconciliation"
+      ],
+      "franco_eg_cues": [
+        "el tasweya manazaletsh",
+        "merchant settlement",
+        "payout"
+      ],
+      "do_not_confuse_with": [
+        "cash_reconciliation",
+        "refund_status"
+      ],
+      "answer_requirements": "Settlement is not customer refund or drawer cash; distinguish transaction date from settlement date.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "pos_error",
+      "label_en": "POS application or device error",
+      "definition": "An equipment/application problem, not necessarily a declined customer transaction.",
+      "ar_eg_cues": [
+        "الماكينة مهنجة",
+        "السيستم مش راضي يفتح",
+        "الجهاز معلق"
+      ],
+      "ar_msa_cues": [
+        "عطل جهاز نقطة البيع",
+        "خطأ في تطبيق الجهاز"
+      ],
+      "en_cues": [
+        "POS frozen",
+        "terminal error",
+        "app will not open"
+      ],
+      "franco_eg_cues": [
+        "el makana mehannaga",
+        "POS error",
+        "el system mesh beyfta7"
+      ],
+      "do_not_confuse_with": [
+        "transaction_status",
+        "device_network",
+        "customer_pin"
+      ],
+      "answer_requirements": "No factory reset, secret or risky procedure may be inferred from generic error language.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "printer_issue",
+      "label_en": "Receipt printer problem",
+      "definition": "Paper/printing/legibility problem on a terminal.",
+      "ar_eg_cues": [
+        "الطباعة مش واضحة",
+        "الورق خلص",
+        "الكوبون أبيض"
+      ],
+      "ar_msa_cues": [
+        "مشكلة طابعة الإيصال",
+        "نفاد ورق الطباعة"
+      ],
+      "en_cues": [
+        "printer out of paper",
+        "blank receipt",
+        "faded print"
+      ],
+      "franco_eg_cues": [
+        "el teba3a mesh wad7a",
+        "el wara2 kheles",
+        "blank kobon"
+      ],
+      "do_not_confuse_with": [
+        "reprint",
+        "transaction_status"
+      ],
+      "answer_requirements": "Do not infer money movement from printer state.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "stock_availability",
+      "label_en": "Product availability",
+      "definition": "Whether a physical item or variant is in stock, not whether an account has money.",
+      "ar_eg_cues": [
+        "الصنف موجود",
+        "في من المقاس ده",
+        "موجود في انهي فرع"
+      ],
+      "ar_msa_cues": [
+        "توافر الصنف",
+        "المخزون المتاح"
+      ],
+      "en_cues": [
+        "in stock",
+        "item availability",
+        "available in this size"
+      ],
+      "franco_eg_cues": [
+        "el senf mawgood",
+        "fe el ma2as da",
+        "stock available"
+      ],
+      "do_not_confuse_with": [
+        "wallet_balance",
+        "branch_service_availability"
+      ],
+      "answer_requirements": "Generic retail extension; actual stock needs a live inventory or authoritative availability source.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "inventory_count",
+      "label_en": "Inventory stocktake",
+      "definition": "Physical item counts compared with inventory records.",
+      "ar_eg_cues": [
+        "جرد الصنف",
+        "الكمية مش مطابقة",
+        "نعد البضاعة"
+      ],
+      "ar_msa_cues": [
+        "جرد المخزون",
+        "مطابقة الكميات"
+      ],
+      "en_cues": [
+        "stocktake",
+        "inventory count",
+        "count the units"
+      ],
+      "franco_eg_cues": [
+        "gard el stock",
+        "el kemeya mesh motab2a",
+        "ne3ed el beda3a"
+      ],
+      "do_not_confuse_with": [
+        "cash_reconciliation",
+        "stock_availability"
+      ],
+      "answer_requirements": "Units of physical goods are not investment units, wallet money or service limits.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "stock_transfer",
+      "label_en": "Move stock between branches",
+      "definition": "Transfer physical inventory between locations, not transfer customer money.",
+      "ar_eg_cues": [
+        "أحول بضاعة لفرع تاني",
+        "نقل الصنف",
+        "تحويل مخزون"
+      ],
+      "ar_msa_cues": [
+        "تحويل مخزون بين الفروع",
+        "نقل اصناف"
+      ],
+      "en_cues": [
+        "stock transfer",
+        "move items to another branch",
+        "inter-branch inventory transfer"
+      ],
+      "franco_eg_cues": [
+        "a7awel beda3a le far3 tany",
+        "stock transfer",
+        "na2l el senf"
+      ],
+      "do_not_confuse_with": [
+        "transfer",
+        "cash_collection"
+      ],
+      "answer_requirements": "Physical-goods movement must preserve item, quantity and source/destination locations.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "product_return",
+      "label_en": "Return a physical product",
+      "definition": "Returning purchased goods, distinct from refund money or reversing a service transaction.",
+      "ar_eg_cues": [
+        "أرجع الصنف",
+        "المنتج باظ",
+        "مرتجع بضاعة"
+      ],
+      "ar_msa_cues": [
+        "إرجاع منتج",
+        "رد سلعة مشتراة"
+      ],
+      "en_cues": [
+        "return this item",
+        "product return",
+        "send the goods back"
+      ],
+      "franco_eg_cues": [
+        "araga3 el montag",
+        "mortaga3 beda3a",
+        "return el item"
+      ],
+      "do_not_confuse_with": [
+        "refund",
+        "transaction_reversal",
+        "exchange"
+      ],
+      "answer_requirements": "No return window or eligibility is established by this language resource.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "exchange",
+      "label_en": "Exchange a product",
+      "definition": "Replace an item/size/variant, not currency exchange or money refund.",
+      "ar_eg_cues": [
+        "أبدل الصنف",
+        "أغير المقاس",
+        "استبدال"
+      ],
+      "ar_msa_cues": [
+        "استبدال منتج",
+        "تغيير مقاس السلعة"
+      ],
+      "en_cues": [
+        "exchange this item",
+        "swap size",
+        "replace with another variant"
+      ],
+      "franco_eg_cues": [
+        "abadel el senf",
+        "aghayar el ma2as",
+        "exchange el item"
+      ],
+      "do_not_confuse_with": [
+        "refund",
+        "product_return",
+        "currency_exchange"
+      ],
+      "answer_requirements": "Resolve physical product versus financial exchange; never assume refunds are an acceptable substitute.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "refund_eligibility",
+      "label_en": "Refund eligibility",
+      "definition": "Ask whether circumstances qualify for a refund, not whether a refund was already processed.",
+      "ar_eg_cues": [
+        "ليا استرداد",
+        "ينفع أرجع فلوسي",
+        "شروط رجوع الفلوس"
+      ],
+      "ar_msa_cues": [
+        "أهلية استرداد المبلغ",
+        "شروط الاسترداد"
+      ],
+      "en_cues": [
+        "eligible for a refund",
+        "can I get my money back",
+        "refund conditions"
+      ],
+      "franco_eg_cues": [
+        "yenfa3 araga3 floosy",
+        "refund eligibility",
+        "shoroot el refund"
+      ],
+      "do_not_confuse_with": [
+        "refund_status",
+        "product_return"
+      ],
+      "answer_requirements": "Preserve case conditions; eligibility must come from service-specific policy.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "warranty",
+      "label_en": "Warranty or repair coverage",
+      "definition": "Ask whether repair/replacement is covered by product warranty.",
+      "ar_eg_cues": [
+        "الضمان يغطي ده",
+        "التصليح في الضمان",
+        "مدة الضمان"
+      ],
+      "ar_msa_cues": [
+        "تغطية الضمان",
+        "شروط الضمان"
+      ],
+      "en_cues": [
+        "warranty coverage",
+        "covered repair",
+        "warranty period"
+      ],
+      "franco_eg_cues": [
+        "el daman yeghaty da",
+        "taslee7 fel daman",
+        "warranty"
+      ],
+      "do_not_confuse_with": [
+        "product_return",
+        "exchange"
+      ],
+      "answer_requirements": "Do not assert warranty length, coverage or exclusions without source.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "price_mismatch",
+      "label_en": "Displayed versus charged price",
+      "definition": "Price on shelf/display differs from receipt or checkout; it is not a withdrawal-fee question.",
+      "ar_eg_cues": [
+        "السعر على الرف غير الكوبون",
+        "الكاشير حاسبني بأكتر",
+        "السعر مش زي العرض"
+      ],
+      "ar_msa_cues": [
+        "اختلاف السعر المعلن عن الرسمي",
+        "فرق السعر عند السداد"
+      ],
+      "en_cues": [
+        "shelf price differs",
+        "charged more than displayed",
+        "checkout price mismatch"
+      ],
+      "franco_eg_cues": [
+        "se3r el raf gheir el receipt",
+        "7asebny be aktar",
+        "price mismatch"
+      ],
+      "do_not_confuse_with": [
+        "discount",
+        "withdrawal_tariff"
+      ],
+      "answer_requirements": "Do not promise which price must be honored; identify both observations and seek the applicable policy.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "order_status",
+      "label_en": "Retail order status",
+      "definition": "Progress of a purchase order, distinct from payment settlement and complaint status.",
+      "ar_eg_cues": [
+        "الطلب وصل لفين",
+        "اوردري اتجهز",
+        "حالة الطلب"
+      ],
+      "ar_msa_cues": [
+        "حالة طلب الشرا",
+        "متابعة الطلب"
+      ],
+      "en_cues": [
+        "order status",
+        "where is my order",
+        "order ready"
+      ],
+      "franco_eg_cues": [
+        "el order wesel le fein",
+        "el talab etgahaz",
+        "order status"
+      ],
+      "do_not_confuse_with": [
+        "transaction_status",
+        "complaint_status",
+        "parcel_tracking"
+      ],
+      "answer_requirements": "Order object must not inherit a payment or complaint status.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "parcel_tracking",
+      "label_en": "Parcel delivery tracking",
+      "definition": "Track a parcel/shipment, not a bank transfer or branch cash pickup.",
+      "ar_eg_cues": [
+        "الشحنة فين",
+        "رقم التتبع",
+        "الطرد وصل"
+      ],
+      "ar_msa_cues": [
+        "تتبع الشحنة",
+        "حالة الطرد"
+      ],
+      "en_cues": [
+        "track my parcel",
+        "shipment tracking",
+        "where is the package"
+      ],
+      "franco_eg_cues": [
+        "el she7na fein",
+        "tracking el tard",
+        "parcel status"
+      ],
+      "do_not_confuse_with": [
+        "cash_collection",
+        "transfer",
+        "order_status"
+      ],
+      "answer_requirements": "Carrier events require authorized live data; no arrival date invented.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "pickup_collection",
+      "label_en": "Collect an order at branch",
+      "definition": "Customer collection of a parcel/order, not cash withdrawal or CIT.",
+      "ar_eg_cues": [
+        "استلم الطلب من الفرع",
+        "الأوردر جاهز للاستلام"
+      ],
+      "ar_msa_cues": [
+        "استلام الطلب من الفرع",
+        "تحضير الطلب للاستلام"
+      ],
+      "en_cues": [
+        "collect my order",
+        "branch pickup",
+        "ready for collection"
+      ],
+      "franco_eg_cues": [
+        "astalem el order men el far3",
+        "pickup el talab",
+        "ready lel estelam"
+      ],
+      "do_not_confuse_with": [
+        "cash_collection",
+        "withdrawal_tariff"
+      ],
+      "answer_requirements": "Keep goods pickup separate from financial cash-out.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "queue_wait",
+      "label_en": "Queue and waiting time",
+      "definition": "Waiting to be served in a branch; not response SLA or transaction processing time.",
+      "ar_eg_cues": [
+        "دوري امتى",
+        "الطابور طويل",
+        "مستني من بدري"
+      ],
+      "ar_msa_cues": [
+        "وقت الانتظار",
+        "دور العميل"
+      ],
+      "en_cues": [
+        "queue wait",
+        "my turn",
+        "waiting to be served"
+      ],
+      "franco_eg_cues": [
+        "dory emta",
+        "el taboor taweel",
+        "mestanny men badry"
+      ],
+      "do_not_confuse_with": [
+        "sla_time",
+        "activation_timing"
+      ],
+      "answer_requirements": "A complaint about waiting does not give permission to bypass a queue or invent a wait estimate.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "branch_hours",
+      "label_en": "Branch opening hours",
+      "definition": "Opening/closing schedule, not product opening fees.",
+      "ar_eg_cues": [
+        "الفرع بيفتح امتى",
+        "مواعيد الشغل",
+        "الفرع قافل"
+      ],
+      "ar_msa_cues": [
+        "مواعيد عمل الفرع",
+        "ساعات العمل"
+      ],
+      "en_cues": [
+        "branch opening hours",
+        "when does the branch close",
+        "working hours"
+      ],
+      "franco_eg_cues": [
+        "el far3 beyfta7 emta",
+        "mawa3eed el shoghl",
+        "closing time"
+      ],
+      "do_not_confuse_with": [
+        "opening_fee",
+        "closure"
+      ],
+      "answer_requirements": "Dates, holidays and location determine the schedule; no schedule asserted here.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "branch_service_availability",
+      "label_en": "Service availability at a branch",
+      "definition": "Whether a specific service can be performed at a location.",
+      "ar_eg_cues": [
+        "الخدمة موجودة في الفرع",
+        "الفرع بيعمل الخدمة دي",
+        "انهي فرع فيها"
+      ],
+      "ar_msa_cues": [
+        "توافر الخدمة في الفرع",
+        "الفروع المقدمة للخدمة"
+      ],
+      "en_cues": [
+        "does this branch offer it",
+        "service availability by branch",
+        "which branch handles this"
+      ],
+      "franco_eg_cues": [
+        "el khedma mawgooda fel far3",
+        "anhy far3 bye3melha",
+        "service availability"
+      ],
+      "do_not_confuse_with": [
+        "stock_availability",
+        "branch_location"
+      ],
+      "answer_requirements": "Nearness and availability are separate; no branch coverage invented.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "callback",
+      "label_en": "Callback request",
+      "definition": "Request to be contacted later, with customer-proposed time distinct from a confirmed booking.",
+      "ar_eg_cues": [
+        "كلموني بعدين",
+        "حد يرن عليا",
+        "ردوا عليا بالتليفون"
+      ],
+      "ar_msa_cues": [
+        "طلب معاودة الاتصال",
+        "التواصل هاتفيا"
+      ],
+      "en_cues": [
+        "call me back",
+        "callback request",
+        "contact me by phone"
+      ],
+      "franco_eg_cues": [
+        "kallemony ba3dein",
+        "7ad yerenn 3alaya",
+        "callback"
+      ],
+      "do_not_confuse_with": [
+        "sla_time",
+        "escalation"
+      ],
+      "answer_requirements": "Do not claim a callback has been booked unless a real authorized operation succeeded.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "handoff",
+      "label_en": "Transfer to a human/team",
+      "definition": "Ask for a human or department handoff, not a money transfer.",
+      "ar_eg_cues": [
+        "وصلني بموظف",
+        "حول لخدمة العملاء",
+        "حد يكلمني"
+      ],
+      "ar_msa_cues": [
+        "تحويل المحادثة لممثل",
+        "التحدث مع موظف"
+      ],
+      "en_cues": [
+        "speak to a person",
+        "transfer me to support",
+        "human agent please"
+      ],
+      "franco_eg_cues": [
+        "wasalny be mowazaf",
+        "7awelny le support",
+        "3ayez human"
+      ],
+      "do_not_confuse_with": [
+        "transfer",
+        "escalation"
+      ],
+      "answer_requirements": "Handoff request is not completed transfer; use actual tool capability and authorization.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "response_draft",
+      "label_en": "Draft a customer-facing explanation",
+      "definition": "Employee asks what to say, rather than asking the assistant to execute the customer request.",
+      "ar_eg_cues": [
+        "أقول للعميل إيه",
+        "صيغلي رد",
+        "أرد عليه أزاي"
+      ],
+      "ar_msa_cues": [
+        "صياغة رد للعميل",
+        "ما الرد المناسب"
+      ],
+      "en_cues": [
+        "what should I tell the customer",
+        "draft a reply",
+        "how do I explain this"
+      ],
+      "franco_eg_cues": [
+        "a2ool lel 3ameel eh",
+        "seghly rad",
+        "ard 3aleh ezay"
+      ],
+      "do_not_confuse_with": [
+        "complaint_create",
+        "refund",
+        "handoff"
+      ],
+      "answer_requirements": "Separate coaching/drafting from actions; content must use verified facts and avoid promises.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "deescalation",
+      "label_en": "Handle an upset customer",
+      "definition": "Ask for calming and respectful communication, without conceding unsupported facts.",
+      "ar_eg_cues": [
+        "العميل متعصب",
+        "أهديه أزاي",
+        "العميل بيزعق"
+      ],
+      "ar_msa_cues": [
+        "التعامل مع عميل غاضب",
+        "تهدئة الموقف"
+      ],
+      "en_cues": [
+        "calm an upset customer",
+        "de-escalate",
+        "customer is angry"
+      ],
+      "franco_eg_cues": [
+        "el 3ameel met3aseb",
+        "ahaddeeh ezay",
+        "customer is angry"
+      ],
+      "do_not_confuse_with": [
+        "escalation",
+        "refund_eligibility"
+      ],
+      "answer_requirements": "Emotion is a tone/context signal, not a confirmed entitlement or diagnosis.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "feedback",
+      "label_en": "Feedback or suggestion",
+      "definition": "Comment about service quality or a proposal; not automatically a formal complaint.",
+      "ar_eg_cues": [
+        "عندي اقتراح",
+        "ملاحظة على الخدمة",
+        "تقييم الخدمة"
+      ],
+      "ar_msa_cues": [
+        "تقديم اقتراح",
+        "ملاحظات على الخدمة"
+      ],
+      "en_cues": [
+        "give feedback",
+        "suggest an improvement",
+        "service feedback"
+      ],
+      "franco_eg_cues": [
+        "3andy e2tera7",
+        "mola7za 3al khedma",
+        "feedback"
+      ],
+      "do_not_confuse_with": [
+        "complaint_create",
+        "complaint_status"
+      ],
+      "answer_requirements": "Ask whether formal logging is desired only when necessary; do not invent a ticket.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "personal_data_change",
+      "label_en": "Change account contact/personal details",
+      "definition": "Request to update details, not evidence that the user is the account holder.",
+      "ar_eg_cues": [
+        "أغير رقمي",
+        "أعدل الاسم",
+        "تحديث بياناتي"
+      ],
+      "ar_msa_cues": [
+        "تحديث البيانات الشخصية",
+        "تغيير رقم التواصل"
+      ],
+      "en_cues": [
+        "update my details",
+        "change my phone number",
+        "correct my name"
+      ],
+      "franco_eg_cues": [
+        "aghayar ra2my",
+        "a3adel esmy",
+        "update bayanaty"
+      ],
+      "do_not_confuse_with": [
+        "phone_ownership",
+        "identity"
+      ],
+      "answer_requirements": "Interpret update request but do not perform or authorize a write or solicit unneeded sensitive data.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "verification_issue",
+      "label_en": "Unable to complete verification",
+      "definition": "Problem completing verification/OTP/identity checks; not permission to bypass them.",
+      "ar_eg_cues": [
+        "التحقق مش راضي",
+        "مش عارف أثبت الهوية",
+        "الكود مش بيوصل"
+      ],
+      "ar_msa_cues": [
+        "تعذر التحقق",
+        "مشكلة إثبات الهوية"
+      ],
+      "en_cues": [
+        "verification failed",
+        "cannot verify",
+        "verification issue"
+      ],
+      "franco_eg_cues": [
+        "el ta7a2o2 mesh rady",
+        "verification failed",
+        "el code mesh beyoosal"
+      ],
+      "do_not_confuse_with": [
+        "identity",
+        "otp",
+        "bypass_request"
+      ],
+      "answer_requirements": "Do not ask for secret codes or assume checks may be skipped.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "accessibility",
+      "label_en": "Accessible assistance",
+      "definition": "Ask for a suitable communication or assistance accommodation, not an inferred incapacity.",
+      "ar_eg_cues": [
+        "العميل مش بيسمع كويس",
+        "محتاج شرح أبسط",
+        "نكبر الخط"
+      ],
+      "ar_msa_cues": [
+        "تيسير الوصول",
+        "مساعدة ملائمة لاحتياجات العميل"
+      ],
+      "en_cues": [
+        "accessible help",
+        "larger text",
+        "explain more simply"
+      ],
+      "franco_eg_cues": [
+        "el 3ameel mesh byesma3 kwayes",
+        "shar7 absat",
+        "larger font"
+      ],
+      "do_not_confuse_with": [
+        "identity",
+        "eligibility"
+      ],
+      "answer_requirements": "Use the stated accommodation only; do not infer disability or change business controls.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "language_preference",
+      "label_en": "Requested response language",
+      "definition": "User requests a language or register change without changing the business topic.",
+      "ar_eg_cues": [
+        "رد بالمصري",
+        "بالإنجليزي لو سمحت",
+        "بسهولة"
+      ],
+      "ar_msa_cues": [
+        "الرد بالعربية",
+        "استخدام لغة بسيطة"
+      ],
+      "en_cues": [
+        "answer in English",
+        "use Egyptian Arabic",
+        "plain language please"
+      ],
+      "franco_eg_cues": [
+        "rod bel masry",
+        "English please",
+        "belsahl"
+      ],
+      "do_not_confuse_with": [
+        "other_or_unknown"
+      ],
+      "answer_requirements": "Preserve meaning and context; a language request does not authorize translating business facts on the fly.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "policy_basis",
+      "label_en": "Explain policy source or reason",
+      "definition": "Ask where a rule comes from or why it applies, rather than requesting a bypass.",
+      "ar_eg_cues": [
+        "فين الكلام ده",
+        "تبع انهي تعليمات",
+        "ليه الشرط ده"
+      ],
+      "ar_msa_cues": [
+        "المسند التعليمي",
+        "مصدر القاعدة",
+        "سبب الشرط"
+      ],
+      "en_cues": [
+        "show the policy basis",
+        "why does this rule apply",
+        "where is that documented"
+      ],
+      "franco_eg_cues": [
+        "fein el kalam da",
+        "teb3 anhy ta3leemat",
+        "leh el shart da"
+      ],
+      "do_not_confuse_with": [
+        "permission",
+        "bypass_request"
+      ],
+      "answer_requirements": "A rationale may be absent even when a rule is documented; do not invent regulatory justification.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "bypass_request",
+      "label_en": "Request to override a control",
+      "definition": "Question about skipping required checks or approvals; recognize the request without enabling it.",
+      "ar_eg_cues": [
+        "عديها المرة دي",
+        "من غير موافقة",
+        "شيل الشرط"
+      ],
+      "ar_msa_cues": [
+        "تجاوز الضابط",
+        "تخطي الموافقة"
+      ],
+      "en_cues": [
+        "skip verification",
+        "override the requirement",
+        "bypass approval"
+      ],
+      "franco_eg_cues": [
+        "3addeeha el marra de",
+        "skip el check",
+        "men gheir approval"
+      ],
+      "do_not_confuse_with": [
+        "permission",
+        "policy_basis"
+      ],
+      "answer_requirements": "Retrieve authorized exception/escalation guidance only; no bypass execution or invented exception.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "audit_history",
+      "label_en": "History of changes or actions",
+      "definition": "Ask for a record of previous changes, decisions or rejections, not changing those records.",
+      "ar_eg_cues": [
+        "مين عدل ده",
+        "تاريخ التعديلات",
+        "كان مرفوض قبل كده"
+      ],
+      "ar_msa_cues": [
+        "سجل التغييرات",
+        "تاريخ الإجراءات"
+      ],
+      "en_cues": [
+        "change history",
+        "audit trail",
+        "previous rejection history"
+      ],
+      "franco_eg_cues": [
+        "meen 3adel da",
+        "tareekh el ta3deelat",
+        "audit history"
+      ],
+      "do_not_confuse_with": [
+        "rejection_reason",
+        "transaction_status"
+      ],
+      "answer_requirements": "History access remains role-controlled; a current accepted status does not erase historical rejection.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "approval_status",
+      "label_en": "Pending approval status",
+      "definition": "Ask who must review or whether approval is pending, not an instruction to approve.",
+      "ar_eg_cues": [
+        "مستني موافقة مين",
+        "الطلب عند الChecker",
+        "الموافقة اتأخرت"
+      ],
+      "ar_msa_cues": [
+        "حالة الموافقة",
+        "المراجعة المعلقة"
+      ],
+      "en_cues": [
+        "pending approval",
+        "who is reviewing",
+        "checker status"
+      ],
+      "franco_eg_cues": [
+        "mestanny approval meen",
+        "el talab 3and checker",
+        "approval status"
+      ],
+      "do_not_confuse_with": [
+        "escalation",
+        "bypass_request"
+      ],
+      "answer_requirements": "No approval can be inferred from status wording or test success.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "customer_expectation",
+      "label_en": "Desired outcome or customer expectation",
+      "definition": "Ask what the customer wants, separate from what policy permits or what has happened.",
+      "ar_eg_cues": [
+        "العميل محتاج إيه",
+        "عاوز يوصل لإيه",
+        "النتيجة اللي عاوزها"
+      ],
+      "ar_msa_cues": [
+        "النتيجة المرجوة",
+        "توقعات العميل"
+      ],
+      "en_cues": [
+        "desired resolution",
+        "what outcome is requested",
+        "customer expectation"
+      ],
+      "franco_eg_cues": [
+        "el 3ameel 3ayez eh",
+        "desired outcome",
+        "3ayez yeosal le eh"
+      ],
+      "do_not_confuse_with": [
+        "refund_eligibility",
+        "complaint_status"
+      ],
+      "answer_requirements": "Desired outcome is not a promise or confirmed entitlement.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "complaint_category",
+      "label_en": "Complaint routing/category",
+      "definition": "Classify an issue for routing without deciding whether a refund is owed.",
+      "ar_eg_cues": [
+        "اصنف الشكوى إزاي",
+        "شكوى تبع مين",
+        "أوديها لانهي فريق"
+      ],
+      "ar_msa_cues": [
+        "تصنيف الشكوى",
+        "توجيه الشكوى"
+      ],
+      "en_cues": [
+        "complaint category",
+        "route this complaint",
+        "which team handles this"
+      ],
+      "franco_eg_cues": [
+        "asanef el shakwa ezay",
+        "teb3 meen",
+        "route complaint"
+      ],
+      "do_not_confuse_with": [
+        "complaint_create",
+        "escalation"
+      ],
+      "answer_requirements": "Only documented routing taxonomy can assign an actual owner or queue.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "fraud_concern",
+      "label_en": "Reported suspected fraud/security issue",
+      "definition": "Customer suspects unauthorized activity; do not declare guilt or transaction fraud from wording alone.",
+      "ar_eg_cues": [
+        "أنا ماعملتش العملية",
+        "في حد استخدم الحساب",
+        "شاكك في العملية"
+      ],
+      "ar_msa_cues": [
+        "نشاط غير مصرح به",
+        "الاشتباه في احتيال"
+      ],
+      "en_cues": [
+        "I did not make this transaction",
+        "suspected fraud",
+        "unauthorized activity"
+      ],
+      "franco_eg_cues": [
+        "ana ma3amaltsh el transaction",
+        "7ad esta5dem el account",
+        "suspected fraud"
+      ],
+      "do_not_confuse_with": [
+        "duplicate_payment",
+        "refund_eligibility"
+      ],
+      "answer_requirements": "Do not expose secrets or promise reimbursement; follow verified security/escalation procedures.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "complaint_resolution_confirmation",
+      "label_en": "Confirm resolution before closure",
+      "definition": "Determine whether the issue is actually resolved versus merely acknowledging a response.",
+      "ar_eg_cues": [
+        "المشكلة اتحلت ولا لا",
+        "العميل وافق نقفل",
+        "نأكد الحل"
+      ],
+      "ar_msa_cues": [
+        "تأكيد حل الشكوى",
+        "موافقة العميل على الإغلاق"
+      ],
+      "en_cues": [
+        "confirm resolution",
+        "is it actually fixed",
+        "customer accepts closure"
+      ],
+      "franco_eg_cues": [
+        "el moshkela et7alet wala la",
+        "n2aked el 7al",
+        "accept closure"
+      ],
+      "do_not_confuse_with": [
+        "complaint_status",
+        "complaint_withdraw"
+      ],
+      "answer_requirements": "Thanks/okay/read receipt is not automatically confirmation of resolution or closure authorization.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "dispute_fee",
+      "label_en": "Dispute a fee",
+      "definition": "Question or complaint challenging a charge; not necessarily asking for the tariff table only.",
+      "ar_eg_cues": [
+        "الخصم ده غلط",
+        "مش موافق على الرسوم",
+        "اتخصم ليه"
+      ],
+      "ar_msa_cues": [
+        "اعتراض على الرسوم",
+        "نزاع حول الخصم"
+      ],
+      "en_cues": [
+        "dispute this charge",
+        "I disagree with this fee",
+        "why was I charged"
+      ],
+      "franco_eg_cues": [
+        "mesh mowafe2 3al rosoom",
+        "el khasm da ghalat",
+        "dispute fee"
+      ],
+      "do_not_confuse_with": [
+        "withdrawal_tariff",
+        "refund_eligibility"
+      ],
+      "answer_requirements": "Store customer claim, retrieve applied-charge evidence and policy; do not concede error without support.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate evidence only; contextual disambiguation required. Not substring-to-intent commands.",
+      "domain": "retail_customer_service",
+      "policy_status": "language_only; service applicability and business rules not established",
+      "runtime_mapping_status": "candidate_mapping_requires_reconciliation",
+      "business_rule": "none",
+      "origin": "imported_language_v1_1"
+    },
+    {
+      "intent_id": "service_overview",
+      "label_en": "Service purpose and boundaries",
+      "definition": "Ask what a service does, without requesting its full workflow or assuming availability.",
+      "ar_eg_cues": [
+        "الخدمة دي بتعمل إيه",
+        "يعني إيه الخدمة دي"
+      ],
+      "ar_msa_cues": [
+        "ما تعريف الخدمة",
+        "ما الغرض من الخدمة"
+      ],
+      "en_cues": [
+        "what does this service do",
+        "what is this service"
+      ],
+      "franco_eg_cues": [
+        "el khedma di bte3mel eh",
+        "ya3ny eh el service"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound purpose, scope, provider, limitations. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "cross_sector",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "purpose",
+        "scope",
+        "provider",
+        "limitations"
+      ],
+      "contract_type": "description",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "general_service_fee",
+      "label_en": "Service charge with unspecified operation",
+      "definition": "Ask a charge without enough operation/channel context; clarification may be necessary.",
+      "ar_eg_cues": [
+        "الخدمة بكام",
+        "فيه مصاريف عليها"
+      ],
+      "ar_msa_cues": [
+        "ما رسوم الخدمة",
+        "ما تكلفة الخدمة"
+      ],
+      "en_cues": [
+        "what is the service charge",
+        "how much does this service cost"
+      ],
+      "franco_eg_cues": [
+        "el service bekam",
+        "fee masareef"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound operation, channel, amount, unit, conditions. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "cross_sector",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "operation",
+        "channel",
+        "amount",
+        "unit",
+        "conditions"
+      ],
+      "contract_type": "scoped_value",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "interest_profit",
+      "label_en": "Interest or profit basis",
+      "definition": "Ask interest/profit calculation or rate, distinct from service charges and investment return guarantees.",
+      "ar_eg_cues": [
+        "الفايدة بتتحسب إزاي",
+        "العائد قد إيه"
+      ],
+      "ar_msa_cues": [
+        "ما معدل العائد",
+        "ما أساس احتساب الفائدة"
+      ],
+      "en_cues": [
+        "interest rate and calculation basis",
+        "profit rate"
+      ],
+      "franco_eg_cues": [
+        "el fayda betet7eseb ezay",
+        "el 3a2ed ad eh"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound product, currency, rate_basis, period, effective_date, conditions. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "banking",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "product",
+        "currency",
+        "rate_basis",
+        "period",
+        "effective_date",
+        "conditions"
+      ],
+      "contract_type": "scoped_value",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "maturity",
+      "label_en": "Maturity date and treatment",
+      "definition": "Ask when an instrument matures and what happens at maturity.",
+      "ar_eg_cues": [
+        "الشهادة بتستحق إمتى",
+        "الوديعة بتخلص إمتى"
+      ],
+      "ar_msa_cues": [
+        "ما تاريخ الاستحقاق",
+        "ماذا يحدث عند الاستحقاق"
+      ],
+      "en_cues": [
+        "when does it mature",
+        "what happens at maturity"
+      ],
+      "franco_eg_cues": [
+        "el shahada test7e2 emta",
+        "el wadi3a tekhlas emta"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound product, start_event, term, maturity_treatment. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "banking",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "product",
+        "start_event",
+        "term",
+        "maturity_treatment"
+      ],
+      "contract_type": "temporal",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "early_redemption",
+      "label_en": "Early redemption or liquidation",
+      "definition": "Ask about breaking an investment/deposit before maturity, not reversing a payment.",
+      "ar_eg_cues": [
+        "أكسر الوديعة بدري",
+        "استرد الشهادة قبل ميعادها"
+      ],
+      "ar_msa_cues": [
+        "ما شروط الاسترداد المبكر",
+        "ما تكلفة كسر الوديعة"
+      ],
+      "en_cues": [
+        "early redemption conditions",
+        "break the deposit before maturity"
+      ],
+      "franco_eg_cues": [
+        "aksar el wadi3a badry",
+        "esterdad mobaker"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound product, eligibility, charges, conditions, effective_date. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "banking",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "product",
+        "eligibility",
+        "charges",
+        "conditions",
+        "effective_date"
+      ],
+      "contract_type": "conditional",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "installment_schedule",
+      "label_en": "Installment schedule",
+      "definition": "Ask due dates, amounts and count; not loan approval.",
+      "ar_eg_cues": [
+        "الأقساط مواعيدها إمتى",
+        "هدفع كام كل شهر"
+      ],
+      "ar_msa_cues": [
+        "ما جدول الأقساط",
+        "ما تواريخ السداد"
+      ],
+      "en_cues": [
+        "installment schedule",
+        "monthly repayment dates"
+      ],
+      "franco_eg_cues": [
+        "el a2sat emta",
+        "hadfa3 kam kol shahr"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound agreement, amounts, dates, frequency, currency. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "fintech",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "agreement",
+        "amounts",
+        "dates",
+        "frequency",
+        "currency"
+      ],
+      "contract_type": "inventory",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "repayment",
+      "label_en": "Repayment methods and process",
+      "definition": "Ask how to pay an existing borrowing obligation.",
+      "ar_eg_cues": [
+        "أسدد القسط إزاي",
+        "ادفع المديونية منين"
+      ],
+      "ar_msa_cues": [
+        "ما طرق سداد القسط",
+        "كيف تسدد المديونية"
+      ],
+      "en_cues": [
+        "how can I repay",
+        "repayment methods"
+      ],
+      "franco_eg_cues": [
+        "asadad el qest ezay",
+        "adfa3 el madioneya mneen"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound provider, account_reference, channels, steps, conditions. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "fintech",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "provider",
+        "account_reference",
+        "channels",
+        "steps",
+        "conditions"
+      ],
+      "contract_type": "procedure",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "late_payment_fee",
+      "label_en": "Late-payment consequences",
+      "definition": "Ask consequences of delayed payment, not assume a penalty exists.",
+      "ar_eg_cues": [
+        "لو اتأخرت في القسط",
+        "غرامة التأخير كام"
+      ],
+      "ar_msa_cues": [
+        "ما أثر التأخر في السداد",
+        "ما رسوم التأخير"
+      ],
+      "en_cues": [
+        "late payment consequences",
+        "late fee"
+      ],
+      "franco_eg_cues": [
+        "law et2akhart fel qest",
+        "gharamet el ta2kheer"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound product, trigger, grace_period, fee_basis, exceptions. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "fintech",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "product",
+        "trigger",
+        "grace_period",
+        "fee_basis",
+        "exceptions"
+      ],
+      "contract_type": "conditional",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "fx_quote",
+      "label_en": "Foreign exchange quote",
+      "definition": "Ask a currency conversion quote; actual rate needs dated live or approved data.",
+      "ar_eg_cues": [
+        "الدولار بكام",
+        "سعر تحويل العملة"
+      ],
+      "ar_msa_cues": [
+        "ما سعر الصرف",
+        "ما تكلفة تحويل العملة"
+      ],
+      "en_cues": [
+        "exchange rate quote",
+        "currency conversion rate"
+      ],
+      "franco_eg_cues": [
+        "el dollar bekam",
+        "se3r el 3omla"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound currency_pair, direction, timestamp, rate, fees, source. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "banking",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "currency_pair",
+        "direction",
+        "timestamp",
+        "rate",
+        "fees",
+        "source"
+      ],
+      "contract_type": "live_quote",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "card_block",
+      "label_en": "Block or unblock a card",
+      "definition": "Distinguish a request to block a card from asking the documented process.",
+      "ar_eg_cues": [
+        "أوقف الكارت",
+        "أفك حظر البطاقة"
+      ],
+      "ar_msa_cues": [
+        "كيف أوقف البطاقة",
+        "كيفية رفع الحظر"
+      ],
+      "en_cues": [
+        "block my card",
+        "unblock a card"
+      ],
+      "franco_eg_cues": [
+        "awa2af el kart",
+        "afok 7azr el card"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound card_type, action, authentication, process, authority. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "banking",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "card_type",
+        "action",
+        "authentication",
+        "process",
+        "authority"
+      ],
+      "contract_type": "action_or_procedure",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "card_pin",
+      "label_en": "Card PIN management",
+      "definition": "Ask PIN reset/change guidance; never retrieve or disclose an actual PIN.",
+      "ar_eg_cues": [
+        "نسيت الرقم السري للكارت",
+        "أغير PIN إزاي"
+      ],
+      "ar_msa_cues": [
+        "إعادة تعيين الرقم السري للبطاقة",
+        "تغيير رمز البطاقة"
+      ],
+      "en_cues": [
+        "reset card PIN",
+        "forgot my card PIN"
+      ],
+      "franco_eg_cues": [
+        "neseet el PIN",
+        "aghayar ra2m el kart el sery"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound card_type, verification, safe_channel, steps. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "banking",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "card_type",
+        "verification",
+        "safe_channel",
+        "steps"
+      ],
+      "contract_type": "procedure",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "card_limit",
+      "label_en": "Card spending limit",
+      "definition": "Ask card transaction limits, distinct from outstanding balance.",
+      "ar_eg_cues": [
+        "حد مشتريات الكارت",
+        "أقصى سحب بالكارت"
+      ],
+      "ar_msa_cues": [
+        "ما حد الإنفاق بالبطاقة",
+        "ما سقف السحب"
+      ],
+      "en_cues": [
+        "card spending limit",
+        "card cash withdrawal limit"
+      ],
+      "franco_eg_cues": [
+        "7ad moshtarayat el kart",
+        "a2sa sa7b"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound card, operation, channel, period, amount, currency. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "banking",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "card",
+        "operation",
+        "channel",
+        "period",
+        "amount",
+        "currency"
+      ],
+      "contract_type": "scoped_value",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "chargeback",
+      "label_en": "Card chargeback process",
+      "definition": "Ask a card-dispute process, not promise successful reversal.",
+      "ar_eg_cues": [
+        "أعمل اعتراض على عملية كارت",
+        "استرجاع عملية بطاقة"
+      ],
+      "ar_msa_cues": [
+        "ما إجراءات الاعتراض على معاملة بطاقة",
+        "ما شروط رد المعاملة"
+      ],
+      "en_cues": [
+        "card chargeback",
+        "dispute a card transaction"
+      ],
+      "franco_eg_cues": [
+        "e3terad 3ala 3amaleyet kart",
+        "chargeback ezay"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound scheme, transaction_type, grounds, timeline, evidence, process. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "banking",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "scheme",
+        "transaction_type",
+        "grounds",
+        "timeline",
+        "evidence",
+        "process"
+      ],
+      "contract_type": "procedure",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "mandate",
+      "label_en": "Payment mandate and consent",
+      "definition": "Ask about payment authorization/mandate; consent scope must be explicit.",
+      "ar_eg_cues": [
+        "أوقف تفويض الخصم",
+        "تفويض الدفع ده معناه إيه"
+      ],
+      "ar_msa_cues": [
+        "ما نطاق تفويض الخصم",
+        "كيفية إلغاء التفويض"
+      ],
+      "en_cues": [
+        "direct debit mandate",
+        "revoke payment consent"
+      ],
+      "franco_eg_cues": [
+        "awa2af tafweed el khasm",
+        "cancel mandate"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound mandate, purpose, scope, validity, revocation, authority. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "banking",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "mandate",
+        "purpose",
+        "scope",
+        "validity",
+        "revocation",
+        "authority"
+      ],
+      "contract_type": "conditional",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "statement",
+      "label_en": "Account or service statement",
+      "definition": "Ask statement availability or how to obtain it; actual statement requires record access.",
+      "ar_eg_cues": [
+        "كشف الحساب منين",
+        "أطلع كشف المعاملات"
+      ],
+      "ar_msa_cues": [
+        "كيفية الحصول على كشف حساب",
+        "طلب بيان المعاملات"
+      ],
+      "en_cues": [
+        "account statement",
+        "transaction statement"
+      ],
+      "franco_eg_cues": [
+        "kashf el 7esab mneen",
+        "a3mel statement"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound account, period, channel, authorization, format. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "banking",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "account",
+        "period",
+        "channel",
+        "authorization",
+        "format"
+      ],
+      "contract_type": "live_or_procedure",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "cheque_status",
+      "label_en": "Cheque clearing or return status",
+      "definition": "Ask about a particular cheque; status requires authorized transaction evidence.",
+      "ar_eg_cues": [
+        "الشيك اتحصل",
+        "الشيك رجع ليه"
+      ],
+      "ar_msa_cues": [
+        "ما حالة تحصيل الشيك",
+        "سبب ارتداد الشيك"
+      ],
+      "en_cues": [
+        "cheque clearing status",
+        "why was the cheque returned"
+      ],
+      "franco_eg_cues": [
+        "el sheek et7assal",
+        "el sheek raga3 leh"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound cheque_reference, bank, state, timestamp, reason. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "banking",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "cheque_reference",
+        "bank",
+        "state",
+        "timestamp",
+        "reason"
+      ],
+      "contract_type": "live_status",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "beneficiary",
+      "label_en": "Beneficiary registration and validation",
+      "definition": "Ask transfer recipient setup or validation, not sender KYC.",
+      "ar_eg_cues": [
+        "أضيف مستفيد إزاي",
+        "بيانات المستفيد المطلوبة"
+      ],
+      "ar_msa_cues": [
+        "كيفية إضافة مستفيد",
+        "ما بيانات المستفيد"
+      ],
+      "en_cues": [
+        "add a beneficiary",
+        "beneficiary details"
+      ],
+      "franco_eg_cues": [
+        "adeef mostafeed ezay",
+        "bayanat el mostafeed"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound payment_type, beneficiary_fields, verification, steps. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "banking",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "payment_type",
+        "beneficiary_fields",
+        "verification",
+        "steps"
+      ],
+      "contract_type": "procedure",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "airtime_topup",
+      "label_en": "Mobile airtime recharge",
+      "definition": "Ask recharge amount/method/status; not physical shipping or wallet funding.",
+      "ar_eg_cues": [
+        "أشحن رصيد الموبايل",
+        "شحن الخط"
+      ],
+      "ar_msa_cues": [
+        "إعادة شحن رصيد الهاتف",
+        "تعبئة الرصيد"
+      ],
+      "en_cues": [
+        "top up airtime",
+        "recharge the mobile line"
+      ],
+      "franco_eg_cues": [
+        "ash7an raseed el mobile",
+        "sha7n el khat"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound operator, number_type, amount, channel, state. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "telecom",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "operator",
+        "number_type",
+        "amount",
+        "channel",
+        "state"
+      ],
+      "contract_type": "procedure",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "bundle_allowance",
+      "label_en": "Bundle allowance and usage",
+      "definition": "Ask data/minutes remaining or allowance rules; live balance needs records.",
+      "ar_eg_cues": [
+        "فاضلي كام جيجا",
+        "الباقة فيها كام دقيقة"
+      ],
+      "ar_msa_cues": [
+        "ما الرصيد المتبقي من الباقة",
+        "ما سعة الباقة"
+      ],
+      "en_cues": [
+        "remaining data allowance",
+        "minutes left in my plan"
+      ],
+      "franco_eg_cues": [
+        "fadelly kam giga",
+        "ba2ety feha kam de2ee2a"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound operator, plan, allowance_unit, period, usage_timestamp. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "telecom",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "operator",
+        "plan",
+        "allowance_unit",
+        "period",
+        "usage_timestamp"
+      ],
+      "contract_type": "live_or_policy",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "bundle_renewal",
+      "label_en": "Bundle renewal",
+      "definition": "Ask renewal timing, charges or procedure.",
+      "ar_eg_cues": [
+        "أجدد الباقة",
+        "التجديد التلقائي إمتى"
+      ],
+      "ar_msa_cues": [
+        "كيفية تجديد الباقة",
+        "شروط التجديد التلقائي"
+      ],
+      "en_cues": [
+        "renew my bundle",
+        "automatic plan renewal"
+      ],
+      "franco_eg_cues": [
+        "agaded el ba2a",
+        "el renewal emta"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound operator, plan, renewal_trigger, price, consent, conditions. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "telecom",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "operator",
+        "plan",
+        "renewal_trigger",
+        "price",
+        "consent",
+        "conditions"
+      ],
+      "contract_type": "conditional",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "number_porting",
+      "label_en": "Mobile number portability",
+      "definition": "Move network while keeping number; not line ownership transfer.",
+      "ar_eg_cues": [
+        "أنقل رقمي لشبكة تانية",
+        "نفس الرقم على شبكة غيرها"
+      ],
+      "ar_msa_cues": [
+        "نقل الرقم إلى مشغل آخر",
+        "قابلية نقل رقم الهاتف"
+      ],
+      "en_cues": [
+        "keep my number and change network",
+        "mobile number portability"
+      ],
+      "franco_eg_cues": [
+        "an2ol ra2my le shabaka tanya",
+        "nafs el number"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound jurisdiction, operators, eligibility, steps, timing, dependencies. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "telecom",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "jurisdiction",
+        "operators",
+        "eligibility",
+        "steps",
+        "timing",
+        "dependencies"
+      ],
+      "contract_type": "procedure",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "line_ownership_change",
+      "label_en": "Line ownership transfer",
+      "definition": "Change the legal subscriber of a line; do not confuse with porting.",
+      "ar_eg_cues": [
+        "أنقل الخط باسمي",
+        "أغير صاحب الخط"
+      ],
+      "ar_msa_cues": [
+        "نقل ملكية الخط",
+        "تغيير اسم المشترك"
+      ],
+      "en_cues": [
+        "transfer line ownership",
+        "change the registered subscriber"
+      ],
+      "franco_eg_cues": [
+        "an2ol el khat besmy",
+        "aghayar sa7eb el khat"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound operator, old_owner, new_owner, documents, presence, process. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "telecom",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "operator",
+        "old_owner",
+        "new_owner",
+        "documents",
+        "presence",
+        "process"
+      ],
+      "contract_type": "procedure",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "sim_replace",
+      "label_en": "Replace SIM or migrate eSIM",
+      "definition": "Ask replacement steps or compatibility; reasons may change required evidence.",
+      "ar_eg_cues": [
+        "الشريحة ضاعت",
+        "عايز بدل فاقد خط"
+      ],
+      "ar_msa_cues": [
+        "استبدال شريحة مفقودة",
+        "تحويل الشريحة إلى إلكترونية"
+      ],
+      "en_cues": [
+        "replace a lost SIM",
+        "move to eSIM"
+      ],
+      "franco_eg_cues": [
+        "el SIM da3et",
+        "badal fa2ed sharee7a"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound operator, replacement_reason, identity, device, steps. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "telecom",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "operator",
+        "replacement_reason",
+        "identity",
+        "device",
+        "steps"
+      ],
+      "contract_type": "procedure",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "roaming",
+      "label_en": "Roaming service rules",
+      "definition": "Roaming outside home network, not international calls from home.",
+      "ar_eg_cues": [
+        "أشغل التجوال",
+        "مسافر والنت هيشتغل"
+      ],
+      "ar_msa_cues": [
+        "تفعيل التجوال الدولي",
+        "رسوم استخدام الشبكة بالخارج"
+      ],
+      "en_cues": [
+        "roaming charges",
+        "activate international roaming"
+      ],
+      "franco_eg_cues": [
+        "ashaghal roaming",
+        "mosافر bel khat"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound operator, destination, plan, usage_type, price, conditions. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "telecom",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "operator",
+        "destination",
+        "plan",
+        "usage_type",
+        "price",
+        "conditions"
+      ],
+      "contract_type": "scoped_value",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "network_coverage",
+      "label_en": "Network or service coverage",
+      "definition": "Ask coverage for a place; actual availability needs address-specific evidence.",
+      "ar_eg_cues": [
+        "فيه تغطية عندي",
+        "الفايبر واصل للمنطقة"
+      ],
+      "ar_msa_cues": [
+        "ما مدى تغطية الشبكة",
+        "توافر الخدمة في الموقع"
+      ],
+      "en_cues": [
+        "is fiber available at my address",
+        "network coverage"
+      ],
+      "franco_eg_cues": [
+        "fe taghteya 3andy",
+        "fiber wasel"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound operator, location, technology, timestamp, availability. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "telecom",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "operator",
+        "location",
+        "technology",
+        "timestamp",
+        "availability"
+      ],
+      "contract_type": "live_or_policy",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "bill_breakdown",
+      "label_en": "Bill and charge breakdown",
+      "definition": "Ask components of bill, not just total payment.",
+      "ar_eg_cues": [
+        "الفاتورة دي فيها إيه",
+        "الزيادة دي بتاعة إيه"
+      ],
+      "ar_msa_cues": [
+        "تفصيل بنود الفاتورة",
+        "تفسير الرسوم"
+      ],
+      "en_cues": [
+        "bill breakdown",
+        "explain these charges"
+      ],
+      "franco_eg_cues": [
+        "el fatoora feha eh",
+        "el zeyada beta3et eh"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound account, period, line_items, tax, fees, source_record. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "cross_sector",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "account",
+        "period",
+        "line_items",
+        "tax",
+        "fees",
+        "source_record"
+      ],
+      "contract_type": "live_or_policy",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "tax_registration",
+      "label_en": "Taxpayer registration requirements",
+      "definition": "Ask registration process; not classify someone's tax liability automatically.",
+      "ar_eg_cues": [
+        "أسجل في الضرايب إزاي",
+        "أطلع رقم ضريبي"
+      ],
+      "ar_msa_cues": [
+        "إجراءات التسجيل الضريبي",
+        "متطلبات رقم التسجيل"
+      ],
+      "en_cues": [
+        "tax registration requirements",
+        "get a tax identification number"
+      ],
+      "franco_eg_cues": [
+        "asagel fel darayeb ezay",
+        "ra2m dareeby"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound jurisdiction, taxpayer_type, tax_type, documents, process, effective_date. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "tax",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "jurisdiction",
+        "taxpayer_type",
+        "tax_type",
+        "documents",
+        "process",
+        "effective_date"
+      ],
+      "contract_type": "regulatory_procedure",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "tax_filing",
+      "label_en": "Tax return submission",
+      "definition": "Ask how to file/amend a return; no live submission performed.",
+      "ar_eg_cues": [
+        "أقدم الإقرار إزاي",
+        "أعدل الإقرار"
+      ],
+      "ar_msa_cues": [
+        "كيفية تقديم الإقرار الضريبي",
+        "تعديل إقرار مقدم"
+      ],
+      "en_cues": [
+        "file a tax return",
+        "amend a tax return"
+      ],
+      "franco_eg_cues": [
+        "a2adem el e2rar ezay",
+        "a3adel el e2rar"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound jurisdiction, tax_type, period, taxpayer, forms, procedure. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "tax",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "jurisdiction",
+        "tax_type",
+        "period",
+        "taxpayer",
+        "forms",
+        "procedure"
+      ],
+      "contract_type": "regulatory_procedure",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "tax_deadline",
+      "label_en": "Tax filing or payment due date",
+      "definition": "Ask legal due date; period, tax and jurisdiction must be established.",
+      "ar_eg_cues": [
+        "آخر ميعاد للإقرار",
+        "الضريبة تتدفع إمتى"
+      ],
+      "ar_msa_cues": [
+        "ما الموعد النهائي للإقرار",
+        "تاريخ استحقاق الضريبة"
+      ],
+      "en_cues": [
+        "tax filing deadline",
+        "tax payment due date"
+      ],
+      "franco_eg_cues": [
+        "akher mee3ad lel e2rar",
+        "el dareeba emta"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound jurisdiction, tax_type, tax_period, event, deadline, authority_version. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "tax",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "jurisdiction",
+        "tax_type",
+        "tax_period",
+        "event",
+        "deadline",
+        "authority_version"
+      ],
+      "contract_type": "regulatory_value",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "tax_rate",
+      "label_en": "Tax rate and applicability",
+      "definition": "Ask tax rate; never infer from a payment service fee.",
+      "ar_eg_cues": [
+        "الضريبة كام في المية",
+        "نسبة الضرايب على الخدمة"
+      ],
+      "ar_msa_cues": [
+        "ما معدل الضريبة",
+        "ما نسبة الضريبة المطبقة"
+      ],
+      "en_cues": [
+        "VAT rate",
+        "applicable tax percentage"
+      ],
+      "franco_eg_cues": [
+        "el dareeba kam fel meya",
+        "nesbet el darayeb"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound jurisdiction, tax_type, taxable_object, date, rate, exceptions. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "tax",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "jurisdiction",
+        "tax_type",
+        "taxable_object",
+        "date",
+        "rate",
+        "exceptions"
+      ],
+      "contract_type": "regulatory_value",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "tax_exemption",
+      "label_en": "Tax exemption eligibility",
+      "definition": "Ask if a documented exemption applies; facts alone do not give personalized tax advice.",
+      "ar_eg_cues": [
+        "الخدمة معفاة من الضريبة",
+        "ينفع إعفاء"
+      ],
+      "ar_msa_cues": [
+        "ما شروط الإعفاء الضريبي",
+        "هل ينطبق الاستثناء"
+      ],
+      "en_cues": [
+        "tax exemption",
+        "is this exempt from VAT"
+      ],
+      "franco_eg_cues": [
+        "ma3feya men el dareeba",
+        "yanfa3 e3fa2"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound jurisdiction, tax_type, category, conditions, authority. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "tax",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "jurisdiction",
+        "tax_type",
+        "category",
+        "conditions",
+        "authority"
+      ],
+      "contract_type": "conditional",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "einvoice_issue",
+      "label_en": "Electronic invoice or receipt issuance",
+      "definition": "Ask issuing/submitting a fiscal document; preserve invoice versus receipt type.",
+      "ar_eg_cues": [
+        "أصدر فاتورة إلكترونية",
+        "أعمل إيصال إلكتروني"
+      ],
+      "ar_msa_cues": [
+        "إصدار فاتورة إلكترونية",
+        "تقديم إيصال إلكتروني"
+      ],
+      "en_cues": [
+        "issue an e-invoice",
+        "submit an electronic receipt"
+      ],
+      "franco_eg_cues": [
+        "asdar fatoora electronia",
+        "a3mel eesal electrony"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound jurisdiction, document_type, taxpayer, fields, signing, steps. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "tax",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "jurisdiction",
+        "document_type",
+        "taxpayer",
+        "fields",
+        "signing",
+        "steps"
+      ],
+      "contract_type": "regulatory_procedure",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "einvoice_status",
+      "label_en": "Fiscal document validation status",
+      "definition": "Ask document validation/acceptance; current status needs authority response.",
+      "ar_eg_cues": [
+        "الفاتورة اترفضت ليه",
+        "حالة الإيصال الإلكتروني"
+      ],
+      "ar_msa_cues": [
+        "حالة اعتماد الفاتورة",
+        "نتيجة التحقق من الإيصال"
+      ],
+      "en_cues": [
+        "e-invoice validation status",
+        "receipt rejection reason"
+      ],
+      "franco_eg_cues": [
+        "el fatoora etrafadet leh",
+        "status el eesal"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound document_id, document_type, authority, status, errors, timestamp. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "tax",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "document_id",
+        "document_type",
+        "authority",
+        "status",
+        "errors",
+        "timestamp"
+      ],
+      "contract_type": "live_status",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "einvoice_adjustment",
+      "label_en": "Fiscal document correction",
+      "definition": "Ask cancel/reject/credit-note procedures; those operations differ.",
+      "ar_eg_cues": [
+        "ألغي الفاتورة الإلكترونية",
+        "أصدر إشعار دائن"
+      ],
+      "ar_msa_cues": [
+        "تصحيح فاتورة إلكترونية",
+        "إصدار إشعار دائن"
+      ],
+      "en_cues": [
+        "cancel an e-invoice",
+        "issue a credit note"
+      ],
+      "franco_eg_cues": [
+        "alghy el fatoora",
+        "a3mel esh3ar da2en"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound jurisdiction, document_type, operation, original_reference, conditions, steps. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "tax",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "jurisdiction",
+        "document_type",
+        "operation",
+        "original_reference",
+        "conditions",
+        "steps"
+      ],
+      "contract_type": "regulatory_procedure",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "tax_objection",
+      "label_en": "Tax assessment objection",
+      "definition": "Ask appeal/objection process, not payment reversal.",
+      "ar_eg_cues": [
+        "أعترض على الربط الضريبي",
+        "أقدم طعن"
+      ],
+      "ar_msa_cues": [
+        "إجراءات الطعن الضريبي",
+        "اعتراض على التقدير"
+      ],
+      "en_cues": [
+        "appeal a tax assessment",
+        "tax objection process"
+      ],
+      "franco_eg_cues": [
+        "a3tered 3ala el rabt",
+        "a2adem ta3n"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound jurisdiction, decision_type, notice_date, grounds, process, authority. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "tax",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "jurisdiction",
+        "decision_type",
+        "notice_date",
+        "grounds",
+        "process",
+        "authority"
+      ],
+      "contract_type": "regulatory_procedure",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "regulator_identity",
+      "label_en": "Identify competent authority",
+      "definition": "Ask which authority handles a service/topic; jurisdiction and activity matter.",
+      "ar_eg_cues": [
+        "أشتكي لمين",
+        "مين الجهة الرقابية"
+      ],
+      "ar_msa_cues": [
+        "من الجهة المختصة",
+        "أي جهة تنظم النشاط"
+      ],
+      "en_cues": [
+        "which regulator is responsible",
+        "competent authority"
+      ],
+      "franco_eg_cues": [
+        "ashtky le meen",
+        "meen el geha"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound jurisdiction, activity, entity_type, authority, mandate_source. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "regulatory",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "jurisdiction",
+        "activity",
+        "entity_type",
+        "authority",
+        "mandate_source"
+      ],
+      "contract_type": "authority",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "regulatory_license",
+      "label_en": "License scope and status",
+      "definition": "Ask licensing requirements or specific license status; register lookup differs from policy.",
+      "ar_eg_cues": [
+        "أعرف الشركة مرخصة",
+        "ترخيص النشاط إزاي"
+      ],
+      "ar_msa_cues": [
+        "متطلبات ترخيص النشاط",
+        "التحقق من ترخيص المنشأة"
+      ],
+      "en_cues": [
+        "check a regulatory license",
+        "license requirements"
+      ],
+      "franco_eg_cues": [
+        "el sherka morakhasa",
+        "tarkhees el nashat"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound jurisdiction, entity, activity, license_scope, register_or_rule. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "regulatory",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "jurisdiction",
+        "entity",
+        "activity",
+        "license_scope",
+        "register_or_rule"
+      ],
+      "contract_type": "live_or_policy",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "regulatory_reporting",
+      "label_en": "Regulatory reporting obligations",
+      "definition": "Ask required reports and submissions; not a customer complaint.",
+      "ar_eg_cues": [
+        "التقرير الرقابي يتبعت إمتى",
+        "نبلغ الجهة إزاي"
+      ],
+      "ar_msa_cues": [
+        "متطلبات التقارير الرقابية",
+        "إجراءات إخطار الجهة"
+      ],
+      "en_cues": [
+        "regulatory reporting requirements",
+        "notify the authority"
+      ],
+      "franco_eg_cues": [
+        "taqreer raqaby emta",
+        "nebalagh el geha ezay"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound jurisdiction, entity_type, trigger, report_type, deadline, authorized_role. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "regulatory",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "jurisdiction",
+        "entity_type",
+        "trigger",
+        "report_type",
+        "deadline",
+        "authorized_role"
+      ],
+      "contract_type": "regulatory_procedure",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "consent",
+      "label_en": "Consent scope and revocation",
+      "definition": "Ask what consent covers or how it can be withdrawn.",
+      "ar_eg_cues": [
+        "الموافقة دي على إيه",
+        "أسحب موافقتي"
+      ],
+      "ar_msa_cues": [
+        "نطاق الموافقة",
+        "سحب الموافقة"
+      ],
+      "en_cues": [
+        "what did I consent to",
+        "withdraw my consent"
+      ],
+      "franco_eg_cues": [
+        "el mowafaqa 3ala eh",
+        "as7ab mowafaqty"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound purpose, data, recipient, scope, validity, revocation_method. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "regulatory",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "purpose",
+        "data",
+        "recipient",
+        "scope",
+        "validity",
+        "revocation_method"
+      ],
+      "contract_type": "conditional",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "data_retention",
+      "label_en": "Data retention and deletion rules",
+      "definition": "Ask retention period or deletion procedure, not authorize destruction.",
+      "ar_eg_cues": [
+        "بياناتي بتتخزن قد إيه",
+        "امسح بياناتي"
+      ],
+      "ar_msa_cues": [
+        "مدة الاحتفاظ بالبيانات",
+        "طلب محو البيانات"
+      ],
+      "en_cues": [
+        "data retention period",
+        "delete my data"
+      ],
+      "franco_eg_cues": [
+        "bayanaty betetkhazen ad eh",
+        "emsa7 bayanaty"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound jurisdiction, data_category, purpose, retention_basis, rights, exceptions. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "regulatory",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "jurisdiction",
+        "data_category",
+        "purpose",
+        "retention_basis",
+        "rights",
+        "exceptions"
+      ],
+      "contract_type": "regulatory_value",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "beneficial_ownership",
+      "label_en": "Beneficial owner requirements",
+      "definition": "Ask who counts as beneficial owner and evidence needed.",
+      "ar_eg_cues": [
+        "المستفيد الحقيقي مين",
+        "بيانات مالك الشركة الفعلي"
+      ],
+      "ar_msa_cues": [
+        "متطلبات تحديد المستفيد الحقيقي",
+        "هيكل الملكية"
+      ],
+      "en_cues": [
+        "beneficial owner requirements",
+        "ultimate beneficial owner"
+      ],
+      "franco_eg_cues": [
+        "el mostafeed el 7a2ee2y meen",
+        "malek el sherka"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound jurisdiction, entity_type, ownership_control, documents, source. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "regulatory",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "jurisdiction",
+        "entity_type",
+        "ownership_control",
+        "documents",
+        "source"
+      ],
+      "contract_type": "regulatory_procedure",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "screening",
+      "label_en": "Screening and review process",
+      "definition": "Ask screening procedure; not disclose sensitive screening outcomes.",
+      "ar_eg_cues": [
+        "الفحص على القوائم إزاي",
+        "نتيجة فحص العقوبات"
+      ],
+      "ar_msa_cues": [
+        "إجراءات فحص العقوبات",
+        "مراجعة نتيجة المطابقة"
+      ],
+      "en_cues": [
+        "sanctions screening process",
+        "review a screening match"
+      ],
+      "franco_eg_cues": [
+        "fa7s el qawa2em ezay",
+        "sanctions check"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound role, entity, screening_type, review_procedure, access. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "regulatory",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "role",
+        "entity",
+        "screening_type",
+        "review_procedure",
+        "access"
+      ],
+      "contract_type": "restricted_procedure",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "insurance_coverage",
+      "label_en": "Insurance coverage and exclusions",
+      "definition": "Ask covered events/items, not promise claim payout.",
+      "ar_eg_cues": [
+        "التأمين بيغطي إيه",
+        "إيه المستثنى"
+      ],
+      "ar_msa_cues": [
+        "نطاق التغطية التأمينية",
+        "الاستثناءات من التغطية"
+      ],
+      "en_cues": [
+        "insurance coverage and exclusions",
+        "what does the policy cover"
+      ],
+      "franco_eg_cues": [
+        "el ta2meen beyghaty eh",
+        "eh el mostasna"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound policy, insured_object, event, conditions, exclusions, period. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "insurance",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "policy",
+        "insured_object",
+        "event",
+        "conditions",
+        "exclusions",
+        "period"
+      ],
+      "contract_type": "inventory",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "insurance_claim",
+      "label_en": "Insurance claim process",
+      "definition": "Ask claim steps and evidence; current claim state needs records.",
+      "ar_eg_cues": [
+        "أقدم مطالبة تأمين",
+        "أوراق التعويض"
+      ],
+      "ar_msa_cues": [
+        "إجراءات تقديم مطالبة تأمينية",
+        "مستندات التعويض"
+      ],
+      "en_cues": [
+        "submit an insurance claim",
+        "claim documents"
+      ],
+      "franco_eg_cues": [
+        "a2adem motalaba ta2meen",
+        "wara2 el ta3weed"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound policy, event, documents, steps, timeline, authority. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "insurance",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "policy",
+        "event",
+        "documents",
+        "steps",
+        "timeline",
+        "authority"
+      ],
+      "contract_type": "procedure",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "fund_subscription",
+      "label_en": "Investment fund subscription",
+      "definition": "Ask how to subscribe or buy units; no expected return promise.",
+      "ar_eg_cues": [
+        "أشتري وثائق الصندوق",
+        "أشترك في الاستثمار"
+      ],
+      "ar_msa_cues": [
+        "الاكتتاب في صندوق استثمار",
+        "شراء وحدات الصندوق"
+      ],
+      "en_cues": [
+        "subscribe to a mutual fund",
+        "buy fund units"
+      ],
+      "franco_eg_cues": [
+        "ashtery wasa2e2 el sondoo2",
+        "ashterek"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound fund, currency, minimum, valuation_cutoff, steps, conditions. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "investment",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "fund",
+        "currency",
+        "minimum",
+        "valuation_cutoff",
+        "steps",
+        "conditions"
+      ],
+      "contract_type": "procedure",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "fund_redemption",
+      "label_en": "Investment redemption",
+      "definition": "Ask redeeming units; separate from payment refund.",
+      "ar_eg_cues": [
+        "أبيع وثائق الصندوق",
+        "أسترد الاستثمار"
+      ],
+      "ar_msa_cues": [
+        "استرداد وحدات الصندوق",
+        "تسييل الاستثمار"
+      ],
+      "en_cues": [
+        "redeem fund units",
+        "sell investment units"
+      ],
+      "franco_eg_cues": [
+        "abee3 wasa2e2 el sondoo2",
+        "esterdad el estesmar"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound fund, units, valuation, cutoff, settlement, fees. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "investment",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "fund",
+        "units",
+        "valuation",
+        "cutoff",
+        "settlement",
+        "fees"
+      ],
+      "contract_type": "procedure",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "settlement_timing",
+      "label_en": "Settlement timing",
+      "definition": "Ask when funds settle, not whether a particular transfer already settled.",
+      "ar_eg_cues": [
+        "الفلوس بتتسوى إمتى",
+        "التحصيل هينزل إمتى"
+      ],
+      "ar_msa_cues": [
+        "مدة التسوية",
+        "موعد إتاحة المتحصلات"
+      ],
+      "en_cues": [
+        "settlement timing",
+        "when are proceeds available"
+      ],
+      "franco_eg_cues": [
+        "el feloos betetsawa emta",
+        "el ta7seel emta"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound service, operation, trigger, business_calendar, period, exceptions. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "cross_sector",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "service",
+        "operation",
+        "trigger",
+        "business_calendar",
+        "period",
+        "exceptions"
+      ],
+      "contract_type": "temporal",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "procurement",
+      "label_en": "Procurement workflow",
+      "definition": "Ask supplier purchase process; not customer purchase.",
+      "ar_eg_cues": [
+        "أعمل أمر شراء للمورد",
+        "طلب توريد"
+      ],
+      "ar_msa_cues": [
+        "إجراءات أمر الشراء",
+        "طلب توريد بضائع"
+      ],
+      "en_cues": [
+        "create a purchase order",
+        "supplier procurement"
+      ],
+      "franco_eg_cues": [
+        "a3mel amr shera",
+        "talab tawreed"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound role, supplier, items, approval, steps. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "retail",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "role",
+        "supplier",
+        "items",
+        "approval",
+        "steps"
+      ],
+      "contract_type": "procedure",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "stock_receipt",
+      "label_en": "Goods receiving",
+      "definition": "Ask physical goods receipt/count/damage handling.",
+      "ar_eg_cues": [
+        "أستلم بضاعة",
+        "البضاعة ناقصة عند الاستلام"
+      ],
+      "ar_msa_cues": [
+        "إجراءات استلام البضائع",
+        "عجز كمية الاستلام"
+      ],
+      "en_cues": [
+        "receive goods",
+        "short delivery"
+      ],
+      "franco_eg_cues": [
+        "astelam bada2e3",
+        "el bada3a na2sa"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound order, items, quantities, condition, documents, steps. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "retail",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "order",
+        "items",
+        "quantities",
+        "condition",
+        "documents",
+        "steps"
+      ],
+      "contract_type": "procedure",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "loyalty_points",
+      "label_en": "Loyalty points",
+      "definition": "Ask earning/redeeming/expiry of points; live balance needs records.",
+      "ar_eg_cues": [
+        "نقاطي كام",
+        "النقط بتخلص إمتى"
+      ],
+      "ar_msa_cues": [
+        "رصيد نقاط الولاء",
+        "شروط استبدال النقاط"
+      ],
+      "en_cues": [
+        "loyalty points balance",
+        "redeem reward points"
+      ],
+      "franco_eg_cues": [
+        "no2aty kam",
+        "el points betekhlas emta"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound program, operation, balance_or_rule, period, conditions. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "retail",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "program",
+        "operation",
+        "balance_or_rule",
+        "period",
+        "conditions"
+      ],
+      "contract_type": "live_or_policy",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "promotion_terms",
+      "label_en": "Promotion qualification",
+      "definition": "Ask terms/time/combination of offer; do not assume currently active.",
+      "ar_eg_cues": [
+        "العرض شغال لحد إمتى",
+        "ينفع أجمع الخصمين"
+      ],
+      "ar_msa_cues": [
+        "شروط الاستفادة من العرض",
+        "مدة سريان العرض"
+      ],
+      "en_cues": [
+        "promotion terms",
+        "can discounts be combined"
+      ],
+      "franco_eg_cues": [
+        "el 3ard le7ad emta",
+        "agma3 el khasmeen"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound offer, effective_dates, items, channels, qualification, exceptions. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "retail",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "offer",
+        "effective_dates",
+        "items",
+        "channels",
+        "qualification",
+        "exceptions"
+      ],
+      "contract_type": "conditional",
+      "origin": "authored_v2_expansion"
+    },
+    {
+      "intent_id": "business_day",
+      "label_en": "Business-day interpretation",
+      "definition": "Ask meaning/calculation of a business-day period; calendar evidence required.",
+      "ar_eg_cues": [
+        "يوم عمل يعني إيه",
+        "الإجازات محسوبة"
+      ],
+      "ar_msa_cues": [
+        "تعريف يوم العمل",
+        "كيفية احتساب المدة"
+      ],
+      "en_cues": [
+        "what counts as a working day",
+        "business day calculation"
+      ],
+      "franco_eg_cues": [
+        "yom 3amal ya3ny eh",
+        "el agazat ma7sooba"
+      ],
+      "do_not_confuse_with": [],
+      "answer_requirements": "Require source-bound jurisdiction, calendar, timezone, cutoff, start_event. Unknown values must remain unknown.",
+      "legacy_topic_candidates": [],
+      "cue_policy": "Candidate language signal, not business evidence or unconditional interpretation",
+      "domain": "cross_sector",
+      "runtime_mapping_status": "reference_predicate_requires_source_mapping",
+      "business_rule": "none",
+      "evidence_fields": [
+        "jurisdiction",
+        "calendar",
+        "timezone",
+        "cutoff",
+        "start_event"
+      ],
+      "contract_type": "temporal",
+      "origin": "authored_v2_expansion"
+    }
+  ]
+}

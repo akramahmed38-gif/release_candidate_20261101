@@ -1,0 +1,106 @@
+{
+  "all_complete_correct": {
+    "n": 32,
+    "p50_ms": 487.59940080344677,
+    "p95_ms": 843.0101053789258
+  },
+  "phase2_new_complete_correct": {
+    "n": 19,
+    "p50_ms": 280.28789907693863,
+    "p95_ms": 762.1331386268139
+  },
+  "languages": {
+    "ar": {
+      "n": 8,
+      "p50_ms": 538.5726001113653,
+      "p95_ms": 857.8271098434925,
+      "mean_stages_ms": {
+        "interpretation_ms": 4.799500573426485,
+        "source_verification_ms": 1.1535994708538055,
+        "retrieval_ms": 526.131562422961,
+        "fact_selection_ms": 0.006162095814943314,
+        "validation_and_assembly_ms": 0.3284378908574581
+      }
+    },
+    "en": {
+      "n": 24,
+      "p50_ms": 467.6679000258446,
+      "p95_ms": 795.424060896039,
+      "mean_stages_ms": {
+        "interpretation_ms": 6.211512411634128,
+        "source_verification_ms": 1.1138212867081165,
+        "retrieval_ms": 431.96309156094986,
+        "fact_selection_ms": 0.005408811072508494,
+        "validation_and_assembly_ms": 0.3913417458534241
+      }
+    }
+  },
+  "attribution": "Python/Chroma process only; shared Ollama embedding CPU/RAM not attributable",
+  "same_question_observations": [
+    {
+      "id": "E01",
+      "phase1_http_ms": 284.87250208854675,
+      "phase2_http_ms": 265.7527029514313
+    },
+    {
+      "id": "E02",
+      "phase1_http_ms": 241.81509763002396,
+      "phase2_http_ms": 493.55529993772507
+    },
+    {
+      "id": "E03",
+      "phase1_http_ms": 265.3324007987976,
+      "phase2_http_ms": 750.7242001593113
+    },
+    {
+      "id": "A01",
+      "phase1_http_ms": 293.7026023864746,
+      "phase2_http_ms": 543.5148999094963
+    },
+    {
+      "id": "A02",
+      "phase1_http_ms": 269.60980147123337,
+      "phase2_http_ms": 762.5342980027199
+    },
+    {
+      "id": "M01",
+      "phase1_http_ms": 260.36470010876656,
+      "phase2_http_ms": 818.0176019668579
+    },
+    {
+      "id": "E04",
+      "phase1_http_ms": 305.1708973944187,
+      "phase2_http_ms": 873.5564984381199
+    },
+    {
+      "id": "A03",
+      "phase1_http_ms": 319.896899163723,
+      "phase2_http_ms": 879.2629987001419
+    },
+    {
+      "id": "P01",
+      "phase1_http_ms": 257.01650232076645,
+      "phase2_http_ms": 252.59849801659584
+    },
+    {
+      "id": "P02",
+      "phase1_http_ms": 266.03880152106285,
+      "phase2_http_ms": 503.2828003168106
+    },
+    {
+      "id": "P03",
+      "phase1_http_ms": 260.0306011736393,
+      "phase2_http_ms": 505.9122033417225
+    },
+    {
+      "id": "P04",
+      "phase1_http_ms": 267.49080047011375,
+      "phase2_http_ms": 797.5681014358997
+    },
+    {
+      "id": "C01",
+      "phase1_http_ms": 228.9520986378193,
+      "phase2_http_ms": 453.6922983825207
+    }
+  ]
+}

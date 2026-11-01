@@ -1,0 +1,239 @@
+{
+  "provenance": "Linguistic facet vocabulary for existing canonical topics and the fourteen source-scoped predicates; no complete questions or answer text. Service aliases are reused from the canonical profiles.",
+  "facets": {
+    "opening_fee": [
+      "opening",
+      "open",
+      "subscription",
+      "sign up",
+      "signup",
+      "فتح",
+      "اشتراك",
+      "الاشتراك"
+    ],
+    "initial_deposit": [
+      "activate",
+      "activation",
+      "initial",
+      "minimum",
+      "deposit",
+      "funding",
+      "put in",
+      "تفعيل",
+      "اقل",
+      "ايداع",
+      "مبدئي",
+      "بكام"
+    ],
+    "balance_treatment": [
+      "balance",
+      "remain",
+      "stays",
+      "stay",
+      "disappear",
+      "deduct",
+      "رصيد",
+      "بتفضل",
+      "يفضل",
+      "بتتخصم",
+      "تتخصم",
+      "بتروح",
+      "بيروح"
+    ],
+    "workflow": [
+      "workflow",
+      "navigation",
+      "navigate",
+      "steps",
+      "registration",
+      "register",
+      "خطوات",
+      "تسجيل",
+      "استثمار"
+    ],
+    "branch_condition": [
+      "branch",
+      "visit",
+      "فرع",
+      "زياره",
+      "يزور"
+    ],
+    "identity": [
+      "national id",
+      "identity",
+      "id card",
+      "رقم قومي",
+      "بطاقه"
+    ],
+    "phone_ownership": [
+      "mobile",
+      "phone",
+      "موبايل",
+      "تليفون"
+    ],
+    "existing_wallet": [
+      "another wallet",
+      "other wallet",
+      "existing wallet",
+      "محفظه اخري",
+      "محفظه تانيه"
+    ],
+    "documents": [
+      "documents",
+      "document",
+      "paperwork",
+      "kyc",
+      "eligibility",
+      "requirements",
+      "مستندات",
+      "اوراق",
+      "شروط"
+    ],
+    "withdrawal": [
+      "withdrawal",
+      "withdraw",
+      "cash out",
+      "cashout",
+      "سحب"
+    ],
+    "deposit_tariff": [
+      "deposit fees",
+      "cash in fees",
+      "deposit charges",
+      "cash in tariff",
+      "رسوم الايداع"
+    ],
+    "discounts": [
+      "discount",
+      "discounts",
+      "offers",
+      "خصم",
+      "خصومات"
+    ],
+    "ongoing_balance_limit": [
+      "ongoing balance",
+      "remaining balance",
+      "maintained balance",
+      "رصيد دائم",
+      "طول الوقت"
+    ],
+    "transaction_codes": [
+      "service code",
+      "transaction code",
+      "code",
+      "codes",
+      "كود",
+      "رمز الخدمه"
+    ],
+    "image_prohibition": [
+      "screenshot",
+      "screenshots",
+      "external photographs",
+      "external photos",
+      "صور خارجيه",
+      "صور شاشات",
+      "سكرين شوت"
+    ]
+  },
+  "qualifiers": {
+    "fee": [
+      "fee",
+      "fees",
+      "cost",
+      "charge",
+      "charges",
+      "بتتخصم",
+      "تتخصم",
+      "رسوم",
+      "مصاريف",
+      "بكام"
+    ],
+    "initial_scope": [
+      "initial",
+      "minimum",
+      "activation",
+      "activate",
+      "opening",
+      "open",
+      "balance",
+      "مبدئي",
+      "اقل",
+      "تفعيل",
+      "فتح",
+      "رصيد"
+    ],
+    "atm": [
+      "atm",
+      "صراف الي",
+      "صراف"
+    ],
+    "branch": [
+      "branch",
+      "branches",
+      "فرع",
+      "فوري بلس"
+    ],
+    "followup": [
+      "and",
+      "that",
+      "it",
+      "what about",
+      "طيب",
+      "ده",
+      "دي",
+      "وهل"
+    ],
+    "comparison_reference": [
+      "which one",
+      "both",
+      "مين فيهم",
+      "الاتنين",
+      "اي واحد"
+    ],
+    "unsupported_named_service": [
+      "paypal",
+      "vodafone",
+      "orange",
+      "فودافون",
+      "اورنج"
+    ],
+    "fawry_plus": [
+      "fawry plus",
+      "فوري بلس"
+    ],
+    "deposit_transaction": [
+      "deposit",
+      "deposits",
+      "cash in",
+      "ايداع",
+      "الايداع"
+    ],
+    "funding_context": [
+      "activation",
+      "activate",
+      "initial",
+      "opening",
+      "open",
+      "balance",
+      "تفعيل",
+      "مبدئي",
+      "فتح",
+      "رصيد"
+    ]
+  },
+  "catalog_relations": {
+    "funding_bundle": [
+      "initial_deposit",
+      "balance_treatment"
+    ],
+    "fee_question_adds_opening_scope": true,
+    "broad_inventory_topics": [
+      "documents"
+    ],
+    "default_context": "No default service. Require an explicit service or valid same-session antecedent; clarify unresolved references. Named unsupported providers never inherit a different provider."
+  },
+  "channel_parents": {
+    "fawry_unspecified": "branch",
+    "fawry_plus": "branch"
+  }
+}

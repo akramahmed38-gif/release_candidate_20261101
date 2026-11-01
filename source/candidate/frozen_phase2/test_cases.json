@@ -1,0 +1,30 @@
+{
+ "cases":[
+  {"id":"S01","question":"What initial deposit activates QNB Wallet?","facts":["F0073"],"complete":true,"language":"en"},
+  {"id":"S02","question":"اقل ايداع لتفعيل محفظة QNB كام؟","facts":["F0073"],"complete":true,"language":"ar"},
+  {"id":"S03","question":"Explain Azimut registration steps in MyFawry.","facts":["F0037","F0038","F0039","F0040","F0041","F0042"],"complete":true,"language":"en"},
+  {"id":"S04","question":"خطوات تسجيل ازيموت من التطبيق ايه؟","facts":["F0037","F0038","F0039","F0040","F0041","F0042"],"complete":true,"language":"ar"},
+  {"id":"S05","question":"When should an Azimut customer visit a Fawry Plus branch?","facts":["F0042"],"complete":true,"language":"en"},
+  {"id":"S06","question":"عميل ازيموت يزور الفرع امتى؟","facts":["F0042"],"complete":true,"language":"ar"},
+  {"id":"S07","question":"Compare the initial activation funding for AXIS and QNB.","facts":["F0011","F0012","F0073"],"complete":true,"language":"en"},
+  {"id":"S08","question":"AXIS و QNB اقل ايداع للتفعيل كام؟","facts":["F0011","F0012","F0073"],"complete":true,"language":"ar"},
+  {"id":"S09","question":"AXIS opening fee and QNB activation deposit?","facts":["F0010","F0073"],"complete":true,"language":"en"},
+  {"id":"S10","question":"AXIS initial deposit; QNB initial deposit; Azimut registration steps.","facts":["F0011","F0012","F0073","F0037","F0038","F0039","F0040","F0041","F0042"],"complete":true,"language":"en"},
+  {"id":"S11","question":"What are the opening fees and initial deposits for AXIS and QNB?","facts":["F0010","F0011","F0012","F0073"],"complete":false,"language":"en"},
+  {"id":"S12","question":"QNB provider cash-in fees?","facts":[],"complete":false,"language":"en"},
+  {"id":"S13","question":"QNB initial deposit and withdrawal fees?","facts":["F0073"],"complete":false,"language":"en"},
+  {"id":"S14","question":"Azimut registration steps and KYC documents?","facts":["F0037","F0038","F0039","F0040","F0041","F0042"],"complete":false,"language":"en"},
+  {"id":"S15","question":"Do I always have to visit a branch for Azimut?","facts":["F0042"],"complete":true,"language":"en"},
+  {"id":"S16","question":"Does QNB's initial deposit stay in my balance?","facts":["F0073"],"complete":false,"language":"en"},
+  {"id":"S17","question":"AXIS withdrawal fee and Azimut documents?","facts":[],"complete":false,"language":"en"},
+  {"id":"S18","question":"For the QNB wallet, what is the least funding needed for immediate activation?","facts":["F0073"],"complete":true,"language":"en"},
+  {"id":"S19","question":"Is the AXIS EGP 20 an activation fee?","facts":["F0010","F0011","F0012"],"complete":true,"language":"en"},
+  {"id":"T01","conversation":"turns1","question":"How do I activate AXIS Pay?","facts":["F0011","F0012"],"complete":true,"language":"en"},
+  {"id":"T02","conversation":"turns1","question":"What about QNB?","facts":["F0073"],"complete":true,"language":"en"},
+  {"id":"T03","conversation":"turns1","question":"Which one requires an initial deposit?","facts":["F0011","F0012","F0073"],"complete":true,"language":"en"},
+  {"id":"U01","conversation":"turns2","question":"What are Azimut registration steps?","facts":["F0037","F0038","F0039","F0040","F0041","F0042"],"complete":true,"language":"en"},
+  {"id":"U02","conversation":"turns2","question":"When do I visit the branch?","facts":["F0042"],"complete":true,"language":"en"},
+  {"id":"U03","conversation":"turns2","question":"What initial deposit activates QNB?","facts":["F0073"],"complete":true,"language":"en"},
+  {"id":"ISO01","question":"What about that?","facts":[],"complete":false,"language":"en"}
+ ]
+}
