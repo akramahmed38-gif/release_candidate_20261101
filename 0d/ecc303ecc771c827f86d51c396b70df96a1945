@@ -1,0 +1,24 @@
+end_to_end/test_funding_facets.py
+  s_d9b3c014c5ea55::t_1c38b7b39bfab4 1-56
+source/candidate/linguistic_spans.py
+  s_d9b3c014c5ea55::t_96c37de9a3236e 261,297
+  s_d9b3c014c5ea55::t_1c38b7b39bfab4 298
+source/candidate/resources/answer_scopes.json
+  s_d9b3c014c5ea55::t_c4af8e372f5b14 1-126
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "0decc303ecc771c827f86d51c396b70df96a1945",
+  "prompts": {},
+  "sessions": {
+    "s_d9b3c014c5ea55": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a162f5-c192-7ef2-8f5c-3b5d4e32f549",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "akramahmed38-gif <akram.ahmed38@gmail.com>"
+    }
+  }
+}
