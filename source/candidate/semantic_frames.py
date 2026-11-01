@@ -231,6 +231,25 @@ def _balance_retention(raw, hits, features):
     return _uniq(proof)
 
 
+def _funds_destination(raw,hits):
+    """Nominal funds moving to a balance, not a cash-in command or tariff."""
+    if any(hits.get(k) for k in ['stock','item','transaction','refund','transfer_operation']):return []
+    subjects=_hits(raw,['deposit','funding','amount','money','funds','إيداع','ايداع','المبلغ','الفلوس','التمويل'])
+    movements=_hits(raw,['go','enter','flow','يدخل','يخش','يضاف','يتضاف'])
+    auxiliary=set(tokens('will would can does do be is are the automatically تلقائيا'))
+    destination_grammar=set(tokens("in into to within the my your its our their customer customer's account wallet في إلى الي داخل رصيد العميل حساب محفظة"))
+    proof=[]
+    for s,t in subjects:
+        for a,b in movements:
+            if a<t or re.search(r'[.;!?؟؛,،]',raw[t:a]) or not set(tokens(raw[t:a]))<=auxiliary:continue
+            for x,y in hits.get('balance_object',[]):
+                if x<b or re.search(r'[.;!?؟؛,،]',raw[b:x]):continue
+                between=tokens(raw[b:x])
+                if (set(between)<=destination_grammar and any(w in {'in','into','to','within','في','الي','داخل'} for w in between)):
+                    proof.extend([(s,t),(a,b),(x,y)])
+    return _uniq(proof)
+
+
 def _catalog_rows(value, key):
     if isinstance(value, dict):
         value = value.get(key, list(value.values()))
@@ -551,6 +570,11 @@ def infer_clause(text, masked, features, intent_catalog, operators):
                     "spans": _uniq([action] + question_points),
                 })
 
+    destination=_funds_destination(work,h)
+    if destination:
+        h['funds_balance_destination']=destination
+        add('balance_treatment',['funds_balance_destination'])
+        suppress('deposit_tariff',['funds_balance_destination'],'nominal_funds_destination_is_not_cash_in_tariff')
     retention = _balance_retention(work, h, features)
     if retention:
         h["balance_retention_relation"] = retention

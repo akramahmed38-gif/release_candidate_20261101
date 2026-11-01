@@ -1,0 +1,52 @@
+{
+  "environment": "LIVE PRODUCTION; read-only authorization only",
+  "credentials": "Manually entered by user; not extracted, stored or included",
+  "tests": [
+    {
+      "id": "AUTH_LOGIN",
+      "status": "PASS",
+      "evidence": "User confirmed manual login; browser reached /training/dashboard; login HTTP 200"
+    },
+    {
+      "id": "DASHBOARD_READ",
+      "status": "PASS",
+      "evidence": "document.readyState complete; management-kpis and management-summary GET responses HTTP 200; bodies not collected"
+    },
+    {
+      "id": "ADMIN_PRIVILEGE",
+      "status": "NOT RUN",
+      "reason": "Dashboard authentication alone does not prove admin permissions"
+    },
+    {
+      "id": "UNAUTH_SESSION",
+      "status": "NOT RUN",
+      "reason": "Separate browser-context probe did not return and was intentionally terminated; no pass inferred"
+    },
+    {
+      "id": "LIVE_CHATBOT_DIAGNOSTICS",
+      "status": "BLOCKED",
+      "reason": "GET diagnostics calls _ensure_sidecar_running; invoking could start production sidecar"
+    },
+    {
+      "id": "KNOWLEDGE_CONFIG_APPROVAL_MUTATIONS",
+      "status": "BLOCKED",
+      "reason": "Live instance confirmed; disposable/staging environment required"
+    },
+    {
+      "id": "LIVE_CHATBOT_MESSAGES",
+      "status": "NOT RUN",
+      "reason": "Could persist conversations/use production inference; no state-changing tests authorized"
+    },
+    {
+      "id": "SENSITIVE_SCREENSHOTS",
+      "status": "NOT RUN",
+      "reason": "Avoid live personal/operational data capture"
+    }
+  ],
+  "production_changes_by_agent": false,
+  "production_login_by_user": true,
+  "source_readonly_sha256": "3a8d89412541f880aadafcbfdc1a24674f40d4512229f02016e23504fd06853f",
+  "source_readonly_path": "HR Training App/src/routes/chatbot.py",
+  "authentication_is_not_demo_authentication": true,
+  "production_readiness_implied": false
+}

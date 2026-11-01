@@ -10,6 +10,7 @@ from request_planner import CurrentQueryPlanner as CatalogPlanner
 from evidence_contracts import select_for_request,approve_view,completeness_review,route_for_request
 from source_snapshot import preserve_valid_slots
 from question_coverage import audit_question
+from clarification_state import pending_service_request,service_reply
 from chatbot.conversation_memory import ConversationStore
 from chatbot.reference_validation import scoped_numeric_checks
 
@@ -52,8 +53,27 @@ class CatalogEngine(frozen.MultiEngine):
             t=perf_counter()
             self.request_selections={}
             prior_context=self.store.get_business_context(conversation,session) or {}
+            current_user_question=q
+            pending=prior_context.get('pending_service_request')
+            resumed=service_reply(q,pending,self.catalog)
+            if pending:
+                prior_context={k:v for k,v in prior_context.items() if k!='pending_service_request'}
+                if resumed:
+                    service=resumed['service_id']
+                    prior_context.update(services=[service],mentioned_services=[service],
+                        requested_topics=[],requests_by_service={},request_references=[],
+                        comparison_services=[],raw_question=q,service_clarification=resumed)
+                    q=pending['question']
+                self.store.set_business_context(conversation,session,prior_context)
             self._intent=self.catalog.plan(q,conversation,session)
             contract=self._intent['request_contract']
+            if resumed:
+                self._intent['context_used']=True
+                contract['clarification_resolution']=resumed
+                contract['raw_question_origin']={'turn_id':pending['turn_id'],'kind':'pending_original_user_turn'}
+                for request in contract['requests']:
+                    request['antecedent_turn']=pending['turn_id']
+                    request['commit_basis']='pending_request_with_explicit_user_service_reply'
             # Keep unsupported channel scopes explicit instead of treating a
             # supported subset as the complete requested tariff.
             extra=[]
@@ -195,4 +215,17 @@ class CatalogEngine(frozen.MultiEngine):
                           else 'The selected sources do not establish the requested timing restriction.')
                     result['scope_gap_messages']=[{'service':name,'dimension':'timing_restriction','message':text} for name in names]
                     result['answer']=result['answer'].rstrip()+'\n\n'+'\n'.join(name+': '+text for name in names)
+            state_started=perf_counter()
+            if result.get('answer_status')=='clarify' and not result.get('supported_fact_ids'):
+                new_pending=pending_service_request(q,contract,self.catalog.turn)
+                if new_pending:
+                    context=self.store.get_business_context(conversation,session) or {}
+                    self.store.set_business_context(conversation,session,{**context,'pending_service_request':new_pending})
+            if resumed:
+                result['current_user_question']=current_user_question
+                result['resolved_question']=q
+                result['clarification_resolution']=resumed
+            timings['clarification_state_ms']=(perf_counter()-state_started)*1000
+            timings['engine_wall_ms']=(perf_counter()-queued)*1000
+            timings['engine_unattributed_overhead_ms']=timings['engine_wall_ms']-sum(timings[k] for k in primary)-timings['clarification_state_ms']
             return result
