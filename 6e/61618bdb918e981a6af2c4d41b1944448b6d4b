@@ -1,0 +1,23 @@
+end_to_end/check_explicit_scope_demo.py
+  s_d9b3c014c5ea55::t_2939264faeadde 1-65
+evidence/MINIMUM_SCOPE_ROLLBACK.md
+  s_d9b3c014c5ea55::t_f3c4dfb29c3cd4 1-5
+source/candidate/linguistic_spans.py
+  s_d9b3c014c5ea55::t_ee960f7b2048b2 291
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "6e61618bdb918e981a6af2c4d41b1944448b6d4b",
+  "prompts": {},
+  "sessions": {
+    "s_d9b3c014c5ea55": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a162f5-c192-7ef2-8f5c-3b5d4e32f549",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "akramahmed38-gif <akram.ahmed38@gmail.com>"
+    }
+  }
+}
