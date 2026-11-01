@@ -1,0 +1,29 @@
+end_to_end/run_historical.py
+  s_d9b3c014c5ea55::t_d5491a36103841 1-45
+end_to_end/datasets/original176.json
+  s_d9b3c014c5ea55::t_45f588608f46d4 1-252386
+end_to_end/datasets/preserved_evaluation.py
+  s_d9b3c014c5ea55::t_6026c09ebc5a20 1-322
+evidence/REGRESSION_INPUT_PINS.json
+  s_d9b3c014c5ea55::t_a803fcac95e8a0 1-4
+knowledge_coverage/ALL_29_SERVICE_COVERAGE.csv
+  s_d9b3c014c5ea55::t_09dc19a0eb8427 1-30
+knowledge_coverage/PHASE4_READINESS_BACKLOG.csv
+  s_d9b3c014c5ea55::t_87a957d2c9401d 1-338
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "6bf4c8d8de6de72bc8c4b8dca78cb7a00ce1f9a5",
+  "prompts": {},
+  "sessions": {
+    "s_d9b3c014c5ea55": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a162f5-c192-7ef2-8f5c-3b5d4e32f549",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "akramahmed38-gif <akram.ahmed38@gmail.com>"
+    }
+  }
+}
