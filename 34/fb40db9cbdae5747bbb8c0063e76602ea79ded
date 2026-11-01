@@ -1,0 +1,45 @@
+independent_results/STATUS.md
+  s_d9b3c014c5ea55::t_3c386c1d5ec6db 1-11
+.gitignore
+  s_d9b3c014c5ea55::t_3c386c1d5ec6db 3
+RELEASE_READINESS_DASHBOARD.md
+  s_d9b3c014c5ea55::t_b77f2e93a0159a 1-40
+configuration/RC_SOURCE_PINS.json
+  s_d9b3c014c5ea55::t_372d174d7ec292 1-152
+end_to_end/browser_20261101_152105_f0142068/RESULTS.json
+  s_d9b3c014c5ea55::t_687231cb91aad4 1-9
+end_to_end/browser_20261101_192941_a43314c7/audit.jsonl
+  s_8fb249fdcdae19::t_fe2991551ec144 1-2
+end_to_end/run_20261101_121153_f85f30a8/RESULTS.json
+  s_d9b3c014c5ea55::t_d8714d9e857eef 1-3108
+end_to_end/run_20261101_121153_f85f30a8/audit.jsonl
+  s_d9b3c014c5ea55::t_4f65033770a0e1 1-4
+environment_validation/WORKSTATION_20261101_151127.json
+  s_d9b3c014c5ea55::t_bb2f1dd1e4fffb 1-625
+performance/LOCAL_HTTP_DIAGNOSTIC.json
+  s_d9b3c014c5ea55::t_839dffd32a5218 1-14
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "34fb40db9cbdae5747bbb8c0063e76602ea79ded",
+  "prompts": {},
+  "sessions": {
+    "s_8fb249fdcdae19": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a19827-72ae-7050-b064-9bde2d462a55",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "akramahmed38-gif <akram.ahmed38@gmail.com>"
+    },
+    "s_d9b3c014c5ea55": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a162f5-c192-7ef2-8f5c-3b5d4e32f549",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "akramahmed38-gif <akram.ahmed38@gmail.com>"
+    }
+  }
+}
