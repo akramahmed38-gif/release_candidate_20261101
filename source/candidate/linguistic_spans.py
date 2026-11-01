@@ -258,7 +258,7 @@ def _scalar_focus_proofs(raw, entity_spans=(), nonrestrictive=False):
     data=_answer_scope_data()
     heads=sorted({point for phrase in data['scalar_heads'] for point in spans(raw,phrase)})
     focus=sorted({point for phrase in data['focus_words'] for point in spans(raw,phrase)})
-    allowed={form for phrase in data['modifiers']+data['scalar_heads']
+    allowed={form for phrase in data['modifiers']+data['scalar_heads']+data.get('possessive_determiners',[])
              for word in tokens(phrase) for form in forms(word)}
     conditions={form for phrase in data['condition_starters'] for word in tokens(phrase) for form in forms(word)}
     proofs=[]
@@ -294,8 +294,8 @@ def nominal_scalar_focus(raw, entity_spans=()):
 def nonrestrictive_scalar_focus(raw):
     """A pure response-scope modifier; it cannot supply a business predicate."""
     data=_answer_scope_data()
-    allowed={form for key in ('modifiers','scalar_heads','focus_words','nonrestrictive_prefixes')
-             for phrase in data[key] for word in tokens(phrase) for form in forms(word)}
+    allowed={form for key in ('modifiers','scalar_heads','focus_words','nonrestrictive_prefixes','possessive_determiners')
+             for phrase in data.get(key,[]) for word in tokens(phrase) for form in forms(word)}
     if not all(forms(word)&allowed for word in tokens(raw)):return []
     return _scalar_focus_proofs(raw,nonrestrictive=True)
 
