@@ -1,0 +1,25 @@
+source/candidate/linguistic_spans.py
+  s_d9b3c014c5ea55::t_e62032a459dc57 133-143,145-153,156,161
+end_to_end/test_typed_destination_frames.py
+  s_d9b3c014c5ea55::t_7d1e9d1f8e4657 1-37
+pilot_readiness/DESTINATION_FRAME_COMPARISON.md
+  s_d9b3c014c5ea55::t_e62032a459dc57 1-25
+source/candidate/resources/argument_frames.json
+  s_d9b3c014c5ea55::t_e62032a459dc57 1-21
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "e2322e06ae101477b1ebd1838559a29dfe01f3b0",
+  "prompts": {},
+  "sessions": {
+    "s_d9b3c014c5ea55": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a162f5-c192-7ef2-8f5c-3b5d4e32f549",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "akramahmed38-gif <akram.ahmed38@gmail.com>"
+    }
+  }
+}
