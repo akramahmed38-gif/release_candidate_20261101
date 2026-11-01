@@ -2,3 +2,4 @@ __pycache__/
 *.pyc
 end_to_end/*/private_workspace/
 *.log
+independent_private/
