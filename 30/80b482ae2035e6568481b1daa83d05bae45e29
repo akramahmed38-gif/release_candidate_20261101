@@ -1,0 +1,27 @@
+end_to_end/check_browser.py
+  s_d9b3c014c5ea55::t_e354de166a7e03 1-40
+deployment/RUN_AND_ROLLBACK.md
+  s_d9b3c014c5ea55::t_c953d6335586ae 1-51
+pilot_readiness/SCOPE_HANDLING_OPTIONS.md
+  s_d9b3c014c5ea55::t_c953d6335586ae 1-19
+native_packages/native_smoke.py
+  s_d9b3c014c5ea55::t_537e4e1ad170c1 1-56
+native_packages/README.md
+  s_d9b3c014c5ea55::t_537e4e1ad170c1 1-30
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "3080b482ae2035e6568481b1daa83d05bae45e29",
+  "prompts": {},
+  "sessions": {
+    "s_d9b3c014c5ea55": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a162f5-c192-7ef2-8f5c-3b5d4e32f549",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "akramahmed38-gif <akram.ahmed38@gmail.com>"
+    }
+  }
+}
