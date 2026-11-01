@@ -288,22 +288,7 @@ def _scalar_focus_proofs(raw, entity_spans=(), nonrestrictive=False):
 
 
 def nominal_scalar_focus(raw, entity_spans=()):
-    proofs=_scalar_focus_proofs(raw,entity_spans)
-    # A minimum-qualified funding noun asks for its amount even without
-    # 'only'. Ordinary unqualified funding retains its full source bundle.
-    minimum=[p for phrase in ['minimum','least','smallest','الحد الأدنى','أقل','a2al'] for p in spans(raw,phrase)]
-    subjects=[p for phrase in ['deposit','funding','إيداع','ايداع','تمويل','eida3'] for p in spans(raw,phrase)]
-    grammar=set(tokens('the a an its their my your initial first required activation of for للحد الادنى اول الاولي للتفعيل مبلغ اقل el awel'))
-    for a,b in minimum:
-        for x,y in subjects:
-            left,right=min(a,x),max(b,y)
-            if any(left<stop and start<right for start,stop in entity_spans):continue
-            gap=raw[b:x] if b<=x else raw[y:a]
-            if re.search(r'[,،;؛.!?؟]',gap):continue
-            if all(forms(word)&grammar for word in tokens(gap)):
-                proofs.append({'head_span':mark(raw,x,y,'funding_subject'),
-                               'focus_span':mark(raw,a,b,'minimum_amount_scope')})
-    return proofs
+    return _scalar_focus_proofs(raw,entity_spans)
 
 
 def nonrestrictive_scalar_focus(raw):
