@@ -429,6 +429,9 @@ class ScopeGraph:
                 merged.pop('transaction_reference')
                 h['supplied_record_field_context']=valued_fields
         h['_semantic']=semantic
+        for goal in semantic['supplemental_goals']:
+            if goal['intent_id']=='balance_treatment' and 'semantic_atom:funds_balance_destination' in goal.get('support_features',[]):
+                h['balance_disposition']=unique(h.get('balance_disposition',[])+goal['predicate_spans'])
         # Overlapping aliases of the same nominal operation do not create a
         # separate tariff request when its bound head is transaction principal.
         minimum_proofs=[] if any(h.get(key) for key in ['code','image','workflow']) else principal_minimum_proofs(masked,h.get('withdrawal',[]))

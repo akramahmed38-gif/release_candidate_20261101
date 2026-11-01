@@ -130,6 +130,27 @@ def valued_record_fields(raw, fields, references):
         for row in references)]
 
 
+def funds_balance_destination(raw):
+    """Language-only nominal-funds/direction/balance relation with raw spans."""
+    blocked=['refund','transaction','transfer','stock','item','استرداد','تحويل','مخزون','منتج']
+    if any(spans(raw,w) for w in blocked):return []
+    subjects=[p for w in ['deposit','funding','amount','money','funds','إيداع','ايداع','المبلغ','الفلوس','التمويل'] for p in spans(raw,w)]
+    movements=[p for w in ['go','enter','flow','يدخل','يخش','يضاف','يتضاف'] for p in spans(raw,w)]
+    balances=[p for w in ['balance','رصيد','الرصيد'] for p in spans(raw,w)]
+    auxiliary=set(tokens('will would can does do be is are not never still the automatically تلقائيا'))
+    grammar=set(tokens("in into to within the my your its our their customer customer's account wallet في إلى الي داخل العميل حساب محفظة"))
+    proof=[]
+    for s,t in subjects:
+        for a,b in movements:
+            if a<t or re.search(r'[.;!?؟؛,،]',raw[t:a]) or not set(tokens(raw[t:a]))<=auxiliary:continue
+            for x,y in balances:
+                if x<b or re.search(r'[.;!?؟؛,،]',raw[b:x]):continue
+                between=tokens(raw[b:x])
+                if set(between)<=grammar and any(w in {'in','into','to','within','في','الي','داخل'} for w in between):
+                    proof.extend([(s,t),(a,b),(x,y)])
+    return sorted(set(proof))
+
+
 def quote_envelope_fragment(raw, start, end, quote_bounds):
     """Pure labels/attributions adjacent to a quote remain unverified context."""
     # Coordination between two quotations links claims, not user requests.

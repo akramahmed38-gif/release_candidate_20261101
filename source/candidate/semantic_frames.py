@@ -6,7 +6,7 @@ that the named action is possible or that a source-backed answer exists.
 """
 import re
 
-from linguistic_spans import mark, spans, tokens, shadow
+from linguistic_spans import mark, spans, tokens, shadow, funds_balance_destination
 
 
 # Atomic vocabulary complements the authored multiword intent cues.  These are
@@ -234,20 +234,7 @@ def _balance_retention(raw, hits, features):
 def _funds_destination(raw,hits):
     """Nominal funds moving to a balance, not a cash-in command or tariff."""
     if any(hits.get(k) for k in ['stock','item','transaction','refund','transfer_operation']):return []
-    subjects=_hits(raw,['deposit','funding','amount','money','funds','إيداع','ايداع','المبلغ','الفلوس','التمويل'])
-    movements=_hits(raw,['go','enter','flow','يدخل','يخش','يضاف','يتضاف'])
-    auxiliary=set(tokens('will would can does do be is are the automatically تلقائيا'))
-    destination_grammar=set(tokens("in into to within the my your its our their customer customer's account wallet في إلى الي داخل رصيد العميل حساب محفظة"))
-    proof=[]
-    for s,t in subjects:
-        for a,b in movements:
-            if a<t or re.search(r'[.;!?؟؛,،]',raw[t:a]) or not set(tokens(raw[t:a]))<=auxiliary:continue
-            for x,y in hits.get('balance_object',[]):
-                if x<b or re.search(r'[.;!?؟؛,،]',raw[b:x]):continue
-                between=tokens(raw[b:x])
-                if (set(between)<=destination_grammar and any(w in {'in','into','to','within','في','الي','داخل'} for w in between)):
-                    proof.extend([(s,t),(a,b),(x,y)])
-    return _uniq(proof)
+    return funds_balance_destination(raw)
 
 
 def _catalog_rows(value, key):

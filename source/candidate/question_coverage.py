@@ -24,6 +24,7 @@ from linguistic_spans import catalog_nominal_proofs,response_layout_directive
 from linguistic_spans import response_scope_omission,fronted_process_contexts,principal_minimum_proofs,bind_dimension_channel_references
 from linguistic_spans import transaction_reference_spans,valued_record_fields
 from linguistic_spans import quoted_channel_reference,quote_envelope_fragment
+from linguistic_spans import funds_balance_destination
 
 ROOT = Path(__file__).resolve().parent
 TARIFFS = {"deposit_tariff", "withdrawal_tariff"}
@@ -1995,6 +1996,8 @@ def audit_question(question, actual, facts, definition, prior_context=None):
             local_mask, ["phone ownership", "mobile ownership", "line ownership", "mobile-line ownership"])))
         hits["balance_disposition"] = sorted(set(hits.get("balance_disposition", []) + _hits(
             local_mask, ["balance treatment", "balance disposition", "treatment of the balance"])))
+        # Enumerate this relation from the original clause, not planner goals.
+        hits['balance_disposition']=sorted(set(hits['balance_disposition']+funds_balance_destination(local_mask)))
         navigation_hits = _navigation_label_hits(text, definition, channel_table)
         navigation_bounds = [(x, y) for x, y, _, _ in navigation_hits]
         if navigation_hits:
