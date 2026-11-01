@@ -9,7 +9,7 @@ def main():
     token=secrets.token_urlsafe(40);engine=create_engine(out/'private_workspace');server=DemoServer(engine,token,out/'audit.jsonl');threading.Thread(target=server.serve_forever,daemon=True).start()
     report={'status':'NOT RUN','native':'NOT RUN','employee_access':False,'checks':[],'source_sha256':hashlib.sha256((ROOT/'source/demo_app.py').read_bytes()).hexdigest()}
     try:
-        from playwright.sync_api import sync_playwright
+        from playwright.sync_api import sync_playwright,expect
         with sync_playwright() as p:
             installed=Path('C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe')
             browser=p.chromium.launch(headless=True,executable_path=str(installed)) if installed.is_file() else p.chromium.launch(headless=True)
@@ -20,14 +20,14 @@ def main():
                 report['checks'].append({'name':name,'passed':bool(value)})
                 if not value:raise AssertionError(name)
             check('visible_unapproved_scope','UNAPPROVED EVIDENCE' in page.locator('body').inner_text())
-            page.locator('#token').fill(token);page.locator('#connect').click();page.wait_for_function("document.getElementById('answer').textContent==='New isolated conversation'")
+            page.locator('#token').fill(token);page.locator('#connect').click();expect(page.locator('#answer')).to_have_text('New isolated conversation')
             check('token_cleared',page.locator('#token').input_value()=='')
             page.locator('#question').fill('What is the AXIS opening fee?');page.locator('#ask').click()
-            page.wait_for_function("document.getElementById('answer').textContent.includes('F0010')")
+            expect(page.locator('#answer')).to_contain_text('F0010')
             text=page.locator('#answer').inner_text();check('actual_answer_and_citation','0 EGP' in text and 'axis_wallet_sales_guide.pdf' in text)
-            page.locator('#fresh').click();page.wait_for_function("document.getElementById('answer').textContent==='New isolated conversation'")
+            page.locator('#fresh').click();expect(page.locator('#answer')).to_have_text('New isolated conversation')
             page.locator('#question').fill('What is its opening fee?');page.locator('#ask').click()
-            page.wait_for_function("document.getElementById('answer').textContent.includes('citations')")
+            expect(page.locator('#answer')).to_contain_text('citations')
             isolated=page.locator('#answer').inner_text();check('new_conversation_does_not_borrow_axis','F0010' not in isolated)
             check('no_browser_script_errors',not errors)
             report.update(status='PASS',actual_answer=text,isolated_answer=isolated,browser_errors=errors)
