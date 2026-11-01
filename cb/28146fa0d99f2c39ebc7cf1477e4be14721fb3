@@ -1,0 +1,27 @@
+source/candidate/linguistic_spans.py
+  s_d9b3c014c5ea55::t_e16ba51a7fefe3 133-153
+source/candidate/question_coverage.py
+  s_d9b3c014c5ea55::t_e16ba51a7fefe3 27,1999-2000
+source/candidate/semantic_frames.py
+  s_d9b3c014c5ea55::t_e16ba51a7fefe3 9,237
+source/candidate/scope_graph.py
+  s_d9b3c014c5ea55::t_e16ba51a7fefe3 432-434
+evidence/ACCURACY_PRECHECK_02.json
+  s_d9b3c014c5ea55::t_49f850ce4104e2 1-152
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "cb28146fa0d99f2c39ebc7cf1477e4be14721fb3",
+  "prompts": {},
+  "sessions": {
+    "s_d9b3c014c5ea55": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a162f5-c192-7ef2-8f5c-3b5d4e32f549",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "akramahmed38-gif <akram.ahmed38@gmail.com>"
+    }
+  }
+}
