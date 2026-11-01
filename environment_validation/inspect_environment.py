@@ -11,7 +11,7 @@ def main():
     source=json.loads((ROOT/'evidence/I046_SOURCE_MANIFEST.json').read_text(encoding='utf-8'))
     matches=[]
     for old,digest in source['files'].items():
-        path=ROOT/'source'/old
+        path=ROOT/old
         matches.append({'path':str(path.relative_to(ROOT)),'matches_i046':hashlib.sha256(path.read_bytes()).hexdigest()==digest})
     resources={}
     try:
