@@ -130,23 +130,35 @@ def valued_record_fields(raw, fields, references):
         for row in references)]
 
 
+@lru_cache(maxsize=1)
+def _argument_frames():
+    data=json.loads((Path(__file__).parent/'resources/argument_frames.json').read_text(encoding='utf-8'))
+    if data.get('schema')!='LANGUAGE_ARGUMENT_FRAMES_1':raise ValueError('Argument-frame schema')
+    frame=data['funds_balance_destination']
+    for key in ['subjects','targets','nonfunding_objects','subject_modifiers','goal_prepositions','goal_modifiers']:
+        if not isinstance(frame.get(key),list) or any(not isinstance(x,str) or not x for x in frame[key]):raise ValueError('Argument-frame vocabulary')
+    if not frame.get('heads') or any(not isinstance(h.get('surface'),str) or h.get('goal_binding') not in {'direct','prepositional'} for h in frame['heads']):raise ValueError('Argument-frame binding')
+    return frame
+
+
 def funds_balance_destination(raw):
-    """Language-only nominal-funds/direction/balance relation with raw spans."""
-    blocked=['refund','transaction','transfer','stock','item','استرداد','تحويل','مخزون','منتج']
-    if any(spans(raw,w) for w in blocked):return []
-    subjects=[p for w in ['deposit','funding','amount','money','funds','إيداع','ايداع','المبلغ','الفلوس','التمويل'] for p in spans(raw,w)]
-    movements=[p for w in ['go','enter','flow','يدخل','يخش','يضاف','يتضاف'] for p in spans(raw,w)]
-    balances=[p for w in ['balance','رصيد','الرصيد'] for p in spans(raw,w)]
-    auxiliary=set(tokens('will would can does do be is are not never still the automatically تلقائيا'))
-    grammar=set(tokens("in into to within the my your its our their customer customer's account wallet في إلى الي داخل العميل حساب محفظة"))
+    """Match declared subject/head/goal roles, preserving original spans."""
+    frame=_argument_frames()
+    if any(spans(raw,w) for w in frame['nonfunding_objects']):return []
+    subjects=[p for w in frame['subjects'] for p in spans(raw,w)]
+    movements=[(a,b,h['goal_binding']) for h in frame['heads'] for a,b in spans(raw,h['surface'])]
+    balances=[p for w in frame['targets'] for p in spans(raw,w)]
+    auxiliary={word for phrase in frame['subject_modifiers'] for word in tokens(phrase)}
+    prepositions={word for phrase in frame['goal_prepositions'] for word in tokens(phrase)}
+    grammar=prepositions|{word for phrase in frame['goal_modifiers'] for word in tokens(phrase)}
     proof=[]
     for s,t in subjects:
-        for a,b in movements:
+        for a,b,binding in movements:
             if a<t or re.search(r'[.;!?؟؛,،]',raw[t:a]) or not set(tokens(raw[t:a]))<=auxiliary:continue
             for x,y in balances:
                 if x<b or re.search(r'[.;!?؟؛,،]',raw[b:x]):continue
                 between=tokens(raw[b:x])
-                if set(between)<=grammar and any(w in {'in','into','to','within','في','الي','داخل'} for w in between):
+                if set(between)<=grammar and (binding=='direct' or set(between)&prepositions):
                     proof.extend([(s,t),(a,b),(x,y)])
     return sorted(set(proof))
 

@@ -1,0 +1,21 @@
+{
+  "schema": "LANGUAGE_ARGUMENT_FRAMES_1",
+  "authority": "Linguistic argument structure only; no policy, services, facts or approvals.",
+  "funds_balance_destination": {
+    "subjects": ["deposit", "funding", "amount", "money", "funds", "إيداع", "ايداع", "المبلغ", "الفلوس", "التمويل"],
+    "heads": [
+      {"surface": "go", "goal_binding": "prepositional"},
+      {"surface": "flow", "goal_binding": "prepositional"},
+      {"surface": "enter", "goal_binding": "direct"},
+      {"surface": "يدخل", "goal_binding": "direct"},
+      {"surface": "يخش", "goal_binding": "direct"},
+      {"surface": "يضاف", "goal_binding": "prepositional"},
+      {"surface": "يتضاف", "goal_binding": "prepositional"}
+    ],
+    "targets": ["balance", "رصيد", "الرصيد"],
+    "nonfunding_objects": ["refund", "transaction", "transfer", "stock", "item", "استرداد", "تحويل", "مخزون", "منتج"],
+    "subject_modifiers": ["will", "would", "can", "does", "do", "be", "is", "are", "not", "never", "still", "the", "automatically", "تلقائيا"],
+    "goal_prepositions": ["in", "into", "to", "within", "في", "إلى", "داخل"],
+    "goal_modifiers": ["the", "my", "your", "its", "our", "their", "customer", "customer's", "account", "wallet", "العميل", "حساب", "محفظة"]
+  }
+}
