@@ -1,4 +1,4 @@
 __pycache__/
 *.pyc
-end_to_end/run_*/private_workspace/
+end_to_end/*/private_workspace/
 *.log

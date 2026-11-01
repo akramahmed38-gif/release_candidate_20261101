@@ -1,0 +1,625 @@
+{
+  "host": "FWPLUS-390",
+  "os": "Windows-11-10.0.26100-SP0",
+  "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+  "executable": "D:\\FawryChatbotPreparation\\Scripts\\python.exe",
+  "packages": {
+    "chromadb": {
+      "installed": false
+    },
+    "numpy": {
+      "installed": true,
+      "version": "2.3.2"
+    },
+    "requests": {
+      "installed": true,
+      "version": "2.32.5"
+    },
+    "fastapi": {
+      "installed": true,
+      "version": "0.115.0"
+    },
+    "uvicorn": {
+      "installed": true,
+      "version": "0.30.6"
+    },
+    "psutil": {
+      "installed": true,
+      "version": "7.0.0"
+    },
+    "playwright": {
+      "installed": true,
+      "version": "1.63.0"
+    }
+  },
+  "resources": {
+    "whole_workstation_ram_bytes": 16845541376,
+    "available_bytes": 2542825472,
+    "cpu_logical": 12,
+    "attributable_native_model_ram": "NOT MEASURED"
+  },
+  "source_identity": [
+    {
+      "path": "source\\candidate\\ACCEPTANCE_36.json",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\ACCEPTANCE_36.sha256",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\annotation_candidates.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\candidate.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\catalog.json",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\COVERAGE_UPGRADES.json",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\dialogue_scope.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\EMPLOYEE_QUESTIONS.json",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\entity_scope.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\evidence_contracts.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\FROZEN_BASELINE_REFERENCE.json",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\lifecycle_checks.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\linguistic_spans.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\observed_guard.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\planner.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\procedure_projection.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\question_coverage.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\registry.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\request_planner.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\response_binding.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\retrieval.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\reuse_backend.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\runtime_engine.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\run_catalog.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\scope_graph.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\semantic_frames.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\session_context.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\source_snapshot.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\fixture_data\\definition.json",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\engine.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\FINAL_REPORT.md",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\PACKAGE_PINS.json",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\PHASE1_BASELINE_PINS.json",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\PHASE1_FROZEN.zip",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\prepare_phase2.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\README.md",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\retrieval.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\run_multi_source_pilot.ps1",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\run_phase2.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\stage_package.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\test_cases.json",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\WORKFLOW_COMPATIBILITY_CHECKS.json",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\workflow_view.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\resources\\adapter.json",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\resources\\answer_scopes.json",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\resources\\channels.json",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\resources\\entity_disambiguation.json",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\resources\\entity_roles.json",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\resources\\features.json",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\resources\\intents.json",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\resources\\operators.json",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\resources\\recovery_features.json",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\resources\\role_qualified_candidates.jsonl",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\fixture_data\\definition.json",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\finalize_report.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\FINAL_REPORT.md",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\LOCAL_CORE_RESULTS.md",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\native_backend.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\native_support.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\pilot_engine.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\prepare_fixture.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\README.md",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\run_axis_source_view.ps1",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\run_pilot.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\test_cases.json",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\fixture_data\\fixture_definition.json",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\fixture_data\\source_files\\daily_brief\\axis_wallet_sales_guide.pdf",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\admission.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\analytics.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\answer_relevance.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\business_glossary.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\candidate_similarity.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\canonical_context.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\canonical_retrieval.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\canonical_runtime.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\canonical_store.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\citation_policy.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\config.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\content_catalog.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\content_index.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\content_preparation.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\content_runtime.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\content_state.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\content_sync.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\content_transfer.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\conversation_memory.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\documents_scope.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\document_structure.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\embedded_images.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\evidence_eligibility.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\evidence_selection.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\evidence_token_budget.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\extraction_repairs.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\follow_up_resolution.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\generation.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\index_metadata.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\ingestion.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\logging_utils.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\noop_telemetry.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\normalization.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\ocr.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\ocr_layout.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\passage_quality.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\pdf_layout.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\pdf_page_selection.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\presentation_names.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\profiling.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\query_language.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\query_understanding.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\question_lookup.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\reference_runtime.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\reference_validation.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\repair_overlay.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\reply_language.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\retrieval.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\reviewed_images.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\reviewed_regions.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\semantic_claims.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\sensitive_data.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\service.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\sidecar.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\slot_generation.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\smalltalk.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\source_answers.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\source_renderings.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\validation_language.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\vector_store.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\workflow_contract.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\phase1\\candidate\\chatbot\\__init__.py",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\native_results\\20261027_234148_976bc9dc\\CLAIM_AND_SLOT_REVIEW.json",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\native_results\\20261027_234148_976bc9dc\\INITIALIZATION.json",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\native_results\\20261027_234148_976bc9dc\\ORIGINAL_RECORDS_PRESERVATION.json",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\native_results\\20261027_234148_976bc9dc\\PERFORMANCE.json",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\native_results\\20261027_234148_976bc9dc\\PROGRESS.json",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\native_results\\20261027_234148_976bc9dc\\RESULTS.json",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\native_results\\20261027_234148_976bc9dc\\SUMMARY.json",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\fixture_data\\source_files\\daily_brief\\axis_wallet_sales_guide.pdf",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\fixture_data\\source_files\\KnowledgeBase\\Articles\\AZIMUT_ART.md",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\frozen_phase2\\fixture_data\\source_files\\KnowledgeBase\\Articles\\Wallets_ART.md",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\fixture_data\\source_files\\daily_brief\\axis_wallet_sales_guide.pdf",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\fixture_data\\source_files\\material\\Training_Material\\resource\\Wallets \u0645\u062d\u0627\u0641\u0638\\QNB Wallet\\Material\\1-Qnb Material.pdf",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\fixture_data\\source_files\\KnowledgeBase\\Articles\\7wala_bank_abozabii_ART.md",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\fixture_data\\source_files\\KnowledgeBase\\Articles\\AZIMUT_ART.md",
+      "matches_i046": true
+    },
+    {
+      "path": "source\\candidate\\fixture_data\\source_files\\KnowledgeBase\\Articles\\Wallets_ART.md",
+      "matches_i046": true
+    }
+  ],
+  "all_i046_candidate_bytes_match": true,
+  "native_server_execution": "BLOCKED_NOT_RUN",
+  "unc_is_not_server_execution": true,
+  "model_calls": 0,
+  "production_started": false,
+  "employee_access_authorized": false
+}

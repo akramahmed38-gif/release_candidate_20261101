@@ -1,0 +1,3065 @@
+{
+  "candidate_source_pins": {
+    "source/demo_app.py": "9aea46498f436974c5bfb76e0e6fd5080c8a67cb4452cdc77ec6720138776b9b",
+    "source/candidate/ACCEPTANCE_36.json": "3c9f770dc94cadaa350f0b249fc159407c40a6db1dfd5ee5fbfdf4140e368a4c",
+    "source/candidate/ACCEPTANCE_36.sha256": "410e87c6d10e799defabc58c91d5d8e375d3de0af3d6918aff877ec901522192",
+    "source/candidate/annotation_candidates.py": "9c96582169e032f03cb9785522b68c7cf0ebffe014784bce6dbdbaeb46d2f9c7",
+    "source/candidate/candidate.py": "600503056d38ddcd01afa6dd557857499f6eadd0d274f347b57f9283e7721171",
+    "source/candidate/catalog.json": "9f42a219a33283240f76f75156a8828f231d6f2e8678cfc04baafb7f81ec9a4d",
+    "source/candidate/COVERAGE_UPGRADES.json": "8cb829f87b9396cde1aee579a961feaa78e9733662a1ad18983d95f69efb3c70",
+    "source/candidate/dialogue_scope.py": "9c7eac1af219ba5baf87b673ac3d988a8edf4a0f3ae7fcbe2a714fd8700b46e7",
+    "source/candidate/EMPLOYEE_QUESTIONS.json": "4da51dcd7ba3b7990aaeb908102ba4b5b29a702ff27cdf63cce5898661bcf54f",
+    "source/candidate/entity_scope.py": "0bede0f5bf0560a45dd3daee42f46ca51c217621fc1bc85d430aa010ca06e66e",
+    "source/candidate/evidence_contracts.py": "318d088affde49db6378438f1c202db0801daaff1c714a44dda63cf95548e100",
+    "source/candidate/FROZEN_BASELINE_REFERENCE.json": "cf5a30ac8bf191dbfb9115a4103630268ad52d6fce54f8ffeea47655dbc51388",
+    "source/candidate/lifecycle_checks.py": "36f1417f00c2cfd53450840e0d89214e5221e44e409e91573a3d5424bffefd8f",
+    "source/candidate/linguistic_spans.py": "ff9caf2e0ed4fe828816df1287676cfd9b4d49c0cd5d0f496b53b574727df853",
+    "source/candidate/observed_guard.py": "f9dbee60225e30a5d6d1d20a03eb855801085af348dee8736a074b653f13a490",
+    "source/candidate/planner.py": "2e26ad77beb556388c8c0b09f936e29402e4ff8f3a205a3f8ee9406229bac010",
+    "source/candidate/procedure_projection.py": "fc5b1c4d043bac8584587647c297cd7f09fef663effb779d86eaf635699565fc",
+    "source/candidate/question_coverage.py": "fab51403bea77c99d59832ce74fe25be788e69da50d1ed93767a017b02f73cb6",
+    "source/candidate/registry.py": "41ad1912664c4de0c056e99c3d7df42411f749344a240ecd7cff383477ad97ca",
+    "source/candidate/request_planner.py": "c2ad61cbca3ad95c8793dd02924262cd51861dd7bd5b9a76f11585d9d5fa6aaa",
+    "source/candidate/response_binding.py": "7dbcde8c4ecf86a442a1c4c73e4a33fb0a1217b99bed4034bba9817bdb157321",
+    "source/candidate/retrieval.py": "41614d7c3a165624e78cad09060a9435e7ed819478710f1e10359caf39eb225d",
+    "source/candidate/reuse_backend.py": "fe48700f49555c4070df0b396239e9822dd0fb9fc5050a524258705671138f7c",
+    "source/candidate/runtime_engine.py": "9bc8ba24f9bf09cf6dc574d94a3856664c62de181e91fee95c131150d213ef54",
+    "source/candidate/run_catalog.py": "ba9612be3c7088ab0771fdd94a1d397250845a622a4af805c53902cebcb0c2e5",
+    "source/candidate/scope_graph.py": "28ad0c3f03e323844e79eabec74d35488e8ae6cafe43743da3668da6c85bf91d",
+    "source/candidate/semantic_frames.py": "0c232fab615e4e759d5548f2bd69b9d6aa04ee3979f137ccad9841ea3dbcb14f",
+    "source/candidate/session_context.py": "0573915d2498a19b6cb59e628cc4e9b2307680dedc9feedf113b9b372827dc53",
+    "source/candidate/source_snapshot.py": "429a6c0ffbab5ea97b032764fa5e603c4f825a6d338e76550fffec2ecc9c27ae",
+    "source/candidate/fixture_data/definition.json": "c382289e67fe1475a98afd7194b249494b45f3e6724532d640cec9b12f341238",
+    "source/candidate/frozen_phase2/engine.py": "4438f15da25d2627f59d853686e5354a4080a60f110a52230d33becc58274916",
+    "source/candidate/frozen_phase2/FINAL_REPORT.md": "e48eae581ed1f25477473b86f69a88dd3a41d55e37e8c77e89405c0988f71a44",
+    "source/candidate/frozen_phase2/PACKAGE_PINS.json": "151d119ba9043f228d49bc0049fd25536510450fde5b56974cd3a205aec97952",
+    "source/candidate/frozen_phase2/PHASE1_BASELINE_PINS.json": "e69c289e6aa290924b925fe096c37c910502732ec231441d886e30b797cd88cd",
+    "source/candidate/frozen_phase2/PHASE1_FROZEN.zip": "a40cb21d6e2c8a08686991232fb689d4424f6f1615a02c3dc0a4e816d05dc531",
+    "source/candidate/frozen_phase2/prepare_phase2.py": "3bdb49f8761329760f1a16f51c8db5bab5f6c4740d3bad20aff6ccb29baa4926",
+    "source/candidate/frozen_phase2/README.md": "f4e397bf1c2db6d7c144da4cd64336fc9785b262bb7fca92150631ea1a1bbe0f",
+    "source/candidate/frozen_phase2/retrieval.py": "6ef5eafa0b02c0113e3878d007859183a9e66ef424e0f997ccd2ed1e7ed2d9d5",
+    "source/candidate/frozen_phase2/run_multi_source_pilot.ps1": "3fe764995dcaea4dca8f7718ee06201146d5f631b1d48a2d4cde8ca5f594585a",
+    "source/candidate/frozen_phase2/run_phase2.py": "5f602a6468eff94fb8b3d173e42a758ad13f5da1bb91a7062bac9f7f532673c7",
+    "source/candidate/frozen_phase2/stage_package.py": "e1ecb8a3eb2dd5f2daef23192e8d10db1389bdefaff1563e7ddb60e37b878691",
+    "source/candidate/frozen_phase2/test_cases.json": "fb7e36ff9e4ffab830699258e8cbd53e3a65f0d300e4c8ac58f5c6bddd700bd5",
+    "source/candidate/frozen_phase2/WORKFLOW_COMPATIBILITY_CHECKS.json": "dcd78890e3250b5edd4f2da689d2516ff4594f9fbcf6eebc4eebc6a26d2889e5",
+    "source/candidate/frozen_phase2/workflow_view.py": "7551e2d92a43fa12ac1f3ba599d50be00b1b181b9302e19469055f021a254209",
+    "source/candidate/resources/adapter.json": "eae03be766ad5dd7597a122efe8ab71e492df7ac027a225609eb106dd5da7a67",
+    "source/candidate/resources/answer_scopes.json": "d9ea47007cce41f6e2c3f2520ecad93291fdaf89ce686f6837ab0564483b4dc4",
+    "source/candidate/resources/channels.json": "121f1b7679a46650077e2f0d0e47b401640047780c77b24431302087b45575b8",
+    "source/candidate/resources/entity_disambiguation.json": "02ab6e0258a472e17a3c3c7ef2f7c8553ebb7e75a55e150f43f8745a35171221",
+    "source/candidate/resources/entity_roles.json": "a32278e935e78bb7a7e11a86ba57e6cee0929edf516b9e2e1b498a73f06404cb",
+    "source/candidate/resources/features.json": "2715ecabe79ef6f2eb3814e5447b1283acf13353c5e87fd6082f63459dc964a5",
+    "source/candidate/resources/intents.json": "eeced8d416e293072f8e9e98b4b34bfb60320f8fcd6e84279bb7d633cf5b74cd",
+    "source/candidate/resources/operators.json": "7d4ca43c3233e37f0538bb8893bb4d234618cf9d9a5fb1cc312fca37b239c9ba",
+    "source/candidate/resources/recovery_features.json": "c69e5881e1939b8e66726d297ae47700ddeed7f7cc42e8fece927ba83352e9a9",
+    "source/candidate/resources/role_qualified_candidates.jsonl": "32e872d5c969549cea105a60d71cd621b037ec0d1816ac28dd307a6a3b5bc449",
+    "source/candidate/frozen_phase2/fixture_data/definition.json": "63f1e89c23c7846e0c06adca5c9a17aa1a2e41b85fafe6587ad2309eb0a8d856",
+    "source/candidate/frozen_phase2/phase1/finalize_report.py": "7c90bdb023192b68b451db2a67163b51b45bd0cda39eee4874b0cd22e6e44830",
+    "source/candidate/frozen_phase2/phase1/FINAL_REPORT.md": "7584b127dfa356b746fd674e68d9adc267d297c66099e757f39e2b4a01c7c75c",
+    "source/candidate/frozen_phase2/phase1/LOCAL_CORE_RESULTS.md": "65ad7c48cd163970c81f1a020502ab6ceb0278e73da23e9527aa5f3597e9aa16",
+    "source/candidate/frozen_phase2/phase1/native_backend.py": "67fa066fb63db6b047040639b7d7c0decc6a07fb1ee7e421e63c0183eb351bb0",
+    "source/candidate/frozen_phase2/phase1/native_support.py": "c554b5dfad4ed5f509c3f7af40d777c7b4e2c7428962f1e77009926becca358e",
+    "source/candidate/frozen_phase2/phase1/pilot_engine.py": "e3a58348ef57e10714c2b11a71a2e66e5689179bfb3247038c6084e335ef2ae7",
+    "source/candidate/frozen_phase2/phase1/prepare_fixture.py": "5ed78f22a5186c42cca4334a391807159e0a16f9287f62b826a15592b50dee77",
+    "source/candidate/frozen_phase2/phase1/README.md": "e582e7522d9ef3df7b8848f1ceb0f1610df023be2b27476204bf46e6c21a9914",
+    "source/candidate/frozen_phase2/phase1/run_axis_source_view.ps1": "3fd196ab931f9234efbfab284a05821a0e82173b830d494902b2c16bb7f259ce",
+    "source/candidate/frozen_phase2/phase1/run_pilot.py": "91bf1ce82beb8010d6c77a450d02d0d8fe8968db940f2dc5f27a77a298f7b6e4",
+    "source/candidate/frozen_phase2/phase1/test_cases.json": "96f877ec6a671fddd8415be0fc674fc41f444dceb4e3699482b609b8823ed176",
+    "source/candidate/frozen_phase2/phase1/fixture_data/fixture_definition.json": "163bf037fb33c4037d865e789fa5a9cb61690f0c3e36f961214183651bb081c4",
+    "source/candidate/frozen_phase2/phase1/fixture_data/source_files/daily_brief/axis_wallet_sales_guide.pdf": "198dffbc8ab1ce2887356e91fab9d241ea3f08c35216d2b32a1062e64439abce",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/admission.py": "e568319b50cfd96c7cffc469936cb7310a9ac38243f29d92429d31305215d405",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/analytics.py": "4bc5f306c67178ad7c85536592219252061b249be431f89f031ee128ae62255a",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/answer_relevance.py": "f1ea920ae295951403cc885d9f393ba3d87bd87d48c397e4702b27fe4fa42dfb",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/business_glossary.py": "88df37e5756a495262946ddcdc6a2c472851268a91982f5a7c7b6d9546588b68",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/candidate_similarity.py": "5b03894bddb85c7153e478ccc393997e6a6aa62eda5a484be2bb34ab06986b54",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/canonical_context.py": "1389f61c64d3d1dc24b03ebccf5c25f3ff8380b51831782e3ce6030d36457985",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/canonical_retrieval.py": "886dc65a8ca3c88d258ab4a07bdfc5fa1e48b6928618b3b29510ae945c24dde8",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/canonical_runtime.py": "8b22a06bffad3030990722fea4627f567aa9c20d18515b1eabeb966518c63f15",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/canonical_store.py": "dbbf0726d79eda8cdb528500f87071942496619c00e3bc9951a754df5531cf3d",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/citation_policy.py": "d8007bac361a00d99c948bb6514468c9fde715fde6dc9101936530f59615763a",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/config.py": "84d31219d546010a03f3998699507d35085052cabd3e8225ab3ee47c9e3a98c4",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/content_catalog.py": "7adc06cfd9a0ccc21e4bbc7a81a91d64d95520360ce721806a81667a26c0389c",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/content_index.py": "79f3d8ed2981151217403fd06f34c06a32abfffafba2bfd2942aae8f3486ecbc",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/content_preparation.py": "f8ef56b7b58160b75ea10ee955b5e8c1898cc8a5bcefe366fba790900bb82202",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/content_runtime.py": "8374b08cb5131719201aaac354eb053b24c7be67c3cd8bb61a8f9e0ad5fcc428",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/content_state.py": "ec60bf882e39594cc23d01a069dc8d5015e2404bbadde1d2effd8a6a4379ea7b",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/content_sync.py": "61d1bd26ba125f3347b774df00da1e09ec2702975f82c80c42728a821de6bed9",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/content_transfer.py": "43b2e0273003b08f09ca2fd325d34ab7271cbbbf5a02e37f3d4160c51864f750",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/conversation_memory.py": "776e6dbd96ae1f8043a1c1d4c57219b5d630f3e5a39ccd6d0f0cbc014c573134",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/documents_scope.py": "b8b9290a6afb475e24ee52fc8741b2e7015f2be62ee3de91c04ce7f0ef658607",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/document_structure.py": "073ccaa44a18724baed1b0c20e03a17596c030fc00f2e3bef5647c62922fba95",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/embedded_images.py": "26504f359908953edd4951151a084b163a673b00c35f7195f3d2e8b448d624dc",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/evidence_eligibility.py": "0b4c49cb8925464e233a20f8646d4d005f49cab8910997aa0031c76786605c77",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/evidence_selection.py": "14fbb4f9a289cc0fac51cdc28e6a4612556119239f7a937b7eff9c354bfeb4e3",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/evidence_token_budget.py": "977b792e8614c64ee1120d3040c7ec123821115e02b0c1d3779387163148dda1",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/extraction_repairs.py": "34ea7c77e5d28f2d1195215b5736ab564006101a459460859213d3d974a46f8f",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/follow_up_resolution.py": "3961262a276ce78a60f2f818697671955997898ab69a402569d139e896c6bfb0",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/generation.py": "4501abbe7343e8d227f995f8e325c04560cdeddb7f024aa6df87984e65df1d40",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/index_metadata.py": "15de8aa97d56517e3108f208773ad8192ae9ce458f7711928dbaea2946fed180",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/ingestion.py": "afa2039436133463e4ee2876f5fa206554951a0a2af00bf3ba29af65792887c7",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/logging_utils.py": "defda609652840f3a4b35c16724950426568ac8af116bcf22f55364757b7e115",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/noop_telemetry.py": "b2c4e154f54a9b500e9b93bbd4918c90922c3570c6e841e5eac367841a5aae50",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/normalization.py": "0fa75eea4cedd9239872319dc839703d68b6359414695323964f9c05f54b2c46",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/ocr.py": "65c5d0466ddcb58f98a77138cd0bcfd40afff8e9923e5e21920cfca944bd791a",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/ocr_layout.py": "46c5b3e60825f41d1a7bb4ae0897e2d0a6a90e93a4dcdeca3565e1b69a3e0668",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/passage_quality.py": "34ae845c0aa311d3a41dfb296b891e45cd829d69bc819100ade45addd50fbdf2",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/pdf_layout.py": "475467c883883748aeac78ef53f84f2e706df637fc0c6fec8e037f3c8470a1a2",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/pdf_page_selection.py": "807250a1abb7070e76e1e4e490183dad67bd19c2706126579e127b7411deb93a",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/presentation_names.py": "8f2e74d0686191e164f8c6ee1e9148d8376c65e2159f15feef9b457b66d88ff8",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/profiling.py": "d47d51729390dcd5231cbbaa2cec92e2c1b74cfb5097b1a467f469d5c79ac45b",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/query_language.py": "3eea8d7eb604be5df5a629a54a61fc094afeb7db4487615a9242deffdacc26c8",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/query_understanding.py": "f5ebb8e120633c6e6ebe3364eeb4ff11dd8caa681ba0a0416e0fed33242361de",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/question_lookup.py": "b220c8e7e09e9644e493c762e2c20346fffd23b17fc0ea541e47224232b7c69e",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/reference_runtime.py": "86035f062d084cf204e4de27aee54f615cc81434ba7e9790de3b74c8c0ccb9d7",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/reference_validation.py": "9eb736461247aaa7f89347bb8284113c9bd51b5d3e6f954b31b4e4d665ac2848",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/repair_overlay.py": "8c5634bb3e946fb36b6884a5f476c8747b4c10965448a1b8d22c6c87dd14bf66",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/reply_language.py": "fb9041c4892d8c713d6e72e6160a4f84dcb6b2ab0b754afc9426b8532309870a",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/retrieval.py": "aa5d28c571e1a969bf4b77ed2e3cba7461663683aa556f86cca51936cc9a0017",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/reviewed_images.py": "34bb98b20d8f4735d65a6d0ffe26e1f7fd20d847bd86ea2939f10c9e39ff156d",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/reviewed_regions.py": "d708739f7392d45d9a740ff78aeb793e2f7ea29e2e0a578d40e78dcd75cd4e91",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/semantic_claims.py": "3a5d248ce0870b3d31ca5272e1b57d899930456fcf6f7dc8bad0da8ca21dd40d",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/sensitive_data.py": "900541506260f17d76abc403930c653c069960652e3aa3fe3381258b2841c19e",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/service.py": "5bf68e5a252b98e9731e8edd975f8f916fa6d759ca7ac7e8d6607d01ab501af4",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/sidecar.py": "8fc757b03a116df31f16b2f2f8e9f85fb85677a194104bf191cb3f734a71e8cd",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/slot_generation.py": "5cbfe39cc1f92fcd02da9a3d6901e1c5fc256d47e58fb5b22e61a1c75839a45a",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/smalltalk.py": "84de53ce95bfa173b596dd9841497a324aa34d88cbbe0ca195b8d7f4a9265947",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/source_answers.py": "66f39d7ab776e2ce93ec684f1332901bb33b0ad93296fbae71fc67c789c9b1ee",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/source_renderings.py": "44ff3853bf800d8c8e9161619bc8e7206b21f8b2921f80165a8c0fff904bd750",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/validation_language.py": "728b777fc1d7a829a2cc6716b00e516e0f7aede3e0a2eff0e760be7ff5fb4617",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/vector_store.py": "0426f78e15d179bb6a1e5c7127c4089ea04cf320e889a474df24e49a4f30a63c",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/workflow_contract.py": "df98aa016136588a4a7fa884151a6771fdfc7d3e51972ba842675564a62862a7",
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/__init__.py": "3fafd4730ec846c240fe8e15f4e8761b676f57bccc7959d1e456503d6eade7f7",
+    "source/candidate/frozen_phase2/native_results/20261027_234148_976bc9dc/CLAIM_AND_SLOT_REVIEW.json": "e03e316373e2b4301df27296e96590839c25fa6dc6ff915ecea5f37bcdcbd284",
+    "source/candidate/frozen_phase2/native_results/20261027_234148_976bc9dc/INITIALIZATION.json": "13bc2206ff81fdb65918687ef26cf0811871ca6c486e8b0b0061a9d27d5cdbf0",
+    "source/candidate/frozen_phase2/native_results/20261027_234148_976bc9dc/ORIGINAL_RECORDS_PRESERVATION.json": "7903c1d3673fee726b7ea835840a0f7b5c8242bc1257a4583d26e7c9b0eca2fa",
+    "source/candidate/frozen_phase2/native_results/20261027_234148_976bc9dc/PERFORMANCE.json": "4139e9329d96eb0118da0addc941d89951852175b378108b870d4ca353d0cac1",
+    "source/candidate/frozen_phase2/native_results/20261027_234148_976bc9dc/PROGRESS.json": "fa437bcc5cef3d96e7f7c2e7d0a3071cf673181508a598d3cb439f6235bde846",
+    "source/candidate/frozen_phase2/native_results/20261027_234148_976bc9dc/RESULTS.json": "0eb643576f30852aa783eddb55ee5ac37432fccb955258da2523c084ca95b837",
+    "source/candidate/frozen_phase2/native_results/20261027_234148_976bc9dc/SUMMARY.json": "fa437bcc5cef3d96e7f7c2e7d0a3071cf673181508a598d3cb439f6235bde846",
+    "source/candidate/frozen_phase2/fixture_data/source_files/daily_brief/axis_wallet_sales_guide.pdf": "198dffbc8ab1ce2887356e91fab9d241ea3f08c35216d2b32a1062e64439abce",
+    "source/candidate/frozen_phase2/fixture_data/source_files/KnowledgeBase/Articles/AZIMUT_ART.md": "5185152563e646a26818199393a0c780e177121191048fbe3a7845bc3cf187cf",
+    "source/candidate/frozen_phase2/fixture_data/source_files/KnowledgeBase/Articles/Wallets_ART.md": "5e5ffd50f6edd59331690c626731fcb4496a916513174538c871cc606c5d62bb",
+    "source/candidate/fixture_data/source_files/daily_brief/axis_wallet_sales_guide.pdf": "198dffbc8ab1ce2887356e91fab9d241ea3f08c35216d2b32a1062e64439abce",
+    "source/candidate/fixture_data/source_files/material/Training_Material/resource/Wallets محافظ/QNB Wallet/Material/1-Qnb Material.pdf": "767685d7f1a59e0b1d730613dfef5a53b0ce8e8eb6bb6ad064cb94833e7ef61e",
+    "source/candidate/fixture_data/source_files/KnowledgeBase/Articles/7wala_bank_abozabii_ART.md": "3c3ed10d91b5820d3b5d55aaf37f4f29425449c479b989b72c30163d4ccae090",
+    "source/candidate/fixture_data/source_files/KnowledgeBase/Articles/AZIMUT_ART.md": "5185152563e646a26818199393a0c780e177121191048fbe3a7845bc3cf187cf",
+    "source/candidate/fixture_data/source_files/KnowledgeBase/Articles/Wallets_ART.md": "5e5ffd50f6edd59331690c626731fcb4496a916513174538c871cc606c5d62bb"
+  },
+  "historical_candidate": "8e2faa3",
+  "release_commit": "cc481d3a2baaa32c7e010c725abd58b94a08e923",
+  "startup_ms": 822.6039999999557,
+  "checks": [
+    {
+      "name": "browser_page_has_correct_scope",
+      "passed": true
+    },
+    {
+      "name": "javascript_served",
+      "passed": true
+    },
+    {
+      "name": "unknown_route_404",
+      "passed": true
+    },
+    {
+      "name": "unauthenticated_ask_denied",
+      "passed": true
+    },
+    {
+      "name": "wrong_token_denied",
+      "passed": true
+    },
+    {
+      "name": "developer_login",
+      "passed": true
+    },
+    {
+      "name": "developer_login",
+      "passed": true
+    },
+    {
+      "name": "distinct_server_owned_conversations",
+      "passed": true
+    },
+    {
+      "name": "cross_session_conversation_rejected",
+      "passed": true
+    },
+    {
+      "name": "cross_origin_rejected",
+      "passed": true
+    },
+    {
+      "name": "invalid_question_type_rejected",
+      "passed": true
+    },
+    {
+      "name": "actual_source_bound_answer",
+      "passed": true
+    },
+    {
+      "name": "test_only_approval_boundary",
+      "passed": true
+    },
+    {
+      "name": "same_session_followup",
+      "passed": false
+    },
+    {
+      "name": "new_session_does_not_inherit_service",
+      "passed": true
+    },
+    {
+      "name": "missing_evidence_not_complete",
+      "passed": true
+    },
+    {
+      "name": "logout_revokes_session",
+      "passed": true
+    },
+    {
+      "name": "logs_exclude_questions_tokens_and_cookies",
+      "passed": true
+    }
+  ],
+  "all_passed": false,
+  "source_unchanged": true,
+  "actual_http_responses": [
+    {
+      "path": "/",
+      "http_status": 200,
+      "http_ms": 3.134399999908055,
+      "response": "<!doctype html><html lang=\"en\"><meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width\"><title>Fawry isolated developer demo</title>\n<h1>Fawry isolated developer demo</h1>\n<p>UNAPPROVED EVIDENCE TEST ONLY. Not official policy. No employee pilot access.</p>\n<p>Local Core retrieval only. Native BGE/Chroma and Qwen have NOT been validated here.</p>\n<label>Developer access token <input id=\"token\" type=\"password\" autocomplete=\"off\"></label>\n<button id=\"connect\">Connect</button><button id=\"fresh\">New conversation</button>\n<label>Question <textarea id=\"question\" rows=\"4\" cols=\"65\" dir=\"auto\"></textarea></label>\n<button id=\"ask\">Ask test evidence</button><pre id=\"answer\" dir=\"auto\"></pre>\n<script src=\"/app.js\"></script></html>"
+    },
+    {
+      "path": "/app.js",
+      "http_status": 200,
+      "http_ms": 2.8582000004462316,
+      "response": "let conversation=null;\nasync function call(path,body){const r=await fetch(path,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});const d=await r.json();if(!r.ok)throw Error(d.error);return d;}\nasync function fresh(){const d=await call('/conversations',{});conversation=d.conversation_id;document.getElementById('answer').textContent='New isolated conversation';}\ndocument.getElementById('connect').onclick=async()=>{try{await call('/session',{token:document.getElementById('token').value});document.getElementById('token').value='';await fresh();}catch(e){document.getElementById('answer').textContent=e.message;}};\ndocument.getElementById('fresh').onclick=()=>fresh().catch(e=>document.getElementById('answer').textContent=e.message);\ndocument.getElementById('ask').onclick=async()=>{try{if(!conversation)throw Error('Connect first');const d=await call('/ask',{question:document.getElementById('question').value,conversation_id:conversation});document.getElementById('answer').textContent=d.answer+'\\n\\n'+JSON.stringify({status:d.answer_status,citations:d.citations,timing:d.demo_http_handler_ms},null,2);}catch(e){document.getElementById('answer').textContent=e.message;}};"
+    },
+    {
+      "path": "/unknown",
+      "http_status": 404,
+      "http_ms": 4.16990000030637,
+      "response": {
+        "error": "not_found"
+      }
+    },
+    {
+      "path": "/ask",
+      "http_status": 401,
+      "http_ms": 6.489200000032724,
+      "response": {
+        "error": "unauthorized"
+      }
+    },
+    {
+      "path": "/session",
+      "http_status": 401,
+      "http_ms": 6.916499999533698,
+      "response": {
+        "error": "unauthorized"
+      }
+    },
+    {
+      "path": "/session",
+      "http_status": 200,
+      "http_ms": 7.30070000008709,
+      "response": {
+        "authenticated": true,
+        "employee_access": false
+      }
+    },
+    {
+      "path": "/session",
+      "http_status": 200,
+      "http_ms": 4.848200000196812,
+      "response": {
+        "authenticated": true,
+        "employee_access": false
+      }
+    },
+    {
+      "path": "/conversations",
+      "http_status": 200,
+      "http_ms": 18.91200000045501,
+      "response": {
+        "conversation_id": "uObuLZKIdO-9OcUnfTcMEjhrqtz_WXx0"
+      }
+    },
+    {
+      "path": "/conversations",
+      "http_status": 200,
+      "http_ms": 16.213500000048953,
+      "response": {
+        "conversation_id": "pFrBKDv9HYgEENHt-3az2u5lTKrQKsD7"
+      }
+    },
+    {
+      "path": "/ask",
+      "http_status": 403,
+      "http_ms": 3.6694999998871936,
+      "response": {
+        "error": "conversation_not_owned"
+      }
+    },
+    {
+      "path": "/conversations",
+      "http_status": 403,
+      "http_ms": 4.267199999958393,
+      "response": {
+        "error": "origin_rejected"
+      }
+    },
+    {
+      "path": "/ask",
+      "http_status": 400,
+      "http_ms": 2.2527000000991393,
+      "response": {
+        "error": "invalid_request"
+      }
+    },
+    {
+      "path": "/ask",
+      "http_status": 200,
+      "http_ms": 787.8114000004643,
+      "response": {
+        "fixture_only": true,
+        "approvals_pending": true,
+        "normal_runtime_eligible": false,
+        "type": "answer",
+        "complete": true,
+        "supported_fact_ids": [
+          "F0010"
+        ],
+        "slots": [
+          {
+            "service_id": "axis_pay",
+            "topic": "opening_fee",
+            "required_fact_ids": [
+              "F0010"
+            ],
+            "supported_fact_ids": [
+              "F0010"
+            ],
+            "complete": true,
+            "gap_reasons": [],
+            "retrieval": {
+              "bm25_ms": 0.24540000049455557,
+              "bm25_scores": {
+                "F0010": 7.665682869012912,
+                "F0011": 3.207045029998845,
+                "F0012": 2.3481623516273133,
+                "F0073": 1.5259198511010597,
+                "F0037": 0.46079267030673016,
+                "F0038": 0.448402598505909,
+                "F0039": 0.0,
+                "F0040": 0.0,
+                "F0041": 0.448402598505909,
+                "F0042": 0.2817396857868986,
+                "F0070": 1.4938516822412613,
+                "F0071": 0.34604983145564716,
+                "F0072": 0.0,
+                "F0076": 0.33901493652770076,
+                "F0001": 2.7777874091854566,
+                "F0002": 2.7775655614723944,
+                "F0013": 3.6719143699814225,
+                "F0014": 2.618115322708556,
+                "F0015": 2.7777874091854566,
+                "F0018": 2.343490199307407,
+                "F0036": 1.790202876858769
+              },
+              "backend": "CORE_ONLY_SCOPED_EXISTING_BM25",
+              "query_embedding_calls": 0,
+              "generation_calls": 0
+            }
+          }
+        ],
+        "citations": [
+          {
+            "fact_id": "F0010",
+            "service_id": "axis_pay",
+            "source_document": "daily_brief/axis_wallet_sales_guide.pdf",
+            "source_sha256": "198dffbc8ab1ce2887356e91fab9d241ea3f08c35216d2b32a1062e64439abce",
+            "evidence_unit_id": "source-verified-axis-guide-activation-198dffbc8ab1",
+            "unit_text_sha256": "779db86d8e0f6b628bf7a5a5da67273da01490af86a8137ec6cabcb0a525774b",
+            "locator": {
+              "type": "page",
+              "page": "1",
+              "line_start": null,
+              "line_end": null,
+              "source_segments": null
+            },
+            "test_only": true
+          }
+        ],
+        "answer": "UNAPPROVED TEST FIXTURE — approvals pending.\n\nAXIS Pay / AXIS Wallet:\nOpening the wallet has no subscription fee: 0 EGP.\n\nOnly the selected source references are covered; this is not a complete eligibility checklist or end-to-end service procedure.",
+        "reply_language": "en",
+        "interpretation": {
+          "services": [
+            "axis_pay"
+          ],
+          "topics": [
+            "opening_fee"
+          ],
+          "slots": [
+            [
+              "axis_pay",
+              "opening_fee"
+            ]
+          ],
+          "slot_conditions": {
+            "axis_pay|opening_fee": []
+          },
+          "slot_periods": {
+            "axis_pay|opening_fee": null
+          },
+          "conditions": [],
+          "foreign": [],
+          "ambiguous": [],
+          "context_used": false,
+          "language": "en",
+          "request_contract": {
+            "contract_revision": "scope_graph_2",
+            "raw_question": "What is the AXIS opening fee?",
+            "requests": [
+              {
+                "request_id": "R1",
+                "service_id": "axis_pay",
+                "intent_id": "opening_fee",
+                "topic": "opening_fee",
+                "role": "requested",
+                "channels": [],
+                "context_channel_mentions": [],
+                "conditions": [],
+                "requested_facets": [],
+                "period": null,
+                "procedure_scope": null,
+                "evidence_spans": [
+                  {
+                    "start": 17,
+                    "end": 24,
+                    "text": "opening",
+                    "role": "requested_predicate"
+                  }
+                ],
+                "clause_span": {
+                  "start": 0,
+                  "end": 28,
+                  "text": "What is the AXIS opening fee",
+                  "role": "requested"
+                },
+                "commit_basis": "current_clause_predicate_components",
+                "support_features": [
+                  "opening"
+                ],
+                "antecedent_turn": null,
+                "antecedent_clause": null,
+                "hypothetical": false,
+                "scenario_antecedents": [],
+                "mode": "information",
+                "condition_query": false,
+                "scope_group": 0,
+                "references": []
+              }
+            ],
+            "excluded_requests": [],
+            "context_mentions": [],
+            "hypothetical_mentions": [],
+            "user_claims": [],
+            "actor_frames": [],
+            "obligations": [],
+            "references": [],
+            "alternatives": [],
+            "relations": [],
+            "graph_edges": [],
+            "unresolved_spans": [],
+            "decision": "interpret_then_retrieve",
+            "turn_id": "1",
+            "trace": {
+              "comparison_groups": [],
+              "considered": [
+                {
+                  "record_id": "G140_en:excluded:@excluded_requests:0001",
+                  "role": "excluded",
+                  "intent_id": "initial_funding",
+                  "score": 13.9108970255337,
+                  "score_kind": "bm25_candidate_similarity_not_probability",
+                  "body_sha256": "2f6177f90ceea3e13ef31250ac4a01690ef4e741219bb1e8e32188f310b13a1d",
+                  "annotation_provenance": {
+                    "annotation_slot": 0,
+                    "annotation_version": "1.1",
+                    "case_id": "G140_en",
+                    "collection": "excluded_requests",
+                    "family_id": "G140",
+                    "generated_slot_id": true,
+                    "language": "en",
+                    "parent_request_id": null,
+                    "source_annotation_sha256": "216b39f9e81f03d134faaeaaf49e4c7ba3c5872d3abb08cbf0e8f221bb803f8d",
+                    "source_example_sha256": "61a80bac3047a3c23d57260765139648d3e4417465c8bf4967d364de1a0bbee1",
+                    "source_request_id": null
+                  },
+                  "candidate_only": true,
+                  "committed": false,
+                  "business_evidence": false,
+                  "runtime_fact_eligible": false,
+                  "source_scope_binding_allowed": false,
+                  "clause_span": {
+                    "start": 0,
+                    "end": 28,
+                    "text": "What is the AXIS opening fee",
+                    "role": "candidate"
+                  }
+                },
+                {
+                  "record_id": "G140_en:requested:R1",
+                  "role": "requested",
+                  "intent_id": "cash_float",
+                  "score": 13.9108970255337,
+                  "score_kind": "bm25_candidate_similarity_not_probability",
+                  "body_sha256": "27f6b24277b77d5d23f2475e49015710838b01b758b9ec30eef0ad219ce1e54b",
+                  "annotation_provenance": {
+                    "annotation_slot": 0,
+                    "annotation_version": "1.1",
+                    "case_id": "G140_en",
+                    "collection": "requests",
+                    "family_id": "G140",
+                    "generated_slot_id": false,
+                    "language": "en",
+                    "parent_request_id": null,
+                    "source_annotation_sha256": "b3f423d8067deae6d74c4d0df0d58d42f06563532f2f40ea94a27b083441bc2b",
+                    "source_example_sha256": "61a80bac3047a3c23d57260765139648d3e4417465c8bf4967d364de1a0bbee1",
+                    "source_request_id": "R1"
+                  },
+                  "candidate_only": true,
+                  "committed": false,
+                  "business_evidence": false,
+                  "runtime_fact_eligible": false,
+                  "source_scope_binding_allowed": false,
+                  "clause_span": {
+                    "start": 0,
+                    "end": 28,
+                    "text": "What is the AXIS opening fee",
+                    "role": "candidate"
+                  }
+                },
+                {
+                  "record_id": "G137_en:excluded:@excluded_requests:0001",
+                  "role": "excluded",
+                  "intent_id": "withdrawal_tariff",
+                  "score": 11.957750799495432,
+                  "score_kind": "bm25_candidate_similarity_not_probability",
+                  "body_sha256": "8f95481bc9062555b795294512a3aede340cd6bc797d4066472616508dd645d2",
+                  "annotation_provenance": {
+                    "annotation_slot": 0,
+                    "annotation_version": "1.1",
+                    "case_id": "G137_en",
+                    "collection": "excluded_requests",
+                    "family_id": "G137",
+                    "generated_slot_id": true,
+                    "language": "en",
+                    "parent_request_id": null,
+                    "source_annotation_sha256": "69dcd2df80689c5fd7f2c00ec4ee8e0332cb3fbdeab15db4093c453c738e0fc0",
+                    "source_example_sha256": "697f74242a3dfaab4a6eda93959fba263e562b1d70fbb578f72a55824cb0c08b",
+                    "source_request_id": null
+                  },
+                  "candidate_only": true,
+                  "committed": false,
+                  "business_evidence": false,
+                  "runtime_fact_eligible": false,
+                  "source_scope_binding_allowed": false,
+                  "clause_span": {
+                    "start": 0,
+                    "end": 28,
+                    "text": "What is the AXIS opening fee",
+                    "role": "candidate"
+                  }
+                }
+              ],
+              "committed_count": 1,
+              "excluded_count": 0,
+              "example_scope_imported": false,
+              "entity_name_spans_protected": [
+                {
+                  "service_id": "axis_pay",
+                  "start": 12,
+                  "end": 16,
+                  "text": "AXIS",
+                  "role": "service",
+                  "entity_role": "service",
+                  "match_basis": "catalog_alias"
+                }
+              ],
+              "whole_question_span_is_entailment": false,
+              "role_before_ellipsis": true,
+              "prior_context": {},
+              "discourse_normalization": [],
+              "considered_operators": [],
+              "rejected_operator_candidates": []
+            }
+          },
+          "planning": "role-first clause scope graph; current spans and typed antecedents only"
+        },
+        "timings_ms": {
+          "interpretation_ms": 670.3345000005356,
+          "source_verification_ms": 0.5965000000287546,
+          "retrieval_ms": 0.25160000041069,
+          "fact_selection_ms": 0.28639999982260633,
+          "validation_and_assembly_ms": 0.14490000012301607,
+          "engine_total_ms": 1.3066000001344946,
+          "cached_intent_lookup_ms": 0.001600000359758269,
+          "evidence_contract_ms": 0.24750000011408702,
+          "question_coverage_ms": 108.33949999960168,
+          "admission_wait_ms": 0.0015000005078036338,
+          "dependency_scope_ms": 0.3130000004603062,
+          "request_setup_ms": 0.783899999987625,
+          "pre_emit_verification_ms": 2.1016999999119435,
+          "response_metadata_ms": 0.01880000036180718,
+          "cleanup_ms": 0.002200000380980782,
+          "engine_wall_ms": 783.4744000001592,
+          "engine_unattributed_overhead_ms": 0.05239999791228911
+        },
+        "source_cache": {
+          "cache_hits": 0,
+          "files_hashed": 1,
+          "policy": "verify fixture originals on every request",
+          "request_snapshot_pinned": true,
+          "eligibility_rechecked_before_emission": true
+        },
+        "generation_calls": 0,
+        "translation_calls": 0,
+        "request_contract": {
+          "contract_revision": "scope_graph_2",
+          "raw_question": "What is the AXIS opening fee?",
+          "requests": [
+            {
+              "request_id": "R1",
+              "service_id": "axis_pay",
+              "intent_id": "opening_fee",
+              "topic": "opening_fee",
+              "role": "requested",
+              "channels": [],
+              "context_channel_mentions": [],
+              "conditions": [],
+              "requested_facets": [],
+              "period": null,
+              "procedure_scope": null,
+              "evidence_spans": [
+                {
+                  "start": 17,
+                  "end": 24,
+                  "text": "opening",
+                  "role": "requested_predicate"
+                }
+              ],
+              "clause_span": {
+                "start": 0,
+                "end": 28,
+                "text": "What is the AXIS opening fee",
+                "role": "requested"
+              },
+              "commit_basis": "current_clause_predicate_components",
+              "support_features": [
+                "opening"
+              ],
+              "antecedent_turn": null,
+              "antecedent_clause": null,
+              "hypothetical": false,
+              "scenario_antecedents": [],
+              "mode": "information",
+              "condition_query": false,
+              "scope_group": 0,
+              "references": []
+            }
+          ],
+          "excluded_requests": [],
+          "context_mentions": [],
+          "hypothetical_mentions": [],
+          "user_claims": [],
+          "actor_frames": [],
+          "obligations": [],
+          "references": [],
+          "alternatives": [],
+          "relations": [],
+          "graph_edges": [],
+          "unresolved_spans": [],
+          "decision": "interpret_then_retrieve",
+          "turn_id": "1",
+          "trace": {
+            "comparison_groups": [],
+            "considered": [
+              {
+                "record_id": "G140_en:excluded:@excluded_requests:0001",
+                "role": "excluded",
+                "intent_id": "initial_funding",
+                "score": 13.9108970255337,
+                "score_kind": "bm25_candidate_similarity_not_probability",
+                "body_sha256": "2f6177f90ceea3e13ef31250ac4a01690ef4e741219bb1e8e32188f310b13a1d",
+                "annotation_provenance": {
+                  "annotation_slot": 0,
+                  "annotation_version": "1.1",
+                  "case_id": "G140_en",
+                  "collection": "excluded_requests",
+                  "family_id": "G140",
+                  "generated_slot_id": true,
+                  "language": "en",
+                  "parent_request_id": null,
+                  "source_annotation_sha256": "216b39f9e81f03d134faaeaaf49e4c7ba3c5872d3abb08cbf0e8f221bb803f8d",
+                  "source_example_sha256": "61a80bac3047a3c23d57260765139648d3e4417465c8bf4967d364de1a0bbee1",
+                  "source_request_id": null
+                },
+                "candidate_only": true,
+                "committed": false,
+                "business_evidence": false,
+                "runtime_fact_eligible": false,
+                "source_scope_binding_allowed": false,
+                "clause_span": {
+                  "start": 0,
+                  "end": 28,
+                  "text": "What is the AXIS opening fee",
+                  "role": "candidate"
+                }
+              },
+              {
+                "record_id": "G140_en:requested:R1",
+                "role": "requested",
+                "intent_id": "cash_float",
+                "score": 13.9108970255337,
+                "score_kind": "bm25_candidate_similarity_not_probability",
+                "body_sha256": "27f6b24277b77d5d23f2475e49015710838b01b758b9ec30eef0ad219ce1e54b",
+                "annotation_provenance": {
+                  "annotation_slot": 0,
+                  "annotation_version": "1.1",
+                  "case_id": "G140_en",
+                  "collection": "requests",
+                  "family_id": "G140",
+                  "generated_slot_id": false,
+                  "language": "en",
+                  "parent_request_id": null,
+                  "source_annotation_sha256": "b3f423d8067deae6d74c4d0df0d58d42f06563532f2f40ea94a27b083441bc2b",
+                  "source_example_sha256": "61a80bac3047a3c23d57260765139648d3e4417465c8bf4967d364de1a0bbee1",
+                  "source_request_id": "R1"
+                },
+                "candidate_only": true,
+                "committed": false,
+                "business_evidence": false,
+                "runtime_fact_eligible": false,
+                "source_scope_binding_allowed": false,
+                "clause_span": {
+                  "start": 0,
+                  "end": 28,
+                  "text": "What is the AXIS opening fee",
+                  "role": "candidate"
+                }
+              },
+              {
+                "record_id": "G137_en:excluded:@excluded_requests:0001",
+                "role": "excluded",
+                "intent_id": "withdrawal_tariff",
+                "score": 11.957750799495432,
+                "score_kind": "bm25_candidate_similarity_not_probability",
+                "body_sha256": "8f95481bc9062555b795294512a3aede340cd6bc797d4066472616508dd645d2",
+                "annotation_provenance": {
+                  "annotation_slot": 0,
+                  "annotation_version": "1.1",
+                  "case_id": "G137_en",
+                  "collection": "excluded_requests",
+                  "family_id": "G137",
+                  "generated_slot_id": true,
+                  "language": "en",
+                  "parent_request_id": null,
+                  "source_annotation_sha256": "69dcd2df80689c5fd7f2c00ec4ee8e0332cb3fbdeab15db4093c453c738e0fc0",
+                  "source_example_sha256": "697f74242a3dfaab4a6eda93959fba263e562b1d70fbb578f72a55824cb0c08b",
+                  "source_request_id": null
+                },
+                "candidate_only": true,
+                "committed": false,
+                "business_evidence": false,
+                "runtime_fact_eligible": false,
+                "source_scope_binding_allowed": false,
+                "clause_span": {
+                  "start": 0,
+                  "end": 28,
+                  "text": "What is the AXIS opening fee",
+                  "role": "candidate"
+                }
+              }
+            ],
+            "committed_count": 1,
+            "excluded_count": 0,
+            "example_scope_imported": false,
+            "entity_name_spans_protected": [
+              {
+                "service_id": "axis_pay",
+                "start": 12,
+                "end": 16,
+                "text": "AXIS",
+                "role": "service",
+                "entity_role": "service",
+                "match_basis": "catalog_alias"
+              }
+            ],
+            "whole_question_span_is_entailment": false,
+            "role_before_ellipsis": true,
+            "prior_context": {},
+            "discourse_normalization": [],
+            "considered_operators": [],
+            "rejected_operator_candidates": []
+          }
+        },
+        "evidence_contract": {
+          "contract_version": "EVIDENCE_CONTRACTS_1",
+          "request_reviews": [
+            {
+              "request_id": "R1",
+              "required_fact_ids": [
+                "F0010"
+              ],
+              "eligible_fact_ids": [
+                "F0010"
+              ],
+              "gaps": [],
+              "conflicts": [],
+              "contract_version": "EVIDENCE_CONTRACTS_1",
+              "eligibility_kind": "source_scope_only_view_approval_required_separately"
+            }
+          ],
+          "required_fact_ids": [
+            "F0010"
+          ],
+          "eligible_fact_ids": [
+            "F0010"
+          ],
+          "missing_fact_ids": [],
+          "unrelated_fact_ids": [],
+          "scope_violations": [],
+          "citation_violations": [],
+          "gaps": [],
+          "conflicts": [],
+          "unapproved_view_fact_ids": [],
+          "complete": true,
+          "semantic_independence_claimed": false,
+          "source_freshness_checker_required": true
+        },
+        "request_selections": {
+          "R1": {
+            "required_fact_ids": [
+              "F0010"
+            ],
+            "eligible_fact_ids": [
+              "F0010"
+            ],
+            "gaps": [],
+            "conflicts": [],
+            "contract_version": "EVIDENCE_CONTRACTS_1",
+            "eligibility_kind": "source_scope_only_view_approval_required_separately"
+          }
+        },
+        "question_coverage": {
+          "complete_eligible": true,
+          "missing_demands": [],
+          "excluded_fact_ids": [],
+          "unrelated_fact_ids": [],
+          "issues": [],
+          "raw_demands": [
+            {
+              "request_id": "Q1",
+              "service_id": "axis_pay",
+              "intent_id": "opening_fee",
+              "topic": "opening_fee",
+              "channels": [],
+              "conditions": [],
+              "period": null,
+              "procedure_scope": null,
+              "role": "requested",
+              "requested_facets": [],
+              "group": 0,
+              "evidence_spans": [
+                {
+                  "start": 17,
+                  "end": 24,
+                  "text": "opening",
+                  "role": "requested_predicate"
+                },
+                {
+                  "start": 25,
+                  "end": 28,
+                  "text": "fee",
+                  "role": "requested_predicate"
+                }
+              ],
+              "clause_span": {
+                "start": 0,
+                "end": 28,
+                "text": "What is the AXIS opening fee",
+                "role": "requested_predicate"
+              },
+              "antecedent": null,
+              "required_fact_ids": [
+                "F0010"
+              ],
+              "eligible_fact_ids": [
+                "F0010"
+              ]
+            }
+          ],
+          "decision": "complete",
+          "required_fact_ids": [
+            "F0010"
+          ],
+          "conflicts": [],
+          "raw_quantity_modifiers": [],
+          "raw_context_only": [],
+          "raw_structural_modifiers": [],
+          "raw_attribute_modifiers": [],
+          "raw_record_references": [],
+          "unsupported_named_subjects": [],
+          "independent_fulfillment": {
+            "verified": true,
+            "reason": "all_raw_demands_exactly_source_bound",
+            "mappings": [
+              {
+                "request_id": "Q1",
+                "service_id": "axis_pay",
+                "intent_id": "opening_fee",
+                "topic": "opening_fee",
+                "channels": [],
+                "required_fact_ids": [
+                  "F0010"
+                ]
+              }
+            ]
+          },
+          "fulfillment_convergence_applied": false,
+          "semantic_independence_claimed": false,
+          "independence_scope": "Separate original-clause demand enumeration; does not read planner requests or use its predicate function. Shared lexical resources can still omit unfamiliar meaning.",
+          "source_freshness_and_view_approval_required_separately": true
+        },
+        "answer_status": "complete",
+        "request_generation_sha256": "258563e8de6e74a3549d9f2cbbf2ff89c702911627a66dc2ed94d08691d1f22f",
+        "work_counters": {
+          "actual_embedding_calls": 0,
+          "mode": "core_without_native_proof"
+        },
+        "retrieval_breakdown_ms": {
+          "resource_wait_ms": 0,
+          "query_embedding_ms": 0,
+          "chroma_ms": 0,
+          "bm25_ms": 0.24540000049455557,
+          "retrieval_key_ranking_and_overhead_ms": 0.006199999916134402
+        },
+        "resolution_status": "complete_scoped_answer",
+        "clarification_needed": false,
+        "demo_http_handler_ms": 783.5854999993899
+      }
+    },
+    {
+      "path": "/ask",
+      "http_status": 200,
+      "http_ms": 1054.9410999992688,
+      "response": {
+        "fixture_only": true,
+        "approvals_pending": true,
+        "normal_runtime_eligible": false,
+        "type": "answer",
+        "complete": true,
+        "supported_fact_ids": [
+          "F0011",
+          "F0012"
+        ],
+        "slots": [
+          {
+            "service_id": "axis_pay",
+            "topic": "initial_deposit",
+            "required_fact_ids": [
+              "F0011",
+              "F0012"
+            ],
+            "supported_fact_ids": [
+              "F0011",
+              "F0012"
+            ],
+            "complete": true,
+            "gap_reasons": [],
+            "retrieval": {
+              "bm25_ms": 0.6561000000147033,
+              "bm25_scores": {
+                "F0010": 2.343490199307407,
+                "F0011": 9.101326763437928,
+                "F0012": 6.969242661602356,
+                "F0073": 6.48809923492312,
+                "F0037": 0.0,
+                "F0038": 0.0,
+                "F0039": 0.0,
+                "F0040": 0.0,
+                "F0041": 0.0,
+                "F0042": 0.0,
+                "F0070": 1.4938516822412613,
+                "F0071": 0.0,
+                "F0072": 0.0,
+                "F0076": 2.105277561940136,
+                "F0001": 6.464796754709711,
+                "F0002": 7.362883183699155,
+                "F0013": 3.369755241911435,
+                "F0014": 2.298587558627246,
+                "F0015": 2.4387724726577558,
+                "F0018": 2.343490199307407,
+                "F0036": 1.4291694444534957
+              },
+              "backend": "CORE_ONLY_SCOPED_EXISTING_BM25",
+              "query_embedding_calls": 0,
+              "generation_calls": 0
+            }
+          }
+        ],
+        "citations": [
+          {
+            "fact_id": "F0011",
+            "service_id": "axis_pay",
+            "source_document": "daily_brief/axis_wallet_sales_guide.pdf",
+            "source_sha256": "198dffbc8ab1ce2887356e91fab9d241ea3f08c35216d2b32a1062e64439abce",
+            "evidence_unit_id": "source-verified-axis-guide-activation-198dffbc8ab1",
+            "unit_text_sha256": "779db86d8e0f6b628bf7a5a5da67273da01490af86a8137ec6cabcb0a525774b",
+            "locator": {
+              "type": "page",
+              "page": "1",
+              "line_start": null,
+              "line_end": null,
+              "source_segments": null
+            },
+            "test_only": true
+          },
+          {
+            "fact_id": "F0012",
+            "service_id": "axis_pay",
+            "source_document": "daily_brief/axis_wallet_sales_guide.pdf",
+            "source_sha256": "198dffbc8ab1ce2887356e91fab9d241ea3f08c35216d2b32a1062e64439abce",
+            "evidence_unit_id": "source-verified-axis-guide-activation-198dffbc8ab1",
+            "unit_text_sha256": "779db86d8e0f6b628bf7a5a5da67273da01490af86a8137ec6cabcb0a525774b",
+            "locator": {
+              "type": "page",
+              "page": "1",
+              "line_start": null,
+              "line_end": null,
+              "source_segments": null
+            },
+            "test_only": true
+          }
+        ],
+        "answer": "UNAPPROVED TEST FIXTURE — approvals pending.\n\nAXIS Pay / AXIS Wallet:\nActivation is immediate upon depositing a minimum of 20 EGP into the customer account.\nThe initial AXIS Pay deposit of at least EGP 20 remains in the customer’s balance.\n\nOnly the selected source references are covered; this is not a complete eligibility checklist or end-to-end service procedure.",
+        "reply_language": "en",
+        "interpretation": {
+          "services": [
+            "axis_pay"
+          ],
+          "topics": [
+            "initial_deposit"
+          ],
+          "slots": [
+            [
+              "axis_pay",
+              "initial_deposit"
+            ]
+          ],
+          "slot_conditions": {
+            "axis_pay|initial_deposit": []
+          },
+          "slot_periods": {
+            "axis_pay|initial_deposit": null
+          },
+          "conditions": [],
+          "foreign": [],
+          "ambiguous": [],
+          "context_used": false,
+          "language": "en",
+          "request_contract": {
+            "contract_revision": "scope_graph_2",
+            "raw_question": "What is its minimum initial deposit?",
+            "requests": [
+              {
+                "request_id": "R1",
+                "service_id": "axis_pay",
+                "intent_id": "initial_funding",
+                "topic": "initial_deposit",
+                "role": "requested",
+                "channels": [],
+                "context_channel_mentions": [],
+                "conditions": [],
+                "requested_facets": [],
+                "period": null,
+                "procedure_scope": null,
+                "evidence_spans": [
+                  {
+                    "start": 20,
+                    "end": 27,
+                    "text": "initial",
+                    "role": "requested_predicate"
+                  },
+                  {
+                    "start": 20,
+                    "end": 35,
+                    "text": "initial deposit",
+                    "role": "requested_predicate"
+                  }
+                ],
+                "clause_span": {
+                  "start": 0,
+                  "end": 35,
+                  "text": "What is its minimum initial deposit",
+                  "role": "requested"
+                },
+                "commit_basis": "current_clause_predicate_components",
+                "support_features": [
+                  "initial",
+                  "activation"
+                ],
+                "antecedent_turn": null,
+                "antecedent_clause": null,
+                "hypothetical": false,
+                "scenario_antecedents": [],
+                "mode": "information",
+                "condition_query": false,
+                "scope_group": 0,
+                "references": []
+              }
+            ],
+            "excluded_requests": [],
+            "context_mentions": [],
+            "hypothetical_mentions": [],
+            "user_claims": [],
+            "actor_frames": [],
+            "obligations": [],
+            "references": [],
+            "alternatives": [],
+            "relations": [],
+            "graph_edges": [],
+            "unresolved_spans": [],
+            "decision": "interpret_then_retrieve",
+            "turn_id": "2",
+            "trace": {
+              "comparison_groups": [],
+              "considered": [
+                {
+                  "record_id": "G024_en:requested:R1",
+                  "role": "requested",
+                  "intent_id": "initial_funding",
+                  "score": 12.1164004896509,
+                  "score_kind": "bm25_candidate_similarity_not_probability",
+                  "body_sha256": "7feb2e2d17e9c5fa9fc182f152ea70358e4019dc7251dce2f04d8c324a35dfe0",
+                  "annotation_provenance": {
+                    "annotation_slot": 0,
+                    "annotation_version": "1.1",
+                    "case_id": "G024_en",
+                    "collection": "requests",
+                    "family_id": "G024",
+                    "generated_slot_id": false,
+                    "language": "en",
+                    "parent_request_id": null,
+                    "source_annotation_sha256": "7b49f1c0b215ae60feb61524dd199816f445c34cb09c6a8ae9451408219328bf",
+                    "source_example_sha256": "ce18befd0069e555c602d70acbc4c2b260d0f478bb15680b4bdc7f5f51419d42",
+                    "source_request_id": "R1"
+                  },
+                  "candidate_only": true,
+                  "committed": false,
+                  "business_evidence": false,
+                  "runtime_fact_eligible": false,
+                  "source_scope_binding_allowed": false,
+                  "clause_span": {
+                    "start": 0,
+                    "end": 35,
+                    "text": "What is its minimum initial deposit",
+                    "role": "candidate"
+                  }
+                },
+                {
+                  "record_id": "G060_en:requested:R1",
+                  "role": "requested",
+                  "intent_id": "initial_funding",
+                  "score": 11.23129133118587,
+                  "score_kind": "bm25_candidate_similarity_not_probability",
+                  "body_sha256": "a3ea0aac15462d4debb97da4e2b05da44e7ccf6d9381fef067cc3e6948a6115e",
+                  "annotation_provenance": {
+                    "annotation_slot": 0,
+                    "annotation_version": "1.1",
+                    "case_id": "G060_en",
+                    "collection": "requests",
+                    "family_id": "G060",
+                    "generated_slot_id": false,
+                    "language": "en",
+                    "parent_request_id": null,
+                    "source_annotation_sha256": "7b49f1c0b215ae60feb61524dd199816f445c34cb09c6a8ae9451408219328bf",
+                    "source_example_sha256": "82d77c7b8bb1cb91923019c899d004110c0623a5b8f51ed9fe075489457ea4a4",
+                    "source_request_id": "R1"
+                  },
+                  "candidate_only": true,
+                  "committed": false,
+                  "business_evidence": false,
+                  "runtime_fact_eligible": false,
+                  "source_scope_binding_allowed": false,
+                  "clause_span": {
+                    "start": 0,
+                    "end": 35,
+                    "text": "What is its minimum initial deposit",
+                    "role": "candidate"
+                  }
+                },
+                {
+                  "record_id": "G060_en:requested:R2",
+                  "role": "requested",
+                  "intent_id": "initial_funding",
+                  "score": 11.23129133118587,
+                  "score_kind": "bm25_candidate_similarity_not_probability",
+                  "body_sha256": "a3ea0aac15462d4debb97da4e2b05da44e7ccf6d9381fef067cc3e6948a6115e",
+                  "annotation_provenance": {
+                    "annotation_slot": 1,
+                    "annotation_version": "1.1",
+                    "case_id": "G060_en",
+                    "collection": "requests",
+                    "family_id": "G060",
+                    "generated_slot_id": false,
+                    "language": "en",
+                    "parent_request_id": null,
+                    "source_annotation_sha256": "71306cc9740388e7f0d1643431d9f0ebe2576fd7385bd7fde9d5ac59dc855132",
+                    "source_example_sha256": "82d77c7b8bb1cb91923019c899d004110c0623a5b8f51ed9fe075489457ea4a4",
+                    "source_request_id": "R2"
+                  },
+                  "candidate_only": true,
+                  "committed": false,
+                  "business_evidence": false,
+                  "runtime_fact_eligible": false,
+                  "source_scope_binding_allowed": false,
+                  "clause_span": {
+                    "start": 0,
+                    "end": 35,
+                    "text": "What is its minimum initial deposit",
+                    "role": "candidate"
+                  }
+                }
+              ],
+              "committed_count": 1,
+              "excluded_count": 0,
+              "example_scope_imported": false,
+              "entity_name_spans_protected": [],
+              "whole_question_span_is_entailment": false,
+              "role_before_ellipsis": true,
+              "prior_context": {
+                "services": [
+                  "axis_pay"
+                ],
+                "mentioned_services": [
+                  "axis_pay"
+                ],
+                "unsupported_named_providers": [],
+                "requested_topics": [
+                  "opening_fee"
+                ],
+                "requests_by_service": {
+                  "axis_pay": [
+                    "opening_fee"
+                  ]
+                },
+                "turn_id": "1",
+                "comparison_services": [
+                  "axis_pay"
+                ],
+                "raw_question": "What is the AXIS opening fee?",
+                "referent_ambiguity": [],
+                "new_topic": true,
+                "request_references": [
+                  {
+                    "request_id": "R1",
+                    "service_id": "axis_pay",
+                    "intent_id": "opening_fee",
+                    "channels": [],
+                    "conditions": [],
+                    "period": null,
+                    "procedure_scope": null,
+                    "requested_facets": [],
+                    "inherited_scope": null,
+                    "evidence_spans": [
+                      {
+                        "start": 17,
+                        "end": 24,
+                        "text": "opening",
+                        "role": "requested_predicate"
+                      }
+                    ],
+                    "clause_span": {
+                      "start": 0,
+                      "end": 28,
+                      "text": "What is the AXIS opening fee",
+                      "role": "requested"
+                    },
+                    "subject_references": null,
+                    "object_antecedent": null,
+                    "unsupported_named_provider": null
+                  }
+                ]
+              },
+              "discourse_normalization": [],
+              "considered_operators": [],
+              "rejected_operator_candidates": []
+            }
+          },
+          "planning": "role-first clause scope graph; current spans and typed antecedents only"
+        },
+        "timings_ms": {
+          "interpretation_ms": 793.0506000002424,
+          "source_verification_ms": 1.3495000002876623,
+          "retrieval_ms": 0.6713999991916353,
+          "fact_selection_ms": 1.9991999997728271,
+          "validation_and_assembly_ms": 1.3016000002608052,
+          "engine_total_ms": 5.405500000051688,
+          "cached_intent_lookup_ms": 0.0029000002541579306,
+          "evidence_contract_ms": 2.9567000001406996,
+          "question_coverage_ms": 236.88029999993887,
+          "admission_wait_ms": 0.001100000190490391,
+          "dependency_scope_ms": 1.446100000066508,
+          "request_setup_ms": 1.5300000004572212,
+          "pre_emit_verification_ms": 4.3488999999681255,
+          "response_metadata_ms": 0.0866999998834217,
+          "cleanup_ms": 0.006100000064179767,
+          "engine_wall_ms": 1045.7759999999325,
+          "engine_unattributed_overhead_ms": 0.1477999994676793
+        },
+        "source_cache": {
+          "cache_hits": 0,
+          "files_hashed": 1,
+          "policy": "verify fixture originals on every request",
+          "request_snapshot_pinned": true,
+          "eligibility_rechecked_before_emission": true
+        },
+        "generation_calls": 0,
+        "translation_calls": 0,
+        "request_contract": {
+          "contract_revision": "scope_graph_2",
+          "raw_question": "What is its minimum initial deposit?",
+          "requests": [
+            {
+              "request_id": "R1",
+              "service_id": "axis_pay",
+              "intent_id": "initial_funding",
+              "topic": "initial_deposit",
+              "role": "requested",
+              "channels": [],
+              "context_channel_mentions": [],
+              "conditions": [],
+              "requested_facets": [],
+              "period": null,
+              "procedure_scope": null,
+              "evidence_spans": [
+                {
+                  "start": 20,
+                  "end": 27,
+                  "text": "initial",
+                  "role": "requested_predicate"
+                },
+                {
+                  "start": 20,
+                  "end": 35,
+                  "text": "initial deposit",
+                  "role": "requested_predicate"
+                }
+              ],
+              "clause_span": {
+                "start": 0,
+                "end": 35,
+                "text": "What is its minimum initial deposit",
+                "role": "requested"
+              },
+              "commit_basis": "current_clause_predicate_components",
+              "support_features": [
+                "initial",
+                "activation"
+              ],
+              "antecedent_turn": null,
+              "antecedent_clause": null,
+              "hypothetical": false,
+              "scenario_antecedents": [],
+              "mode": "information",
+              "condition_query": false,
+              "scope_group": 0,
+              "references": []
+            }
+          ],
+          "excluded_requests": [],
+          "context_mentions": [],
+          "hypothetical_mentions": [],
+          "user_claims": [],
+          "actor_frames": [],
+          "obligations": [],
+          "references": [],
+          "alternatives": [],
+          "relations": [],
+          "graph_edges": [],
+          "unresolved_spans": [],
+          "decision": "interpret_then_retrieve",
+          "turn_id": "2",
+          "trace": {
+            "comparison_groups": [],
+            "considered": [
+              {
+                "record_id": "G024_en:requested:R1",
+                "role": "requested",
+                "intent_id": "initial_funding",
+                "score": 12.1164004896509,
+                "score_kind": "bm25_candidate_similarity_not_probability",
+                "body_sha256": "7feb2e2d17e9c5fa9fc182f152ea70358e4019dc7251dce2f04d8c324a35dfe0",
+                "annotation_provenance": {
+                  "annotation_slot": 0,
+                  "annotation_version": "1.1",
+                  "case_id": "G024_en",
+                  "collection": "requests",
+                  "family_id": "G024",
+                  "generated_slot_id": false,
+                  "language": "en",
+                  "parent_request_id": null,
+                  "source_annotation_sha256": "7b49f1c0b215ae60feb61524dd199816f445c34cb09c6a8ae9451408219328bf",
+                  "source_example_sha256": "ce18befd0069e555c602d70acbc4c2b260d0f478bb15680b4bdc7f5f51419d42",
+                  "source_request_id": "R1"
+                },
+                "candidate_only": true,
+                "committed": false,
+                "business_evidence": false,
+                "runtime_fact_eligible": false,
+                "source_scope_binding_allowed": false,
+                "clause_span": {
+                  "start": 0,
+                  "end": 35,
+                  "text": "What is its minimum initial deposit",
+                  "role": "candidate"
+                }
+              },
+              {
+                "record_id": "G060_en:requested:R1",
+                "role": "requested",
+                "intent_id": "initial_funding",
+                "score": 11.23129133118587,
+                "score_kind": "bm25_candidate_similarity_not_probability",
+                "body_sha256": "a3ea0aac15462d4debb97da4e2b05da44e7ccf6d9381fef067cc3e6948a6115e",
+                "annotation_provenance": {
+                  "annotation_slot": 0,
+                  "annotation_version": "1.1",
+                  "case_id": "G060_en",
+                  "collection": "requests",
+                  "family_id": "G060",
+                  "generated_slot_id": false,
+                  "language": "en",
+                  "parent_request_id": null,
+                  "source_annotation_sha256": "7b49f1c0b215ae60feb61524dd199816f445c34cb09c6a8ae9451408219328bf",
+                  "source_example_sha256": "82d77c7b8bb1cb91923019c899d004110c0623a5b8f51ed9fe075489457ea4a4",
+                  "source_request_id": "R1"
+                },
+                "candidate_only": true,
+                "committed": false,
+                "business_evidence": false,
+                "runtime_fact_eligible": false,
+                "source_scope_binding_allowed": false,
+                "clause_span": {
+                  "start": 0,
+                  "end": 35,
+                  "text": "What is its minimum initial deposit",
+                  "role": "candidate"
+                }
+              },
+              {
+                "record_id": "G060_en:requested:R2",
+                "role": "requested",
+                "intent_id": "initial_funding",
+                "score": 11.23129133118587,
+                "score_kind": "bm25_candidate_similarity_not_probability",
+                "body_sha256": "a3ea0aac15462d4debb97da4e2b05da44e7ccf6d9381fef067cc3e6948a6115e",
+                "annotation_provenance": {
+                  "annotation_slot": 1,
+                  "annotation_version": "1.1",
+                  "case_id": "G060_en",
+                  "collection": "requests",
+                  "family_id": "G060",
+                  "generated_slot_id": false,
+                  "language": "en",
+                  "parent_request_id": null,
+                  "source_annotation_sha256": "71306cc9740388e7f0d1643431d9f0ebe2576fd7385bd7fde9d5ac59dc855132",
+                  "source_example_sha256": "82d77c7b8bb1cb91923019c899d004110c0623a5b8f51ed9fe075489457ea4a4",
+                  "source_request_id": "R2"
+                },
+                "candidate_only": true,
+                "committed": false,
+                "business_evidence": false,
+                "runtime_fact_eligible": false,
+                "source_scope_binding_allowed": false,
+                "clause_span": {
+                  "start": 0,
+                  "end": 35,
+                  "text": "What is its minimum initial deposit",
+                  "role": "candidate"
+                }
+              }
+            ],
+            "committed_count": 1,
+            "excluded_count": 0,
+            "example_scope_imported": false,
+            "entity_name_spans_protected": [],
+            "whole_question_span_is_entailment": false,
+            "role_before_ellipsis": true,
+            "prior_context": {
+              "services": [
+                "axis_pay"
+              ],
+              "mentioned_services": [
+                "axis_pay"
+              ],
+              "unsupported_named_providers": [],
+              "requested_topics": [
+                "opening_fee"
+              ],
+              "requests_by_service": {
+                "axis_pay": [
+                  "opening_fee"
+                ]
+              },
+              "turn_id": "1",
+              "comparison_services": [
+                "axis_pay"
+              ],
+              "raw_question": "What is the AXIS opening fee?",
+              "referent_ambiguity": [],
+              "new_topic": true,
+              "request_references": [
+                {
+                  "request_id": "R1",
+                  "service_id": "axis_pay",
+                  "intent_id": "opening_fee",
+                  "channels": [],
+                  "conditions": [],
+                  "period": null,
+                  "procedure_scope": null,
+                  "requested_facets": [],
+                  "inherited_scope": null,
+                  "evidence_spans": [
+                    {
+                      "start": 17,
+                      "end": 24,
+                      "text": "opening",
+                      "role": "requested_predicate"
+                    }
+                  ],
+                  "clause_span": {
+                    "start": 0,
+                    "end": 28,
+                    "text": "What is the AXIS opening fee",
+                    "role": "requested"
+                  },
+                  "subject_references": null,
+                  "object_antecedent": null,
+                  "unsupported_named_provider": null
+                }
+              ]
+            },
+            "discourse_normalization": [],
+            "considered_operators": [],
+            "rejected_operator_candidates": []
+          }
+        },
+        "evidence_contract": {
+          "contract_version": "EVIDENCE_CONTRACTS_1",
+          "request_reviews": [
+            {
+              "request_id": "R1",
+              "required_fact_ids": [
+                "F0011",
+                "F0012"
+              ],
+              "eligible_fact_ids": [
+                "F0011",
+                "F0012"
+              ],
+              "gaps": [],
+              "conflicts": [],
+              "contract_version": "EVIDENCE_CONTRACTS_1",
+              "eligibility_kind": "source_scope_only_view_approval_required_separately"
+            }
+          ],
+          "required_fact_ids": [
+            "F0011",
+            "F0012"
+          ],
+          "eligible_fact_ids": [
+            "F0011",
+            "F0012"
+          ],
+          "missing_fact_ids": [],
+          "unrelated_fact_ids": [],
+          "scope_violations": [],
+          "citation_violations": [],
+          "gaps": [],
+          "conflicts": [],
+          "unapproved_view_fact_ids": [],
+          "complete": true,
+          "semantic_independence_claimed": false,
+          "source_freshness_checker_required": true
+        },
+        "request_selections": {
+          "R1": {
+            "required_fact_ids": [
+              "F0011",
+              "F0012"
+            ],
+            "eligible_fact_ids": [
+              "F0011",
+              "F0012"
+            ],
+            "gaps": [],
+            "conflicts": [],
+            "contract_version": "EVIDENCE_CONTRACTS_1",
+            "eligibility_kind": "source_scope_only_view_approval_required_separately"
+          }
+        },
+        "question_coverage": {
+          "complete_eligible": true,
+          "missing_demands": [],
+          "excluded_fact_ids": [],
+          "unrelated_fact_ids": [],
+          "issues": [],
+          "raw_demands": [
+            {
+              "request_id": "Q1",
+              "service_id": "axis_pay",
+              "intent_id": "initial_funding",
+              "topic": "initial_deposit",
+              "channels": [],
+              "conditions": [],
+              "period": null,
+              "procedure_scope": null,
+              "role": "requested",
+              "requested_facets": [],
+              "group": 0,
+              "evidence_spans": [
+                {
+                  "start": 20,
+                  "end": 27,
+                  "text": "initial",
+                  "role": "requested_predicate"
+                },
+                {
+                  "start": 20,
+                  "end": 35,
+                  "text": "initial deposit",
+                  "role": "requested_predicate"
+                }
+              ],
+              "clause_span": {
+                "start": 0,
+                "end": 35,
+                "text": "What is its minimum initial deposit",
+                "role": "requested_predicate"
+              },
+              "antecedent": {
+                "turn_id": "1",
+                "service_ids": [
+                  "axis_pay"
+                ]
+              },
+              "required_fact_ids": [
+                "F0011",
+                "F0012"
+              ],
+              "eligible_fact_ids": [
+                "F0011",
+                "F0012"
+              ]
+            }
+          ],
+          "decision": "complete",
+          "required_fact_ids": [
+            "F0011",
+            "F0012"
+          ],
+          "conflicts": [],
+          "raw_quantity_modifiers": [],
+          "raw_context_only": [],
+          "raw_structural_modifiers": [],
+          "raw_attribute_modifiers": [],
+          "raw_record_references": [],
+          "unsupported_named_subjects": [],
+          "independent_fulfillment": {
+            "verified": true,
+            "reason": "all_raw_demands_exactly_source_bound",
+            "mappings": [
+              {
+                "request_id": "Q1",
+                "service_id": "axis_pay",
+                "intent_id": "initial_funding",
+                "topic": "initial_deposit",
+                "channels": [],
+                "required_fact_ids": [
+                  "F0011",
+                  "F0012"
+                ]
+              }
+            ]
+          },
+          "fulfillment_convergence_applied": false,
+          "semantic_independence_claimed": false,
+          "independence_scope": "Separate original-clause demand enumeration; does not read planner requests or use its predicate function. Shared lexical resources can still omit unfamiliar meaning.",
+          "source_freshness_and_view_approval_required_separately": true
+        },
+        "answer_status": "complete",
+        "request_generation_sha256": "258563e8de6e74a3549d9f2cbbf2ff89c702911627a66dc2ed94d08691d1f22f",
+        "work_counters": {
+          "actual_embedding_calls": 0,
+          "mode": "core_without_native_proof"
+        },
+        "retrieval_breakdown_ms": {
+          "resource_wait_ms": 0,
+          "query_embedding_ms": 0,
+          "chroma_ms": 0,
+          "bm25_ms": 0.6561000000147033,
+          "retrieval_key_ranking_and_overhead_ms": 0.015299999176932033
+        },
+        "resolution_status": "complete_scoped_answer",
+        "clarification_needed": false,
+        "demo_http_handler_ms": 1046.0448000003453
+      }
+    },
+    {
+      "path": "/ask",
+      "http_status": 200,
+      "http_ms": 1573.787700000139,
+      "response": {
+        "fixture_only": true,
+        "approvals_pending": true,
+        "normal_runtime_eligible": false,
+        "type": "unavailable",
+        "complete": false,
+        "supported_fact_ids": [],
+        "slots": [
+          {
+            "service_id": "unresolved",
+            "topic": "unspecified",
+            "complete": false,
+            "supported_fact_ids": [],
+            "gap_reasons": [
+              "ambiguous_followup"
+            ]
+          }
+        ],
+        "citations": [],
+        "answer": "UNAPPROVED TEST FIXTURE — approvals pending.\n\nUnavailable or held: unresolved / unspecified\n\nOnly the selected source references are covered; this is not a complete eligibility checklist or end-to-end service procedure.\n\nUnresolved request dimensions: service_unresolved\n\nSome requested parts could not be verified.",
+        "reply_language": "en",
+        "interpretation": {
+          "services": [],
+          "topics": [
+            "initial_deposit"
+          ],
+          "slots": [],
+          "slot_conditions": {},
+          "slot_periods": {},
+          "conditions": [],
+          "foreign": [],
+          "ambiguous": [],
+          "context_used": false,
+          "language": "en",
+          "request_contract": {
+            "contract_revision": "scope_graph_2",
+            "raw_question": "What is its minimum initial deposit?",
+            "requests": [
+              {
+                "request_id": "R1",
+                "service_id": null,
+                "intent_id": "initial_funding",
+                "topic": "initial_deposit",
+                "role": "requested",
+                "channels": [],
+                "context_channel_mentions": [],
+                "conditions": [],
+                "requested_facets": [],
+                "period": null,
+                "procedure_scope": null,
+                "evidence_spans": [
+                  {
+                    "start": 20,
+                    "end": 27,
+                    "text": "initial",
+                    "role": "requested_predicate"
+                  },
+                  {
+                    "start": 20,
+                    "end": 35,
+                    "text": "initial deposit",
+                    "role": "requested_predicate"
+                  }
+                ],
+                "clause_span": {
+                  "start": 0,
+                  "end": 35,
+                  "text": "What is its minimum initial deposit",
+                  "role": "requested"
+                },
+                "commit_basis": "current_clause_predicate_components",
+                "support_features": [
+                  "initial",
+                  "activation"
+                ],
+                "antecedent_turn": null,
+                "antecedent_clause": null,
+                "hypothetical": false,
+                "scenario_antecedents": [],
+                "mode": "information",
+                "condition_query": false,
+                "scope_group": 0,
+                "references": []
+              }
+            ],
+            "excluded_requests": [],
+            "context_mentions": [],
+            "hypothetical_mentions": [],
+            "user_claims": [],
+            "actor_frames": [],
+            "obligations": [],
+            "references": [],
+            "alternatives": [],
+            "relations": [],
+            "graph_edges": [],
+            "unresolved_spans": [
+              {
+                "kind": "service_unresolved",
+                "span": {
+                  "start": 0,
+                  "end": 35,
+                  "text": "What is its minimum initial deposit",
+                  "role": "referent"
+                }
+              }
+            ],
+            "decision": "clarify",
+            "turn_id": "3",
+            "trace": {
+              "comparison_groups": [],
+              "considered": [
+                {
+                  "record_id": "G024_en:requested:R1",
+                  "role": "requested",
+                  "intent_id": "initial_funding",
+                  "score": 12.1164004896509,
+                  "score_kind": "bm25_candidate_similarity_not_probability",
+                  "body_sha256": "7feb2e2d17e9c5fa9fc182f152ea70358e4019dc7251dce2f04d8c324a35dfe0",
+                  "annotation_provenance": {
+                    "annotation_slot": 0,
+                    "annotation_version": "1.1",
+                    "case_id": "G024_en",
+                    "collection": "requests",
+                    "family_id": "G024",
+                    "generated_slot_id": false,
+                    "language": "en",
+                    "parent_request_id": null,
+                    "source_annotation_sha256": "7b49f1c0b215ae60feb61524dd199816f445c34cb09c6a8ae9451408219328bf",
+                    "source_example_sha256": "ce18befd0069e555c602d70acbc4c2b260d0f478bb15680b4bdc7f5f51419d42",
+                    "source_request_id": "R1"
+                  },
+                  "candidate_only": true,
+                  "committed": false,
+                  "business_evidence": false,
+                  "runtime_fact_eligible": false,
+                  "source_scope_binding_allowed": false,
+                  "clause_span": {
+                    "start": 0,
+                    "end": 35,
+                    "text": "What is its minimum initial deposit",
+                    "role": "candidate"
+                  }
+                },
+                {
+                  "record_id": "G060_en:requested:R1",
+                  "role": "requested",
+                  "intent_id": "initial_funding",
+                  "score": 11.23129133118587,
+                  "score_kind": "bm25_candidate_similarity_not_probability",
+                  "body_sha256": "a3ea0aac15462d4debb97da4e2b05da44e7ccf6d9381fef067cc3e6948a6115e",
+                  "annotation_provenance": {
+                    "annotation_slot": 0,
+                    "annotation_version": "1.1",
+                    "case_id": "G060_en",
+                    "collection": "requests",
+                    "family_id": "G060",
+                    "generated_slot_id": false,
+                    "language": "en",
+                    "parent_request_id": null,
+                    "source_annotation_sha256": "7b49f1c0b215ae60feb61524dd199816f445c34cb09c6a8ae9451408219328bf",
+                    "source_example_sha256": "82d77c7b8bb1cb91923019c899d004110c0623a5b8f51ed9fe075489457ea4a4",
+                    "source_request_id": "R1"
+                  },
+                  "candidate_only": true,
+                  "committed": false,
+                  "business_evidence": false,
+                  "runtime_fact_eligible": false,
+                  "source_scope_binding_allowed": false,
+                  "clause_span": {
+                    "start": 0,
+                    "end": 35,
+                    "text": "What is its minimum initial deposit",
+                    "role": "candidate"
+                  }
+                },
+                {
+                  "record_id": "G060_en:requested:R2",
+                  "role": "requested",
+                  "intent_id": "initial_funding",
+                  "score": 11.23129133118587,
+                  "score_kind": "bm25_candidate_similarity_not_probability",
+                  "body_sha256": "a3ea0aac15462d4debb97da4e2b05da44e7ccf6d9381fef067cc3e6948a6115e",
+                  "annotation_provenance": {
+                    "annotation_slot": 1,
+                    "annotation_version": "1.1",
+                    "case_id": "G060_en",
+                    "collection": "requests",
+                    "family_id": "G060",
+                    "generated_slot_id": false,
+                    "language": "en",
+                    "parent_request_id": null,
+                    "source_annotation_sha256": "71306cc9740388e7f0d1643431d9f0ebe2576fd7385bd7fde9d5ac59dc855132",
+                    "source_example_sha256": "82d77c7b8bb1cb91923019c899d004110c0623a5b8f51ed9fe075489457ea4a4",
+                    "source_request_id": "R2"
+                  },
+                  "candidate_only": true,
+                  "committed": false,
+                  "business_evidence": false,
+                  "runtime_fact_eligible": false,
+                  "source_scope_binding_allowed": false,
+                  "clause_span": {
+                    "start": 0,
+                    "end": 35,
+                    "text": "What is its minimum initial deposit",
+                    "role": "candidate"
+                  }
+                }
+              ],
+              "committed_count": 1,
+              "excluded_count": 0,
+              "example_scope_imported": false,
+              "entity_name_spans_protected": [],
+              "whole_question_span_is_entailment": false,
+              "role_before_ellipsis": true,
+              "prior_context": {},
+              "discourse_normalization": [],
+              "considered_operators": [],
+              "rejected_operator_candidates": []
+            }
+          },
+          "planning": "role-first clause scope graph; current spans and typed antecedents only"
+        },
+        "timings_ms": {
+          "interpretation_ms": 1284.034999999676,
+          "source_verification_ms": 0.7466999995813239,
+          "retrieval_ms": 0,
+          "fact_selection_ms": 0,
+          "validation_and_assembly_ms": 0.04489999992074445,
+          "engine_total_ms": 0.8219999999710126,
+          "cached_intent_lookup_ms": 0.002499999936844688,
+          "evidence_contract_ms": 0.09070000032807002,
+          "question_coverage_ms": 275.1158999999461,
+          "admission_wait_ms": 0.002399999175395351,
+          "dependency_scope_ms": 0.009700000191514846,
+          "request_setup_ms": 1.3158000001567416,
+          "pre_emit_verification_ms": 1.34520000028715,
+          "response_metadata_ms": 0.038499999391206075,
+          "cleanup_ms": 0.0014000006558489986,
+          "engine_wall_ms": 1562.8214999996999,
+          "engine_unattributed_overhead_ms": 0.07530000038968865
+        },
+        "source_cache": {
+          "cache_hits": 0,
+          "files_hashed": 0,
+          "policy": "verify fixture originals on every request",
+          "request_snapshot_pinned": true,
+          "eligibility_rechecked_before_emission": true
+        },
+        "generation_calls": 0,
+        "translation_calls": 0,
+        "request_contract": {
+          "contract_revision": "scope_graph_2",
+          "raw_question": "What is its minimum initial deposit?",
+          "requests": [
+            {
+              "request_id": "R1",
+              "service_id": null,
+              "intent_id": "initial_funding",
+              "topic": "initial_deposit",
+              "role": "requested",
+              "channels": [],
+              "context_channel_mentions": [],
+              "conditions": [],
+              "requested_facets": [],
+              "period": null,
+              "procedure_scope": null,
+              "evidence_spans": [
+                {
+                  "start": 20,
+                  "end": 27,
+                  "text": "initial",
+                  "role": "requested_predicate"
+                },
+                {
+                  "start": 20,
+                  "end": 35,
+                  "text": "initial deposit",
+                  "role": "requested_predicate"
+                }
+              ],
+              "clause_span": {
+                "start": 0,
+                "end": 35,
+                "text": "What is its minimum initial deposit",
+                "role": "requested"
+              },
+              "commit_basis": "current_clause_predicate_components",
+              "support_features": [
+                "initial",
+                "activation"
+              ],
+              "antecedent_turn": null,
+              "antecedent_clause": null,
+              "hypothetical": false,
+              "scenario_antecedents": [],
+              "mode": "information",
+              "condition_query": false,
+              "scope_group": 0,
+              "references": []
+            }
+          ],
+          "excluded_requests": [],
+          "context_mentions": [],
+          "hypothetical_mentions": [],
+          "user_claims": [],
+          "actor_frames": [],
+          "obligations": [],
+          "references": [],
+          "alternatives": [],
+          "relations": [],
+          "graph_edges": [],
+          "unresolved_spans": [
+            {
+              "kind": "service_unresolved",
+              "span": {
+                "start": 0,
+                "end": 35,
+                "text": "What is its minimum initial deposit",
+                "role": "referent"
+              }
+            }
+          ],
+          "decision": "clarify",
+          "turn_id": "3",
+          "trace": {
+            "comparison_groups": [],
+            "considered": [
+              {
+                "record_id": "G024_en:requested:R1",
+                "role": "requested",
+                "intent_id": "initial_funding",
+                "score": 12.1164004896509,
+                "score_kind": "bm25_candidate_similarity_not_probability",
+                "body_sha256": "7feb2e2d17e9c5fa9fc182f152ea70358e4019dc7251dce2f04d8c324a35dfe0",
+                "annotation_provenance": {
+                  "annotation_slot": 0,
+                  "annotation_version": "1.1",
+                  "case_id": "G024_en",
+                  "collection": "requests",
+                  "family_id": "G024",
+                  "generated_slot_id": false,
+                  "language": "en",
+                  "parent_request_id": null,
+                  "source_annotation_sha256": "7b49f1c0b215ae60feb61524dd199816f445c34cb09c6a8ae9451408219328bf",
+                  "source_example_sha256": "ce18befd0069e555c602d70acbc4c2b260d0f478bb15680b4bdc7f5f51419d42",
+                  "source_request_id": "R1"
+                },
+                "candidate_only": true,
+                "committed": false,
+                "business_evidence": false,
+                "runtime_fact_eligible": false,
+                "source_scope_binding_allowed": false,
+                "clause_span": {
+                  "start": 0,
+                  "end": 35,
+                  "text": "What is its minimum initial deposit",
+                  "role": "candidate"
+                }
+              },
+              {
+                "record_id": "G060_en:requested:R1",
+                "role": "requested",
+                "intent_id": "initial_funding",
+                "score": 11.23129133118587,
+                "score_kind": "bm25_candidate_similarity_not_probability",
+                "body_sha256": "a3ea0aac15462d4debb97da4e2b05da44e7ccf6d9381fef067cc3e6948a6115e",
+                "annotation_provenance": {
+                  "annotation_slot": 0,
+                  "annotation_version": "1.1",
+                  "case_id": "G060_en",
+                  "collection": "requests",
+                  "family_id": "G060",
+                  "generated_slot_id": false,
+                  "language": "en",
+                  "parent_request_id": null,
+                  "source_annotation_sha256": "7b49f1c0b215ae60feb61524dd199816f445c34cb09c6a8ae9451408219328bf",
+                  "source_example_sha256": "82d77c7b8bb1cb91923019c899d004110c0623a5b8f51ed9fe075489457ea4a4",
+                  "source_request_id": "R1"
+                },
+                "candidate_only": true,
+                "committed": false,
+                "business_evidence": false,
+                "runtime_fact_eligible": false,
+                "source_scope_binding_allowed": false,
+                "clause_span": {
+                  "start": 0,
+                  "end": 35,
+                  "text": "What is its minimum initial deposit",
+                  "role": "candidate"
+                }
+              },
+              {
+                "record_id": "G060_en:requested:R2",
+                "role": "requested",
+                "intent_id": "initial_funding",
+                "score": 11.23129133118587,
+                "score_kind": "bm25_candidate_similarity_not_probability",
+                "body_sha256": "a3ea0aac15462d4debb97da4e2b05da44e7ccf6d9381fef067cc3e6948a6115e",
+                "annotation_provenance": {
+                  "annotation_slot": 1,
+                  "annotation_version": "1.1",
+                  "case_id": "G060_en",
+                  "collection": "requests",
+                  "family_id": "G060",
+                  "generated_slot_id": false,
+                  "language": "en",
+                  "parent_request_id": null,
+                  "source_annotation_sha256": "71306cc9740388e7f0d1643431d9f0ebe2576fd7385bd7fde9d5ac59dc855132",
+                  "source_example_sha256": "82d77c7b8bb1cb91923019c899d004110c0623a5b8f51ed9fe075489457ea4a4",
+                  "source_request_id": "R2"
+                },
+                "candidate_only": true,
+                "committed": false,
+                "business_evidence": false,
+                "runtime_fact_eligible": false,
+                "source_scope_binding_allowed": false,
+                "clause_span": {
+                  "start": 0,
+                  "end": 35,
+                  "text": "What is its minimum initial deposit",
+                  "role": "candidate"
+                }
+              }
+            ],
+            "committed_count": 1,
+            "excluded_count": 0,
+            "example_scope_imported": false,
+            "entity_name_spans_protected": [],
+            "whole_question_span_is_entailment": false,
+            "role_before_ellipsis": true,
+            "prior_context": {},
+            "discourse_normalization": [],
+            "considered_operators": [],
+            "rejected_operator_candidates": []
+          }
+        },
+        "evidence_contract": {
+          "contract_version": "EVIDENCE_CONTRACTS_1",
+          "request_reviews": [
+            {
+              "request_id": "R1",
+              "required_fact_ids": [],
+              "eligible_fact_ids": [],
+              "gaps": [
+                {
+                  "code": "service_scope_unresolved"
+                }
+              ],
+              "conflicts": [],
+              "contract_version": "EVIDENCE_CONTRACTS_1",
+              "eligibility_kind": "source_scope_only_view_approval_required_separately"
+            }
+          ],
+          "required_fact_ids": [],
+          "eligible_fact_ids": [],
+          "missing_fact_ids": [],
+          "unrelated_fact_ids": [],
+          "scope_violations": [],
+          "citation_violations": [],
+          "gaps": [
+            {
+              "code": "request_interpretation_unresolved"
+            },
+            {
+              "code": "service_scope_unresolved"
+            }
+          ],
+          "conflicts": [],
+          "unapproved_view_fact_ids": [],
+          "complete": false,
+          "semantic_independence_claimed": false,
+          "source_freshness_checker_required": true
+        },
+        "request_selections": {},
+        "clarification_dimensions": [
+          "service_unresolved"
+        ],
+        "question_coverage": {
+          "complete_eligible": false,
+          "missing_demands": [
+            {
+              "code": "raw_service_unresolved",
+              "request_id": "Q1"
+            },
+            {
+              "request_id": "Q1",
+              "code": "service_scope_unresolved"
+            }
+          ],
+          "excluded_fact_ids": [],
+          "unrelated_fact_ids": [],
+          "issues": [
+            {
+              "code": "existing_evidence_contract_not_complete"
+            }
+          ],
+          "raw_demands": [
+            {
+              "request_id": "Q1",
+              "service_id": null,
+              "intent_id": "initial_funding",
+              "topic": "initial_deposit",
+              "channels": [],
+              "conditions": [],
+              "period": null,
+              "procedure_scope": null,
+              "role": "requested",
+              "requested_facets": [],
+              "group": 0,
+              "evidence_spans": [
+                {
+                  "start": 20,
+                  "end": 27,
+                  "text": "initial",
+                  "role": "requested_predicate"
+                },
+                {
+                  "start": 20,
+                  "end": 35,
+                  "text": "initial deposit",
+                  "role": "requested_predicate"
+                }
+              ],
+              "clause_span": {
+                "start": 0,
+                "end": 35,
+                "text": "What is its minimum initial deposit",
+                "role": "requested_predicate"
+              },
+              "antecedent": null,
+              "required_fact_ids": [],
+              "eligible_fact_ids": []
+            }
+          ],
+          "decision": "clarify",
+          "required_fact_ids": [],
+          "conflicts": [],
+          "raw_quantity_modifiers": [],
+          "raw_context_only": [],
+          "raw_structural_modifiers": [],
+          "raw_attribute_modifiers": [],
+          "raw_record_references": [],
+          "unsupported_named_subjects": [],
+          "independent_fulfillment": {
+            "verified": false,
+            "reason": "raw_service_not_exact",
+            "mappings": []
+          },
+          "fulfillment_convergence_applied": false,
+          "semantic_independence_claimed": false,
+          "independence_scope": "Separate original-clause demand enumeration; does not read planner requests or use its predicate function. Shared lexical resources can still omit unfamiliar meaning.",
+          "source_freshness_and_view_approval_required_separately": true
+        },
+        "answer_status": "clarify",
+        "request_generation_sha256": "258563e8de6e74a3549d9f2cbbf2ff89c702911627a66dc2ed94d08691d1f22f",
+        "work_counters": {
+          "actual_embedding_calls": 0,
+          "mode": "core_without_native_proof"
+        },
+        "retrieval_breakdown_ms": {
+          "resource_wait_ms": 0,
+          "query_embedding_ms": 0,
+          "chroma_ms": 0,
+          "bm25_ms": 0,
+          "retrieval_key_ranking_and_overhead_ms": 0
+        },
+        "resolution_status": "interpretation_incomplete",
+        "clarification_needed": true,
+        "demo_http_handler_ms": 1563.0842999999004
+      }
+    },
+    {
+      "path": "/ask",
+      "http_status": 200,
+      "http_ms": 1491.9781999997213,
+      "response": {
+        "fixture_only": true,
+        "approvals_pending": true,
+        "normal_runtime_eligible": false,
+        "type": "unavailable",
+        "complete": false,
+        "supported_fact_ids": [],
+        "slots": [
+          {
+            "service_id": "azimut",
+            "topic": "documents",
+            "required_fact_ids": [],
+            "supported_fact_ids": [],
+            "complete": false,
+            "gap_reasons": [
+              "held_conflicting_or_outside_selected_evidence"
+            ],
+            "retrieval": {}
+          }
+        ],
+        "citations": [],
+        "answer": "UNAPPROVED TEST FIXTURE — approvals pending.\n\nUnavailable or held: Azimut / أزيموت / documents\n\nOnly the selected source references are covered; this is not a complete eligibility checklist or end-to-end service procedure.\n\nSome requested parts could not be verified.",
+        "reply_language": "en",
+        "interpretation": {
+          "services": [
+            "azimut"
+          ],
+          "topics": [
+            "documents"
+          ],
+          "slots": [
+            [
+              "azimut",
+              "documents"
+            ]
+          ],
+          "slot_conditions": {
+            "azimut|documents": []
+          },
+          "slot_periods": {
+            "azimut|documents": null
+          },
+          "conditions": [],
+          "foreign": [],
+          "ambiguous": [],
+          "context_used": false,
+          "language": "en",
+          "request_contract": {
+            "contract_revision": "scope_graph_2",
+            "raw_question": "What are the complete Azimut KYC documents?",
+            "requests": [
+              {
+                "request_id": "R1",
+                "service_id": "azimut",
+                "intent_id": "documents",
+                "topic": "documents",
+                "role": "requested",
+                "channels": [],
+                "context_channel_mentions": [],
+                "conditions": [],
+                "requested_facets": [],
+                "period": null,
+                "procedure_scope": null,
+                "evidence_spans": [
+                  {
+                    "start": 33,
+                    "end": 42,
+                    "text": "documents",
+                    "role": "requested_predicate"
+                  }
+                ],
+                "clause_span": {
+                  "start": 0,
+                  "end": 42,
+                  "text": "What are the complete Azimut KYC documents",
+                  "role": "requested"
+                },
+                "commit_basis": "current_clause_predicate_components",
+                "support_features": [
+                  "documents"
+                ],
+                "antecedent_turn": null,
+                "antecedent_clause": null,
+                "hypothetical": false,
+                "scenario_antecedents": [],
+                "mode": "information",
+                "condition_query": false,
+                "scope_group": 0,
+                "references": []
+              }
+            ],
+            "excluded_requests": [],
+            "context_mentions": [
+              {
+                "feature": "declared_product_topic_alias",
+                "entity_id": "quality_kyc",
+                "span": {
+                  "service_id": "quality_kyc",
+                  "start": 29,
+                  "end": 32,
+                  "text": "KYC",
+                  "role": "context_only",
+                  "entity_role": "cross_cutting_domain",
+                  "match_basis": "catalog_alias"
+                }
+              }
+            ],
+            "hypothetical_mentions": [],
+            "user_claims": [],
+            "actor_frames": [],
+            "obligations": [],
+            "references": [],
+            "alternatives": [],
+            "relations": [],
+            "graph_edges": [],
+            "unresolved_spans": [],
+            "decision": "interpret_then_retrieve",
+            "turn_id": "4",
+            "trace": {
+              "comparison_groups": [],
+              "considered": [
+                {
+                  "record_id": "G016_en:requested:R1",
+                  "role": "requested",
+                  "intent_id": "documents",
+                  "score": 18.73333401256762,
+                  "score_kind": "bm25_candidate_similarity_not_probability",
+                  "body_sha256": "7c14408fbaa3d22494c7437643115c5ee61f888d604a660f9f0a49ccefc373d2",
+                  "annotation_provenance": {
+                    "annotation_slot": 0,
+                    "annotation_version": "1.1",
+                    "case_id": "G016_en",
+                    "collection": "requests",
+                    "family_id": "G016",
+                    "generated_slot_id": false,
+                    "language": "en",
+                    "parent_request_id": null,
+                    "source_annotation_sha256": "575fbaed816466482702c89ee78854c788bfee61cc21c156209bce478cb9bb67",
+                    "source_example_sha256": "8c4bd7a2a914d5f275ad2c32ccc320a00ba2ba77197944d7a251b82e32313ec4",
+                    "source_request_id": "R1"
+                  },
+                  "candidate_only": true,
+                  "committed": false,
+                  "business_evidence": false,
+                  "runtime_fact_eligible": false,
+                  "source_scope_binding_allowed": false,
+                  "clause_span": {
+                    "start": 0,
+                    "end": 42,
+                    "text": "What are the complete Azimut KYC documents",
+                    "role": "candidate"
+                  }
+                },
+                {
+                  "record_id": "X025_en:requested:R1",
+                  "role": "requested",
+                  "intent_id": "insurance_coverage",
+                  "score": 11.82114192611447,
+                  "score_kind": "bm25_candidate_similarity_not_probability",
+                  "body_sha256": "c645553a19d60e0799cb420b59f1287b97284d05d5202b19ba015ec4db32ebd2",
+                  "annotation_provenance": {
+                    "annotation_slot": 0,
+                    "annotation_version": "2.0",
+                    "case_id": "X025_en",
+                    "collection": "requests",
+                    "family_id": "X025",
+                    "generated_slot_id": false,
+                    "language": "en",
+                    "parent_request_id": null,
+                    "source_annotation_sha256": "ae2a3cbd898cf936186f22e4b625007076200620d84c6a256addafb3d06594e1",
+                    "source_example_sha256": "ead7464d0b2d56be204772e5b09d3911b2a200dfbb06c2b800b0337301e56a29",
+                    "source_request_id": "R1"
+                  },
+                  "candidate_only": true,
+                  "committed": false,
+                  "business_evidence": false,
+                  "runtime_fact_eligible": false,
+                  "source_scope_binding_allowed": false,
+                  "clause_span": {
+                    "start": 0,
+                    "end": 42,
+                    "text": "What are the complete Azimut KYC documents",
+                    "role": "candidate"
+                  }
+                },
+                {
+                  "record_id": "X025_en:requested:R2",
+                  "role": "requested",
+                  "intent_id": "insurance_claim",
+                  "score": 11.82114192611447,
+                  "score_kind": "bm25_candidate_similarity_not_probability",
+                  "body_sha256": "62f686e22db5c85d464e38c17da9386ea978e87ea3e9c353936e3503f62eaf32",
+                  "annotation_provenance": {
+                    "annotation_slot": 1,
+                    "annotation_version": "2.0",
+                    "case_id": "X025_en",
+                    "collection": "requests",
+                    "family_id": "X025",
+                    "generated_slot_id": false,
+                    "language": "en",
+                    "parent_request_id": null,
+                    "source_annotation_sha256": "2df10c4596b5121ea562d55adecb1713dda748a22ae87a3f2d3a7602991cc7a8",
+                    "source_example_sha256": "ead7464d0b2d56be204772e5b09d3911b2a200dfbb06c2b800b0337301e56a29",
+                    "source_request_id": "R2"
+                  },
+                  "candidate_only": true,
+                  "committed": false,
+                  "business_evidence": false,
+                  "runtime_fact_eligible": false,
+                  "source_scope_binding_allowed": false,
+                  "clause_span": {
+                    "start": 0,
+                    "end": 42,
+                    "text": "What are the complete Azimut KYC documents",
+                    "role": "candidate"
+                  }
+                }
+              ],
+              "committed_count": 1,
+              "excluded_count": 0,
+              "example_scope_imported": false,
+              "entity_name_spans_protected": [
+                {
+                  "service_id": "azimut",
+                  "start": 22,
+                  "end": 28,
+                  "text": "Azimut",
+                  "role": "service",
+                  "entity_role": "service",
+                  "match_basis": "catalog_alias"
+                },
+                {
+                  "service_id": "quality_kyc",
+                  "start": 29,
+                  "end": 32,
+                  "text": "KYC",
+                  "role": "service",
+                  "entity_role": "cross_cutting_domain",
+                  "match_basis": "catalog_alias"
+                }
+              ],
+              "whole_question_span_is_entailment": false,
+              "role_before_ellipsis": true,
+              "prior_context": {
+                "services": [
+                  "axis_pay"
+                ],
+                "mentioned_services": [
+                  "axis_pay"
+                ],
+                "unsupported_named_providers": [],
+                "requested_topics": [
+                  "initial_funding"
+                ],
+                "requests_by_service": {
+                  "axis_pay": [
+                    "initial_funding"
+                  ]
+                },
+                "turn_id": "2",
+                "comparison_services": [
+                  "axis_pay"
+                ],
+                "raw_question": "What is its minimum initial deposit?",
+                "referent_ambiguity": [],
+                "new_topic": false,
+                "request_references": [
+                  {
+                    "request_id": "R1",
+                    "service_id": "axis_pay",
+                    "intent_id": "initial_funding",
+                    "channels": [],
+                    "conditions": [],
+                    "period": null,
+                    "procedure_scope": null,
+                    "requested_facets": [],
+                    "inherited_scope": null,
+                    "evidence_spans": [
+                      {
+                        "start": 20,
+                        "end": 27,
+                        "text": "initial",
+                        "role": "requested_predicate"
+                      },
+                      {
+                        "start": 20,
+                        "end": 35,
+                        "text": "initial deposit",
+                        "role": "requested_predicate"
+                      }
+                    ],
+                    "clause_span": {
+                      "start": 0,
+                      "end": 35,
+                      "text": "What is its minimum initial deposit",
+                      "role": "requested"
+                    },
+                    "subject_references": null,
+                    "object_antecedent": null,
+                    "unsupported_named_provider": null
+                  }
+                ]
+              },
+              "discourse_normalization": [],
+              "considered_operators": [],
+              "rejected_operator_candidates": []
+            }
+          },
+          "planning": "role-first clause scope graph; current spans and typed antecedents only"
+        },
+        "timings_ms": {
+          "interpretation_ms": 1245.701800000461,
+          "source_verification_ms": 1.1494000000311644,
+          "retrieval_ms": 0,
+          "fact_selection_ms": 0.10320000001229346,
+          "validation_and_assembly_ms": 0.09729999965202296,
+          "engine_total_ms": 1.4009999995323597,
+          "cached_intent_lookup_ms": 0.003000000106112566,
+          "evidence_contract_ms": 0.10719999954744708,
+          "question_coverage_ms": 227.3666000000958,
+          "admission_wait_ms": 0.0018999999156221747,
+          "dependency_scope_ms": 0.09249999948224286,
+          "request_setup_ms": 2.4261999997179373,
+          "pre_emit_verification_ms": 2.1955000001980807,
+          "response_metadata_ms": 0.3442999995968421,
+          "cleanup_ms": 0.005300000339047983,
+          "engine_wall_ms": 1479.7108000002481,
+          "engine_unattributed_overhead_ms": 0.11960000119870529
+        },
+        "source_cache": {
+          "cache_hits": 0,
+          "files_hashed": 0,
+          "policy": "verify fixture originals on every request",
+          "request_snapshot_pinned": true,
+          "eligibility_rechecked_before_emission": true
+        },
+        "generation_calls": 0,
+        "translation_calls": 0,
+        "request_contract": {
+          "contract_revision": "scope_graph_2",
+          "raw_question": "What are the complete Azimut KYC documents?",
+          "requests": [
+            {
+              "request_id": "R1",
+              "service_id": "azimut",
+              "intent_id": "documents",
+              "topic": "documents",
+              "role": "requested",
+              "channels": [],
+              "context_channel_mentions": [],
+              "conditions": [],
+              "requested_facets": [],
+              "period": null,
+              "procedure_scope": null,
+              "evidence_spans": [
+                {
+                  "start": 33,
+                  "end": 42,
+                  "text": "documents",
+                  "role": "requested_predicate"
+                }
+              ],
+              "clause_span": {
+                "start": 0,
+                "end": 42,
+                "text": "What are the complete Azimut KYC documents",
+                "role": "requested"
+              },
+              "commit_basis": "current_clause_predicate_components",
+              "support_features": [
+                "documents"
+              ],
+              "antecedent_turn": null,
+              "antecedent_clause": null,
+              "hypothetical": false,
+              "scenario_antecedents": [],
+              "mode": "information",
+              "condition_query": false,
+              "scope_group": 0,
+              "references": []
+            }
+          ],
+          "excluded_requests": [],
+          "context_mentions": [
+            {
+              "feature": "declared_product_topic_alias",
+              "entity_id": "quality_kyc",
+              "span": {
+                "service_id": "quality_kyc",
+                "start": 29,
+                "end": 32,
+                "text": "KYC",
+                "role": "context_only",
+                "entity_role": "cross_cutting_domain",
+                "match_basis": "catalog_alias"
+              }
+            }
+          ],
+          "hypothetical_mentions": [],
+          "user_claims": [],
+          "actor_frames": [],
+          "obligations": [],
+          "references": [],
+          "alternatives": [],
+          "relations": [],
+          "graph_edges": [],
+          "unresolved_spans": [],
+          "decision": "interpret_then_retrieve",
+          "turn_id": "4",
+          "trace": {
+            "comparison_groups": [],
+            "considered": [
+              {
+                "record_id": "G016_en:requested:R1",
+                "role": "requested",
+                "intent_id": "documents",
+                "score": 18.73333401256762,
+                "score_kind": "bm25_candidate_similarity_not_probability",
+                "body_sha256": "7c14408fbaa3d22494c7437643115c5ee61f888d604a660f9f0a49ccefc373d2",
+                "annotation_provenance": {
+                  "annotation_slot": 0,
+                  "annotation_version": "1.1",
+                  "case_id": "G016_en",
+                  "collection": "requests",
+                  "family_id": "G016",
+                  "generated_slot_id": false,
+                  "language": "en",
+                  "parent_request_id": null,
+                  "source_annotation_sha256": "575fbaed816466482702c89ee78854c788bfee61cc21c156209bce478cb9bb67",
+                  "source_example_sha256": "8c4bd7a2a914d5f275ad2c32ccc320a00ba2ba77197944d7a251b82e32313ec4",
+                  "source_request_id": "R1"
+                },
+                "candidate_only": true,
+                "committed": false,
+                "business_evidence": false,
+                "runtime_fact_eligible": false,
+                "source_scope_binding_allowed": false,
+                "clause_span": {
+                  "start": 0,
+                  "end": 42,
+                  "text": "What are the complete Azimut KYC documents",
+                  "role": "candidate"
+                }
+              },
+              {
+                "record_id": "X025_en:requested:R1",
+                "role": "requested",
+                "intent_id": "insurance_coverage",
+                "score": 11.82114192611447,
+                "score_kind": "bm25_candidate_similarity_not_probability",
+                "body_sha256": "c645553a19d60e0799cb420b59f1287b97284d05d5202b19ba015ec4db32ebd2",
+                "annotation_provenance": {
+                  "annotation_slot": 0,
+                  "annotation_version": "2.0",
+                  "case_id": "X025_en",
+                  "collection": "requests",
+                  "family_id": "X025",
+                  "generated_slot_id": false,
+                  "language": "en",
+                  "parent_request_id": null,
+                  "source_annotation_sha256": "ae2a3cbd898cf936186f22e4b625007076200620d84c6a256addafb3d06594e1",
+                  "source_example_sha256": "ead7464d0b2d56be204772e5b09d3911b2a200dfbb06c2b800b0337301e56a29",
+                  "source_request_id": "R1"
+                },
+                "candidate_only": true,
+                "committed": false,
+                "business_evidence": false,
+                "runtime_fact_eligible": false,
+                "source_scope_binding_allowed": false,
+                "clause_span": {
+                  "start": 0,
+                  "end": 42,
+                  "text": "What are the complete Azimut KYC documents",
+                  "role": "candidate"
+                }
+              },
+              {
+                "record_id": "X025_en:requested:R2",
+                "role": "requested",
+                "intent_id": "insurance_claim",
+                "score": 11.82114192611447,
+                "score_kind": "bm25_candidate_similarity_not_probability",
+                "body_sha256": "62f686e22db5c85d464e38c17da9386ea978e87ea3e9c353936e3503f62eaf32",
+                "annotation_provenance": {
+                  "annotation_slot": 1,
+                  "annotation_version": "2.0",
+                  "case_id": "X025_en",
+                  "collection": "requests",
+                  "family_id": "X025",
+                  "generated_slot_id": false,
+                  "language": "en",
+                  "parent_request_id": null,
+                  "source_annotation_sha256": "2df10c4596b5121ea562d55adecb1713dda748a22ae87a3f2d3a7602991cc7a8",
+                  "source_example_sha256": "ead7464d0b2d56be204772e5b09d3911b2a200dfbb06c2b800b0337301e56a29",
+                  "source_request_id": "R2"
+                },
+                "candidate_only": true,
+                "committed": false,
+                "business_evidence": false,
+                "runtime_fact_eligible": false,
+                "source_scope_binding_allowed": false,
+                "clause_span": {
+                  "start": 0,
+                  "end": 42,
+                  "text": "What are the complete Azimut KYC documents",
+                  "role": "candidate"
+                }
+              }
+            ],
+            "committed_count": 1,
+            "excluded_count": 0,
+            "example_scope_imported": false,
+            "entity_name_spans_protected": [
+              {
+                "service_id": "azimut",
+                "start": 22,
+                "end": 28,
+                "text": "Azimut",
+                "role": "service",
+                "entity_role": "service",
+                "match_basis": "catalog_alias"
+              },
+              {
+                "service_id": "quality_kyc",
+                "start": 29,
+                "end": 32,
+                "text": "KYC",
+                "role": "service",
+                "entity_role": "cross_cutting_domain",
+                "match_basis": "catalog_alias"
+              }
+            ],
+            "whole_question_span_is_entailment": false,
+            "role_before_ellipsis": true,
+            "prior_context": {
+              "services": [
+                "axis_pay"
+              ],
+              "mentioned_services": [
+                "axis_pay"
+              ],
+              "unsupported_named_providers": [],
+              "requested_topics": [
+                "initial_funding"
+              ],
+              "requests_by_service": {
+                "axis_pay": [
+                  "initial_funding"
+                ]
+              },
+              "turn_id": "2",
+              "comparison_services": [
+                "axis_pay"
+              ],
+              "raw_question": "What is its minimum initial deposit?",
+              "referent_ambiguity": [],
+              "new_topic": false,
+              "request_references": [
+                {
+                  "request_id": "R1",
+                  "service_id": "axis_pay",
+                  "intent_id": "initial_funding",
+                  "channels": [],
+                  "conditions": [],
+                  "period": null,
+                  "procedure_scope": null,
+                  "requested_facets": [],
+                  "inherited_scope": null,
+                  "evidence_spans": [
+                    {
+                      "start": 20,
+                      "end": 27,
+                      "text": "initial",
+                      "role": "requested_predicate"
+                    },
+                    {
+                      "start": 20,
+                      "end": 35,
+                      "text": "initial deposit",
+                      "role": "requested_predicate"
+                    }
+                  ],
+                  "clause_span": {
+                    "start": 0,
+                    "end": 35,
+                    "text": "What is its minimum initial deposit",
+                    "role": "requested"
+                  },
+                  "subject_references": null,
+                  "object_antecedent": null,
+                  "unsupported_named_provider": null
+                }
+              ]
+            },
+            "discourse_normalization": [],
+            "considered_operators": [],
+            "rejected_operator_candidates": []
+          }
+        },
+        "evidence_contract": {
+          "contract_version": "EVIDENCE_CONTRACTS_1",
+          "request_reviews": [
+            {
+              "request_id": "R1",
+              "required_fact_ids": [],
+              "eligible_fact_ids": [],
+              "gaps": [
+                {
+                  "code": "no_declared_evidence_for_scope",
+                  "service_id": "azimut",
+                  "topic": "documents"
+                }
+              ],
+              "conflicts": [],
+              "contract_version": "EVIDENCE_CONTRACTS_1",
+              "eligibility_kind": "source_scope_only_view_approval_required_separately"
+            }
+          ],
+          "required_fact_ids": [],
+          "eligible_fact_ids": [],
+          "missing_fact_ids": [],
+          "unrelated_fact_ids": [],
+          "scope_violations": [],
+          "citation_violations": [],
+          "gaps": [
+            {
+              "code": "no_declared_evidence_for_scope",
+              "service_id": "azimut",
+              "topic": "documents"
+            }
+          ],
+          "conflicts": [],
+          "unapproved_view_fact_ids": [],
+          "complete": false,
+          "semantic_independence_claimed": false,
+          "source_freshness_checker_required": true
+        },
+        "request_selections": {
+          "R1": {
+            "required_fact_ids": [],
+            "eligible_fact_ids": [],
+            "gaps": [
+              {
+                "code": "no_declared_evidence_for_scope",
+                "service_id": "azimut",
+                "topic": "documents"
+              }
+            ],
+            "conflicts": [],
+            "contract_version": "EVIDENCE_CONTRACTS_1",
+            "eligibility_kind": "source_scope_only_view_approval_required_separately"
+          }
+        },
+        "question_coverage": {
+          "complete_eligible": false,
+          "missing_demands": [
+            {
+              "request_id": "Q1",
+              "code": "no_declared_evidence_for_scope",
+              "service_id": "azimut",
+              "topic": "documents"
+            }
+          ],
+          "excluded_fact_ids": [],
+          "unrelated_fact_ids": [],
+          "issues": [
+            {
+              "code": "existing_evidence_contract_not_complete"
+            }
+          ],
+          "raw_demands": [
+            {
+              "request_id": "Q1",
+              "service_id": "azimut",
+              "intent_id": "documents",
+              "topic": "documents",
+              "channels": [],
+              "conditions": [],
+              "period": null,
+              "procedure_scope": null,
+              "role": "requested",
+              "requested_facets": [],
+              "group": 0,
+              "evidence_spans": [
+                {
+                  "start": 33,
+                  "end": 42,
+                  "text": "documents",
+                  "role": "requested_predicate"
+                }
+              ],
+              "clause_span": {
+                "start": 0,
+                "end": 42,
+                "text": "What are the complete Azimut KYC documents",
+                "role": "requested_predicate"
+              },
+              "antecedent": null,
+              "full_inventory": true,
+              "required_fact_ids": [],
+              "eligible_fact_ids": []
+            }
+          ],
+          "decision": "unsupported",
+          "required_fact_ids": [],
+          "conflicts": [],
+          "raw_quantity_modifiers": [],
+          "raw_context_only": [],
+          "raw_structural_modifiers": [],
+          "raw_attribute_modifiers": [],
+          "raw_record_references": [],
+          "unsupported_named_subjects": [],
+          "independent_fulfillment": {
+            "verified": false,
+            "reason": "independent_selection_has_gap",
+            "mappings": []
+          },
+          "fulfillment_convergence_applied": false,
+          "semantic_independence_claimed": false,
+          "independence_scope": "Separate original-clause demand enumeration; does not read planner requests or use its predicate function. Shared lexical resources can still omit unfamiliar meaning.",
+          "source_freshness_and_view_approval_required_separately": true
+        },
+        "answer_status": "unsupported",
+        "request_generation_sha256": "258563e8de6e74a3549d9f2cbbf2ff89c702911627a66dc2ed94d08691d1f22f",
+        "work_counters": {
+          "actual_embedding_calls": 0,
+          "mode": "core_without_native_proof"
+        },
+        "retrieval_breakdown_ms": {
+          "resource_wait_ms": 0,
+          "query_embedding_ms": 0,
+          "chroma_ms": 0,
+          "bm25_ms": 0,
+          "retrieval_key_ranking_and_overhead_ms": 0
+        },
+        "resolution_status": "recognized_scope_without_eligible_evidence",
+        "clarification_needed": false,
+        "demo_http_handler_ms": 1480.0199000001157
+      }
+    },
+    {
+      "path": "/logout",
+      "http_status": 200,
+      "http_ms": 10.02150000022084,
+      "response": {
+        "logged_out": true
+      }
+    },
+    {
+      "path": "/conversations",
+      "http_status": 401,
+      "http_ms": 9.632199999941804,
+      "response": {
+        "error": "unauthorized"
+      }
+    }
+  ],
+  "native": "NOT RUN",
+  "model_calls": 0,
+  "employee_access": false,
+  "independent_evaluation": false
+}

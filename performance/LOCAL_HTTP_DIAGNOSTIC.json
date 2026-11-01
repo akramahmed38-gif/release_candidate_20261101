@@ -1,0 +1,14 @@
+{
+  "scope": "workstation authenticated Core HTTP only; NOT native inference",
+  "n_complete_correct": 112,
+  "http_p50_ms": 2170.969100000093,
+  "http_p95_ms": 5360.077399999857,
+  "http_p99_ms": 7614.310791000089,
+  "startup_ms": 1520.1219000000492,
+  "native_ram": "NOT RUN",
+  "native_cpu": "NOT RUN",
+  "native_stage_latency": "NOT RUN",
+  "sla": "NOT VERIFIED",
+  "source_commit": "f419475fa454ebee6f9566a89c58b6b417cc443c",
+  "all_results_retained": true
+}

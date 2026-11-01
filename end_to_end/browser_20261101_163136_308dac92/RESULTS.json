@@ -1,0 +1,15 @@
+{
+  "status": "FAIL",
+  "native": "NOT RUN",
+  "employee_access": false,
+  "checks": [
+    {
+      "name": "visible_unapproved_scope",
+      "passed": true
+    }
+  ],
+  "source_sha256": "9aea46498f436974c5bfb76e0e6fd5080c8a67cb4452cdc77ec6720138776b9b",
+  "browser_engine": "installed Microsoft Edge",
+  "error_type": "Error",
+  "error_summary": "Page.wait_for_function: EvalError: Evaluating a string as JavaScript violates the following Content Security Policy directive because 'unsafe-eval' is not an allowed source of script: default-src 'self'\".\n\n    at eval (<anonymous>)\n    at predicate (eval at evaluate (:311:30), <anonymous>:4:60)\n    at next (eval at evaluate (:311:30), <anonymous>:29:33)"
+}

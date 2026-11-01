@@ -1,0 +1,9 @@
+{
+  "status": "BLOCKED",
+  "native": "NOT RUN",
+  "employee_access": false,
+  "checks": [],
+  "source_sha256": "9aea46498f436974c5bfb76e0e6fd5080c8a67cb4452cdc77ec6720138776b9b",
+  "error_type": "Error",
+  "error_summary": "BrowserType.launch: Executable doesn't exist at C:\\Users\\akram.ahmed\\AppData\\Local\\ms-playwright\\chromium_headless_shell-1243\\chrome-headless-shell-win64\\chrome-headless-shell.exe\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     playwright install                                     ║\n║    "
+}

@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "native": "NOT RUN",
+  "employee_access": false,
+  "checks": [
+    {
+      "name": "visible_unapproved_scope",
+      "passed": true
+    },
+    {
+      "name": "token_cleared",
+      "passed": true
+    },
+    {
+      "name": "actual_answer_and_citation",
+      "passed": true
+    },
+    {
+      "name": "new_conversation_does_not_borrow_axis",
+      "passed": true
+    },
+    {
+      "name": "no_browser_script_errors",
+      "passed": true
+    }
+  ],
+  "source_sha256": "9aea46498f436974c5bfb76e0e6fd5080c8a67cb4452cdc77ec6720138776b9b",
+  "browser_engine": "installed Microsoft Edge",
+  "actual_answer": "UNAPPROVED TEST FIXTURE — approvals pending.\n\nAXIS Pay / AXIS Wallet:\nOpening the wallet has no subscription fee: 0 EGP.\n\nOnly the selected source references are covered; this is not a complete eligibility checklist or end-to-end service procedure.\n\n{\n  \"status\": \"complete\",\n  \"citations\": [\n    {\n      \"fact_id\": \"F0010\",\n      \"service_id\": \"axis_pay\",\n      \"source_document\": \"daily_brief/axis_wallet_sales_guide.pdf\",\n      \"source_sha256\": \"198dffbc8ab1ce2887356e91fab9d241ea3f08c35216d2b32a1062e64439abce\",\n      \"evidence_unit_id\": \"source-verified-axis-guide-activation-198dffbc8ab1\",\n      \"unit_text_sha256\": \"779db86d8e0f6b628bf7a5a5da67273da01490af86a8137ec6cabcb0a525774b\",\n      \"locator\": {\n        \"type\": \"page\",\n        \"page\": \"1\",\n        \"line_start\": null,\n        \"line_end\": null,\n        \"source_segments\": null\n      },\n      \"test_only\": true\n    }\n  ],\n  \"timing\": 1002.3252999999386\n}",
+  "isolated_answer": "UNAPPROVED TEST FIXTURE — approvals pending.\n\nUnavailable or held: unresolved / unspecified\n\nOnly the selected source references are covered; this is not a complete eligibility checklist or end-to-end service procedure.\n\nUnresolved request dimensions: service_unresolved\n\nSome requested parts could not be verified.\n\n{\n  \"status\": \"clarify\",\n  \"citations\": [],\n  \"timing\": 796.1249999989377\n}",
+  "browser_errors": []
+}

@@ -1,0 +1,9 @@
+{
+  "archive": "RC_DIAGNOSTIC_41fee1891245.zip",
+  "sha256": "d6078449cef0dd743c236128ac2a0315f4e205da72cfa7731bf705614956ecaa",
+  "file_count": 148,
+  "source_commit": "41fee18912450e583418aa02d77c6334ffe72dec",
+  "native_executed": false,
+  "static_python310_parse": "PASS",
+  "fixtures_production_eligible": false
+}
