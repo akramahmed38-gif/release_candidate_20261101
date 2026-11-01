@@ -1,0 +1,131 @@
+source/candidate/linguistic_spans.py
+  s_d9b3c014c5ea55::t_dfdfe9e46c8c75 291-306
+.gitignore
+  s_d9b3c014c5ea55::t_dfdfe9e46c8c75 1-4
+.gitattributes
+  s_d9b3c014c5ea55::t_dfdfe9e46c8c75 1
+evidence/I046_CODE_FREEZE.json
+  s_d9b3c014c5ea55::t_b713ce615b3041 1-201
+evidence/I046_CURRENT_ACCEPTANCE.json
+  s_d9b3c014c5ea55::t_be4ce6561bcc54 1-30
+evidence/I046_PHASE_C_GATE.json
+  s_d9b3c014c5ea55::t_da94011c134a5c 1-288
+evidence/I046_SOURCE_MANIFEST.json
+  s_d9b3c014c5ea55::t_46c7cc0efac096 1-152
+evidence/I046_TESTED_SOURCE_IDENTITY.json
+  s_d9b3c014c5ea55::t_607f8ed4ffd140 1-201
+evidence/I046_UNIT_TESTS.json
+  s_d9b3c014c5ea55::t_6cc4bc8a7d293c 1-6
+source/candidate/ACCEPTANCE_36.json
+  s_d9b3c014c5ea55::t_b31ee0a8653fb4 1-418
+source/candidate/EMPLOYEE_QUESTIONS.json
+  s_d9b3c014c5ea55::t_2d989322abdfe4 1-281
+source/candidate/FROZEN_BASELINE_REFERENCE.json
+  s_d9b3c014c5ea55::t_4fa526c89070cb 1-106
+source/candidate/catalog.json
+  s_d9b3c014c5ea55::t_7ff052d7af3b61 1-239
+source/candidate/evidence_contracts.py
+  s_d9b3c014c5ea55::t_5801af9872faba 1-586,597-671
+source/candidate/fixture_data/definition.json
+  s_d9b3c014c5ea55::t_6ff110503ec9e7 1-2526
+source/candidate/fixture_data/source_files/KnowledgeBase/Articles/7wala_bank_abozabii_ART.md
+  s_d9b3c014c5ea55::t_d30916869349aa 1-407
+source/candidate/fixture_data/source_files/KnowledgeBase/Articles/AZIMUT_ART.md
+  s_d9b3c014c5ea55::t_1492b4bc8a18b6 1-493
+source/candidate/fixture_data/source_files/KnowledgeBase/Articles/Wallets_ART.md
+  s_d9b3c014c5ea55::t_3c3d29d80f6784 1-494
+source/candidate/frozen_phase2/FINAL_REPORT.md
+  s_d9b3c014c5ea55::t_8e147546da4217 1-157
+source/candidate/frozen_phase2/PACKAGE_PINS.json
+  s_d9b3c014c5ea55::t_6e9f4533205427 1-92
+source/candidate/frozen_phase2/PHASE1_BASELINE_PINS.json
+  s_d9b3c014c5ea55::t_425776fdd6c22c 1-77
+source/candidate/frozen_phase2/WORKFLOW_COMPATIBILITY_CHECKS.json
+  s_d9b3c014c5ea55::t_1badce8f6b3eea 1-6
+source/candidate/frozen_phase2/fixture_data/definition.json
+  s_d9b3c014c5ea55::t_9d48b060e22423 1-1270
+source/candidate/frozen_phase2/fixture_data/source_files/KnowledgeBase/Articles/AZIMUT_ART.md
+  s_d9b3c014c5ea55::t_b53e507f60b050 1-493
+source/candidate/frozen_phase2/fixture_data/source_files/KnowledgeBase/Articles/Wallets_ART.md
+  s_d9b3c014c5ea55::t_366002626ed039 1-494
+source/candidate/frozen_phase2/native_results/20261027_234148_976bc9dc/CLAIM_AND_SLOT_REVIEW.json
+  s_d9b3c014c5ea55::t_b1940b861a0e8e 1-2087
+source/candidate/frozen_phase2/native_results/20261027_234148_976bc9dc/INITIALIZATION.json
+  s_d9b3c014c5ea55::t_57331b6ee09f1b 1-25
+source/candidate/frozen_phase2/native_results/20261027_234148_976bc9dc/ORIGINAL_RECORDS_PRESERVATION.json
+  s_d9b3c014c5ea55::t_d9b67a401ff90d 1-3
+source/candidate/frozen_phase2/native_results/20261027_234148_976bc9dc/PERFORMANCE.json
+  s_d9b3c014c5ea55::t_619ae3f9f49750 1-105
+source/candidate/frozen_phase2/native_results/20261027_234148_976bc9dc/PROGRESS.json
+  s_d9b3c014c5ea55::t_a3ab01e89bb2af 1-20
+source/candidate/frozen_phase2/native_results/20261027_234148_976bc9dc/RESULTS.json
+  s_d9b3c014c5ea55::t_367b8f81ff38d6 1-9214
+source/candidate/frozen_phase2/native_results/20261027_234148_976bc9dc/SUMMARY.json
+  s_d9b3c014c5ea55::t_d72ce7cd987553 1-20
+source/candidate/frozen_phase2/phase1/FINAL_REPORT.md
+  s_d9b3c014c5ea55::t_4495af4fa0f977 1-114
+source/candidate/frozen_phase2/phase1/LOCAL_CORE_RESULTS.md
+  s_d9b3c014c5ea55::t_dd56ea8300d09c 1-64
+source/candidate/frozen_phase2/phase1/candidate/chatbot/answer_relevance.py
+  s_d9b3c014c5ea55::t_360f89a285bf88 1-75
+source/candidate/frozen_phase2/phase1/candidate/chatbot/citation_policy.py
+  s_d9b3c014c5ea55::t_0e5dbeee5b1a60 1-98
+source/candidate/frozen_phase2/phase1/candidate/chatbot/config.py
+  s_d9b3c014c5ea55::t_1d01400538df4a 1-162
+source/candidate/frozen_phase2/phase1/candidate/chatbot/content_index.py
+  s_d9b3c014c5ea55::t_52073a43673f39 1-121
+source/candidate/frozen_phase2/phase1/candidate/chatbot/content_preparation.py
+  s_d9b3c014c5ea55::t_a18c82cf4a5daf 1-458
+source/candidate/frozen_phase2/phase1/candidate/chatbot/content_sync.py
+  s_d9b3c014c5ea55::t_a364515cd762c8 1-138
+source/candidate/frozen_phase2/phase1/candidate/chatbot/conversation_memory.py
+  s_d9b3c014c5ea55::t_5a8e4de40e6fae 1-961
+source/candidate/frozen_phase2/phase1/candidate/chatbot/generation.py
+  s_d9b3c014c5ea55::t_6bd27524ae92d4 1-937
+source/candidate/frozen_phase2/phase1/candidate/chatbot/ingestion.py
+  s_d9b3c014c5ea55::t_1b903876bb824d 1-1032
+source/candidate/frozen_phase2/phase1/candidate/chatbot/noop_telemetry.py
+  s_d9b3c014c5ea55::t_66d6c4a3aa6ab7 1-10
+source/candidate/frozen_phase2/phase1/candidate/chatbot/ocr.py
+  s_d9b3c014c5ea55::t_25ed789f2a2398 1-114
+source/candidate/frozen_phase2/phase1/candidate/chatbot/reply_language.py
+  s_d9b3c014c5ea55::t_6c8177d4f6e80f 1-189
+source/candidate/frozen_phase2/phase1/candidate/chatbot/retrieval.py
+  s_d9b3c014c5ea55::t_41bd5022ee9d16 1-1151
+source/candidate/frozen_phase2/phase1/candidate/chatbot/service.py
+  s_d9b3c014c5ea55::t_4a76c6b5918f9d 1-1965
+source/candidate/frozen_phase2/phase1/candidate/chatbot/sidecar.py
+  s_d9b3c014c5ea55::t_86df2c04b31d39 1-1799
+source/candidate/frozen_phase2/phase1/candidate/chatbot/vector_store.py
+  s_d9b3c014c5ea55::t_17102fc6459253 1-147
+source/candidate/frozen_phase2/phase1/fixture_data/fixture_definition.json
+  s_d9b3c014c5ea55::t_97a8731cc2444c 1-924
+source/candidate/frozen_phase2/phase1/native_support.py
+  s_d9b3c014c5ea55::t_e332f1eadd8b61 1-95
+source/candidate/frozen_phase2/run_multi_source_pilot.ps1
+  s_d9b3c014c5ea55::t_ea899d8dfdddbf 1-28
+source/candidate/request_planner.py
+  s_d9b3c014c5ea55::t_20f666d275c82e 1-97
+source/candidate/resources/recovery_features.json
+  s_d9b3c014c5ea55::t_31af6cf957a50e 1-348
+source/candidate/retrieval.py
+  s_d9b3c014c5ea55::t_6dc16a015a7299 1-70
+source/candidate/runtime_engine.py
+  s_d9b3c014c5ea55::t_091fe94171be97 1-108
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "09eb0f403ea2a85064f0affc013b71b99a630b03",
+  "prompts": {},
+  "sessions": {
+    "s_d9b3c014c5ea55": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a162f5-c192-7ef2-8f5c-3b5d4e32f549",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "akramahmed38-gif <akram.ahmed38@gmail.com>"
+    }
+  }
+}
