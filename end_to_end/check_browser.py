@@ -11,7 +11,9 @@ def main():
     try:
         from playwright.sync_api import sync_playwright
         with sync_playwright() as p:
-            browser=p.chromium.launch(headless=True)
+            installed=Path('C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe')
+            browser=p.chromium.launch(headless=True,executable_path=str(installed)) if installed.is_file() else p.chromium.launch(headless=True)
+            report['browser_engine']='installed Microsoft Edge' if installed.is_file() else 'installed Playwright Chromium'
             page=browser.new_page();errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
             page.goto('http://127.0.0.1:'+str(server.server_port))
             def check(name,value):
