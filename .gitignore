@@ -3,3 +3,11 @@ __pycache__/
 end_to_end/*/private_workspace/
 *.log
 independent_private/
+
+# Admin staging private state: never export credentials, accounts or sessions
+admin_staging/state/
+admin_staging/.private/
+admin_staging/application/.env
+admin_staging/application/**/__pycache__/
+admin_staging/application/hr-training-frontend/node_modules/
+admin_staging/logs/

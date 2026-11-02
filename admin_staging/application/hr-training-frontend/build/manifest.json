@@ -1,0 +1,20 @@
+{
+  "short_name": "fawry LMS",
+  "name": "HR Training LMS",
+  "icons": [
+    {
+      "src": "logo192.png?fpbrand=20261015",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "logo512.png?fpbrand=20261015",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

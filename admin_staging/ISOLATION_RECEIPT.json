@@ -1,0 +1,10 @@
+{
+  "database": "D:\\FawryChatbotPreparation\\release_candidate_20261101\\admin_staging\\state\\databases\\training.db",
+  "write_paths_verified": true,
+  "network": "loopback only",
+  "notifications": "disabled",
+  "background_maintenance": "disabled",
+  "database_created": true,
+  "background_jobs_started": false,
+  "production_connected": false
+}

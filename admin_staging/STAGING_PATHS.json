@@ -1,0 +1,12 @@
+{
+  "APP_NAME": "Fawry HR Training — ISOLATED ADMIN STAGING",
+  "APP_VERSION": "admin-20261102",
+  "PATH_LOGS": "D:\\FawryChatbotPreparation\\release_candidate_20261101\\admin_staging\\logs",
+  "PATH_DATA_ROOT": "D:\\FawryChatbotPreparation\\release_candidate_20261101\\admin_staging\\state\\uploads",
+  "PATH_ASSETS_ROOT": "D:\\FawryChatbotPreparation\\release_candidate_20261101\\admin_staging\\state\\assets",
+  "PATH_MODELS_ROOT": "D:\\FawryChatbotPreparation\\release_candidate_20261101\\admin_staging\\state\\models",
+  "PATH_OUTPUT_ROOT": "D:\\FawryChatbotPreparation\\release_candidate_20261101\\admin_staging\\state\\output",
+  "SQLITE_DB_PATH": "D:\\FawryChatbotPreparation\\release_candidate_20261101\\admin_staging\\state\\databases\\training.db",
+  "FILE_MAX_SIZE": 26214400,
+  "FILE_DEFAULT_CHUNK_SIZE": 1048576
+}

@@ -1,0 +1,7 @@
+{"test": "health", "layer": "preflight HTTP, not browser UAT", "expected_status": 200, "actual_status": 200, "passed": true, "environment": "isolated staging", "timestamp_epoch": 1793624871.673537}
+{"test": "anonymous_admin_api", "layer": "preflight HTTP, not browser UAT", "expected_status": 401, "actual_status": 401, "passed": true, "environment": "isolated staging", "timestamp_epoch": 1793624871.6887093}
+{"test": "anonymous_chatbot_diagnostics", "layer": "preflight HTTP, not browser UAT", "expected_status": 401, "actual_status": 401, "passed": true, "environment": "isolated staging", "timestamp_epoch": 1793624871.7053466}
+{"test": "host_isolation", "layer": "preflight HTTP, not browser UAT", "expected_status": 400, "actual_status": 400, "passed": true, "environment": "isolated staging", "timestamp_epoch": 1793624871.7068992}
+{"test": "origin_isolation", "layer": "preflight HTTP, not browser UAT", "expected_status": 403, "actual_status": 403, "passed": true, "environment": "isolated staging", "timestamp_epoch": 1793624871.7083087}
+{"test": "setup_csrf", "layer": "preflight HTTP, not browser UAT", "expected_status": 403, "actual_status": 403, "passed": true, "environment": "isolated staging", "timestamp_epoch": 1793624871.7113516}
+{"test": "actual_login_ui", "layer": "preflight HTTP, not browser UAT", "expected_status": 200, "actual_status": 200, "passed": true, "environment": "isolated staging", "timestamp_epoch": 1793624871.7158227, "permanent_banner_present": true, "runtime_origin_override": true}

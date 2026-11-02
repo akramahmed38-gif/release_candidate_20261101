@@ -1,0 +1,38 @@
+{
+  "staging_only": true,
+  "changes": [
+    {
+      "path": "main.py",
+      "before": "b20d104b6ccb0b15ecdff975b292713e1d3b4f79b49f76106d1e23d3bfbf1434",
+      "after": "56ce9a5538330fb367d4681f49020c27d749835f505e946ec796e880dfc5bc9c"
+    },
+    {
+      "path": "config/config.yaml",
+      "before": null,
+      "after": "730235b8c4a75575604a27aeec1325e1f6ca06c4b043d97b672619fdc25c138a"
+    },
+    {
+      "path": "src/routes/chatbot.py",
+      "before": "3a8d89412541f880aadafcbfdc1a24674f40d4512229f02016e23504fd06853f",
+      "after": "1de5ebe6c22adfccc721d0c29f5f248e253d12a8c76258fb29e7a0b1ab4c0fd4"
+    },
+    {
+      "path": "src/utils/logging_utils.py",
+      "before": "07ed5a4fb4ece3983cce77d01d4c5a2911f300498aad7b3c911d8621fc9e9c57",
+      "after": "cab68e9cb890ecc171f33bc9767f69620978d8141ea6032e131f91df90f0c77b"
+    },
+    {
+      "path": "src/routes/users/admin_credentials.py",
+      "before": "b64af7f17b6335e9a576fd7786aabb4946309b73b443b3b640ef5e0a61889372",
+      "after": "538d3b04f2a5b262b63ed5d90b16585104fed3ef1bb783d2d20d56b6429c954c"
+    },
+    {
+      "path": "src/routes/users/users_router.py",
+      "before": "b533f226f401b7788da84493e7b3251d812cc3383ec9377cb93673433db6af9b",
+      "after": "ac5cd2567038a7a6a48324712c786b6e7e7ae9fe1825b17788f7e43e1596f679"
+    }
+  ],
+  "state_copied_from_production": false,
+  "jobs_disabled": true,
+  "notifications_disabled": true
+}

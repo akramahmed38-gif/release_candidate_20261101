@@ -1,0 +1,58 @@
+import React, { useEffect, useState } from 'react';
+import { Add, Archive, Delete, Edit, Email, FileDownload, Insights, Preview, Restore } from '@mui/icons-material';
+import { Alert, Box, Button, Card, CardContent, Chip, Dialog, DialogActions, DialogContent, DialogTitle, Divider, Stack, Tab, Tabs, TextField, Typography } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
+import { dailyBriefService } from '../services/auth';
+
+const formatViewedAt = (value) => value ? new Intl.DateTimeFormat(undefined, { dateStyle: 'medium', timeStyle: 'short' }).format(new Date(value)) : 'Unknown';
+
+export default function DailyBriefAdmin() {
+  const navigate = useNavigate();
+  const [tab, setTab] = useState('DRAFT'); const [items, setItems] = useState([]); const [summary, setSummary] = useState({}); const [search, setSearch] = useState('');
+  const [analytics, setAnalytics] = useState(null); const [analyticsTitle, setAnalyticsTitle] = useState(''); const [analyticsBriefId, setAnalyticsBriefId] = useState(''); const [analyticsError, setAnalyticsError] = useState(''); const [analyticsLoading, setAnalyticsLoading] = useState(false); const [analyticsExportLoading, setAnalyticsExportLoading] = useState(false);
+  const [notification, setNotification] = useState(null);
+  const load = async () => { const [list, counts] = await Promise.all([dailyBriefService.listBriefs({ status: tab, search }), dailyBriefService.getSummary()]); setItems(list.data.items || []); setSummary(counts.data || {}); };
+  useEffect(() => { load().catch(console.error); }, [tab]);
+  const restore = async (id) => { if (window.confirm('Make this archived Daily Brief live? The current Live Brief will be archived.')) { await dailyBriefService.restoreLiveBrief(id); await load(); } };
+  const deleteBrief = async (item) => { const message = item.status === 'LIVE' ? 'Delete this Live Daily Brief? Retail users will no longer see it.' : 'Delete this Daily Brief?'; if (window.confirm(message)) { try { await dailyBriefService.deleteBrief(item.id); await load(); } catch (error) { window.alert(error.response?.data?.detail || 'Unable to delete Daily Brief.'); } } };
+  const viewAnalytics = async (item) => { setAnalyticsTitle(item.title); setAnalyticsBriefId(item.id); setAnalytics(null); setAnalyticsError(''); setAnalyticsLoading(true); try { const response = await dailyBriefService.getAnalytics(item.id); setAnalytics(response.data); } catch (error) { setAnalyticsError(error.response?.data?.detail || 'Unable to load viewer statistics.'); } finally { setAnalyticsLoading(false); } };
+  const closeAnalytics = () => { if (!analyticsLoading && !analyticsExportLoading) { setAnalytics(null); setAnalyticsBriefId(''); setAnalyticsError(''); } };
+  const exportAnalytics = async () => {
+    if (!analyticsBriefId || analyticsExportLoading) return;
+    setAnalyticsExportLoading(true);
+    try {
+      const response = await dailyBriefService.exportAnalytics(analyticsBriefId);
+      const downloadUrl = window.URL.createObjectURL(new Blob([response.data], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' }));
+      const link = document.createElement('a');
+      const timestamp = new Date().toISOString().slice(0, 19).replace(/[:T]/g, '-');
+      link.href = downloadUrl;
+      link.download = `daily-brief-viewers-${timestamp}.xlsx`;
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      window.URL.revokeObjectURL(downloadUrl);
+    } catch (error) {
+      setNotification({ severity: 'error', message: error.response?.data?.detail || 'Unable to export the viewer report.' });
+    } finally {
+      setAnalyticsExportLoading(false);
+    }
+  };
+  const notifyRetail = async (item) => {
+    if (!window.confirm(`Send the Arabic Daily Brief email for "${item.title}" to the 5 approved recipients?`)) return;
+    setNotification(null);
+    try {
+      const response = await dailyBriefService.notifyRetail(item.id);
+      const { recipient_count: recipientCount, smtp_disabled: smtpDisabled } = response.data;
+      setNotification({ severity: smtpDisabled ? 'warning' : 'success', message: smtpDisabled ? `SMTP is disabled. The notification was not delivered to ${recipientCount} approved recipients.` : `Email delivery started for ${recipientCount} approved recipients.` });
+    } catch (error) {
+      setNotification({ severity: 'error', message: error.response?.data?.detail || 'Unable to start Daily Brief email delivery.' });
+    }
+  };
+  return <Box sx={{ maxWidth: 1240, mx: 'auto', py: 2 }}>
+    <Stack direction="row" justifyContent="space-between"><Box><Typography variant="h4" fontWeight={800}>Daily Brief</Typography><Typography color="text.secondary">Create, manage and publish Retail communications.</Typography></Box><Button variant="contained" startIcon={<Add />} onClick={() => navigate('/daily-brief/new')}>Create Daily Brief</Button></Stack>
+    {notification && <Alert severity={notification.severity} onClose={() => setNotification(null)} sx={{ mt: 2 }}>{notification.message}</Alert>}
+    <Stack direction="row" spacing={2} sx={{ my: 2 }}>{[['Drafts', summary.drafts], ['Live Brief', summary.live], ['Archived', summary.archived]].map(([name, value]) => <Card key={name}><CardContent><Typography color="text.secondary">{name}</Typography><Typography variant="h4" fontWeight={800}>{value || 0}</Typography></CardContent></Card>)}</Stack>
+    <Card><CardContent><Stack direction="row" justifyContent="space-between"><Tabs value={tab} onChange={(_, value) => setTab(value)}><Tab value="DRAFT" label="Drafts" /><Tab value="LIVE" label="Live" /><Tab value="ARCHIVED" label="Archived" /></Tabs><TextField size="small" label="Search by title" value={search} onChange={(event) => setSearch(event.target.value)} onKeyDown={(event) => event.key === 'Enter' && load()} /></Stack><Stack spacing={1} sx={{ mt: 2 }}>{items.map((item) => <Card key={item.id} variant="outlined"><CardContent><Stack direction="row" justifyContent="space-between" alignItems="center"><Box><Typography fontWeight={800}>{item.title} <Chip size="small" label={item.status} /></Typography><Typography variant="body2" color="text.secondary">Brief date: {item.brief_date}</Typography></Box><Stack direction="row">{item.status === 'LIVE' && <Button startIcon={<Email />} onClick={() => notifyRetail(item)}>Send Brief Email</Button>}<Button startIcon={<Preview />} onClick={() => navigate(`/daily-brief/${item.id}/preview`)}>Preview</Button>{['LIVE', 'ARCHIVED'].includes(item.status) && <Button startIcon={<Edit />} onClick={() => navigate(`/daily-brief/${item.id}/edit`)}>Edit</Button>}<Button startIcon={<Insights />} onClick={() => viewAnalytics(item)}>Viewed by</Button>{item.status === 'LIVE' && <Button startIcon={<Archive />} onClick={() => dailyBriefService.archiveBrief(item.id).then(load)}>Archive</Button>}{item.status === 'ARCHIVED' && <Button color="success" startIcon={<Restore />} onClick={() => restore(item.id)}>Make Live</Button>}<Button color="error" startIcon={<Delete />} onClick={() => deleteBrief(item)}>Delete</Button></Stack></Stack></CardContent></Card>)}</Stack></CardContent></Card>
+    <Dialog open={analyticsLoading || Boolean(analytics) || Boolean(analyticsError)} onClose={closeAnalytics} maxWidth="sm" fullWidth><DialogTitle>Viewed by{analyticsTitle ? `: ${analyticsTitle}` : ''}</DialogTitle><DialogContent dividers>{analyticsLoading ? <Typography>Loading viewer statistics...</Typography> : analyticsError ? <Alert severity="error">{analyticsError}</Alert> : analytics && <><Stack direction="row" spacing={1.5} sx={{ mb: 2 }}><Box sx={{ minWidth: 110, p: 1.5, borderRadius: 2, bgcolor: '#f5f7fa' }}><Typography variant="caption" color="text.secondary">Viewed</Typography><Typography variant="h5" fontWeight={800}>{analytics.viewed}</Typography></Box><Box sx={{ minWidth: 110, p: 1.5, borderRadius: 2, bgcolor: '#f5f7fa' }}><Typography variant="caption" color="text.secondary">Eligible Retail</Typography><Typography variant="h5" fontWeight={800}>{analytics.eligible_retail_users}</Typography></Box></Stack><Divider sx={{ mb: 1 }} />{analytics.viewed_users?.length ? analytics.viewed_users.map((viewer) => <Box key={`${viewer.hr_id}-${viewer.first_viewed_at}`} sx={{ py: 1.25 }}><Typography fontWeight={800}>{viewer.name || 'Unknown user'}</Typography><Typography variant="body2" color="text.secondary">HR ID: {viewer.hr_id || 'Not available'} · Viewed {formatViewedAt(viewer.first_viewed_at)}</Typography></Box>) : <Typography color="text.secondary">No Retail users have viewed this Brief yet.</Typography>}</>}</DialogContent><DialogActions><Button startIcon={<FileDownload />} onClick={exportAnalytics} disabled={analyticsLoading || analyticsExportLoading || !analyticsBriefId}>{analyticsExportLoading ? 'Exporting...' : 'Export Excel'}</Button><Button onClick={closeAnalytics} disabled={analyticsLoading || analyticsExportLoading}>Close</Button></DialogActions></Dialog>
+  </Box>;
+}

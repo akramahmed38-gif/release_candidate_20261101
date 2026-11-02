@@ -1,0 +1,2586 @@
+{
+  "source": "existing HR application, read only",
+  "files": [
+    {
+      "path": "src/controllers/base_controller.py",
+      "original_sha256": "548022c9cc303108e834fd575b3dbdf184041cc002ef143dc792079723c152af",
+      "staged_sha256": "548022c9cc303108e834fd575b3dbdf184041cc002ef143dc792079723c152af",
+      "source_size": 1868,
+      "source_mtime_ns": 1781567637000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/controllers/data_controller.py",
+      "original_sha256": "81af62ecfbb54a2303b3ce7deed280d7b310223b093ca1be9978beae82c86480",
+      "staged_sha256": "81af62ecfbb54a2303b3ce7deed280d7b310223b093ca1be9978beae82c86480",
+      "source_size": 2390,
+      "source_mtime_ns": 1781567637000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/controllers/material_controller.py",
+      "original_sha256": "4790d154f244191265edf0b53b08e45f6d4977e93864caa59920ea5a7f287111",
+      "staged_sha256": "4790d154f244191265edf0b53b08e45f6d4977e93864caa59920ea5a7f287111",
+      "source_size": 18068,
+      "source_mtime_ns": 1788342257000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/controllers/__init__.py",
+      "original_sha256": "fa4508c6474d30c3bc28f6bde3f2c1bf823b0a7e524af9b6746347b3864224f2",
+      "staged_sha256": "fa4508c6474d30c3bc28f6bde3f2c1bf823b0a7e524af9b6746347b3864224f2",
+      "source_size": 307,
+      "source_mtime_ns": 1781567637000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/models/base_model.py",
+      "original_sha256": "9aab60ed20ac9dfb6642d6227faeafe1f588c8ace309c46d48ee2281a8341946",
+      "staged_sha256": "9aab60ed20ac9dfb6642d6227faeafe1f588c8ace309c46d48ee2281a8341946",
+      "source_size": 536,
+      "source_mtime_ns": 1781567637000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/models/employee_model.py",
+      "original_sha256": "158fa7c6ca030335913e9e1732062ba0140bf7ed5b09d640fd0ab3ba22a64bd9",
+      "staged_sha256": "158fa7c6ca030335913e9e1732062ba0140bf7ed5b09d640fd0ab3ba22a64bd9",
+      "source_size": 15078,
+      "source_mtime_ns": 1784720291000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/models/question_model.py",
+      "original_sha256": "be538d6de6c25a0e757d7b9c164568d675ead56ac7abbe605918a99831e72a0d",
+      "staged_sha256": "be538d6de6c25a0e757d7b9c164568d675ead56ac7abbe605918a99831e72a0d",
+      "source_size": 12740,
+      "source_mtime_ns": 1783886497000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/models/material_model.py",
+      "original_sha256": "1e7a528ec79f00a250b53e49bf863b585c4dac4ce8a4fe568766f9abb64e8652",
+      "staged_sha256": "1e7a528ec79f00a250b53e49bf863b585c4dac4ce8a4fe568766f9abb64e8652",
+      "source_size": 6381,
+      "source_mtime_ns": 1781567637000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/models/exam_model.py",
+      "original_sha256": "03b35847f650bbe3aec1304ae531da24a2e86bf02c38345f9d7c16b9f1fd52ee",
+      "staged_sha256": "03b35847f650bbe3aec1304ae531da24a2e86bf02c38345f9d7c16b9f1fd52ee",
+      "source_size": 43562,
+      "source_mtime_ns": 1788684228000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/controllers/exam_controller.py",
+      "original_sha256": "762f7f3adaa9a8ec96ad147ec619e7a1b4dd7299c81f11ac83b2e5959cc4a62d",
+      "staged_sha256": "762f7f3adaa9a8ec96ad147ec619e7a1b4dd7299c81f11ac83b2e5959cc4a62d",
+      "source_size": 514,
+      "source_mtime_ns": 1781567637000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/models/db_schemas/learning/alembic/env.py",
+      "original_sha256": "34301e90ea9e00377da7fe60147ed5dbba73a1fa75514a6e9261b0fdb3c0140a",
+      "staged_sha256": "34301e90ea9e00377da7fe60147ed5dbba73a1fa75514a6e9261b0fdb3c0140a",
+      "source_size": 2166,
+      "source_mtime_ns": 1781567637000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/models/db_schemas/__init__.py",
+      "original_sha256": "1a68cc937984ec6fc1d32f7691ca87badfe5c309ce3ff44019d8b566fb03ad06",
+      "staged_sha256": "1a68cc937984ec6fc1d32f7691ca87badfe5c309ce3ff44019d8b566fb03ad06",
+      "source_size": 1368,
+      "source_mtime_ns": 1792408649365367600,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/models/__init__.py",
+      "original_sha256": "443557ef39a733fdff467f218bd290fadb4da199d0e3552a6bb021ba970023ca",
+      "staged_sha256": "443557ef39a733fdff467f218bd290fadb4da199d0e3552a6bb021ba970023ca",
+      "source_size": 121,
+      "source_mtime_ns": 1781567637000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/models/db_schemas/learning/alembic/versions/4c2a6d7b9e10_add_resigned_users_lifecycle.py",
+      "original_sha256": "c3c376f5752c2bb5c821d3e35cfd2d158c32eb747b4ffe54dcfc9e08c51746c8",
+      "staged_sha256": "c3c376f5752c2bb5c821d3e35cfd2d158c32eb747b4ffe54dcfc9e08c51746c8",
+      "source_size": 5933,
+      "source_mtime_ns": 1784634161000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/models/db_schemas/learning/alembic/versions/8f4a3c2d1e90_add_dashboard_aggregate_indexes.py",
+      "original_sha256": "696127fdb564ef49680bf323f5671bb80aa16eab985b79c7f3318ce53d83d8fa",
+      "staged_sha256": "696127fdb564ef49680bf323f5671bb80aa16eab985b79c7f3318ce53d83d8fa",
+      "source_size": 2230,
+      "source_mtime_ns": 1788866933000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/models/db_schemas/learning/alembic/versions/84fdefb8f3eb_add_number_of_attemps_allowed.py",
+      "original_sha256": "6766761512febac40e40b49ef37f69695e165e476efde15891dc47eec249244f",
+      "staged_sha256": "6766761512febac40e40b49ef37f69695e165e476efde15891dc47eec249244f",
+      "source_size": 916,
+      "source_mtime_ns": 1781567637000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/models/db_schemas/learning/alembic/versions/a91b3e4c7d22_add_exam_attempt_unique_constraint.py",
+      "original_sha256": "47a17f1947487b3e23fd67bd54bae0ce908f737d020488adbe57cb90d6f6cc2d",
+      "staged_sha256": "47a17f1947487b3e23fd67bd54bae0ce908f737d020488adbe57cb90d6f6cc2d",
+      "source_size": 1006,
+      "source_mtime_ns": 1785310949000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/models/db_schemas/learning/alembic/versions/b5d9e6a1c3f0_add_daily_brief_tables.py",
+      "original_sha256": "353f0dfa39f3db3763b4c9fbb59750fcc3f31abaf53fea1ec2afd194b5bc68e8",
+      "staged_sha256": "353f0dfa39f3db3763b4c9fbb59750fcc3f31abaf53fea1ec2afd194b5bc68e8",
+      "source_size": 3450,
+      "source_mtime_ns": 1788619985000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/models/db_schemas/learning/alembic/versions/c4d4596d7888_add_multi_correct.py",
+      "original_sha256": "c2cfbaacb761d5c1604601f80f896a55acdad79c13ac559ad25f906960eb5e73",
+      "staged_sha256": "c2cfbaacb761d5c1604601f80f896a55acdad79c13ac559ad25f906960eb5e73",
+      "source_size": 899,
+      "source_mtime_ns": 1781567637000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/models/db_schemas/learning/alembic/versions/bea139a3dbe8_add_passing_rate_in_exam_table.py",
+      "original_sha256": "2429c151faa8f7cabf4745b121c24fad4b681b8804e83c5d8878748288ab494f",
+      "staged_sha256": "2429c151faa8f7cabf4745b121c24fad4b681b8804e83c5d8878748288ab494f",
+      "source_size": 894,
+      "source_mtime_ns": 1781567637000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/models/db_schemas/learning/alembic/versions/d82a7d736a2b_add.py",
+      "original_sha256": "4210ac77b43fadf588e399d015eba2c9b83621ae5964058290126ed015ff63d9",
+      "staged_sha256": "4210ac77b43fadf588e399d015eba2c9b83621ae5964058290126ed015ff63d9",
+      "source_size": 9641,
+      "source_mtime_ns": 1781567637000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/models/db_schemas/learning/alembic/versions/f3c91a5b7d21_add_question_bank_tables.py",
+      "original_sha256": "a20bd6d92a6faa7ad1453b176734b3c295631829230a96f8381160324073b2d9",
+      "staged_sha256": "a20bd6d92a6faa7ad1453b176734b3c295631829230a96f8381160324073b2d9",
+      "source_size": 3022,
+      "source_mtime_ns": 1783887088000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/models/db_schemas/learning/schemas/association_table.py",
+      "original_sha256": "e100a742d5e075f7b01f7e2bcca7c85ab27fd202a297990dbe266eb1267ec70e",
+      "staged_sha256": "e100a742d5e075f7b01f7e2bcca7c85ab27fd202a297990dbe266eb1267ec70e",
+      "source_size": 854,
+      "source_mtime_ns": 1781567637000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/models/db_schemas/learning/schemas/branch.py",
+      "original_sha256": "994dc68cdf4a5fdd011358c326783f659d7896838d1781bb1caea63317ea94ef",
+      "staged_sha256": "994dc68cdf4a5fdd011358c326783f659d7896838d1781bb1caea63317ea94ef",
+      "source_size": 1090,
+      "source_mtime_ns": 1781567637000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/models/db_schemas/learning/schemas/business_vocabulary.py",
+      "original_sha256": "cbf77cb7247cbb42ee0e0f409b5e578559951a3f092ced7e39e02eb26316f213",
+      "staged_sha256": "cbf77cb7247cbb42ee0e0f409b5e578559951a3f092ced7e39e02eb26316f213",
+      "source_size": 2200,
+      "source_mtime_ns": 1790512164467712000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/models/db_schemas/learning/schemas/correction.py",
+      "original_sha256": "54a7514512e4ea4ec8b011322a4b5253ae8cf0920842b8a17211049bbdfe7419",
+      "staged_sha256": "54a7514512e4ea4ec8b011322a4b5253ae8cf0920842b8a17211049bbdfe7419",
+      "source_size": 5408,
+      "source_mtime_ns": 1785310125000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/models/db_schemas/learning/schemas/daily_brief.py",
+      "original_sha256": "f47e8a8b83848be1a376aec27ae9716ded20b026bc8a1fcb1c04d77f5599b329",
+      "staged_sha256": "f47e8a8b83848be1a376aec27ae9716ded20b026bc8a1fcb1c04d77f5599b329",
+      "source_size": 7656,
+      "source_mtime_ns": 1791884081808425700,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/models/db_schemas/learning/schemas/employment_status_history.py",
+      "original_sha256": "d0eb1f4cfd95cc7003f13755c8717e863d4b1b2fe1f7a484b58ac25481eee4ac",
+      "staged_sha256": "d0eb1f4cfd95cc7003f13755c8717e863d4b1b2fe1f7a484b58ac25481eee4ac",
+      "source_size": 970,
+      "source_mtime_ns": 1784632517000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/models/db_schemas/learning/schemas/emplyee.py",
+      "original_sha256": "855b4ea4172a1ca2e296ee950c797b4553c63de00bb72156a715b5962060c585",
+      "staged_sha256": "855b4ea4172a1ca2e296ee950c797b4553c63de00bb72156a715b5962060c585",
+      "source_size": 3854,
+      "source_mtime_ns": 1784632517000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/models/db_schemas/learning/schemas/exam.py",
+      "original_sha256": "053dbde98fdc7096b7cd363937a790409528ec4962a565e746585e11b13c35fa",
+      "staged_sha256": "053dbde98fdc7096b7cd363937a790409528ec4962a565e746585e11b13c35fa",
+      "source_size": 3107,
+      "source_mtime_ns": 1784029909000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/models/db_schemas/learning/schemas/learning_base.py",
+      "original_sha256": "c42769f4bd8929106ce5349cf2711835e6331c6e4b26cbb0c067e1be22f61332",
+      "staged_sha256": "c42769f4bd8929106ce5349cf2711835e6331c6e4b26cbb0c067e1be22f61332",
+      "source_size": 380,
+      "source_mtime_ns": 1781567637000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/models/db_schemas/learning/schemas/material.py",
+      "original_sha256": "105494a0056d76aab7bc5dc3ae3ee32b68c0f60a80a261128ede59f0b17efb3f",
+      "staged_sha256": "105494a0056d76aab7bc5dc3ae3ee32b68c0f60a80a261128ede59f0b17efb3f",
+      "source_size": 1515,
+      "source_mtime_ns": 1781567637000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/models/db_schemas/learning/schemas/maintenance_job_lock.py",
+      "original_sha256": "3e8022084930ac12c01ff5e005336c3ee2d46956ed4d58e48f137bc05d33021b",
+      "staged_sha256": "3e8022084930ac12c01ff5e005336c3ee2d46956ed4d58e48f137bc05d33021b",
+      "source_size": 655,
+      "source_mtime_ns": 1784632517000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/models/db_schemas/learning/schemas/otp_request.py",
+      "original_sha256": "55302cc672bae41acc2ab9507d55fe590345278e5ea95b1902e9624b09fb3c23",
+      "staged_sha256": "55302cc672bae41acc2ab9507d55fe590345278e5ea95b1902e9624b09fb3c23",
+      "source_size": 721,
+      "source_mtime_ns": 1781567637000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/models/db_schemas/learning/schemas/__init__.py",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "staged_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_size": 0,
+      "source_mtime_ns": 1781567637000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/models/db_schemas/learning/schemas/question.py",
+      "original_sha256": "453ff2a31b83fabf48a574cc6a05bf7ce4dec9059641a0bba058755558f14464",
+      "staged_sha256": "453ff2a31b83fabf48a574cc6a05bf7ce4dec9059641a0bba058755558f14464",
+      "source_size": 3980,
+      "source_mtime_ns": 1783886412000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/models/db_schemas/learning/schemas/question_group.py",
+      "original_sha256": "048c4a656d7a225086e7e16acbe4bcda629e4ae9a4e16272080beaeacfb908dd",
+      "staged_sha256": "048c4a656d7a225086e7e16acbe4bcda629e4ae9a4e16272080beaeacfb908dd",
+      "source_size": 1336,
+      "source_mtime_ns": 1792408646750726800,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/models/enums/processing_enum.py",
+      "original_sha256": "13f64a7d585cbd5cb773c24aed96e53800cf4eca243cc292241da7ed73113cef",
+      "staged_sha256": "13f64a7d585cbd5cb773c24aed96e53800cf4eca243cc292241da7ed73113cef",
+      "source_size": 298,
+      "source_mtime_ns": 1781567637000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/models/enums/__init__.py",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "staged_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_size": 0,
+      "source_mtime_ns": 1781567637000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/models/enums/response_enums.py",
+      "original_sha256": "dd823619c3ca43e2d81d1a24b4bad507eb7d3cb40b90316ee7bff716d8c18913",
+      "staged_sha256": "dd823619c3ca43e2d81d1a24b4bad507eb7d3cb40b90316ee7bff716d8c18913",
+      "source_size": 808,
+      "source_mtime_ns": 1781567637000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/routes/audit.py",
+      "original_sha256": "f60ff769f3559c1c415705142084bc18cede9af9f9d10006fe988c20f9afc899",
+      "staged_sha256": "f60ff769f3559c1c415705142084bc18cede9af9f9d10006fe988c20f9afc899",
+      "source_size": 8040,
+      "source_mtime_ns": 1781567637000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/routes/base.py",
+      "original_sha256": "b11f9f57f69fdddc346ff9bebcb33cd9faf0b0433395a977261da54d726ee450",
+      "staged_sha256": "b11f9f57f69fdddc346ff9bebcb33cd9faf0b0433395a977261da54d726ee450",
+      "source_size": 997,
+      "source_mtime_ns": 1781567637000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/routes/business_vocabulary.py",
+      "original_sha256": "636d6e89e81db53f20d54cb2f688f932d7e5cb3abae37b13e446ba30f108da89",
+      "staged_sha256": "636d6e89e81db53f20d54cb2f688f932d7e5cb3abae37b13e446ba30f108da89",
+      "source_size": 21711,
+      "source_mtime_ns": 1791741211880438500,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/routes/chatbot.py",
+      "original_sha256": "3a8d89412541f880aadafcbfdc1a24674f40d4512229f02016e23504fd06853f",
+      "staged_sha256": "3a8d89412541f880aadafcbfdc1a24674f40d4512229f02016e23504fd06853f",
+      "source_size": 27364,
+      "source_mtime_ns": 1792664229551226500,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/routes/daily_brief.py",
+      "original_sha256": "cbf18ba435710dec54ff071afe2bcaf21da5c9ec7c89c0558e2a5ef9bcf8b198",
+      "staged_sha256": "cbf18ba435710dec54ff071afe2bcaf21da5c9ec7c89c0558e2a5ef9bcf8b198",
+      "source_size": 69757,
+      "source_mtime_ns": 1793045568500497700,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/routes/exam.py",
+      "original_sha256": "fe2c1885722692e9f114d027a9ce840bcff33a19d403071468900d8501a481cb",
+      "staged_sha256": "fe2c1885722692e9f114d027a9ce840bcff33a19d403071468900d8501a481cb",
+      "source_size": 250891,
+      "source_mtime_ns": 1793093757064822000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/routes/material.py",
+      "original_sha256": "7dd5704e21c3d13295aa9e53ae4a8ddcd89ed5deb7d950b2d8a6fc6ff7656435",
+      "staged_sha256": "7dd5704e21c3d13295aa9e53ae4a8ddcd89ed5deb7d950b2d8a6fc6ff7656435",
+      "source_size": 39832,
+      "source_mtime_ns": 1791741207553445700,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/routes/question_bank_groups.py",
+      "original_sha256": "c5e38a5ded8810d402c6769242cec316a582b1a616835ff96dffa928facfdd46",
+      "staged_sha256": "c5e38a5ded8810d402c6769242cec316a582b1a616835ff96dffa928facfdd46",
+      "source_size": 12451,
+      "source_mtime_ns": 1792409582369222000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/routes/resigned_users.py",
+      "original_sha256": "02877cc8084e52b749a69ea1d734bfdfda7bb9ca779b1688c858169be57bac9f",
+      "staged_sha256": "02877cc8084e52b749a69ea1d734bfdfda7bb9ca779b1688c858169be57bac9f",
+      "source_size": 11074,
+      "source_mtime_ns": 1791741214206365000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/routes/__init__.py",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "staged_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_size": 0,
+      "source_mtime_ns": 1781567637000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/routes/schemas/exam.py",
+      "original_sha256": "c3d71b132576ff01634937a4e37e8eb4bcf820c01a614aa030c8527756dfbc2a",
+      "staged_sha256": "c3d71b132576ff01634937a4e37e8eb4bcf820c01a614aa030c8527756dfbc2a",
+      "source_size": 4024,
+      "source_mtime_ns": 1784624327000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/routes/schemas/material.py",
+      "original_sha256": "080a434f230caeb2cd4803259c24d0ba829f5dd9bf2cf98c94bc82c0a10bcb2b",
+      "staged_sha256": "080a434f230caeb2cd4803259c24d0ba829f5dd9bf2cf98c94bc82c0a10bcb2b",
+      "source_size": 531,
+      "source_mtime_ns": 1781567637000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/routes/schemas/__init__.py",
+      "original_sha256": "d8f643c989c8bd7d7cbc94baa8caf2c3a38fd950b695654004dfcc1d6cc27931",
+      "staged_sha256": "d8f643c989c8bd7d7cbc94baa8caf2c3a38fd950b695654004dfcc1d6cc27931",
+      "source_size": 411,
+      "source_mtime_ns": 1784029933000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/routes/users/admin_credentials.py",
+      "original_sha256": "b64af7f17b6335e9a576fd7786aabb4946309b73b443b3b640ef5e0a61889372",
+      "staged_sha256": "b64af7f17b6335e9a576fd7786aabb4946309b73b443b3b640ef5e0a61889372",
+      "source_size": 1102,
+      "source_mtime_ns": 1792671736540829600,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/stores/__init__.py",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "staged_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_size": 0,
+      "source_mtime_ns": 1781567637000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/routes/users/auth_utils.py",
+      "original_sha256": "e7b2d130d96c513d6053b5942f9c37471f1b92a84741cd3333d512dbd27569dd",
+      "staged_sha256": "7fa8c3d9ef777f22bb7ea53a48d1bde557ce6c7c2a79a5aff5b31cb667b170c5",
+      "source_size": 3095,
+      "source_mtime_ns": 1792662042139577300,
+      "staging_security_transform": true
+    },
+    {
+      "path": "src/stores/llm/__init__.py",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "staged_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_size": 0,
+      "source_mtime_ns": 1781567637000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/routes/users/users_router.py",
+      "original_sha256": "b533f226f401b7788da84493e7b3251d812cc3383ec9377cb93673433db6af9b",
+      "staged_sha256": "b533f226f401b7788da84493e7b3251d812cc3383ec9377cb93673433db6af9b",
+      "source_size": 86291,
+      "source_mtime_ns": 1792671745665517900,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/stores/llm/templates/template_parser.py",
+      "original_sha256": "300e006ba3c9d3501e736904e8b653b9b40587b1b092d1c98fba10f0169d893a",
+      "staged_sha256": "300e006ba3c9d3501e736904e8b653b9b40587b1b092d1c98fba10f0169d893a",
+      "source_size": 3311,
+      "source_mtime_ns": 1781567637000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/stores/llm/templates/__init__.py",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "staged_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_size": 0,
+      "source_mtime_ns": 1781567637000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/stores/llm/templates/locales/ar/__init__.py",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "staged_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_size": 0,
+      "source_mtime_ns": 1781567638000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/stores/llm/templates/locales/en/take_notes.py",
+      "original_sha256": "5cf37595cd0af6205e67f5f3172e51359131b33586c899738c464751ade6f95a",
+      "staged_sha256": "5cf37595cd0af6205e67f5f3172e51359131b33586c899738c464751ade6f95a",
+      "source_size": 668,
+      "source_mtime_ns": 1781567638000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/stores/llm/templates/locales/en/__init__.py",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "staged_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_size": 0,
+      "source_mtime_ns": 1781567638000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/utils/audit_trail.py",
+      "original_sha256": "9f4b26fda82bf68fb13eaf94df252b755a49592db25420f772caf0037e9f3c03",
+      "staged_sha256": "9f4b26fda82bf68fb13eaf94df252b755a49592db25420f772caf0037e9f3c03",
+      "source_size": 3896,
+      "source_mtime_ns": 1781567639000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/utils/config_utils.py",
+      "original_sha256": "8fef92423f795b85e7478e6a338fb1006f8f5eee83d180cc7744ee9d764ca1cd",
+      "staged_sha256": "8fef92423f795b85e7478e6a338fb1006f8f5eee83d180cc7744ee9d764ca1cd",
+      "source_size": 4965,
+      "source_mtime_ns": 1788165550000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/utils/dashboard_snapshots.py",
+      "original_sha256": "2f9326e8e34ff883891bd7114ebad4a78fd7f7061d21b69de5d52809f3b208fe",
+      "staged_sha256": "2f9326e8e34ff883891bd7114ebad4a78fd7f7061d21b69de5d52809f3b208fe",
+      "source_size": 20512,
+      "source_mtime_ns": 1793094929708902500,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/utils/logging_utils.py",
+      "original_sha256": "07ed5a4fb4ece3983cce77d01d4c5a2911f300498aad7b3c911d8621fc9e9c57",
+      "staged_sha256": "07ed5a4fb4ece3983cce77d01d4c5a2911f300498aad7b3c911d8621fc9e9c57",
+      "source_size": 3160,
+      "source_mtime_ns": 1781567639000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/utils/resigned_users.py",
+      "original_sha256": "d6637f1c4491ac0217902ad395b8e07f9c074a0112e4b60467a4f7fbf43bda69",
+      "staged_sha256": "d6637f1c4491ac0217902ad395b8e07f9c074a0112e4b60467a4f7fbf43bda69",
+      "source_size": 55055,
+      "source_mtime_ns": 1789990551000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/utils/stream_utils.py",
+      "original_sha256": "2ac3d19b3dc3167360098d5360b3639663ba9daf52bc995be128a4e93da4a729",
+      "staged_sha256": "2ac3d19b3dc3167360098d5360b3639663ba9daf52bc995be128a4e93da4a729",
+      "source_size": 3261,
+      "source_mtime_ns": 1781567639000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/utils/__init__.py",
+      "original_sha256": "a98d923d8e1c15fe8afce813838218dbebfb4974156f95959468fe700e5276da",
+      "staged_sha256": "a98d923d8e1c15fe8afce813838218dbebfb4974156f95959468fe700e5276da",
+      "source_size": 44,
+      "source_mtime_ns": 1781567639000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "chatbot/admission.py",
+      "original_sha256": "e568319b50cfd96c7cffc469936cb7310a9ac38243f29d92429d31305215d405",
+      "staged_sha256": "e568319b50cfd96c7cffc469936cb7310a9ac38243f29d92429d31305215d405",
+      "source_size": 1062,
+      "source_mtime_ns": 1792688492412168400,
+      "staging_security_transform": false
+    },
+    {
+      "path": "chatbot/analytics.py",
+      "original_sha256": "4bc5f306c67178ad7c85536592219252061b249be431f89f031ee128ae62255a",
+      "staged_sha256": "4bc5f306c67178ad7c85536592219252061b249be431f89f031ee128ae62255a",
+      "source_size": 20918,
+      "source_mtime_ns": 1782808352000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "chatbot/answer_relevance.py",
+      "original_sha256": "1b67f64d8879e765094e4e74a127153aaa4bdbfe857f2bb8560f2fdbbe0d14d7",
+      "staged_sha256": "1b67f64d8879e765094e4e74a127153aaa4bdbfe857f2bb8560f2fdbbe0d14d7",
+      "source_size": 3545,
+      "source_mtime_ns": 1792926672078165000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "chatbot/candidate_similarity.py",
+      "original_sha256": "5b03894bddb85c7153e478ccc393997e6a6aa62eda5a484be2bb34ab06986b54",
+      "staged_sha256": "5b03894bddb85c7153e478ccc393997e6a6aa62eda5a484be2bb34ab06986b54",
+      "source_size": 503,
+      "source_mtime_ns": 1792919430116342600,
+      "staging_security_transform": false
+    },
+    {
+      "path": "src/stores/llm/templates/locales/__init__.py",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "staged_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_size": 0,
+      "source_mtime_ns": 1781567638000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "chatbot/config.py",
+      "original_sha256": "84d31219d546010a03f3998699507d35085052cabd3e8225ab3ee47c9e3a98c4",
+      "staged_sha256": "84d31219d546010a03f3998699507d35085052cabd3e8225ab3ee47c9e3a98c4",
+      "source_size": 6662,
+      "source_mtime_ns": 1792919435021195400,
+      "staging_security_transform": false
+    },
+    {
+      "path": "chatbot/citation_policy.py",
+      "original_sha256": "a8835b466679a40ec134c2ca958ad9c0a63e696ae24af40ecb6bbf625505cbcc",
+      "staged_sha256": "a8835b466679a40ec134c2ca958ad9c0a63e696ae24af40ecb6bbf625505cbcc",
+      "source_size": 4568,
+      "source_mtime_ns": 1792752234978117100,
+      "staging_security_transform": false
+    },
+    {
+      "path": "chatbot/content_catalog.py",
+      "original_sha256": "7adc06cfd9a0ccc21e4bbc7a81a91d64d95520360ce721806a81667a26c0389c",
+      "staged_sha256": "7adc06cfd9a0ccc21e4bbc7a81a91d64d95520360ce721806a81667a26c0389c",
+      "source_size": 3211,
+      "source_mtime_ns": 1792688507507086600,
+      "staging_security_transform": false
+    },
+    {
+      "path": "chatbot/content_index.py",
+      "original_sha256": "79f3d8ed2981151217403fd06f34c06a32abfffafba2bfd2942aae8f3486ecbc",
+      "staged_sha256": "79f3d8ed2981151217403fd06f34c06a32abfffafba2bfd2942aae8f3486ecbc",
+      "source_size": 7062,
+      "source_mtime_ns": 1792866165104923600,
+      "staging_security_transform": false
+    },
+    {
+      "path": "chatbot/content_preparation.py",
+      "original_sha256": "8d12cf79bd2f831c809ec8a3295d385b3ed7e4a39b0711329ccc7d45305911b8",
+      "staged_sha256": "8d12cf79bd2f831c809ec8a3295d385b3ed7e4a39b0711329ccc7d45305911b8",
+      "source_size": 24953,
+      "source_mtime_ns": 1792798899946711100,
+      "staging_security_transform": false
+    },
+    {
+      "path": "chatbot/content_runtime.py",
+      "original_sha256": "8374b08cb5131719201aaac354eb053b24c7be67c3cd8bb61a8f9e0ad5fcc428",
+      "staged_sha256": "8374b08cb5131719201aaac354eb053b24c7be67c3cd8bb61a8f9e0ad5fcc428",
+      "source_size": 2568,
+      "source_mtime_ns": 1792692179745661100,
+      "staging_security_transform": false
+    },
+    {
+      "path": "chatbot/content_state.py",
+      "original_sha256": "ec60bf882e39594cc23d01a069dc8d5015e2404bbadde1d2effd8a6a4379ea7b",
+      "staged_sha256": "ec60bf882e39594cc23d01a069dc8d5015e2404bbadde1d2effd8a6a4379ea7b",
+      "source_size": 4569,
+      "source_mtime_ns": 1792718448980054200,
+      "staging_security_transform": false
+    },
+    {
+      "path": "chatbot/content_sync.py",
+      "original_sha256": "8dc85c353bd7a75d5c9976d6ca46affa2cfa640efe287c768222c09372f3dfb8",
+      "staged_sha256": "8dc85c353bd7a75d5c9976d6ca46affa2cfa640efe287c768222c09372f3dfb8",
+      "source_size": 7480,
+      "source_mtime_ns": 1792717887311126200,
+      "staging_security_transform": false
+    },
+    {
+      "path": "chatbot/content_transfer.py",
+      "original_sha256": "43b2e0273003b08f09ca2fd325d34ab7271cbbbf5a02e37f3d4160c51864f750",
+      "staged_sha256": "43b2e0273003b08f09ca2fd325d34ab7271cbbbf5a02e37f3d4160c51864f750",
+      "source_size": 7751,
+      "source_mtime_ns": 1792718453476412000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "chatbot/conversation_memory.py",
+      "original_sha256": "6950e8447136e533a8d7e0b76b7bde1aff643560acea761e480072d924128ef7",
+      "staged_sha256": "6950e8447136e533a8d7e0b76b7bde1aff643560acea761e480072d924128ef7",
+      "source_size": 32385,
+      "source_mtime_ns": 1792926388552579500,
+      "staging_security_transform": false
+    },
+    {
+      "path": "chatbot/documents_scope.py",
+      "original_sha256": "b8b9290a6afb475e24ee52fc8741b2e7015f2be62ee3de91c04ce7f0ef658607",
+      "staged_sha256": "b8b9290a6afb475e24ee52fc8741b2e7015f2be62ee3de91c04ce7f0ef658607",
+      "source_size": 988,
+      "source_mtime_ns": 1792839390060243400,
+      "staging_security_transform": false
+    },
+    {
+      "path": "chatbot/embedded_images.py",
+      "original_sha256": "26504f359908953edd4951151a084b163a673b00c35f7195f3d2e8b448d624dc",
+      "staged_sha256": "26504f359908953edd4951151a084b163a673b00c35f7195f3d2e8b448d624dc",
+      "source_size": 1416,
+      "source_mtime_ns": 1792798897761074000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "chatbot/follow_up_resolution.py",
+      "original_sha256": "3961262a276ce78a60f2f818697671955997898ab69a402569d139e896c6bfb0",
+      "staged_sha256": "3961262a276ce78a60f2f818697671955997898ab69a402569d139e896c6bfb0",
+      "source_size": 15241,
+      "source_mtime_ns": 1784467647000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "chatbot/generation.py",
+      "original_sha256": "c73583dba3825ff92b736252891f10d59a0c703dc55dcbb905b6b9bad2e11801",
+      "staged_sha256": "c73583dba3825ff92b736252891f10d59a0c703dc55dcbb905b6b9bad2e11801",
+      "source_size": 45015,
+      "source_mtime_ns": 1792688527722708300,
+      "staging_security_transform": false
+    },
+    {
+      "path": "chatbot/index_metadata.py",
+      "original_sha256": "15de8aa97d56517e3108f208773ad8192ae9ce458f7711928dbaea2946fed180",
+      "staged_sha256": "15de8aa97d56517e3108f208773ad8192ae9ce458f7711928dbaea2946fed180",
+      "source_size": 307,
+      "source_mtime_ns": 1792859100838173900,
+      "staging_security_transform": false
+    },
+    {
+      "path": "chatbot/ingestion.py",
+      "original_sha256": "b3c2738d6e9accdeff907913c5fdbbf7e4a27ebd1b0f01c25238defabc18d842",
+      "staged_sha256": "b3c2738d6e9accdeff907913c5fdbbf7e4a27ebd1b0f01c25238defabc18d842",
+      "source_size": 43892,
+      "source_mtime_ns": 1792798898937485300,
+      "staging_security_transform": false
+    },
+    {
+      "path": "chatbot/noop_telemetry.py",
+      "original_sha256": "b2c4e154f54a9b500e9b93bbd4918c90922c3570c6e841e5eac367841a5aae50",
+      "staged_sha256": "b2c4e154f54a9b500e9b93bbd4918c90922c3570c6e841e5eac367841a5aae50",
+      "source_size": 431,
+      "source_mtime_ns": 1792840198150529400,
+      "staging_security_transform": false
+    },
+    {
+      "path": "chatbot/logging_utils.py",
+      "original_sha256": "defda609652840f3a4b35c16724950426568ac8af116bcf22f55364757b7e115",
+      "staged_sha256": "defda609652840f3a4b35c16724950426568ac8af116bcf22f55364757b7e115",
+      "source_size": 771,
+      "source_mtime_ns": 1781986283000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "chatbot/normalization.py",
+      "original_sha256": "0fa75eea4cedd9239872319dc839703d68b6359414695323964f9c05f54b2c46",
+      "staged_sha256": "0fa75eea4cedd9239872319dc839703d68b6359414695323964f9c05f54b2c46",
+      "source_size": 11473,
+      "source_mtime_ns": 1792926193240782800,
+      "staging_security_transform": false
+    },
+    {
+      "path": "chatbot/ocr.py",
+      "original_sha256": "15137e6543900c03d1fab9a443afc904b2038dc915725444b7d7ea9f7fd8d279",
+      "staged_sha256": "15137e6543900c03d1fab9a443afc904b2038dc915725444b7d7ea9f7fd8d279",
+      "source_size": 4003,
+      "source_mtime_ns": 1792711694417064700,
+      "staging_security_transform": false
+    },
+    {
+      "path": "chatbot/profiling.py",
+      "original_sha256": "d47d51729390dcd5231cbbaa2cec92e2c1b74cfb5097b1a467f469d5c79ac45b",
+      "staged_sha256": "d47d51729390dcd5231cbbaa2cec92e2c1b74cfb5097b1a467f469d5c79ac45b",
+      "source_size": 5760,
+      "source_mtime_ns": 1783496270000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "chatbot/query_language.py",
+      "original_sha256": "3eea8d7eb604be5df5a629a54a61fc094afeb7db4487615a9242deffdacc26c8",
+      "staged_sha256": "3eea8d7eb604be5df5a629a54a61fc094afeb7db4487615a9242deffdacc26c8",
+      "source_size": 8048,
+      "source_mtime_ns": 1792714296865048100,
+      "staging_security_transform": false
+    },
+    {
+      "path": "chatbot/query_understanding.py",
+      "original_sha256": "f5ebb8e120633c6e6ebe3364eeb4ff11dd8caa681ba0a0416e0fed33242361de",
+      "staged_sha256": "f5ebb8e120633c6e6ebe3364eeb4ff11dd8caa681ba0a0416e0fed33242361de",
+      "source_size": 6757,
+      "source_mtime_ns": 1784041058000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "chatbot/question_lookup.py",
+      "original_sha256": "b220c8e7e09e9644e493c762e2c20346fffd23b17fc0ea541e47224232b7c69e",
+      "staged_sha256": "b220c8e7e09e9644e493c762e2c20346fffd23b17fc0ea541e47224232b7c69e",
+      "source_size": 2260,
+      "source_mtime_ns": 1792713940142715200,
+      "staging_security_transform": false
+    },
+    {
+      "path": "chatbot/reply_language.py",
+      "original_sha256": "f74a9a5f32130e801e37d25cfac2b2866595932fe3d6fa0042ba64278d89020f",
+      "staged_sha256": "f74a9a5f32130e801e37d25cfac2b2866595932fe3d6fa0042ba64278d89020f",
+      "source_size": 10688,
+      "source_mtime_ns": 1792717894029024700,
+      "staging_security_transform": false
+    },
+    {
+      "path": "chatbot/retrieval.py",
+      "original_sha256": "86a99ed68a5e043671f754821fda3b3025d7c5b3451aa736c3109adb05ccabff",
+      "staged_sha256": "86a99ed68a5e043671f754821fda3b3025d7c5b3451aa736c3109adb05ccabff",
+      "source_size": 50344,
+      "source_mtime_ns": 1792926197105250700,
+      "staging_security_transform": false
+    },
+    {
+      "path": "chatbot/service.py",
+      "original_sha256": "6db37a0e7682ebd3f74dfdc7102812266429b0d5abc19e78ea591bd0b96d9269",
+      "staged_sha256": "6db37a0e7682ebd3f74dfdc7102812266429b0d5abc19e78ea591bd0b96d9269",
+      "source_size": 91680,
+      "source_mtime_ns": 1792926203248743500,
+      "staging_security_transform": false
+    },
+    {
+      "path": "chatbot/sidecar.py",
+      "original_sha256": "226a2c6672223a3b36d9407be2772f1ae2507efafffaf46bc0ca2ea65b680ddf",
+      "staged_sha256": "226a2c6672223a3b36d9407be2772f1ae2507efafffaf46bc0ca2ea65b680ddf",
+      "source_size": 77188,
+      "source_mtime_ns": 1792752236505296800,
+      "staging_security_transform": false
+    },
+    {
+      "path": "chatbot/smalltalk.py",
+      "original_sha256": "84de53ce95bfa173b596dd9841497a324aa34d88cbbe0ca195b8d7f4a9265947",
+      "staged_sha256": "84de53ce95bfa173b596dd9841497a324aa34d88cbbe0ca195b8d7f4a9265947",
+      "source_size": 4001,
+      "source_mtime_ns": 1792673342904260900,
+      "staging_security_transform": false
+    },
+    {
+      "path": "chatbot/source_answers.py",
+      "original_sha256": "3c9da0839a63bcdad3b15eea8a853d64ff3451596d541c85405a5e7dccf6db53",
+      "staged_sha256": "3c9da0839a63bcdad3b15eea8a853d64ff3451596d541c85405a5e7dccf6db53",
+      "source_size": 1893,
+      "source_mtime_ns": 1792926672479148400,
+      "staging_security_transform": false
+    },
+    {
+      "path": "chatbot/vector_store.py",
+      "original_sha256": "0426f78e15d179bb6a1e5c7127c4089ea04cf320e889a474df24e49a4f30a63c",
+      "staged_sha256": "0426f78e15d179bb6a1e5c7127c4089ea04cf320e889a474df24e49a4f30a63c",
+      "source_size": 5633,
+      "source_mtime_ns": 1792919431280705500,
+      "staging_security_transform": false
+    },
+    {
+      "path": "chatbot/__init__.py",
+      "original_sha256": "3fafd4730ec846c240fe8e15f4e8761b676f57bccc7959d1e456503d6eade7f7",
+      "staged_sha256": "3fafd4730ec846c240fe8e15f4e8761b676f57bccc7959d1e456503d6eade7f7",
+      "source_size": 35,
+      "source_mtime_ns": 1782808748000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "chatbot/_root_wrappers/app.py",
+      "original_sha256": "cd65e17ef3279913ab59e9bc43ffb29e772be16bfb2fc70011de262df6b52c5e",
+      "staged_sha256": "cd65e17ef3279913ab59e9bc43ffb29e772be16bfb2fc70011de262df6b52c5e",
+      "source_size": 127,
+      "source_mtime_ns": 1782808495000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "chatbot/_root_wrappers/chatbot_analytics.py",
+      "original_sha256": "2b07a317baab010539e9ab8d48ab94bca3dbc3388b353abfda33553654773cc5",
+      "staged_sha256": "2b07a317baab010539e9ab8d48ab94bca3dbc3388b353abfda33553654773cc5",
+      "source_size": 51,
+      "source_mtime_ns": 1782808517000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "chatbot/_root_wrappers/chatbot_sidecar.py",
+      "original_sha256": "b69a03c0d0180430718ec06216e59b9bfcd740191e7a7301f31ed81d543abdf9",
+      "staged_sha256": "b69a03c0d0180430718ec06216e59b9bfcd740191e7a7301f31ed81d543abdf9",
+      "source_size": 127,
+      "source_mtime_ns": 1782808506000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "chatbot/_root_wrappers/config.py",
+      "original_sha256": "627563f0e790774b7426ade85875ab198b24bdd0972b714f97af46cdca366558",
+      "staged_sha256": "627563f0e790774b7426ade85875ab198b24bdd0972b714f97af46cdca366558",
+      "source_size": 48,
+      "source_mtime_ns": 1782808528000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "chatbot/_root_wrappers/generator.py",
+      "original_sha256": "e0586c51342518c7f4566e1fecd90b8b2807bd4ffd844d761aa308e551d5cd46",
+      "staged_sha256": "e0586c51342518c7f4566e1fecd90b8b2807bd4ffd844d761aa308e551d5cd46",
+      "source_size": 52,
+      "source_mtime_ns": 1782808540000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "chatbot/_root_wrappers/logger.py",
+      "original_sha256": "b246f74699242f6e9054c25471badfdd9b37b6dd5cb741975df5c7f4aa87f4eb",
+      "staged_sha256": "b246f74699242f6e9054c25471badfdd9b37b6dd5cb741975df5c7f4aa87f4eb",
+      "source_size": 55,
+      "source_mtime_ns": 1782808562000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "chatbot/_root_wrappers/ingestion.py",
+      "original_sha256": "1f79fcbfd161b6c142d790ad2cdda38512fdb5fea71ab8673cd8f58d1edff71f",
+      "staged_sha256": "1f79fcbfd161b6c142d790ad2cdda38512fdb5fea71ab8673cd8f58d1edff71f",
+      "source_size": 51,
+      "source_mtime_ns": 1782808551000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "chatbot/_root_wrappers/normalization.py",
+      "original_sha256": "8836cd72e6eb5c88955183e16c09d9a02397e7dee6d98ffa890cb8adc2945470",
+      "staged_sha256": "8836cd72e6eb5c88955183e16c09d9a02397e7dee6d98ffa890cb8adc2945470",
+      "source_size": 55,
+      "source_mtime_ns": 1782808573000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "chatbot/_root_wrappers/ocr.py",
+      "original_sha256": "ecfd6249bda362f83d7a062bcfe45f392fcbeb9d2d3176f2ac08b0bbfbe3e4a9",
+      "staged_sha256": "ecfd6249bda362f83d7a062bcfe45f392fcbeb9d2d3176f2ac08b0bbfbe3e4a9",
+      "source_size": 45,
+      "source_mtime_ns": 1782808584000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "chatbot/_root_wrappers/retriever.py",
+      "original_sha256": "9897f3fdfb6a6c66ee6d5b39de0d24960211d14854ed9b0246e6c8e9ca9cf1a3",
+      "staged_sha256": "9897f3fdfb6a6c66ee6d5b39de0d24960211d14854ed9b0246e6c8e9ca9cf1a3",
+      "source_size": 51,
+      "source_mtime_ns": 1782808595000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "chatbot/_root_wrappers/vector_store.py",
+      "original_sha256": "0999278e55ccfa3b234dc73f7568db40b60ef135de82e86685b28a7af8214b80",
+      "staged_sha256": "0999278e55ccfa3b234dc73f7568db40b60ef135de82e86685b28a7af8214b80",
+      "source_size": 54,
+      "source_mtime_ns": 1782808606000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/App.css",
+      "original_sha256": "c5ac42e56bf8c34eb741d752bc879144f186d7ca0a48fcbb73b967177f7a9240",
+      "staged_sha256": "c5ac42e56bf8c34eb741d752bc879144f186d7ca0a48fcbb73b967177f7a9240",
+      "source_size": 564,
+      "source_mtime_ns": 1781567636000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/App.js",
+      "original_sha256": "cb1c4a6f05e69b610e71a58f2c909bb3a5a3c9339739be813f7466fd187c156d",
+      "staged_sha256": "cb1c4a6f05e69b610e71a58f2c909bb3a5a3c9339739be813f7466fd187c156d",
+      "source_size": 37,
+      "source_mtime_ns": 1781567636000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/App.jsx",
+      "original_sha256": "33bebe911d51c26e02a525c3be580a2a86715c7faf850a54b6216d2c3686d875",
+      "staged_sha256": "33bebe911d51c26e02a525c3be580a2a86715c7faf850a54b6216d2c3686d875",
+      "source_size": 10222,
+      "source_mtime_ns": 1792409047669144700,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/App.test.js",
+      "original_sha256": "f7784693194b8657d1bf70c37ea70f4a2d694c4566ec41550a8e650eb600aaa4",
+      "staged_sha256": "f7784693194b8657d1bf70c37ea70f4a2d694c4566ec41550a8e650eb600aaa4",
+      "source_size": 246,
+      "source_mtime_ns": 1781567636000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/App.test.jsx",
+      "original_sha256": "f7784693194b8657d1bf70c37ea70f4a2d694c4566ec41550a8e650eb600aaa4",
+      "staged_sha256": "f7784693194b8657d1bf70c37ea70f4a2d694c4566ec41550a8e650eb600aaa4",
+      "source_size": 246,
+      "source_mtime_ns": 1781567636000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/favicon.png",
+      "original_sha256": "76a5ea4f283cc0c2d550d7b3b8beee83d2ceff497a73264545e8f145e7102195",
+      "staged_sha256": "76a5ea4f283cc0c2d550d7b3b8beee83d2ceff497a73264545e8f145e7102195",
+      "source_size": 4280,
+      "source_mtime_ns": 1792093113115141200,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/index.css",
+      "original_sha256": "d5bc7fa301deae99d1fa48f5bf2a65807c73a85a4732a4db5e2dcedc7ca24e61",
+      "staged_sha256": "d5bc7fa301deae99d1fa48f5bf2a65807c73a85a4732a4db5e2dcedc7ca24e61",
+      "source_size": 261,
+      "source_mtime_ns": 1781567636000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/index.js",
+      "original_sha256": "650264f8614356c413e050a3938db95cb6482d773b877766d8048afbb7bf90ef",
+      "staged_sha256": "650264f8614356c413e050a3938db95cb6482d773b877766d8048afbb7bf90ef",
+      "source_size": 242,
+      "source_mtime_ns": 1781567636000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/index.jsx",
+      "original_sha256": "650264f8614356c413e050a3938db95cb6482d773b877766d8048afbb7bf90ef",
+      "staged_sha256": "650264f8614356c413e050a3938db95cb6482d773b877766d8048afbb7bf90ef",
+      "source_size": 242,
+      "source_mtime_ns": 1781567636000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/index.tsx",
+      "original_sha256": "650264f8614356c413e050a3938db95cb6482d773b877766d8048afbb7bf90ef",
+      "staged_sha256": "650264f8614356c413e050a3938db95cb6482d773b877766d8048afbb7bf90ef",
+      "source_size": 242,
+      "source_mtime_ns": 1781567636000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/logo.svg",
+      "original_sha256": "d2931b0e9ff57d5cde20fc1075c4f95be88cc26ad74472dc7a180bf26b9964da",
+      "staged_sha256": "d2931b0e9ff57d5cde20fc1075c4f95be88cc26ad74472dc7a180bf26b9964da",
+      "source_size": 19544,
+      "source_mtime_ns": 1792092899320223600,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/reportWebVitals.js",
+      "original_sha256": "714851669856152806c289f9aac6240b414bbac50c60ee4f7e6247f31eac0c1c",
+      "staged_sha256": "714851669856152806c289f9aac6240b414bbac50c60ee4f7e6247f31eac0c1c",
+      "source_size": 362,
+      "source_mtime_ns": 1781567636000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/reportWebVitals.jsx",
+      "original_sha256": "714851669856152806c289f9aac6240b414bbac50c60ee4f7e6247f31eac0c1c",
+      "staged_sha256": "714851669856152806c289f9aac6240b414bbac50c60ee4f7e6247f31eac0c1c",
+      "source_size": 362,
+      "source_mtime_ns": 1781567636000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/setupTests.js",
+      "original_sha256": "22583759d0045fdf8d62c9db0aacba9fd8bddde79c671aa08c97dcfd4e930cc6",
+      "staged_sha256": "22583759d0045fdf8d62c9db0aacba9fd8bddde79c671aa08c97dcfd4e930cc6",
+      "source_size": 241,
+      "source_mtime_ns": 1781567636000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/setupTests.jsx",
+      "original_sha256": "22583759d0045fdf8d62c9db0aacba9fd8bddde79c671aa08c97dcfd4e930cc6",
+      "staged_sha256": "22583759d0045fdf8d62c9db0aacba9fd8bddde79c671aa08c97dcfd4e930cc6",
+      "source_size": 241,
+      "source_mtime_ns": 1781567636000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/components/Admin/AuditTrail.js",
+      "original_sha256": "6f9c991d07cd385b315fa40efbadaa6eb3af35afc33e14cd9ce0b22ecfcd765e",
+      "staged_sha256": "6f9c991d07cd385b315fa40efbadaa6eb3af35afc33e14cd9ce0b22ecfcd765e",
+      "source_size": 14842,
+      "source_mtime_ns": 1791741258532639600,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/components/Admin/AuditTrail.jsx",
+      "original_sha256": "6f9c991d07cd385b315fa40efbadaa6eb3af35afc33e14cd9ce0b22ecfcd765e",
+      "staged_sha256": "6f9c991d07cd385b315fa40efbadaa6eb3af35afc33e14cd9ce0b22ecfcd765e",
+      "source_size": 14842,
+      "source_mtime_ns": 1791741259644210500,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/components/Admin/CreateUser.js",
+      "original_sha256": "585136daed4aab6b638f3f6c7decb7a02ccca35c94a8c56530f02da9e91f67e4",
+      "staged_sha256": "585136daed4aab6b638f3f6c7decb7a02ccca35c94a8c56530f02da9e91f67e4",
+      "source_size": 7767,
+      "source_mtime_ns": 1781567636000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/components/Admin/CreateUser.jsx",
+      "original_sha256": "585136daed4aab6b638f3f6c7decb7a02ccca35c94a8c56530f02da9e91f67e4",
+      "staged_sha256": "585136daed4aab6b638f3f6c7decb7a02ccca35c94a8c56530f02da9e91f67e4",
+      "source_size": 7767,
+      "source_mtime_ns": 1781567636000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/components/Admin/ResignedUsers.jsx",
+      "original_sha256": "f937183ff833b128bc5f2abe29dfeb046c016a8444dd9b22891a85f1fa432a95",
+      "staged_sha256": "f937183ff833b128bc5f2abe29dfeb046c016a8444dd9b22891a85f1fa432a95",
+      "source_size": 18925,
+      "source_mtime_ns": 1789990633000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/components/Admin/UserManagement.js",
+      "original_sha256": "10b4321ffb3ff5799f436701e20bed7043631fd053b71320c3cfe0b1a6adf358",
+      "staged_sha256": "10b4321ffb3ff5799f436701e20bed7043631fd053b71320c3cfe0b1a6adf358",
+      "source_size": 49,
+      "source_mtime_ns": 1791744614261156200,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/components/Admin/UserManagement.jsx",
+      "original_sha256": "3224e784c089cb7fda3ca1c6027596a42f9891914b188a6fc81b01c4d9492693",
+      "staged_sha256": "3224e784c089cb7fda3ca1c6027596a42f9891914b188a6fc81b01c4d9492693",
+      "source_size": 74985,
+      "source_mtime_ns": 1791744863987469900,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/components/Chatbot/chatbotErrors.js",
+      "original_sha256": "621e1a5931e66a5d11aca3026819cd00820e34f295d08db4e4bb8949c03ae4e6",
+      "staged_sha256": "621e1a5931e66a5d11aca3026819cd00820e34f295d08db4e4bb8949c03ae4e6",
+      "source_size": 837,
+      "source_mtime_ns": 1792668663315467000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/components/Chatbot/chatbotWelcomeConfig.js",
+      "original_sha256": "3af228cdeba96a072cccac955814483371f31ff462a99515fe3852ab61fa5dc1",
+      "staged_sha256": "3af228cdeba96a072cccac955814483371f31ff462a99515fe3852ab61fa5dc1",
+      "source_size": 659,
+      "source_mtime_ns": 1784044277000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/components/Chatbot/ChatbotWidget.css",
+      "original_sha256": "b49dc44aa62c2e732db00c28ca527f5b703880ac69fa30e9c14b0e305c3e8ee0",
+      "staged_sha256": "b49dc44aa62c2e732db00c28ca527f5b703880ac69fa30e9c14b0e305c3e8ee0",
+      "source_size": 7608,
+      "source_mtime_ns": 1782052165000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/components/Chatbot/ChatbotWidget.jsx",
+      "original_sha256": "56da353873c82766af5aabc9d3672eb0c9bd50ebca1d3c3485f3e1ab79624e28",
+      "staged_sha256": "56da353873c82766af5aabc9d3672eb0c9bd50ebca1d3c3485f3e1ab79624e28",
+      "source_size": 12999,
+      "source_mtime_ns": 1783252101000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/components/Chatbot/ChatbotWidget.test.jsx",
+      "original_sha256": "fa5bc9b861e5a7b02726fbbda57de9fb75e7285a9aa475437a46040a54beae84",
+      "staged_sha256": "fa5bc9b861e5a7b02726fbbda57de9fb75e7285a9aa475437a46040a54beae84",
+      "source_size": 7878,
+      "source_mtime_ns": 1784470810000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/components/Chatbot/ChatbotWidgetModern.css",
+      "original_sha256": "2d2783432517aa54a7002df584cce40fe7cde1b6d4cd7931116a3196bb0cc666",
+      "staged_sha256": "2d2783432517aa54a7002df584cce40fe7cde1b6d4cd7931116a3196bb0cc666",
+      "source_size": 22765,
+      "source_mtime_ns": 1792668734560795200,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/components/Chatbot/ChatbotWidgetModern.jsx",
+      "original_sha256": "e233761da15d92b88ad8720b67cf3f61af575ae87954796f7ece6efe98b82245",
+      "staged_sha256": "e233761da15d92b88ad8720b67cf3f61af575ae87954796f7ece6efe98b82245",
+      "source_size": 39291,
+      "source_mtime_ns": 1792668663769353300,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/components/Common/LanguageToggle.js",
+      "original_sha256": "b9924bea44978cd323af5241f120001fe4672ae0ccd7285d4e0e15b719f00d90",
+      "staged_sha256": "b9924bea44978cd323af5241f120001fe4672ae0ccd7285d4e0e15b719f00d90",
+      "source_size": 3437,
+      "source_mtime_ns": 1784097982000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/components/HR/CreateExam.jsx",
+      "original_sha256": "9bc4088dcc7c6460e3c89614afa848d8a13d0a3a3be7464f8a4294e47f083229",
+      "staged_sha256": "9bc4088dcc7c6460e3c89614afa848d8a13d0a3a3be7464f8a4294e47f083229",
+      "source_size": 126219,
+      "source_mtime_ns": 1792409784550108400,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/components/HR/DailyBriefVideoPlayer.jsx",
+      "original_sha256": "ac49a676f9919a25e9f2e7dda496edc42da52586394095c71c4ebd2b1d09b393",
+      "staged_sha256": "ac49a676f9919a25e9f2e7dda496edc42da52586394095c71c4ebd2b1d09b393",
+      "source_size": 7388,
+      "source_mtime_ns": 1788619945000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/components/HR/DailyBriefManagement.jsx",
+      "original_sha256": "3b6e40df35b78cb2cc1165380a1280ab12a40b0ab71db5db3397abd2c8b698de",
+      "staged_sha256": "3b6e40df35b78cb2cc1165380a1280ab12a40b0ab71db5db3397abd2c8b698de",
+      "source_size": 59562,
+      "source_mtime_ns": 1791741275795334200,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/components/HR/EditExam.js",
+      "original_sha256": "aa63c878d48aa7b084c6d5358aee683facdc034459aabd160b94c1085bfcd50f",
+      "staged_sha256": "aa63c878d48aa7b084c6d5358aee683facdc034459aabd160b94c1085bfcd50f",
+      "source_size": 1662,
+      "source_mtime_ns": 1781567636000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/components/HR/EditExam.jsx",
+      "original_sha256": "aa63c878d48aa7b084c6d5358aee683facdc034459aabd160b94c1085bfcd50f",
+      "staged_sha256": "aa63c878d48aa7b084c6d5358aee683facdc034459aabd160b94c1085bfcd50f",
+      "source_size": 1662,
+      "source_mtime_ns": 1781567636000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/components/HR/EmployeePerformance.jsx",
+      "original_sha256": "0443b3906e260c4641578d6415f5aeac74e8f3ae7494e14788f0d6d12b71ec08",
+      "staged_sha256": "0443b3906e260c4641578d6415f5aeac74e8f3ae7494e14788f0d6d12b71ec08",
+      "source_size": 31047,
+      "source_mtime_ns": 1784624912000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/components/HR/EmployeePerformance.js",
+      "original_sha256": "0443b3906e260c4641578d6415f5aeac74e8f3ae7494e14788f0d6d12b71ec08",
+      "staged_sha256": "0443b3906e260c4641578d6415f5aeac74e8f3ae7494e14788f0d6d12b71ec08",
+      "source_size": 31047,
+      "source_mtime_ns": 1784625013000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/components/HR/ExamManagement.js",
+      "original_sha256": "6620c37ab6009663d9e4cc3ad05e0673da807c659c7c5dbcfcf11ffc1418a502",
+      "staged_sha256": "6620c37ab6009663d9e4cc3ad05e0673da807c659c7c5dbcfcf11ffc1418a502",
+      "source_size": 12028,
+      "source_mtime_ns": 1784033086000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/components/HR/ExamManagement.jsx",
+      "original_sha256": "aab82119bf903b97e4da2a2a42672f2f587b9f0d1b8aa32c87de10117e11389d",
+      "staged_sha256": "aab82119bf903b97e4da2a2a42672f2f587b9f0d1b8aa32c87de10117e11389d",
+      "source_size": 47,
+      "source_mtime_ns": 1784030178000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/components/HR/MaterialManagement.js",
+      "original_sha256": "bc250e9563bc85ad8333cc7d5c4015310131aae73ef2d19ca735691531a5b112",
+      "staged_sha256": "bc250e9563bc85ad8333cc7d5c4015310131aae73ef2d19ca735691531a5b112",
+      "source_size": 52,
+      "source_mtime_ns": 1781567636000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/components/HR/LibraryItemCard.jsx",
+      "original_sha256": "202090c1c4ee9c0e67f963c3564af39a265fb05a03cd00942b59d1e6a5b8477b",
+      "staged_sha256": "202090c1c4ee9c0e67f963c3564af39a265fb05a03cd00942b59d1e6a5b8477b",
+      "source_size": 5503,
+      "source_mtime_ns": 1788617448000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/components/HR/MaterialManagement.jsx",
+      "original_sha256": "b8be0939c5bd43724defb3e4da20b5681062d6f66e5f30a3f44ffd1b62b460d5",
+      "staged_sha256": "b8be0939c5bd43724defb3e4da20b5681062d6f66e5f30a3f44ffd1b62b460d5",
+      "source_size": 59348,
+      "source_mtime_ns": 1791741281786109300,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/components/HR/QuestionBank.jsx",
+      "original_sha256": "ac30be5b4b7ac72da1f23b3f52d97cc8f5c9dc5ae88156a17fdd28d974fd88d6",
+      "staged_sha256": "ac30be5b4b7ac72da1f23b3f52d97cc8f5c9dc5ae88156a17fdd28d974fd88d6",
+      "source_size": 12827,
+      "source_mtime_ns": 1792409343483123500,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/components/HR/UploadMaterial.js",
+      "original_sha256": "63378aeae3312121ac4bffab8341679aeab85d3cc1945c331cb21b11e5c898c7",
+      "staged_sha256": "63378aeae3312121ac4bffab8341679aeab85d3cc1945c331cb21b11e5c898c7",
+      "source_size": 4407,
+      "source_mtime_ns": 1781567636000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/components/HR/UploadMaterial.jsx",
+      "original_sha256": "63378aeae3312121ac4bffab8341679aeab85d3cc1945c331cb21b11e5c898c7",
+      "staged_sha256": "63378aeae3312121ac4bffab8341679aeab85d3cc1945c331cb21b11e5c898c7",
+      "source_size": 4407,
+      "source_mtime_ns": 1781567636000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/components/HR/VideoPlayer.js",
+      "original_sha256": "ed40ca67eea5c2645b9e53a7aa4e21766dc5a59a79b2ef88f3094a43e4590fc1",
+      "staged_sha256": "ed40ca67eea5c2645b9e53a7aa4e21766dc5a59a79b2ef88f3094a43e4590fc1",
+      "source_size": 45,
+      "source_mtime_ns": 1781567636000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/components/HR/VideoPlayer.jsx",
+      "original_sha256": "09d7cfeec2e5fb719d53732da7295843ca79782a5b9aa387379c0ed1fdf74621",
+      "staged_sha256": "09d7cfeec2e5fb719d53732da7295843ca79782a5b9aa387379c0ed1fdf74621",
+      "source_size": 6834,
+      "source_mtime_ns": 1781567636000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/components/HR/exams/ExamCard.js",
+      "original_sha256": "db58158e3a178bf7c3f784ccc7f30d7760781866790f3a2d96f74c54c5a4d028",
+      "staged_sha256": "db58158e3a178bf7c3f784ccc7f30d7760781866790f3a2d96f74c54c5a4d028",
+      "source_size": 6801,
+      "source_mtime_ns": 1784033648000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/components/HR/exams/ExamLevelColumn.js",
+      "original_sha256": "1c23bf35bda64e29f603c5baa763a1bf5656f85688b6da46dc91fe9894770297",
+      "staged_sha256": "1c23bf35bda64e29f603c5baa763a1bf5656f85688b6da46dc91fe9894770297",
+      "source_size": 6435,
+      "source_mtime_ns": 1784033660000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/components/HR/exams/ExamLevelBoard.js",
+      "original_sha256": "37da92dc70fc322897d7f1dd3c9a3ea0c7b716b26d48ab01459e7c4163bec0c9",
+      "staged_sha256": "37da92dc70fc322897d7f1dd3c9a3ea0c7b716b26d48ab01459e7c4163bec0c9",
+      "source_size": 3720,
+      "source_mtime_ns": 1784033673000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/components/HR/exams/examLevelConfig.js",
+      "original_sha256": "d3129d2f72cb676c62df4de90788f9ee59f212fe160660f42aaacd0816daaa3f",
+      "staged_sha256": "d3129d2f72cb676c62df4de90788f9ee59f212fe160660f42aaacd0816daaa3f",
+      "source_size": 1205,
+      "source_mtime_ns": 1784031332000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/components/HR/exams/ExamLevelTableDialog.js",
+      "original_sha256": "06a684c230e9e043ecfde13c5b08780f3b87f83e8466e70cab89dd84dc2a89ef",
+      "staged_sha256": "06a684c230e9e043ecfde13c5b08780f3b87f83e8466e70cab89dd84dc2a89ef",
+      "source_size": 8155,
+      "source_mtime_ns": 1784031575000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/components/Layout/Footer.jsx",
+      "original_sha256": "c7f531eb2c1f748f315086eea287fc73f43f3e597cfc3a94f7d891e3bdf370ee",
+      "staged_sha256": "c7f531eb2c1f748f315086eea287fc73f43f3e597cfc3a94f7d891e3bdf370ee",
+      "source_size": 557,
+      "source_mtime_ns": 1781567636000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/components/Layout/Footer.js",
+      "original_sha256": "c6dc76a3dcf15eb2253c828d443477b12e7d9650013391cfe94f2c49aa59a57f",
+      "staged_sha256": "c6dc76a3dcf15eb2253c828d443477b12e7d9650013391cfe94f2c49aa59a57f",
+      "source_size": 718,
+      "source_mtime_ns": 1788688704000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/components/Layout/Layout.js",
+      "original_sha256": "ce69a7f37a0863410f243d667d405b88e63336c8baf439e7998270f3968d83f2",
+      "staged_sha256": "ce69a7f37a0863410f243d667d405b88e63336c8baf439e7998270f3968d83f2",
+      "source_size": 1584,
+      "source_mtime_ns": 1792668664306367400,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/components/Layout/Navbar.js",
+      "original_sha256": "edd5db1438657e158790ace3f82d6e05cddc6f7ca637884d23fdd0a54a165f91",
+      "staged_sha256": "edd5db1438657e158790ace3f82d6e05cddc6f7ca637884d23fdd0a54a165f91",
+      "source_size": 40,
+      "source_mtime_ns": 1781567636000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/components/Student/ExamDetails.js",
+      "original_sha256": "2eaa2aa3c6b34832d01439ecf9bc7cbe13a59966c73140c590563ee72142fd34",
+      "staged_sha256": "2eaa2aa3c6b34832d01439ecf9bc7cbe13a59966c73140c590563ee72142fd34",
+      "source_size": 74532,
+      "source_mtime_ns": 1784028806000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/components/Student/ExamDetails.jsx",
+      "original_sha256": "3e2dd985934c0fd45bc71606192d3cb1438e22787ad55ceeb7213d1af8715156",
+      "staged_sha256": "3e2dd985934c0fd45bc71606192d3cb1438e22787ad55ceeb7213d1af8715156",
+      "source_size": 84636,
+      "source_mtime_ns": 1792408593675847800,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/components/Student/ExamDetails.test.jsx",
+      "original_sha256": "5f56acf2d04248fb189b15f32608c499d2bc44c09a6424eba317184fea541a63",
+      "staged_sha256": "5f56acf2d04248fb189b15f32608c499d2bc44c09a6424eba317184fea541a63",
+      "source_size": 6822,
+      "source_mtime_ns": 1787487247000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/components/Student/ExamDetails.jsx.bak_20260805",
+      "original_sha256": "f70d0391fb56d2761800a596df5c149a6a78ecc2557c4e34d5525ddf70feb08f",
+      "staged_sha256": "f70d0391fb56d2761800a596df5c149a6a78ecc2557c4e34d5525ddf70feb08f",
+      "source_size": 81288,
+      "source_mtime_ns": 1785310921000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/components/Student/ExamList.js",
+      "original_sha256": "7815e8b999726c6dd83f93f524f22a8fbb012098fc3b31a96d03011f49da4a49",
+      "staged_sha256": "7815e8b999726c6dd83f93f524f22a8fbb012098fc3b31a96d03011f49da4a49",
+      "source_size": 6995,
+      "source_mtime_ns": 1781567636000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/components/Student/ExamList.jsx",
+      "original_sha256": "c063c491ca46be6d16f2a7dc3d0a32bd7c84b957469f6f770dbffe115beb96c3",
+      "staged_sha256": "c063c491ca46be6d16f2a7dc3d0a32bd7c84b957469f6f770dbffe115beb96c3",
+      "source_size": 10204,
+      "source_mtime_ns": 1788621150000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/context/LanguageContext.js",
+      "original_sha256": "b78fc57d8f6878ddeebcf566b89156d21a60358eb7e03db3bb984f5b824f359f",
+      "staged_sha256": "b78fc57d8f6878ddeebcf566b89156d21a60358eb7e03db3bb984f5b824f359f",
+      "source_size": 1495,
+      "source_mtime_ns": 1788352366000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/context/LanguageContext.jsx",
+      "original_sha256": "1998cff3e20efb14814776d256947110a5d3abcc8dde36212c26636825774c25",
+      "staged_sha256": "1998cff3e20efb14814776d256947110a5d3abcc8dde36212c26636825774c25",
+      "source_size": 1498,
+      "source_mtime_ns": 1781567636000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/dailyBrief/adminTranslations.js",
+      "original_sha256": "c858f27681cd8e87ef2260045bbbcae6879f95c392688cded15fa03e76be8ed2",
+      "staged_sha256": "c858f27681cd8e87ef2260045bbbcae6879f95c392688cded15fa03e76be8ed2",
+      "source_size": 5828,
+      "source_mtime_ns": 1791183820852066700,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/dailyBrief/briefRecovery.js",
+      "original_sha256": "9c4f32a71aa5e8f3fb0c6d70201effc409cd451b375dab20fa6f55e5ee6b3c88",
+      "staged_sha256": "9c4f32a71aa5e8f3fb0c6d70201effc409cd451b375dab20fa6f55e5ee6b3c88",
+      "source_size": 1319,
+      "source_mtime_ns": 1789993034949869000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/components/Layout/Navbar.jsx",
+      "original_sha256": "1e888210360383beb2bd811fcd52f2d68a64066806fc43fac72d08d8fa9958fb",
+      "staged_sha256": "1e888210360383beb2bd811fcd52f2d68a64066806fc43fac72d08d8fa9958fb",
+      "source_size": 17037,
+      "source_mtime_ns": 1792409299524652000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/dailyBrief/DailyBriefAdmin.jsx",
+      "original_sha256": "cd03d725d6d39000e0157c07aad26202967f7e5189448229ca1af203284d9845",
+      "staged_sha256": "cd03d725d6d39000e0157c07aad26202967f7e5189448229ca1af203284d9845",
+      "source_size": 15266,
+      "source_mtime_ns": 1793045554018673400,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/dailyBrief/DailyBriefActions.jsx",
+      "original_sha256": "5e0f60173df556d610cbab81a1a18438f97c0d14fc07219d207156ea65dc2094",
+      "staged_sha256": "5e0f60173df556d610cbab81a1a18438f97c0d14fc07219d207156ea65dc2094",
+      "source_size": 5352,
+      "source_mtime_ns": 1793020903092058600,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/dailyBrief/DailyBriefAdmin.jsx.backup-20260921-1127",
+      "original_sha256": "ce6247c6c0054cb35886b2e8010918b5e3bfeb4ad3927081baa3d0a34a95b076",
+      "staged_sha256": "ce6247c6c0054cb35886b2e8010918b5e3bfeb4ad3927081baa3d0a34a95b076",
+      "source_size": 8950,
+      "source_mtime_ns": 1788955094000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/dailyBrief/DailyBriefAdmin.language.test.jsx",
+      "original_sha256": "e5e47020dd60b3bb4b84e246747346ddc409cb112c69234e8439b9645651412f",
+      "staged_sha256": "e5e47020dd60b3bb4b84e246747346ddc409cb112c69234e8439b9645651412f",
+      "source_size": 4040,
+      "source_mtime_ns": 1790543424683723500,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/dailyBrief/DailyBriefAnalyticsDialog.jsx",
+      "original_sha256": "412b5f5204f3cd781d72339fbbb96cac973fa1082ec459095acaf0e8f8e20a1e",
+      "staged_sha256": "412b5f5204f3cd781d72339fbbb96cac973fa1082ec459095acaf0e8f8e20a1e",
+      "source_size": 12468,
+      "source_mtime_ns": 1791115846404280800,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/dailyBrief/DailyBriefArticle.jsx",
+      "original_sha256": "68c1a7b74375c874f5c4ff658928420f08a2498a3e97d89196a4f2e25b9c5a05",
+      "staged_sha256": "68c1a7b74375c874f5c4ff658928420f08a2498a3e97d89196a4f2e25b9c5a05",
+      "source_size": 3125,
+      "source_mtime_ns": 1791115846353779400,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/dailyBrief/DailyBriefAdmin.loading.test.jsx",
+      "original_sha256": "24be56b524316e2ec63b9a52bea9726e63a50051cf2007253e30570452120a24",
+      "staged_sha256": "24be56b524316e2ec63b9a52bea9726e63a50051cf2007253e30570452120a24",
+      "source_size": 3574,
+      "source_mtime_ns": 1790541886584907500,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/dailyBrief/DailyBriefAudience.jsx",
+      "original_sha256": "27ce6adb13809c3083a3eaf354ecabce3f5fc9998c397dc992bfe441177bdbea",
+      "staged_sha256": "27ce6adb13809c3083a3eaf354ecabce3f5fc9998c397dc992bfe441177bdbea",
+      "source_size": 5902,
+      "source_mtime_ns": 1790543022031922000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/dailyBrief/DailyBriefAudience.test.jsx",
+      "original_sha256": "b1a9052f5e252ec8010a41453c649093dd7a7f6df03ca6fd4d4e98211d6bb71a",
+      "staged_sha256": "b1a9052f5e252ec8010a41453c649093dd7a7f6df03ca6fd4d4e98211d6bb71a",
+      "source_size": 2464,
+      "source_mtime_ns": 1790543153179196600,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/dailyBrief/DailyBriefBuilder.jsx",
+      "original_sha256": "2cd3a15bc65659d11f0f9f114d15b4028497c1696e2955b506c8ffa82f480271",
+      "staged_sha256": "2cd3a15bc65659d11f0f9f114d15b4028497c1696e2955b506c8ffa82f480271",
+      "source_size": 21670,
+      "source_mtime_ns": 1790518959514879700,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/dailyBrief/DailyBriefBuilder.jsx.backup-20260921-1225",
+      "original_sha256": "ed257e9de33fc509c21d629a9e16f66cc596ac5da3fc6dc2fff44c26f7ed6cce",
+      "staged_sha256": "ed257e9de33fc509c21d629a9e16f66cc596ac5da3fc6dc2fff44c26f7ed6cce",
+      "source_size": 17397,
+      "source_mtime_ns": 1788689852000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/dailyBrief/DailyBriefBuilder.preview.test.jsx",
+      "original_sha256": "dfc56ccdfb86fbb6ee7c599acd8163f947d7a7d34b09a342c9c71f04f5ad4098",
+      "staged_sha256": "dfc56ccdfb86fbb6ee7c599acd8163f947d7a7d34b09a342c9c71f04f5ad4098",
+      "source_size": 1134,
+      "source_mtime_ns": 1789994971000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/dailyBrief/DailyBriefBuilder.transport.test.jsx",
+      "original_sha256": "c502e5f9069e41f828fcb49d0bfbad8f864b86aa773fb12044cc0a5bdd6585ba",
+      "staged_sha256": "c502e5f9069e41f828fcb49d0bfbad8f864b86aa773fb12044cc0a5bdd6585ba",
+      "source_size": 4764,
+      "source_mtime_ns": 1790519179017462100,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/dailyBrief/DailyBriefBuilder.test.jsx",
+      "original_sha256": "b0139e137b707589cbdaba9a4b64359859ec857076bf62253385553c3ffdc868",
+      "staged_sha256": "b0139e137b707589cbdaba9a4b64359859ec857076bf62253385553c3ffdc868",
+      "source_size": 9589,
+      "source_mtime_ns": 1789993164974142300,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/dailyBrief/DailyBriefEmailProgress.jsx",
+      "original_sha256": "dbf9b1e940e19a8f47c1f80878915c14787e9c9004eef3c29457d02b13eb42d5",
+      "staged_sha256": "dbf9b1e940e19a8f47c1f80878915c14787e9c9004eef3c29457d02b13eb42d5",
+      "source_size": 7005,
+      "source_mtime_ns": 1793047260312126300,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/dailyBrief/DailyBriefFeedback.jsx",
+      "original_sha256": "0d53b5e131e121e7bf14bd91e44b0a63bb9170e24a3b890610e92b3fdc0fd074",
+      "staged_sha256": "0d53b5e131e121e7bf14bd91e44b0a63bb9170e24a3b890610e92b3fdc0fd074",
+      "source_size": 4444,
+      "source_mtime_ns": 1791183820817638900,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/dailyBrief/DailyBriefPreviewPage.jsx",
+      "original_sha256": "bb81b2960fd096e269b540c0858482b4f14ceeb45052542184862256a27499fc",
+      "staged_sha256": "bb81b2960fd096e269b540c0858482b4f14ceeb45052542184862256a27499fc",
+      "source_size": 1591,
+      "source_mtime_ns": 1789994855000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/dailyBrief/DailyBriefSemanticBlock.jsx",
+      "original_sha256": "97f6ba31d2e5742162022c7ad2dab91d87a6977448fda32608f25b80e3630d1c",
+      "staged_sha256": "97f6ba31d2e5742162022c7ad2dab91d87a6977448fda32608f25b80e3630d1c",
+      "source_size": 4749,
+      "source_mtime_ns": 1788689809000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/dailyBrief/publishValidation.js",
+      "original_sha256": "3f547a7de83320a9a270be4e208a0f0b1fa6cf06e7346a64f2d01bf3cdce55ae",
+      "staged_sha256": "3f547a7de83320a9a270be4e208a0f0b1fa6cf06e7346a64f2d01bf3cdce55ae",
+      "source_size": 1126,
+      "source_mtime_ns": 1790518954941434400,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/dailyBrief/DailyBriefRenderer.jsx",
+      "original_sha256": "8bac03db2287ce8236c25fe53ec8e251c27c3620ee6e22ffb2face7df5de5df3",
+      "staged_sha256": "8bac03db2287ce8236c25fe53ec8e251c27c3620ee6e22ffb2face7df5de5df3",
+      "source_size": 5838,
+      "source_mtime_ns": 1788677750000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/dailyBrief/RetailDailyBrief.jsx",
+      "original_sha256": "fa4509dd5f61f9c791e9c09a0f462471d959e56cb9fb5ac7a2a3c4523a2ce763",
+      "staged_sha256": "fa4509dd5f61f9c791e9c09a0f462471d959e56cb9fb5ac7a2a3c4523a2ce763",
+      "source_size": 1382,
+      "source_mtime_ns": 1788677282000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/dailyBrief/RichTextEditor.jsx",
+      "original_sha256": "1311cbc4897bf21393b61a81e8068fe922bebb35e34d2ab1dcdfa47bed89fa44",
+      "staged_sha256": "1311cbc4897bf21393b61a81e8068fe922bebb35e34d2ab1dcdfa47bed89fa44",
+      "source_size": 5654,
+      "source_mtime_ns": 1788675346000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/pages/ChangePassword.js",
+      "original_sha256": "3caf99f295d8fcff44b93e57d4826b3cfbc968cfd0a23463e997f12505e32b6d",
+      "staged_sha256": "3caf99f295d8fcff44b93e57d4826b3cfbc968cfd0a23463e997f12505e32b6d",
+      "source_size": 5475,
+      "source_mtime_ns": 1781567636000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/pages/BusinessVocabulary.jsx",
+      "original_sha256": "c7a359608e3e891b2959189510aa5ddfca198804121b1fe560a684f01084724d",
+      "staged_sha256": "c7a359608e3e891b2959189510aa5ddfca198804121b1fe560a684f01084724d",
+      "source_size": 27040,
+      "source_mtime_ns": 1791741234915107800,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/pages/ChangePassword.jsx",
+      "original_sha256": "3caf99f295d8fcff44b93e57d4826b3cfbc968cfd0a23463e997f12505e32b6d",
+      "staged_sha256": "3caf99f295d8fcff44b93e57d4826b3cfbc968cfd0a23463e997f12505e32b6d",
+      "source_size": 5475,
+      "source_mtime_ns": 1781567636000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/pages/ContactUs.js",
+      "original_sha256": "64d0b75e61b053f871e797d3c467791c9624cbe2c44438c38da27213468d3de4",
+      "staged_sha256": "64d0b75e61b053f871e797d3c467791c9624cbe2c44438c38da27213468d3de4",
+      "source_size": 2377,
+      "source_mtime_ns": 1781567636000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/pages/ContactUs.jsx",
+      "original_sha256": "63132243210efc8c6508e84050814d693fd1ddd7af3e18799338492c7ec6b45d",
+      "staged_sha256": "63132243210efc8c6508e84050814d693fd1ddd7af3e18799338492c7ec6b45d",
+      "source_size": 3092,
+      "source_mtime_ns": 1781567636000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/pages/DailyBriefPage.jsx",
+      "original_sha256": "15e68e8a0e7bffc4e0b1b63b8a875e70e8be4f8d054ec202bb026fc6dc243fbc",
+      "staged_sha256": "15e68e8a0e7bffc4e0b1b63b8a875e70e8be4f8d054ec202bb026fc6dc243fbc",
+      "source_size": 461,
+      "source_mtime_ns": 1788619742000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/pages/Dashboard.js",
+      "original_sha256": "473a984a35a0d9ab713b70bdfc8bf6edabaf9a48846d1b5792c5a00ca12e0e40",
+      "staged_sha256": "473a984a35a0d9ab713b70bdfc8bf6edabaf9a48846d1b5792c5a00ca12e0e40",
+      "source_size": 43,
+      "source_mtime_ns": 1781567636000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/pages/Dashboard.jsx",
+      "original_sha256": "be1d46ccbff3f9745e368f09caa019d8ece30b65f51d3a17134c01676bb0f0c8",
+      "staged_sha256": "be1d46ccbff3f9745e368f09caa019d8ece30b65f51d3a17134c01676bb0f0c8",
+      "source_size": 32568,
+      "source_mtime_ns": 1793092884850643100,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/pages/Dashboard.management.test.jsx",
+      "original_sha256": "6ea51f89e1fec7a8f1c1e8859d2bca1f8579d4342aba30bc03a886f9a4b49624",
+      "staged_sha256": "6ea51f89e1fec7a8f1c1e8859d2bca1f8579d4342aba30bc03a886f9a4b49624",
+      "source_size": 12157,
+      "source_mtime_ns": 1791741379195972500,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/pages/Login.js",
+      "original_sha256": "42502f3a5b58d87bafaeca488a7b5467f4c3a1928e9e0a89b18a8bd8e82a4b1f",
+      "staged_sha256": "42502f3a5b58d87bafaeca488a7b5467f4c3a1928e9e0a89b18a8bd8e82a4b1f",
+      "source_size": 11773,
+      "source_mtime_ns": 1792672896551573300,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/pages/dashboard/AttentionKpiGrid.jsx",
+      "original_sha256": "b440f87f3d58e3e6c125ef015c4b6ec3390fdc3f9c6ac22eeadaa370f05b577d",
+      "staged_sha256": "b440f87f3d58e3e6c125ef015c4b6ec3390fdc3f9c6ac22eeadaa370f05b577d",
+      "source_size": 3817,
+      "source_mtime_ns": 1784724309000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/pages/dashboard/DashboardErrorState.jsx",
+      "original_sha256": "70cd8b81d571ddaad3205580fe8ecaca96965073ecb0d4c4617b32b2eccc4907",
+      "staged_sha256": "70cd8b81d571ddaad3205580fe8ecaca96965073ecb0d4c4617b32b2eccc4907",
+      "source_size": 1041,
+      "source_mtime_ns": 1793093259635063700,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/pages/dashboard/BranchPerformanceSection.jsx",
+      "original_sha256": "dd72a3c5de3fe82566fd85c4652c4be31d94b4aa888673dbd3c61ee942c6fb9f",
+      "staged_sha256": "dd72a3c5de3fe82566fd85c4652c4be31d94b4aa888673dbd3c61ee942c6fb9f",
+      "source_size": 7506,
+      "source_mtime_ns": 1784724382000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/pages/dashboard/DashboardLoadingState.jsx",
+      "original_sha256": "e3dff00584ffcfe549dcae01b1052437a20b30349a5512e5ed3c103c101126cb",
+      "staged_sha256": "e3dff00584ffcfe549dcae01b1052437a20b30349a5512e5ed3c103c101126cb",
+      "source_size": 2041,
+      "source_mtime_ns": 1784724224000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/pages/dashboard/ExecutiveKpiGrid.jsx",
+      "original_sha256": "5b512e9cd46228aa1e63e3c920c8c65080d74d62833beb32aa68460bb365325c",
+      "staged_sha256": "5b512e9cd46228aa1e63e3c920c8c65080d74d62833beb32aa68460bb365325c",
+      "source_size": 4394,
+      "source_mtime_ns": 1784724289000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/pages/dashboard/dashboardSnapshotCoordinator.js",
+      "original_sha256": "85ddb9a6360fc723ba736233eca99a2bcc1c458b4c3ee1b01fcec7a50e5aac2b",
+      "staged_sha256": "85ddb9a6360fc723ba736233eca99a2bcc1c458b4c3ee1b01fcec7a50e5aac2b",
+      "source_size": 4021,
+      "source_mtime_ns": 1793093152051658700,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/pages/dashboard/ExamInsightsSection.jsx",
+      "original_sha256": "d3c4e49607b44753c33d2ecf959507ff802539d3375d3d1932e7cfe067a8e032",
+      "staged_sha256": "d3c4e49607b44753c33d2ecf959507ff802539d3375d3d1932e7cfe067a8e032",
+      "source_size": 5619,
+      "source_mtime_ns": 1784724441000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/pages/dashboard/EmployeeAttentionSection.jsx",
+      "original_sha256": "5052d33b02b9b33724811cbf0c4a485c7160bf7c8e0ecf56adf1074f63572501",
+      "staged_sha256": "5052d33b02b9b33724811cbf0c4a485c7160bf7c8e0ecf56adf1074f63572501",
+      "source_size": 9535,
+      "source_mtime_ns": 1793093132395145200,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/pages/dashboard/ManagementFilterBar.jsx",
+      "original_sha256": "ca68b75a3e1b82ebe918168ca7864fad511caf478d8686965e7a0e3362c3333b",
+      "staged_sha256": "ca68b75a3e1b82ebe918168ca7864fad511caf478d8686965e7a0e3362c3333b",
+      "source_size": 5423,
+      "source_mtime_ns": 1787492301000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/pages/dashboard/ManagementAlertsPanel.jsx",
+      "original_sha256": "707f4a6c7acb8df01954de843842c0fdeb8d718f95588353587413c1b9a30be0",
+      "staged_sha256": "707f4a6c7acb8df01954de843842c0fdeb8d718f95588353587413c1b9a30be0",
+      "source_size": 2416,
+      "source_mtime_ns": 1784724326000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/pages/dashboard/ManagementDashboardHeader.jsx",
+      "original_sha256": "77dfa733486b01483879e51f6d965d96039a17de6fcfb5d9c64e7af87967cc67",
+      "staged_sha256": "77dfa733486b01483879e51f6d965d96039a17de6fcfb5d9c64e7af87967cc67",
+      "source_size": 1903,
+      "source_mtime_ns": 1784726215000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/pages/dashboard/managementDashboardUtils.js",
+      "original_sha256": "77267873fecca01a9fa0ceb3e94201df0d632804566ce0eab06337d2fcf2ebe2",
+      "staged_sha256": "77267873fecca01a9fa0ceb3e94201df0d632804566ce0eab06337d2fcf2ebe2",
+      "source_size": 5205,
+      "source_mtime_ns": 1787492178000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/pages/dashboard/ManagerFilterBar.jsx",
+      "original_sha256": "bb5973ac0f5bc2f2a07ad6037d1c15ff2304275bd1a3ec0c2829d788cd60282f",
+      "staged_sha256": "bb5973ac0f5bc2f2a07ad6037d1c15ff2304275bd1a3ec0c2829d788cd60282f",
+      "source_size": 5273,
+      "source_mtime_ns": 1787492264000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/pages/dashboard/PerformanceTrendsSection.jsx",
+      "original_sha256": "327fe0bce73080c11f38eed54c16733b6f6654b8cd85476100aaf4cfc1d25a9d",
+      "staged_sha256": "327fe0bce73080c11f38eed54c16733b6f6654b8cd85476100aaf4cfc1d25a9d",
+      "source_size": 6681,
+      "source_mtime_ns": 1784724353000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/pages/dashboard/ManagerOverviewSection.jsx",
+      "original_sha256": "95fcc7642a34827d01f93ffae18d66f37006a36e61d07e2a04ebbcf48a5bdc7e",
+      "staged_sha256": "95fcc7642a34827d01f93ffae18d66f37006a36e61d07e2a04ebbcf48a5bdc7e",
+      "source_size": 23133,
+      "source_mtime_ns": 1788953951000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/services/api.js",
+      "original_sha256": "5fb1924aa3eaa02cb3607aa98b0abeed97db00b04e6e6c4f9dabb360736fdf96",
+      "staged_sha256": "5fb1924aa3eaa02cb3607aa98b0abeed97db00b04e6e6c4f9dabb360736fdf96",
+      "source_size": 4552,
+      "source_mtime_ns": 1790504244944155300,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/services/api.jsx",
+      "original_sha256": "fd4d773354ec838b42f634d94750c822a059c2f31079c5df18f38e410b58a5e1",
+      "staged_sha256": "fd4d773354ec838b42f634d94750c822a059c2f31079c5df18f38e410b58a5e1",
+      "source_size": 3443,
+      "source_mtime_ns": 1781567636000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/services/auth.js",
+      "original_sha256": "4db87d9f6494286238a5503beb3ac6f39fd845db564695cd5d8f76bf412e57ac",
+      "staged_sha256": "4db87d9f6494286238a5503beb3ac6f39fd845db564695cd5d8f76bf412e57ac",
+      "source_size": 21062,
+      "source_mtime_ns": 1792409584998174300,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/services/auth.jsx",
+      "original_sha256": "c1e69275e1826324af4d19e9f8ffd705d418091f9bcda4329c3875e3898c8ad3",
+      "staged_sha256": "c1e69275e1826324af4d19e9f8ffd705d418091f9bcda4329c3875e3898c8ad3",
+      "source_size": 8806,
+      "source_mtime_ns": 1791744863031616700,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/services/dailyBriefSummaryCache.js",
+      "original_sha256": "e796bba8a7a7f633f05e071439aa3e7e6d3fec2a562d80196a9a06b0a46ec19f",
+      "staged_sha256": "e796bba8a7a7f633f05e071439aa3e7e6d3fec2a562d80196a9a06b0a46ec19f",
+      "source_size": 1332,
+      "source_mtime_ns": 1790540004308536700,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/services/dailyBriefSummaryCache.test.js",
+      "original_sha256": "d4dee2e62c040ee082bdde1ef2d97d334c2cffede0736e74da673f1eac52c62e",
+      "staged_sha256": "d4dee2e62c040ee082bdde1ef2d97d334c2cffede0736e74da673f1eac52c62e",
+      "source_size": 2127,
+      "source_mtime_ns": 1790540163852249600,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/services/dailyBriefSummaryMutations.test.js",
+      "original_sha256": "609bd24a6c2d88bea0e40322a92d68294ca5e708dda39eee0d330715e054263b",
+      "staged_sha256": "609bd24a6c2d88bea0e40322a92d68294ca5e708dda39eee0d330715e054263b",
+      "source_size": 1397,
+      "source_mtime_ns": 1790540568085337400,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/services/dailyBriefTransport.js",
+      "original_sha256": "72c0a2917b2822f4494386ab8c8880c4565ab25612350cd308810571e602ba86",
+      "staged_sha256": "72c0a2917b2822f4494386ab8c8880c4565ab25612350cd308810571e602ba86",
+      "source_size": 1658,
+      "source_mtime_ns": 1790542944264029100,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/services/dailyBriefTransport.test.js",
+      "original_sha256": "28a5fa54f211878c9e10f07e09a1ef8619206481ec83bbce01a43c1b1803e7ec",
+      "staged_sha256": "28a5fa54f211878c9e10f07e09a1ef8619206481ec83bbce01a43c1b1803e7ec",
+      "source_size": 2761,
+      "source_mtime_ns": 1790519056285758400,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/services/sessionAuth.js",
+      "original_sha256": "ec8f6bf1436799511276bcb6a54d479e83dee75c9f1554c85e6f6b4dd3f6ae06",
+      "staged_sha256": "ec8f6bf1436799511276bcb6a54d479e83dee75c9f1554c85e6f6b4dd3f6ae06",
+      "source_size": 6388,
+      "source_mtime_ns": 1790503581773502500,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/services/vocabularyTransport.test.js",
+      "original_sha256": "c13f8d266e80d48e2822b1080a3c688d46806386cb3e836cf466b39ba7d361ab",
+      "staged_sha256": "c13f8d266e80d48e2822b1080a3c688d46806386cb3e836cf466b39ba7d361ab",
+      "source_size": 1840,
+      "source_mtime_ns": 1790543889877878400,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/utils/AuditorAccess.test.jsx",
+      "original_sha256": "e29ff5feab2f6f6427a2e6dac3a37d43584ac3f252e864dd80c94c1be323d192",
+      "staged_sha256": "e29ff5feab2f6f6427a2e6dac3a37d43584ac3f252e864dd80c94c1be323d192",
+      "source_size": 2113,
+      "source_mtime_ns": 1791741478110835400,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/test/setup.js",
+      "original_sha256": "b2fb420f7809c96fa8b12d7ca1677b036bb874e0d741fc92322383564f3632ac",
+      "staged_sha256": "b2fb420f7809c96fa8b12d7ca1677b036bb874e0d741fc92322383564f3632ac",
+      "source_size": 421,
+      "source_mtime_ns": 1784724709000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/utils/examChatLock.js",
+      "original_sha256": "dedefbd4679c2b0dc554f0e268b1d131268c0995848def77fb69ca2dd9da7a8d",
+      "staged_sha256": "dedefbd4679c2b0dc554f0e268b1d131268c0995848def77fb69ca2dd9da7a8d",
+      "source_size": 2636,
+      "source_mtime_ns": 1784028783000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/utils/ProtectedRoute.jsx",
+      "original_sha256": "a027a61db54379dbf6eebc6eff6e437edbf0e991256efffdc965b32a44bb20b3",
+      "staged_sha256": "a027a61db54379dbf6eebc6eff6e437edbf0e991256efffdc965b32a44bb20b3",
+      "source_size": 834,
+      "source_mtime_ns": 1781567636000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/utils/ProtectedRoute.js",
+      "original_sha256": "a027a61db54379dbf6eebc6eff6e437edbf0e991256efffdc965b32a44bb20b3",
+      "staged_sha256": "a027a61db54379dbf6eebc6eff6e437edbf0e991256efffdc965b32a44bb20b3",
+      "source_size": 834,
+      "source_mtime_ns": 1781567636000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/utils/roleRoutes.js",
+      "original_sha256": "bf85ce3f3304edcfda7fca7bb570a63119f647f2e83a979c024820f2c81a8c8f",
+      "staged_sha256": "bf85ce3f3304edcfda7fca7bb570a63119f647f2e83a979c024820f2c81a8c8f",
+      "source_size": 268,
+      "source_mtime_ns": 1788619774000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/utils/roleRoutes.jsx",
+      "original_sha256": "5055d058ccbdc712f793e131857368f8d2afc88e667fff30c0ca03d08e764e3c",
+      "staged_sha256": "5055d058ccbdc712f793e131857368f8d2afc88e667fff30c0ca03d08e764e3c",
+      "source_size": 271,
+      "source_mtime_ns": 1781567636000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/utils/theme.js",
+      "original_sha256": "2d171898c801b094646590bb0f1715e3a6aa8eea5fa29551fdc406c33c943dd7",
+      "staged_sha256": "2d171898c801b094646590bb0f1715e3a6aa8eea5fa29551fdc406c33c943dd7",
+      "source_size": 5123,
+      "source_mtime_ns": 1790543773964468900,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/src/utils/theme.jsx",
+      "original_sha256": "12e1f8583fdb82fa60b09ebc7670879f68b68d32575fbc3a2b0d32962b9ed054",
+      "staged_sha256": "12e1f8583fdb82fa60b09ebc7670879f68b68d32575fbc3a2b0d32962b9ed054",
+      "source_size": 2498,
+      "source_mtime_ns": 1781567636000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/build/favicon.ico",
+      "original_sha256": "3298357d86f1c1cef7d669a5784da7034862e4d53f35709ee1a9a2c37171972a",
+      "staged_sha256": "3298357d86f1c1cef7d669a5784da7034862e4d53f35709ee1a9a2c37171972a",
+      "source_size": 46502,
+      "source_mtime_ns": 1792092893537473500,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/build/favicon.png",
+      "original_sha256": "76a5ea4f283cc0c2d550d7b3b8beee83d2ceff497a73264545e8f145e7102195",
+      "staged_sha256": "76a5ea4f283cc0c2d550d7b3b8beee83d2ceff497a73264545e8f145e7102195",
+      "source_size": 4280,
+      "source_mtime_ns": 1792093112136596200,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/build/index.html",
+      "original_sha256": "5a764554f2bef6310ad72e0ded205dd798d4fde5c0499eb7b4d6180edbf5caab",
+      "staged_sha256": "5a764554f2bef6310ad72e0ded205dd798d4fde5c0499eb7b4d6180edbf5caab",
+      "source_size": 816,
+      "source_mtime_ns": 1793094246242028200,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/build/logo192.png",
+      "original_sha256": "06eb77061ca1d3c604775b44b2a801df895c40c249c06abf66c712faaa04a620",
+      "staged_sha256": "06eb77061ca1d3c604775b44b2a801df895c40c249c06abf66c712faaa04a620",
+      "source_size": 16639,
+      "source_mtime_ns": 1792092895018582900,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/build/logo512.png",
+      "original_sha256": "f97758a4982f188be304b813a823dc74fe79fb3c6d44c1484a784067b9940256",
+      "staged_sha256": "f97758a4982f188be304b813a823dc74fe79fb3c6d44c1484a784067b9940256",
+      "source_size": 72349,
+      "source_mtime_ns": 1792092896297742300,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/build/manifest.json",
+      "original_sha256": "5e9bb21370ca997c451e4a7bd37d2299c60626775b0793afc3d98ed242c67378",
+      "staged_sha256": "5e9bb21370ca997c451e4a7bd37d2299c60626775b0793afc3d98ed242c67378",
+      "source_size": 406,
+      "source_mtime_ns": 1792093151831568200,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/build/robots.txt",
+      "original_sha256": "90d24bc3bf698ac1e173739502298ccca72adf1f564fab05f484b8c48d1cadd2",
+      "staged_sha256": "90d24bc3bf698ac1e173739502298ccca72adf1f564fab05f484b8c48d1cadd2",
+      "source_size": 67,
+      "source_mtime_ns": 1781567636000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/build/assets/avatar.png",
+      "original_sha256": "12b6ec3281a76fa95e90a17310b87c744286fcb468eebb6e03bcc0e15ee8bf3e",
+      "staged_sha256": "12b6ec3281a76fa95e90a17310b87c744286fcb468eebb6e03bcc0e15ee8bf3e",
+      "source_size": 8962,
+      "source_mtime_ns": 1781567636000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/build/assets/chatbot-logo-DZaxbCBN.png",
+      "original_sha256": "e3e1c4d6f135002a898cf03561b8ec66fec604dc2d251f91ebd91484e7f24ccf",
+      "staged_sha256": "e3e1c4d6f135002a898cf03561b8ec66fec604dc2d251f91ebd91484e7f24ccf",
+      "source_size": 14521,
+      "source_mtime_ns": 1792092886961515200,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/build/assets/favicon.png",
+      "original_sha256": "76a5ea4f283cc0c2d550d7b3b8beee83d2ceff497a73264545e8f145e7102195",
+      "staged_sha256": "76a5ea4f283cc0c2d550d7b3b8beee83d2ceff497a73264545e8f145e7102195",
+      "source_size": 4280,
+      "source_mtime_ns": 1792093112792926600,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/build/assets/index-34M-79L2.js",
+      "original_sha256": "e285e37461199375cc1142a375f39885fd2bb24a55c0149e4edda7ba600c00bd",
+      "staged_sha256": "e285e37461199375cc1142a375f39885fd2bb24a55c0149e4edda7ba600c00bd",
+      "source_size": 1320145,
+      "source_mtime_ns": 1791744874044639100,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/build/assets/index-5ShG4OKF.js",
+      "original_sha256": "8f6901ad14481cd036953883f9cdc61727d024e97180cc9528efef1db1c07153",
+      "staged_sha256": "8f6901ad14481cd036953883f9cdc61727d024e97180cc9528efef1db1c07153",
+      "source_size": 1320950,
+      "source_mtime_ns": 1791885347007527100,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/build/assets/index-6RN0JZy9.js",
+      "original_sha256": "0dcceecfa2436985e6da532c5f054e0ecd753279bb1d6e68976652e66d5c40c8",
+      "staged_sha256": "0dcceecfa2436985e6da532c5f054e0ecd753279bb1d6e68976652e66d5c40c8",
+      "source_size": 1299044,
+      "source_mtime_ns": 1790543432518165700,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/build/assets/index-BDIDhaut.js",
+      "original_sha256": "049d5c78b98f25b74cd8487abe5ed9a9216cbb22a1e58911f02c833ba31c9fe1",
+      "staged_sha256": "049d5c78b98f25b74cd8487abe5ed9a9216cbb22a1e58911f02c833ba31c9fe1",
+      "source_size": 1293573,
+      "source_mtime_ns": 1790542691752716300,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/build/assets/index-BES9_dZz.css",
+      "original_sha256": "ba0c2edd645f725f972b8163e8e17fd97a10f0f019be76a7bc43a8777ac3a50c",
+      "staged_sha256": "ba0c2edd645f725f972b8163e8e17fd97a10f0f019be76a7bc43a8777ac3a50c",
+      "source_size": 17915,
+      "source_mtime_ns": 1792662558378342700,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/build/assets/index-BgzjiE4M.js",
+      "original_sha256": "309ac3893f0ad49059e09b9a36acfb32b55d2b5b3d7cbaf1fc66185890a0b9c8",
+      "staged_sha256": "309ac3893f0ad49059e09b9a36acfb32b55d2b5b3d7cbaf1fc66185890a0b9c8",
+      "source_size": 1341385,
+      "source_mtime_ns": 1793053419806864500,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/build/assets/index-BJdK6ShB.js",
+      "original_sha256": "4eb985aa7ad455b310d54a38a8617a5b45ce8c1abdb49084d3b65eba6820f6de",
+      "staged_sha256": "4eb985aa7ad455b310d54a38a8617a5b45ce8c1abdb49084d3b65eba6820f6de",
+      "source_size": 1320147,
+      "source_mtime_ns": 1791743989714850000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/build/assets/index-BkLJFeYo.js",
+      "original_sha256": "167ed5ce900944cad7075a2ef6221c70f694a84decc3e8d1e00b931003a02cc9",
+      "staged_sha256": "167ed5ce900944cad7075a2ef6221c70f694a84decc3e8d1e00b931003a02cc9",
+      "source_size": 1343784,
+      "source_mtime_ns": 1793093178002509500,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/build/assets/index-BOXeWmHX.js",
+      "original_sha256": "510c608674b8aa1700ed6300e1e50eb49bb7793e4792d014436e5e015ae52dfe",
+      "staged_sha256": "510c608674b8aa1700ed6300e1e50eb49bb7793e4792d014436e5e015ae52dfe",
+      "source_size": 1299079,
+      "source_mtime_ns": 1790543289668198200,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/build/assets/index-BRP-6nVH.js",
+      "original_sha256": "85763796faed544a395ddbf6e110a80953ce2963b5de5772e4cb411c6716b2f1",
+      "staged_sha256": "85763796faed544a395ddbf6e110a80953ce2963b5de5772e4cb411c6716b2f1",
+      "source_size": 1293332,
+      "source_mtime_ns": 1790542611107513400,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/build/assets/index-BSPNWA_k.js",
+      "original_sha256": "ff6ab93f8e04d5fe93fd8e05c7e3715bcc419576ada8aa9bfc770648d719957c",
+      "staged_sha256": "ff6ab93f8e04d5fe93fd8e05c7e3715bcc419576ada8aa9bfc770648d719957c",
+      "source_size": 1343814,
+      "source_mtime_ns": 1793094245940241000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/build/assets/index-Bwsezqn_.js",
+      "original_sha256": "c3a04665f069174fa40781bed0ce5cb5e6d375e3cbd9cba19cd0114d120a6c78",
+      "staged_sha256": "c3a04665f069174fa40781bed0ce5cb5e6d375e3cbd9cba19cd0114d120a6c78",
+      "source_size": 1334139,
+      "source_mtime_ns": 1792409805177019500,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/build/assets/index-BWuMutvy.js",
+      "original_sha256": "e0ee8d81740ebf7192c2217a6f52b4c11aa595dfeefae7f1f3b0675f98a1effe",
+      "staged_sha256": "e0ee8d81740ebf7192c2217a6f52b4c11aa595dfeefae7f1f3b0675f98a1effe",
+      "source_size": 1320296,
+      "source_mtime_ns": 1791744500289128800,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/build/assets/index-C-VEoyOT.js",
+      "original_sha256": "bf881c9e23c9bdb38545446719ecb44fb87202af905d3220b9dbbca005eb1d09",
+      "staged_sha256": "bf881c9e23c9bdb38545446719ecb44fb87202af905d3220b9dbbca005eb1d09",
+      "source_size": 1333764,
+      "source_mtime_ns": 1792672917084867800,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/build/assets/index-C0xcY-Kh.js",
+      "original_sha256": "67a69b325c0c2b8739d2b7d4ee6ee1a86d15b4be95c0b5fe5325ab80ade2e126",
+      "staged_sha256": "67a69b325c0c2b8739d2b7d4ee6ee1a86d15b4be95c0b5fe5325ab80ade2e126",
+      "source_size": 1340757,
+      "source_mtime_ns": 1793047395631518000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/build/assets/index-C1ZdzG1-.js",
+      "original_sha256": "46f93c557b0b12ded9d85d0d8cb521fe1230d22cd7f67f9b0afe54919d8ecd3f",
+      "staged_sha256": "46f93c557b0b12ded9d85d0d8cb521fe1230d22cd7f67f9b0afe54919d8ecd3f",
+      "source_size": 1302937,
+      "source_mtime_ns": 1790543908172132600,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/build/assets/index-CAtgNy2o.js",
+      "original_sha256": "832f6dfd0839fe3146e11db82ec3ef711bca1b5d119b71d2fd84890104ed431d",
+      "staged_sha256": "832f6dfd0839fe3146e11db82ec3ef711bca1b5d119b71d2fd84890104ed431d",
+      "source_size": 1294346,
+      "source_mtime_ns": 1790542396995000500,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/build/assets/index-C3VbTUce.js",
+      "original_sha256": "a8281f7d9c7102fedb3a2d24318a610ead0035e4aa08305c5008a207949fc4bb",
+      "staged_sha256": "a8281f7d9c7102fedb3a2d24318a610ead0035e4aa08305c5008a207949fc4bb",
+      "source_size": 1290551,
+      "source_mtime_ns": 1790541645095556400,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/build/assets/index-CCyTmtWJ.js",
+      "original_sha256": "c0012791ec8e535ccd3d43e97857c47e89a22c40cf540909c13dddc2790f6aa3",
+      "staged_sha256": "c0012791ec8e535ccd3d43e97857c47e89a22c40cf540909c13dddc2790f6aa3",
+      "source_size": 1333844,
+      "source_mtime_ns": 1792669039338276200,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/build/assets/index-DjSIzPtJ.css",
+      "original_sha256": "0b7292b572889f97735ec021bda4d43a7530d8daa57753500ea4047dc335543c",
+      "staged_sha256": "0b7292b572889f97735ec021bda4d43a7530d8daa57753500ea4047dc335543c",
+      "source_size": 18221,
+      "source_mtime_ns": 1793094245940241000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/build/assets/index-CXsDL4xf.js",
+      "original_sha256": "ec3aeb0f787bd38649fdf2d899ab892cccce1161aecf486b3f3fab37abe598b9",
+      "staged_sha256": "ec3aeb0f787bd38649fdf2d899ab892cccce1161aecf486b3f3fab37abe598b9",
+      "source_size": 1302940,
+      "source_mtime_ns": 1790544262755667800,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/build/assets/index-CJs4-2UP.js",
+      "original_sha256": "f16cb9151f19d0039b71d8320143e31ec1a3e291084e374904b8579f1c6bc66a",
+      "staged_sha256": "f16cb9151f19d0039b71d8320143e31ec1a3e291084e374904b8579f1c6bc66a",
+      "source_size": 1290559,
+      "source_mtime_ns": 1790540700112005400,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/build/assets/index-DkXDDkJj.js",
+      "original_sha256": "9a6d7e2aea00b859037eb3381cdf8a8bcd3f214efb6116dc981495080ba876a1",
+      "staged_sha256": "9a6d7e2aea00b859037eb3381cdf8a8bcd3f214efb6116dc981495080ba876a1",
+      "source_size": 1302868,
+      "source_mtime_ns": 1790544442304783900,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/build/assets/index-DMnIuenV.js",
+      "original_sha256": "ec42b21447e6167a6bee28ce13dbed53f46219df73840ef0288855823c59face",
+      "staged_sha256": "ec42b21447e6167a6bee28ce13dbed53f46219df73840ef0288855823c59face",
+      "source_size": 1290904,
+      "source_mtime_ns": 1790541913923974700,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/build/assets/index-DpOmSwQQ.js",
+      "original_sha256": "606ec34698ccf710d2345cdcbc19c23039039b605d10e7e0e0911ebc242dc3c8",
+      "staged_sha256": "606ec34698ccf710d2345cdcbc19c23039039b605d10e7e0e0911ebc242dc3c8",
+      "source_size": 1333503,
+      "source_mtime_ns": 1792662558375911900,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/build/assets/index-Drzt_uoW.js",
+      "original_sha256": "0670885b9af07e1b94f85a9bb68ed67420ae310309f60cd369466f3e17ee54b8",
+      "staged_sha256": "0670885b9af07e1b94f85a9bb68ed67420ae310309f60cd369466f3e17ee54b8",
+      "source_size": 1284152,
+      "source_mtime_ns": 1790513480086364200,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/build/assets/index-Dss8J64T.js",
+      "original_sha256": "a8199250047d1a368c440965ea71aafb2d2691f41029c56321b53263d6ea91df",
+      "staged_sha256": "a8199250047d1a368c440965ea71aafb2d2691f41029c56321b53263d6ea91df",
+      "source_size": 1340778,
+      "source_mtime_ns": 1793045855390229100,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/build/assets/index-DwSUZWhq.js",
+      "original_sha256": "acdaa2dbc4710b1cf70b0d2125f69badc8c56934b6f684f1b6dcfbbea724a4cb",
+      "staged_sha256": "acdaa2dbc4710b1cf70b0d2125f69badc8c56934b6f684f1b6dcfbbea724a4cb",
+      "source_size": 1319988,
+      "source_mtime_ns": 1791744625865962300,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/build/assets/index-Jdhpz8K2.js",
+      "original_sha256": "e72e0ebad33882349058bd6bf93114b52eb4fee4a5731fe07970b0b082b30bd8",
+      "staged_sha256": "e72e0ebad33882349058bd6bf93114b52eb4fee4a5731fe07970b0b082b30bd8",
+      "source_size": 1319570,
+      "source_mtime_ns": 1791115986422353700,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/build/assets/index-kAqkkq_d.js",
+      "original_sha256": "14647816252c19121dd5e093b35236db8f2c95df58d676bbd61bf4936f7652e5",
+      "staged_sha256": "14647816252c19121dd5e093b35236db8f2c95df58d676bbd61bf4936f7652e5",
+      "source_size": 1301569,
+      "source_mtime_ns": 1790543636182330500,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/build/assets/index-sqcQxU1E.js",
+      "original_sha256": "1c084846bab65999797e4cb4ad54469aa1724471d700caf49e47c1539338ebf1",
+      "staged_sha256": "1c084846bab65999797e4cb4ad54469aa1724471d700caf49e47c1539338ebf1",
+      "source_size": 1286098,
+      "source_mtime_ns": 1790519103461035800,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/build/assets/logo fawry clean-DS9y82RU.png",
+      "original_sha256": "76a5ea4f283cc0c2d550d7b3b8beee83d2ceff497a73264545e8f145e7102195",
+      "staged_sha256": "76a5ea4f283cc0c2d550d7b3b8beee83d2ceff497a73264545e8f145e7102195",
+      "source_size": 4280,
+      "source_mtime_ns": 1793053419814181700,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/build/assets/index-_nvcQvfF.js",
+      "original_sha256": "77a630d49d6d79edcfb2bfecc457e02d5e69a68a9788157c15cf9fd6a1b0a8bc",
+      "staged_sha256": "77a630d49d6d79edcfb2bfecc457e02d5e69a68a9788157c15cf9fd6a1b0a8bc",
+      "source_size": 1289221,
+      "source_mtime_ns": 1790514967000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/build/assets/logo fawry clean-DxULgJ1l.png",
+      "original_sha256": "e3e1c4d6f135002a898cf03561b8ec66fec604dc2d251f91ebd91484e7f24ccf",
+      "staged_sha256": "e3e1c4d6f135002a898cf03561b8ec66fec604dc2d251f91ebd91484e7f24ccf",
+      "source_size": 14521,
+      "source_mtime_ns": 1793047395645828700,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/build/assets/logo fawry clean-DZaxbCBN.png",
+      "original_sha256": "a0946e88b21fd42b52d9e8b68bff66f5061c1e40b5c8e80c4d0615b1d98ec594",
+      "staged_sha256": "a0946e88b21fd42b52d9e8b68bff66f5061c1e40b5c8e80c4d0615b1d98ec594",
+      "source_size": 885968,
+      "source_mtime_ns": 1793094245940241000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/build/assets/logo.png",
+      "original_sha256": "e3e1c4d6f135002a898cf03561b8ec66fec604dc2d251f91ebd91484e7f24ccf",
+      "staged_sha256": "e3e1c4d6f135002a898cf03561b8ec66fec604dc2d251f91ebd91484e7f24ccf",
+      "source_size": 14521,
+      "source_mtime_ns": 1792092897554682900,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/public/favicon.ico",
+      "original_sha256": "3298357d86f1c1cef7d669a5784da7034862e4d53f35709ee1a9a2c37171972a",
+      "staged_sha256": "3298357d86f1c1cef7d669a5784da7034862e4d53f35709ee1a9a2c37171972a",
+      "source_size": 46502,
+      "source_mtime_ns": 1792092893537473500,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/public/favicon.png",
+      "original_sha256": "76a5ea4f283cc0c2d550d7b3b8beee83d2ceff497a73264545e8f145e7102195",
+      "staged_sha256": "76a5ea4f283cc0c2d550d7b3b8beee83d2ceff497a73264545e8f145e7102195",
+      "source_size": 4280,
+      "source_mtime_ns": 1792093112136596200,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/public/index.html",
+      "original_sha256": "dc1c4e61662981bca332bef5b381d977560baab8cd5ddbfa3b8f4da10be15808",
+      "staged_sha256": "dc1c4e61662981bca332bef5b381d977560baab8cd5ddbfa3b8f4da10be15808",
+      "source_size": 1771,
+      "source_mtime_ns": 1792093150772462000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/public/logo192.png",
+      "original_sha256": "06eb77061ca1d3c604775b44b2a801df895c40c249c06abf66c712faaa04a620",
+      "staged_sha256": "06eb77061ca1d3c604775b44b2a801df895c40c249c06abf66c712faaa04a620",
+      "source_size": 16639,
+      "source_mtime_ns": 1792092895018582900,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/public/logo512.png",
+      "original_sha256": "f97758a4982f188be304b813a823dc74fe79fb3c6d44c1484a784067b9940256",
+      "staged_sha256": "f97758a4982f188be304b813a823dc74fe79fb3c6d44c1484a784067b9940256",
+      "source_size": 72349,
+      "source_mtime_ns": 1792092896297742300,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/public/manifest.json",
+      "original_sha256": "5e9bb21370ca997c451e4a7bd37d2299c60626775b0793afc3d98ed242c67378",
+      "staged_sha256": "5e9bb21370ca997c451e4a7bd37d2299c60626775b0793afc3d98ed242c67378",
+      "source_size": 406,
+      "source_mtime_ns": 1792093151831568200,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/public/robots.txt",
+      "original_sha256": "90d24bc3bf698ac1e173739502298ccca72adf1f564fab05f484b8c48d1cadd2",
+      "staged_sha256": "90d24bc3bf698ac1e173739502298ccca72adf1f564fab05f484b8c48d1cadd2",
+      "source_size": 67,
+      "source_mtime_ns": 1781567636000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/public/assets/avatar.png",
+      "original_sha256": "12b6ec3281a76fa95e90a17310b87c744286fcb468eebb6e03bcc0e15ee8bf3e",
+      "staged_sha256": "12b6ec3281a76fa95e90a17310b87c744286fcb468eebb6e03bcc0e15ee8bf3e",
+      "source_size": 8962,
+      "source_mtime_ns": 1781567636000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/public/assets/favicon.png",
+      "original_sha256": "76a5ea4f283cc0c2d550d7b3b8beee83d2ceff497a73264545e8f145e7102195",
+      "staged_sha256": "76a5ea4f283cc0c2d550d7b3b8beee83d2ceff497a73264545e8f145e7102195",
+      "source_size": 4280,
+      "source_mtime_ns": 1792093112792926600,
+      "staging_security_transform": false
+    },
+    {
+      "path": "main.py",
+      "original_sha256": "b20d104b6ccb0b15ecdff975b292713e1d3b4f79b49f76106d1e23d3bfbf1434",
+      "staged_sha256": "b20d104b6ccb0b15ecdff975b292713e1d3b4f79b49f76106d1e23d3bfbf1434",
+      "source_size": 28088,
+      "source_mtime_ns": 1792662199620494400,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/public/assets/logo.png",
+      "original_sha256": "e3e1c4d6f135002a898cf03561b8ec66fec604dc2d251f91ebd91484e7f24ccf",
+      "staged_sha256": "e3e1c4d6f135002a898cf03561b8ec66fec604dc2d251f91ebd91484e7f24ccf",
+      "source_size": 14521,
+      "source_mtime_ns": 1792092897554682900,
+      "staging_security_transform": false
+    },
+    {
+      "path": "chatbot_sidecar.py",
+      "original_sha256": "b69a03c0d0180430718ec06216e59b9bfcd740191e7a7301f31ed81d543abdf9",
+      "staged_sha256": "b69a03c0d0180430718ec06216e59b9bfcd740191e7a7301f31ed81d543abdf9",
+      "source_size": 127,
+      "source_mtime_ns": 1782808506000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "config.py",
+      "original_sha256": "627563f0e790774b7426ade85875ab198b24bdd0972b714f97af46cdca366558",
+      "staged_sha256": "627563f0e790774b7426ade85875ab198b24bdd0972b714f97af46cdca366558",
+      "source_size": 48,
+      "source_mtime_ns": 1782808528000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "logger.py",
+      "original_sha256": "b246f74699242f6e9054c25471badfdd9b37b6dd5cb741975df5c7f4aa87f4eb",
+      "staged_sha256": "b246f74699242f6e9054c25471badfdd9b37b6dd5cb741975df5c7f4aa87f4eb",
+      "source_size": 55,
+      "source_mtime_ns": 1782808562000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "normalization.py",
+      "original_sha256": "8836cd72e6eb5c88955183e16c09d9a02397e7dee6d98ffa890cb8adc2945470",
+      "staged_sha256": "8836cd72e6eb5c88955183e16c09d9a02397e7dee6d98ffa890cb8adc2945470",
+      "source_size": 55,
+      "source_mtime_ns": 1782808573000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "ocr.py",
+      "original_sha256": "ecfd6249bda362f83d7a062bcfe45f392fcbeb9d2d3176f2ac08b0bbfbe3e4a9",
+      "staged_sha256": "ecfd6249bda362f83d7a062bcfe45f392fcbeb9d2d3176f2ac08b0bbfbe3e4a9",
+      "source_size": 45,
+      "source_mtime_ns": 1782808584000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "vector_store.py",
+      "original_sha256": "0999278e55ccfa3b234dc73f7568db40b60ef135de82e86685b28a7af8214b80",
+      "staged_sha256": "0999278e55ccfa3b234dc73f7568db40b60ef135de82e86685b28a7af8214b80",
+      "source_size": 54,
+      "source_mtime_ns": 1782808606000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "ingestion.py",
+      "original_sha256": "1f79fcbfd161b6c142d790ad2cdda38512fdb5fea71ab8673cd8f58d1edff71f",
+      "staged_sha256": "1f79fcbfd161b6c142d790ad2cdda38512fdb5fea71ab8673cd8f58d1edff71f",
+      "source_size": 51,
+      "source_mtime_ns": 1782808551000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "retriever.py",
+      "original_sha256": "9897f3fdfb6a6c66ee6d5b39de0d24960211d14854ed9b0246e6c8e9ca9cf1a3",
+      "staged_sha256": "9897f3fdfb6a6c66ee6d5b39de0d24960211d14854ed9b0246e6c8e9ca9cf1a3",
+      "source_size": 51,
+      "source_mtime_ns": 1782808595000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/package.json",
+      "original_sha256": "e41d3b0fcf626274076872a59c794cd5377fafd5d5849e02dc04b6cc35bd9a16",
+      "staged_sha256": "e41d3b0fcf626274076872a59c794cd5377fafd5d5849e02dc04b6cc35bd9a16",
+      "source_size": 1309,
+      "source_mtime_ns": 1790515377349358100,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/package-lock.json",
+      "original_sha256": "b54dbff86742d6b11eb1b2906e2a12685c0139f0fbf41ce16c95fe41109b9d30",
+      "staged_sha256": "b54dbff86742d6b11eb1b2906e2a12685c0139f0fbf41ce16c95fe41109b9d30",
+      "source_size": 149274,
+      "source_mtime_ns": 1784724667000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/vite.config.cjs",
+      "original_sha256": "c507ba5657d5710eee3e76d303e20b9f8716745244ef5a8d0075d9479686a020",
+      "staged_sha256": "c507ba5657d5710eee3e76d303e20b9f8716745244ef5a8d0075d9479686a020",
+      "source_size": 914,
+      "source_mtime_ns": 1784724692000000000,
+      "staging_security_transform": false
+    },
+    {
+      "path": "hr-training-frontend/index.html",
+      "original_sha256": "110c8306e61a8462d62c1f2fdc027c77b99746e6322cbfdfdf0e048201afb3ba",
+      "staged_sha256": "110c8306e61a8462d62c1f2fdc027c77b99746e6322cbfdfdf0e048201afb3ba",
+      "source_size": 701,
+      "source_mtime_ns": 1792093147394324900,
+      "staging_security_transform": false
+    }
+  ],
+  "errors": [],
+  "complete": true,
+  "excluded": [
+    "env",
+    "databases",
+    "uploads",
+    "logs",
+    "indexes",
+    "weights",
+    "node_modules",
+    "backups"
+  ],
+  "production_modified": false
+}

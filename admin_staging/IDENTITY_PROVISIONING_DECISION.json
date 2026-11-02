@@ -1,0 +1,8 @@
+{
+  "event": "user_selected_staging_identity",
+  "username": "training.admin",
+  "credential_source": "manual browser entry only; not copied from production",
+  "production_modified": false,
+  "startup_stop_positive_health_verified": true,
+  "graceful_stop_verified": true
+}

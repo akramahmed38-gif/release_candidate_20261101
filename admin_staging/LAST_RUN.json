@@ -1,0 +1,9 @@
+{
+  "pid": 30056,
+  "run_id": "668003adeb084063bc38eb8d65ec3a0c",
+  "url": "http://127.0.0.1:8765",
+  "script": "D:\\FawryChatbotPreparation\\release_candidate_20261101\\admin_staging\\run_admin.py",
+  "environment": "isolated_admin_staging",
+  "started_epoch": 1793624712.133398,
+  "stopped_epoch": 1793625346.9659588
+}
