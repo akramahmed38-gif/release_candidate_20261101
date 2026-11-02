@@ -322,10 +322,11 @@
     "admin_staging/application/chatbot/_root_wrappers/ocr.py": "ecfd6249bda362f83d7a062bcfe45f392fcbeb9d2d3176f2ac08b0bbfbe3e4a9",
     "admin_staging/application/chatbot/_root_wrappers/retriever.py": "9897f3fdfb6a6c66ee6d5b39de0d24960211d14854ed9b0246e6c8e9ca9cf1a3",
     "admin_staging/application/chatbot/_root_wrappers/vector_store.py": "0999278e55ccfa3b234dc73f7568db40b60ef135de82e86685b28a7af8214b80",
-    "admin_staging/run_admin.py": "fd39fce61f7de62e35110cc6c9f372c3fe77e2e7a6f8e3e4fa6e15fbc64bf458",
+    "admin_staging/run_admin.py": "87c389b36dc69c8658b0e45a63c3e9f1bc9a198eca5b72c21993d7d3d50f5887",
     "admin_staging/isolation.py": "132b5fc17f0c9ecd708d52e2ac05c9bbc6c1d8d82b8bbc4eddcb6f25ddac48fa",
     "admin_staging/prepare.py": "bab07e67d794930cba1957c9a40ca44118222642196fa722c2b88dd421139882"
   },
   "auth": "existing application, manually provisioned staging administrator",
-  "native": "NOT RUN"
+  "native": "NOT RUN",
+  "change": "Same-origin referrer policy for valid form Origin; strict origin and setup CSRF gates retained"
 }
