@@ -94,4 +94,9 @@ class CurrentQueryPlanner:
     def plan(self,question,cid,sid):
         from scope_graph import ScopeGraph
         if not hasattr(self,'scope_graph'):self.scope_graph=ScopeGraph(self)
-        return self.scope_graph.plan(question,cid,sid)
+        result=self.scope_graph.plan(question,cid,sid)
+        from task_contract import task_mode,classify_current
+        mode=task_mode(question)
+        result['request_contract']['task_mode']=mode
+        if mode['mode']=='interpretation_only':result=classify_current(question,self,result,mode)
+        return result

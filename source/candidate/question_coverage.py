@@ -220,6 +220,8 @@ def _raw_record_references(text):
 
 
 def _raw_intents(text, feature_hits):
+    from linguistic_spans import financial_ordinal_spans
+    feature_hits['initial']=sorted(set(feature_hits.get('initial',[])+financial_ordinal_spans(text,feature_hits.get('deposit',[]))))
     has = lambda k: bool(feature_hits.get(k))
     def evidence(*keys):
         return sorted({p for key in keys for p in feature_hits.get(key, [])})
@@ -316,6 +318,14 @@ def _raw_intents(text, feature_hits):
         if workflow_points and len(contextual)==len(workflow_points):
             intents.pop("workflow",None)
             feature_hits["workflow_purpose_context"]=contextual
+    from linguistic_spans import process_context_scope,image_object_identity_spans
+    context=process_context_scope(text,feature_hits)
+    if context:
+        intents.pop('opening_fee',None);intents.pop('initial_funding',None)
+        feature_hits['explicit_process_context']=[(context['start'],context['end'])]
+    attached=image_object_identity_spans(text,feature_hits)
+    if attached and feature_hits.get('identity') and all(point in attached for point in feature_hits['identity']):
+        intents.pop('identity',None)
     return intents
 
 

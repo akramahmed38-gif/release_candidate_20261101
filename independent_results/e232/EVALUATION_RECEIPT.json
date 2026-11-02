@@ -1,0 +1,132 @@
+{
+  "status": "TERMINAL_FAIL",
+  "created_utc": "2026-11-01T19:28:05.823305+00:00",
+  "binding": {
+    "freeze_path": "D:\\FawryChatbotPreparation\\release_candidate_20261101\\configuration\\RC_ACCURACY_FREEZE_e2322e0.json",
+    "freeze_sha256": "67d2488384a1f8c44b814ea0aaa9a869863b153832e5b35d8033d64f34ebd774",
+    "source_commit": "e2322e06ae101477b1ebd1838559a29dfe01f3b0"
+  },
+  "review_receipt_sha256": "6bd75c2c3490d5eb4bfd7c9f514175a452690e8b1383461e7faffbdd668bf403",
+  "main_questions_executed_once": 36,
+  "setup_turns": 2,
+  "case_retries": 0,
+  "categories": {
+    "business_answer": {
+      "passed": 3,
+      "denominator": 16,
+      "failed": 12,
+      "unscorable_gold_discrepancy": 1,
+      "gate_passed": false
+    },
+    "interpretation_only": {
+      "passed": 1,
+      "denominator": 10,
+      "failed": 9,
+      "unscorable_gold_discrepancy": 0,
+      "gate_passed": false
+    },
+    "legitimate_partial_hold_clarify": {
+      "passed": 2,
+      "denominator": 6,
+      "failed": 4,
+      "unscorable_gold_discrepancy": 0,
+      "gate_passed": false
+    },
+    "safety": {
+      "passed": 0,
+      "denominator": 4,
+      "failed": 4,
+      "unscorable_gold_discrepancy": 0,
+      "gate_passed": false
+    }
+  },
+  "overall": {
+    "passed": 6,
+    "denominator": 36,
+    "failed": 29,
+    "unscorable_gold_discrepancy": 1
+  },
+  "dimensions": {
+    "exact_interpretation_tuple_match": {
+      "numerator": 13,
+      "denominator": 36
+    },
+    "required_and_allowed_fact_id_bounds": {
+      "numerator": 30,
+      "denominator": 36
+    },
+    "exact_selected_gold_citation_match": {
+      "numerator": 42,
+      "denominator": 49
+    },
+    "citation_metric_boundary": "Unrequested emitted fixture facts may still have correct original source citations; gold-bound citation count excludes facts not permitted by case.",
+    "interpretation_only_business_accuracy_credit": 0,
+    "original_fixture_source_citation_match": {
+      "numerator": 49,
+      "denominator": 49
+    }
+  },
+  "critical": {
+    "unsupported_business_facts": 0,
+    "wrong_provider_business_facts": 0,
+    "false_complete_or_contradictory_complete_state": 2
+  },
+  "source_pins": {
+    "before": 147,
+    "after": 147,
+    "unchanged": true
+  },
+  "resources": {
+    "main_count": 36,
+    "setup_count": 2,
+    "backend": "CORE_ONLY_SCOPED_EXISTING_BM25",
+    "native_calls": 0,
+    "model_calls": 0,
+    "pins_before_after": 147,
+    "peak_rss_bytes": 79556608,
+    "elapsed_s": 67.92361999999957,
+    "cpu_user_s": 62.125,
+    "cpu_system_s": 3.078125
+  },
+  "http_latency_ms": {
+    "median": 1466.9744000002538,
+    "p95": 2953.002499998547,
+    "maximum": 4176.6686999999365
+  },
+  "native_and_model_calls": 0,
+  "production_access": false,
+  "approval_boundary": "21test-only facts across4services; zero genuine owner/business/human fidelity approvals;29profile recognition is not answer coverage.",
+  "gold_validity_limitation": "One case has an independently acknowledged frozen channel mismatch; retained unchanged and reported unscorable. Candidate gate fails separately on29genuine failures.",
+  "initialization_note": "An initial Core-mode literal assertion stopped before HTTP server creation or any question. Preserved separately. Corrected harness assertion to actual Core mode before single evaluation; no case retry.",
+  "sealed_artifacts": {
+    "D:\\FawryChatbotPreparation\\release_candidate_20261101\\independent_private\\e232\\CASES.json": "04e19e2efca3d109c3658447019780d51e9ea3580dde717780b36b64a4597508",
+    "D:\\FawryChatbotPreparation\\release_candidate_20261101\\independent_private\\e232\\SCORING_REQUIREMENTS.json": "89e10e96fe1c5e7736c4927f46be03989499dfb0746509aa3488090954aafc34",
+    "D:\\FawryChatbotPreparation\\release_candidate_20261101\\independent_private\\e232\\execution\\ACTUAL_RESPONSES.json": "e37d9dc9e2b5fffe071ced36823ecc6f1c16a1ad74a38be1e399d37c4cdd9773",
+    "D:\\FawryChatbotPreparation\\release_candidate_20261101\\independent_private\\e232\\execution\\JUDGMENTS.json": "00648646ec7eb70aa7037c78a5d8547860871fd89a2719a4187fdc3eb56b7c8a",
+    "D:\\FawryChatbotPreparation\\release_candidate_20261101\\independent_private\\e232\\execution\\PINS_BEFORE.json": "db39bb00d88202b67448db7de4ccc6bf495da1f9d86da27401b044cb6bd37e16",
+    "D:\\FawryChatbotPreparation\\release_candidate_20261101\\independent_private\\e232\\execution\\PINS_AFTER.json": "db39bb00d88202b67448db7de4ccc6bf495da1f9d86da27401b044cb6bd37e16",
+    "D:\\FawryChatbotPreparation\\release_candidate_20261101\\independent_private\\e232\\execution\\RESOURCE_SAMPLES.json": "8a0cf1ce5afd5fbd71768a01c8478804e3129bafa6816e56f4db8e36fbc1165c"
+  },
+  "released_failed_diagnostics": {
+    "path": "D:\\FawryChatbotPreparation\\release_candidate_20261101\\independent_results\\e232\\FAILED_CASE_DIAGNOSTICS.json",
+    "sha256": "14039eec2d9fa3be09f3a58807c5502855c6e21d26e7c8119ede82ce87603ee1"
+  },
+  "strict_raw_frozen_gold_accounting": {
+    "passed": 6,
+    "failed_or_mismatched": 30,
+    "denominator": 36,
+    "business_answer": {
+      "passed": 3,
+      "failed_or_mismatched": 13,
+      "denominator": 16
+    },
+    "disputed_case_still_in_denominator": true
+  },
+  "explicitly_labelled_scorable_subset": {
+    "passed": 6,
+    "failed": 29,
+    "denominator": 35,
+    "excluded_from_subset_only": 1,
+    "subset_is_not_release_gate": true
+  }
+}

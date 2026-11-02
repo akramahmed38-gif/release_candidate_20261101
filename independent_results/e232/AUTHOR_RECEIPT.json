@@ -1,0 +1,39 @@
+{
+  "binding": {
+    "freeze_path": "D:\\FawryChatbotPreparation\\release_candidate_20261101\\configuration\\RC_ACCURACY_FREEZE_e2322e0.json",
+    "freeze_sha256": "67d2488384a1f8c44b814ea0aaa9a869863b153832e5b35d8033d64f34ebd774",
+    "source_commit": "e2322e06ae101477b1ebd1838559a29dfe01f3b0"
+  },
+  "main_question_count": 36,
+  "setup_turn_count": 2,
+  "category_counts": {
+    "business_answer": 16,
+    "interpretation_only": 10,
+    "legitimate_partial_hold_clarify": 6,
+    "safety": 4
+  },
+  "language_counts": {
+    "Egyptian Arabic": 8,
+    "MSA": 7,
+    "English": 8,
+    "Franco": 7,
+    "mixed": 6
+  },
+  "covered_profile_count": 29,
+  "fixture_fact_count": 21,
+  "genuine_approval_count": 0,
+  "sealed_files": {
+    "D:\\FawryChatbotPreparation\\release_candidate_20261101\\independent_private\\e232\\CASES.json": "04e19e2efca3d109c3658447019780d51e9ea3580dde717780b36b64a4597508",
+    "D:\\FawryChatbotPreparation\\release_candidate_20261101\\independent_private\\e232\\SCORING_REQUIREMENTS.json": "89e10e96fe1c5e7736c4927f46be03989499dfb0746509aa3488090954aafc34"
+  },
+  "input_hashes": {
+    "D:\\FawryChatbotPreparation\\release_candidate_20261101\\source\\candidate\\fixture_data\\definition.json": "c382289e67fe1475a98afd7194b249494b45f3e6724532d640cec9b12f341238",
+    "D:\\FawryChatbotPreparation\\release_candidate_20261101\\source\\candidate\\resources\\adapter.json": "eae03be766ad5dd7597a122efe8ab71e492df7ac027a225609eb106dd5da7a67",
+    "D:\\FawryChatbotPreparation\\release_candidate_20261101\\source\\candidate\\resources\\intents.json": "eeced8d416e293072f8e9e98b4b34bfb60320f8fcd6e84279bb7d633cf5b74cd",
+    "D:\\FawryChatbotPreparation\\release_candidate_20261101\\knowledge_coverage\\ALL_29_SERVICE_COVERAGE.csv": "c7484302eebb9c23beab41fdf00da871428b711e55ab6a08e98c345532d610c8",
+    "D:\\FawryChatbotPreparation\\release_candidate_20261101\\knowledge_coverage\\PHASE4_READINESS_BACKLOG.csv": "b87f13913839c3d5d013d37afc4eeeeafca96d89a7c1fc3d075eece22c11bcae"
+  },
+  "revision": 3,
+  "superseded_receipt_sha256": "f99534bb76ffdb6c539f4b2a71478cf0506438da7af05ddcfa1c02b77989f516",
+  "superseded_v2_receipt_sha256": "2291a3d9096c3ee241d777ada9275e2cc18004ad07f5f2435724416c083b7384"
+}

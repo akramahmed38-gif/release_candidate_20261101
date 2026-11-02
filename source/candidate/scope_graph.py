@@ -270,7 +270,10 @@ class ScopeGraph:
             return bool(forms(t)&ignored) or len(t)>2 and t[0] in 'وبفل' and t[1:] in ignored
         return not any(not functional(t) and not t.isdigit() for t in tokens(''.join(chars)))
     def goals(self,text,masked):
-        h=self.hits(masked);has=lambda k:bool(h.get(k));out=[]
+        h=self.hits(masked)
+        from linguistic_spans import financial_ordinal_spans
+        h['initial']=unique(h.get('initial',[])+financial_ordinal_spans(masked,h.get('deposit',[])))
+        has=lambda k:bool(h.get(k));out=[]
         def add(i,*features):
             ss=unique(x for k in features for x in h.get(k,[]))
             if ss:out.append({'intent_id':i,'predicate_spans':ss,'head_spans':h.get(features[0],ss),'support_features':list(features),'commit_basis':'current_clause_predicate_components'})
@@ -428,6 +431,14 @@ class ScopeGraph:
             if points and all(any(a<=x and y<=b for a,b in valued_fields) for x,y in points):
                 merged.pop('transaction_reference')
                 h['supplied_record_field_context']=valued_fields
+        from linguistic_spans import process_context_scope,image_object_identity_spans
+        process=process_context_scope(masked,h)
+        if process:
+            merged.pop('opening_fee',None);merged.pop('initial_funding',None)
+            h['explicit_process_context']=[(process['start'],process['end'])]
+        attached=image_object_identity_spans(masked,h)
+        if attached and h.get('identity') and all(point in attached for point in h['identity']):
+            merged.pop('identity',None);h['image_object_context']=attached
         h['_semantic']=semantic
         for goal in semantic['supplemental_goals']:
             if goal['intent_id']=='balance_treatment' and 'semantic_atom:funds_balance_destination' in goal.get('support_features',[]):
@@ -1033,6 +1044,7 @@ class ScopeGraph:
                                 'commit_basis':'explicit_verification_of_bounded_claim','mode':'verify_claim'}
                                for intent in bound]
                     projected_services=unique(service for row in quoted_projections for service in row['services'])
+                    projected_channels=unique(channel for row in quoted_projections for channel in row.get('channels',[]))
                 if not projected:
                     label=next((row for row in reversed(quoted_projections) if row['goals']),None)
                     if label:

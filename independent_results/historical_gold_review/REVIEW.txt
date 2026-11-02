@@ -1,0 +1,11 @@
+Independent historical gold review: five Phase1 blockers
+
+The historical AXIS expectation was supported by an explicitly AXIS-only application/fixture scope, not a recorded conversational antecedent. README restricts answer data to F0010-F0012; preserved UI labels the app as three AXIS financial facts. run_pilot.py112-115 assigns a distinct case-id conversation/session and sends setup only when declared. None of these five declares setup; original176 records empty setup_turns and context_used=false for every case. There is no top-level prior-conversation metadata. Test ordering cannot supply context.
+
+That legacy scope does not transfer automatically to the current multi-service app. Both AXIS F0011 and QNB F0073 specify20EGP activation deposits, so neither amount nor an unnamed wallet identifies provider. The preserved Phase1 default explains historical behavior; it does not authorize a current AXIS default.
+
+There is a separate requested-scope concern: E03/A02/P03 primarily ask where the deposit goes; retained balance is directly F0012. Mandatory opening-fee or immediate-activation claims can exceed the question. P04 mentions an opening charge, making F0010 explanatory context more relevant, but activation timing is still not explicitly asked. E02 ordinary funding can require F0011+F0012 once AXIS scope is actually established. These are scope-review observations, not gold changes.
+
+Minimum owner decision: explicitly choose whether these legacy cases carry an AXIS-only application-scope envelope, or are standalone current multi-service questions. Preserve all historical gold and176-case accounting. Any accepted contextualized contract must be represented explicitly in a separately versioned future test; do not fabricate a prior turn or default provider. Requested-subclaim granularity also needs owner acceptance before any future gold version.
+
+No tests were run; no gold, source, runtime, score, denominator or approvals were changed. Exact five-case evidence, file hashes, source locators and case-by-case scope notes are in REVIEW.json.

@@ -1,0 +1,38 @@
+{
+  "status": "READY_FOR_EXPLICIT_EVALUATE_AUTHORIZATION",
+  "binding": {
+    "freeze_path": "D:\\FawryChatbotPreparation\\release_candidate_20261101\\configuration\\RC_ACCURACY_FREEZE_e2322e0.json",
+    "freeze_sha256": "67d2488384a1f8c44b814ea0aaa9a869863b153832e5b35d8033d64f34ebd774",
+    "source_commit": "e2322e06ae101477b1ebd1838559a29dfe01f3b0"
+  },
+  "created_utc": "2026-11-01T19:08:48.294142+00:00",
+  "main_question_count": 36,
+  "category_counts": {
+    "business_answer": 16,
+    "interpretation_only": 10,
+    "legitimate_partial_hold_clarify": 6,
+    "safety": 4
+  },
+  "language_counts": {
+    "Egyptian Arabic": 8,
+    "MSA": 7,
+    "English": 8,
+    "Franco": 7,
+    "mixed": 6
+  },
+  "selected_source_hashes_verified": 5,
+  "test_only_fact_views_reviewed": 21,
+  "genuine_approvals": 0,
+  "frozen_source_pins_verified": 147,
+  "sealed_files": {
+    "D:\\FawryChatbotPreparation\\release_candidate_20261101\\independent_private\\e232\\CASES.json": "04e19e2efca3d109c3658447019780d51e9ea3580dde717780b36b64a4597508",
+    "D:\\FawryChatbotPreparation\\release_candidate_20261101\\independent_private\\e232\\SCORING_REQUIREMENTS.json": "89e10e96fe1c5e7736c4927f46be03989499dfb0746509aa3488090954aafc34",
+    "D:\\FawryChatbotPreparation\\release_candidate_20261101\\independent_private\\e232\\REVIEW_CHECKS.json": "243f1cae52a03b947d4b32ffec876e1f3743c7687b9a8bf28805b53443cb67e4"
+  },
+  "manual_review_complete": true,
+  "candidate_executed": false,
+  "historical_question_text_consulted": false,
+  "lexical_novelty_certified": false,
+  "novelty_boundary": "Fresh independently authored cases; coverage CSV historical identifiers only; lexical non-overlap not asserted.",
+  "gate": "100% whole-case correctness separately in each finite category; zero unsupported/wrong-provider/false-complete critical errors; recognition-only results never business coverage."
+}

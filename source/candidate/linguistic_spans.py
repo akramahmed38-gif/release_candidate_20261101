@@ -821,3 +821,48 @@ def resolve_entities(raw, profiles, roles):
         other["start"] <= hit["start"] and other["end"] >= hit["end"]
         and other["end"] - other["start"] > hit["end"] - hit["start"]
         for other in hits)], key=lambda hit: (hit["start"], -hit["end"], hit["service_id"]))
+
+
+def financial_ordinal_spans(raw, deposit_spans):
+    """Adjacent ordinal modifiers bind to a deposit noun in either word order."""
+    result=[]
+    ordinals=[point for cue in ['first','initial','الأول','الاول','أول','اول','الأولي','الأوليّة','awel'] for point in spans(raw,cue)]
+    for a,b in deposit_spans:
+        for x,y in ordinals:
+            if b<=x:gap=raw[b:x]
+            elif y<=a:gap=raw[y:a]
+            else:continue
+            if not tokens(gap) and not re.search(r'[,،;؛.!?؟]',gap):result.extend([(a,b),(x,y)])
+    return sorted(set(result))
+
+
+def process_context_scope(raw,hits):
+    """A fronted process title/purpose is not a monetary request by itself.
+
+    Requires independently stated requirement/image dimensions and no current
+    financial or temporal request. Exposes linguistic proof, never a fact ID.
+    """
+    if not any(hits.get(k) for k in ['identity','phone_owner','existing_wallet','documents','image']):return None
+    explicit_financial=['deposit','funding','amount','fee','charge','cost','money','balance','cash','EGP','إيداع','تمويل','مبلغ','رسوم','فلوس','رصيد','جنيه']
+    if any(spans(raw,w) for w in explicit_financial):return None
+    if any(spans(raw,w) for w in ['when','how long','متى','امتى','مدة']):return None
+    heads=hits.get('opening',[])+hits.get('activation',[])
+    for a,b in heads:
+        prefix=shadow(raw[max(0,a-25):a])[0]
+        fronted=bool(re.search(r'(?:\b(?:before|during|for|to)|قبل|عند|اثناء|اثناء|ل)\s*(?:the\s+)?$',prefix))
+        suffix=raw[b:]
+        title=bool(re.match(r'\s*:',suffix)) and not tokens(raw[:a])
+        if fronted or title:return mark(raw,a,b,'process_context')
+    return None
+
+
+def image_object_identity_spans(raw,hits):
+    """The ID in 'image of the ID' is an image object, not an ID check."""
+    allowed={'of','the','a','an','من','عن','ل','لل'};result=[]
+    for a,b in hits.get('image',[]):
+        for x,y in hits.get('identity',[]):
+            if b>x:continue
+            gap=raw[b:x]
+            if not re.search(r'[,،;؛.!?؟]',gap) and all(t in allowed for t in tokens(gap)):
+                result.append((x,y))
+    return result

@@ -215,6 +215,11 @@ class CatalogEngine(frozen.MultiEngine):
                           else 'The selected sources do not establish the requested timing restriction.')
                     result['scope_gap_messages']=[{'service':name,'dimension':'timing_restriction','message':text} for name in names]
                     result['answer']=result['answer'].rstrip()+'\n\n'+'\n'.join(name+': '+text for name in names)
+            presentation_started=perf_counter()
+            from task_contract import finalize
+            finalize(result,contract,self.facts,self.definition)
+            timings['final_presentation_ms']=(perf_counter()-presentation_started)*1000
+            primary.append('final_presentation_ms')
             state_started=perf_counter()
             if result.get('answer_status')=='clarify' and not result.get('supported_fact_ids'):
                 new_pending=pending_service_request(q,contract,self.catalog.turn)

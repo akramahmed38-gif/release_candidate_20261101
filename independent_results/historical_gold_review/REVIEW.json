@@ -1,0 +1,218 @@
+{
+  "status": "INDEPENDENT_READ_ONLY_HISTORICAL_GOLD_REVIEW_NO_WAIVER",
+  "created_utc": "2026-11-01T19:59:47.534160+00:00",
+  "scope": [
+    "P1_E02",
+    "P1_E03",
+    "P1_A02",
+    "P1_P03",
+    "P1_P04"
+  ],
+  "inputs": {
+    "original176": {
+      "path": "D:\\FawryChatbotPreparation\\release_candidate_20261101\\end_to_end\\datasets\\original176.json",
+      "sha256": "23795f195df2be00f8e9c7ea45820b6882b606bf14eaf01987a8e6a69c0b80ff"
+    },
+    "phase1_readme": {
+      "path": "D:\\FawryChatbotPreparation\\release_candidate_20261101\\source\\candidate\\frozen_phase2\\phase1\\README.md",
+      "sha256": "e582e7522d9ef3df7b8848f1ceb0f1610df023be2b27476204bf46e6c21a9914"
+    },
+    "phase1_test_cases": {
+      "path": "D:\\FawryChatbotPreparation\\release_candidate_20261101\\source\\candidate\\frozen_phase2\\phase1\\test_cases.json",
+      "sha256": "96f877ec6a671fddd8415be0fc674fc41f444dceb4e3699482b609b8823ed176"
+    },
+    "phase1_launcher": {
+      "path": "D:\\FawryChatbotPreparation\\release_candidate_20261101\\source\\candidate\\frozen_phase2\\phase1\\run_pilot.py",
+      "sha256": "91bf1ce82beb8010d6c77a450d02d0d8fe8968db940f2dc5f27a77a298f7b6e4"
+    },
+    "phase1_engine": {
+      "path": "D:\\FawryChatbotPreparation\\release_candidate_20261101\\source\\candidate\\frozen_phase2\\phase1\\pilot_engine.py",
+      "sha256": "e3a58348ef57e10714c2b11a71a2e66e5689179bfb3247038c6084e335ef2ae7"
+    },
+    "phase1_fixture": {
+      "path": "D:\\FawryChatbotPreparation\\release_candidate_20261101\\source\\candidate\\frozen_phase2\\phase1\\fixture_data\\fixture_definition.json",
+      "sha256": "163bf037fb33c4037d865e789fa5a9cb61690f0c3e36f961214183651bb081c4"
+    },
+    "current_fixture": {
+      "path": "D:\\FawryChatbotPreparation\\release_candidate_20261101\\source\\candidate\\fixture_data\\definition.json",
+      "sha256": "c382289e67fe1475a98afd7194b249494b45f3e6724532d640cec9b12f341238"
+    }
+  },
+  "findings": {
+    "legacy_application_scope": "README title is Isolated AXIS source-view prototype; only F0010-F0012 are answer data. Preserved launcher UI says Only three AXIS financial facts. This is genuine explicit application/fixture scope, not evidence of a conversational antecedent.",
+    "original_session_evidence": "run_pilot.py lines112-115 uses each case id for both conversation_id and session_id; setup is sent only if case.setup exists. All five original case definitions omit setup. original176 has setup_turns=[] and actual interpretation.context_used=false for all five, and no top-level conversation/session or preceding-turn metadata. Dataset ordering is not a valid prior-turn link.",
+    "legacy_default_implementation_evidence": "pilot_engine.py lines104-109 documents no-foreign-provider fallback and axis=explicit_axis or (not services and not foreign); its returned fixture_default_service identifies this behavior. It explains historical AXIS answers but is not authorization to reinstate that default in the current multi-service app.",
+    "current_scope_conflict": "Current fixture exposes29service profiles and contains both AXIS F0011 and QNB F0073 minimum20EGP/immediate-activation claims. Therefore amount20EGP or wallet/initial-deposit terminology cannot uniquely identify AXIS. Current fixture_default_service metadata alone cannot replace current owner rule requiring clarification for standalone unnamed services.",
+    "fact_authority": "F0010 zero AXIS subscription fee; F0011 minimum20EGP/immediate AXIS activation; F0012 deposit remains in AXIS balance; QNB F0073 minimum20EGP/immediate activation. These are test-only source views, no business/human approvals.",
+    "source_evidence": {
+      "axis_original": {
+        "document": "daily_brief/axis_wallet_sales_guide.pdf",
+        "sha256": "198dffbc8ab1ce2887356e91fab9d241ea3f08c35216d2b32a1062e64439abce",
+        "locator": {
+          "type": "page",
+          "page": "1",
+          "line_start": null,
+          "line_end": null,
+          "source_segments": null
+        }
+      },
+      "qnb_original": {
+        "document": "KnowledgeBase/Articles/Wallets_ART.md",
+        "sha256": "5e5ffd50f6edd59331690c626731fcb4496a916513174538c871cc606c5d62bb",
+        "locator": {
+          "type": "lines",
+          "page": null,
+          "line_start": 161,
+          "line_end": 165,
+          "source_segments": null
+        }
+      }
+    }
+  },
+  "cases": [
+    {
+      "id": "P1_E02",
+      "question": "How much do I need to activate the wallet?",
+      "phase1_original_definition": {
+        "id": "E02",
+        "question": "How much do I need to activate the wallet?",
+        "language": "en",
+        "type": "answer",
+        "complete": true,
+        "facts": [
+          "F0011",
+          "F0012"
+        ]
+      },
+      "original176_frozen_expected_facts": [
+        "F0011",
+        "F0012"
+      ],
+      "original176_setup_turns": [],
+      "original176_actual_context_used": false,
+      "top_level_session_or_conversation_metadata_present": false,
+      "scope_review": "Ordinary initial-funding question can justify F0011+F0012 under an established AXIS scope; no provider is named in the text.",
+      "preserved_outcome": "Not rescored or waived; retain original gold and failure/blocker accounting."
+    },
+    {
+      "id": "P1_E03",
+      "question": "Does the initial EGP 20 disappear as a fee?",
+      "phase1_original_definition": {
+        "id": "E03",
+        "question": "Does the initial EGP 20 disappear as a fee?",
+        "language": "en",
+        "type": "answer",
+        "complete": true,
+        "facts": [
+          "F0010",
+          "F0011",
+          "F0012"
+        ]
+      },
+      "original176_frozen_expected_facts": [
+        "F0010",
+        "F0011",
+        "F0012"
+      ],
+      "original176_setup_turns": [],
+      "original176_actual_context_used": false,
+      "top_level_session_or_conversation_metadata_present": false,
+      "scope_review": "Question concerns disposition of the stated deposit. F0012 directly supports retained balance; F0010 opening subscription fee and F0011 immediate activation are distinct subclaims not explicitly requested.",
+      "preserved_outcome": "Not rescored or waived; retain original gold and failure/blocker accounting."
+    },
+    {
+      "id": "P1_A02",
+      "question": "العشرين جنيه بتتخصم ولا بتفضل في الرصيد؟",
+      "phase1_original_definition": {
+        "id": "A02",
+        "question": "العشرين جنيه بتتخصم ولا بتفضل في الرصيد؟",
+        "language": "ar",
+        "type": "answer",
+        "complete": true,
+        "facts": [
+          "F0010",
+          "F0011",
+          "F0012"
+        ]
+      },
+      "original176_frozen_expected_facts": [
+        "F0010",
+        "F0011",
+        "F0012"
+      ],
+      "original176_setup_turns": [],
+      "original176_actual_context_used": false,
+      "top_level_session_or_conversation_metadata_present": false,
+      "scope_review": "Question concerns disposition of the stated20EGP. F0012 directly supports balance retention; amount does not identify provider. F0010 opening fee and F0011 activation timing exceed literal disposition request.",
+      "preserved_outcome": "Not rescored or waived; retain original gold and failure/blocker accounting."
+    },
+    {
+      "id": "P1_P03",
+      "question": "Does my starting deposit stay available in the wallet?",
+      "phase1_original_definition": {
+        "id": "P03",
+        "question": "Does my starting deposit stay available in the wallet?",
+        "language": "en",
+        "type": "answer",
+        "complete": true,
+        "facts": [
+          "F0011",
+          "F0012"
+        ],
+        "purpose": "Additional paraphrase"
+      },
+      "original176_frozen_expected_facts": [
+        "F0011",
+        "F0012"
+      ],
+      "original176_setup_turns": [],
+      "original176_actual_context_used": false,
+      "top_level_session_or_conversation_metadata_present": false,
+      "scope_review": "Retained availability is directly F0012; requiring the entire F0011 activation/timing view promotes source dependency/context into answer scope.",
+      "preserved_outcome": "Not rescored or waived; retain original gold and failure/blocker accounting."
+    },
+    {
+      "id": "P1_P04",
+      "question": "Does the deposit go into my balance, or is it an opening charge?",
+      "phase1_original_definition": {
+        "id": "P04",
+        "question": "Does the deposit go into my balance, or is it an opening charge?",
+        "language": "en",
+        "type": "answer",
+        "complete": true,
+        "facts": [
+          "F0010",
+          "F0011",
+          "F0012"
+        ],
+        "purpose": "Fact combination outside example wording"
+      },
+      "original176_frozen_expected_facts": [
+        "F0010",
+        "F0011",
+        "F0012"
+      ],
+      "original176_setup_turns": [],
+      "original176_actual_context_used": false,
+      "top_level_session_or_conversation_metadata_present": false,
+      "scope_review": "Balance versus opening charge supports disposition F0012, with F0010 potentially relevant explanatory opening-fee context; mandatory F0011 minimum/timing content is broader than the explicit question.",
+      "preserved_outcome": "Not rescored or waived; retain original gold and failure/blocker accounting."
+    }
+  ],
+  "minimum_human_acceptance_owner_decision": [
+    "Decide explicitly whether the historical suite contract includes an AXIS-only application-scope envelope as an input to these five tests, or whether these are standalone utterances in the current multi-service application. Existing records prove legacy app scope but do not prove prior conversational AXIS context.",
+    "Keep the current gold and all176denominator unchanged while deciding. If an AXIS scope envelope is accepted, specify an explicit test-interface/context representation for a separately versioned future contextual test; do not invent a preceding turn or add a runtime AXIS default. If standalone current scope is retained, acknowledge conflict with legacy AXIS gold and keep the blocker pending a separately authorized gold-version decision.",
+    "Separately decide requested-subclaim granularity for disposition questions: source dependencies and explanatory opening/minimum facts should not automatically become mandatory answer claims. Preserve current fact-set gold until the acceptance owner explicitly approves any future version."
+  ],
+  "prohibited_inferences": [
+    "No changed gold, waived failures, passes, denominator reduction, inferred business approval, runtime/source edits, or further evaluation.",
+    "No independent36passed wording or gold cited."
+  ],
+  "operations": {
+    "new_evaluations": 0,
+    "historical_gold_changes": 0,
+    "source_runtime_changes": 0,
+    "passes_granted": 0,
+    "denominator_changes": 0
+  }
+}
