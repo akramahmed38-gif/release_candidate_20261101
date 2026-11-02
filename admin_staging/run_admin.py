@@ -11,6 +11,8 @@ for key in list(os.environ):
 os.environ.update(FAWRY_ISOLATED_ADMIN='1',STAGING_PORT=str(PORT),STAGING_PRIVATE_ROOT=str(PRIVATE),STAGING_ADMIN_CREDENTIAL_PATH=str(PRIVATE/'admin_credentials.json'),STAGING_JWT_SECRET=(PRIVATE/'jwt.key').read_text(encoding='ascii'),STAGING_LOG_DIR=str(ROOT/'logs'),TRAINING_SMTP_DISABLED='1',SMTP_DISABLED='1',AUTO_RESIGN_USERS_ENABLED='0',TRAINING_DASHBOARD_SNAPSHOT_READS='0',TRAINING_PUBLIC_BASE_URL='http://127.0.0.1:'+str(PORT)+'/training',PORTAL_DATABASES_DIR=str(ROOT/'state/databases'),HF_HUB_OFFLINE='1',TRANSFORMERS_OFFLINE='1',PYTHONDONTWRITEBYTECODE='1')
 os.chdir(APP);sys.dont_write_bytecode=True
 sys.path.insert(0,str(APP));sys.path.insert(0,str(APP/'src'))
+from engine_controller import start as start_engine,stop as stop_engine
+ENGINE_PROCESS,ENGINE_LOG=start_engine()
 from isolation import configuration,install_guards,validate_settings,contained
 paths=configuration();tempfile.tempdir=str(paths['temp'])
 install_guards()
@@ -50,7 +52,7 @@ async def staging_boundary(request,call_next):
         body=b''.join([part async for part in response.body_iterator]).decode('utf-8')
         env='<script src="/staging/env.js"></script>'
         body=body.replace('</head>',env+'</head>')
-        banner='<div id="staging-environment" role="status" style="padding:12px;background:#fff3cd;color:#493d00;border-bottom:2px solid #997300;position:sticky;top:0;z-index:99999;font:14px Arial">ISOLATED ADMIN STAGING — UNAPPROVED KNOWLEDGE — NO EMPLOYEE OR PRODUCTION ACCESS | بيئة اختبار معزولة؛ المعرفة غير معتمدة</div>'
+        banner='<div id="staging-environment" role="status" style="padding:12px;background:#fff3cd;color:#493d00;border-bottom:2px solid #997300;position:sticky;top:0;z-index:99999;font:14px Arial">ISOLATED ADMIN STAGING — UNAPPROVED KNOWLEDGE — NO EMPLOYEE OR PRODUCTION ACCESS | <a href="/training/admin/knowledge-workspace">Admin knowledge workspace</a> | بيئة اختبار معزولة؛ المعرفة غير معتمدة</div>'
         body=body.replace('<body>', '<body>'+banner)
         headers={k:v for k,v in response.headers.items() if k.lower() not in {'content-length','content-type'}}
         response=HTMLResponse(body,status_code=response.status_code,headers=headers)
@@ -62,7 +64,7 @@ async def staging_boundary(request,call_next):
 
 @app.get('/health')
 async def health():
-    return {'status':'ready','environment':'isolated_admin_staging','real_application':'existing HR Training FastAPI/React','authentication':'existing PBKDF2 admin credential verifier and JWT middleware','owner_setup_required':not CREDENTIALS.exists(),'employee_access':False,'production':False,'chatbot':'adapter_pending','native_acceptance':'NOT RUN'}
+    return {'status':'ready','environment':'isolated_admin_staging','real_application':'existing HR Training FastAPI/React','authentication':'existing PBKDF2 admin credential verifier and JWT middleware','owner_setup_required':not CREDENTIALS.exists(),'employee_access':False,'production':False,'chatbot':'isolated_core_review_and_approval_gate','native_acceptance':'NOT RUN'}
 
 @app.get('/staging/env.js')
 async def environment_js():
@@ -117,5 +119,6 @@ if __name__=='__main__':
     threading.Thread(target=watch,daemon=True).start()
     try:server.run()
     finally:
+        stop_engine(ENGINE_PROCESS,ENGINE_LOG)
         receipt['stopped_epoch']=time.time();(ROOT/'LAST_RUN.json').write_text(json.dumps(receipt,indent=2)+'\n',encoding='utf-8')
         (ROOT/'RUNNING.json').unlink(missing_ok=True)

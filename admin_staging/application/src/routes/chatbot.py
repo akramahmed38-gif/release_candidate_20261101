@@ -67,6 +67,8 @@ SIDECAR_REQUEST_TIMEOUT_SECONDS = 1800.0
 
 
 class ChatbotAskRequest(BaseModel):
+    knowledge_mode: str = "approved"
+    selected_fact_ids: list[str] = Field(default_factory=list, max_length=21)
     question: str = Field(..., min_length=1, max_length=4000, description="User question for the chatbot.")
     debug: bool = Field(default=False, description="Include backend debug details in the response.")
     request_id: str | None = Field(default=None, max_length=200, description="Cross-layer tracing id.")
@@ -463,6 +465,18 @@ async def ask_chatbot(request: Request, payload: ChatbotAskRequest) -> dict[str,
             ),
         )
 
+    # Owned staging adapter: no production sidecar call or request-time spawn.
+    from admin_knowledge import call_engine
+    user_context = await _resolve_chatbot_user_context(request)
+    result = await run_in_threadpool(call_engine, {
+        'question': question, 'knowledge_mode': payload.knowledge_mode,
+        'selected_fact_ids': payload.selected_fact_ids,
+        'conversation_id': payload.conversation_id or payload.session_id or request_id,
+    }, user_context)
+    result.update(request_id=request_id, conversation_id=payload.conversation_id,
+                  session_id=payload.session_id, message_id=payload.message_id)
+    return result
+
     try:
         ensure_sidecar_started = time.perf_counter()
         await _ensure_sidecar_running()
@@ -537,6 +551,19 @@ async def ask_chatbot(request: Request, payload: ChatbotAskRequest) -> dict[str,
 
 @chatbot_router.post("/feedback")
 async def submit_chatbot_feedback(request: Request, payload: ChatbotFeedbackRequest) -> dict[str, Any]:
+    from catalog_store import db
+    from admin_knowledge import hashlib
+    actor = await _resolve_chatbot_user_context(request)
+    event = {'request_id': payload.request_id, 'rating': payload.rating,
+             'actor_hash': hashlib.sha256(str(actor.get('username')).encode()).hexdigest(),
+             'question_sha256': hashlib.sha256(payload.question.encode()).hexdigest(),
+             'answer_sha256': hashlib.sha256(payload.answer.encode()).hexdigest(),
+             'source_references': [{'fact_id': x.get('fact_id')} for x in payload.sources],
+             'environment': 'isolated_admin_staging'}
+    with db() as connection:
+        connection.execute('insert into event(at,kind,target,data) values(?,?,?,?)',
+                           (time.time(),'answer_feedback',payload.conversation_id or '',json.dumps(event)))
+    return {'saved': True, 'staging_only': True}
     try:
         await _ensure_sidecar_running()
         user_context = await _resolve_chatbot_user_context(request)
