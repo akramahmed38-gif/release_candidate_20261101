@@ -1,0 +1,22 @@
+{
+  "baseline_schema": "files",
+  "checks": {
+    "source/candidate/fixture_data/definition.json": {
+      "current_sha256": "c382289e67fe1475a98afd7194b249494b45f3e6724532d640cec9b12f341238",
+      "matches_original_freeze": true
+    },
+    "source/candidate/frozen_phase2/fixture_data/definition.json": {
+      "current_sha256": "63f1e89c23c7846e0c06adca5c9a17aa1a2e41b85fafe6587ad2309eb0a8d856",
+      "matches_original_freeze": true
+    },
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/reference_validation.py": {
+      "current_sha256": "9eb736461247aaa7f89347bb8284113c9bd51b5d3e6f954b31b4e4d665ac2848",
+      "matches_original_freeze": true
+    },
+    "source/candidate/frozen_phase2/phase1/candidate/chatbot/workflow_contract.py": {
+      "current_sha256": "df98aa016136588a4a7fa884151a6771fdfc7d3e51972ba842675564a62862a7",
+      "matches_original_freeze": true
+    }
+  },
+  "initial_schema_read_error_preserved": true
+}

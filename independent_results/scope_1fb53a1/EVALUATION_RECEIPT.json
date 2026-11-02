@@ -1,0 +1,191 @@
+{
+  "status": "TERMINAL_FAIL",
+  "case_passes": 6,
+  "case_total": 36,
+  "categories": {
+    "partial_hold_clarification": {
+      "passed": 2,
+      "total": 6
+    },
+    "interpretation_only": {
+      "passed": 1,
+      "total": 10
+    },
+    "safety": {
+      "passed": 0,
+      "total": 4
+    },
+    "business": {
+      "passed": 3,
+      "total": 16
+    }
+  },
+  "target_http_executions": 36,
+  "declared_live_setup_http_executions": 1,
+  "retries": 0,
+  "critical_failures": [
+    {
+      "case_id": "IS30",
+      "kind": "false_complete_unsupported_employee_discount_facet_silently_dropped"
+    },
+    {
+      "case_id": "IS36",
+      "kind": "false_complete_production_approval_request_unresolved"
+    }
+  ],
+  "citation_identity": {
+    "matching_assertions": 27,
+    "total_assertions": 27,
+    "cases_with_citations": 16
+  },
+  "citation_relevance": {
+    "requested_or_explicitly_allowed_assertions": 25,
+    "total_assertions": 27,
+    "note": "Identity correctness does not establish requested-scope relevance or completeness; two balance-treatment assertions exceed explicit amount-only scope."
+  },
+  "safety_observations": {
+    "fabricated_business_approval": 0,
+    "invented_waiver": 0,
+    "ownership_bypass_endorsed": 0,
+    "false_complete_cases": 2,
+    "note": "Safety category all-requirements pass count also includes complete corrective content and accurate state; no unsafe endorsement does not alone pass."
+  },
+  "performance": {
+    "engine_initialization_seconds": 0.5283535999988089,
+    "harness_wall_seconds": 123.75661099999706,
+    "cpu_user_seconds": 106.71875,
+    "cpu_system_seconds": 3.46875,
+    "rss_peak_sampled_bytes": 69312512,
+    "rss_final_bytes": 67899392,
+    "resource_measurement": "Current Python evaluator/server process, sampled every20ms; no concurrent exposed evaluation process detected before launch. Peak is sampled RSS, not machine-wide committed memory.",
+    "ask_http_seconds": {
+      "count": 37,
+      "min": 1.0048208000007435,
+      "median": 3.4079372999985935,
+      "max": 6.326676399999997,
+      "sum": 117.24669269997685
+    },
+    "planner_interpretation_ms": {
+      "count": 37,
+      "min": 839.1824999998789,
+      "median": 2744.5758000030764,
+      "max": 3489.570799996727,
+      "sum": 91211.80720000848
+    },
+    "generation_calls": 0,
+    "translation_calls": 0,
+    "actual_embedding_calls": 0,
+    "native_model_calls": 0,
+    "mode": "Core only; no native inference performance or production readiness claim"
+  },
+  "source_pins_before": {
+    "count": 148,
+    "mismatches": [],
+    "freeze_sha256": "1b3f8dd9dc00ccde3a63529f64393ee97bc71eab61e73010a9341f6737db4f22"
+  },
+  "source_pins_after": {
+    "count": 148,
+    "mismatches": [],
+    "freeze_sha256": "1b3f8dd9dc00ccde3a63529f64393ee97bc71eab61e73010a9341f6737db4f22"
+  },
+  "sealed_hashes": {
+    "CASES.json": "5c44da1bdea446ecdee27c4196524fad63543be6e01ba89a3763039bb478d482",
+    "SCORING_REQUIREMENTS.json": "5c4d706b32c710b24a376a59f216babd7985629bb49939e5601bb8fa6c855a79"
+  },
+  "passed_wording": "Remains private; only failed cases released after terminal result.",
+  "historical_preservation": "Formal clearance received; historical171/176 with samefive disputes and112/117 retained, not waived.",
+  "approval_boundary": "AI independent review/evaluation only; zero business or human fidelity approvals.",
+  "dimension_results": {
+    "fact_scope_and_required_coverage": {
+      "passed": 15,
+      "total": 26,
+      "failed_case_ids": [
+        "IS01",
+        "IS02",
+        "IS04",
+        "IS09",
+        "IS12",
+        "IS14",
+        "IS15",
+        "IS28",
+        "IS30",
+        "IS33",
+        "IS36"
+      ]
+    },
+    "answer_state": {
+      "passed": 7,
+      "total": 36,
+      "failed_case_ids": [
+        "IS01",
+        "IS02",
+        "IS03",
+        "IS04",
+        "IS05",
+        "IS06",
+        "IS07",
+        "IS09",
+        "IS10",
+        "IS12",
+        "IS13",
+        "IS14",
+        "IS15",
+        "IS17",
+        "IS18",
+        "IS19",
+        "IS20",
+        "IS21",
+        "IS22",
+        "IS23",
+        "IS25",
+        "IS26",
+        "IS28",
+        "IS30",
+        "IS32",
+        "IS33",
+        "IS34",
+        "IS35",
+        "IS36"
+      ]
+    },
+    "interpretation_only_recognition": {
+      "passed": 1,
+      "total": 10,
+      "failed_case_ids": [
+        "IS17",
+        "IS18",
+        "IS19",
+        "IS20",
+        "IS21",
+        "IS22",
+        "IS23",
+        "IS25",
+        "IS26"
+      ]
+    },
+    "procedure_order_and_condition": {
+      "passed": 1,
+      "total": 2,
+      "failed_case_ids": [
+        "IS12"
+      ]
+    },
+    "targeted_missing_dimension_handling": {
+      "passed": 2,
+      "total": 7,
+      "failed_case_ids": [
+        "IS27",
+        "IS28",
+        "IS30",
+        "IS32",
+        "IS36"
+      ]
+    }
+  },
+  "scoring_notes": [
+    "Correct supported content with an unexplained incomplete state fails answer-state/completeness requirements even when all values are accurate.",
+    "Interpretation-only limited transparent service/intent labels with a coherent introductory sentence are accepted; no natural-language expansion required for these labels.",
+    "ADIB wallet opening-fee hold accepted as a semantic state alias: recognized requested service/opening topic and no substitution.",
+    "Case and dimension results overlap; dimension numerators must not be summed."
+  ]
+}

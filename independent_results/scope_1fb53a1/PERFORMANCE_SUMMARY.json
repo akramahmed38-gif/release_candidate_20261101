@@ -1,0 +1,204 @@
+{
+  "schema": "SUPPLEMENTAL_ONE_SHOT_PERFORMANCE_V1",
+  "source_evaluation_receipt_sha256": "2caa8c132f6a1cfccfe1d62b068f840e2f7c3fc490c23f7ea5c03797fb45bf00",
+  "population": "36 main target HTTP asks only; excludes the one declared setup turn from latency/stage/counter aggregates",
+  "latency_percentile_method": "p50 sample median; p95 nearest rank at ceil(0.95*n). Per-output-language uses preserved reply_language metadata.",
+  "all_main36": {
+    "overall": {
+      "count": 36,
+      "http_seconds_p50": 3.408718349997798,
+      "http_seconds_p95": 4.4112536999964505,
+      "small_sample": false
+    },
+    "by_output_language": {
+      "ar": {
+        "count": 28,
+        "http_seconds_p50": 3.3961599499998556,
+        "http_seconds_p95": 4.32742419999704,
+        "small_sample": false
+      },
+      "en": {
+        "count": 8,
+        "http_seconds_p50": 3.411484099997324,
+        "http_seconds_p95": 6.326676399999997,
+        "small_sample": true
+      }
+    }
+  },
+  "complete_correct_definition": "Broad group: existing case pass AND actual complete=true, including interpretation-only classification. Business-answer-only group additionally requires existing business category. No regrading; passing holds/partial cases excluded.",
+  "stage_means": {
+    "timings_ms": {
+      "admission_wait_ms": {
+        "count": 36,
+        "mean_ms": 0.002077777430208193
+      },
+      "cached_intent_lookup_ms": {
+        "count": 36,
+        "mean_ms": 0.0018416669465497965
+      },
+      "clarification_state_ms": {
+        "count": 36,
+        "mean_ms": 0.014075000864169043
+      },
+      "cleanup_ms": {
+        "count": 36,
+        "mean_ms": 0.001958333086804487
+      },
+      "dependency_scope_ms": {
+        "count": 36,
+        "mean_ms": 0.6043277781928837
+      },
+      "engine_total_ms": {
+        "count": 36,
+        "mean_ms": 3.0367833330981537
+      },
+      "engine_unattributed_overhead_ms": {
+        "count": 36,
+        "mean_ms": 0.1573194454572836
+      },
+      "engine_wall_ms": {
+        "count": 36,
+        "mean_ms": 3210.322474999379
+      },
+      "evidence_contract_ms": {
+        "count": 36,
+        "mean_ms": 0.5843555546663184
+      },
+      "fact_selection_ms": {
+        "count": 36,
+        "mean_ms": 0.5015361105809765
+      },
+      "final_presentation_ms": {
+        "count": 36,
+        "mean_ms": 0.022094444122760452
+      },
+      "interpretation_ms": {
+        "count": 36,
+        "mean_ms": 2507.169333333473
+      },
+      "pre_emit_verification_ms": {
+        "count": 36,
+        "mean_ms": 1.9537916664881374
+      },
+      "question_coverage_ms": {
+        "count": 36,
+        "mean_ms": 695.1125749999644
+      },
+      "request_setup_ms": {
+        "count": 36,
+        "mean_ms": 1.6720777778876557
+      },
+      "response_metadata_ms": {
+        "count": 36,
+        "mean_ms": 0.03936388889592814
+      },
+      "retrieval_ms": {
+        "count": 36,
+        "mean_ms": 0.6360027776584806
+      },
+      "source_verification_ms": {
+        "count": 36,
+        "mean_ms": 1.1846472217358597
+      },
+      "validation_and_assembly_ms": {
+        "count": 36,
+        "mean_ms": 0.6669388888743318
+      }
+    },
+    "retrieval_breakdown_ms": {
+      "bm25_ms": {
+        "count": 36,
+        "mean_ms": 0.6290472224969158
+      },
+      "chroma_ms": {
+        "count": 36,
+        "mean_ms": 0
+      },
+      "query_embedding_ms": {
+        "count": 36,
+        "mean_ms": 0
+      },
+      "resource_wait_ms": {
+        "count": 36,
+        "mean_ms": 0
+      },
+      "retrieval_key_ranking_and_overhead_ms": {
+        "count": 36,
+        "mean_ms": 0.006955555161564714
+      }
+    }
+  },
+  "observed_counters_main36": {
+    "actual_embedding_calls": 0,
+    "generation_calls": 0,
+    "translation_calls": 0,
+    "source_files_hashed": 19,
+    "source_cache_hits": 0,
+    "request_snapshot_pinned": 36,
+    "eligibility_rechecked_before_emission": 36,
+    "nonzero_retrieval_timing_requests": 18,
+    "nonzero_bm25_timing_requests": 18,
+    "nonzero_chroma_timing_requests": 0,
+    "guard_call_count": null,
+    "retrieval_call_count": null,
+    "counter_limits": "Dedicated guard-call and retrieval-call counters are not exposed in preserved payloads; nonzero timing counts are observations, not inferred call counts. Source guard flags/files-hashed reported explicitly."
+  },
+  "existing_process_resource_measures": {
+    "engine_init_seconds": 0.5283535999988089,
+    "wall_seconds": 123.75661099999706,
+    "cpu_user_seconds": 106.71875,
+    "cpu_system_seconds": 3.46875,
+    "rss_peak_sampled_bytes": 69312512,
+    "rss_final_bytes": 67899392
+  },
+  "resource_measurement_scope": "Whole existing evaluator/server process run including initialization,37 asks, session/conversation HTTP and shutdown; peak RSS sampled every20ms. These are not isolated main36 CPU measurements.",
+  "planner_cost_interpretation": "Interpretation and question-coverage stage times are measured overhead in this run. No planner-disabled paired run exists; historical runs use different workloads and cannot establish speed improvement or incremental planner-cost causality. Timing stages can overlap or be nested; do not sum all keys as disjoint costs.",
+  "native_inference": "No native inference, generation, translation or embedding calls; Core-only timing cannot prove native model or production performance.",
+  "source_pins_unchanged": true,
+  "passed_wording_disclosed": false,
+  "evaluation_rerun": false,
+  "complete_passing_tasks_including_classification": {
+    "overall": {
+      "count": 4,
+      "http_seconds_p50": 2.7347727000014856,
+      "http_seconds_p95": 3.5205060000007506,
+      "small_sample": true
+    },
+    "by_output_language": {
+      "ar": {
+        "count": 4,
+        "http_seconds_p50": 2.7347727000014856,
+        "http_seconds_p95": 3.5205060000007506,
+        "small_sample": true
+      },
+      "en": {
+        "count": 0,
+        "http_seconds_p50": null,
+        "http_seconds_p95": null,
+        "small_sample": true
+      }
+    }
+  },
+  "complete_business_answer_only": {
+    "overall": {
+      "count": 3,
+      "http_seconds_p50": 2.1077327000020887,
+      "http_seconds_p95": 3.3618127000008826,
+      "small_sample": true
+    },
+    "by_output_language": {
+      "ar": {
+        "count": 3,
+        "http_seconds_p50": 2.1077327000020887,
+        "http_seconds_p95": 3.3618127000008826,
+        "small_sample": true
+      },
+      "en": {
+        "count": 0,
+        "http_seconds_p50": null,
+        "http_seconds_p95": null,
+        "small_sample": true
+      }
+    }
+  }
+}

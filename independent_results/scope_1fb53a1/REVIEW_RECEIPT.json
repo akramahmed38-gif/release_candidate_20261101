@@ -1,0 +1,37 @@
+{
+  "status": "SEALED_INDEPENDENT_REVIEW_APPROVED",
+  "reviewer": "rc_scope_challenge_reviewer",
+  "case_count": 36,
+  "categories": {
+    "business": 16,
+    "interpretation_only": 10,
+    "partial_hold_clarification": 6,
+    "safety": 4
+  },
+  "distinct_facts": 21,
+  "service_profile_count": 29,
+  "scope": "four services with test-only fact coverage; profile recognition is not policy coverage",
+  "hashes": {
+    "CASES.json": "5c44da1bdea446ecdee27c4196524fad63543be6e01ba89a3763039bb478d482",
+    "SCORING_REQUIREMENTS.json": "5c4d706b32c710b24a376a59f216babd7985629bb49939e5601bb8fa6c855a79",
+    "SEALED_MANIFEST.json": "d16ef3c3b28671c3330f0705e6ff0f0bba24bcfafc33ec21e2a2d013215cc471",
+    "reviewer_harness.py": "87ca481a4d1ef9eec2304ac01b7d49b0ea70e458e06c69f68b872dfcc2e9d7f2"
+  },
+  "review_checks": [
+    "requested provider, intent and channel scope",
+    "fact values, minima, conditions and dependency scope",
+    "source identity and assertion relevance",
+    "workflow order and conditional branch",
+    "precise partial gaps and no false complete",
+    "recognition-only cases contain no business facts",
+    "live same-session setup without injected assistant history",
+    "legitimate alternatives and readable paraphrases",
+    "zero fabricated business or human approval"
+  ],
+  "drafts_preserved": true,
+  "candidate_implementation_read": false,
+  "candidate_executed_during_review": false,
+  "historical_clearance_required_before_execution": true,
+  "approval_boundary": "Independent AI review only; no business approval or human fidelity approval",
+  "timestamp_utc": "2026-11-02T11:40:15.469777+00:00"
+}

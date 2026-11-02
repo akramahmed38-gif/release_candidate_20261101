@@ -1,0 +1,10 @@
+{
+  "source_freeze": "configuration/RC_SCOPE_FREEZE_1fb53a1.json",
+  "source_pins": 148,
+  "source_unchanged": true,
+  "historical_passed": 171,
+  "historical_total": 176,
+  "same_five_disputes": true,
+  "independent_execution_clearance": true,
+  "native": "BLOCKED_NOT_RUN"
+}

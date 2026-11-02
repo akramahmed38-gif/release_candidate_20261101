@@ -1,0 +1,316 @@
+diff --git a/source/candidate/candidate.py b/source/candidate/candidate.py
+index 80e3e1e..721c443 100644
+--- a/source/candidate/candidate.py
++++ b/source/candidate/candidate.py
+@@ -215,6 +215,11 @@ class CatalogEngine(frozen.MultiEngine):
+                           else 'The selected sources do not establish the requested timing restriction.')
+                     result['scope_gap_messages']=[{'service':name,'dimension':'timing_restriction','message':text} for name in names]
+                     result['answer']=result['answer'].rstrip()+'\n\n'+'\n'.join(name+': '+text for name in names)
++            presentation_started=perf_counter()
++            from task_contract import finalize
++            finalize(result,contract,self.facts,self.definition)
++            timings['final_presentation_ms']=(perf_counter()-presentation_started)*1000
++            primary.append('final_presentation_ms')
+             state_started=perf_counter()
+             if result.get('answer_status')=='clarify' and not result.get('supported_fact_ids'):
+                 new_pending=pending_service_request(q,contract,self.catalog.turn)
+diff --git a/source/candidate/linguistic_spans.py b/source/candidate/linguistic_spans.py
+index 1fcbbc7..41c7d4f 100644
+--- a/source/candidate/linguistic_spans.py
++++ b/source/candidate/linguistic_spans.py
+@@ -821,3 +821,48 @@ def resolve_entities(raw, profiles, roles):
+         other["start"] <= hit["start"] and other["end"] >= hit["end"]
+         and other["end"] - other["start"] > hit["end"] - hit["start"]
+         for other in hits)], key=lambda hit: (hit["start"], -hit["end"], hit["service_id"]))
++
++
++def financial_ordinal_spans(raw, deposit_spans):
++    """Adjacent ordinal modifiers bind to a deposit noun in either word order."""
++    result=[]
++    ordinals=[point for cue in ['first','initial','الأول','الاول','أول','اول','الأولي','الأوليّة','awel'] for point in spans(raw,cue)]
++    for a,b in deposit_spans:
++        for x,y in ordinals:
++            if b<=x:gap=raw[b:x]
++            elif y<=a:gap=raw[y:a]
++            else:continue
++            if not tokens(gap) and not re.search(r'[,،;؛.!?؟]',gap):result.extend([(a,b),(x,y)])
++    return sorted(set(result))
++
++
++def process_context_scope(raw,hits):
++    """A fronted process title/purpose is not a monetary request by itself.
++
++    Requires independently stated requirement/image dimensions and no current
++    financial or temporal request. Exposes linguistic proof, never a fact ID.
++    """
++    if not any(hits.get(k) for k in ['identity','phone_owner','existing_wallet','documents','image']):return None
++    explicit_financial=['deposit','funding','amount','fee','charge','cost','money','balance','cash','EGP','إيداع','تمويل','مبلغ','رسوم','فلوس','رصيد','جنيه']
++    if any(spans(raw,w) for w in explicit_financial):return None
++    if any(spans(raw,w) for w in ['when','how long','متى','امتى','مدة']):return None
++    heads=hits.get('opening',[])+hits.get('activation',[])
++    for a,b in heads:
++        prefix=shadow(raw[max(0,a-25):a])[0]
++        fronted=bool(re.search(r'(?:\b(?:before|during|for|to)|قبل|عند|اثناء|اثناء|ل)\s*(?:the\s+)?$',prefix))
++        suffix=raw[b:]
++        title=bool(re.match(r'\s*:',suffix)) and not tokens(raw[:a])
++        if fronted or title:return mark(raw,a,b,'process_context')
++    return None
++
++
++def image_object_identity_spans(raw,hits):
++    """The ID in 'image of the ID' is an image object, not an ID check."""
++    allowed={'of','the','a','an','من','عن','ل','لل'};result=[]
++    for a,b in hits.get('image',[]):
++        for x,y in hits.get('identity',[]):
++            if b>x:continue
++            gap=raw[b:x]
++            if not re.search(r'[,،;؛.!?؟]',gap) and all(t in allowed for t in tokens(gap)):
++                result.append((x,y))
++    return result
+diff --git a/source/candidate/question_coverage.py b/source/candidate/question_coverage.py
+index 32e8027..16136ba 100644
+--- a/source/candidate/question_coverage.py
++++ b/source/candidate/question_coverage.py
+@@ -220,6 +220,8 @@ def _raw_record_references(text):
+ 
+ 
+ def _raw_intents(text, feature_hits):
++    from linguistic_spans import financial_ordinal_spans
++    feature_hits['initial']=sorted(set(feature_hits.get('initial',[])+financial_ordinal_spans(text,feature_hits.get('deposit',[]))))
+     has = lambda k: bool(feature_hits.get(k))
+     def evidence(*keys):
+         return sorted({p for key in keys for p in feature_hits.get(key, [])})
+@@ -316,6 +318,14 @@ def _raw_intents(text, feature_hits):
+         if workflow_points and len(contextual)==len(workflow_points):
+             intents.pop("workflow",None)
+             feature_hits["workflow_purpose_context"]=contextual
++    from linguistic_spans import process_context_scope,image_object_identity_spans
++    context=process_context_scope(text,feature_hits)
++    if context:
++        intents.pop('opening_fee',None);intents.pop('initial_funding',None)
++        feature_hits['explicit_process_context']=[(context['start'],context['end'])]
++    attached=image_object_identity_spans(text,feature_hits)
++    if attached and feature_hits.get('identity') and all(point in attached for point in feature_hits['identity']):
++        intents.pop('identity',None)
+     return intents
+ 
+ 
+diff --git a/source/candidate/request_planner.py b/source/candidate/request_planner.py
+index c5075cc..e9e1222 100644
+--- a/source/candidate/request_planner.py
++++ b/source/candidate/request_planner.py
+@@ -94,4 +94,9 @@ class CurrentQueryPlanner:
+     def plan(self,question,cid,sid):
+         from scope_graph import ScopeGraph
+         if not hasattr(self,'scope_graph'):self.scope_graph=ScopeGraph(self)
+-        return self.scope_graph.plan(question,cid,sid)
++        result=self.scope_graph.plan(question,cid,sid)
++        from task_contract import task_mode,classify_current
++        mode=task_mode(question)
++        result['request_contract']['task_mode']=mode
++        if mode['mode']=='interpretation_only':result=classify_current(question,self,result,mode)
++        return result
+diff --git a/source/candidate/resources/answer_scopes.json b/source/candidate/resources/answer_scopes.json
+index d4fc800..fd466e7 100644
+--- a/source/candidate/resources/answer_scopes.json
++++ b/source/candidate/resources/answer_scopes.json
+@@ -66,7 +66,12 @@
+     "اكتب",
+     "el",
+     "lel",
+-    "taf3eel"
++    "taf3eel",
++    "numeric",
++    "numerical",
++    "quantitative",
++    "رقمي",
++    "رقمية"
+   ],
+   "condition_starters": [
+     "if",
+diff --git a/source/candidate/scope_graph.py b/source/candidate/scope_graph.py
+index b31e932..939adaa 100644
+--- a/source/candidate/scope_graph.py
++++ b/source/candidate/scope_graph.py
+@@ -270,7 +270,10 @@ class ScopeGraph:
+             return bool(forms(t)&ignored) or len(t)>2 and t[0] in 'وبفل' and t[1:] in ignored
+         return not any(not functional(t) and not t.isdigit() for t in tokens(''.join(chars)))
+     def goals(self,text,masked):
+-        h=self.hits(masked);has=lambda k:bool(h.get(k));out=[]
++        h=self.hits(masked)
++        from linguistic_spans import financial_ordinal_spans
++        h['initial']=unique(h.get('initial',[])+financial_ordinal_spans(masked,h.get('deposit',[])))
++        has=lambda k:bool(h.get(k));out=[]
+         def add(i,*features):
+             ss=unique(x for k in features for x in h.get(k,[]))
+             if ss:out.append({'intent_id':i,'predicate_spans':ss,'head_spans':h.get(features[0],ss),'support_features':list(features),'commit_basis':'current_clause_predicate_components'})
+@@ -428,6 +431,14 @@ class ScopeGraph:
+             if points and all(any(a<=x and y<=b for a,b in valued_fields) for x,y in points):
+                 merged.pop('transaction_reference')
+                 h['supplied_record_field_context']=valued_fields
++        from linguistic_spans import process_context_scope,image_object_identity_spans
++        process=process_context_scope(masked,h)
++        if process:
++            merged.pop('opening_fee',None);merged.pop('initial_funding',None)
++            h['explicit_process_context']=[(process['start'],process['end'])]
++        attached=image_object_identity_spans(masked,h)
++        if attached and h.get('identity') and all(point in attached for point in h['identity']):
++            merged.pop('identity',None);h['image_object_context']=attached
+         h['_semantic']=semantic
+         for goal in semantic['supplemental_goals']:
+             if goal['intent_id']=='balance_treatment' and 'semantic_atom:funds_balance_destination' in goal.get('support_features',[]):
+@@ -1033,6 +1044,7 @@ class ScopeGraph:
+                                 'commit_basis':'explicit_verification_of_bounded_claim','mode':'verify_claim'}
+                                for intent in bound]
+                     projected_services=unique(service for row in quoted_projections for service in row['services'])
++                    projected_channels=unique(channel for row in quoted_projections for channel in row.get('channels',[]))
+                 if not projected:
+                     label=next((row for row in reversed(quoted_projections) if row['goals']),None)
+                     if label:
+diff --git a/source/candidate/task_contract.py b/source/candidate/task_contract.py
+new file mode 100644
+index 0000000..5c7c964
+--- /dev/null
++++ b/source/candidate/task_contract.py
+@@ -0,0 +1,141 @@
++"""Current-turn task mode and final response contract; never business policy."""
++import hashlib,re
++from linguistic_spans import spans,tokens,mark
++
++QUOTES=re.compile(r'“[^”]*”|«[^»]*»|"[^"\n]*"|‘[^’]*’')
++MODE_ACTIONS=['classify','classification','routing','tag','صنف','صنّف','حدد','7added']
++FOCUS=['only','فقط','بس','bas']
++DIMENSIONS=['service','intent','الخدمة','المقصد','الخدمات','الطلبات']
++
++def task_mode(raw):
++    masked=list(raw)
++    for m in QUOTES.finditer(raw):masked[m.start():m.end()]=' '*(m.end()-m.start())
++    work=''.join(masked)
++    actions=[(a,b,word) for word in MODE_ACTIONS for a,b in spans(work,word)]
++    for a,b,word in actions:
++        prefix=work[max(0,a-30):a]
++        if any(spans(prefix,n) for n in ['do not','not','لا','مش']):continue
++        focus=[p for w in FOCUS for p in spans(work,w) if abs(p[0]-a)<100]
++        dims=[p for w in DIMENSIONS for p in spans(work,w)]
++        explicit=bool(focus and (word not in ['حدد','7added'] or len(dims)>=2))
++        if not explicit:continue
++        # An explicit second request for operational answers is not swallowed
++        # by a pure tagging mode. It remains in the ordinary mixed-task path.
++        if re.search(r'\b(?:also|and then)\s+(?:answer|explain|tell)\b|وكمان\s+(?:جاوب|اشرح)',work,re.I):continue
++        return {'mode':'interpretation_only','action_span':mark(raw,a,b,'task_action'),
++                'focus_spans':[mark(raw,x,y,'response_scope') for x,y in focus],
++                'business_answer_requested':False}
++    return {'mode':'business_answer','business_answer_requested':True}
++
++
++def classify_current(raw,planner,base,mode):
++    """Bind catalog labels to each explicitly named entity, without examples.
++
++    Longest overlapping label wins; equal-span ambiguity stays unresolved.
++    Unrelated entity clauses never inherit a previous entity's predicate.
++    This is lexical interpretation, not semantic or source-policy approval.
++    """
++    entities=planner.entities(raw)
++    entities=[e for e in entities if not any(o['start']<=e['start'] and e['end']<=o['end'] and o['end']-o['start']>e['end']-e['start'] for o in entities)]
++    entities=sorted(entities,key=lambda r:(r['start'],-r['end']))
++    grouped={}
++    for e in entities:grouped.setdefault((e['start'],e['end']),[]).append(e)
++    groups=sorted(grouped.items());requests=[];unresolved=[]
++    for index,((start,end),owners) in enumerate(groups):
++        stop=groups[index+1][0][0] if index+1<len(groups) else len(raw)
++        text=raw[end:stop]; candidates=[]
++        if len({e['service_id'] for e in owners})!=1:
++            unresolved.append({'kind':'ambiguous_service_name','span':mark(raw,start,end,'unresolved')});continue
++        service=owners[0]['service_id']
++        for row in planner.intents:
++            iid=row['intent_id']
++            if iid in {'other_or_unknown','permission','explanation'}:continue
++            cues=[iid.replace('_',' ')]+[cue for key in ['en_cues','ar_eg_cues','ar_msa_cues','franco_eg_cues'] for cue in row.get(key,[])]
++            for cue in cues:
++                for a,b in spans(text,cue):
++                    # One-word cues need an explicit nominal field, not a
++                    # hidden verb within a larger operator or entity name.
++                    if len(tokens(cue))==1 and cue!=iid.replace('_',' '):continue
++                    candidates.append((end+a,end+b,iid))
++        longest=[p for p in candidates if not any(q[0]<=p[0] and p[1]<=q[1] and q[1]-q[0]>p[1]-p[0] for q in candidates)]
++        amb={p for p in longest if any(q[:2]==p[:2] and q[2]!=p[2] for q in longest)}
++        accepted=sorted(set(longest)-amb)
++        if not accepted:
++            unresolved.append({'kind':'classification_predicate_unresolved','service_id':service,'span':mark(raw,end,stop,'unresolved')})
++        if amb:unresolved.append({'kind':'classification_predicate_ambiguous','service_id':service,'span':mark(raw,end,stop,'unresolved')})
++        for a,b,iid in accepted:
++            if any(r['service_id']==service and r['intent_id']==iid for r in requests):continue
++            channels=[h['channel'] for h in planner.channel_hits(text)]
++            requests.append({'request_id':'T'+str(len(requests)+1),'service_id':service,'intent_id':iid,
++                'topic':planner.adapter.get(iid,{}).get('topic',iid),'channels':list(dict.fromkeys(channels)),
++                'conditions':[],'period':None,'requested_facets':[],'role':'requested','mode':'classify',
++                'procedure_scope':None,'evidence_spans':[mark(raw,a,b,'requested_label')],
++                'clause_span':mark(raw,start,stop,'classification_clause'),'commit_basis':'current_entity_catalog_label'})
++    if not groups:unresolved.append({'kind':'service_unresolved','span':mark(raw,0,len(raw),'unresolved')})
++    contract=base['request_contract'];contract['business_planner_diagnostic_requests']=contract['requests']
++    contract.update(requests=requests,unresolved_spans=unresolved,decision='classify_only',task_mode=mode)
++    base.update(services=list(dict.fromkeys(r['service_id'] for r in requests)),topics=list(dict.fromkeys(r['topic'] for r in requests)),
++                slots=[],slot_conditions={},slot_periods={},conditions=[],result_mode='interpretation_only')
++    return base
++
++
++def scalar_view(fact,language):
++    """Extract a literal qualified amount, bound to its immutable parent view.
++
++    Only an existing single minimum-deposit field with no additional policy
++    scope is eligible. No generated translation, new quantity or approval.
++    """
++    scope=fact.get('scope',{})
++    if not set(scope)<= {'minimum_initial_deposit_egp','timing'}:return None
++    value=scope.get('minimum_initial_deposit_egp')
++    if type(value) not in (int,float):return None
++    key='english' if language=='en' else 'arabic';text=fact[key]
++    pattern=(r'(?:a minimum of|at least)\s+(\d+(?:\.\d+)?)\s+EGP' if language=='en' else
++             r'(?:حد أدنى[\s:*]*\d+\s+جنيه(?:\*\*)?|\d+\s+جنيه\s+كحد أدنى)')
++    hits=list(re.finditer(pattern,text,re.I))
++    if len(hits)!=1:return None
++    m=hits[0];numbers=re.findall(r'\d+(?:\.\d+)?',m.group())
++    if len(numbers)!=1 or float(numbers[0])!=value:return None
++    return {'text':m.group(),'start':m.start(),'end':m.end(),'parent_view_sha256':hashlib.sha256(text.encode()).hexdigest(),
++            'source_sha256':fact['source_sha256'],'field':'minimum_initial_deposit_egp','projection':'literal_parent_view_span','test_only':True}
++
++
++def finalize(result,contract,facts,definition):
++    """One presentation state after all source/generation eligibility rechecks."""
++    if result.get('invalidation_reason') or result.get('contract_rejection'):return
++    lang=result['reply_language'];english=lang=='en'
++    if contract.get('task_mode',{}).get('mode')=='interpretation_only':
++        complete=bool(contract['requests']) and not contract['unresolved_spans']
++        result.update(type='interpretation',complete=complete,supported_fact_ids=[],citations=[],slots=[],
++            answer_status='complete' if complete else 'clarify',clarification_needed=not complete,
++            resolution_status='classification_complete' if complete else 'classification_incomplete',
++            business_answer_coverage=False,response_mode='interpretation_only')
++        labels=[r['service_id']+' / '+r['intent_id']+(' / '+','.join(r['channels']) if r['channels'] else '') for r in contract['requests']]
++        result['answer']=('Request classification only; no business rules asserted.' if english else 'تصنيف الطلبات فقط؛ لا تتضمن الإجابة أحكام خدمات.')+'\n'+'\n'.join(labels)
++        if not complete:result['answer']+='\n'+('Please clarify the unresolved service or intent.' if english else 'يرجى توضيح الخدمة أو المقصد غير المحسوم.')
++        result['business_audit_not_applicable']=result['question_coverage']
++        result['question_coverage']={'decision':result['answer_status'],'complete_eligible':complete,'scope':'interpretation_only_not_business_coverage','unresolved_spans':contract['unresolved_spans']}
++        return
++    if not result.get('complete'):return
++    proof=result.get('evidence_contract',{})
++    if any(proof.get(k) for k in ['scope_violations','citation_violations','unrelated_fact_ids']):return
++    # Rendering from admitted immutable views removes stale intermediate
++    # clarification prose, rather than deleting arbitrary answer clauses.
++    result['presentation_reconciliation']={'prior_resolution_status':result.get('resolution_status'),
++        'prior_clarification_needed':result.get('clarification_needed'),'planner_unresolved':contract['unresolved_spans']}
++    result.update(answer_status='complete',clarification_needed=False,resolution_status='complete_scoped_answer')
++    result.pop('clarification_dimensions',None)
++    views={};projections={}
++    for fid in result['supported_fact_ids']:
++        f=facts[fid];relevant=[r for r in contract['requests'] if r['service_id']==f['service_id'] and r['topic'] in f['selection_tags']]
++        narrow=bool(relevant) and all('amount_only' in r.get('requested_facets',[]) for r in relevant)
++        projected=scalar_view(f,lang) if narrow else None
++        views[fid]=projected['text'] if projected else f['english' if english else 'arabic']
++        if projected:projections[fid]=projected
++    result['rendered_view_projections']=projections
++    groups=[]
++    for service in dict.fromkeys(facts[fid]['service_id'] for fid in result['supported_fact_ids']):
++        groups.append(definition['service_profiles'][service]['name']+':\n'+'\n'.join(views[fid] for fid in result['supported_fact_ids'] if facts[fid]['service_id']==service))
++    banner='UNAPPROVED TEST FIXTURE — approvals pending.' if english else 'اختبار معزول غير معتمد؛ الموافقات معلقة.'
++    scope='Only the selected source references are covered; this is not a complete eligibility checklist or end-to-end service procedure.' if english else 'الإجابة محددة بالمراجع المتاحة، وليست قائمة كاملة بشروط الفتح أو إجراءات الخدمة.'
++    result['answer']='\n\n'.join([banner]+groups+[scope])

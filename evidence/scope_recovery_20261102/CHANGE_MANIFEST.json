@@ -1,0 +1,44 @@
+{
+  "runtime_source_commit": "1fb53a1de895cb14f2e67977ba0aea71d681b30a",
+  "changes": [
+    {
+      "path": "source/candidate/candidate.py",
+      "before_sha256": "adf91a37b0bfe2df4e1ce80f54b4f2218c32ab9f21c2bb56b6a9e8fced65bb42",
+      "after_sha256": "61ed6e61a95f21f013ad657ec4cb3d84cc24b6dd99855c6cce000bcab94c3602"
+    },
+    {
+      "path": "source/candidate/linguistic_spans.py",
+      "before_sha256": "1b953cddf265b84456e57126064cc4be56b394440f9ca2a003640e53de5820e2",
+      "after_sha256": "a93c1dc0db3927cbc77f112c4866012408ca473bd28f338d102ea89f7954c992"
+    },
+    {
+      "path": "source/candidate/question_coverage.py",
+      "before_sha256": "6e1d7a7cad2ce9389a2b4545d47ed0ce033b6036fdf8065e230642189799940b",
+      "after_sha256": "98f77c505c8f7cb6576049d51155f1b74ceefa5a7b81ba258ae6d95a5ae77cd2"
+    },
+    {
+      "path": "source/candidate/request_planner.py",
+      "before_sha256": "c2ad61cbca3ad95c8793dd02924262cd51861dd7bd5b9a76f11585d9d5fa6aaa",
+      "after_sha256": "4d3562c1bc7c442794133726e3a5483fd25b23bd5201eb32a45ecc25fa3e2f82"
+    },
+    {
+      "path": "source/candidate/scope_graph.py",
+      "before_sha256": "fc9d9d860c65075f1ccd023bcbf78b4d2492d7eeef5952da295a7459214747f0",
+      "after_sha256": "45d2e979c9cab35f877a49868350d48f150c7d9db9aa9f53ae068f5aa7d0f5d3"
+    },
+    {
+      "path": "source/candidate/task_contract.py",
+      "before_sha256": null,
+      "after_sha256": "ddf091d0e032cb7dc8e7ffc251d210671f101e89945eee77cd72e247709811df"
+    },
+    {
+      "path": "source/candidate/resources/answer_scopes.json",
+      "before_sha256": "70e70cacb7056186c00299c9457ec1fc725fe411a16a32d42490abcf4314fb3a",
+      "after_sha256": "e2f8a9beece9abd9384a8ff55520a5895e4938922e66821777823da596fbd756"
+    }
+  ],
+  "python310_static_parse_files": 99,
+  "runtime_tests_python": "3.13 workstation; no native compatibility claim",
+  "new_business_facts": 0,
+  "new_approvals": 0
+}

@@ -1,0 +1,18 @@
+{
+  "source_pins": 148,
+  "frozen_source_unchanged": true,
+  "report_links_verified": true,
+  "report_and_evaluation_hashes": {
+    "independent_results/e232/EVALUATION_RECEIPT.json": "2517caebda39a010ea6a11a8e140c5c1a46583afc07a8a0211c9349b1e092c99",
+    "independent_results/scope_1fb53a1/EVALUATION_RECEIPT.json": "2caa8c132f6a1cfccfe1d62b068f840e2f7c3fc490c23f7ea5c03797fb45bf00",
+    "configuration/RC_ACCURACY_FREEZE_e2322e0.json": "67d2488384a1f8c44b814ea0aaa9a869863b153832e5b35d8033d64f34ebd774",
+    "configuration/RC_SCOPE_FREEZE_1fb53a1.json": "1b3f8dd9dc00ccde3a63529f64393ee97bc71eab61e73010a9341f6737db4f22",
+    "TEST_RESULTS_AND_RECOMMENDATIONS.md": "5e10b78c75eb279926baa7fbee1d4c43729a7a0bea6fbccd84959f97a9e84c98"
+  },
+  "new_challenge_result": "6/36 FAIL",
+  "historical_result": "171/176 unchanged",
+  "native": "BLOCKED_NOT_RUN",
+  "production_changes": 0,
+  "new_approvals": 0,
+  "decision": "NO-GO; stop symbolic rule-family tuning, alternative requires separate authorization"
+}

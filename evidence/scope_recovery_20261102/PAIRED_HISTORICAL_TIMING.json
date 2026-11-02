@@ -1,0 +1,54 @@
+{
+  "scope": "sequential historical same-question complete-correct Core/BM25 pairs; not native or controlled equal-load certification",
+  "n": 112,
+  "baseline": {
+    "n": 112,
+    "p50_ms": 2336.4834499998324,
+    "p95_ms": 5779.896000000008,
+    "mean_planning_ms": 2311.9167946430416,
+    "mean_coverage_ms": 477.6783883929414
+  },
+  "corrected": {
+    "n": 112,
+    "p50_ms": 1048.604149997118,
+    "p95_ms": 2868.0518999972264,
+    "mean_planning_ms": 1029.307317857209,
+    "mean_coverage_ms": 216.52346964297718
+  },
+  "by_output_language": {
+    "ar": {
+      "baseline": {
+        "n": 62,
+        "p50_ms": 2791.85944999972,
+        "p95_ms": 5303.647599999749,
+        "mean_planning_ms": 2392.35633870976,
+        "mean_coverage_ms": 478.85012096785135
+      },
+      "corrected": {
+        "n": 62,
+        "p50_ms": 1192.671300002985,
+        "p95_ms": 2398.435499999323,
+        "mean_planning_ms": 1093.8712919352486,
+        "mean_coverage_ms": 224.1745000004988
+      }
+    },
+    "en": {
+      "baseline": {
+        "n": 50,
+        "p50_ms": 2195.7869500001834,
+        "p95_ms": 6634.044300000824,
+        "mean_planning_ms": 2212.1717600003103,
+        "mean_coverage_ms": 476.2254400000529
+      },
+      "corrected": {
+        "n": 50,
+        "p50_ms": 860.5528499974753,
+        "p95_ms": 3206.4679999966756,
+        "mean_planning_ms": 949.24799000044,
+        "mean_coverage_ms": 207.03619199965033
+      }
+    }
+  },
+  "all_expected_results_unchanged": true,
+  "no_new_benchmark": true
+}
