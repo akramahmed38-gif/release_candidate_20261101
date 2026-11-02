@@ -1,0 +1,23 @@
+admin_staging/ADMIN_SOURCE_FREEZE.json
+  s_d9b3c014c5ea55::t_11740c93e53b9c 325,330-331
+admin_staging/ADMIN_SOURCE_FREEZE_3b9abd5.json
+  s_d9b3c014c5ea55::t_d7ede3bf066992 1-331
+admin_staging/run_admin.py
+  s_d9b3c014c5ea55::t_7f3f3c2475ede0 58
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "66402205d564c8a5cabd4c3a4e322cd716243d6a",
+  "prompts": {},
+  "sessions": {
+    "s_d9b3c014c5ea55": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a162f5-c192-7ef2-8f5c-3b5d4e32f549",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "akramahmed38-gif <akram.ahmed38@gmail.com>"
+    }
+  }
+}
