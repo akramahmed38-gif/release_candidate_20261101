@@ -1,0 +1,651 @@
+.gitignore
+  s_d9b3c014c5ea55::t_4e798a68471d23 1-13
+ADMIN_DELIVERY_BACKLOG.md
+  s_d9b3c014c5ea55::t_e4f1b6089aa45f 1-11
+ADMIN_UAT_RESULTS.jsonl
+  s_d9b3c014c5ea55::t_acc250a083966d 1-7
+BLOCKERS_AND_OWNER_DECISIONS.md
+  s_d9b3c014c5ea55::t_978c1fc5dc2511 1-7
+CURRENT_SESSION_CHECKPOINT.md
+  s_d9b3c014c5ea55::t_78f36003c55f28 1-7
+RELEASE_MANIFEST.json
+  s_d9b3c014c5ea55::t_87036e4fc0637d 1-10
+START_ADMIN_TEST.ps1
+  s_d9b3c014c5ea55::t_46bf277f702f15 1-48
+STOP_ADMIN_TEST.ps1
+  s_d9b3c014c5ea55::t_3068e6fe1e1af6 1-13
+admin_staging/ADMIN_SOURCE_FREEZE.json
+  s_d9b3c014c5ea55::t_26359d94dcef07 1-331
+admin_staging/IDENTITY_PROVISIONING_DECISION.json
+  s_d9b3c014c5ea55::t_1ea9e8903132fe 1-8
+admin_staging/IMPORTED_APPLICATION_MANIFEST.json
+  s_d9b3c014c5ea55::t_be826680ea725e 1-2586
+admin_staging/ISOLATION_RECEIPT.json
+  s_d9b3c014c5ea55::t_2783219d263140 1-10
+admin_staging/LAST_RUN.json
+  s_d9b3c014c5ea55::t_9e64a0891cc329 1-9
+admin_staging/PREPARED.json
+  s_d9b3c014c5ea55::t_bb1997a0cdfdaf 1-38
+admin_staging/STAGING_PATHS.json
+  s_d9b3c014c5ea55::t_cdd598138d0673 1-12
+admin_staging/application/chatbot/__init__.py
+  s_d9b3c014c5ea55::t_397a6844e45c0f 1
+admin_staging/application/chatbot/_root_wrappers/app.py
+  s_d9b3c014c5ea55::t_9ed231137d0282 1-7
+admin_staging/application/chatbot/_root_wrappers/chatbot_analytics.py
+  s_d9b3c014c5ea55::t_8661dc2f077498 1
+admin_staging/application/chatbot/_root_wrappers/chatbot_sidecar.py
+  s_d9b3c014c5ea55::t_a502fbf3440ab4 1-7
+admin_staging/application/chatbot/_root_wrappers/config.py
+  s_d9b3c014c5ea55::t_a1051257358310 1
+admin_staging/application/chatbot/_root_wrappers/generator.py
+  s_d9b3c014c5ea55::t_d9e9cdf310496f 1
+admin_staging/application/chatbot/_root_wrappers/ingestion.py
+  s_d9b3c014c5ea55::t_3a5a55da6e9789 1
+admin_staging/application/chatbot/_root_wrappers/logger.py
+  s_d9b3c014c5ea55::t_14c39809ad914a 1
+admin_staging/application/chatbot/_root_wrappers/normalization.py
+  s_d9b3c014c5ea55::t_9fcef53a4eb323 1
+admin_staging/application/chatbot/_root_wrappers/ocr.py
+  s_d9b3c014c5ea55::t_09191062eae173 1
+admin_staging/application/chatbot/_root_wrappers/retriever.py
+  s_d9b3c014c5ea55::t_4cbd83318650f9 1
+admin_staging/application/chatbot/_root_wrappers/vector_store.py
+  s_d9b3c014c5ea55::t_f8c566e50e0b27 1
+admin_staging/application/chatbot/admission.py
+  s_d9b3c014c5ea55::t_a8002162069177 1-33
+admin_staging/application/chatbot/analytics.py
+  s_d9b3c014c5ea55::t_da5aae8846f977 1-550
+admin_staging/application/chatbot/answer_relevance.py
+  s_d9b3c014c5ea55::t_e04f5c2284f981 1-73
+admin_staging/application/chatbot/candidate_similarity.py
+  s_d9b3c014c5ea55::t_538edf017b123a 1-11
+admin_staging/application/chatbot/citation_policy.py
+  s_d9b3c014c5ea55::t_bab63029b2ce63 1-89
+admin_staging/application/chatbot/config.py
+  s_d9b3c014c5ea55::t_a2f9c3b1658fb6 1-162
+admin_staging/application/chatbot/content_catalog.py
+  s_d9b3c014c5ea55::t_2735bb60a303a2 1-71
+admin_staging/application/chatbot/content_index.py
+  s_d9b3c014c5ea55::t_3b6daa4ae20cbb 1-121
+admin_staging/application/chatbot/content_preparation.py
+  s_d9b3c014c5ea55::t_1fb1fec0cdc184 1-387
+admin_staging/application/chatbot/content_runtime.py
+  s_d9b3c014c5ea55::t_806662cc20a3c5 1-48
+admin_staging/application/chatbot/content_state.py
+  s_d9b3c014c5ea55::t_7fdf3b2a902381 1-98
+admin_staging/application/chatbot/content_sync.py
+  s_d9b3c014c5ea55::t_ae9cfe39b797d8 1-138
+admin_staging/application/chatbot/content_transfer.py
+  s_d9b3c014c5ea55::t_fb5cee2b4cbf9f 1-137
+admin_staging/application/chatbot/conversation_memory.py
+  s_d9b3c014c5ea55::t_3a1cd6dd6e30b1 1-932
+admin_staging/application/chatbot/documents_scope.py
+  s_d9b3c014c5ea55::t_06fe410a815188 1-17
+admin_staging/application/chatbot/embedded_images.py
+  s_d9b3c014c5ea55::t_a12741a3067c59 1-30
+admin_staging/application/chatbot/follow_up_resolution.py
+  s_d9b3c014c5ea55::t_671858f380303c 1-395
+admin_staging/application/chatbot/generation.py
+  s_d9b3c014c5ea55::t_2320e6bd902873 1-938
+admin_staging/application/chatbot/index_metadata.py
+  s_d9b3c014c5ea55::t_86651e0c47408c 1-7
+admin_staging/application/chatbot/ingestion.py
+  s_d9b3c014c5ea55::t_375e36d0cd6ef8 1-1057
+admin_staging/application/chatbot/logging_utils.py
+  s_d9b3c014c5ea55::t_3f75785affa810 1-30
+admin_staging/application/chatbot/noop_telemetry.py
+  s_d9b3c014c5ea55::t_92cdeeb1f2b5bb 1-10
+admin_staging/application/chatbot/normalization.py
+  s_d9b3c014c5ea55::t_26aebd3856b5d0 1-408
+admin_staging/application/chatbot/ocr.py
+  s_d9b3c014c5ea55::t_f204ff0e377d2b 1-111
+admin_staging/application/chatbot/profiling.py
+  s_d9b3c014c5ea55::t_414f534994cf30 1-179
+admin_staging/application/chatbot/query_language.py
+  s_d9b3c014c5ea55::t_9a44ac40e8c7dd 1-170
+admin_staging/application/chatbot/query_understanding.py
+  s_d9b3c014c5ea55::t_2bb7fce1c67e8d 1-176
+admin_staging/application/chatbot/question_lookup.py
+  s_d9b3c014c5ea55::t_703071828ac61f 1-46
+admin_staging/application/chatbot/reply_language.py
+  s_d9b3c014c5ea55::t_17bf47fce80422 1-178
+admin_staging/application/chatbot/retrieval.py
+  s_d9b3c014c5ea55::t_7e1e786c8e5388 1-1122
+admin_staging/application/chatbot/service.py
+  s_d9b3c014c5ea55::t_1c1082621ecf11 1-1946
+admin_staging/application/chatbot/sidecar.py
+  s_d9b3c014c5ea55::t_6d327356a5c9b7 1-1791
+admin_staging/application/chatbot/smalltalk.py
+  s_d9b3c014c5ea55::t_c08ab9d82840f4 1-129
+admin_staging/application/chatbot/source_answers.py
+  s_d9b3c014c5ea55::t_7231f132621bcc 1-38
+admin_staging/application/chatbot/vector_store.py
+  s_d9b3c014c5ea55::t_7fb1b928650268 1-147
+admin_staging/application/chatbot_sidecar.py
+  s_d9b3c014c5ea55::t_9ea2ffdb18b4ac 1-7
+admin_staging/application/config.py
+  s_d9b3c014c5ea55::t_b00e8899fa2919 1
+admin_staging/application/config/config.yaml
+  s_d9b3c014c5ea55::t_ea15ad96efd592 1-10
+admin_staging/application/hr-training-frontend/build/assets/index-34M-79L2.js
+  s_d9b3c014c5ea55::t_ed6bacf220628b 1-268
+admin_staging/application/hr-training-frontend/build/assets/index-5ShG4OKF.js
+  s_d9b3c014c5ea55::t_2f25f3304ca954 1-268
+admin_staging/application/hr-training-frontend/build/assets/index-6RN0JZy9.js
+  s_d9b3c014c5ea55::t_cf27167b8aac35 1-268
+admin_staging/application/hr-training-frontend/build/assets/index-BDIDhaut.js
+  s_d9b3c014c5ea55::t_d929e5f3a22249 1-268
+admin_staging/application/hr-training-frontend/build/assets/index-BES9_dZz.css
+  s_d9b3c014c5ea55::t_bbb3f6e8b40f35 1
+admin_staging/application/hr-training-frontend/build/assets/index-BJdK6ShB.js
+  s_d9b3c014c5ea55::t_14ca54a9d9e0cd 1-268
+admin_staging/application/hr-training-frontend/build/assets/index-BOXeWmHX.js
+  s_d9b3c014c5ea55::t_fadfd98d7635b3 1-268
+admin_staging/application/hr-training-frontend/build/assets/index-BRP-6nVH.js
+  s_d9b3c014c5ea55::t_400e507804d70c 1-268
+admin_staging/application/hr-training-frontend/build/assets/index-BSPNWA_k.js
+  s_d9b3c014c5ea55::t_a3a9b78f83638f 1-268
+admin_staging/application/hr-training-frontend/build/assets/index-BWuMutvy.js
+  s_d9b3c014c5ea55::t_6f283fe90144a7 1-268
+admin_staging/application/hr-training-frontend/build/assets/index-BgzjiE4M.js
+  s_d9b3c014c5ea55::t_5ca5fc5d3bfaca 1-268
+admin_staging/application/hr-training-frontend/build/assets/index-BkLJFeYo.js
+  s_d9b3c014c5ea55::t_bb1cf4293b77c1 1-268
+admin_staging/application/hr-training-frontend/build/assets/index-Bwsezqn_.js
+  s_d9b3c014c5ea55::t_5c3d2ff9f6ff8e 1-268
+admin_staging/application/hr-training-frontend/build/assets/index-C-VEoyOT.js
+  s_d9b3c014c5ea55::t_860985f8ad7e2d 1-268
+admin_staging/application/hr-training-frontend/build/assets/index-C0xcY-Kh.js
+  s_d9b3c014c5ea55::t_d0f66676f05339 1-268
+admin_staging/application/hr-training-frontend/build/assets/index-C1ZdzG1-.js
+  s_d9b3c014c5ea55::t_21e814de6b35b6 1-268
+admin_staging/application/hr-training-frontend/build/assets/index-C3VbTUce.js
+  s_d9b3c014c5ea55::t_9d7c8b2c8ee901 1-268
+admin_staging/application/hr-training-frontend/build/assets/index-CAtgNy2o.js
+  s_d9b3c014c5ea55::t_ae9592d18b4fcb 1-268
+admin_staging/application/hr-training-frontend/build/assets/index-CCyTmtWJ.js
+  s_d9b3c014c5ea55::t_bbf711424a67e9 1-268
+admin_staging/application/hr-training-frontend/build/assets/index-CJs4-2UP.js
+  s_d9b3c014c5ea55::t_147c382ac7addc 1-268
+admin_staging/application/hr-training-frontend/build/assets/index-CXsDL4xf.js
+  s_d9b3c014c5ea55::t_5e75ab22a1c9e6 1-268
+admin_staging/application/hr-training-frontend/build/assets/index-DMnIuenV.js
+  s_d9b3c014c5ea55::t_546e85dfd18477 1-268
+admin_staging/application/hr-training-frontend/build/assets/index-DjSIzPtJ.css
+  s_d9b3c014c5ea55::t_bbbfe40f0fbc68 1
+admin_staging/application/hr-training-frontend/build/assets/index-DkXDDkJj.js
+  s_d9b3c014c5ea55::t_e388cf2a4bcdb9 1-268
+admin_staging/application/hr-training-frontend/build/assets/index-DpOmSwQQ.js
+  s_d9b3c014c5ea55::t_c24bf8959048e7 1-268
+admin_staging/application/hr-training-frontend/build/assets/index-Drzt_uoW.js
+  s_d9b3c014c5ea55::t_e9c4cf0c9e77f3 1-268
+admin_staging/application/hr-training-frontend/build/assets/index-Dss8J64T.js
+  s_d9b3c014c5ea55::t_354d6239fa5ac1 1-268
+admin_staging/application/hr-training-frontend/build/assets/index-DwSUZWhq.js
+  s_d9b3c014c5ea55::t_8868ebf2f30beb 1-268
+admin_staging/application/hr-training-frontend/build/assets/index-Jdhpz8K2.js
+  s_d9b3c014c5ea55::t_e698af5e50ee06 1-268
+admin_staging/application/hr-training-frontend/build/assets/index-_nvcQvfF.js
+  s_d9b3c014c5ea55::t_4f663ed9b9b7f8 1-268
+admin_staging/application/hr-training-frontend/build/assets/index-kAqkkq_d.js
+  s_d9b3c014c5ea55::t_72f6e1d38088c3 1-268
+admin_staging/application/hr-training-frontend/build/assets/index-sqcQxU1E.js
+  s_d9b3c014c5ea55::t_cc7ed4a7d04a38 1-268
+admin_staging/application/hr-training-frontend/build/index.html
+  s_d9b3c014c5ea55::t_291afa3e5c2861 1-19
+admin_staging/application/hr-training-frontend/build/manifest.json
+  s_d9b3c014c5ea55::t_ebfdfa919da8b4 1-20
+admin_staging/application/hr-training-frontend/build/robots.txt
+  s_d9b3c014c5ea55::t_24859f17b29ab7 1-3
+admin_staging/application/hr-training-frontend/index.html
+  s_d9b3c014c5ea55::t_c6a3202d43e4f9 1-18
+admin_staging/application/hr-training-frontend/package-lock.json
+  s_d9b3c014c5ea55::t_76474c3c629331 1-4261
+admin_staging/application/hr-training-frontend/package.json
+  s_d9b3c014c5ea55::t_825f79cb025a56 1-54
+admin_staging/application/hr-training-frontend/public/index.html
+  s_d9b3c014c5ea55::t_7ce93692623ed6 1-43
+admin_staging/application/hr-training-frontend/public/manifest.json
+  s_d9b3c014c5ea55::t_8fdf9ba8d03343 1-20
+admin_staging/application/hr-training-frontend/public/robots.txt
+  s_d9b3c014c5ea55::t_de68666f558f33 1-3
+admin_staging/application/hr-training-frontend/src/App.css
+  s_d9b3c014c5ea55::t_ec8a1cd3244c83 1-38
+admin_staging/application/hr-training-frontend/src/App.js
+  s_d9b3c014c5ea55::t_3a5a6e96899fea 1
+admin_staging/application/hr-training-frontend/src/App.jsx
+  s_d9b3c014c5ea55::t_505ad6e04a280d 1-305
+admin_staging/application/hr-training-frontend/src/App.test.js
+  s_d9b3c014c5ea55::t_8fe4917a9473f2 1-8
+admin_staging/application/hr-training-frontend/src/App.test.jsx
+  s_309b734778f263::t_69108b43daf15c 1-8
+admin_staging/application/hr-training-frontend/src/components/Admin/AuditTrail.js
+  s_309b734778f263::t_839d00162f3f2e 1-391
+admin_staging/application/hr-training-frontend/src/components/Admin/AuditTrail.jsx
+  s_309b734778f263::t_38503842ade8cf 1-391
+admin_staging/application/hr-training-frontend/src/components/Admin/CreateUser.js
+  s_309b734778f263::t_e652c47996d4da 1-245
+admin_staging/application/hr-training-frontend/src/components/Admin/CreateUser.jsx
+  s_309b734778f263::t_8874539636812f 1-245
+admin_staging/application/hr-training-frontend/src/components/Admin/ResignedUsers.jsx
+  s_309b734778f263::t_d9ac7203c222fe 1-514
+admin_staging/application/hr-training-frontend/src/components/Admin/UserManagement.js
+  s_309b734778f263::t_fb70483009cfae 1
+admin_staging/application/hr-training-frontend/src/components/Admin/UserManagement.jsx
+  s_309b734778f263::t_7d768444abbebf 1-1868
+admin_staging/application/hr-training-frontend/src/components/Chatbot/ChatbotWidget.css
+  s_309b734778f263::t_4c286246662e69 1-375
+admin_staging/application/hr-training-frontend/src/components/Chatbot/ChatbotWidget.jsx
+  s_309b734778f263::t_6177541b89243d 1-349
+admin_staging/application/hr-training-frontend/src/components/Chatbot/ChatbotWidget.test.jsx
+  s_309b734778f263::t_924783baaec8c6 1-262
+admin_staging/application/hr-training-frontend/src/components/Chatbot/ChatbotWidgetModern.css
+  s_309b734778f263::t_53e49109017db4 1-1036
+admin_staging/application/hr-training-frontend/src/components/Chatbot/ChatbotWidgetModern.jsx
+  s_309b734778f263::t_feea205b7e0ae4 1-1146
+admin_staging/application/hr-training-frontend/src/components/Chatbot/chatbotErrors.js
+  s_309b734778f263::t_38f5a76ad1854e 1-14
+admin_staging/application/hr-training-frontend/src/components/Chatbot/chatbotWelcomeConfig.js
+  s_309b734778f263::t_d125994969f9c6 1-22
+admin_staging/application/hr-training-frontend/src/components/Common/LanguageToggle.js
+  s_309b734778f263::t_536a439cb13f1b 1-90
+admin_staging/application/hr-training-frontend/src/components/HR/CreateExam.jsx
+  s_309b734778f263::t_46db55d9b80abf 1-2841
+admin_staging/application/hr-training-frontend/src/components/HR/DailyBriefManagement.jsx
+  s_309b734778f263::t_19565a517bbada 1-1555
+admin_staging/application/hr-training-frontend/src/components/HR/DailyBriefVideoPlayer.jsx
+  s_309b734778f263::t_90d7b0702177b3 1-199
+admin_staging/application/hr-training-frontend/src/components/HR/EditExam.js
+  s_309b734778f263::t_5833a3b5393cee 1-53
+admin_staging/application/hr-training-frontend/src/components/HR/EditExam.jsx
+  s_309b734778f263::t_951c2958b95498 1-53
+admin_staging/application/hr-training-frontend/src/components/HR/EmployeePerformance.js
+  s_309b734778f263::t_0f14b050b05609 1-828
+admin_staging/application/hr-training-frontend/src/components/HR/EmployeePerformance.jsx
+  s_309b734778f263::t_f35216dadac0d3 1-828
+admin_staging/application/hr-training-frontend/src/components/HR/ExamManagement.js
+  s_309b734778f263::t_006f3a353962fd 1-348
+admin_staging/application/hr-training-frontend/src/components/HR/ExamManagement.jsx
+  s_309b734778f263::t_9c178b1e258b63 1
+admin_staging/application/hr-training-frontend/src/components/HR/LibraryItemCard.jsx
+  s_309b734778f263::t_9a9cf0b3f1a8ff 1-192
+admin_staging/application/hr-training-frontend/src/components/HR/MaterialManagement.js
+  s_309b734778f263::t_b2c65b28037a1f 1
+admin_staging/application/hr-training-frontend/src/components/HR/MaterialManagement.jsx
+  s_309b734778f263::t_da46069a95301a 1-1542
+admin_staging/application/hr-training-frontend/src/components/HR/QuestionBank.jsx
+  s_309b734778f263::t_9bfa9b06aaf8a3 1-104
+admin_staging/application/hr-training-frontend/src/components/HR/UploadMaterial.js
+  s_309b734778f263::t_abb09e7fadd358 1-157
+admin_staging/application/hr-training-frontend/src/components/HR/UploadMaterial.jsx
+  s_309b734778f263::t_273c9995bdb84d 1-157
+admin_staging/application/hr-training-frontend/src/components/HR/VideoPlayer.js
+  s_309b734778f263::t_5e07483eb6b897 1
+admin_staging/application/hr-training-frontend/src/components/HR/VideoPlayer.jsx
+  s_309b734778f263::t_7d498e1f36cb6c 1-198
+admin_staging/application/hr-training-frontend/src/components/HR/exams/ExamCard.js
+  s_309b734778f263::t_f3129e2f3d71bd 1-224
+admin_staging/application/hr-training-frontend/src/components/HR/exams/ExamLevelBoard.js
+  s_309b734778f263::t_409a0cb7c28924 1-131
+admin_staging/application/hr-training-frontend/src/components/HR/exams/ExamLevelColumn.js
+  s_309b734778f263::t_143586a5fb6146 1-212
+admin_staging/application/hr-training-frontend/src/components/HR/exams/ExamLevelTableDialog.js
+  s_d9b3c014c5ea55::t_e2ca64a1cc0fa1 1-212
+admin_staging/application/hr-training-frontend/src/components/HR/exams/examLevelConfig.js
+  s_d9b3c014c5ea55::t_14f335180c0a62 1-34
+admin_staging/application/hr-training-frontend/src/components/Layout/Footer.js
+  s_d9b3c014c5ea55::t_3df0dde5ba5cc2 1-31
+admin_staging/application/hr-training-frontend/src/components/Layout/Footer.jsx
+  s_d9b3c014c5ea55::t_e00f496bc781d0 1-28
+admin_staging/application/hr-training-frontend/src/components/Layout/Layout.js
+  s_d9b3c014c5ea55::t_f2b9098aba5a97 1-52
+admin_staging/application/hr-training-frontend/src/components/Layout/Navbar.js
+  s_d9b3c014c5ea55::t_ca551a6040e16c 1
+admin_staging/application/hr-training-frontend/src/components/Layout/Navbar.jsx
+  s_d9b3c014c5ea55::t_0fe3c21c393553 1-165
+admin_staging/application/hr-training-frontend/src/components/Student/ExamDetails.js
+  s_d9b3c014c5ea55::t_d11274d570aa3f 1-1875
+admin_staging/application/hr-training-frontend/src/components/Student/ExamDetails.jsx
+  s_d9b3c014c5ea55::t_4bd074860ab96b 1-2035
+admin_staging/application/hr-training-frontend/src/components/Student/ExamDetails.jsx.bak_20260805
+  s_d9b3c014c5ea55::t_a02bf2a09ddbf9 1-1963
+admin_staging/application/hr-training-frontend/src/components/Student/ExamDetails.test.jsx
+  s_d9b3c014c5ea55::t_2d81bb4bb5f06e 1-245
+admin_staging/application/hr-training-frontend/src/components/Student/ExamList.js
+  s_d9b3c014c5ea55::t_e80e3f65d7712d 1-217
+admin_staging/application/hr-training-frontend/src/components/Student/ExamList.jsx
+  s_d9b3c014c5ea55::t_94ceedd7c49762 1-275
+admin_staging/application/hr-training-frontend/src/context/LanguageContext.js
+  s_d9b3c014c5ea55::t_3a4f6f2648eaad 1-50
+admin_staging/application/hr-training-frontend/src/context/LanguageContext.jsx
+  s_d9b3c014c5ea55::t_0246936d526ad6 1-50
+admin_staging/application/hr-training-frontend/src/dailyBrief/DailyBriefActions.jsx
+  s_d9b3c014c5ea55::t_b6a7d5ca5e82aa 1-64
+admin_staging/application/hr-training-frontend/src/dailyBrief/DailyBriefAdmin.jsx
+  s_d9b3c014c5ea55::t_d9bba67362bfa4 1-124
+admin_staging/application/hr-training-frontend/src/dailyBrief/DailyBriefAdmin.jsx.backup-20260921-1127
+  s_d9b3c014c5ea55::t_0bf23303c481d5 1-58
+admin_staging/application/hr-training-frontend/src/dailyBrief/DailyBriefAdmin.language.test.jsx
+  s_d9b3c014c5ea55::t_edc3a1dda3d84c 1-59
+admin_staging/application/hr-training-frontend/src/dailyBrief/DailyBriefAdmin.loading.test.jsx
+  s_d9b3c014c5ea55::t_0904b21643a39e 1-62
+admin_staging/application/hr-training-frontend/src/dailyBrief/DailyBriefAnalyticsDialog.jsx
+  s_d9b3c014c5ea55::t_a7f8720f3efcb6 1-99
+admin_staging/application/hr-training-frontend/src/dailyBrief/DailyBriefArticle.jsx
+  s_d9b3c014c5ea55::t_e5d7aad5e20500 1-40
+admin_staging/application/hr-training-frontend/src/dailyBrief/DailyBriefAudience.jsx
+  s_d9b3c014c5ea55::t_5dd57f64b43632 1-67
+admin_staging/application/hr-training-frontend/src/dailyBrief/DailyBriefAudience.test.jsx
+  s_d9b3c014c5ea55::t_a05d3512b69367 1-39
+admin_staging/application/hr-training-frontend/src/dailyBrief/DailyBriefBuilder.jsx
+  s_d9b3c014c5ea55::t_04f3e329f7b4d5 1-279
+admin_staging/application/hr-training-frontend/src/dailyBrief/DailyBriefBuilder.jsx.backup-20260921-1225
+  s_d9b3c014c5ea55::t_e2f2593e116415 1-174
+admin_staging/application/hr-training-frontend/src/dailyBrief/DailyBriefBuilder.preview.test.jsx
+  s_d9b3c014c5ea55::t_78c81e46310a17 1-26
+admin_staging/application/hr-training-frontend/src/dailyBrief/DailyBriefBuilder.test.jsx
+  s_d9b3c014c5ea55::t_e8844654f8523a 1-199
+admin_staging/application/hr-training-frontend/src/dailyBrief/DailyBriefBuilder.transport.test.jsx
+  s_d9b3c014c5ea55::t_b18d0ccda0029f 1-92
+admin_staging/application/hr-training-frontend/src/dailyBrief/DailyBriefEmailProgress.jsx
+  s_d9b3c014c5ea55::t_094768ca441adb 1-104
+admin_staging/application/hr-training-frontend/src/dailyBrief/DailyBriefFeedback.jsx
+  s_d9b3c014c5ea55::t_8accec54d7ba50 1-64
+admin_staging/application/hr-training-frontend/src/dailyBrief/DailyBriefPreviewPage.jsx
+  s_d9b3c014c5ea55::t_e01bd62e99f64a 1-15
+admin_staging/application/hr-training-frontend/src/dailyBrief/DailyBriefRenderer.jsx
+  s_d9b3c014c5ea55::t_07884bb21f771e 1-42
+admin_staging/application/hr-training-frontend/src/dailyBrief/DailyBriefSemanticBlock.jsx
+  s_d9b3c014c5ea55::t_78c9c5ac3d44c4 1-107
+admin_staging/application/hr-training-frontend/src/dailyBrief/RetailDailyBrief.jsx
+  s_d9b3c014c5ea55::t_c1cdb42510703d 1-11
+admin_staging/application/hr-training-frontend/src/dailyBrief/RichTextEditor.jsx
+  s_d9b3c014c5ea55::t_5d80831833d9f4 1-31
+admin_staging/application/hr-training-frontend/src/dailyBrief/adminTranslations.js
+  s_d9b3c014c5ea55::t_288e344c4d2ad9 1-65
+admin_staging/application/hr-training-frontend/src/dailyBrief/briefRecovery.js
+  s_d9b3c014c5ea55::t_cdf65d07577cbc 1-39
+admin_staging/application/hr-training-frontend/src/dailyBrief/publishValidation.js
+  s_d9b3c014c5ea55::t_edc4b89e4deebf 1-21
+admin_staging/application/hr-training-frontend/src/index.css
+  s_309b734778f263::t_ed6079eda789ab 1-11
+admin_staging/application/hr-training-frontend/src/index.js
+  s_309b734778f263::t_4835142ed593cf 1-10
+admin_staging/application/hr-training-frontend/src/index.jsx
+  s_309b734778f263::t_c727423922056a 1-10
+admin_staging/application/hr-training-frontend/src/index.tsx
+  s_309b734778f263::t_7cc221ac90a5d7 1-10
+admin_staging/application/hr-training-frontend/src/logo.svg
+  s_309b734778f263::t_aafe6719eebd23 1
+admin_staging/application/hr-training-frontend/src/pages/BusinessVocabulary.jsx
+  s_d9b3c014c5ea55::t_5affc8fd99ec42 1-340
+admin_staging/application/hr-training-frontend/src/pages/ChangePassword.js
+  s_d9b3c014c5ea55::t_6eb089d3fd0804 1-176
+admin_staging/application/hr-training-frontend/src/pages/ChangePassword.jsx
+  s_d9b3c014c5ea55::t_0cb83af0d1fc3c 1-176
+admin_staging/application/hr-training-frontend/src/pages/ContactUs.js
+  s_d9b3c014c5ea55::t_ecc40fb6e5f54a 1-86
+admin_staging/application/hr-training-frontend/src/pages/ContactUs.jsx
+  s_d9b3c014c5ea55::t_ffe8fec662ad39 1-91
+admin_staging/application/hr-training-frontend/src/pages/DailyBriefPage.jsx
+  s_d9b3c014c5ea55::t_070eae4cc784f0 1-10
+admin_staging/application/hr-training-frontend/src/pages/Dashboard.js
+  s_d9b3c014c5ea55::t_7265a72881084e 1
+admin_staging/application/hr-training-frontend/src/pages/Dashboard.jsx
+  s_d9b3c014c5ea55::t_8a072f3b02e476 1-848
+admin_staging/application/hr-training-frontend/src/pages/Dashboard.management.test.jsx
+  s_d9b3c014c5ea55::t_0db267df87155c 1-330
+admin_staging/application/hr-training-frontend/src/pages/Login.js
+  s_d9b3c014c5ea55::t_41ea62d4e12867 1-321
+admin_staging/application/hr-training-frontend/src/pages/dashboard/AttentionKpiGrid.jsx
+  s_d9b3c014c5ea55::t_cc5ec41620c1ca 1-96
+admin_staging/application/hr-training-frontend/src/pages/dashboard/BranchPerformanceSection.jsx
+  s_d9b3c014c5ea55::t_4553585f1c7908 1-179
+admin_staging/application/hr-training-frontend/src/pages/dashboard/DashboardErrorState.jsx
+  s_d9b3c014c5ea55::t_2bb116fee5f65a 1-28
+admin_staging/application/hr-training-frontend/src/pages/dashboard/DashboardLoadingState.jsx
+  s_d9b3c014c5ea55::t_b4ea05d81b7c60 1-57
+admin_staging/application/hr-training-frontend/src/pages/dashboard/EmployeeAttentionSection.jsx
+  s_d9b3c014c5ea55::t_e5887718291495 1-241
+admin_staging/application/hr-training-frontend/src/pages/dashboard/ExamInsightsSection.jsx
+  s_d9b3c014c5ea55::t_997d110f63d29a 1-128
+admin_staging/application/hr-training-frontend/src/pages/dashboard/ExecutiveKpiGrid.jsx
+  s_d9b3c014c5ea55::t_c1a033e68e6953 1-114
+admin_staging/application/hr-training-frontend/src/pages/dashboard/ManagementAlertsPanel.jsx
+  s_d9b3c014c5ea55::t_ed5d6478bedb7a 1-68
+admin_staging/application/hr-training-frontend/src/pages/dashboard/ManagementDashboardHeader.jsx
+  s_d9b3c014c5ea55::t_412c407f83bcba 1-53
+admin_staging/application/hr-training-frontend/src/pages/dashboard/ManagementFilterBar.jsx
+  s_d9b3c014c5ea55::t_b7ce36e26f0958 1-146
+admin_staging/application/hr-training-frontend/src/pages/dashboard/ManagerFilterBar.jsx
+  s_d9b3c014c5ea55::t_7c4aa3bfcc99b4 1-132
+admin_staging/application/hr-training-frontend/src/pages/dashboard/ManagerOverviewSection.jsx
+  s_d9b3c014c5ea55::t_1f8732e3660daa 1-649
+admin_staging/application/hr-training-frontend/src/pages/dashboard/PerformanceTrendsSection.jsx
+  s_d9b3c014c5ea55::t_fdb6933f5d5449 1-188
+admin_staging/application/hr-training-frontend/src/pages/dashboard/dashboardSnapshotCoordinator.js
+  s_d9b3c014c5ea55::t_60365cfb8505ed 1-113
+admin_staging/application/hr-training-frontend/src/pages/dashboard/managementDashboardUtils.js
+  s_d9b3c014c5ea55::t_e99de7003e4dd3 1-180
+admin_staging/application/hr-training-frontend/src/reportWebVitals.js
+  s_309b734778f263::t_b26c5ce586b7c2 1-13
+admin_staging/application/hr-training-frontend/src/reportWebVitals.jsx
+  s_309b734778f263::t_3693c193aec434 1-13
+admin_staging/application/hr-training-frontend/src/services/api.js
+  s_d9b3c014c5ea55::t_887d799dd7ab33 1-152
+admin_staging/application/hr-training-frontend/src/services/api.jsx
+  s_d9b3c014c5ea55::t_57f1d46699da80 1-130
+admin_staging/application/hr-training-frontend/src/services/auth.js
+  s_d9b3c014c5ea55::t_1a9129917b755b 1-538
+admin_staging/application/hr-training-frontend/src/services/auth.jsx
+  s_d9b3c014c5ea55::t_617d74506cc294 1-297
+admin_staging/application/hr-training-frontend/src/services/dailyBriefSummaryCache.js
+  s_d9b3c014c5ea55::t_7ce371a177ce25 1-33
+admin_staging/application/hr-training-frontend/src/services/dailyBriefSummaryCache.test.js
+  s_d9b3c014c5ea55::t_e58c3fb887f232 1-46
+admin_staging/application/hr-training-frontend/src/services/dailyBriefSummaryMutations.test.js
+  s_d9b3c014c5ea55::t_1d2652e6abf092 1-29
+admin_staging/application/hr-training-frontend/src/services/dailyBriefTransport.js
+  s_d9b3c014c5ea55::t_a17cedfb453a73 1-38
+admin_staging/application/hr-training-frontend/src/services/dailyBriefTransport.test.js
+  s_d9b3c014c5ea55::t_38d71f371bf076 1-51
+admin_staging/application/hr-training-frontend/src/services/sessionAuth.js
+  s_d9b3c014c5ea55::t_ca16fe438e025b 1-229
+admin_staging/application/hr-training-frontend/src/services/vocabularyTransport.test.js
+  s_d9b3c014c5ea55::t_9ed1d175f87607 1-31
+admin_staging/application/hr-training-frontend/src/setupTests.js
+  s_309b734778f263::t_2c1fe74c3f6a56 1-5
+admin_staging/application/hr-training-frontend/src/setupTests.jsx
+  s_309b734778f263::t_c36497fd74ebb3 1-5
+admin_staging/application/hr-training-frontend/src/test/setup.js
+  s_d9b3c014c5ea55::t_20472e28868b22 1-20
+admin_staging/application/hr-training-frontend/src/utils/AuditorAccess.test.jsx
+  s_d9b3c014c5ea55::t_58855278a16d41 1-37
+admin_staging/application/hr-training-frontend/src/utils/ProtectedRoute.js
+  s_d9b3c014c5ea55::t_3156dc2a90bec7 1-25
+admin_staging/application/hr-training-frontend/src/utils/ProtectedRoute.jsx
+  s_d9b3c014c5ea55::t_e620e25918533f 1-25
+admin_staging/application/hr-training-frontend/src/utils/examChatLock.js
+  s_d9b3c014c5ea55::t_47ccd2e5f4f4ca 1-103
+admin_staging/application/hr-training-frontend/src/utils/roleRoutes.js
+  s_d9b3c014c5ea55::t_22f73801bfe322 1-13
+admin_staging/application/hr-training-frontend/src/utils/roleRoutes.jsx
+  s_d9b3c014c5ea55::t_f4666d378ebd80 1-13
+admin_staging/application/hr-training-frontend/src/utils/theme.js
+  s_d9b3c014c5ea55::t_16a724be7e6355 1-187
+admin_staging/application/hr-training-frontend/src/utils/theme.jsx
+  s_d9b3c014c5ea55::t_f4247c257f7c25 1-113
+admin_staging/application/hr-training-frontend/vite.config.cjs
+  s_d9b3c014c5ea55::t_b4ead17d17d02e 1-40
+admin_staging/application/ingestion.py
+  s_d9b3c014c5ea55::t_ed6e96727179e3 1
+admin_staging/application/logger.py
+  s_d9b3c014c5ea55::t_17eff90b432c9e 1
+admin_staging/application/main.py
+  s_d9b3c014c5ea55::t_141c516100cc44 1-720
+admin_staging/application/normalization.py
+  s_d9b3c014c5ea55::t_a3f7fd7656a0a3 1
+admin_staging/application/ocr.py
+  s_d9b3c014c5ea55::t_b2ee9fbae566c5 1
+admin_staging/application/retriever.py
+  s_d9b3c014c5ea55::t_803a4ea1d30aa2 1
+admin_staging/application/src/controllers/__init__.py
+  s_d9b3c014c5ea55::t_7399add0c43310 1-9
+admin_staging/application/src/controllers/base_controller.py
+  s_d9b3c014c5ea55::t_5e9d005cdc708a 1-56
+admin_staging/application/src/controllers/data_controller.py
+  s_d9b3c014c5ea55::t_1e5f41da1ebaa9 1-56
+admin_staging/application/src/controllers/exam_controller.py
+  s_d9b3c014c5ea55::t_3133ff1e87db83 1-34
+admin_staging/application/src/controllers/material_controller.py
+  s_d9b3c014c5ea55::t_4c4862ef9c974f 1-463
+admin_staging/application/src/models/__init__.py
+  s_d9b3c014c5ea55::t_ab3524b6a35a83 1-4
+admin_staging/application/src/models/base_model.py
+  s_d9b3c014c5ea55::t_700f5bb47bdb49 1-22
+admin_staging/application/src/models/db_schemas/__init__.py
+  s_d9b3c014c5ea55::t_1051cbc6f54012 1-29
+admin_staging/application/src/models/db_schemas/learning/alembic/env.py
+  s_d9b3c014c5ea55::t_1770af5cca69e0 1-78
+admin_staging/application/src/models/db_schemas/learning/alembic/versions/4c2a6d7b9e10_add_resigned_users_lifecycle.py
+  s_d9b3c014c5ea55::t_547cebdcb07c70 1-132
+admin_staging/application/src/models/db_schemas/learning/alembic/versions/84fdefb8f3eb_add_number_of_attemps_allowed.py
+  s_d9b3c014c5ea55::t_125eb76ec36ff5 1-32
+admin_staging/application/src/models/db_schemas/learning/alembic/versions/8f4a3c2d1e90_add_dashboard_aggregate_indexes.py
+  s_d9b3c014c5ea55::t_78997af2c1fc9b 1-63
+admin_staging/application/src/models/db_schemas/learning/alembic/versions/a91b3e4c7d22_add_exam_attempt_unique_constraint.py
+  s_d9b3c014c5ea55::t_01dd8794948931 1-36
+admin_staging/application/src/models/db_schemas/learning/alembic/versions/b5d9e6a1c3f0_add_daily_brief_tables.py
+  s_d9b3c014c5ea55::t_070796c65effbf 1-47
+admin_staging/application/src/models/db_schemas/learning/alembic/versions/bea139a3dbe8_add_passing_rate_in_exam_table.py
+  s_d9b3c014c5ea55::t_c30a1fd82b241d 1-32
+admin_staging/application/src/models/db_schemas/learning/alembic/versions/c4d4596d7888_add_multi_correct.py
+  s_d9b3c014c5ea55::t_964922a95126c7 1-32
+admin_staging/application/src/models/db_schemas/learning/alembic/versions/d82a7d736a2b_add.py
+  s_d9b3c014c5ea55::t_5d84b21fb64b09 1-177
+admin_staging/application/src/models/db_schemas/learning/alembic/versions/f3c91a5b7d21_add_question_bank_tables.py
+  s_d9b3c014c5ea55::t_93c4572f7b9a68 1-75
+admin_staging/application/src/models/db_schemas/learning/schemas/association_table.py
+  s_d9b3c014c5ea55::t_6bc0a1bbd5b9fd 1-19
+admin_staging/application/src/models/db_schemas/learning/schemas/branch.py
+  s_d9b3c014c5ea55::t_db8655b2de0f75 1-28
+admin_staging/application/src/models/db_schemas/learning/schemas/business_vocabulary.py
+  s_d9b3c014c5ea55::t_5675fb5f8f4fcf 1-48
+admin_staging/application/src/models/db_schemas/learning/schemas/correction.py
+  s_d9b3c014c5ea55::t_7c681a266c869d 1-142
+admin_staging/application/src/models/db_schemas/learning/schemas/daily_brief.py
+  s_d9b3c014c5ea55::t_3a3fe0f9a66c40 1-149
+admin_staging/application/src/models/db_schemas/learning/schemas/employment_status_history.py
+  s_d9b3c014c5ea55::t_b8e0bb4d478f6d 1-22
+admin_staging/application/src/models/db_schemas/learning/schemas/emplyee.py
+  s_d9b3c014c5ea55::t_985bdf6a80a071 1-83
+admin_staging/application/src/models/db_schemas/learning/schemas/exam.py
+  s_d9b3c014c5ea55::t_584f8b69efe025 1-71
+admin_staging/application/src/models/db_schemas/learning/schemas/learning_base.py
+  s_d9b3c014c5ea55::t_b411b931e22cb8 1-15
+admin_staging/application/src/models/db_schemas/learning/schemas/maintenance_job_lock.py
+  s_d9b3c014c5ea55::t_0efc664189580b 1-16
+admin_staging/application/src/models/db_schemas/learning/schemas/material.py
+  s_d9b3c014c5ea55::t_6dffa3f2ed40e7 1-42
+admin_staging/application/src/models/db_schemas/learning/schemas/otp_request.py
+  s_d9b3c014c5ea55::t_b2c352dcc317a1 1-21
+admin_staging/application/src/models/db_schemas/learning/schemas/question.py
+  s_d9b3c014c5ea55::t_8c76a10ad942b3 1-99
+admin_staging/application/src/models/db_schemas/learning/schemas/question_group.py
+  s_d9b3c014c5ea55::t_afac6787c0c238 1-27
+admin_staging/application/src/models/employee_model.py
+  s_d9b3c014c5ea55::t_c1be16cb56a175 1-354
+admin_staging/application/src/models/enums/processing_enum.py
+  s_d9b3c014c5ea55::t_bec70d4152e27a 1-18
+admin_staging/application/src/models/enums/response_enums.py
+  s_d9b3c014c5ea55::t_fda83ed7f1e12d 1-24
+admin_staging/application/src/models/exam_model.py
+  s_d9b3c014c5ea55::t_82f7226a6fe4d0 1-1005
+admin_staging/application/src/models/material_model.py
+  s_d9b3c014c5ea55::t_036c6ed8a059e9 1-151
+admin_staging/application/src/models/question_model.py
+  s_d9b3c014c5ea55::t_c19d06c7263e6a 1-295
+admin_staging/application/src/routes/audit.py
+  s_d9b3c014c5ea55::t_ef9ca670446f54 1-259
+admin_staging/application/src/routes/base.py
+  s_d9b3c014c5ea55::t_96cbfc4e6280a9 1-45
+admin_staging/application/src/routes/business_vocabulary.py
+  s_d9b3c014c5ea55::t_ecd7d7f1c8f744 1-415
+admin_staging/application/src/routes/chatbot.py
+  s_d9b3c014c5ea55::t_6daa2afa235e20 1-654
+admin_staging/application/src/routes/daily_brief.py
+  s_d9b3c014c5ea55::t_e5ea4615dee38f 1-1334
+admin_staging/application/src/routes/exam.py
+  s_d9b3c014c5ea55::t_19f059e542b212 1-5881
+admin_staging/application/src/routes/material.py
+  s_d9b3c014c5ea55::t_3f2fbd679b3176 1-1161
+admin_staging/application/src/routes/question_bank_groups.py
+  s_d9b3c014c5ea55::t_0dfea07ff1f3c3 1-241
+admin_staging/application/src/routes/resigned_users.py
+  s_d9b3c014c5ea55::t_6f24f5d007fc41 1-301
+admin_staging/application/src/routes/schemas/__init__.py
+  s_d9b3c014c5ea55::t_57a0d08f27a5f7 1-15
+admin_staging/application/src/routes/schemas/exam.py
+  s_d9b3c014c5ea55::t_a6714c39853e93 1-108
+admin_staging/application/src/routes/schemas/material.py
+  s_d9b3c014c5ea55::t_28525dae0733bc 1-9
+admin_staging/application/src/routes/users/admin_credentials.py
+  s_d9b3c014c5ea55::t_809855838c76f0 1-35
+admin_staging/application/src/routes/users/auth_utils.py
+  s_d9b3c014c5ea55::t_371e368ffd9ccb 1-83
+admin_staging/application/src/routes/users/users_router.py
+  s_d9b3c014c5ea55::t_fc1053e7968fc4 1-2229
+admin_staging/application/src/stores/llm/templates/locales/en/take_notes.py
+  s_d9b3c014c5ea55::t_6be80fe14a919e 1-24
+admin_staging/application/src/stores/llm/templates/template_parser.py
+  s_d9b3c014c5ea55::t_01ba6db00bf23b 1-104
+admin_staging/application/src/utils/__init__.py
+  s_d9b3c014c5ea55::t_1b7bfe72052f69 1
+admin_staging/application/src/utils/audit_trail.py
+  s_d9b3c014c5ea55::t_2597af6470a9a5 1-137
+admin_staging/application/src/utils/config_utils.py
+  s_d9b3c014c5ea55::t_f7d010d8a4ebe2 1-166
+admin_staging/application/src/utils/dashboard_snapshots.py
+  s_d9b3c014c5ea55::t_66051d822384e0 1-420
+admin_staging/application/src/utils/logging_utils.py
+  s_d9b3c014c5ea55::t_bd6a203f03756a 1-95
+admin_staging/application/src/utils/resigned_users.py
+  s_d9b3c014c5ea55::t_c70943a9becd2b 1-1326
+admin_staging/application/src/utils/stream_utils.py
+  s_d9b3c014c5ea55::t_e01cf57aeedd9f 1-116
+admin_staging/application/vector_store.py
+  s_d9b3c014c5ea55::t_5b8801a83632ae 1
+admin_staging/import_application.py
+  s_d9b3c014c5ea55::t_a87ac2e4e5c1be 1-56
+admin_staging/isolation.py
+  s_d9b3c014c5ea55::t_2abeef5acf2687 1-69
+admin_staging/prepare.py
+  s_d9b3c014c5ea55::t_05079a0b78fd74 1-61
+admin_staging/run_admin.py
+  s_d9b3c014c5ea55::t_635d6ff6189cfa 1-121
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "3b9abd57165b48ba31adab2cbd68d53cb7ae646e",
+  "prompts": {},
+  "sessions": {
+    "s_309b734778f263": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a19c2d-7f1c-76c0-adb4-65cc1ccbd199",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "akramahmed38-gif <akram.ahmed38@gmail.com>"
+    },
+    "s_d9b3c014c5ea55": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a162f5-c192-7ef2-8f5c-3b5d4e32f549",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "akramahmed38-gif <akram.ahmed38@gmail.com>"
+    }
+  }
+}
