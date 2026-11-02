@@ -1,0 +1,55 @@
+TEST_RESULTS_AND_RECOMMENDATIONS.md
+  s_d9b3c014c5ea55::t_004d0c4d2210a7 1-128
+end_to_end/run_exposed_recovery.py
+  s_d9b3c014c5ea55::t_9f780b21f9bf46 1-35
+end_to_end/run_focused.py
+  s_d9b3c014c5ea55::t_d9b36ded198ee4 1-18
+end_to_end/test_task_contract.py
+  s_d9b3c014c5ea55::t_05c85b7d07ffdb 1-68
+evidence/scope_recovery_20261102/IMPLEMENTATION_BOUNDARY.md
+  s_d9b3c014c5ea55::t_ca12014eca4162 1-9
+evidence/scope_recovery_20261102/ROOT_CAUSE_LEDGER.csv
+  s_d9b3c014c5ea55::t_40184f66a73048 1-31
+independent_results/e232/AUTHOR_RECEIPT.json
+  s_d9b3c014c5ea55::t_42ecb8770d0ecd 1-39
+independent_results/e232/EVALUATION_RECEIPT.json
+  s_d9b3c014c5ea55::t_5add58aaa4aa37 1-132
+independent_results/e232/FAILED_CASE_DIAGNOSTICS.json
+  s_d9b3c014c5ea55::t_db6a1ad8876b49 1-37467
+independent_results/e232/REVIEW_RECEIPT.json
+  s_d9b3c014c5ea55::t_9b598f8dfe1117 1-38
+independent_results/historical_gold_review/REVIEW.json
+  s_d9b3c014c5ea55::t_a728dba385773d 1-218
+independent_results/historical_gold_review/REVIEW.txt
+  s_d9b3c014c5ea55::t_aa0cd4f357cb44 1-11
+source/candidate/candidate.py
+  s_d9b3c014c5ea55::t_1c64a60ce88778 218-222
+source/candidate/linguistic_spans.py
+  s_d9b3c014c5ea55::t_9918a0e47a3f8f 824-868
+source/candidate/question_coverage.py
+  s_d9b3c014c5ea55::t_0e9077b0cf5d86 223-224,321-328
+source/candidate/request_planner.py
+  s_d9b3c014c5ea55::t_fa72f649ac8d10 97-102
+source/candidate/resources/answer_scopes.json
+  s_d9b3c014c5ea55::t_8aa2cbc3e07f04 69-74
+source/candidate/scope_graph.py
+  s_d9b3c014c5ea55::t_573050d70461a6 273-276,434-441,1047
+source/candidate/task_contract.py
+  s_d9b3c014c5ea55::t_66d867afdfb3f9 1-141
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "1fb53a1de895cb14f2e67977ba0aea71d681b30a",
+  "prompts": {},
+  "sessions": {
+    "s_d9b3c014c5ea55": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a162f5-c192-7ef2-8f5c-3b5d4e32f549",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "akramahmed38-gif <akram.ahmed38@gmail.com>"
+    }
+  }
+}
