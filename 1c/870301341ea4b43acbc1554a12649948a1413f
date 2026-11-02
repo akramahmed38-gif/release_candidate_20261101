@@ -1,0 +1,43 @@
+admin_staging/test_engine_integration.py
+  s_d9b3c014c5ea55::t_5286c794764524 1-44
+admin_staging/engine_worker.py
+  s_d9b3c014c5ea55::t_01564be75d1020 101
+  s_d9b3c014c5ea55::t_fd199e7a65b633 7-8,13,17,22,24,26
+  s_d9b3c014c5ea55::t_2962d10d8219d6 4,89-96,98-100
+  s_d9b3c014c5ea55::t_5286c794764524 1-3,5-6,9-12,14-16,18-21,23,25,27-88,97,102
+admin_staging/deploy_workspace_revision.py
+  s_d9b3c014c5ea55::t_fd22075ba0ecff 1-61
+admin_staging/engine_controller.py
+  s_d9b3c014c5ea55::t_5286c794764524 1-2,4-11,14-18,22-29
+  s_d9b3c014c5ea55::t_01564be75d1020 3,12-13,19-21
+admin_staging/admin_knowledge.py
+  s_d9b3c014c5ea55::t_9fb11c72c81023 1-64
+admin_staging/application/main.py
+  s_d9b3c014c5ea55::t_ed254042934deb 197-198
+admin_staging/application/src/routes/chatbot.py
+  s_d9b3c014c5ea55::t_d729c9ac16cb78 70-71,468-479,554-566
+admin_staging/catalog_store.py
+  s_d9b3c014c5ea55::t_b772bd1c8b06f7 1-99
+admin_staging/knowledge_workspace.html
+  s_d9b3c014c5ea55::t_cca6d407566758 1-2
+admin_staging/knowledge_workspace.js
+  s_d9b3c014c5ea55::t_b525bd9a7c56f8 1-9
+admin_staging/run_admin.py
+  s_d9b3c014c5ea55::t_ab68402cf6b195 14-15,55,67,122
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "1c870301341ea4b43acbc1554a12649948a1413f",
+  "prompts": {},
+  "sessions": {
+    "s_d9b3c014c5ea55": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a162f5-c192-7ef2-8f5c-3b5d4e32f549",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "akramahmed38-gif <akram.ahmed38@gmail.com>"
+    }
+  }
+}
