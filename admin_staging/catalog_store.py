@@ -11,10 +11,18 @@ LIBRARY=Path(r'D:\FawryChatbotPreparation\Canonical Library\Fawry_Canonical_Know
 DB=ROOT/'state/databases/knowledge.sqlite'
 SENSITIVE=re.compile(r'(?i)(?:password|passwd|api[_ -]?key|bearer\s+[a-z0-9]|كلمة\s*(?:المرور|السر)|(?<!\d)\d{14}(?!\d)|[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}|(?<!\d)01[0125]\d{8}(?!\d)|ignore.{0,35}(?:instructions|approvals))')
 
+class ManagedConnection(sqlite3.Connection):
+ def __exit__(self,*args):
+  try:return super().__exit__(*args)
+  finally:self.close()
+
 def db():
  DB.parent.mkdir(parents=True,exist_ok=True)
- c=sqlite3.connect(DB);c.row_factory=sqlite3.Row;c.execute('pragma foreign_keys=on')
- c.executescript('CREATE TABLE IF NOT EXISTS record(kind TEXT NOT NULL,id TEXT NOT NULL,version TEXT NOT NULL,data TEXT NOT NULL,PRIMARY KEY(kind,id,version));CREATE INDEX IF NOT EXISTS record_kind ON record(kind);CREATE TABLE IF NOT EXISTS event(id INTEGER PRIMARY KEY,at REAL NOT NULL,kind TEXT NOT NULL,target TEXT NOT NULL,data TEXT NOT NULL);')
+ c=sqlite3.connect(DB,factory=ManagedConnection)
+ try:
+  c.row_factory=sqlite3.Row;c.execute('pragma foreign_keys=on')
+  c.executescript('CREATE TABLE IF NOT EXISTS record(kind TEXT NOT NULL,id TEXT NOT NULL,version TEXT NOT NULL,data TEXT NOT NULL,PRIMARY KEY(kind,id,version));CREATE INDEX IF NOT EXISTS record_kind ON record(kind);CREATE TABLE IF NOT EXISTS event(id INTEGER PRIMARY KEY,at REAL NOT NULL,kind TEXT NOT NULL,target TEXT NOT NULL,data TEXT NOT NULL);')
+ except BaseException:c.close();raise
  return c
 
 def rows(kind):

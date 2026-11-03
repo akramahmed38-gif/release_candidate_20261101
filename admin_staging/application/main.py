@@ -196,6 +196,8 @@ app.include_router(audit.audit_router)
 app.include_router(chatbot.chatbot_router)
 from admin_knowledge import router as admin_knowledge_router
 app.include_router(admin_knowledge_router)
+from synthetic_routes import router as synthetic_workflow_router
+app.include_router(synthetic_workflow_router)
 app.include_router(users_router.router)
 app.include_router(resigned_users.router)
 app.include_router(daily_brief.router)
