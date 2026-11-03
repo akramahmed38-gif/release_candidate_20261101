@@ -1,0 +1,23 @@
+admin_staging/SYNTHETIC_UI_FIRST_RUN.json
+  s_d9b3c014c5ea55::t_69c6275590a107 1-502
+admin_staging/SYNTHETIC_UI_HARNESS_INITIAL.json
+  s_d9b3c014c5ea55::t_4b258443d8ad27 1-14
+admin_staging/knowledge_workspace.js
+  s_d9b3c014c5ea55::t_84d435bade4515 16-17,25,27
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "07be612fe21c59ed0aab87aae8e9b5ebe5794edd",
+  "prompts": {},
+  "sessions": {
+    "s_d9b3c014c5ea55": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a162f5-c192-7ef2-8f5c-3b5d4e32f549",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "akramahmed38-gif <akram.ahmed38@gmail.com>"
+    }
+  }
+}
