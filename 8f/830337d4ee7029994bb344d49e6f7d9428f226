@@ -1,0 +1,45 @@
+admin_staging/visible_admin_uat.py
+  s_d9b3c014c5ea55::t_f24be585d292f3 1-94
+admin_staging/deploy_catalog_revision.py
+  s_d9b3c014c5ea55::t_252dd1ee072373 1-18
+admin_staging/test_catalog_revision.py
+  s_d9b3c014c5ea55::t_5389fd6815101a 1-54
+environment_validation/probe_request_extraction.py
+  s_d9b3c014c5ea55::t_7b72ea79c8c5fc 1-43,45-46,48-116,119-137
+  s_d9b3c014c5ea55::t_f46baade2b2060 44,47,117-118
+admin_staging/run_integrated_regression.py
+  s_d9b3c014c5ea55::t_a97d078399165e 7,21-25,67
+  s_d9b3c014c5ea55::t_a50b4740a6d832 26,37-46,60-61,81
+admin_staging/CATALOG_SOURCE_TESTS.json
+  s_d9b3c014c5ea55::t_2885346c63eb9e 1-10
+admin_staging/CITATION_RENDER_PREFLIGHT.json
+  s_d9b3c014c5ea55::t_b3f664f6dbaf9f 1-26
+admin_staging/admin_knowledge.py
+  s_d9b3c014c5ea55::t_c6000ec71d7992 9-11,48,51-52,58-66
+admin_staging/catalog_queries.py
+  s_d9b3c014c5ea55::t_8f2cbcf9b97267 1-31
+admin_staging/engine_worker.py
+  s_d9b3c014c5ea55::t_75c14d70037f41 6-7,59-62,70,91
+admin_staging/knowledge_workspace.html
+  s_d9b3c014c5ea55::t_5f416aebd4ad6b 1-2
+admin_staging/knowledge_workspace.js
+  s_d9b3c014c5ea55::t_416adae71ca63b 1-9
+admin_staging/source_preview.py
+  s_d9b3c014c5ea55::t_728e5df0f84b6f 1-55
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "8f830337d4ee7029994bb344d49e6f7d9428f226",
+  "prompts": {},
+  "sessions": {
+    "s_d9b3c014c5ea55": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a162f5-c192-7ef2-8f5c-3b5d4e32f549",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "akramahmed38-gif <akram.ahmed38@gmail.com>"
+    }
+  }
+}
