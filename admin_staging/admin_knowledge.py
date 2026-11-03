@@ -3,7 +3,7 @@ from pathlib import Path
 import hashlib,json,time,uuid
 from urllib.request import Request as URLRequest,build_opener,ProxyHandler
 from fastapi import APIRouter,Depends,HTTPException,Request
-from fastapi.responses import HTMLResponse,FileResponse
+from fastapi.responses import HTMLResponse,FileResponse,Response
 from pydantic import BaseModel,Field
 from routes.users.auth_utils import get_current_user
 from catalog_store import rows,db,get
@@ -68,7 +68,38 @@ def citation(fact_id:str,version:str):
 def ask(payload:Ask,user=Depends(admin)):
     result=call_engine(payload.model_dump(),user)
     result['conversation_id']=payload.conversation_id
+    from answer_feedback import capture
+    result['diagnostic_trace_id']=capture(payload.model_dump(),result,user)
     return result
+
+class Feedback(BaseModel):
+    trace_id:str=Field(max_length=38)
+    note:str=Field(min_length=1,max_length=2000)
+
+@router.post('/api/v1/admin/answer-feedback')
+def submit_feedback(payload:Feedback,user=Depends(admin)):
+    from answer_feedback import report
+    try:return report(payload.trace_id,payload.note,user)
+    except LookupError:raise HTTPException(404,'Trace unavailable') from None
+
+@router.get('/api/v1/admin/answer-feedback')
+def feedback_list(user=Depends(admin)):
+    from answer_feedback import listing
+    return {'reports':listing(user),'scope':'current_authenticated_administrator'}
+
+@router.get('/api/v1/admin/answer-trace/{trace_id}')
+def answer_trace(trace_id:str,user=Depends(admin)):
+    from answer_feedback import read
+    try:return read(trace_id,user)
+    except LookupError:raise HTTPException(404,'Trace unavailable') from None
+
+@router.get('/api/v1/admin/answer-trace/{trace_id}/export')
+def export_trace(trace_id:str,user=Depends(admin)):
+    from answer_feedback import export
+    try:value=export(trace_id,user)
+    except LookupError:raise HTTPException(404,'Trace unavailable') from None
+    return Response(json.dumps(value,ensure_ascii=False),media_type='application/json',
+                    headers={'Content-Disposition':'attachment; filename="'+trace_id+'.json"','Cache-Control':'no-store'})
 
 @router.get('/api/v1/admin/knowledge-status')
 def status():
