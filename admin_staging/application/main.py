@@ -470,6 +470,8 @@ def _dashboard_fallback_by_role(role: str) -> str:
 
 
 def _allowed_roles_for_frontend_path(path: str) -> set[str] | None:
+    if path in {"/admin/knowledge-workspace", "/admin/knowledge-workspace.js"}:
+        return {"admin"}
     if path.startswith("/admin/resigned-users"):
         return {"admin"}
     if path.startswith("/admin/audit"):
