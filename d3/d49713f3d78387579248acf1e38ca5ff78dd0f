@@ -1,0 +1,23 @@
+admin_staging/application/src/routes/users/users_router.py
+  s_d9b3c014c5ea55::t_8a8e5a24cbd4e8 230-234,652,1150-1151,1201-1202
+admin_staging/staging_mailbox.py
+  s_d9b3c014c5ea55::t_e494631d1f5025 1-20
+admin_staging/test_staging_mailbox.py
+  s_d9b3c014c5ea55::t_ca96e0cb2834ce 1-25
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "d3d49713f3d78387579248acf1e38ca5ff78dd0f",
+  "prompts": {},
+  "sessions": {
+    "s_d9b3c014c5ea55": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a162f5-c192-7ef2-8f5c-3b5d4e32f549",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "akramahmed38-gif <akram.ahmed38@gmail.com>"
+    }
+  }
+}
