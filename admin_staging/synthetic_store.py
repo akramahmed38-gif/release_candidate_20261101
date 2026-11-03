@@ -39,12 +39,13 @@ def parse_source(raw):
 def current(c,namespace):
     validate_namespace(namespace);pointer=read_row(c,'synthetic_pointer',namespace,'active')
     return read_row(c,'synthetic_revision',namespace,pointer['revision'])
-def source_path(row):
-    path=(UPLOADS/row['namespace']/str(row['revision'])).with_suffix('.json').resolve()
-    if not path.is_relative_to(UPLOADS.resolve()):raise WorkflowError('Source path escaped synthetic storage')
+def source_path(row,uploads=None):
+    uploads=UPLOADS if uploads is None else Path(uploads)
+    path=(uploads/row['namespace']/str(row['revision'])).with_suffix('.json').resolve()
+    if not path.is_relative_to(uploads.resolve()):raise WorkflowError('Source path escaped synthetic storage')
     return path
-def verify(row):
-    path=source_path(row)
+def verify(row,uploads=None):
+    path=source_path(row,uploads)
     if not path.is_file():return 'source_missing'
     if path.stat().st_size>65536:return 'source_hash_changed'
     raw=path.read_bytes()
@@ -98,19 +99,23 @@ def transition(namespace,action,actor,note=''):
         write(c,'synthetic_revision',namespace,row['revision'],row);event(c,namespace,action,actor,row['revision'],row['source_sha256'],note)
     return row
 
-def preview(namespace,field,language,actor):
+def evaluate_preview(row,field,language,uploads=None):
     if language not in {'ar','en'}:raise WorkflowError('Use Arabic or English test view')
+    namespace=row['namespace'];reason=verify(row,uploads)
+    if not reason and row['state']!='published_simulation':reason='revision_not_published_simulation'
+    if not reason and any(not row[k] or row[k]['source_sha256']!=row['source_sha256'] for k in ['simulated_fidelity','simulated_currentness']):reason='source_revision_needs_new_simulated_decisions'
+    views=row['document']['views']
+    if not reason and field not in row['document']['fields']:reason='missing_requested_field'
+    if not reason and (language not in views or field not in views[language]):reason='missing_language_view'
+    if not reason and (language not in row['simulated_fidelity']['languages'] or digest(json.dumps(views,sort_keys=True).encode())!=row['simulated_fidelity']['view_sha256']):reason='language_view_requires_new_simulated_fidelity'
+    result={'mode':'synthetic_workflow_test','free_form_understanding_evaluated':False,'requested_scope':{'namespace':namespace,'field':field,'language':language},'normal_runtime_eligible':False,'real_policy_approval':False,'complete':not reason,'answer_status':'unsupported' if reason else 'complete','gap':reason,'answer':'SYNTHETIC WORKFLOW SIMULATION — NOT FAWRY POLICY. '+(reason if reason else field+': '+views[language][field]),'citations':[] if reason else [{'namespace':namespace,'revision':row['revision'],'source_sha256':row['source_sha256'],'field':field,'literal':views[language][field],'simulated':True}]}
+    return result
+
+def preview(namespace,field,language,actor):
     with db() as c:
         c.execute('BEGIN IMMEDIATE')
-        row=current(c,namespace);reason=verify(row)
-        if not reason and row['state']!='published_simulation':reason='revision_not_published_simulation'
-        if not reason and any(not row[k] or row[k]['source_sha256']!=row['source_sha256'] for k in ['simulated_fidelity','simulated_currentness']):reason='source_revision_needs_new_simulated_decisions'
-        views=row['document']['views']
-        if not reason and field not in row['document']['fields']:reason='missing_requested_field'
-        if not reason and (language not in views or field not in views[language]):reason='missing_language_view'
-        if not reason and (language not in row['simulated_fidelity']['languages'] or digest(json.dumps(views,sort_keys=True).encode())!=row['simulated_fidelity']['view_sha256']):reason='language_view_requires_new_simulated_fidelity'
-        result={'mode':'synthetic_workflow_test','free_form_understanding_evaluated':False,'requested_scope':{'namespace':namespace,'field':field,'language':language},'normal_runtime_eligible':False,'real_policy_approval':False,'complete':not reason,'answer_status':'unsupported' if reason else 'complete','gap':reason,'answer':'SYNTHETIC WORKFLOW SIMULATION — NOT FAWRY POLICY. '+(reason if reason else field+': '+views[language][field]),'citations':[] if reason else [{'namespace':namespace,'revision':row['revision'],'source_sha256':row['source_sha256'],'field':field,'literal':views[language][field],'simulated':True}]}
-        if not reason:
+        row=current(c,namespace);result=evaluate_preview(row,field,language)
+        if result['complete']:
             row['positive_control']=True;write(c,'synthetic_revision',namespace,row['revision'],row);event(c,namespace,'positive_field_preview',actor,row['revision'],row['source_sha256'])
         return result
 

@@ -33,3 +33,8 @@ def preview(namespace:str,payload:Preview,user=Depends(admin)):
     return invoke(store.preview,namespace,payload.field,payload.language,identity(user))
 @router.get('/{namespace}/history')
 def history(namespace:str):return {'revisions':invoke(store.history,namespace),'real_policy_approvals':0}
+
+@router.post("/{namespace}/restore-drill")
+def restore_drill(namespace:str,payload:Preview,user=Depends(admin)):
+    from synthetic_restore import drill
+    return invoke(drill,namespace,payload.field,payload.language,identity(user))
