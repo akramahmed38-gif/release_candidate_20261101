@@ -1,0 +1,37 @@
+admin_staging/BENCHMARK_SNAPSHOT_PREPARATION.json
+  s_d9b3c014c5ea55::t_54ffda5b610b65 1-121
+admin_staging/admin_knowledge.py
+  s_d9b3c014c5ea55::t_20ed081b977abf 1-117
+admin_staging/application/src/routes/chatbot.py
+  s_d9b3c014c5ea55::t_d12ba4e50562d6 178-179,461-462
+admin_staging/engine_worker.py
+  s_d9b3c014c5ea55::t_dbcebe074383b3 31-32,40,45-58
+admin_staging/knowledge_workspace.html
+  s_d9b3c014c5ea55::t_1c49c394362037 2
+admin_staging/knowledge_workspace.js
+  s_d9b3c014c5ea55::t_19d4984dada1ea 9
+admin_staging/source_review.py
+  s_d9b3c014c5ea55::t_10dffc031d85e5 1-102
+admin_staging/test_source_review.py
+  s_d9b3c014c5ea55::t_43784722440dab 1-23
+answer_campaign/build_review_snapshot.py
+  s_d9b3c014c5ea55::t_b27552ec225183 1-66
+answer_campaign/reconcile_bank.py
+  s_d9b3c014c5ea55::t_a976a97e1c3e38 1-45
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "fb009637f2ea88bc32dd405025feb8bf369a8be0",
+  "prompts": {},
+  "sessions": {
+    "s_d9b3c014c5ea55": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a162f5-c192-7ef2-8f5c-3b5d4e32f549",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "akramahmed38-gif <akram.ahmed38@gmail.com>"
+    }
+  }
+}
