@@ -1,0 +1,26 @@
+[
+  {
+    "fact_id": "F0010",
+    "passed": true,
+    "has_original_page": true,
+    "has_original_section": false,
+    "parent_hash_present": true,
+    "source_unchanged": true
+  },
+  {
+    "fact_id": "F0001",
+    "passed": true,
+    "has_original_page": false,
+    "has_original_section": true,
+    "parent_hash_present": true,
+    "source_unchanged": true
+  },
+  {
+    "fact_id": "F0076",
+    "passed": true,
+    "has_original_page": true,
+    "has_original_section": false,
+    "parent_hash_present": true,
+    "source_unchanged": true
+  }
+]

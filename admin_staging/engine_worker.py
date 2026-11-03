@@ -3,6 +3,8 @@ from pathlib import Path
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from socketserver import TCPServer
 import hashlib,hmac,json,os,sys,threading,time,uuid
+class AdmissionDenied(RuntimeError):
+    def __init__(self,events,wait_ms):self.events=events;self.wait_ms=wait_ms
 ROOT=Path(__file__).resolve().parent
 def progress(stage):print(json.dumps({'stage':stage,'epoch':time.time()}),flush=True)
 progress('worker_start')
@@ -54,7 +56,10 @@ def answer(data):
             ENGINE.definition['authorized_test_ids']=list(set(selected))
             AUTH.write_text(json.dumps({**BASE_AUTH,'authorized_test_fact_ids':list(set(selected))}),encoding='utf-8')
             guard_started=time.perf_counter()
-            BUDGET.wait()
+            try:BUDGET.wait()
+            except RuntimeError as exc:
+                if str(exc)=='ResourceBudgetUnavailable':raise AdmissionDenied(list(BUDGET.events),(time.perf_counter()-guard_started)*1000) from None
+                raise
             guard_wait=(time.perf_counter()-guard_started)*1000
             cpu_started=time.process_time()
             result=ENGINE.ask(question,scope+':'+conversation,scope)
@@ -62,7 +67,7 @@ def answer(data):
             result.update(knowledge_mode=mode,backend='local_Core_BM25_existing_candidate',native_acceptance='NOT RUN',normal_runtime_eligible=False,fixture_only=True)
             result['worker_resource_wait_ms']=guard_wait
             result['worker_process_cpu_ms']=(time.process_time()-cpu_started)*1000
-            result['sources']=[{'title':c.get('source_document') or c.get('source_path') or c.get('fact_id'),'fact_id':c.get('fact_id'),'source':c} for c in result.get('citations',[])]
+            result['sources']=[{'source_name':c['source_document'],'location_label':json.dumps(c['locator'],ensure_ascii=False),'fact_id':c['fact_id'],'url':'/training/api/v1/admin/knowledge-citation/'+c['fact_id']+'?version='+c['source_sha256'],'source':c} for c in result.get('citations',[])]
             result['answer']='UNAPPROVED ADMIN REVIEW PREVIEW — NOT POLICY / معاينة غير معتمدة\n\n'+result['answer']
             return result
         finally:
@@ -83,6 +88,7 @@ class Handler(BaseHTTPRequestHandler):
             data=json.loads(self.rfile.read(length));started=time.perf_counter()
             result=answer(data);result['worker_wall_ms']=(time.perf_counter()-started)*1000
             self.reply(result)
+        except AdmissionDenied as exc:self.reply({'detail':'Resource admission denied; RAM/CPU headroom is unavailable. No answer or model call was attempted.','error_code':'resource_budget_unavailable','stage':'admission','guard_events':exc.events,'guard_wait_ms':exc.wait_ms,'complete':False},503)
         except ValueError as exc:self.reply({'detail':str(exc)},422)
         except Exception as exc:self.reply({'detail':'Isolated answer failed','error_type':type(exc).__name__,'complete':False},500)
 

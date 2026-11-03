@@ -6,7 +6,9 @@ from fastapi import APIRouter,Depends,HTTPException,Request
 from fastapi.responses import HTMLResponse,FileResponse
 from pydantic import BaseModel,Field
 from routes.users.auth_utils import get_current_user
-from catalog_store import rows,db
+from catalog_store import rows,db,get
+from catalog_queries import filter_records
+from source_preview import render as render_source,SourcePreviewError
 ROOT=Path(__file__).resolve().parent
 
 def admin(user=Depends(get_current_user)):
@@ -43,15 +45,24 @@ def page():return (ROOT/'knowledge_workspace.html').read_text(encoding='utf-8')
 def script():return FileResponse(ROOT/'knowledge_workspace.js',media_type='application/javascript')
 
 @router.get('/api/v1/admin/knowledge/{kind}')
-def records(kind:str,q:str='',service:str=''):
+def records(kind:str,q:str='',service:str='',review_status:str='',language:str='',source_version:str='',eligible:bool|None=None):
     if kind not in {'profile','source','unit','fact','pdf_page'}:raise HTTPException(404,'Unknown record type')
     result=rows(kind)
-    if service:
-        result=[r for r in result if r.get('service_id')==service or service in r.get('service_ids',[])]
+    try:result=filter_records(result,service=service,review_status=review_status,language=language,source_version=source_version,eligible=eligible)
+    except ValueError as exc:raise HTTPException(422,str(exc)) from None
     if q:
         if len(q)>200:raise HTTPException(422,'Search too long')
         result=[r for r in result if q.casefold() in json.dumps(r,ensure_ascii=False).casefold()]
     return {'records':result,'count':len(result),'normal_runtime_eligible':0,'approval_inferred':False}
+
+@router.get('/api/v1/admin/knowledge-citation/{fact_id}',response_class=HTMLResponse)
+def citation(fact_id:str,version:str):
+    import re
+    if not re.fullmatch(r'F\d{4}',fact_id) or not re.fullmatch('[a-f0-9]{64}',version):raise HTTPException(422,'Exact original fact ID and source SHA-256 required')
+    try:fact=get('fact',fact_id,version)
+    except ValueError:raise HTTPException(404,'Registered fact version unavailable') from None
+    try:return render_source(fact)
+    except SourcePreviewError as exc:raise HTTPException(exc.status,str(exc)) from None
 
 @router.post('/api/v1/admin/knowledge-ask')
 def ask(payload:Ask,user=Depends(admin)):

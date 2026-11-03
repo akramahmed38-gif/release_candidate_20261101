@@ -1,0 +1,10 @@
+{
+  "suite": "catalog metadata and bounded original-source preview",
+  "command": "python -u -B -X utf8 admin_staging/test_catalog_revision.py",
+  "passed": 12,
+  "failed": 0,
+  "source_sha256": "e6bfb5ddd051991fdfb698673070a9944a5776b11fd25004815c983f5f6fd36f",
+  "evidence": "Executed unittest output: Ran 12 tests; OK. Includes positive-control source edit invalidation and independent unchanged source.",
+  "business_accuracy_acceptance": false,
+  "native": "NOT RUN"
+}
