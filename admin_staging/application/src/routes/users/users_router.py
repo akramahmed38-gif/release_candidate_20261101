@@ -227,88 +227,12 @@ def generate_otp(length: int = 6) -> str:
     return ''.join(random.choices(string.digits, k=length))
 
 def send_otp_mail(to_email: str, user_name: str):
-    smtp_disabled = str(os.getenv("TRAINING_SMTP_DISABLED", os.getenv("SMTP_DISABLED", ""))).strip().lower() in {
-        "1",
-        "true",
-        "yes",
-        "y",
-    }
-    SMTP_SERVER = (
-        os.getenv("TRAINING_SMTP_SERVER")
-        or os.getenv("SMTP_SERVER")
-        or "10.100.36.40"
-    ).strip()
-    SMTP_PORT = int((os.getenv("TRAINING_SMTP_PORT") or os.getenv("SMTP_PORT") or "25").strip())
-    SMTP_FROM = (
-        os.getenv("TRAINING_SMTP_FROM")
-        or os.getenv("SMTP_FROM_EMAIL")
-        or "no-reply@fawry.com"
-    ).strip()
-    SMTP_TIMEOUT = float((os.getenv("TRAINING_SMTP_TIMEOUT") or "10").strip())
+    # This isolated copy has no external mail transport or plaintext log fallback.
+    import secrets
+    from staging_mailbox import deliver
+    otp = ''.join(str(secrets.randbelow(10)) for _ in range(6))
+    return otp if deliver(to_email, otp) else -1
 
-    otp = generate_otp()
-    normalized_to_email = _normalize_login_email(to_email)
-    normalized_user_name = (user_name or "").strip() or "User"
-
-    # Convenience for server-side operators: also print the OTP to the terminal.
-    try:
-        print(f"[OTP] HR Training OTP requested for {normalized_to_email}: {otp}")
-    except Exception:
-        pass
-
-    msg = EmailMessage()
-    msg["Subject"] = "Your OTP Code - HR Training System"
-    msg["From"] = SMTP_FROM
-    msg["To"] = normalized_to_email
-
-    # Plain text version
-    text_content = f"""
-Dear {normalized_user_name},
-
-Your One-Time Password (OTP) is:
-{otp}
-
-This code will expire in 5 minutes.
-If you did not request this, please ignore this email.
-""".strip()
-
-    # HTML version (same text format)
-    html_content = f"""
-    <html>
-        <body>
-            <p>Dear {normalized_user_name},</p>
-            <p>Your One-Time Password (OTP) is:</p>
-            <h2 style="color:#2E86C1;">{otp}</h2>
-            <p>This code will expire in 5 minutes.</p>
-            <p>If you did not request this, please ignore this email.</p>
-        </body>
-    </html>
-    """
-
-    msg.set_content(text_content)
-    msg.add_alternative(html_content, subtype="html")
-
-    if smtp_disabled:
-        fallback_path = Path(__file__).resolve().parents[3] / "logs" / "training_last_otp.txt"
-        fallback_path.parent.mkdir(parents=True, exist_ok=True)
-        fallback_path.write_text(f"{normalized_to_email}:{otp}", encoding="utf-8")
-        return otp
-
-    try:
-        print("Connecting to SMTP server...")
-        with smtplib.SMTP(SMTP_SERVER, SMTP_PORT, timeout=SMTP_TIMEOUT) as server:
-            print("Connected. Sending email...")
-            server.send_message(msg)
-            print("Email sent successfully via relay.", otp)
-
-            return otp
-
-    except Exception as e:
-        print("Failed:", str(e))
-        fallback_path = Path(__file__).resolve().parents[3] / "logs" / "training_last_otp.txt"
-        fallback_path.parent.mkdir(parents=True, exist_ok=True)
-        fallback_path.write_text(f"{normalized_to_email}:{otp}", encoding="utf-8")
-        return otp
 
 #! ================================================================
 
@@ -725,7 +649,7 @@ async def request_login_otp(request: Request, payload: LoginRequest):
     employees = await employee_model.get_all_users()
     user = _find_user_by_email(employees, email)
 
-    print (f"SEND OTP :: OTP login requested for email: {email}")
+    print("Synthetic staging OTP requested; identity and credential omitted.")
     if not user:
         print("Email not found in the system.")
         return JSONResponse(
@@ -1223,38 +1147,8 @@ async def export_users_excel(
 
 # =========================== INITIAL ADMIN USER ===========================
 @router.post("/init-admin")
-async def init_admin_user(request: Request):
-    employee_model = await EmployeeModel.create_instance(db_client=request.app.state.db_client)
-    employees = await employee_model.get_all_users()
-    admin_email = "mohammad.fawzy@fawry.com"
-    existing_admin = next((u for u in employees if u.email == admin_email), None)
-    if existing_admin:
-        return {
-            "signal": "info",
-            "message": "Admin user already exists"
-        }
-    print("Creating admin user...\n\n\n\n\n")
-    admin_employee = Employee(
-        hr_id="HR0003",
-        name="Admin User",
-        title="Administrator",
-        branch_code="000",
-        department="admin",
-        email=admin_email,
-        password="admin1234",
-        employment_status=EMPLOYMENT_STATUS_ACTIVE,
-        auto_resign_exempt=True,
-        login_history_state=LOGIN_HISTORY_STATE_NATIVE,
-    )
-    await employee_model.create_user(admin_employee)
-    return {
-        "signal": "success",
-        "message": "Admin user created successfully",
-        "info" : {
-            "email": admin_email, 
-            "password": "admin123"
-        }
-    }
+async def init_admin_user(request: Request, current_user: dict = Depends(get_current_user)):
+    raise HTTPException(410, "Legacy default administrator creation is disabled in staging. Use the existing authenticated account workflow.")
 
 # ==================== CREATE USER ====================
 @router.post("/users")
@@ -1304,6 +1198,8 @@ async def create_user(
         branch_code = DEFAULT_ADMIN_BRANCH_CODE
 
     normalized_email = _normalize_login_email(payload.email)
+    if not normalized_email.endswith('.invalid') or not normalized_email.startswith('synthetic-'):
+        raise HTTPException(422, 'Only clearly synthetic .invalid accounts can be created in this staging environment')
     if not _is_valid_email_format(normalized_email):
         return JSONResponse(
             content={
