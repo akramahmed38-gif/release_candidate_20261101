@@ -233,4 +233,6 @@ class CatalogEngine(frozen.MultiEngine):
             timings['clarification_state_ms']=(perf_counter()-state_started)*1000
             timings['engine_wall_ms']=(perf_counter()-queued)*1000
             timings['engine_unattributed_overhead_ms']=timings['engine_wall_ms']-sum(timings[k] for k in primary)-timings['clarification_state_ms']
+            from final_response import finalize_response
+            finalize_response(result,contract)
             return result

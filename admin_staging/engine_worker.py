@@ -38,9 +38,12 @@ def answer(data):
     mode=data.get('knowledge_mode','approved')
     if mode not in {'approved','review_preview','admin_review_benchmark'}:raise ValueError('Unsupported knowledge mode')
     if mode=='approved':
-        return {'answer':'No genuinely approved evidence is eligible in this staging snapshot. To inspect unapproved technical fixtures, use the admin knowledge workspace and explicitly select review-preview records.\nلا توجد معلومات معتمدة مؤهلة في هذه البيئة. معاينة المعلومات غير المعتمدة متاحة من مساحة مراجعة المعرفة فقط.',
+        result={'answer':'No genuinely approved evidence is eligible in this staging snapshot. To inspect unapproved technical fixtures, use the admin knowledge workspace and explicitly select review-preview records.\nلا توجد معلومات معتمدة مؤهلة في هذه البيئة. معاينة المعلومات غير المعتمدة متاحة من مساحة مراجعة المعرفة فقط.',
                 'answer_status':'unsupported','complete':False,'clarification_needed':False,'sources':[],'citations':[],
                 'supported_fact_ids':[],'knowledge_mode':mode,'backend':'approval_gate_no_model_call','normal_runtime_eligible':False,'native_acceptance':'NOT RUN'}
+        from final_response import finalize_response
+        finalize_response(result,{'requests':[],'unresolved_spans':[]})
+        return result
     if mode=='admin_review_benchmark':
         raise ValueError('Broad review answering is not connected: source-QA lookup is not the release architecture')
     selected=data.get('selected_fact_ids',[])
@@ -72,6 +75,8 @@ def answer(data):
             result['worker_process_cpu_ms']=(time.process_time()-cpu_started)*1000
             result['sources']=[{'source_name':c['source_document'],'location_label':json.dumps(c['locator'],ensure_ascii=False),'fact_id':c['fact_id'],'url':'/training/api/v1/admin/knowledge-citation/'+c['fact_id']+'?version='+c['source_sha256'],'source':c} for c in result.get('citations',[])]
             result['answer']='UNAPPROVED ADMIN REVIEW PREVIEW — NOT POLICY / معاينة غير معتمدة\n\n'+result['answer']
+            if result.get('final_response'):
+                result['final_response']['answer']=result['answer']
             return result
         finally:
             ENGINE.definition['authorized_test_ids']=old
