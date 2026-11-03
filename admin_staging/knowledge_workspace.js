@@ -37,3 +37,5 @@ async function refreshFeedback(){
 }
 el('feedbackrefresh').onclick=()=>refreshFeedback().catch(e=>el('feedbackstatus').textContent=e.message);
 el('feedbacksubmit').onclick=async()=>{if(!latestTrace)return;el('feedbacksubmit').disabled=true;try{await api('/api/v1/admin/answer-feedback',{trace_id:latestTrace,note:el('feedbacknote').value});await refreshFeedback();el('feedbackstatus').textContent='Report saved with the actual answer trace. No knowledge approval changed.';}catch(e){el('feedbackstatus').textContent=e.message;}finally{el('feedbacksubmit').disabled=!latestTrace;}};
+
+for(const [id,mode] of [['widgetbenchmark','admin_review_benchmark'],['widgetapproved','approved']])el(id).onclick=async()=>{try{const d=await api('/api/v1/admin/chatbot-review-mode',{mode});el('widgetmodestatus').textContent='Original widget mode: '+d.mode+'; unapproved review only; expires in 30 minutes.';}catch(e){el('widgetmodestatus').textContent=e.message;}};

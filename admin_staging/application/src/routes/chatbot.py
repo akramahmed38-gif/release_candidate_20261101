@@ -453,13 +453,15 @@ async def ask_chatbot(request: Request, payload: ChatbotAskRequest) -> dict[str,
     # Owned staging adapter: no production sidecar call or request-time spawn.
     from admin_knowledge import call_engine
     user_context = await _resolve_chatbot_user_context(request)
+    from admin_knowledge import widget_mode
+    effective_mode=payload.knowledge_mode if 'knowledge_mode' in payload.model_fields_set else widget_mode(user_context)
     result = await run_in_threadpool(call_engine, {
-        'question': question, 'knowledge_mode': payload.knowledge_mode,
+        'question': question, 'knowledge_mode': effective_mode,
         'selected_fact_ids': payload.selected_fact_ids,
         'conversation_id': payload.conversation_id or payload.session_id or request_id,
     }, user_context)
     from answer_feedback import capture
-    result['diagnostic_trace_id']=capture({'question':question,'knowledge_mode':payload.knowledge_mode},result,user_context)
+    result['diagnostic_trace_id']=capture({'question':question,'knowledge_mode':effective_mode},result,user_context)
     result.update(request_id=request_id, conversation_id=payload.conversation_id,
                   session_id=payload.session_id, message_id=payload.message_id)
     return result

@@ -115,3 +115,23 @@ def export_trace(trace_id:str,user=Depends(admin)):
 @router.get('/api/v1/admin/knowledge-status')
 def status():
     return {'counts':{k:len(rows(k)) for k in ['profile','source','unit','fact','pdf_page']},'native':'NOT RUN','semantic_acceptance':'NO-GO','approvals_granted':0,'employee_access':False}
+
+
+def widget_mode(actor):
+    from answer_feedback import owner
+    try:value=get('widget_review_mode',owner(actor),'active')
+    except ValueError:return 'approved'
+    if value.get('expires_at',0)<time.time():return 'approved'
+    return value.get('mode') if value.get('mode') in {'approved','admin_review_benchmark'} else 'approved'
+
+class WidgetReviewMode(BaseModel):
+    mode:str
+
+@router.post('/api/v1/admin/chatbot-review-mode')
+def set_widget_review_mode(payload:WidgetReviewMode,user=Depends(admin)):
+    if payload.mode not in {'approved','admin_review_benchmark'}:raise HTTPException(422,'Unsupported widget review mode')
+    from answer_feedback import owner
+    value={'mode':payload.mode,'expires_at':time.time()+1800,'normal_runtime_eligible':False,'scope':'explicit administrator opt-in; all fixed records; no per-question source filters'}
+    with db() as c:
+        c.execute("insert into record(kind,id,version,data) values('widget_review_mode',?,'active',?) on conflict(kind,id,version) do update set data=excluded.data",(owner(user),json.dumps(value)))
+    return value
