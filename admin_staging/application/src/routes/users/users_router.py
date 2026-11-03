@@ -851,6 +851,9 @@ async def refresh_access_token(request: Request, payload: RefreshTokenRequest):
 
     service = await _get_resigned_users_service(request)
     employee = await service.get_employee_by_email(token_data.get("email"))
+    from staging_session_policy import account_matches
+    if not account_matches(token_data, employee):
+        return JSONResponse(status_code=401, content={"signal":"error","message":"Account or role changed; sign in again."})
     if employee is not None and is_employee_resigned(employee):
         return _inactive_user_response()
 

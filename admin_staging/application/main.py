@@ -289,6 +289,16 @@ async def enforce_authentication_and_roles(request: Request, call_next):
     current_employee = None
     if payload is not None:
         current_employee = await _load_authenticated_employee(request, payload)
+        from staging_session_policy import account_matches
+        if requires_auth and not account_matches(payload, current_employee):
+            if is_api_request:
+                response = JSONResponse(status_code=401, content={"signal":"error","message":"Account or role changed; sign in again."})
+            else:
+                response = RedirectResponse(url=_with_root(request, "/login"), status_code=307)
+            cookie_path = _resolve_auth_cookie_path(request)
+            for name in ("training_access_token", "training_refresh_token", "access_token", "refresh_token"):
+                response.delete_cookie(name, path=cookie_path)
+            return response
         if current_employee is not None:
             request.state.current_employee = current_employee
             if is_employee_resigned(current_employee):
@@ -349,7 +359,7 @@ async def _load_authenticated_employee(request: Request, payload: dict | None):
     except Exception:
         logger = getattr(request.app.state, "logger", None)
         if logger:
-            logger.exception("Failed to load authenticated employee for %s", email)
+            logger.exception("Authenticated account lookup failed; identity omitted")
         return None
 
 
