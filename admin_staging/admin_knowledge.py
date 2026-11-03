@@ -122,14 +122,14 @@ def widget_mode(actor):
     try:value=get('widget_review_mode',owner(actor),'active')
     except ValueError:return 'approved'
     if value.get('expires_at',0)<time.time():return 'approved'
-    return value.get('mode') if value.get('mode') in {'approved','admin_review_benchmark'} else 'approved'
+    return 'approved'  # Whole-QA lookup serving rejected; preserve safe original default.
 
 class WidgetReviewMode(BaseModel):
     mode:str
 
 @router.post('/api/v1/admin/chatbot-review-mode')
 def set_widget_review_mode(payload:WidgetReviewMode,user=Depends(admin)):
-    if payload.mode not in {'approved','admin_review_benchmark'}:raise HTTPException(422,'Unsupported widget review mode')
+    if payload.mode!='approved':raise HTTPException(409,'Full review pipeline integration is pending; source-QA lookup is not an accepted replacement')
     from answer_feedback import owner
     value={'mode':payload.mode,'expires_at':time.time()+1800,'normal_runtime_eligible':False,'scope':'explicit administrator opt-in; all fixed records; no per-question source filters'}
     with db() as c:

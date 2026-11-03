@@ -28,8 +28,7 @@ ENGINE=CatalogEngine(WORK,test_mode=True)
 progress('engine_initialized')
 KEY=(ROOT/'.private/engine.key').read_text(encoding='ascii')
 LOCK=threading.Lock()
-from source_review import ReviewRegistry
-REVIEW=ReviewRegistry()
+# Source-authored Q&A snapshot is onboarding data only; lookup serving rejected.
 AUTH=WORK/'test_eligibility.json'
 BASE_AUTH=json.loads(AUTH.read_text(encoding='utf-8'))
 
@@ -43,19 +42,7 @@ def answer(data):
                 'answer_status':'unsupported','complete':False,'clarification_needed':False,'sources':[],'citations':[],
                 'supported_fact_ids':[],'knowledge_mode':mode,'backend':'approval_gate_no_model_call','normal_runtime_eligible':False,'native_acceptance':'NOT RUN'}
     if mode=='admin_review_benchmark':
-        if data.get('selected_fact_ids'):raise ValueError('Benchmark mode uses a fixed whole evidence pool, never per-question fact selection')
-        actor=str(data.get('actor_scope',''))
-        if not actor:raise ValueError('Authenticated actor scope required')
-        with LOCK:
-            wait=time.perf_counter()
-            try:BUDGET.wait()
-            except RuntimeError as exc:
-                if str(exc)=='ResourceBudgetUnavailable':raise AdmissionDenied(list(BUDGET.events),(time.perf_counter()-wait)*1000) from None
-                raise
-            waited=(time.perf_counter()-wait)*1000
-            result=REVIEW.ask(ENGINE,question,str(data.get('conversation_id') or uuid.uuid4().hex),actor)
-            result['worker_resource_wait_ms']=waited
-            return result
+        raise ValueError('Broad review answering is not connected: source-QA lookup is not the release architecture')
     selected=data.get('selected_fact_ids',[])
     if not isinstance(selected,list) or not selected or any(not isinstance(x,str) or x not in ENGINE.facts for x in selected):raise ValueError('Explicit existing technical fixture selection required')
     from catalog_store import rows
