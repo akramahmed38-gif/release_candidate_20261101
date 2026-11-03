@@ -3,8 +3,6 @@ from __future__ import annotations
 import logging
 from typing import Any
 
-import chromadb
-from chromadb.config import Settings
 
 from .config import AppConfig
 
@@ -16,6 +14,11 @@ class ChromaVectorStore:
         logger: logging.Logger,
         collection_name: str | None = None,
     ) -> None:
+        try:
+            import chromadb
+            from chromadb.config import Settings
+        except ModuleNotFoundError as exc:
+            raise RuntimeError('Native Chroma backend unavailable in this interpreter; no fallback store was opened') from exc
         self.config = config
         self.logger = logger
         self.collection_name = (collection_name or self.config.collection_name).strip() or self.config.collection_name
