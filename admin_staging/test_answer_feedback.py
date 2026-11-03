@@ -69,5 +69,23 @@ class FeedbackTests(unittest.TestCase):
     def test_anonymous_capture_denied(self):
         with self.assertRaises(PermissionError): feedback.capture({'question': 'test'}, self.result, {})
 
+    def test_final_decision_survives_trace_and_export(self):
+        self.result['final_response']={'schema_version':'final_response_1','status':'partial',
+            'complete':False,'clarification_needed':False,'resolved_fact_ids':['F0001'],
+            'answer':'Example answer','unsupported_requested_parts':[{'code':'eligible_policy_missing'}]}
+        trace=self.capture();saved=feedback.read(trace,self.actor)['final_response']
+        exported=feedback.export(trace,self.actor)['trace']['final_response']
+        self.assertEqual(saved,exported);self.assertEqual(saved['status'],'partial')
+        self.assertEqual(saved['unsupported_requested_parts'],[{'code':'eligible_policy_missing'}])
+        self.assertEqual(saved['citations'][0]['source_sha256'],'1'*64)
+
+    def test_final_decision_is_whitelisted_and_redacted(self):
+        self.result['final_response']={'status':'partial','answer':'token=FINALCANARY',
+            'clarifications':[{'text':'synthetic.user@example.invalid'}],
+            'unexpected_private':'NEVER_CAPTURE_FINAL_INTERNAL'}
+        exported=json.dumps(feedback.export(self.capture(),self.actor))
+        for value in ['FINALCANARY','synthetic.user@example.invalid','NEVER_CAPTURE_FINAL_INTERNAL']:
+            self.assertNotIn(value,exported)
+
 
 if __name__ == '__main__': unittest.main()

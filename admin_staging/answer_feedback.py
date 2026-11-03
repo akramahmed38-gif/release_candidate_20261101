@@ -48,6 +48,16 @@ def capture(payload, result, actor):
             'resource_wait_ms': result.get('worker_resource_wait_ms'),
             'normal_runtime_eligible': False,
             'redaction_notice': 'Pattern-based redaction; do not submit secrets or personal data. Not a universal PII guarantee.'}
+    final=result.get('final_response')
+    if isinstance(final,dict):
+        # Persist the final decision, not arbitrary runtime/model keys. This
+        # snapshot is subjected to the same recursive redaction as the trace.
+        fields=('schema_version','status','mode','complete','clarification_needed',
+                'resolved_fact_ids','unsupported_requested_parts','conflicts',
+                'clarifications','forbidden_actions','answer','coverage_limitations')
+        data['final_response']={k:final[k] for k in fields if k in final}
+        data['final_response']['citations']=citations
+        data['final_response']['requested_clauses']=requests
     # Apply redaction to all string leaves, including nested source metadata.
     def scrub(v):
         if isinstance(v, str): return redact(v)
