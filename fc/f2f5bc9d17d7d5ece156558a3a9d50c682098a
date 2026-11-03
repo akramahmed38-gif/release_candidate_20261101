@@ -1,0 +1,25 @@
+admin_staging/admin_knowledge.py
+  s_d9b3c014c5ea55::t_9427fec92fd625 118-137
+admin_staging/application/src/routes/chatbot.py
+  s_d9b3c014c5ea55::t_be1e9f22457970 456-457,459,464
+admin_staging/knowledge_workspace.html
+  s_d9b3c014c5ea55::t_c6fd3999e4d87b 2
+admin_staging/knowledge_workspace.js
+  s_d9b3c014c5ea55::t_ce512134812e93 40-41
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "fcf2f5bc9d17d7d5ece156558a3a9d50c682098a",
+  "prompts": {},
+  "sessions": {
+    "s_d9b3c014c5ea55": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a162f5-c192-7ef2-8f5c-3b5d4e32f549",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "akramahmed38-gif <akram.ahmed38@gmail.com>"
+    }
+  }
+}
