@@ -1,0 +1,231 @@
+{
+  "suite": "actual authenticated Training admin workspace UI",
+  "independent": false,
+  "native": "NOT RUN",
+  "passed": 6,
+  "total": 6,
+  "rows": [
+    {
+      "name": "approved_mode_blocks_pending",
+      "question": "What is the AXIS opening fee?",
+      "http_status": 200,
+      "http_ms": 271,
+      "expected_fact_ids": [],
+      "actual_fact_ids": [],
+      "passed": true,
+      "answer_status": "unsupported",
+      "complete": false,
+      "answer": "No genuinely approved evidence is eligible in this staging snapshot. To inspect unapproved technical fixtures, use the admin knowledge workspace and explicitly select review-preview records.\nلا توجد معلومات معتمدة مؤهلة في هذه البيئة. معاينة المعلومات غير المعتمدة متاحة من مساحة مراجعة المعرفة فقط.",
+      "citations": [],
+      "backend": "approval_gate_no_model_call"
+    },
+    {
+      "name": "english_preview",
+      "question": "What is the AXIS opening fee?",
+      "http_status": 200,
+      "http_ms": 685,
+      "expected_fact_ids": [
+        "F0010"
+      ],
+      "actual_fact_ids": [
+        "F0010"
+      ],
+      "passed": true,
+      "answer_status": "complete",
+      "complete": true,
+      "answer": "UNAPPROVED ADMIN REVIEW PREVIEW — NOT POLICY / معاينة غير معتمدة\n\nUNAPPROVED TEST FIXTURE — approvals pending.\n\nAXIS Pay / AXIS Wallet:\nOpening the wallet has no subscription fee: 0 EGP.\n\nOnly the selected source references are covered; this is not a complete eligibility checklist or end-to-end service procedure.",
+      "citations": [
+        {
+          "fact_id": "F0010",
+          "service_id": "axis_pay",
+          "source_document": "daily_brief/axis_wallet_sales_guide.pdf",
+          "source_sha256": "198dffbc8ab1ce2887356e91fab9d241ea3f08c35216d2b32a1062e64439abce",
+          "evidence_unit_id": "source-verified-axis-guide-activation-198dffbc8ab1",
+          "unit_text_sha256": "779db86d8e0f6b628bf7a5a5da67273da01490af86a8137ec6cabcb0a525774b",
+          "locator": {
+            "type": "page",
+            "page": "1",
+            "line_start": null,
+            "line_end": null,
+            "source_segments": null
+          },
+          "test_only": true
+        }
+      ],
+      "backend": "local_Core_BM25_existing_candidate",
+      "guard_wait_ms": 0.14229999214876443
+    },
+    {
+      "name": "arabic_preview",
+      "question": "رسوم سحب QNB من ATM كام؟",
+      "http_status": 200,
+      "http_ms": 706,
+      "expected_fact_ids": [
+        "F0076"
+      ],
+      "actual_fact_ids": [
+        "F0076"
+      ],
+      "passed": true,
+      "answer_status": "complete",
+      "complete": true,
+      "answer": "UNAPPROVED ADMIN REVIEW PREVIEW — NOT POLICY / معاينة غير معتمدة\n\nاختبار معزول غير معتمد؛ الموافقات معلقة.\n\nQNB Wallet:\nمحفظة QNB Wallet — السحب النقدي من ATM: 1% من المبلغ بحد أدنى 4 جنيه.\n\nالإجابة محددة بالمراجع المتاحة، وليست قائمة كاملة بشروط الفتح أو إجراءات الخدمة.",
+      "citations": [
+        {
+          "fact_id": "F0076",
+          "service_id": "qnb_wallet",
+          "source_document": "material/Training_Material/resource/Wallets محافظ/QNB Wallet/Material/1-Qnb Material.pdf",
+          "source_sha256": "767685d7f1a59e0b1d730613dfef5a53b0ce8e8eb6bb6ad064cb94833e7ef61e",
+          "evidence_unit_id": "source-reviewed-qnb-atm-fee-767685d7f1a5",
+          "unit_text_sha256": "d1bf791cf6a9e91c3a8d4b0cade169e6544289977a09b6299b3618f83bebb4ae",
+          "locator": {
+            "type": "page",
+            "page": "4",
+            "line_start": null,
+            "line_end": null,
+            "source_segments": null
+          },
+          "test_only": true
+        }
+      ],
+      "backend": "local_Core_BM25_existing_candidate",
+      "guard_wait_ms": 0.1740000006975606
+    },
+    {
+      "name": "deposit_channel_comparison",
+      "question": "Compare AXIS deposit fees at ATMs and Fawry Plus.",
+      "http_status": 200,
+      "http_ms": 1336,
+      "expected_fact_ids": [
+        "F0001",
+        "F0002"
+      ],
+      "actual_fact_ids": [
+        "F0001",
+        "F0002"
+      ],
+      "passed": true,
+      "answer_status": "complete",
+      "complete": true,
+      "answer": "UNAPPROVED ADMIN REVIEW PREVIEW — NOT POLICY / معاينة غير معتمدة\n\nUNAPPROVED TEST FIXTURE — approvals pending.\n\nAXIS Pay / AXIS Wallet:\nDeposits through ATMs are free.\nDeposits through Fawry Plus cost 1% of the deposited amount.\n\nOnly the selected source references are covered; this is not a complete eligibility checklist or end-to-end service procedure.",
+      "citations": [
+        {
+          "fact_id": "F0001",
+          "service_id": "axis_pay",
+          "source_document": "KnowledgeBase/Articles/Wallets_ART.md",
+          "source_sha256": "5e5ffd50f6edd59331690c626731fcb4496a916513174538c871cc606c5d62bb",
+          "evidence_unit_id": "KU-ecf4b4d879f5c563",
+          "unit_text_sha256": "5ba206d5bdbab2a16e36ffc9e8caf5dc7b6858c028ef4fb8f4795818c5f43a61",
+          "locator": {
+            "type": "lines",
+            "page": null,
+            "line_start": 214,
+            "line_end": 221,
+            "source_segments": null,
+            "exact_assertion_lines": [
+              216
+            ]
+          },
+          "test_only": true
+        },
+        {
+          "fact_id": "F0002",
+          "service_id": "axis_pay",
+          "source_document": "KnowledgeBase/Articles/Wallets_ART.md",
+          "source_sha256": "5e5ffd50f6edd59331690c626731fcb4496a916513174538c871cc606c5d62bb",
+          "evidence_unit_id": "KU-ecf4b4d879f5c563",
+          "unit_text_sha256": "5ba206d5bdbab2a16e36ffc9e8caf5dc7b6858c028ef4fb8f4795818c5f43a61",
+          "locator": {
+            "type": "lines",
+            "page": null,
+            "line_start": 214,
+            "line_end": 221,
+            "source_segments": null,
+            "exact_assertion_lines": [
+              217
+            ]
+          },
+          "test_only": true
+        }
+      ],
+      "backend": "local_Core_BM25_existing_candidate",
+      "guard_wait_ms": 0.27889999910257757
+    },
+    {
+      "name": "unselected_funding_held",
+      "question": "AXIS opening fee and minimum initial deposit",
+      "http_status": 200,
+      "http_ms": 1249,
+      "expected_fact_ids": [
+        "F0010"
+      ],
+      "actual_fact_ids": [
+        "F0010"
+      ],
+      "passed": true,
+      "answer_status": "supported_partial",
+      "complete": false,
+      "answer": "UNAPPROVED ADMIN REVIEW PREVIEW — NOT POLICY / معاينة غير معتمدة\n\nUNAPPROVED TEST FIXTURE — approvals pending.\n\nAXIS Pay / AXIS Wallet:\nOpening the wallet has no subscription fee: 0 EGP.\n\nUnavailable or held: AXIS Pay / AXIS Wallet / activate\n\nOnly the selected source references are covered; this is not a complete eligibility checklist or end-to-end service procedure.\n\nSome requested parts could not be verified.",
+      "citations": [
+        {
+          "fact_id": "F0010",
+          "service_id": "axis_pay",
+          "source_document": "daily_brief/axis_wallet_sales_guide.pdf",
+          "source_sha256": "198dffbc8ab1ce2887356e91fab9d241ea3f08c35216d2b32a1062e64439abce",
+          "evidence_unit_id": "source-verified-axis-guide-activation-198dffbc8ab1",
+          "unit_text_sha256": "779db86d8e0f6b628bf7a5a5da67273da01490af86a8137ec6cabcb0a525774b",
+          "locator": {
+            "type": "page",
+            "page": "1",
+            "line_start": null,
+            "line_end": null,
+            "source_segments": null
+          },
+          "test_only": true
+        }
+      ],
+      "backend": "local_Core_BM25_existing_candidate",
+      "guard_wait_ms": 0.5133999948156998
+    },
+    {
+      "name": "adib_source_bound",
+      "question": "What is the ADIB remittance cash-out service code?",
+      "http_status": 200,
+      "http_ms": 943,
+      "expected_fact_ids": [
+        "F0036"
+      ],
+      "actual_fact_ids": [
+        "F0036"
+      ],
+      "passed": true,
+      "answer_status": "complete",
+      "complete": true,
+      "answer": "UNAPPROVED ADMIN REVIEW PREVIEW — NOT POLICY / معاينة غير معتمدة\n\nUNAPPROVED TEST FIXTURE — approvals pending.\n\nADIB Remittance / حوالات أبوظبي:\nThe ADIB remittance cash-out service code is 73157.\n\nOnly the selected source references are covered; this is not a complete eligibility checklist or end-to-end service procedure.",
+      "citations": [
+        {
+          "fact_id": "F0036",
+          "service_id": "adib_remittance",
+          "source_document": "KnowledgeBase/Articles/7wala_bank_abozabii_ART.md",
+          "source_sha256": "3c3ed10d91b5820d3b5d55aaf37f4f29425449c479b989b72c30163d4ccae090",
+          "evidence_unit_id": "KU-8d04194080502ab2",
+          "unit_text_sha256": "db29f582f9479a7924887a476f0705343a111251292e50e9593f6ab78b6692f1",
+          "locator": {
+            "type": "lines",
+            "page": null,
+            "line_start": 341,
+            "line_end": 341,
+            "source_segments": null,
+            "exact_assertion_lines": [
+              341
+            ]
+          },
+          "test_only": true
+        }
+      ],
+      "backend": "local_Core_BM25_existing_candidate",
+      "guard_wait_ms": 0.22200000239536166
+    }
+  ],
+  "runtime_commit": "1c87030"
+}

@@ -12,6 +12,8 @@ if ($LASTEXITCODE -ne 0) { throw 'Cannot secure private staging state.' }
 $runningFile = Join-Path $stageRoot 'RUNNING.json'
 if (Test-Path -LiteralPath $runningFile) {
     $running = Get-Content -LiteralPath $runningFile -Raw | ConvertFrom-Json
+    $expectedScript = [System.IO.Path]::GetFullPath((Join-Path $stageRoot 'run_admin.py'))
+    if ($running.environment -ne 'isolated_admin_staging' -or $running.script -ne $expectedScript -or $running.url -ne "http://127.0.0.1:${Port}" -or $running.run_id -notmatch '^[a-f0-9]{32}$') { throw 'Existing staging receipt ownership mismatch.' }
     $existing = Get-Process -Id $running.pid -ErrorAction SilentlyContinue
     if ($existing) {
         $health = Invoke-RestMethod -Uri ($running.url + '/health') -TimeoutSec 3
@@ -19,7 +21,14 @@ if (Test-Path -LiteralPath $runningFile) {
         Write-Output ('Existing isolated admin: ' + $running.url)
         return
     }
-    throw 'Stale running receipt requires inspection; no process was replaced.'
+    # A workstation restart removes the process but preserves its receipt.
+    # Archive that exact validated receipt; never kill a process or reset state.
+    $archiveRoot = Join-Path $stageRoot 'state\stale_receipts'
+    New-Item -ItemType Directory -Path $archiveRoot -Force | Out-Null
+    $archivePath = [System.IO.Path]::GetFullPath((Join-Path $archiveRoot ($running.run_id + '_' + [guid]::NewGuid().ToString('N') + '.json')))
+    if (-not $archivePath.StartsWith([System.IO.Path]::GetFullPath($stageRoot) + '\', [System.StringComparison]::OrdinalIgnoreCase)) { throw 'Receipt archive escaped staging.' }
+    Move-Item -LiteralPath $runningFile -Destination $archivePath
+    Write-Output 'Archived a stopped staging receipt; retained account and knowledge state.'
 }
 $listener = [System.Net.Sockets.TcpListener]::new([System.Net.IPAddress]::Loopback, $Port)
 try { $listener.Start() } finally { $listener.Stop() }

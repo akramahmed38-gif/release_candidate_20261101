@@ -1,0 +1,13 @@
+{
+  "commit": "1c87030",
+  "suite": "existing authenticated React floating chatbot",
+  "question": "عمولة السحب اكسس باي",
+  "http_status": 200,
+  "answer_status": "unsupported",
+  "backend": "approval_gate_no_model_call",
+  "supported_fact_ids": [],
+  "complete": false,
+  "busy_error_visible": false,
+  "passed": true,
+  "meaning": "The disconnected-sidecar busy error is repaired. Approved-only mode truthfully holds pending evidence; this is not a successful business answer or native validation."
+}
