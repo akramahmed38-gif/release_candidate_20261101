@@ -1,0 +1,28 @@
+admin_staging/FLOATING_WIDGET_UAT.json
+  s_d9b3c014c5ea55::t_07191aaa115753 1-13
+admin_staging/WORKSPACE_BROWSER_UAT.json
+  s_d9b3c014c5ea55::t_82607256c892ed 1-231
+START_ADMIN_TEST.ps1
+  s_d9b3c014c5ea55::t_52624252b5d8dc 15-16,24-31
+admin_staging/WORKSPACE_UAT_FIRST_ATTEMPT.json
+  s_d9b3c014c5ea55::t_41e7f0e1e52295 1-15
+admin_staging/run_integrated_regression.py
+  s_d9b3c014c5ea55::t_07191aaa115753 1-33,35-49,57-63,65-68
+  s_d9b3c014c5ea55::t_52624252b5d8dc 34,50-56,64
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "ba0e2f68e5a1d03a50442c119e68e667074a5770",
+  "prompts": {},
+  "sessions": {
+    "s_d9b3c014c5ea55": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a162f5-c192-7ef2-8f5c-3b5d4e32f549",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "akramahmed38-gif <akram.ahmed38@gmail.com>"
+    }
+  }
+}
