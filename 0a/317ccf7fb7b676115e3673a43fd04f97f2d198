@@ -1,0 +1,25 @@
+admin_staging/engine_worker.py
+  s_d9b3c014c5ea55::t_fb8e2fd1d795c5 41,44-46,78-79
+admin_staging/knowledge_workspace.js
+  s_d9b3c014c5ea55::t_9d88b3e01e2ea7 9
+source/candidate/candidate.py
+  s_d9b3c014c5ea55::t_83fe6c83c432dd 1-238
+source/candidate/final_response.py
+  s_d9b3c014c5ea55::t_60a838701d90c6 1-79
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "0a317ccf7fb7b676115e3673a43fd04f97f2d198",
+  "prompts": {},
+  "sessions": {
+    "s_d9b3c014c5ea55": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a162f5-c192-7ef2-8f5c-3b5d4e32f549",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "akramahmed38-gif <akram.ahmed38@gmail.com>"
+    }
+  }
+}
