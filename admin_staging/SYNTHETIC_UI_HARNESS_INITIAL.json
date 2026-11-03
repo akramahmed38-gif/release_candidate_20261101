@@ -1,0 +1,14 @@
+{
+  "status": "HARNESS_INITIALIZATION_ERROR",
+  "application_actions_executed": 0,
+  "reason": "Browser tool VM does not allow dynamic import of node:crypto. Use browser WebCrypto and native synthetic File input instead; candidate unchanged.",
+  "actual": {
+    "content": [
+      {
+        "type": "text",
+        "text": "### Error\nTypeError [ERR_VM_DYNAMIC_IMPORT_CALLBACK_MISSING]: A dynamic import callback was not specified."
+      }
+    ],
+    "isError": true
+  }
+}

@@ -1,0 +1,502 @@
+{
+  "commit": "495bf56",
+  "suite": "actual admin synthetic lifecycle UI",
+  "independent": false,
+  "free_form_understanding_evaluated": false,
+  "passed": 39,
+  "total": 40,
+  "rows": [
+    {
+      "name": "ingest_UI Alpha",
+      "passed": true,
+      "namespace": "syn-2891e54a3df24b2baef23612b7441ac8",
+      "revision": 1,
+      "source_sha256": "343ae036454d797a0a4d758567cb3751918f94d1ad5b05fef94370eb7c9d4ee3",
+      "http_status": 200
+    },
+    {
+      "name": "publish_simulation",
+      "passed": true,
+      "namespace": "syn-2891e54a3df24b2baef23612b7441ac8",
+      "http_status": 409,
+      "detail": "Both exact-revision simulated decisions required"
+    },
+    {
+      "name": "submit",
+      "passed": true,
+      "namespace": "syn-2891e54a3df24b2baef23612b7441ac8",
+      "http_status": 200,
+      "state": "in_review"
+    },
+    {
+      "name": "reject",
+      "passed": true,
+      "namespace": "syn-2891e54a3df24b2baef23612b7441ac8",
+      "http_status": 200,
+      "state": "rejected"
+    },
+    {
+      "name": "replace_UI Alpha revised",
+      "passed": true,
+      "namespace": "syn-2891e54a3df24b2baef23612b7441ac8",
+      "revision": 2,
+      "source_sha256": "b6b3555a78a5d4d7a62d1df3c7bbdc6fcc544f8172744acfea0452b9342f40b7",
+      "http_status": 200
+    },
+    {
+      "name": "submit",
+      "passed": true,
+      "namespace": "syn-2891e54a3df24b2baef23612b7441ac8",
+      "http_status": 200,
+      "state": "in_review"
+    },
+    {
+      "name": "simulate_fidelity",
+      "passed": true,
+      "namespace": "syn-2891e54a3df24b2baef23612b7441ac8",
+      "http_status": 200,
+      "state": "in_review"
+    },
+    {
+      "name": "simulate_currentness",
+      "passed": true,
+      "namespace": "syn-2891e54a3df24b2baef23612b7441ac8",
+      "http_status": 200,
+      "state": "in_review"
+    },
+    {
+      "name": "publish_simulation",
+      "passed": true,
+      "namespace": "syn-2891e54a3df24b2baef23612b7441ac8",
+      "http_status": 200,
+      "state": "published_simulation"
+    },
+    {
+      "name": "field_preview_en",
+      "passed": true,
+      "namespace": "syn-2891e54a3df24b2baef23612b7441ac8",
+      "actual": {
+        "mode": "synthetic_workflow_test",
+        "free_form_understanding_evaluated": false,
+        "requested_scope": {
+          "namespace": "syn-2891e54a3df24b2baef23612b7441ac8",
+          "field": "marker",
+          "language": "en"
+        },
+        "normal_runtime_eligible": false,
+        "real_policy_approval": false,
+        "complete": true,
+        "answer_status": "complete",
+        "gap": null,
+        "answer": "SYNTHETIC WORKFLOW SIMULATION — NOT FAWRY POLICY. marker: SYN-ALPHA-2",
+        "citations": [
+          {
+            "namespace": "syn-2891e54a3df24b2baef23612b7441ac8",
+            "revision": 2,
+            "source_sha256": "b6b3555a78a5d4d7a62d1df3c7bbdc6fcc544f8172744acfea0452b9342f40b7",
+            "field": "marker",
+            "literal": "SYN-ALPHA-2",
+            "simulated": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "ingest_UI Beta",
+      "passed": true,
+      "namespace": "syn-95ba1475fc91433abcbbdcab70a49bf0",
+      "revision": 1,
+      "source_sha256": "ec73035f0adf894f2761084b06f5888e0aab22f76376d834eb828eec34fda373",
+      "http_status": 200
+    },
+    {
+      "name": "submit",
+      "passed": true,
+      "namespace": "syn-95ba1475fc91433abcbbdcab70a49bf0",
+      "http_status": 200,
+      "state": "in_review"
+    },
+    {
+      "name": "simulate_fidelity",
+      "passed": true,
+      "namespace": "syn-95ba1475fc91433abcbbdcab70a49bf0",
+      "http_status": 200,
+      "state": "in_review"
+    },
+    {
+      "name": "simulate_currentness",
+      "passed": true,
+      "namespace": "syn-95ba1475fc91433abcbbdcab70a49bf0",
+      "http_status": 200,
+      "state": "in_review"
+    },
+    {
+      "name": "publish_simulation",
+      "passed": true,
+      "namespace": "syn-95ba1475fc91433abcbbdcab70a49bf0",
+      "http_status": 200,
+      "state": "published_simulation"
+    },
+    {
+      "name": "field_preview_en",
+      "passed": true,
+      "namespace": "syn-95ba1475fc91433abcbbdcab70a49bf0",
+      "actual": {
+        "mode": "synthetic_workflow_test",
+        "free_form_understanding_evaluated": false,
+        "requested_scope": {
+          "namespace": "syn-95ba1475fc91433abcbbdcab70a49bf0",
+          "field": "marker",
+          "language": "en"
+        },
+        "normal_runtime_eligible": false,
+        "real_policy_approval": false,
+        "complete": true,
+        "answer_status": "complete",
+        "gap": null,
+        "answer": "SYNTHETIC WORKFLOW SIMULATION — NOT FAWRY POLICY. marker: SYN-BETA",
+        "citations": [
+          {
+            "namespace": "syn-95ba1475fc91433abcbbdcab70a49bf0",
+            "revision": 1,
+            "source_sha256": "ec73035f0adf894f2761084b06f5888e0aab22f76376d834eb828eec34fda373",
+            "field": "marker",
+            "literal": "SYN-BETA",
+            "simulated": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "tamper_source",
+      "passed": true,
+      "namespace": "syn-2891e54a3df24b2baef23612b7441ac8",
+      "http_status": 200,
+      "state": "published_simulation"
+    },
+    {
+      "name": "field_preview_en",
+      "passed": true,
+      "namespace": "syn-2891e54a3df24b2baef23612b7441ac8",
+      "actual": {
+        "mode": "synthetic_workflow_test",
+        "free_form_understanding_evaluated": false,
+        "requested_scope": {
+          "namespace": "syn-2891e54a3df24b2baef23612b7441ac8",
+          "field": "marker",
+          "language": "en"
+        },
+        "normal_runtime_eligible": false,
+        "real_policy_approval": false,
+        "complete": false,
+        "answer_status": "unsupported",
+        "gap": "source_hash_changed",
+        "answer": "SYNTHETIC WORKFLOW SIMULATION — NOT FAWRY POLICY. source_hash_changed",
+        "citations": []
+      }
+    },
+    {
+      "name": "field_preview_en",
+      "passed": true,
+      "namespace": "syn-95ba1475fc91433abcbbdcab70a49bf0",
+      "actual": {
+        "mode": "synthetic_workflow_test",
+        "free_form_understanding_evaluated": false,
+        "requested_scope": {
+          "namespace": "syn-95ba1475fc91433abcbbdcab70a49bf0",
+          "field": "marker",
+          "language": "en"
+        },
+        "normal_runtime_eligible": false,
+        "real_policy_approval": false,
+        "complete": true,
+        "answer_status": "complete",
+        "gap": null,
+        "answer": "SYNTHETIC WORKFLOW SIMULATION — NOT FAWRY POLICY. marker: SYN-BETA",
+        "citations": [
+          {
+            "namespace": "syn-95ba1475fc91433abcbbdcab70a49bf0",
+            "revision": 1,
+            "source_sha256": "ec73035f0adf894f2761084b06f5888e0aab22f76376d834eb828eec34fda373",
+            "field": "marker",
+            "literal": "SYN-BETA",
+            "simulated": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "replace_UI Alpha replacement",
+      "passed": true,
+      "namespace": "syn-2891e54a3df24b2baef23612b7441ac8",
+      "revision": 3,
+      "source_sha256": "5ce35fc43cdccae3adb56ff17573fde2e0a92c934a06cf7b8d6bfd78abbc2054",
+      "http_status": 200
+    },
+    {
+      "name": "field_preview_en",
+      "passed": true,
+      "namespace": "syn-2891e54a3df24b2baef23612b7441ac8",
+      "actual": {
+        "mode": "synthetic_workflow_test",
+        "free_form_understanding_evaluated": false,
+        "requested_scope": {
+          "namespace": "syn-2891e54a3df24b2baef23612b7441ac8",
+          "field": "marker",
+          "language": "en"
+        },
+        "normal_runtime_eligible": false,
+        "real_policy_approval": false,
+        "complete": false,
+        "answer_status": "unsupported",
+        "gap": "revision_not_published_simulation",
+        "answer": "SYNTHETIC WORKFLOW SIMULATION — NOT FAWRY POLICY. revision_not_published_simulation",
+        "citations": []
+      }
+    },
+    {
+      "name": "publish_simulation",
+      "passed": true,
+      "namespace": "syn-2891e54a3df24b2baef23612b7441ac8",
+      "http_status": 409,
+      "detail": "Both exact-revision simulated decisions required"
+    },
+    {
+      "name": "submit",
+      "passed": true,
+      "namespace": "syn-2891e54a3df24b2baef23612b7441ac8",
+      "http_status": 200,
+      "state": "in_review"
+    },
+    {
+      "name": "simulate_fidelity",
+      "passed": true,
+      "namespace": "syn-2891e54a3df24b2baef23612b7441ac8",
+      "http_status": 200,
+      "state": "in_review"
+    },
+    {
+      "name": "simulate_currentness",
+      "passed": true,
+      "namespace": "syn-2891e54a3df24b2baef23612b7441ac8",
+      "http_status": 200,
+      "state": "in_review"
+    },
+    {
+      "name": "publish_simulation",
+      "passed": true,
+      "namespace": "syn-2891e54a3df24b2baef23612b7441ac8",
+      "http_status": 200,
+      "state": "published_simulation"
+    },
+    {
+      "name": "field_preview_en",
+      "passed": true,
+      "namespace": "syn-2891e54a3df24b2baef23612b7441ac8",
+      "actual": {
+        "mode": "synthetic_workflow_test",
+        "free_form_understanding_evaluated": false,
+        "requested_scope": {
+          "namespace": "syn-2891e54a3df24b2baef23612b7441ac8",
+          "field": "marker",
+          "language": "en"
+        },
+        "normal_runtime_eligible": false,
+        "real_policy_approval": false,
+        "complete": true,
+        "answer_status": "complete",
+        "gap": null,
+        "answer": "SYNTHETIC WORKFLOW SIMULATION — NOT FAWRY POLICY. marker: SYN-ALPHA-3",
+        "citations": [
+          {
+            "namespace": "syn-2891e54a3df24b2baef23612b7441ac8",
+            "revision": 3,
+            "source_sha256": "5ce35fc43cdccae3adb56ff17573fde2e0a92c934a06cf7b8d6bfd78abbc2054",
+            "field": "marker",
+            "literal": "SYN-ALPHA-3",
+            "simulated": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "revoke",
+      "passed": true,
+      "namespace": "syn-2891e54a3df24b2baef23612b7441ac8",
+      "http_status": 200,
+      "state": "revoked"
+    },
+    {
+      "name": "field_preview_en",
+      "passed": true,
+      "namespace": "syn-2891e54a3df24b2baef23612b7441ac8",
+      "actual": {
+        "mode": "synthetic_workflow_test",
+        "free_form_understanding_evaluated": false,
+        "requested_scope": {
+          "namespace": "syn-2891e54a3df24b2baef23612b7441ac8",
+          "field": "marker",
+          "language": "en"
+        },
+        "normal_runtime_eligible": false,
+        "real_policy_approval": false,
+        "complete": false,
+        "answer_status": "unsupported",
+        "gap": "revision_not_published_simulation",
+        "answer": "SYNTHETIC WORKFLOW SIMULATION — NOT FAWRY POLICY. revision_not_published_simulation",
+        "citations": []
+      }
+    },
+    {
+      "name": "field_preview_en",
+      "passed": true,
+      "namespace": "syn-95ba1475fc91433abcbbdcab70a49bf0",
+      "actual": {
+        "mode": "synthetic_workflow_test",
+        "free_form_understanding_evaluated": false,
+        "requested_scope": {
+          "namespace": "syn-95ba1475fc91433abcbbdcab70a49bf0",
+          "field": "marker",
+          "language": "en"
+        },
+        "normal_runtime_eligible": false,
+        "real_policy_approval": false,
+        "complete": true,
+        "answer_status": "complete",
+        "gap": null,
+        "answer": "SYNTHETIC WORKFLOW SIMULATION — NOT FAWRY POLICY. marker: SYN-BETA",
+        "citations": [
+          {
+            "namespace": "syn-95ba1475fc91433abcbbdcab70a49bf0",
+            "revision": 1,
+            "source_sha256": "ec73035f0adf894f2761084b06f5888e0aab22f76376d834eb828eec34fda373",
+            "field": "marker",
+            "literal": "SYN-BETA",
+            "simulated": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "ingest_UI missing English",
+      "passed": true,
+      "namespace": "syn-d5e6a545a4fd42afa87a8bce1c805a1e",
+      "revision": 1,
+      "source_sha256": "dbaae31fe5869a69689e8b0be343e6a9d7cdc011cd029be33a78dc4c466bc2f9",
+      "http_status": 200
+    },
+    {
+      "name": "submit",
+      "passed": true,
+      "namespace": "syn-d5e6a545a4fd42afa87a8bce1c805a1e",
+      "http_status": 200,
+      "state": "in_review"
+    },
+    {
+      "name": "simulate_fidelity",
+      "passed": true,
+      "namespace": "syn-d5e6a545a4fd42afa87a8bce1c805a1e",
+      "http_status": 200,
+      "state": "in_review"
+    },
+    {
+      "name": "simulate_currentness",
+      "passed": true,
+      "namespace": "syn-d5e6a545a4fd42afa87a8bce1c805a1e",
+      "http_status": 200,
+      "state": "in_review"
+    },
+    {
+      "name": "publish_simulation",
+      "passed": true,
+      "namespace": "syn-d5e6a545a4fd42afa87a8bce1c805a1e",
+      "http_status": 200,
+      "state": "published_simulation"
+    },
+    {
+      "name": "field_preview_ar",
+      "passed": true,
+      "namespace": "syn-d5e6a545a4fd42afa87a8bce1c805a1e",
+      "actual": {
+        "mode": "synthetic_workflow_test",
+        "free_form_understanding_evaluated": false,
+        "requested_scope": {
+          "namespace": "syn-d5e6a545a4fd42afa87a8bce1c805a1e",
+          "field": "marker",
+          "language": "ar"
+        },
+        "normal_runtime_eligible": false,
+        "real_policy_approval": false,
+        "complete": true,
+        "answer_status": "complete",
+        "gap": null,
+        "answer": "SYNTHETIC WORKFLOW SIMULATION — NOT FAWRY POLICY. marker: SYN-AR-ONLY",
+        "citations": [
+          {
+            "namespace": "syn-d5e6a545a4fd42afa87a8bce1c805a1e",
+            "revision": 1,
+            "source_sha256": "dbaae31fe5869a69689e8b0be343e6a9d7cdc011cd029be33a78dc4c466bc2f9",
+            "field": "marker",
+            "literal": "SYN-AR-ONLY",
+            "simulated": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "field_preview_en",
+      "passed": true,
+      "namespace": "syn-d5e6a545a4fd42afa87a8bce1c805a1e",
+      "actual": {
+        "mode": "synthetic_workflow_test",
+        "free_form_understanding_evaluated": false,
+        "requested_scope": {
+          "namespace": "syn-d5e6a545a4fd42afa87a8bce1c805a1e",
+          "field": "marker",
+          "language": "en"
+        },
+        "normal_runtime_eligible": false,
+        "real_policy_approval": false,
+        "complete": false,
+        "answer_status": "unsupported",
+        "gap": "missing_language_view",
+        "answer": "SYNTHETIC WORKFLOW SIMULATION — NOT FAWRY POLICY. missing_language_view",
+        "citations": []
+      }
+    },
+    {
+      "name": "delete_source",
+      "passed": true,
+      "namespace": "syn-95ba1475fc91433abcbbdcab70a49bf0",
+      "http_status": 200,
+      "state": "published_simulation"
+    },
+    {
+      "name": "field_preview_en",
+      "passed": true,
+      "namespace": "syn-95ba1475fc91433abcbbdcab70a49bf0",
+      "actual": {
+        "mode": "synthetic_workflow_test",
+        "free_form_understanding_evaluated": false,
+        "requested_scope": {
+          "namespace": "syn-95ba1475fc91433abcbbdcab70a49bf0",
+          "field": "marker",
+          "language": "en"
+        },
+        "normal_runtime_eligible": false,
+        "real_policy_approval": false,
+        "complete": false,
+        "answer_status": "unsupported",
+        "gap": "source_missing",
+        "answer": "SYNTHETIC WORKFLOW SIMULATION — NOT FAWRY POLICY. source_missing",
+        "citations": []
+      }
+    },
+    {
+      "name": "browser_execution_error",
+      "passed": false,
+      "error_type": "TimeoutError",
+      "error": "page.waitForResponse: Timeout 30000ms exceeded while waiting for event \"response\""
+    }
+  ]
+}
