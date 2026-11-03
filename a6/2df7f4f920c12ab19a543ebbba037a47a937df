@@ -1,0 +1,25 @@
+admin_staging/application/chatbot/vector_store.py
+  s_d9b3c014c5ea55::t_ae7364383e5e75 17-21
+admin_staging/prepared_corpus_store.py
+  s_d9b3c014c5ea55::t_b5877c798bcc10 1-25
+answer_campaign/export_harness_results.py
+  s_d9b3c014c5ea55::t_95c3c6de01d42d 1-68
+environment_validation/probe_existing_corpus_integration.py
+  s_d9b3c014c5ea55::t_05b82fdd47836f 1-43
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "a62df7f4f920c12ab19a543ebbba037a47a937df",
+  "prompts": {},
+  "sessions": {
+    "s_d9b3c014c5ea55": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a162f5-c192-7ef2-8f5c-3b5d4e32f549",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "akramahmed38-gif <akram.ahmed38@gmail.com>"
+    }
+  }
+}
