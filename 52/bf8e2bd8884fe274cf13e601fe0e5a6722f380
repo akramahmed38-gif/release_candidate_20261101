@@ -1,0 +1,21 @@
+admin_staging/answer_feedback.py
+  s_d9b3c014c5ea55::t_52be88e81e4377 51-60
+admin_staging/test_answer_feedback.py
+  s_d9b3c014c5ea55::t_52be88e81e4377 72-89
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "52bf8e2bd8884fe274cf13e601fe0e5a6722f380",
+  "prompts": {},
+  "sessions": {
+    "s_d9b3c014c5ea55": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a162f5-c192-7ef2-8f5c-3b5d4e32f549",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "akramahmed38-gif <akram.ahmed38@gmail.com>"
+    }
+  }
+}
