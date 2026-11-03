@@ -108,5 +108,5 @@ if __name__=='__main__':
     progress('binding_loopback_without_dns')
     server=LocalHTTPServer(('127.0.0.1',0),Handler)
     progress('loopback_ready')
-    (ROOT/'.private/engine_endpoint.json').write_text(json.dumps({'pid':os.getpid(),'parent_pid':os.getppid(),'launch_id':os.environ['STAGING_ENGINE_LAUNCH_ID'],'port':server.server_port,'backend':'Core_BM25','native':'NOT RUN'}),encoding='utf-8')
+    (ROOT/'.private/engine_endpoint.json').write_text(json.dumps({'pid':os.getpid(),'parent_pid':os.getppid(),'launch_id':os.environ['STAGING_ENGINE_LAUNCH_ID'],'port':server.server_port,'backend':'Core_BM25','native':'NOT RUN','workspace_id':WORK.name}),encoding='utf-8')
     server.serve_forever()
