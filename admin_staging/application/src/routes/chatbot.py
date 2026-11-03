@@ -55,6 +55,8 @@ except Exception:  # pragma: no cover - import path and deps depend on app entry
         def decode_token(token: str, expected_token_type: str | None = None) -> dict[str, Any]:
             raise RuntimeError("Authentication utilities are unavailable.")
 
+from admin_knowledge import admin as staging_admin
+
 logger = logging.getLogger("uvicorn")
 
 chatbot_router = APIRouter(prefix="/api/v1/chatbot", tags=["api_v1", "chatbot"])
@@ -412,29 +414,10 @@ async def _sidecar_diagnostics_payload() -> tuple[bool, dict[str, Any], str | No
 
 
 @chatbot_router.get("/diagnostics")
-async def chatbot_diagnostics() -> dict[str, Any]:
-    sidecar_running, sidecar_payload, sidecar_error = await _sidecar_diagnostics_payload()
-    sidecar_python = _sidecar_python_path()
-    sidecar_index = sidecar_payload.get("index_status", {}) if isinstance(sidecar_payload, dict) else {}
-
-    return {
-        "portal_python_executable": sys.executable,
-        "portal_python_version": sys.version,
-        "sidecar_running": sidecar_running,
-        "sidecar_python_executable": sidecar_payload.get("python_executable", str(sidecar_python)),
-        "sidecar_python_version": sidecar_payload.get("python_version") or _read_python_version(sidecar_python),
-        "chroma_status": sidecar_payload.get("chroma_status", {"ok": False, "error": sidecar_error}),
-        "ollama_status": sidecar_payload.get("ollama_status", {"ok": False, "error": sidecar_error}),
-        "indexed_files_count": sidecar_index.get("files_indexed"),
-        "chunks_count": sidecar_index.get("chunks_count"),
-        "source_path": sidecar_payload.get("source_path"),
-        "knowledge_base_path": sidecar_payload.get("knowledge_base_path"),
-        "legacy_material_path": sidecar_payload.get("legacy_material_path"),
-        "materials_path": sidecar_payload.get("materials_path"),
-        "chroma_path": sidecar_payload.get("chroma_path"),
-        "conversation_log_path": sidecar_payload.get("conversation_log_path"),
-        "sidecar_error": sidecar_error,
-    }
+async def chatbot_diagnostics(user=Depends(staging_admin)) -> dict[str, Any]:
+    # Read-only owned-worker probe. Never start a sidecar or inspect credentials.
+    from staging_diagnostics import diagnostics
+    return await run_in_threadpool(diagnostics)
 
 
 @chatbot_router.post("/ask")

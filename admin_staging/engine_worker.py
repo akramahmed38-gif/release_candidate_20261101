@@ -79,6 +79,10 @@ class Handler(BaseHTTPRequestHandler):
     def reply(self,value,status=200):
         body=json.dumps(value,ensure_ascii=False).encode('utf-8')
         self.send_response(status);self.send_header('Content-Type','application/json; charset=utf-8');self.send_header('Content-Length',str(len(body)));self.end_headers();self.wfile.write(body)
+    def do_GET(self):
+        if self.path!='/health':return self.reply({'detail':'Not found'},404)
+        if not hmac.compare_digest(self.headers.get('Authorization',''),'Bearer '+KEY):return self.reply({'detail':'Unauthorized'},401)
+        return self.reply({'ready':True,'backend':'Core_BM25','native':'NOT RUN','launch_id':os.environ['STAGING_ENGINE_LAUNCH_ID']})
     def do_POST(self):
         if self.path!='/ask':return self.reply({'detail':'Not found'},404)
         if not hmac.compare_digest(self.headers.get('Authorization',''),'Bearer '+KEY):return self.reply({'detail':'Unauthorized'},401)
