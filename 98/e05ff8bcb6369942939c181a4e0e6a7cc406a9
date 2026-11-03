@@ -1,0 +1,29 @@
+admin_staging/knowledge_workspace.html
+  s_d9b3c014c5ea55::t_29f96a698dd497 2
+admin_staging/knowledge_workspace.js
+  s_d9b3c014c5ea55::t_da46d1fad3f60f 42-43
+admin_staging/synthetic_restore.py
+  s_d9b3c014c5ea55::t_06be1a8e80f182 1-122
+admin_staging/synthetic_routes.py
+  s_d9b3c014c5ea55::t_c1bb78ac0bd3fb 1-40
+admin_staging/synthetic_store.py
+  s_d9b3c014c5ea55::t_2615755607fad5 1-132
+admin_staging/test_synthetic_restore.py
+  s_d9b3c014c5ea55::t_e624c2a3ff241f 1-107
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "98e05ff8bcb6369942939c181a4e0e6a7cc406a9",
+  "prompts": {},
+  "sessions": {
+    "s_d9b3c014c5ea55": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a162f5-c192-7ef2-8f5c-3b5d4e32f549",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "akramahmed38-gif <akram.ahmed38@gmail.com>"
+    }
+  }
+}
