@@ -1,0 +1,25 @@
+admin_staging/application/src/routes/chatbot.py
+  s_d9b3c014c5ea55::t_08f74c439a2d37 58-59,417-420
+admin_staging/engine_worker.py
+  s_d9b3c014c5ea55::t_9c373b76f48624 1-112
+admin_staging/staging_diagnostics.py
+  s_d9b3c014c5ea55::t_2ace849eb1f0a6 1-23
+admin_staging/test_staging_diagnostics.py
+  s_d9b3c014c5ea55::t_27b526d976544c 1-37
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "042dc59fe0d5a52ee728fd1e09bc77ab2c17cefe",
+  "prompts": {},
+  "sessions": {
+    "s_d9b3c014c5ea55": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a162f5-c192-7ef2-8f5c-3b5d4e32f549",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "akramahmed38-gif <akram.ahmed38@gmail.com>"
+    }
+  }
+}
