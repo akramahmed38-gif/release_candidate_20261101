@@ -1,0 +1,31 @@
+admin_staging/test_synthetic_lifecycle.py
+  s_d9b3c014c5ea55::t_770ba4fd0e06e6 6,16-18
+  s_d9b3c014c5ea55::t_36e0745e738965 52-60
+  s_d9b3c014c5ea55::t_5e5f94e5d08644 1-5,7-15,19-51,61-62
+admin_staging/deploy_synthetic_revision.py
+  s_d9b3c014c5ea55::t_cd41e4190b90e3 1-22
+admin_staging/application/main.py
+  s_d9b3c014c5ea55::t_095bfbc07e1082 199-200
+admin_staging/catalog_store.py
+  s_d9b3c014c5ea55::t_0eac5d6de60f3e 14-18,21-25
+admin_staging/knowledge_workspace.html
+  s_d9b3c014c5ea55::t_0a34dab640177d 2
+admin_staging/knowledge_workspace.js
+  s_d9b3c014c5ea55::t_bc7a189fe83f4e 10-27
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "495bf563b507d441a5ddb940c9b04eae9018de1f",
+  "prompts": {},
+  "sessions": {
+    "s_d9b3c014c5ea55": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a162f5-c192-7ef2-8f5c-3b5d4e32f549",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "akramahmed38-gif <akram.ahmed38@gmail.com>"
+    }
+  }
+}
