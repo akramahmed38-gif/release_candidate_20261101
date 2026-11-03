@@ -18,6 +18,7 @@ def admin(user=Depends(get_current_user)):
 router=APIRouter(dependencies=[Depends(admin)])
 
 def call_engine(payload,actor):
+    if payload.get('knowledge_mode','approved')!='approved' and actor.get('role')!='admin':raise HTTPException(403,'Administrator review access required')
     endpoint=json.loads((ROOT/'.private/engine_endpoint.json').read_text(encoding='utf-8'))
     key=(ROOT/'.private/engine.key').read_text(encoding='ascii')
     identity=actor.get('sub') or actor.get('email') or actor.get('username')
@@ -58,9 +59,19 @@ def records(kind:str,q:str='',service:str='',review_status:str='',language:str='
 @router.get('/api/v1/admin/knowledge-citation/{fact_id}',response_class=HTMLResponse)
 def citation(fact_id:str,version:str):
     import re
-    if not re.fullmatch(r'F\d{4}',fact_id) or not re.fullmatch('[a-f0-9]{64}',version):raise HTTPException(422,'Exact original fact ID and source SHA-256 required')
-    try:fact=get('fact',fact_id,version)
-    except ValueError:raise HTTPException(404,'Registered fact version unavailable') from None
+    if not re.fullmatch(r'(?:F\d{4}|QA-[a-f0-9]{24})',fact_id) or not re.fullmatch('[a-f0-9]{64}',version):raise HTTPException(422,'Exact original fact ID and source SHA-256 required')
+    if fact_id.startswith('QA-'):
+        pointer=json.loads((ROOT/'BENCHMARK_SNAPSHOT_PREPARATION.json').read_text(encoding='utf-8'))
+        snapshot=Path(pointer['path']).resolve()
+        if not snapshot.is_relative_to((ROOT/'state/benchmark_snapshots').resolve()):raise HTTPException(409,'Invalid review snapshot')
+        manifest=json.loads((snapshot/'MANIFEST.json').read_text(encoding='utf-8'));raw=(snapshot/'records.jsonl').read_bytes()
+        if hashlib.sha256(raw).hexdigest()!=manifest['record_file_sha256']:raise HTTPException(409,'Review registry changed')
+        choices=[r for r in map(json.loads,raw.decode('utf-8').splitlines()) if r['record_id']==fact_id and r['source_sha256']==version and not r['hold_reason']]
+        if len(choices)!=1:raise HTTPException(404,'Eligible review reference unavailable')
+        fact={**choices[0],'fact_id':fact_id}
+    else:
+        try:fact=get('fact',fact_id,version)
+        except ValueError:raise HTTPException(404,'Registered fact version unavailable') from None
     try:return render_source(fact)
     except SourcePreviewError as exc:raise HTTPException(exc.status,str(exc)) from None
 

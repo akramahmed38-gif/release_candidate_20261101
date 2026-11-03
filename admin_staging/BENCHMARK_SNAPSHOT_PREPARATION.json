@@ -1,0 +1,121 @@
+{
+  "path": "D:\\FawryChatbotPreparation\\release_candidate_20261101\\admin_staging\\state\\benchmark_snapshots\\6d5df395c26868428a94ff71",
+  "snapshot_id": "6d5df395c26868428a94ff71",
+  "snapshot_digest": "6d5df395c26868428a94ff714b08cc6a22d0bc42d1f56fa6efab11e93db2608b",
+  "mode": "ADMIN_REVIEW_BENCHMARK",
+  "sources": {
+    "KnowledgeBase/QA/7wala_bank_abozabii.md": "f37b9314145366c80c93a62e8eb49e66ce7997545087d7c4bf418af750e7b460",
+    "KnowledgeBase/QA/7wala_bank_cairo.md": "79b01683668efec47863494bd07545c6fa8fcba2d3d7bbc386a3aae20e6d42fa",
+    "KnowledgeBase/QA/7wala_msrf_mot7d.md": "80555b0bb8ccf421dd8fe4c4d7a9d141021670a1554c4bdd0ed1b94d7b5aaefd",
+    "KnowledgeBase/QA/AZIMUT.md": "a68cba111d6ad298ccc258886b085e1790c3af2d5936c7fddc3e04e447d09ddb",
+    "KnowledgeBase/QA/Egypt_trust.md": "6b3908bce974362a6f85b01c9a2bf4c61e51c2cefea5d270cd6a68325936189c",
+    "KnowledgeBase/QA/Fawry_youmy.md": "827e4b5977f520489326c71f94aa2f0423c7b5313dd0f9227ac4ccbaddfb69df",
+    "KnowledgeBase/QA/MICROFINANCE.md": "558c74b9736f1fb4f9f545a115585816078400b26d6cf7d85e0c2943c19b39fc",
+    "KnowledgeBase/QA/Maashy_training.md": "374d914458265fe386359ddb2e13ed25b60b52774e08b75cee8f28c02f87b2ad",
+    "KnowledgeBase/QA/My_Fawry_taqset.md": "7ada824f4d2dde2e68455c353980e097b2b51e611cbaafc1b3fb03193f60aa5e",
+    "KnowledgeBase/QA/Operation.md": "5aa521e4ad69a28b66a6c9ef8014386550d58d5fcb4afdc0717574b1f453d93c",
+    "KnowledgeBase/QA/POS.md": "832e20dc0a64c4006ca5724e666f6cc4e5c444b5d1072091b20d87b92f3eff4b",
+    "KnowledgeBase/QA/POS_Maintenance.md": "38ed4d4b90809488857fac9381a3863168337c0f389e32e065134dc6b8e92398",
+    "KnowledgeBase/QA/QNB_Wallet.md": "f73aa550764dca3bc770b3bd48692c68201ec2978668869dfaa9e8f6e37dfdb2",
+    "KnowledgeBase/QA/Wallets.md": "08d78455091a64a7cb8b7bfcba49a4be86a4d6908c486d80ff61dce77ebd6cbc",
+    "KnowledgeBase/QA/Yellow_Card.md": "dc88e2cdf0eca3da09a782d202c103062babf7fb492dac8cef93a6f51f926599",
+    "KnowledgeBase/QA/blnk.md": "8a8d6a334f2ba0859ed159aca04e147f86044af832acf38c84900caaeb0fbce6",
+    "KnowledgeBase/QA/insurance.md": "f8f4ac9c9a9a02e21a218478d6215ef888dacbdb28063b7ccdbbbc81e4897430",
+    "KnowledgeBase/QA/mogo.md": "5736b33eb384f8354087282ea00c7c773ec9bd642052e5c4255e7bc8a15fe551",
+    "KnowledgeBase/QA/money_felows.md": "daa2a02d036f76c14a849b1989630d910a4ac0f882c8d1f249c49c041480a335",
+    "KnowledgeBase/QA/quality.md": "36d01782aad89633518d7c9775a88981926134adf4e88cabab4d57a303904498"
+  },
+  "records": 552,
+  "usable_pending_records": 530,
+  "held_records": 22,
+  "per_service_pending": {
+    "adib_remittance": 20,
+    "bdc_remittance": 20,
+    "united_bank_remittance": 14,
+    "azimut": 27,
+    "egypt_trust": 13,
+    "fawry_yawmy": 47,
+    "microfinance": 29,
+    "maashy": 40,
+    "fawry_taqseet": 25,
+    "cash_operations": 25,
+    "super_fawry": 25,
+    "pos": 11,
+    "pos_maintenance": 20,
+    "qnb_wallet": 34,
+    "wallets_general": 43,
+    "yellow_card": 34,
+    "blnk": 25,
+    "fawry_insurance": 19,
+    "mogo": 24,
+    "money_fellows": 20,
+    "quality_kyc": 39,
+    "mashreq_neo": 1
+  },
+  "hold_reasons": {
+    "RESTRICTED_CONTENT": 17,
+    "EXISTING_POLICY_REVIEW_HOLD": 1,
+    "CONFLICTING_DUPLICATE_AUTHORED_ID": 4
+  },
+  "gaps": [
+    {
+      "source": "KnowledgeBase/QA/7wala_bank_abozabii.md",
+      "reason": "UNPARSED_SECTION",
+      "section_sha256": "b6d267efe80a3dbcf2f2d67e21d8c15783a2f031427f827d43b6222fe9c4bf02"
+    },
+    {
+      "source": "KnowledgeBase/QA/7wala_bank_cairo.md",
+      "reason": "UNPARSED_SECTION",
+      "section_sha256": "b6d267efe80a3dbcf2f2d67e21d8c15783a2f031427f827d43b6222fe9c4bf02"
+    },
+    {
+      "source": "KnowledgeBase/QA/7wala_msrf_mot7d.md",
+      "reason": "UNPARSED_SECTION",
+      "section_sha256": "b6d267efe80a3dbcf2f2d67e21d8c15783a2f031427f827d43b6222fe9c4bf02"
+    },
+    {
+      "source": "KnowledgeBase/QA/AZIMUT.md",
+      "reason": "UNPARSED_SECTION",
+      "section_sha256": "b6d267efe80a3dbcf2f2d67e21d8c15783a2f031427f827d43b6222fe9c4bf02"
+    },
+    {
+      "source": "KnowledgeBase/QA/Egypt_trust.md",
+      "reason": "UNPARSED_SECTION",
+      "section_sha256": "b6d267efe80a3dbcf2f2d67e21d8c15783a2f031427f827d43b6222fe9c4bf02"
+    },
+    {
+      "source": "KnowledgeBase/QA/Maashy_training.md",
+      "reason": "UNPARSED_SECTION",
+      "section_sha256": "b6d267efe80a3dbcf2f2d67e21d8c15783a2f031427f827d43b6222fe9c4bf02"
+    },
+    {
+      "source": "KnowledgeBase/QA/QNB_Wallet.md",
+      "reason": "UNPARSED_SECTION",
+      "section_sha256": "b6d267efe80a3dbcf2f2d67e21d8c15783a2f031427f827d43b6222fe9c4bf02"
+    },
+    {
+      "source": "KnowledgeBase/QA/blnk.md",
+      "reason": "UNPARSED_SECTION",
+      "section_sha256": "b6d267efe80a3dbcf2f2d67e21d8c15783a2f031427f827d43b6222fe9c4bf02"
+    },
+    {
+      "source": "KnowledgeBase/QA/insurance.md",
+      "reason": "UNPARSED_SECTION",
+      "section_sha256": "b6d267efe80a3dbcf2f2d67e21d8c15783a2f031427f827d43b6222fe9c4bf02"
+    },
+    {
+      "source": "KnowledgeBase/QA/mogo.md",
+      "reason": "UNPARSED_SECTION",
+      "section_sha256": "b6d267efe80a3dbcf2f2d67e21d8c15783a2f031427f827d43b6222fe9c4bf02"
+    }
+  ],
+  "record_file_sha256": "2534a2df8fa85e5522efeb2cba7fa74779e77e66185cb705edc8803b5c0b2a50",
+  "source_parser_sha256": "b3c2738d6e9accdeff907913c5fdbbf7e4a27ebd1b0f01c25238defabc18d842",
+  "safety_module_sha256": "34ae845c0aa311d3a41dfb296b891e45cd829d69bc819100ade45addd50fbdf2",
+  "originals_modified": false,
+  "benchmark_gold_read": false,
+  "new_translations": 0,
+  "new_embeddings": 0,
+  "approvals_created": 0,
+  "english_missing_is_not_approval": true
+}

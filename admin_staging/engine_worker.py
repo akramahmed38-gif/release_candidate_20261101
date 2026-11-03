@@ -28,6 +28,8 @@ ENGINE=CatalogEngine(WORK,test_mode=True)
 progress('engine_initialized')
 KEY=(ROOT/'.private/engine.key').read_text(encoding='ascii')
 LOCK=threading.Lock()
+from source_review import ReviewRegistry
+REVIEW=ReviewRegistry()
 AUTH=WORK/'test_eligibility.json'
 BASE_AUTH=json.loads(AUTH.read_text(encoding='utf-8'))
 
@@ -35,11 +37,25 @@ def answer(data):
     question=str(data.get('question','')).strip()
     if not question or len(question)>4000:raise ValueError('Question length')
     mode=data.get('knowledge_mode','approved')
-    if mode not in {'approved','review_preview'}:raise ValueError('Unsupported knowledge mode')
+    if mode not in {'approved','review_preview','admin_review_benchmark'}:raise ValueError('Unsupported knowledge mode')
     if mode=='approved':
         return {'answer':'No genuinely approved evidence is eligible in this staging snapshot. To inspect unapproved technical fixtures, use the admin knowledge workspace and explicitly select review-preview records.\nلا توجد معلومات معتمدة مؤهلة في هذه البيئة. معاينة المعلومات غير المعتمدة متاحة من مساحة مراجعة المعرفة فقط.',
                 'answer_status':'unsupported','complete':False,'clarification_needed':False,'sources':[],'citations':[],
                 'supported_fact_ids':[],'knowledge_mode':mode,'backend':'approval_gate_no_model_call','normal_runtime_eligible':False,'native_acceptance':'NOT RUN'}
+    if mode=='admin_review_benchmark':
+        if data.get('selected_fact_ids'):raise ValueError('Benchmark mode uses a fixed whole evidence pool, never per-question fact selection')
+        actor=str(data.get('actor_scope',''))
+        if not actor:raise ValueError('Authenticated actor scope required')
+        with LOCK:
+            wait=time.perf_counter()
+            try:BUDGET.wait()
+            except RuntimeError as exc:
+                if str(exc)=='ResourceBudgetUnavailable':raise AdmissionDenied(list(BUDGET.events),(time.perf_counter()-wait)*1000) from None
+                raise
+            waited=(time.perf_counter()-wait)*1000
+            result=REVIEW.ask(ENGINE,question,str(data.get('conversation_id') or uuid.uuid4().hex),actor)
+            result['worker_resource_wait_ms']=waited
+            return result
     selected=data.get('selected_fact_ids',[])
     if not isinstance(selected,list) or not selected or any(not isinstance(x,str) or x not in ENGINE.facts for x in selected):raise ValueError('Explicit existing technical fixture selection required')
     from catalog_store import rows
