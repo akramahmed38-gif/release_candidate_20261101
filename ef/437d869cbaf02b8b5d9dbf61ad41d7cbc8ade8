@@ -1,0 +1,29 @@
+admin_staging/answer_feedback.py
+  s_d9b3c014c5ea55::t_29712386088fe6 1-54,58-99
+  s_d9b3c014c5ea55::t_731a29c8b62184 55-57
+admin_staging/test_answer_feedback.py
+  s_d9b3c014c5ea55::t_00b5ac203ad7c0 1-73
+admin_staging/admin_knowledge.py
+  s_d9b3c014c5ea55::t_731a29c8b62184 6,71-72,75-102
+  s_d9b3c014c5ea55::t_ee2ae55e20e64d 103
+admin_staging/knowledge_workspace.html
+  s_d9b3c014c5ea55::t_b722b00d28de8e 2
+admin_staging/knowledge_workspace.js
+  s_d9b3c014c5ea55::t_ce5160ffdca1be 3,8-9,29-39
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "ef437d869cbaf02b8b5d9dbf61ad41d7cbc8ade8",
+  "prompts": {},
+  "sessions": {
+    "s_d9b3c014c5ea55": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a162f5-c192-7ef2-8f5c-3b5d4e32f549",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "akramahmed38-gif <akram.ahmed38@gmail.com>"
+    }
+  }
+}
