@@ -1,0 +1,21 @@
+source/candidate/final_response.py
+  s_cb6dda5da053bc::t_657a1ea6d2e08e 15-18,68-73
+source/candidate/question_coverage.py
+  s_cb6dda5da053bc::t_62b55de1a61da8 2937-2941,2977
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "0cf9bf9e869f7c0220e0b800dddd239e08ade516",
+  "prompts": {},
+  "sessions": {
+    "s_cb6dda5da053bc": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a19c8e-94a4-7b81-8051-7d6699cc5050",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "akramahmed38-gif <akram.ahmed38@gmail.com>"
+    }
+  }
+}
