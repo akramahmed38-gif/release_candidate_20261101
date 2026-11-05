@@ -348,10 +348,11 @@ class ScopeGraph:
         # Catalog cues must occur in the current clause. A bare canonical
         # nominal head is also an information request when entity masking
         # leaves no competing predicate (e.g. a product followed by "refund").
-        known=set(self.p.adapter)
+        from predicate_ownership import compositional_fallback_exemptions
+        core=compositional_fallback_exemptions()
         for row in self.p.intents:
             iid=row['intent_id']
-            if iid in {'other_or_unknown','permission','explanation'} or self.p.adapter.get(iid,{}).get('topic'):continue
+            if iid in {'other_or_unknown','permission','explanation'} or iid in core:continue
             if iid=='general_service_fee' and out:continue
             # A minimum *fee/charge* is an attribute of the requested tariff,
             # not a second synthetic withdrawal-minimum policy. A minimum

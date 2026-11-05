@@ -1,0 +1,20 @@
+{
+  "schema_version": "predicate_ownership_1",
+  "catalog_fallback_exempt_intents": [
+    "balance_treatment",
+    "branch_condition",
+    "deposit_tariff",
+    "documents",
+    "existing_wallet",
+    "identity",
+    "image_permission",
+    "initial_funding",
+    "opening_fee",
+    "payment",
+    "phone_ownership",
+    "transaction_code",
+    "withdrawal_tariff",
+    "workflow"
+  ],
+  "meaning": "Existing compositional language handlers, not available business evidence. An evidence-topic mapping never implies a language handler."
+}

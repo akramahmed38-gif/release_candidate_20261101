@@ -67,6 +67,21 @@ def _nominal_catalog_rows():
     return json.loads((ROOT/'resources/intents.json').read_text(encoding='utf-8'))['intents']
 
 
+def _mapped_catalog_demands(raw, adapter):
+    # Enumerate current-clause literal cues independently of planner requests.
+    # A new evidence mapping cannot suppress its unimplemented language family.
+    from predicate_ownership import compositional_fallback_exemptions
+    owned=compositional_fallback_exemptions();result={}
+    for row in _nominal_catalog_rows():
+        intent=row['intent_id']
+        if intent in owned or not adapter.get(intent,{}).get('topic'):continue
+        if intent in {'other_or_unknown','permission','explanation'}:continue
+        points=sorted({point for key in ['en_cues','ar_eg_cues','ar_msa_cues','franco_eg_cues']
+                       for cue in row.get(key,[]) if len(tokens(cue))>1 for point in spans(raw,cue)})
+        if points:result[intent]=points
+    return result
+
+
 def _raw_product_context_entity(raw, hit, hits, roles, rules):
     """Apply catalog context rules locally; never discard a whole entity role.
 
@@ -2117,6 +2132,8 @@ def audit_question(question, actual, facts, definition, prior_context=None):
             if set(additional) & {"reprint", "transaction_cancel", "refund", "refund_eligibility"}:
                 goals.pop("workflow", None)
         goals.update(additional)
+        for intent,points in _mapped_catalog_demands(local_mask,adapter).items():
+            goals.setdefault(intent,[]).extend(p for p in points if p not in goals.get(intent,[]))
         record_fields=transaction_reference_spans(local_mask)
         if record_fields:
             goals.setdefault('transaction_reference',record_fields)

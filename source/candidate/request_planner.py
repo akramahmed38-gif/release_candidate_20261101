@@ -78,7 +78,8 @@ class CurrentQueryPlanner:
                     break
         # Other meanings require an explicit multiword cue in the current
         # clause. Similar examples can be considered, never imported as goals.
-        core={k for k,v in self.adapter.items() if v.get('topic')}
+        from predicate_ownership import compositional_fallback_exemptions
+        core=compositional_fallback_exemptions()
         for row in self.intents:
             iid=row['intent_id']
             if iid in core or iid in {'other_or_unknown','permission','explanation','payment'}:continue
