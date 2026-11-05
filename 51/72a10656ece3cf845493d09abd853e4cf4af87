@@ -1,0 +1,27 @@
+source/candidate/predicate_ownership.py
+  s_d9b3c014c5ea55::t_0fa68e0a1a4692 1-15
+source/candidate/question_coverage.py
+  s_d9b3c014c5ea55::t_23cd78dfed5485 1-2986
+source/candidate/request_planner.py
+  s_d9b3c014c5ea55::t_7a9bda236c6b2a 81-82
+source/candidate/resources/predicate_ownership.json
+  s_d9b3c014c5ea55::t_80e626abe4b255 1-20
+source/candidate/scope_graph.py
+  s_d9b3c014c5ea55::t_5ababe665a4bfd 1-1903
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "5172a10656ece3cf845493d09abd853e4cf4af87",
+  "prompts": {},
+  "sessions": {
+    "s_d9b3c014c5ea55": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a162f5-c192-7ef2-8f5c-3b5d4e32f549",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "akramahmed38-gif <akram.ahmed38@gmail.com>"
+    }
+  }
+}
