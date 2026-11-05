@@ -12,6 +12,10 @@ def finalize_response(result, contract):
     coverage=result.get('question_coverage') or {}
     requests=contract.get('requests') or []
     unresolved=deepcopy(contract.get('unresolved_spans') or [])
+    raw_acts=deepcopy(coverage.get('raw_question_act_inventory',{}).get('unresolved_acts') or [])
+    for act in raw_acts:
+        unresolved.append({'kind':'uninterpreted_question_act','span':act['span'],
+                           'basis':'separate_original_question_act_inventory'})
     facts=list(result.get('supported_fact_ids') or [])
     classification=contract.get('task_mode',{}).get('mode')=='interpretation_only'
     reason=result.get('invalidation_reason')
@@ -61,6 +65,12 @@ def finalize_response(result, contract):
     # conservative planner diagnostic. Preserve it in the audit, not as a new
     # clarification demand in an otherwise complete response.
     clarification=[] if status=='complete' else unresolved
+    if raw_acts and not invalid and not violations:
+        # Quote the unanswered part as input, never as a policy assertion.
+        lead=('Additional question not yet interpreted; please clarify: '
+              if result.get('reply_language')=='en' else
+              '\u062c\u0632\u0621 \u0622\u062e\u0631 \u0645\u0646 \u0627\u0644\u0633\u0624\u0627\u0644 \u0644\u0645 \u064a\u062a\u0645 \u062a\u0641\u0633\u064a\u0631\u0647\u061b \u064a\u0631\u062c\u0649 \u062a\u0648\u0636\u064a\u062d\u0647: ')
+        result['answer']=result.get('answer','').rstrip()+'\n\n'+lead+'; '.join('"'+act['span']['text']+'"' for act in raw_acts)
     needs_clarification=status=='clarification_required' or (status=='partial' and bool(clarification))
     legacy={'partial':'supported_partial','clarification_required':'clarify'}.get(status,status)
     result.update(complete=status=='complete',answer_status=legacy,clarification_needed=needs_clarification)

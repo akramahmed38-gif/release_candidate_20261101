@@ -2934,6 +2934,11 @@ def audit_question(question, actual, facts, definition, prior_context=None):
     if missing_ids:
         missing.append({"code": "raw_requested_facts_missing", "fact_ids": sorted(missing_ids)})
     unrelated = emitted - allowed
+    # A supported earlier predicate must not swallow an additional question
+    # whose vocabulary neither lexical interpretation path recognized.
+    from question_act_inventory import audit_question_acts
+    act_inventory = audit_question_acts(question, demands)
+    missing.extend(act_inventory["unresolved_acts"])
     contract = actual.get("evidence_contract")
     convergence = _independent_fulfillment(demands, emitted, actual, facts, definition, adapter)
     can_converge = (convergence["verified"] and not missing and not issues and not conflicts
@@ -2969,6 +2974,7 @@ def audit_question(question, actual, facts, definition, prior_context=None):
         "excluded_fact_ids": sorted(forbidden_emitted),
         "unrelated_fact_ids": sorted(unrelated), "issues": issues,
         "raw_demands": demands, "decision": decision,
+        "raw_question_act_inventory": act_inventory,
         "required_fact_ids": sorted(required), "conflicts": conflicts,
         "raw_quantity_modifiers": scalar_modifiers,
         "raw_context_only": context_only,
