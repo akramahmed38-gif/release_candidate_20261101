@@ -1,6 +1,8 @@
 """Fail-closed guards for the isolated existing HR application process."""
 from pathlib import Path
 import ipaddress,json,os,socket,sys
+from urllib.parse import urlsplit
+from urllib.request import url2pathname
 ROOT=Path(__file__).resolve().parent
 STATE=ROOT/'state'
 class IsolationViolation(RuntimeError):pass
@@ -24,6 +26,16 @@ def validate_settings(settings):
     if os.environ.get('FAWRY_ISOLATED_ADMIN')!='1':raise IsolationViolation('Explicit isolated startup required')
     return {'database':str(contained(settings.SQLITE_DB_PATH)),'write_paths_verified':True,'network':'loopback only','notifications':'disabled','background_maintenance':'disabled'}
 
+def sqlite_storage_path(value):
+    raw=os.fsdecode(value)
+    if not raw.lower().startswith('file:'):return raw
+    parsed=urlsplit(raw)
+    if parsed.scheme.lower()!='file' or parsed.netloc.lower() not in {'','localhost'}:
+        raise IsolationViolation('Non-local SQLite URI denied')
+    # SQLite decodes the URI path before opening it. Check that actual path,
+    # including Windows drive/UNC and percent escapes, against the same root.
+    return url2pathname(parsed.path)
+
 def install_guards():
     """Covers Python file mutation, SQLite admission and network/subprocess I/O.
 
@@ -38,7 +50,7 @@ def install_guards():
             if flags & (os.O_WRONLY|os.O_RDWR|os.O_CREAT|os.O_TRUNC|os.O_APPEND):check_path(path)
         elif event=='sqlite3.connect':
             target=args[0]
-            if str(target)!=':memory:':check_path(target)
+            if str(target)!=':memory:':check_path(sqlite_storage_path(target))
         elif event in {'os.remove','os.rmdir','os.mkdir','os.chmod','os.truncate'}:check_path(args[0])
         elif event in {'os.rename','os.replace','os.link','os.symlink'}:
             check_path(args[0]);check_path(args[1])
