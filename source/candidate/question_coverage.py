@@ -2865,6 +2865,14 @@ def audit_question(question, actual, facts, definition, prior_context=None):
             if qualifier['event_missing']:
                 missing.append({'code': 'raw_condition_operand_unresolved', 'span': qualifier['span']})
     missing.extend({'code': 'raw_condition_target_unresolved', 'span': q['span']} for q in unbound_temporal)
+    # Use raw-question demands, never planner-pruned requests, for attachment
+    # and subsequent field/evidence verification. No semantic independence is
+    # inferred from sharing this structural normalization operation.
+    from scalar_scope_attachment import attach_scalar_scope
+    missing, scalar_attachments = attach_scalar_scope(
+        question, demands, missing,
+        [(left, right, service) for left, right, service in entity_hits])
+    context_only.extend({'kind':'scalar_scope_attachment', **edge} for edge in scalar_attachments)
     excluded_ids = set()
     allowed = set()
     required = set()

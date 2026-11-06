@@ -1860,6 +1860,13 @@ class ScopeGraph:
                 if request['request_id'] in group['request_ids']:
                     request.setdefault('comparison_group_ids',[]).append(group['group_id'])
                     if request['mode']=='information':request['mode']='compare'
+        # A pure nominal field restriction is a modifier of an established
+        # predicate, not a new business question requiring its own operation.
+        from scalar_scope_attachment import attach_scalar_scope
+        unresolved, scalar_attachments = attach_scalar_scope(
+            question, requests, unresolved,
+            [(e['start'], e['end'], e['service_id']) for e in active_entities])
+        relations.extend({'type':'requested_field', **edge} for edge in scalar_attachments)
         # Scoped heads default only to independently established business
         # predicates. No example or answer fact-ID provides an interpretation.
         explicit=unique(e['service_id'] for e in active_entities)

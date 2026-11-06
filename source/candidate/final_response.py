@@ -35,6 +35,11 @@ def finalize_response(result, contract):
     conflicts=deepcopy(coverage.get('conflicts') or [])
     reviews=deepcopy(evidence.get('request_reviews') or [])
     actions=deepcopy(contract.get('forbidden_actions') or [])
+    # Task mode controls evidence emission independently of decision precedence.
+    # A classification request cannot gain business assertions because another
+    # clause is forbidden. Authorization failures outrank task-mode completion.
+    if classification:
+        facts=[];result.update(supported_fact_ids=[],citations=[],slots=[])
     if invalid or violations:
         status='error'
         # A rejected binding must never survive as an asserted business claim.
@@ -42,11 +47,10 @@ def finalize_response(result, contract):
         result['answer']=('The answer could not pass source and request verification; no business claim is emitted.'
                           if result.get('reply_language')=='en' else
                           'تعذر التحقق من ارتباط الإجابة بالطلب والمصدر؛ لم تصدر إجابة تتضمن أحكام الخدمة.')
-    elif classification:
-        status='complete' if requests and not unresolved else 'clarification_required'
-        facts=[];result.update(supported_fact_ids=[],citations=[],slots=[])
     elif actions:
         status='partial' if facts else 'action_not_permitted'
+    elif classification:
+        status='complete' if requests and not unresolved else 'clarification_required'
     elif (result.get('complete') is True and facts and coverage.get('complete_eligible') is True
           and (evidence.get('complete') is True or convergence)
           and not missing and not conflicts and (not unresolved or convergence)):
@@ -65,6 +69,11 @@ def finalize_response(result, contract):
     # conservative planner diagnostic. Preserve it in the audit, not as a new
     # clarification demand in an otherwise complete response.
     clarification=[] if status=='complete' else unresolved
+    if actions and not invalid and not violations:
+        refusal=('The requested action is not permitted; no authorization or policy approval is granted.'
+                 if result.get('reply_language')=='en' else
+                 '\u0627\u0644\u0625\u062c\u0631\u0627\u0621 \u0627\u0644\u0645\u0637\u0644\u0648\u0628 \u063a\u064a\u0631 \u0645\u0633\u0645\u0648\u062d\u061b \u0644\u0645 \u064a\u062a\u0645 \u0645\u0646\u062d \u062a\u0635\u0631\u064a\u062d \u0623\u0648 \u0627\u0639\u062a\u0645\u0627\u062f \u0644\u0644\u0633\u064a\u0627\u0633\u0629.')
+        result['answer']=result.get('answer','').rstrip()+'\n\n'+refusal
     if raw_acts and not invalid and not violations:
         # Quote the unanswered part as input, never as a policy assertion.
         lead=('Additional question not yet interpreted; please clarify: '
