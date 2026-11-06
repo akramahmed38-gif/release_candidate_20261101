@@ -1,0 +1,33 @@
+source/candidate/final_response.py
+  s_336edab32e8faf::t_9a3fe416ef6422 38-42,52-53,72-76
+source/candidate/question_coverage.py
+  s_d9b3c014c5ea55::t_94793a3e1d7b5c 2868-2875
+source/candidate/scalar_scope_attachment.py
+  s_d9b3c014c5ea55::t_607710cf005c0f 1-102
+source/candidate/scope_graph.py
+  s_d9b3c014c5ea55::t_91bb86a6529fd1 1863-1869
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "8a7cae444554dc3d7e04d47c0b9d73d6cb8c9ebc",
+  "prompts": {},
+  "sessions": {
+    "s_336edab32e8faf": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1a75e-58fa-78e3-827c-1562aec6007f",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "akramahmed38-gif <akram.ahmed38@gmail.com>"
+    },
+    "s_d9b3c014c5ea55": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a162f5-c192-7ef2-8f5c-3b5d4e32f549",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "akramahmed38-gif <akram.ahmed38@gmail.com>"
+    }
+  }
+}
